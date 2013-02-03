@@ -17,7 +17,51 @@ Retrieve a list of your owned vehicles (includes vehicles not yet shipped!)
 GET /vehicles
 < 200
 < Content-Type: application/json
+{
+}
 
 --
 Vehicle Status Resources
+These resources are read-only and determine the state of the vehicle's various sub-systems.
 --
+Determines if mobile access to the vehicle is enabled.
+GET /vehicles/{id}/mobile_enabled
+< 200
+< Content-Type: application/json
+{
+}
+
+Returns the state of charge in the battery.
+GET /vehicles/{id}/command/charge_state
+< 200
+< Content-Type: application/json
+{
+}
+
+Returns the current temperature and climate control state.
+GET /vehicles/{id}/command/climate_state
+< 200
+< Content-Type: application/json
+{
+}
+
+Returns the vehicle's physical state, such as which doors doors open.
+GET /vehicles/{id}/command/vehicle_state
+< 200
+< Content-Type: application/json
+{
+}
+
+Returns the driving state of the vehicle.
+GET /vehicles/{id}/command/drive_state
+< 200
+< Content-Type: application/json
+{
+}
+
+Returns various information about the car for the GUI of the smartphone application, such as vehicle color or wheel trim.
+GET /vehicles/{id}/command/gui_settings
+< 200
+< Content-Type: application/json
+{
+}

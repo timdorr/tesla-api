@@ -6,12 +6,38 @@ This is unofficial documentation of the Tesla Model S REST API used by the iOS a
 ---
 
 --
-Authentication Resources
+Authentication Flow
+These endpoints handle login and session management
 --
+Returns the login form. Sets a *_s_portal_session* cookie for the session
+GET /login
+< 200
+< Set-Cookie: _s_portal_session={cookie}; path=/; secure; HttpOnly
+{
+}
+
+Performs the login. Takes in an plain text email and password, matching the owner's login from http://teslamotors.com/mytesla. 
+
+Sets a *user_credentials* cookie that expires in 3 months, which is passed along with all future requests to authenticate the user.
+
+302 redirects back to a dummy welcome page. This page is ignored by the smartphone app and can be ignored by your API client.
+POST /login
+{
+    "user_session[email]": "string",
+    "user_session[password]": "string"
+}
+< 302
+< Set-Cookie: _s_portal_session={cookie}; path=/; secure; HttpOnly
+< Set-Cookie: user_credentials=x; path=/; expires=Fri, 03-May-2013 03:01:54 GMT; secure; HttpOnly
+< Location: https://portal.vn.teslamotors.com/
+{
+}
 
 --
 Vehicle Resource
 A logged in user can have multiple vehicles under their account. This resource is primarily responsible for listing the vehicles and the basic details about them.
+
+Must have a *_s_portal_session* and *user_credentials* cookie set for all requests.
 --
 Retrieve a list of your owned vehicles (includes vehicles not yet shipped!)
 GET /vehicles
@@ -23,6 +49,8 @@ GET /vehicles
 --
 Vehicle Status Resources
 These resources are read-only and determine the state of the vehicle's various sub-systems.
+
+Must have a *_s_portal_session* and *user_credentials* cookie set for all requests.
 --
 Determines if mobile access to the vehicle is enabled.
 GET /vehicles/{id}/mobile_enabled

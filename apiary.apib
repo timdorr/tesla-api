@@ -34,7 +34,7 @@ POST /login
 }
 
 --
-Vehicle Resource
+Vehicle List
 A logged in user can have multiple vehicles under their account. This resource is primarily responsible for listing the vehicles and the basic details about them.
 
 Must have a *_s_portal_session* and *user_credentials* cookie set for all requests.
@@ -56,7 +56,7 @@ GET /vehicles
 }]
 
 --
-Vehicle Status Resources
+Vehicle Status
 These resources are read-only and determine the state of the vehicle's various sub-systems.
 
 Must have a *_s_portal_session* and *user_credentials* cookie set for all requests.
@@ -70,28 +70,29 @@ GET /vehicles/{id}/mobile_enabled
     "result":true
 }
 
+
 Returns the state of charge in the battery.
 GET /vehicles/{id}/command/charge_state
 < 200
 < Content-Type: application/json
 {
-    "charging_state": "Complete",
-    "charge_to_max_range": false,
+    "charging_state": "Complete",  // "Charging", ??
+    "charge_to_max_range": false,  // current std/max-range setting
     "max_range_charge_counter": 0,
-    "fast_charger_present": false,
-    "battery_range": 239.02,
-    "est_battery_range": 155.79,
-    "ideal_battery_range": 275.09,
-    "battery_level": 91,
-    "battery_current": 0.0,
+    "fast_charger_present": false, // connected to Supercharger?
+    "battery_range": 239.02,       // rated miles
+    "est_battery_range": 155.79,   // range estimated from recent driving
+    "ideal_battery_range": 275.09, // ideal miles
+    "battery_level": 91,           // integer charge percentage
+    "battery_current": -0.6,       // current flowing into battery
     "charge_starting_range": null,
     "charge_starting_soc": null,
-    "charger_voltage": 0,
-    "charger_pilot_current": 40,
-    "charger_actual_current": 0,
-    "charger_power": 0,
-    "time_to_full_charge": 0.0,
-    "charge_rate": -1.0,
+    "charger_voltage": 0,          // only has value while charging
+    "charger_pilot_current": 40,   // max current allowed by charger & adapter
+    "charger_actual_current": 0,   // current actually being drawn
+    "charger_power": 0,            // kW (rounded down) of charger
+    "time_to_full_charge": null,   // valid only while charging
+    "charge_rate": -1.0,           // float mi/hr charging or -1 if not charging
     "charge_port_door_open": true
 }
 
@@ -100,14 +101,14 @@ GET /vehicles/{id}/command/climate_state
 < 200
 < Content-Type: application/json
 {
-    "inside_temp": null,
-    "outside_temp": null,
-    "driver_temp_setting": 22.6,
-    "passenger_temp_setting": 22.6,
-    "is_auto_conditioning_on": null,
-    "is_front_defroster_on": null,
+    "inside_temp": 17.0,          // degC inside car
+    "outside_temp": 9.5,          // degC outside car or null
+    "driver_temp_setting": 22.6,  // degC of driver temperature setpoint
+    "passenger_temp_setting": 22.6, // degC of passenger temperature setpoint
+    "is_auto_conditioning_on": false, // apparently even if on
+    "is_front_defroster_on": null, // null or boolean as integer?
     "is_rear_defroster_on": false,
-    "fan_status": null
+    "fan_status": 0               // fan speed 0-6 or null
 }
 
 Returns the driving and position state of the vehicle.
@@ -115,12 +116,12 @@ GET /vehicles/{id}/command/drive_state
 < 200
 < Content-Type: application/json
 {
-    "shift_state": null,
-    "speed": null,
-    "latitude": 33.794839,
-    "longitude": -84.401593,
-    "heading": 4,
-    "gps_as_of": 1359863204
+    "shift_state": null,          // 
+    "speed": null,                //
+    "latitude": 33.794839,        // degrees N of equator
+    "longitude": -84.401593,      // degrees W of the prime meridian
+    "heading": 4,                 // integer compass heading, 0-359
+    "gps_as_of": 1359863204       // Unix timestamp of GPS fix
 }
 
 Returns various information about the GUI settings of the car, such as unit format and range display.
@@ -140,20 +141,147 @@ GET /vehicles/{id}/command/vehicle_state
 < 200
 < Content-Type: application/json
 {
-    "df": false,
-    "dr": false,
-    "pf": false,
-    "pr": false,
-    "ft": false,
-    "rt": false,
-    "car_version": "1.19.42",
-    "locked": true,
-    "sun_roof_installed": true,
+    "df": false,                  // driver's side front door open
+    "dr": false,                  // driver's side rear door open
+    "pf": false,                  // passenger's side front door open
+    "pr": false,                  // passenger's side rear door open
+    "ft": false,                  // front trunk is open
+    "rt": false,                  // rear trunk is open
+    "car_verson": "1.19.42",      // car firmware version
+    "locked": true,               // car is locked
+    "sun_roof_installed": false,  // panoramic roof is installed
     "sun_roof_state": "unknown",
-    "sun_roof_percent_open": 0,
-    "dark_rims": false,
-    "wheel_type": "Base19",
-    "has_spoiler": false,
-    "roof_color": "None",
+    "sun_roof_percent_open": 0,   // null if not installed
+    "dark_rims": false,           // gray rims installed
+    "wheel_type": "Base19",       // wheel type installed
+    "has_spoiler": false,         // spoiler is installed
+    "roof_color": "Colored",      // "None" for panoramic roof
     "perf_config": "Base"
 }
+
+
+--
+Vehicle Commands
+These commands alter the vehicles state, and return result (true/false) to
+indicate success, and if failure reason contains the cause of failure.
+
+Must have a *_s_portal_session* and *user_credentials* cookie set for all requests.
+--
+Open the charge port
+GET /vehicles/{id}/command/charge_port_door_open
+< 200
+< Content-Type: application/json
+{
+  "result": false,
+  "reason": "failure reason"
+}
+
+Set the charge mode to standard.
+GET /vehicles/{id}/command/charge_standard
+< 200
+< Content-Type: application/json
+{
+  "result": false,
+  "reason": "failure reason"
+}
+
+Set the charge mode to max-range.
+GET /vehicles/{id}/command/charge_max_range
+< 200
+< Content-Type: application/json
+{
+  "result": false,
+  "reason": "failure reason"
+}
+
+Start charging
+GET /vehicles/{id}/command/charge_start
+< 200
+< Content-Type: application/json
+{
+  "result": false,
+  "reason": "failure reason"  // "already started" if a charge is in progress
+}
+
+Stop charging
+GET /vehicles/{id}/command/charge_stop
+< 200
+< Content-Type: application/json
+{
+  "result": false,
+  "reason": "failure reason"   // "not_charging" if a charge was not in progress
+}
+
+Flash the lights once
+GET /vehicles/{id}/command/flash_lights
+< 200
+< Content-Type: application/json
+{
+  "result": false,
+  "reason": "failure reason"
+}
+
+Honk horn once
+GET /vehicles/{id}/command/honk_horn
+< 200
+< Content-Type: application/json
+{
+  "result": false,
+  "reason": "failure reason"
+}
+
+Unlock doors
+GET /vehicles/{id}/command/door_unlock
+< 200
+< Content-Type: application/json
+{
+  "result": false,
+  "reason": "failure reason"
+}
+
+Lock doors
+GET /vehicles/{id}/command/door_lock
+< 200
+< Content-Type: application/json
+{
+  "result": false,
+  "reason": "failure reason"
+}
+
+Set the temperature setpoints
+GET /vehicles/{id}/command/set_temps?driver_temp={driver_degC}&pasenger_temp={pass_degC}
+< 200
+< Content-Type: application/json
+{
+  "result": false,
+  "reason": "failure reason"
+}
+
+Start HVAC
+GET /vehicles/{id}/command/auto_conditioning_start
+< 200
+< Content-Type: application/json
+{
+  "result": false,
+  "reason": "failure reason"
+}
+
+Stop HVAC
+GET /vehicles/{id}/command/auto_conditioning_stop
+< 200
+< Content-Type: application/json
+{
+  "result": false,
+  "reason": "failure reason"
+}
+
+Panoramic roof control
+GET /vehicles/{id}/command/sun_roof_control?state={state}
+State may be "open", "close", "comfort", or "vent"
+< 200
+< Content-Type: application/json
+{
+  "result": false,
+  "reason": "failure reason"
+}
+

@@ -16,16 +16,14 @@ GET /login
 {
 }
 
-Performs the login. Takes in an plain text email and password, matching the owner's login from http://teslamotors.com/mytesla. Note that the JSON data here is just to fit in Apiary's format, but those should be POST variables.
+Performs the login. Takes in an plain text email and password, matching the owner's login from http://teslamotors.com/mytesla.
 
 Sets a *user_credentials* cookie that expires in 3 months, which is passed along with all future requests to authenticate the user.
 
 302 redirects back to a dummy welcome page. This page is ignored by the smartphone app and can be ignored by your API client.
 POST /login
-{
-    "user_session[email]": "string",
-    "user_session[password]": "string"
-}
+> Content-Type: application/x-www-form-urlencoded
+user_session%5Bemail%5D=string&user_session%5Bpassword%5D=string
 < 302
 < Set-Cookie: _s_portal_session={cookie}; path=/; secure; HttpOnly
 < Set-Cookie: user_credentials=x; path=/; expires=Fri, 03-May-2013 03:01:54 GMT; secure; HttpOnly

@@ -378,3 +378,40 @@ Start the HVAC system. Will cool or heat automatically, depending on set tempera
               "result": false,
               "reason": "failure reason"
             }
+
+## GET /vehicles/{id}/command/auto_conditioning_stop
+Stop the HVAC system.
++ Parameters
+
+    + id (number) ... The ID number of the car
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "result": false,
+              "reason": "failure reason"
+            }
+
+## GET /vehicles/{id}/command/sun_roof_control?state={state}
+Controls the car's panoramic roof, if installed.
++ Parameters
+
+    + id (number) ... The ID number of the car
+    + state (string)
+        The desired state of the panoramic roof. The approximate percent open values for each state are `open` = 100%, `close` = 0%, `comfort` = 80%, and `vent` = ~15%
+        + Values 
+            + `open`
+            + `close`
+            + `comfort`
+            + `vent`
+            
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "result": false,
+              "reason": "failure reason"
+            }

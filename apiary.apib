@@ -1,285 +1,417 @@
+FORMAT: 1A
 HOST: https://portal.vn.teslamotors.com
 
---- Tesla Model S REST API ---
----
+# Tesla Model S REST API
 This is unofficial documentation of the Tesla Model S REST API used by the iOS and Android apps. It features functionality to monitor and control the Model S remotely. 
----
 
---
-Authentication Flow
+# Group Authentication Flow
 These endpoints handle login and session management
---
-Returns the login form. Sets a *_s_portal_session* cookie for the session
-GET /login
-< 200
-< Set-Cookie: _s_portal_session={cookie}; path=/; secure; HttpOnly
-{
-}
 
-Performs the login. Takes in an plain text email and password, matching the owner's login from http://teslamotors.com/mytesla.
+## GET /login
+Returns the login form. Sets a `_s_portal_session` cookie for the session
++ Response 200
 
-Sets a *user_credentials* cookie that expires in 3 months, which is passed along with all future requests to authenticate the user.
+    + Headers
+        
+            Set-Cookie: _s_portal_session={cookie}; path=/; secure; HttpOnly
+            
+    + Body
+    
+            Login Screen HTML
+            
+## POST /login
+Performs the login. Takes in an plain text email and password, matching the owner's login from [http://teslamotors.com/mytesla](http://teslamotors.com/mytesla).
 
-302 redirects back to a dummy welcome page. This page is ignored by the smartphone app and can be ignored by your API client.
-POST /login
-> Content-Type: application/x-www-form-urlencoded
-user_session%5Bemail%5D=string&user_session%5Bpassword%5D=string
-< 302
-< Set-Cookie: _s_portal_session={cookie}; path=/; secure; HttpOnly
-< Set-Cookie: user_credentials=x; path=/; expires=Fri, 03-May-2013 03:01:54 GMT; secure; HttpOnly
-< Location: https://portal.vn.teslamotors.com/
-{
-}
+Sets a `user_credentials` cookie that expires in 3 months, which is passed along with all future requests to authenticate the user.
 
---
-Vehicle List
+Redirects back to a dummy welcome page. This page is ignored by the smartphone app and can be ignored by your API client.
++ Request (application/x-www-form-urlencoded)
+
+    + Body
+
+            user_session%5Bemail%5D=string&user_session%5Bpassword%5D=string
+
++ Response 302
+
+    + Headers
+    
+            Set-Cookie: _s_portal_session={cookie}; path=/; secure; HttpOnly
+            Set-Cookie: user_credentials=x; path=/; expires=Fri, 03-May-2013 03:01:54 GMT; secure; HttpOnly
+            Location: https://portal.vn.teslamotors.com/
+            
+
+    + Body
+    
+            Dummy Welcome Page
+            
+
+# Group Vehicle List
 A logged in user can have multiple vehicles under their account. This resource is primarily responsible for listing the vehicles and the basic details about them.
 
-Must have a *_s_portal_session* and *user_credentials* cookie set for all requests.
---
-Retrieve a list of your owned vehicles (includes vehicles not yet shipped!)
-GET /vehicles
-< 200
-< Content-Type: application/json
-[{
-    "color": null,
-    "display_name": null,
-    "id": 321,
-    "option_codes": "MS01,RENA,TM00,DRLH,PF00,BT85,PBCW,RFPO,WT19,IBMB,IDPB,TR00,SU01,SC01,TP01,AU01,CH00,HP00,PA00,PS00,AD02,X020,X025,X001,X003,X007,X011,X013",
-    "user_id": 123,
-    "vehicle_id": 1234567890,
-    "vin": "5YJSA1CN5CFP01657",
-    "tokens": ["x", "x"],
-    "state": "online"
-}]
+Must have a `_s_portal_session` and `user_credentials` cookie set for all requests.
 
---
-Vehicle Status
+## GET /vehicles
+Retrieve a list of your owned vehicles (includes vehicles not yet shipped!)
++ Response 200 (application/json)
+
+    + Body
+
+            [{
+                "color": null,
+                "display_name": null,
+                "id": 321,
+                "option_codes": "MS01,RENA,TM00,DRLH,PF00,BT85,PBCW,RFPO,WT19,IBMB,IDPB,TR00,SU01,SC01,TP01,AU01,CH00,HP00,PA00,PS00,AD02,X020,X025,X001,X003,X007,X011,X013",
+                "user_id": 123,
+                "vehicle_id": 1234567890,
+                "vin": "5YJSA1CN5CFP01657",
+                "tokens": ["x", "x"],
+                "state": "online"
+            }]
+
+
+# Group Vehicle Status
 These resources are read-only and determine the state of the vehicle's various sub-systems.
 
-Must have a *_s_portal_session* and *user_credentials* cookie set for all requests.
---
+Must have a `_s_portal_session` and `user_credentials` cookie set for all requests.
+
+## GET /vehicles/{id}/mobile_enabled
 Determines if mobile access to the vehicle is enabled.
-GET /vehicles/{id}/mobile_enabled
-< 200
-< Content-Type: application/json
-{
-    "reason":"",
-    "result":true
-}
++ Parameters
 
+    + id (number) ... The ID number of the car
 
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "reason":"",
+                "result":true
+            }
+            
+## GET /vehicles/{id}/command/charge_state
 Returns the state of charge in the battery.
-GET /vehicles/{id}/command/charge_state
-< 200
-< Content-Type: application/json
-{
-    "charging_state": "Complete",  // "Charging", ??
-    "charge_to_max_range": false,  // current std/max-range setting
-    "max_range_charge_counter": 0,
-    "fast_charger_present": false, // connected to Supercharger?
-    "battery_range": 239.02,       // rated miles
-    "est_battery_range": 155.79,   // range estimated from recent driving
-    "ideal_battery_range": 275.09, // ideal miles
-    "battery_level": 91,           // integer charge percentage
-    "battery_current": -0.6,       // current flowing into battery
-    "charge_starting_range": null,
-    "charge_starting_soc": null,
-    "charger_voltage": 0,          // only has value while charging
-    "charger_pilot_current": 40,   // max current allowed by charger & adapter
-    "charger_actual_current": 0,   // current actually being drawn
-    "charger_power": 0,            // kW (rounded down) of charger
-    "time_to_full_charge": null,   // valid only while charging
-    "charge_rate": -1.0,           // float mi/hr charging or -1 if not charging
-    "charge_port_door_open": true
-}
++ Parameters
 
+    + id (number) ... The ID number of the car
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "charging_state": "Complete",  // "Charging", ??
+                "charge_to_max_range": false,  // current std/max-range setting
+                "max_range_charge_counter": 0,
+                "fast_charger_present": false, // connected to Supercharger?
+                "battery_range": 239.02,       // rated miles
+                "est_battery_range": 155.79,   // range estimated from recent driving
+                "ideal_battery_range": 275.09, // ideal miles
+                "battery_level": 91,           // integer charge percentage
+                "battery_current": -0.6,       // current flowing into battery
+                "charge_starting_range": null,
+                "charge_starting_soc": null,
+                "charger_voltage": 0,          // only has value while charging
+                "charger_pilot_current": 40,   // max current allowed by charger & adapter
+                "charger_actual_current": 0,   // current actually being drawn
+                "charger_power": 0,            // kW (rounded down) of charger
+                "time_to_full_charge": null,   // valid only while charging
+                "charge_rate": -1.0,           // float mi/hr charging or -1 if not charging
+                "charge_port_door_open": true
+            }
+
+## GET /vehicles/{id}/command/climate_state
 Returns the current temperature and climate control state.
-GET /vehicles/{id}/command/climate_state
-< 200
-< Content-Type: application/json
-{
-    "inside_temp": 17.0,          // degC inside car
-    "outside_temp": 9.5,          // degC outside car or null
-    "driver_temp_setting": 22.6,  // degC of driver temperature setpoint
-    "passenger_temp_setting": 22.6, // degC of passenger temperature setpoint
-    "is_auto_conditioning_on": false, // apparently even if on
-    "is_front_defroster_on": null, // null or boolean as integer?
-    "is_rear_defroster_on": false,
-    "fan_status": 0               // fan speed 0-6 or null
-}
++ Parameters
 
+    + id (number) ... The ID number of the car
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "inside_temp": 17.0,          // degC inside car
+                "outside_temp": 9.5,          // degC outside car or null
+                "driver_temp_setting": 22.6,  // degC of driver temperature setpoint
+                "passenger_temp_setting": 22.6, // degC of passenger temperature setpoint
+                "is_auto_conditioning_on": false, // apparently even if on
+                "is_front_defroster_on": null, // null or boolean as integer?
+                "is_rear_defroster_on": false,
+                "fan_status": 0               // fan speed 0-6 or null
+            }
+
+## GET /vehicles/{id}/command/drive_state
 Returns the driving and position state of the vehicle.
-GET /vehicles/{id}/command/drive_state
-< 200
-< Content-Type: application/json
-{
-    "shift_state": null,          // 
-    "speed": null,                //
-    "latitude": 33.794839,        // degrees N of equator
-    "longitude": -84.401593,      // degrees W of the prime meridian
-    "heading": 4,                 // integer compass heading, 0-359
-    "gps_as_of": 1359863204       // Unix timestamp of GPS fix
-}
++ Parameters
 
+    + id (number) ... The ID number of the car
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "shift_state": null,          // 
+                "speed": null,                //
+                "latitude": 33.794839,        // degrees N of equator
+                "longitude": -84.401593,      // degrees W of the prime meridian
+                "heading": 4,                 // integer compass heading, 0-359
+                "gps_as_of": 1359863204       // Unix timestamp of GPS fix
+            }
+
+## GET /vehicles/{id}/command/gui_settings
 Returns various information about the GUI settings of the car, such as unit format and range display.
-GET /vehicles/{id}/command/gui_settings
-< 200
-< Content-Type: application/json
-{
-    "gui_distance_units": "mi/hr",
-    "gui_temperature_units": "F",
-    "gui_charge_rate_units": "mi/hr",
-    "gui_24_hour_time": false,
-    "gui_range_display": "Rated"
-}
++ Parameters
 
+    + id (number) ... The ID number of the car
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "gui_distance_units": "mi/hr",
+                "gui_temperature_units": "F",
+                "gui_charge_rate_units": "mi/hr",
+                "gui_24_hour_time": false,
+                "gui_range_display": "Rated"
+            }
+
+## GET /vehicles/{id}/command/vehicle_state
 Returns the vehicle's physical state, such as which doors are open.
-GET /vehicles/{id}/command/vehicle_state
-< 200
-< Content-Type: application/json
-{
-    "df": false,                  // driver's side front door open
-    "dr": false,                  // driver's side rear door open
-    "pf": false,                  // passenger's side front door open
-    "pr": false,                  // passenger's side rear door open
-    "ft": false,                  // front trunk is open
-    "rt": false,                  // rear trunk is open
-    "car_verson": "1.19.42",      // car firmware version
-    "locked": true,               // car is locked
-    "sun_roof_installed": false,  // panoramic roof is installed
-    "sun_roof_state": "unknown",
-    "sun_roof_percent_open": 0,   // null if not installed
-    "dark_rims": false,           // gray rims installed
-    "wheel_type": "Base19",       // wheel type installed
-    "has_spoiler": false,         // spoiler is installed
-    "roof_color": "Colored",      // "None" for panoramic roof
-    "perf_config": "Base"
-}
++ Parameters
 
+    + id (number) ... The ID number of the car
 
---
-Vehicle Commands
-These commands alter the vehicles state, and return result (true/false) to
-indicate success, and if failure reason contains the cause of failure.
++ Response 200 (application/json)
 
-Must have a *_s_portal_session* and *user_credentials* cookie set for all requests.
---
-Open the charge port
-GET /vehicles/{id}/command/charge_port_door_open
-< 200
-< Content-Type: application/json
-{
-  "result": false,
-  "reason": "failure reason"
-}
+    + Body
 
-Set the charge mode to standard.
-GET /vehicles/{id}/command/charge_standard
-< 200
-< Content-Type: application/json
-{
-  "result": false,
-  "reason": "failure reason"
-}
+            {
+                "df": false,                  // driver's side front door open
+                "dr": false,                  // driver's side rear door open
+                "pf": false,                  // passenger's side front door open
+                "pr": false,                  // passenger's side rear door open
+                "ft": false,                  // front trunk is open
+                "rt": false,                  // rear trunk is open
+                "car_verson": "1.19.42",      // car firmware version
+                "locked": true,               // car is locked
+                "sun_roof_installed": false,  // panoramic roof is installed
+                "sun_roof_state": "unknown",
+                "sun_roof_percent_open": 0,   // null if not installed
+                "dark_rims": false,           // gray rims installed
+                "wheel_type": "Base19",       // wheel type installed
+                "has_spoiler": false,         // spoiler is installed
+                "roof_color": "Colored",      // "None" for panoramic roof
+                "perf_config": "Base"
+            }
 
-Set the charge mode to max-range.
-GET /vehicles/{id}/command/charge_max_range
-< 200
-< Content-Type: application/json
-{
-  "result": false,
-  "reason": "failure reason"
-}
+# Group Vehicle Commands
+These commands alter the vehicles state, and return result (true/false) to indicate success, and if failure reason contains the cause of failure.
 
-Start charging
-GET /vehicles/{id}/command/charge_start
-< 200
-< Content-Type: application/json
-{
-  "result": false,
-  "reason": "failure reason"  // "already started" if a charge is in progress
-}
+Must have a `_s_portal_session` and `user_credentials` cookie set for all requests.
 
-Stop charging
-GET /vehicles/{id}/command/charge_stop
-< 200
-< Content-Type: application/json
-{
-  "result": false,
-  "reason": "failure reason"   // "not_charging" if a charge was not in progress
-}
+## GET /vehicles/{id}/command/charge_port_door_open
+Open the charge port.
++ Parameters
 
-Flash the lights once
-GET /vehicles/{id}/command/flash_lights
-< 200
-< Content-Type: application/json
-{
-  "result": false,
-  "reason": "failure reason"
-}
+    + id (number) ... The ID number of the car
 
-Honk horn once
-GET /vehicles/{id}/command/honk_horn
-< 200
-< Content-Type: application/json
-{
-  "result": false,
-  "reason": "failure reason"
-}
++ Response 200 (application/json)
 
-Unlock doors
-GET /vehicles/{id}/command/door_unlock
-< 200
-< Content-Type: application/json
-{
-  "result": false,
-  "reason": "failure reason"
-}
+    + Body
 
-Lock doors
-GET /vehicles/{id}/command/door_lock
-< 200
-< Content-Type: application/json
-{
-  "result": false,
-  "reason": "failure reason"
-}
+            {
+              "result": false,
+              "reason": "failure reason"
+            }
 
-Set the temperature setpoints
-GET /vehicles/{id}/command/set_temps?driver_temp={driver_degC}&passenger_temp={pass_degC}
-< 200
-< Content-Type: application/json
-{
-  "result": false,
-  "reason": "failure reason"
-}
+## GET /vehicles/{id}/command/charge_standard
+Set the charge mode to standard (~90% under the new percentage system introduced in 4.5).
++ Parameters
 
-Start HVAC
-GET /vehicles/{id}/command/auto_conditioning_start
-< 200
-< Content-Type: application/json
-{
-  "result": false,
-  "reason": "failure reason"
-}
+    + id (number) ... The ID number of the car
 
-Stop HVAC
-GET /vehicles/{id}/command/auto_conditioning_stop
-< 200
-< Content-Type: application/json
-{
-  "result": false,
-  "reason": "failure reason"
-}
++ Response 200 (application/json)
 
-Panoramic roof control
-GET /vehicles/{id}/command/sun_roof_control?state={state}
-State may be "open", "close", "comfort", or "vent"
-< 200
-< Content-Type: application/json
-{
-  "result": false,
-  "reason": "failure reason"
-}
+    + Body
 
+            {
+              "result": false,
+              "reason": "failure reason"
+            }
+
+## GET /vehicles/{id}/command/charge_max_range
+Set the charge mode to max range (100% under the new percentage system introduced in 4.5).
++ Parameters
+
+    + id (number) ... The ID number of the car
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "result": false,
+              "reason": "failure reason"
+            }
+
+## GET /vehicles/{id}/command/charge_start
+Start charging.
++ Parameters
+
+    + id (number) ... The ID number of the car
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "result": false,
+              "reason": "failure reason" // "already started" if a charge is in progress
+            }
+
+## GET /vehicles/{id}/command/charge_stop
+Stop charging.
++ Parameters
+
+    + id (number) ... The ID number of the car
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "result": false,
+              "reason": "failure reason" // "not_charging" if a charge was not in progress
+            }
+
+## GET /vehicles/{id}/command/flash_lights
+Flash the lights once.
++ Parameters
+
+    + id (number) ... The ID number of the car
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "result": false,
+              "reason": "failure reason"
+            }
+
+## GET /vehicles/{id}/command/honk_horn
+Honk the horn once.
++ Parameters
+
+    + id (number) ... The ID number of the car
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "result": false,
+              "reason": "failure reason"
+            }
+
+## GET /vehicles/{id}/command/door_unlock
+Unlock the car's doors.
++ Parameters
+
+    + id (number) ... The ID number of the car
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "result": false,
+              "reason": "failure reason"
+            }
+
+## GET /vehicles/{id}/command/door_lock
+Lock the car's doors.
++ Parameters
+
+    + id (number) ... The ID number of the car
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "result": false,
+              "reason": "failure reason"
+            }
+
+## GET /vehicles/{id}/command/set_temps?driver_temp={driver_degC}&passenger_temp={pass_degC}
+Set the temperature target for the HVAC system.
++ Parameters
+
+    + id (number) ... The ID number of the car
+    + driver_degC (number) ... The desired temperature on the driver's side in celcius.
+    + pass_degC (number) ... The desired temperature on the passenger's side in celcius.
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "result": false,
+              "reason": "failure reason"
+            }
+
+## GET /vehicles/{id}/command/auto_conditioning_start
+Start the HVAC system. Will cool or heat automatically, depending on set temperature.
++ Parameters
+
+    + id (number) ... The ID number of the car
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "result": false,
+              "reason": "failure reason"
+            }
+
+## GET /vehicles/{id}/command/auto_conditioning_stop
+Stop the HVAC system.
++ Parameters
+
+    + id (number) ... The ID number of the car
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "result": false,
+              "reason": "failure reason"
+            }
+
+## GET /vehicles/{id}/command/sun_roof_control?state={state}
+Controls the car's panoramic roof, if installed.
++ Parameters
+
+    + id (number) ... The ID number of the car
+    + state (string)
+        The desired state of the panoramic roof. The approximate percent open values for each state are `open` = 100%, `close` = 0%, `comfort` = 80%, and `vent` = ~15%
+        + Values 
+            + `open`
+            + `close`
+            + `comfort`
+            + `vent`
+            
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "result": false,
+              "reason": "failure reason"
+            }

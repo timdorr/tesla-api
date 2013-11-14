@@ -1,10 +1,12 @@
-# A simple Tesla API wrapper via HTTParty
+# A simple Tesla API wrapper via HTTParty and EM-HTTP-Request
 
 # Usage:
 # tesla = TeslaApi.new(email, password
+# tesla.vehicles.first.wake_up
 # car = tesla.vehicles.first # If you have more than one, I'm jealous!
 # car.charge_state
 # car.door_unlock
+# car.stream { |data| puts data.inspect }
 
 class TeslaApi
   include HTTParty
@@ -26,14 +28,15 @@ class TeslaApi
   end
 
   def vehicles
-    self.class.get('/vehicles').map { |v| Vehicle.new(self.class, v["id"], v) }
+    self.class.get('/vehicles').map { |v| Vehicle.new(self.class, @email, v["id"], v) }
   end
 
   class Vehicle
-    attr_accessor :api, :id, :vehicle
+    attr_accessor :api, :email, :id, :vehicle
 
-    def initialize(api, id, vehicle)
+    def initialize(api, email, id, vehicle)
       @api = api
+      @email = email
       @id = id
       @vehicle = vehicle
     end
@@ -132,6 +135,28 @@ class TeslaApi
 
     def sun_roof_move(percent)
       api.get("/vehicles/#{id}/command/sun_roof_control", query: { state: "move", percent: percent })
+    end
+
+    # Streaming
+
+    def stream(&reciever)
+      EventMachine.run do
+        http = EventMachine::HttpRequest.new("https://streaming.vn.teslamotors.com/stream/#{self["vehicle_id"]}/?values=speed,odometer,soc,elevation,est_heading,est_lat,est_lng,power").get(head: {'authorization' => [email, self["tokens"].first]}, inactivity_timeout: 15)
+        http.stream do |chunk|
+          attributes = chunk.split(",")
+          reciever.call({
+             time:        DateTime.strptime((attributes[0].to_i/1000).to_s, "%s"),
+             speed:       attributes[1],
+             soc:         attributes[2],
+             elevation:   attributes[3],
+             est_heading: attributes[4],
+             est_lat:     attributes[5],
+             est_lng:     attributes[6],
+             power:       attributes[7]
+          })
+        end
+        http.errback { EventMachine.stop }
+      end
     end
   end
 end

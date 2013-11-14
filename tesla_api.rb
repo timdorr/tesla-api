@@ -146,13 +146,13 @@ class TeslaApi
           attributes = chunk.split(",")
           reciever.call({
              time:        DateTime.strptime((attributes[0].to_i/1000).to_s, "%s"),
-             speed:       attributes[1],
-             soc:         attributes[2],
-             elevation:   attributes[3],
-             est_heading: attributes[4],
-             est_lat:     attributes[5],
-             est_lng:     attributes[6],
-             power:       attributes[7]
+             speed:       attributes[1].to_f,
+             soc:         attributes[2].to_f/100.0,
+             elevation:   attributes[3].to_f,
+             est_heading: attributes[4].to_f,
+             est_lat:     attributes[5].to_f,
+             est_lng:     attributes[6].to_f,
+             power:       attributes[7].to_f
           })
         end
         http.errback { EventMachine.stop }

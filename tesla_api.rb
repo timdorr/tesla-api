@@ -26,15 +26,20 @@ class TeslaApi
   end
 
   def vehicles
-    self.class.get('/vehicles').map { |v| Vehicle.new(self.class, v["id"]) }
+    self.class.get('/vehicles').map { |v| Vehicle.new(self.class, v["id"], v) }
   end
 
   class Vehicle
-    attr_accessor :api, :id
+    attr_accessor :api, :id, :vehicle
 
-    def initialize(api, id)
+    def initialize(api, id, vehicle)
       @api = api
       @id = id
+      @vehicle = vehicle
+    end
+
+    def [](key)
+      vehicle[key]
     end
 
     # State

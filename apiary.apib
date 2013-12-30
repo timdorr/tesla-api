@@ -2,7 +2,7 @@ FORMAT: 1A
 HOST: https://portal.vn.teslamotors.com
 
 # Tesla Model S REST API
-This is unofficial documentation of the Tesla Model S REST API used by the iOS and Android apps. It features functionality to monitor and control the Model S remotely. 
+This is unofficial documentation of the Tesla Model S REST API used by the iOS and Android apps. It features functionality to monitor and control the Model S remotely.
 
 # Group Authentication Flow
 These endpoints handle login and session management
@@ -12,13 +12,13 @@ Returns the login form. Sets a `_s_portal_session` cookie for the session
 + Response 200
 
     + Headers
-        
+
             Set-Cookie: _s_portal_session={cookie}; path=/; secure; HttpOnly
-            
+
     + Body
-    
+
             Login Screen HTML
-            
+
 ## POST /login
 Performs the login. Takes in an plain text email and password, matching the owner's login from [http://teslamotors.com/mytesla](http://teslamotors.com/mytesla).
 
@@ -34,16 +34,16 @@ Redirects back to a dummy welcome page. This page is ignored by the smartphone a
 + Response 302
 
     + Headers
-    
+
             Set-Cookie: _s_portal_session={cookie}; path=/; secure; HttpOnly
             Set-Cookie: user_credentials=x; path=/; expires=Fri, 03-May-2013 03:01:54 GMT; secure; HttpOnly
             Location: https://portal.vn.teslamotors.com/
-            
+
 
     + Body
-    
+
             Dummy Welcome Page
-            
+
 
 # Group Vehicle List
 A logged in user can have multiple vehicles under their account. This resource is primarily responsible for listing the vehicles and the basic details about them.
@@ -88,7 +88,7 @@ Determines if mobile access to the vehicle is enabled.
                 "reason":"",
                 "result":true
             }
-            
+
 ## GET /vehicles/{id}/command/charge_state
 Returns the state of charge in the battery.
 + Parameters
@@ -152,7 +152,7 @@ Returns the driving and position state of the vehicle.
     + Body
 
             {
-                "shift_state": null,          // 
+                "shift_state": null,          //
                 "speed": null,                //
                 "latitude": 33.794839,        // degrees N of equator
                 "longitude": -84.401593,      // degrees W of the prime meridian
@@ -247,6 +247,22 @@ Set the charge mode to max range (100% under the new percentage system introduce
 + Parameters
 
     + id (number) ... The ID number of the car
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "result": false,
+              "reason": "failure reason"
+            }
+
+## GET /vehicles/{id}/command/set_charge_limit?percent={limit_value}
+Set the charge limit to a custom percentage.
++ Parameters
+
+    + id (number) ... The ID number of the car
+    + limit_value (number) ... The percentage value
 
 + Response 200 (application/json)
 
@@ -401,12 +417,12 @@ Controls the car's panoramic roof, if installed.
     + id (number) ... The ID number of the car
     + state (string)
         The desired state of the panoramic roof. The approximate percent open values for each state are `open` = 100%, `close` = 0%, `comfort` = 80%, and `vent` = ~15%
-        + Values 
+        + Values
             + `open`
             + `close`
             + `comfort`
             + `vent`
-            
+
 + Response 200 (application/json)
 
     + Body

@@ -44,3 +44,8 @@ puts "Your Model S is #{charge_state["charging_state"]} " +
      "with a SOC of #{charge_state["battery_level"]}% " + 
      "and an estimate range of #{charge_state["est_battery_range"]} miles"
 ```
+
+## Copyright
+
+Ruby portions are Copyright (c) 2014 Tim Dorr. Released under the terms of the
+MIT license. See LICENSE for details.

@@ -9,8 +9,18 @@ module TeslaApi
       @vehicle = vehicle
     end
 
+    # Properties
+
     def [](key)
       vehicle[key]
+    end
+
+    def method_missing(name)
+      if vehicle.keys.include?(name.to_s)
+        vehicle[name.to_s]
+      else
+        raise NoMethodError.new("Vehicle does not have property `#{name}`", name)
+      end
     end
 
     # State

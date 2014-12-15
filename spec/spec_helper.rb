@@ -6,6 +6,8 @@ require 'coveralls'
 require 'tesla_api'
 
 Dotenv.load
+
+Coveralls::Output.silent = true
 Coveralls.wear!
 
 VCR.configure do |c|

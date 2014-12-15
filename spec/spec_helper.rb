@@ -1,10 +1,12 @@
 require 'dotenv'
 require 'vcr'
 require 'webmock/rspec'
+require 'coveralls'
 
 require 'tesla_api'
 
 Dotenv.load
+Coveralls.wear!
 
 VCR.configure do |c|
   c.cassette_library_dir = "spec/cassettes"

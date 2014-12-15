@@ -30,8 +30,8 @@ Here's a quick example:
 ```ruby
 require 'tesla_api'
 
-tesla_api = TeslaApi.new(email, password, client_id, client_secret)
-model_s = tesla_api.vehicles.first
+tesla_api = TeslaApi::Client.new(email, password, client_id, client_secret)
+model_s = tesla_api.vehicles.first # => <TeslaApi::Vehicle>
 
 model_s.wake_up
 model_s.auto_conditioning_start unless model_s.climate_state["is_auto_conditioning_on"]

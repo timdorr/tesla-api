@@ -2,7 +2,7 @@
 
 [View Documentation](http://docs.timdorr.apiary.io/)
 
-This is unofficial documentation of the Tesla Model S JSON API used by the iOS and Android apps. 
+This is unofficial documentation of the Tesla JSON API used by the iOS and Android apps.
 The API provides functionality to monitor and control the Model S (and future Tesla vehicles) remotely.
 The project provides both a documention of the API and a Ruby library to for accessing it.
 

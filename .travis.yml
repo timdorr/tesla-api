@@ -9,3 +9,5 @@ env:
     - TESLA_PASS=oilLOL
     - TESLA_CLIENT_ID=1
     - TESLA_CLIENT_SECRET=2
+notifications:
+  email: false

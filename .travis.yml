@@ -1,0 +1,11 @@
+language: ruby
+rvm:
+  - 1.9.3
+  - 2.0.0
+  - 2.1.0
+env:
+  global:
+    - TESLA_EMAIL=elon.musk@teslamotors.com
+    - TESLA_PASS=oilLOL
+    - TESLA_CLIENT_ID=1
+    - TESLA_CLIENT_SECRET=2

@@ -1,14 +1,22 @@
+require 'simplecov'
+require 'coveralls'
+
+SimpleCov.formatters = [
+    SimpleCov::Formatter::HTMLFormatter,
+    Coveralls::SimpleCov::Formatter
+]
+SimpleCov.start do
+  add_filter 'spec'
+end
+Coveralls::Output.silent = true
+
 require 'dotenv'
 require 'vcr'
 require 'webmock/rspec'
-require 'coveralls'
 
 require 'tesla_api'
 
 Dotenv.load
-
-Coveralls::Output.silent = true
-Coveralls.wear!
 
 VCR.configure do |c|
   c.cassette_library_dir = "spec/cassettes"

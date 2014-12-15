@@ -12,3 +12,6 @@
 *.o
 *.a
 mkmf.log
+.ruby-version
+.ruby-gemset
+.env

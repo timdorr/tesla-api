@@ -29,6 +29,10 @@ module TeslaApi
       api.get("/vehicles/#{id}/mobile_enabled")["response"]
     end
 
+    def gui_settings
+      api.get("/vehicles/#{id}/data_request/gui_settings")["response"]
+    end
+
     def charge_state
       api.get("/vehicles/#{id}/data_request/charge_state")["response"]
     end
@@ -39,10 +43,6 @@ module TeslaApi
 
     def drive_state
       api.get("/vehicles/#{id}/data_request/drive_state")["response"]
-    end
-
-    def gui_settings
-      api.get("/vehicles/#{id}/data_request/gui_settings")["response"]
     end
 
     def vehicle_state

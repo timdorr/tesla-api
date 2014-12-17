@@ -1,0 +1,130 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://owner-api.teslamotors.com/oauth/token
+    body:
+      encoding: UTF-8
+      string: grant_type=password&client_id=<TESLA_CLIENT_ID>&client_secret=<TESLA_CLIENT_SECRET>&email=<TESLA_EMAIL>&password=<TESLA_PASS>
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 17 Dec 2014 00:26:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Request-Id:
+      - e7b6bbfaab456d6f53821b19f7c44b96
+      X-Runtime:
+      - '0.420201'
+    body:
+      encoding: UTF-8
+      string: '{"access_token":"d8dc10d49870becd6bb6069dc7a29db94d39381cf540402f9bde98a2eca3c0ed","token_type":"bearer","expires_in":7776000}'
+    http_version: 
+  recorded_at: Wed, 17 Dec 2014 00:26:55 GMT
+- request:
+    method: get
+    uri: https://owner-api.teslamotors.com/api/1/vehicles
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer d8dc10d49870becd6bb6069dc7a29db94d39381cf540402f9bde98a2eca3c0ed
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 17 Dec 2014 00:26:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '446'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"c5d083718f906b7336fb8b28fcc87b6c"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 075ac71b808066c4a48eaa7b4fc922cb
+      X-Runtime:
+      - '0.042602'
+    body:
+      encoding: UTF-8
+      string: '{"response":[{"color":null,"display_name":"Nikola","id":1514029006966957156,"option_codes":"MS01,RENA,TM00,DRLH,PF00,BT85,PBCW,RFPO,WT19,IBMB,IDPB,TR00,SU01,SC01,TP01,AU01,CH00,HP00,PA00,PS00,AD02,X020,X025,X001,X003,X007,X011,X013,COUS","vehicle_id":490215852,"vin":"5YJSA1CN5CFP01657","tokens":["6b6e59059375f282","09b1673648be8c08"],"state":"online","remote_start_enabled":true,"calendar_enabled":true,"notifications_enabled":true}],"count":1}'
+    http_version: 
+  recorded_at: Wed, 17 Dec 2014 00:26:56 GMT
+- request:
+    method: get
+    uri: https://owner-api.teslamotors.com/api/1/vehicles/1514029006966957156/data_request/vehicle_state
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer d8dc10d49870becd6bb6069dc7a29db94d39381cf540402f9bde98a2eca3c0ed
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 17 Dec 2014 00:26:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '383'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"a030a309940a34c7ff61648072176666"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ae7adb3416d075da741b294222b7203a
+      X-Runtime:
+      - '0.775318'
+    body:
+      encoding: UTF-8
+      string: '{"response":{"calendar_supported":true,"car_version":"1.67.125","dark_rims":false,"df":0,"dr":0,"exterior_color":"White","ft":0,"has_spoiler":false,"locked":true,"perf_config":"Base","pf":0,"pr":0,"remote_start":false,"rhd":false,"roof_color":"None","rt":0,"sun_roof_installed":true,"sun_roof_percent_open":0,"sun_roof_state":"unknown","vehicle_name":"Nikola","wheel_type":"Base19"}}'
+    http_version: 
+  recorded_at: Wed, 17 Dec 2014 00:26:57 GMT
+recorded_with: VCR 2.9.3

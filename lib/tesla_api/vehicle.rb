@@ -119,6 +119,14 @@ module TeslaApi
       api.post("/vehicles/#{id}/command/remote_start_drive", body: {password: password})["response"]
     end
 
+    def open_trunk
+      api.post("/vehicles/#{id}/command/trunk_open", body: {which_trunk: "rear"})
+    end
+
+    def open_frunk
+      api.post("/vehicles/#{id}/command/trunk_open", body: {which_trunk: "rear"})
+    end
+
     # Streaming
 
     def stream(&reciever)

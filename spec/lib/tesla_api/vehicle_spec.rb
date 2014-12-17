@@ -232,8 +232,20 @@ RSpec.describe TeslaApi::Vehicle do
   end
 
   describe "#remove_start_drive", vcr: {cassette_name: "vehicle-remove_start_drive"} do
-    it "starts the vehicle's keyless driving mode'" do
+    it "starts the vehicle's keyless driving mode" do
       expect(vehicle.remove_start_drive("elon4eva")["result"]).to eq(true)
+    end
+  end
+
+  describe "#open_trunk", vcr: {cassette_name: "vehicle-open_trunk"} do
+    it "opens the trunk" do
+      expect(vehicle.open_trunk["error"]).to eq("invalid_command")
+    end
+  end
+
+  describe "#open_frunk", vcr: {cassette_name: "vehicle-open_frunk"} do
+    it "opens the frunk" do
+      expect(vehicle.open_frunk["error"]).to eq("invalid_command")
     end
   end
 end

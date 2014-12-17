@@ -1,0 +1,128 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://owner-api.teslamotors.com/oauth/token
+    body:
+      encoding: UTF-8
+      string: grant_type=password&client_id=<TESLA_CLIENT_ID>&client_secret=<TESLA_CLIENT_SECRET>&email=<TESLA_EMAIL>&password=<TESLA_PASS>
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 17 Dec 2014 02:02:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - no-store
+      Pragma:
+      - no-cache
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      X-Request-Id:
+      - 463d9f839e6eb7ccc712ec5001dfa135
+      X-Runtime:
+      - '0.358328'
+    body:
+      encoding: UTF-8
+      string: '{"access_token":"614ac96b9d291d2af3d7bfc92e2880474afc1a7aa1c49b6df693fb1b1237c60d","token_type":"bearer","expires_in":7776000}'
+    http_version: 
+  recorded_at: Wed, 17 Dec 2014 02:02:41 GMT
+- request:
+    method: get
+    uri: https://owner-api.teslamotors.com/api/1/vehicles
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer 614ac96b9d291d2af3d7bfc92e2880474afc1a7aa1c49b6df693fb1b1237c60d
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 17 Dec 2014 02:02:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '446'
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"f75b5f2e5ddca5f7c1bf938da14972f4"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f339ad32393df7d7048686949238f54c
+      X-Runtime:
+      - '0.064041'
+    body:
+      encoding: UTF-8
+      string: '{"response":[{"color":null,"display_name":"Nikola","id":1514029006966957156,"option_codes":"MS01,RENA,TM00,DRLH,PF00,BT85,PBCW,RFPO,WT19,IBMB,IDPB,TR00,SU01,SC01,TP01,AU01,CH00,HP00,PA00,PS00,AD02,X020,X025,X001,X003,X007,X011,X013,COUS","vehicle_id":490215852,"vin":"5YJSA1CN5CFP01657","tokens":["13e0ae629c708af6","156102684b1be0dd"],"state":"online","remote_start_enabled":true,"calendar_enabled":true,"notifications_enabled":true}],"count":1}'
+    http_version: 
+  recorded_at: Wed, 17 Dec 2014 02:02:41 GMT
+- request:
+    method: post
+    uri: https://owner-api.teslamotors.com/api/1/vehicles/1514029006966957156/command/trunk_open
+    body:
+      encoding: UTF-8
+      string: which_trunk=rear
+    headers:
+      Authorization:
+      - Bearer 614ac96b9d291d2af3d7bfc92e2880474afc1a7aa1c49b6df693fb1b1237c60d
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 17 Dec 2014 02:02:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '66'
+      Connection:
+      - keep-alive
+      Status:
+      - 400 Bad Request
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - bc7fcff8043599002f0d44b1d3550681
+      X-Runtime:
+      - '0.013840'
+    body:
+      encoding: UTF-8
+      string: '{"response":null,"error":"invalid_command","error_description":""}'
+    http_version: 
+  recorded_at: Wed, 17 Dec 2014 02:02:42 GMT
+recorded_with: VCR 2.9.3

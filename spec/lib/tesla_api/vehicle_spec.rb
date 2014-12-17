@@ -86,4 +86,70 @@ RSpec.describe TeslaApi::Vehicle do
       it { should include("locked") }
     end
   end
+
+  describe "#wake_up", vcr: {cassette_name: "vehicle-wake_up"} do
+    it "wakes up the car from sleep mode" do
+      vehicle.wake_up
+      expect(vehicle.state).to eq("online")
+    end
+  end
+
+  describe "#charge_port_door_open", vcr: {cassette_name: "vehicle-charge_port_door_open"} do
+    it "opens the charge port door" do
+      expect(vehicle.charge_port_door_open["result"]).to eq(true)
+    end
+  end
+
+  describe "#charge_standard" do
+    it "sets the charge limit to standard (90%)", vcr: {cassette_name: "vehicle-charge_standard"} do
+      expect(vehicle.charge_standard["result"]).to eq(true)
+    end
+
+    it "doesn't set the charge rate to standard twice", vcr: {cassette_name: "vehicle-charge_standard-twice"} do
+      expect(vehicle.charge_standard["result"]).to eq(true)
+      expect(vehicle.charge_standard).to eq({"result" => false, "reason" => "already_standard"})
+    end
+  end
+
+  describe "#charge_max_range" do
+    it "sets the charge limit to max range (100%)", vcr: {cassette_name: "vehicle-charge_max_range"} do
+      expect(vehicle.charge_max_range["result"]).to eq(true)
+    end
+
+    it "doesn't set the charge rate to max range twice", vcr: {cassette_name: "vehicle-charge_max_range-twice"} do
+      expect(vehicle.charge_max_range["result"]).to eq(true)
+      expect(vehicle.charge_max_range).to eq({"result" => false, "reason" => "already_max_range"})
+    end
+  end
+
+  describe "#set_charge_limit" do
+    it "sets the charge limit to 100%", vcr: {cassette_name: "vehicle-set_charge_limit-100"} do
+      expect(vehicle.set_charge_limit(100)["result"]).to eq(true)
+    end
+
+    it "sets the charge limit to 90%", vcr: {cassette_name: "vehicle-set_charge_limit-90"} do
+      expect(vehicle.set_charge_limit(90)["result"]).to eq(true)
+    end
+
+    it "sets the charge limit to 50%", vcr: {cassette_name: "vehicle-set_charge_limit-50"} do
+      expect(vehicle.set_charge_limit(50)["result"]).to eq(true)
+    end
+
+    it "doesn't actually set the charge limit to 1%", vcr: {cassette_name: "vehicle-set_charge_limit-1"} do
+      expect(vehicle.set_charge_limit(1)["result"]).to eq(true)
+      expect(vehicle.charge_state["charge_limit_soc"]).to eq(50)
+    end
+  end
+
+  describe "#charge_start", vcr: {cassette_name: "vehicle-charge_start"} do
+    it "starts charging" do
+      expect(vehicle.charge_start["result"]).to eq(true)
+    end
+  end
+
+  describe "#charge_stop", vcr: {cassette_name: "vehicle-charge_stop"} do
+    it "stops charging" do
+      expect(vehicle.charge_stop["result"]).to eq(true)
+    end
+  end
 end

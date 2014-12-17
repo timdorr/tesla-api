@@ -52,31 +52,31 @@ module TeslaApi
     # Commands
 
     def wake_up
-      api.post("/vehicles/#{id}/wake_up")
+      @vehicle = api.post("/vehicles/#{id}/wake_up")["response"]
     end
 
     def charge_port_door_open
-      api.post("/vehicles/#{id}/command/charge_port_door_open")
+      api.post("/vehicles/#{id}/command/charge_port_door_open")["response"]
     end
 
     def charge_standard
-      api.post("/vehicles/#{id}/command/charge_standard")
+      api.post("/vehicles/#{id}/command/charge_standard")["response"]
     end
 
     def charge_max_range
-      api.post("/vehicles/#{id}/command/charge_max_range")
+      api.post("/vehicles/#{id}/command/charge_max_range")["response"]
     end
 
     def set_charge_limit(percent)
-      api.post("/vehicles/#{id}/command/set_charge_limit", query: {state: "set", percent: percent})
+      api.post("/vehicles/#{id}/command/set_charge_limit", query: {state: "set", percent: percent})["response"]
     end
 
     def charge_start
-      api.post("/vehicles/#{id}/command/charge_start")
+      api.post("/vehicles/#{id}/command/charge_start")["response"]
     end
 
     def charge_stop
-      api.post("/vehicles/#{id}/command/charge_stop")
+      api.post("/vehicles/#{id}/command/charge_stop")["response"]
     end
 
     def flash_lights

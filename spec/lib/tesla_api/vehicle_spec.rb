@@ -229,6 +229,11 @@ RSpec.describe TeslaApi::Vehicle do
     it "moves the sun roof to 50% open", vcr: {cassette_name: "vehicle-sun_roof_move-50"} do
       expect(vehicle.sun_roof_move(50)["result"]).to eq(true)
     end
+  end
 
+  describe "#remove_start_drive", vcr: {cassette_name: "vehicle-remove_start_drive"} do
+    it "starts the vehicle's keyless driving mode'" do
+      expect(vehicle.remove_start_drive("elon4eva")["result"]).to eq(true)
+    end
   end
 end

@@ -7,12 +7,8 @@ http_interactions:
       encoding: UTF-8
       string: grant_type=password&client_id=<TESLA_CLIENT_ID>&client_secret=<TESLA_CLIENT_SECRET>&email=<TESLA_EMAIL>&password=<TESLA_PASS>
     headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
+      Authorization:
+      - Bearer 62d3a001566ba9e334f93ef14c03bdf6d6cbee80aaa48b6a790f8eb00a8034e7
   response:
     status:
       code: 200
@@ -21,7 +17,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 17 Dec 2014 00:57:44 GMT
+      - Wed, 17 Dec 2014 01:32:37 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -36,15 +32,17 @@ http_interactions:
       - no-cache
       X-Ua-Compatible:
       - IE=Edge,chrome=1
+      Etag:
+      - '"dfc073e1732fc7adbaf98d23e01e2659"'
       X-Request-Id:
-      - df9a8d089f78b292ccca214428a1a83c
+      - 2365e6b62e4bc50faa9cc3d3aa68520e
       X-Runtime:
-      - '0.342997'
+      - '0.460473'
     body:
       encoding: UTF-8
-      string: '{"access_token":"a7cd0d057e72180c99a86a52ae1a7d5168cc055f2f162c1f4ae79b43b4897a6f","token_type":"bearer","expires_in":7776000}'
+      string: '{"access_token":"ad890005a62335f6330e91194985fc9338cbfaf4fd4e16323082d505a967f572","token_type":"bearer","expires_in":7776000}'
     http_version: 
-  recorded_at: Wed, 17 Dec 2014 00:57:46 GMT
+  recorded_at: Wed, 17 Dec 2014 01:32:40 GMT
 - request:
     method: get
     uri: https://owner-api.teslamotors.com/api/1/vehicles
@@ -53,7 +51,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer a7cd0d057e72180c99a86a52ae1a7d5168cc055f2f162c1f4ae79b43b4897a6f
+      - Bearer ad890005a62335f6330e91194985fc9338cbfaf4fd4e16323082d505a967f572
   response:
     status:
       code: 200
@@ -62,7 +60,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 17 Dec 2014 00:57:45 GMT
+      - Wed, 17 Dec 2014 01:32:39 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -74,27 +72,27 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - '"92bf165299826af7b9ed0b8f3886e15e"'
+      - '"c52908b8db9336f89e7a1602f3b2a458"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - da3140ec153725f289d8f912ab22c1f5
+      - 87980b26c56ec1a12eeb8b76903fa78b
       X-Runtime:
-      - '0.166178'
+      - '0.124812'
     body:
       encoding: UTF-8
-      string: '{"response":[{"color":null,"display_name":"Nikola","id":1514029006966957156,"option_codes":"MS01,RENA,TM00,DRLH,PF00,BT85,PBCW,RFPO,WT19,IBMB,IDPB,TR00,SU01,SC01,TP01,AU01,CH00,HP00,PA00,PS00,AD02,X020,X025,X001,X003,X007,X011,X013,COUS","vehicle_id":490215852,"vin":"5YJSA1CN5CFP01657","tokens":["91a139ce322eed65","493cead2e5ab6535"],"state":"online","remote_start_enabled":true,"calendar_enabled":true,"notifications_enabled":true}],"count":1}'
+      string: '{"response":[{"color":null,"display_name":"Nikola","id":1514029006966957156,"option_codes":"MS01,RENA,TM00,DRLH,PF00,BT85,PBCW,RFPO,WT19,IBMB,IDPB,TR00,SU01,SC01,TP01,AU01,CH00,HP00,PA00,PS00,AD02,X020,X025,X001,X003,X007,X011,X013,COUS","vehicle_id":490215852,"vin":"5YJSA1CN5CFP01657","tokens":["b1278e37b13e8df2","b2fd1ad42f706a73"],"state":"online","remote_start_enabled":true,"calendar_enabled":true,"notifications_enabled":true}],"count":1}'
     http_version: 
-  recorded_at: Wed, 17 Dec 2014 00:57:46 GMT
+  recorded_at: Wed, 17 Dec 2014 01:32:41 GMT
 - request:
     method: post
-    uri: https://owner-api.teslamotors.com/api/1/vehicles/1514029006966957156/command/set_charge_limit?percent=50&state=set
+    uri: https://owner-api.teslamotors.com/api/1/vehicles/1514029006966957156/command/set_charge_limit
     body:
       encoding: UTF-8
-      string: ''
+      string: percent=50
     headers:
       Authorization:
-      - Bearer a7cd0d057e72180c99a86a52ae1a7d5168cc055f2f162c1f4ae79b43b4897a6f
+      - Bearer ad890005a62335f6330e91194985fc9338cbfaf4fd4e16323082d505a967f572
   response:
     status:
       code: 200
@@ -103,7 +101,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 17 Dec 2014 00:57:46 GMT
+      - Wed, 17 Dec 2014 01:32:40 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -119,12 +117,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7e65d53322bad126aaa47a43afb7b521
+      - 65a8a476e70b2c86b71aceaca9e34c50
       X-Runtime:
-      - '0.267563'
+      - '0.196873'
     body:
       encoding: UTF-8
       string: '{"response":{"reason":"","result":true}}'
     http_version: 
-  recorded_at: Wed, 17 Dec 2014 00:57:48 GMT
+  recorded_at: Wed, 17 Dec 2014 01:32:41 GMT
 recorded_with: VCR 2.9.3

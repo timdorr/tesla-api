@@ -68,7 +68,7 @@ module TeslaApi
     end
 
     def set_charge_limit(percent)
-      api.post("/vehicles/#{id}/command/set_charge_limit", query: {state: "set", percent: percent})["response"]
+      api.post("/vehicles/#{id}/command/set_charge_limit", body: {percent: percent})["response"]
     end
 
     def charge_start
@@ -96,23 +96,23 @@ module TeslaApi
     end
 
     def set_temps(driver_temp, passenger_temp)
-      api.post("/vehicles/#{id}/command/set_temps", query: {driver_temp: driver_temp, passenger_temp: passenger_temp})
+      api.post("/vehicles/#{id}/command/set_temps", body: {driver_temp: driver_temp, passenger_temp: passenger_temp})["response"]
     end
 
     def auto_conditioning_start
-      api.post("/vehicles/#{id}/command/auto_conditioning_start")
+      api.post("/vehicles/#{id}/command/auto_conditioning_start")["response"]
     end
 
     def auto_conditioning_stop
-      api.post("/vehicles/#{id}/command/auto_conditioning_stop")
+      api.post("/vehicles/#{id}/command/auto_conditioning_stop")["response"]
     end
 
     def sun_roof_control(state)
-      api.post("/vehicles/#{id}/command/sun_roof_control", query: {state: state})
+      api.post("/vehicles/#{id}/command/sun_roof_control", body: {state: state})["response"]
     end
 
     def sun_roof_move(percent)
-      api.post("/vehicles/#{id}/command/sun_roof_control", query: {state: "move", percent: percent})
+      api.post("/vehicles/#{id}/command/sun_roof_control", body: {state: "move", percent: percent})["response"]
     end
 
     # Streaming

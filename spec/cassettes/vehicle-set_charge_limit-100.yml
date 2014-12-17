@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 17 Dec 2014 00:57:32 GMT
+      - Wed, 17 Dec 2014 01:32:35 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -37,14 +37,14 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       X-Request-Id:
-      - 81476ab0c102bb3faf8d66ad7713c346
+      - a37959a7b3594cb9f1a56dc605e0bcc4
       X-Runtime:
-      - '0.558195'
+      - '0.410277'
     body:
       encoding: UTF-8
-      string: '{"access_token":"f616d124b65f4f7d7e95e61d6acd4a6d03e74097e2bc9286619707aa4bd340ea","token_type":"bearer","expires_in":7776000}'
+      string: '{"access_token":"62d3a001566ba9e334f93ef14c03bdf6d6cbee80aaa48b6a790f8eb00a8034e7","token_type":"bearer","expires_in":7776000}'
     http_version: 
-  recorded_at: Wed, 17 Dec 2014 00:57:34 GMT
+  recorded_at: Wed, 17 Dec 2014 01:32:36 GMT
 - request:
     method: get
     uri: https://owner-api.teslamotors.com/api/1/vehicles
@@ -53,7 +53,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer f616d124b65f4f7d7e95e61d6acd4a6d03e74097e2bc9286619707aa4bd340ea
+      - Bearer 62d3a001566ba9e334f93ef14c03bdf6d6cbee80aaa48b6a790f8eb00a8034e7
   response:
     status:
       code: 200
@@ -62,7 +62,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 17 Dec 2014 00:57:32 GMT
+      - Wed, 17 Dec 2014 01:32:35 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -74,27 +74,27 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - '"92bf165299826af7b9ed0b8f3886e15e"'
+      - '"c52908b8db9336f89e7a1602f3b2a458"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9a6d132c1984409f5c3d927bb224f723
+      - 5e1c692deda17a6d324a0c217ebe4196
       X-Runtime:
-      - '0.063238'
+      - '0.160918'
     body:
       encoding: UTF-8
-      string: '{"response":[{"color":null,"display_name":"Nikola","id":1514029006966957156,"option_codes":"MS01,RENA,TM00,DRLH,PF00,BT85,PBCW,RFPO,WT19,IBMB,IDPB,TR00,SU01,SC01,TP01,AU01,CH00,HP00,PA00,PS00,AD02,X020,X025,X001,X003,X007,X011,X013,COUS","vehicle_id":490215852,"vin":"5YJSA1CN5CFP01657","tokens":["91a139ce322eed65","493cead2e5ab6535"],"state":"online","remote_start_enabled":true,"calendar_enabled":true,"notifications_enabled":true}],"count":1}'
+      string: '{"response":[{"color":null,"display_name":"Nikola","id":1514029006966957156,"option_codes":"MS01,RENA,TM00,DRLH,PF00,BT85,PBCW,RFPO,WT19,IBMB,IDPB,TR00,SU01,SC01,TP01,AU01,CH00,HP00,PA00,PS00,AD02,X020,X025,X001,X003,X007,X011,X013,COUS","vehicle_id":490215852,"vin":"5YJSA1CN5CFP01657","tokens":["b1278e37b13e8df2","b2fd1ad42f706a73"],"state":"online","remote_start_enabled":true,"calendar_enabled":true,"notifications_enabled":true}],"count":1}'
     http_version: 
-  recorded_at: Wed, 17 Dec 2014 00:57:34 GMT
+  recorded_at: Wed, 17 Dec 2014 01:32:37 GMT
 - request:
     method: post
-    uri: https://owner-api.teslamotors.com/api/1/vehicles/1514029006966957156/command/set_charge_limit?percent=100&state=set
+    uri: https://owner-api.teslamotors.com/api/1/vehicles/1514029006966957156/command/set_charge_limit
     body:
       encoding: UTF-8
-      string: ''
+      string: percent=100
     headers:
       Authorization:
-      - Bearer f616d124b65f4f7d7e95e61d6acd4a6d03e74097e2bc9286619707aa4bd340ea
+      - Bearer 62d3a001566ba9e334f93ef14c03bdf6d6cbee80aaa48b6a790f8eb00a8034e7
   response:
     status:
       code: 200
@@ -103,7 +103,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 17 Dec 2014 00:57:33 GMT
+      - Wed, 17 Dec 2014 01:32:36 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -119,12 +119,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - bb4175dc6afb788ed5430b753a334d5f
+      - 82054b3b03a8456718c070ffeb884293
       X-Runtime:
-      - '0.203214'
+      - '0.726342'
     body:
       encoding: UTF-8
       string: '{"response":{"reason":"","result":true}}'
     http_version: 
-  recorded_at: Wed, 17 Dec 2014 00:57:35 GMT
+  recorded_at: Wed, 17 Dec 2014 01:32:38 GMT
 recorded_with: VCR 2.9.3

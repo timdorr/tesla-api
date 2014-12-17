@@ -7,12 +7,8 @@ http_interactions:
       encoding: UTF-8
       string: grant_type=password&client_id=<TESLA_CLIENT_ID>&client_secret=<TESLA_CLIENT_SECRET>&email=<TESLA_EMAIL>&password=<TESLA_PASS>
     headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
+      Authorization:
+      - Bearer ad890005a62335f6330e91194985fc9338cbfaf4fd4e16323082d505a967f572
   response:
     status:
       code: 200
@@ -21,7 +17,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 17 Dec 2014 00:58:43 GMT
+      - Wed, 17 Dec 2014 01:32:40 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -36,15 +32,17 @@ http_interactions:
       - no-cache
       X-Ua-Compatible:
       - IE=Edge,chrome=1
+      Etag:
+      - '"3feccc557a27daf69e3786a1943b714c"'
       X-Request-Id:
-      - d31dc87fb0392f3169c60782dc917337
+      - 75dc56cf7ccc55c2889cd05024b2acf8
       X-Runtime:
-      - '0.447703'
+      - '0.394458'
     body:
       encoding: UTF-8
-      string: '{"access_token":"c52467eba936bc29ff3754e8e2111ed862eaced10ba6b0c224af0542f7f7c4cd","token_type":"bearer","expires_in":7776000}'
+      string: '{"access_token":"0383e3ae4c7d8e14ba17af871cf5211c426ff7e1639bec095d27647f4d133c8b","token_type":"bearer","expires_in":7776000}'
     http_version: 
-  recorded_at: Wed, 17 Dec 2014 00:58:45 GMT
+  recorded_at: Wed, 17 Dec 2014 01:32:42 GMT
 - request:
     method: get
     uri: https://owner-api.teslamotors.com/api/1/vehicles
@@ -53,7 +51,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer c52467eba936bc29ff3754e8e2111ed862eaced10ba6b0c224af0542f7f7c4cd
+      - Bearer 0383e3ae4c7d8e14ba17af871cf5211c426ff7e1639bec095d27647f4d133c8b
   response:
     status:
       code: 200
@@ -62,7 +60,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 17 Dec 2014 00:58:44 GMT
+      - Wed, 17 Dec 2014 01:32:41 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -74,27 +72,27 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - '"92bf165299826af7b9ed0b8f3886e15e"'
+      - '"c52908b8db9336f89e7a1602f3b2a458"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7ecc6d10321d6690996a71764dee5a16
+      - 67676bef6a5449e4176955cf1d3e6880
       X-Runtime:
-      - '0.186666'
+      - '0.099597'
     body:
       encoding: UTF-8
-      string: '{"response":[{"color":null,"display_name":"Nikola","id":1514029006966957156,"option_codes":"MS01,RENA,TM00,DRLH,PF00,BT85,PBCW,RFPO,WT19,IBMB,IDPB,TR00,SU01,SC01,TP01,AU01,CH00,HP00,PA00,PS00,AD02,X020,X025,X001,X003,X007,X011,X013,COUS","vehicle_id":490215852,"vin":"5YJSA1CN5CFP01657","tokens":["91a139ce322eed65","493cead2e5ab6535"],"state":"online","remote_start_enabled":true,"calendar_enabled":true,"notifications_enabled":true}],"count":1}'
+      string: '{"response":[{"color":null,"display_name":"Nikola","id":1514029006966957156,"option_codes":"MS01,RENA,TM00,DRLH,PF00,BT85,PBCW,RFPO,WT19,IBMB,IDPB,TR00,SU01,SC01,TP01,AU01,CH00,HP00,PA00,PS00,AD02,X020,X025,X001,X003,X007,X011,X013,COUS","vehicle_id":490215852,"vin":"5YJSA1CN5CFP01657","tokens":["b1278e37b13e8df2","b2fd1ad42f706a73"],"state":"online","remote_start_enabled":true,"calendar_enabled":true,"notifications_enabled":true}],"count":1}'
     http_version: 
-  recorded_at: Wed, 17 Dec 2014 00:58:46 GMT
+  recorded_at: Wed, 17 Dec 2014 01:32:43 GMT
 - request:
     method: post
-    uri: https://owner-api.teslamotors.com/api/1/vehicles/1514029006966957156/command/set_charge_limit?percent=1&state=set
+    uri: https://owner-api.teslamotors.com/api/1/vehicles/1514029006966957156/command/set_charge_limit
     body:
       encoding: UTF-8
-      string: ''
+      string: percent=1
     headers:
       Authorization:
-      - Bearer c52467eba936bc29ff3754e8e2111ed862eaced10ba6b0c224af0542f7f7c4cd
+      - Bearer 0383e3ae4c7d8e14ba17af871cf5211c426ff7e1639bec095d27647f4d133c8b
   response:
     status:
       code: 200
@@ -103,7 +101,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 17 Dec 2014 00:58:45 GMT
+      - Wed, 17 Dec 2014 01:32:42 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -119,14 +117,14 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - edda31dd8d8fa45aa7f12dc29d59ed11
+      - a828f318df037876b5ae5d35a92807ca
       X-Runtime:
-      - '0.958990'
+      - '0.294849'
     body:
       encoding: UTF-8
       string: '{"response":{"reason":"","result":true}}'
     http_version: 
-  recorded_at: Wed, 17 Dec 2014 00:58:47 GMT
+  recorded_at: Wed, 17 Dec 2014 01:32:44 GMT
 - request:
     method: get
     uri: https://owner-api.teslamotors.com/api/1/vehicles/1514029006966957156/data_request/charge_state
@@ -135,7 +133,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer c52467eba936bc29ff3754e8e2111ed862eaced10ba6b0c224af0542f7f7c4cd
+      - Bearer 0383e3ae4c7d8e14ba17af871cf5211c426ff7e1639bec095d27647f4d133c8b
   response:
     status:
       code: 200
@@ -144,11 +142,11 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 17 Dec 2014 00:58:46 GMT
+      - Wed, 17 Dec 2014 01:32:43 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '936'
+      - '926'
       Connection:
       - keep-alive
       Status:
@@ -156,16 +154,16 @@ http_interactions:
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Etag:
-      - '"7b333df4258e48ecb3cb92923d4b44b8"'
+      - '"21829ac527d051a3b7c22e6a9e0aab6b"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 251aa5b649fee40f36f6d0c32447433f
+      - 488b90de366bc65dc5a79e21ae3b5d30
       X-Runtime:
-      - '0.201059'
+      - '0.191142'
     body:
       encoding: UTF-8
-      string: '{"response":{"charging_state":"Disconnected","charge_limit_soc":50,"charge_limit_soc_std":90,"charge_limit_soc_min":50,"charge_limit_soc_max":100,"charge_to_max_range":false,"battery_heater_on":null,"not_enough_power_to_heat":false,"max_range_charge_counter":0,"fast_charger_present":false,"fast_charger_type":"<invalid>","battery_range":195.84,"est_battery_range":140.72,"ideal_battery_range":221.71,"battery_level":78,"usable_battery_level":78,"battery_current":0.0,"charge_energy_added":33.8,"charge_miles_added_rated":112.5,"charge_miles_added_ideal":127.5,"charger_voltage":3,"charger_pilot_current":null,"charger_actual_current":2,"charger_power":0,"time_to_full_charge":0.0,"charge_rate":0.0,"charge_port_door_open":false,"motorized_charge_port":false,"scheduled_charging_start_time":null,"scheduled_charging_pending":false,"user_charge_enable_request":null,"charge_enable_request":true,"eu_vehicle":false,"charger_phases":null}}'
+      string: '{"response":{"charging_state":"Stopped","charge_limit_soc":50,"charge_limit_soc_std":90,"charge_limit_soc_min":50,"charge_limit_soc_max":100,"charge_to_max_range":false,"battery_heater_on":null,"not_enough_power_to_heat":false,"max_range_charge_counter":0,"fast_charger_present":false,"fast_charger_type":"<invalid>","battery_range":195.84,"est_battery_range":140.72,"ideal_battery_range":221.71,"battery_level":78,"usable_battery_level":78,"battery_current":-0.1,"charge_energy_added":0.0,"charge_miles_added_rated":0.0,"charge_miles_added_ideal":0.0,"charger_voltage":0,"charger_pilot_current":40,"charger_actual_current":0,"charger_power":0,"time_to_full_charge":0.0,"charge_rate":0.0,"charge_port_door_open":true,"motorized_charge_port":false,"scheduled_charging_start_time":null,"scheduled_charging_pending":false,"user_charge_enable_request":false,"charge_enable_request":false,"eu_vehicle":false,"charger_phases":null}}'
     http_version: 
-  recorded_at: Wed, 17 Dec 2014 00:58:48 GMT
+  recorded_at: Wed, 17 Dec 2014 01:32:44 GMT
 recorded_with: VCR 2.9.3

@@ -176,4 +176,59 @@ RSpec.describe TeslaApi::Vehicle do
       expect(vehicle.door_lock["result"]).to eq(true)
     end
   end
+
+  describe "#set_temps" do
+    it "sets the desired temperature in the car to 70", vcr: {cassette_name: "vehicle-set_temps-70-70"} do
+      expect(vehicle.set_temps(20.9, 20.9)["result"]).to eq(true)
+    end
+
+    it "sets the desired temperature in the car to 75 and 65", vcr: {cassette_name: "vehicle-set_temps-75-65"} do
+      expect(vehicle.set_temps(23.7, 23.7)["result"]).to eq(true)
+    end
+  end
+
+  describe "#auto_conditioning_start", vcr: {cassette_name: "vehicle-auto_conditioning_start"} do
+    it "starts the HVAC system" do
+      expect(vehicle.auto_conditioning_start["result"]).to eq(true)
+    end
+  end
+
+  describe "#auto_conditioning_stop", vcr: {cassette_name: "vehicle-auto_conditioning_stop"} do
+    it "stops the HVAC system" do
+      expect(vehicle.auto_conditioning_stop["result"]).to eq(true)
+    end
+  end
+
+  describe "#sun_roof_control" do
+    it "opens the sun roof", vcr: {cassette_name: "vehicle-sun_roof_control-open"} do
+      expect(vehicle.sun_roof_control("open")["result"]).to eq(true)
+    end
+
+    it "closes the sun roof", vcr: {cassette_name: "vehicle-sun_roof_control-close"} do
+      expect(vehicle.sun_roof_control("close")["result"]).to eq(true)
+    end
+
+    it "vents the sun roof", vcr: {cassette_name: "vehicle-sun_roof_control-vent"} do
+      expect(vehicle.sun_roof_control("vent")["result"]).to eq(true)
+    end
+
+    it "sets the sun roof to the comfort (80%) setting", vcr: {cassette_name: "vehicle-sun_roof_control-comfort"} do
+      expect(vehicle.sun_roof_control("comfort")["result"]).to eq(true)
+    end
+  end
+
+  describe "#sun_roof_move" do
+    it "moves the sun roof to 100% open", vcr: {cassette_name: "vehicle-sun_roof_move-100"} do
+      expect(vehicle.sun_roof_move(100)["result"]).to eq(true)
+    end
+
+    it "moves the sun roof to closed", vcr: {cassette_name: "vehicle-sun_roof_move-0"} do
+      expect(vehicle.sun_roof_move(0)["result"]).to eq(true)
+    end
+
+    it "moves the sun roof to 50% open", vcr: {cassette_name: "vehicle-sun_roof_move-50"} do
+      expect(vehicle.sun_roof_move(50)["result"]).to eq(true)
+    end
+
+  end
 end

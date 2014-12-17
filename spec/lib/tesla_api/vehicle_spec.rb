@@ -152,4 +152,28 @@ RSpec.describe TeslaApi::Vehicle do
       expect(vehicle.charge_stop["result"]).to eq(true)
     end
   end
+
+  describe "#flash_lights", vcr: {cassette_name: "vehicle-flash_lights"} do
+    it "flashes the vehicle's lights" do
+      expect(vehicle.flash_lights["result"]).to eq(true)
+    end
+  end
+
+  describe "#honk_horn", vcr: {cassette_name: "vehicle-honk_horn"} do
+    it "honks the vehicle's horn" do
+      expect(vehicle.honk_horn["result"]).to eq(true)
+    end
+  end
+
+  describe "#door_unlock", vcr: {cassette_name: "vehicle-door_unlock"} do
+    it "unlocks the vehicle's doors" do
+      expect(vehicle.door_unlock["result"]).to eq(true)
+    end
+  end
+
+  describe "#door_lock", vcr: {cassette_name: "vehicle-door_lock"} do
+    it "locks the vehicle's doors" do
+      expect(vehicle.door_lock["result"]).to eq(true)
+    end
+  end
 end

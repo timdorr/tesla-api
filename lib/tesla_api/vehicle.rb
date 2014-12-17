@@ -80,19 +80,19 @@ module TeslaApi
     end
 
     def flash_lights
-      api.post("/vehicles/#{id}/command/flash_lights")
+      api.post("/vehicles/#{id}/command/flash_lights")["response"]
     end
 
     def honk_horn
-      api.post("/vehicles/#{id}/command/honk_horn")
+      api.post("/vehicles/#{id}/command/honk_horn")["response"]
     end
 
     def door_unlock
-      api.post("/vehicles/#{id}/command/door_unlock")
+      api.post("/vehicles/#{id}/command/door_unlock")["response"]
     end
 
     def door_lock
-      api.post("/vehicles/#{id}/command/door_lock")
+      api.post("/vehicles/#{id}/command/door_lock")["response"]
     end
 
     def set_temps(driver_temp, passenger_temp)

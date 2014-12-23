@@ -18,7 +18,12 @@ RSpec.describe TeslaApi::Client do
       expect(a_request(:post, "https://#{URI.parse(tesla_api.class.base_uri).host}/oauth/token")).to have_been_made.once
     end
 
-    it "sets a Bearer token" do
+    it "obtains a Bearer token" do
+      tesla_api.login!(ENV["TESLA_PASS"])
+      expect(tesla_api.token).to match(/[a-z0-9]{32}/)
+    end
+
+    it "sets a Bearer token header" do
       tesla_api.login!(ENV["TESLA_PASS"])
       expect(tesla_api.class.headers).to include({"Authorization" => /Bearer [a-z0-9]{32}/})
     end

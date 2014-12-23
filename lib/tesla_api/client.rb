@@ -4,10 +4,20 @@ module TeslaApi
     base_uri "https://owner-api.teslamotors.com/api/1"
     format :json
 
-    attr_reader :email
+    attr_reader :email, :token, :client_id, :client_secret
 
-    def initialize(email, password, client_id, client_secret)
+    def initialize(email, client_id = ENV["TESLA_CLIENT_ID"], client_secret = ENV["TESLA_CLIENT_SECRET"])
       @email = email
+      @client_id = client_id
+      @client_secret = client_secret
+    end
+
+    def token=(token)
+      @token = token
+      self.class.headers "Authorization" => "Bearer #{token}"
+    end
+
+    def login!(password)
       response = self.class.post(
           "https://owner-api.teslamotors.com/oauth/token",
           body: {
@@ -18,7 +28,8 @@ module TeslaApi
               "password" => password
           }
       )
-      self.class.headers "Authorization" => "Bearer #{response["access_token"]}"
+
+      self.token = response["access_token"]
     end
 
     def vehicles

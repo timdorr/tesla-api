@@ -11,6 +11,7 @@ end
 Coveralls::Output.silent = true
 
 require 'dotenv'
+require 'faker'
 require 'vcr'
 require 'webmock/rspec'
 

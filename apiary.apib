@@ -613,3 +613,51 @@ Controls the car's panoramic roof, if installed.
                 "reason": ""
               }
             }
+
+## Remote Start [POST /api/1/vehicles/{vehicle_id}/command/remote_start_drive?password={password}]
+Start the car for keyless driving. Must start driving within 2 minutes of issuing this request.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
++ Parameters
+
+    + vehicle_id: `1` (number) - The id of the Vehicle.
+    + password: `edisonsux` (string) - The password to the authenticated my.teslamotors.com account.
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "response": {
+                "result": true,
+                "reason": ""
+              }
+            }
+
+## Open Trunk/Frunk [POST /api/1/vehicles/{vehicle_id}/command/trunk_open]
+Open the trunk or frunk. Currently inoperable.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
++ Parameters
+
+    + vehicle_id: `1` (number) - The id of the Vehicle.
+    + which_trunk: `rear` (string) - The trunk to open. `rear` is the only one known currently.
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "response": {
+                "result": true,
+                "reason": ""
+              }
+            }

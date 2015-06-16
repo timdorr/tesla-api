@@ -26,9 +26,9 @@ You must provide the "Authorization: Bearer {access_token}"
     + Body
 
             {
-                "access_token": "abc123",
-                "token_type": "bearer",
-                "expires_in": 7776000
+              "access_token": "abc123",
+              "token_type": "bearer",
+              "expires_in": 7776000
             }
 
 # Group Vehicles
@@ -39,11 +39,17 @@ A logged in user can have multiple vehicles under their account. This resource i
 ### List all Vehicles [GET]
 Retrieve a list of your owned vehicles (includes vehicles not yet shipped!)
 
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
 + Response 200 (application/json)
 
     + Body
 
-            [{
+            {
+              "response": [{
                 "color": null,
                 "display_name": null,
                 "id": 321,
@@ -53,17 +59,31 @@ Retrieve a list of your owned vehicles (includes vehicles not yet shipped!)
                 "vin": "5YJSA1CN5CFP01657",
                 "tokens": ["x", "x"],
                 "state": "online"
-            }]
+              }],
+              "count":1
+            }
 
 
 ## State and Settings [/api/1/vehicles/{vehicle_id}]
 These resources are read-only and determine the state of the vehicle's various sub-systems.
 
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
 + Parameters
+
     + vehicle_id: `1` (number) - The id of the Vehicle.
 
 ## Mobile Access [GET /api/1/vehicles/{vehicle_id}/mobile_enabled]
 Determines if mobile access to the vehicle is enabled.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
 + Parameters
 
     + vehicle_id: `1` (number) - The id of the Vehicle.
@@ -73,12 +93,17 @@ Determines if mobile access to the vehicle is enabled.
     + Body
 
             {
-                "reason":"",
-                "result":true
+                "response": true
             }
 
 ## Charge State [GET /api/1/vehicles/{vehicle_id}/command/charge_state]
 Returns the state of charge in the battery.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
 + Parameters
 
     + vehicle_id: `1` (number) - The id of the Vehicle.
@@ -88,6 +113,7 @@ Returns the state of charge in the battery.
     + Body
 
             {
+              "response": {
                 "charging_state": "Complete",  // "Charging", ??
                 "charge_to_max_range": false,  // current std/max-range setting
                 "max_range_charge_counter": 0,
@@ -106,10 +132,17 @@ Returns the state of charge in the battery.
                 "time_to_full_charge": null,   // valid only while charging
                 "charge_rate": -1.0,           // float mi/hr charging or -1 if not charging
                 "charge_port_door_open": true
+              }
             }
 
 ## Climate Settings [GET /api/1/vehicles/{vehicle_id}/command/climate_state]
 Returns the current temperature and climate control state.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
 + Parameters
 
     + vehicle_id: `1` (number) - The id of the Vehicle.
@@ -119,6 +152,7 @@ Returns the current temperature and climate control state.
     + Body
 
             {
+              "response": {
                 "inside_temp": 17.0,          // degC inside car
                 "outside_temp": 9.5,          // degC outside car or null
                 "driver_temp_setting": 22.6,  // degC of driver temperature setpoint
@@ -127,10 +161,17 @@ Returns the current temperature and climate control state.
                 "is_front_defroster_on": null, // null or boolean as integer?
                 "is_rear_defroster_on": false,
                 "fan_status": 0               // fan speed 0-6 or null
+              }
             }
 
 ## Driving and Position [GET /api/1/vehicles/{vehicle_id}/command/drive_state]
 Returns the driving and position state of the vehicle.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
 + Parameters
 
     + vehicle_id: `1` (number) - The id of the Vehicle.
@@ -140,16 +181,24 @@ Returns the driving and position state of the vehicle.
     + Body
 
             {
+              "response": {
                 "shift_state": null,          //
                 "speed": null,                //
                 "latitude": 33.794839,        // degrees N of equator
                 "longitude": -84.401593,      // degrees W of the prime meridian
                 "heading": 4,                 // integer compass heading, 0-359
                 "gps_as_of": 1359863204       // Unix timestamp of GPS fix
+              }
             }
 
 ## GUI Settings [GET /api/1/vehicles/{vehicle_id}/command/gui_settings]
 Returns various information about the GUI settings of the car, such as unit format and range display.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
 + Parameters
 
     + vehicle_id: `1` (number) - The id of the Vehicle.
@@ -159,15 +208,23 @@ Returns various information about the GUI settings of the car, such as unit form
     + Body
 
             {
+              "response": {
                 "gui_distance_units": "mi/hr",
                 "gui_temperature_units": "F",
                 "gui_charge_rate_units": "mi/hr",
                 "gui_24_hour_time": false,
                 "gui_range_display": "Rated"
+              }
             }
 
 ## Vehicle State [GET /api/1/vehicles/{vehicle_id}/command/vehicle_state]
 Returns the vehicle's physical state, such as which doors are open.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
 + Parameters
 
     + vehicle_id: `1` (number) - The id of the Vehicle.
@@ -177,6 +234,7 @@ Returns the vehicle's physical state, such as which doors are open.
     + Body
 
             {
+              "response": {
                 "df": false,                  // driver's side front door open
                 "dr": false,                  // driver's side rear door open
                 "pf": false,                  // passenger's side front door open
@@ -193,13 +251,20 @@ Returns the vehicle's physical state, such as which doors are open.
                 "has_spoiler": false,         // spoiler is installed
                 "roof_color": "Colored",      // "None" for panoramic roof
                 "perf_config": "Base"
+              }
             }
 
 # Group Vehicle Commands
 These commands alter the vehicles state, and return result (true/false) to indicate success, and if failure reason contains the cause of failure.
 
-## GET /api/1/vehicles/{vehicle_id}/command/charge_port_door_open
-Open the charge port.
+## Wake Up Car [POST /api/1/vehicles/{vehicle_id}/wake_up]
+Wakes up the car from the sleep state. Necessary to get some data from the car.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
 + Parameters
 
     + vehicle_id: `1` (number) - The id of the Vehicle.
@@ -209,12 +274,20 @@ Open the charge port.
     + Body
 
             {
-              "result": false,
-              "reason": "failure reason"
+              "response": {
+                "result": true,
+                "reason": ""
+              }
             }
 
-## GET /api/1/vehicles/{vehicle_id}/command/charge_standard
-Set the charge mode to standard (~90% under the new percentage system introduced in 4.5).
+## Open Charge Port [POST /api/1/vehicles/{vehicle_id}/command/charge_port_door_open]
+Opens the charge port. Does not close the charge port (for now...)
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
 + Parameters
 
     + vehicle_id: `1` (number) - The id of the Vehicle.
@@ -224,12 +297,20 @@ Set the charge mode to standard (~90% under the new percentage system introduced
     + Body
 
             {
-              "result": false,
-              "reason": "failure reason"
+              "response": {
+                "result": true,
+                "reason": ""
+              }
             }
 
-## GET /api/1/vehicles/{vehicle_id}/command/charge_max_range
-Set the charge mode to max range (100% under the new percentage system introduced in 4.5).
+## Set Charge Limit to Standard [POST /api/1/vehicles/{vehicle_id}/command/charge_standard]
+Set the charge mode to standard (90% under the new percentage system introduced in 4.5).
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
 + Parameters
 
     + vehicle_id: `1` (number) - The id of the Vehicle.
@@ -239,28 +320,67 @@ Set the charge mode to max range (100% under the new percentage system introduce
     + Body
 
             {
-              "result": false,
-              "reason": "failure reason"
+              "response": {
+                "result": false,
+                "reason": "already_standard"
+              }
             }
 
-## GET /api/1/vehicles/{vehicle_id}/command/set_charge_limit?percent={limit_value}
+## Set Charge Limit to Max Range [POST /api/1/vehicles/{vehicle_id}/command/charge_max_range]
+Set the charge mode to max range (100% under the new percentage system introduced in 4.5). Use sparingly!
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
++ Parameters
+
+    + vehicle_id: `1` (number) - The id of the Vehicle.
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "response": {
+                "result": false,
+                "reason": "already_max_range"
+              }
+            }
+
+## Set Charge Limit [POST /api/1/vehicles/{vehicle_id}/command/set_charge_limit?percent={limit_value}]
 Set the charge limit to a custom percentage.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
 + Parameters
 
     + vehicle_id: `1` (number) - The id of the Vehicle.
-    + limit_value (number) ... The percentage value
+    + limit_value: `75` (number) - The percentage value
 
 + Response 200 (application/json)
 
     + Body
 
             {
-              "result": false,
-              "reason": "failure reason"
+              "response": {
+                "result": true,
+                "reason": ""
+              }
             }
 
-## GET /api/1/vehicles/{vehicle_id}/command/charge_start
-Start charging.
+## Start Charging [POST /api/1/vehicles/{vehicle_id}/command/charge_start]
+Start charging. Must be plugged in, have power available, and not have reached your charge limit.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
 + Parameters
 
     + vehicle_id: `1` (number) - The id of the Vehicle.
@@ -270,12 +390,20 @@ Start charging.
     + Body
 
             {
-              "result": false,
-              "reason": "failure reason" // "already started" if a charge is in progress
+              "response": {
+                "result": true,
+                "reason": "" // "already_started" if a charge is in progress
+              }
             }
 
-## GET /api/1/vehicles/{vehicle_id}/command/charge_stop
-Stop charging.
+## Stop Charging [POST /api/1/vehicles/{vehicle_id}/command/charge_stop]
+Stop charging. Must already be charging.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
 + Parameters
 
     + vehicle_id: `1` (number) - The id of the Vehicle.
@@ -285,12 +413,20 @@ Stop charging.
     + Body
 
             {
-              "result": false,
-              "reason": "failure reason" // "not_charging" if a charge was not in progress
+              "response": {
+                "result": true,
+                "reason": "" // "not_charging" if a charge was not in progress
+              }
             }
 
-## GET /api/1/vehicles/{vehicle_id}/command/flash_lights
+## Flash Lights [POST /api/1/vehicles/{vehicle_id}/command/flash_lights]
 Flash the lights once.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
 + Parameters
 
     + vehicle_id: `1` (number) - The id of the Vehicle.
@@ -300,12 +436,20 @@ Flash the lights once.
     + Body
 
             {
-              "result": false,
-              "reason": "failure reason"
+              "response": {
+                "result": true,
+                "reason": ""
+              }
             }
 
-## GET /api/1/vehicles/{vehicle_id}/command/honk_horn
+## Honk Horn [POST /api/1/vehicles/{vehicle_id}/command/honk_horn]
 Honk the horn once.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
 + Parameters
 
     + vehicle_id: `1` (number) - The id of the Vehicle.
@@ -315,12 +459,20 @@ Honk the horn once.
     + Body
 
             {
-              "result": false,
-              "reason": "failure reason"
+              "response": {
+                "result": true,
+                "reason": ""
+              }
             }
 
-## GET /api/1/vehicles/{vehicle_id}/command/door_unlock
+## Unlock Doors [POST /api/1/vehicles/{vehicle_id}/command/door_unlock]
 Unlock the car's doors.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
 + Parameters
 
     + vehicle_id: `1` (number) - The id of the Vehicle.
@@ -330,12 +482,20 @@ Unlock the car's doors.
     + Body
 
             {
-              "result": false,
-              "reason": "failure reason"
+              "response": {
+                "result": true,
+                "reason": ""
+              }
             }
 
-## GET /api/1/vehicles/{vehicle_id}/command/door_lock
+## Lock Doors [POST /api/1/vehicles/{vehicle_id}/command/door_lock]
 Lock the car's doors.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
 + Parameters
 
     + vehicle_id: `1` (number) - The id of the Vehicle.
@@ -345,29 +505,45 @@ Lock the car's doors.
     + Body
 
             {
-              "result": false,
-              "reason": "failure reason"
+              "response": {
+                "result": true,
+                "reason": ""
+              }
             }
 
-## GET /api/1/vehicles/{vehicle_id}/command/set_temps?driver_temp={driver_degC}&passenger_temp={pass_degC}
+## Set Temperature [POST /api/1/vehicles/{vehicle_id}/command/set_temps?driver_temp={driver_degC}&passenger_temp={pass_degC}]
 Set the temperature target for the HVAC system.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
 + Parameters
 
     + vehicle_id: `1` (number) - The id of the Vehicle.
-    + driver_degC (number) ... The desired temperature on the driver's side in celcius.
-    + pass_degC (number) ... The desired temperature on the passenger's side in celcius.
+    + driver_degC: `23.7` (number) - The desired temperature on the driver's side in celcius.
+    + pass_degC: `18.1` (number) - The desired temperature on the passenger's side in celcius.
 
 + Response 200 (application/json)
 
     + Body
 
             {
-              "result": false,
-              "reason": "failure reason"
+              "response": {
+                "result": true,
+                "reason": ""
+              }
             }
 
-## GET /api/1/vehicles/{vehicle_id}/command/auto_conditioning_start
+## Start Air Condition [POST /api/1/vehicles/{vehicle_id}/command/auto_conditioning_start]
 Start the HVAC system. Will cool or heat automatically, depending on set temperature.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
 + Parameters
 
     + vehicle_id: `1` (number) - The id of the Vehicle.
@@ -377,12 +553,20 @@ Start the HVAC system. Will cool or heat automatically, depending on set tempera
     + Body
 
             {
-              "result": false,
-              "reason": "failure reason"
+              "response": {
+                "result": true,
+                "reason": ""
+              }
             }
 
-## GET /api/1/vehicles/{vehicle_id}/command/auto_conditioning_stop
+## Stop Air Condition [POST /api/1/vehicles/{vehicle_id}/command/auto_conditioning_stop]
 Stop the HVAC system.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
 + Parameters
 
     + vehicle_id: `1` (number) - The id of the Vehicle.
@@ -392,28 +576,40 @@ Stop the HVAC system.
     + Body
 
             {
-              "result": false,
-              "reason": "failure reason"
+              "response": {
+                "result": true,
+                "reason": ""
+              }
             }
 
-## GET /api/1/vehicles/{vehicle_id}/command/sun_roof_control?state={state}
+## Move Pano Roof [POST /api/1/vehicles/{vehicle_id}/command/sun_roof_control?state={state}&percent={percent}]
 Controls the car's panoramic roof, if installed.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
 + Parameters
 
     + vehicle_id: `1` (number) - The id of the Vehicle.
-    + state (string)
+    + state: (enum[string])
         The desired state of the panoramic roof. The approximate percent open values for each state are `open` = 100%, `close` = 0%, `comfort` = 80%, and `vent` = ~15%
-        + Values
-            + `open`
-            + `close`
-            + `comfort`
-            + `vent`
+        + Members
+            + `open` - Open the roof fully
+            + `close` - Close the roof completely
+            + `comfort` - Open to the comfort (80%) setting
+            + `vent` - Open the roof to the vent (~15%) setting
+            + `move` - Indicates you will provide a percentage to move the roof.
+    + percent: `50` (number, optional) - The percentage to move the roof to.
 
 + Response 200 (application/json)
 
     + Body
 
             {
-              "result": false,
-              "reason": "failure reason"
+              "response": {
+                "result": true,
+                "reason": ""
+              }
             }

@@ -231,9 +231,9 @@ RSpec.describe TeslaApi::Vehicle do
     end
   end
 
-  describe "#remove_start_drive", vcr: {cassette_name: "vehicle-remove_start_drive"} do
+  describe "#remote_start_drive", vcr: {cassette_name: "vehicle-remote_start_drive"} do
     it "starts the vehicle's keyless driving mode" do
-      expect(vehicle.remove_start_drive("elon4eva")["result"]).to eq(true)
+      expect(vehicle.remote_start_drive("elon4eva")["result"]).to eq(true)
     end
   end
 

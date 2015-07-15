@@ -116,7 +116,7 @@ module TeslaApi
       api.post("/vehicles/#{id}/command/sun_roof_control", body: {state: "move", percent: percent})["response"]
     end
 
-    def remove_start_drive(password)
+    def remote_start_drive(password)
       api.post("/vehicles/#{id}/command/remote_start_drive", body: {password: password})["response"]
     end
 

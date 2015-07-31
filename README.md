@@ -30,7 +30,8 @@ Here's a quick example:
 ```ruby
 require 'tesla_api'
 
-tesla_api = TeslaApi::Client.new(email, password, client_id, client_secret)
+tesla_api = TeslaApi::Client.new(email, client_id, client_secret)
+tesla_api.login!(password) # Or tesla_api.token = token if you have an existing token.
 model_s = tesla_api.vehicles.first # => <TeslaApi::Vehicle>
 
 model_s.wake_up

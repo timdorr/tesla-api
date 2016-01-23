@@ -277,6 +277,57 @@ Wakes up the car from the sleep state. Necessary to get some data from the car.
               }
             }
 
+## Set Valet Mode [POST /api/1/vehicles/{vehicle_id}/command/set_valet_mode]
+Sets valet mode on or off with a PIN to disable it from within the car. Reuses last PIN from previous valet session.
+Valet Mode limits the car's top speed to 70MPH and 80kW of acceleration power. It also disables Homelink, Bluetooth and
+Wifi settings, and the ability to disable mobile access to the car. It also hides your favorites, home, and work
+locations in navigation.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
++ Parameters
+
+    + vehicle_id: `1` (number) - The id of the Vehicle.
+    + on: true (boolean) - Whether to enable or disable valet mode.
+    + password: 1234 (number) - (optional) A 4 digit PIN code to unlock the car.
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "response": {
+                "result": true,
+                "reason": ""
+              }
+            }
+
+## Reset Valet PIN [POST /api/1/vehicles/{vehicle_id}/command/reset_valet_pin]
+Resets the PIN set for valet mode, if set.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
++ Parameters
+
+    + vehicle_id: `1` (number) - The id of the Vehicle.
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "response": {
+                "result": true,
+                "reason": ""
+              }
+            }
+
 ## Open Charge Port [POST /api/1/vehicles/{vehicle_id}/command/charge_port_door_open]
 Opens the charge port. Does not close the charge port (for now...)
 

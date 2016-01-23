@@ -56,7 +56,7 @@ module TeslaApi
       @vehicle = api.post("/vehicles/#{id}/wake_up")["response"]
     end
 
-    def set_valet_mode(on, password)
+    def set_valet_mode(on, password=nil)
       command("set_valet_mode", body: {on: on, password: password})["response"]
     end
 

@@ -102,6 +102,10 @@ RSpec.describe TeslaApi::Vehicle do
     it "enables valet mode on the car" do
       expect(vehicle.set_valet_mode(true, 1234)["result"]).to eq(true)
     end
+
+    it "enables valet mode with a previous PIN" do
+      expect(vehicle.set_valet_mode(true)["result"]).to eq(true)
+    end
   end
 
   describe "#reset_valet_pin", vcr: {cassette_name: "vehicle-reset_valet_pin"} do

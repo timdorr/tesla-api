@@ -3,6 +3,10 @@ require 'spec_helper'
 RSpec.describe TeslaApi::Vehicle do
   let(:tesla_api) { TeslaApi::Client.new(ENV["TESLA_EMAIL"]) }
 
+  before do
+    tesla_api.token = ENV["TESLA_API_TOKEN"]
+  end
+
   subject(:vehicle) { tesla_api.vehicles.first }
 
   describe "#[]", vcr: { cassette_name: "vehicle" } do
@@ -91,6 +95,18 @@ RSpec.describe TeslaApi::Vehicle do
     it "wakes up the car from sleep mode" do
       vehicle.wake_up
       expect(vehicle.state).to eq("online")
+    end
+  end
+
+  describe "#set_valet_mode", vcr: {cassette_name: "vehicle-set_valet_mode"} do
+    it "enables valet mode on the car" do
+      expect(vehicle.set_valet_mode(true, 1234)["result"]).to eq(true)
+    end
+  end
+
+  describe "#reset_valet_pin", vcr: {cassette_name: "vehicle-reset_valet_pin"} do
+    it "resets the valet mode PIN" do
+      expect(vehicle.reset_valet_pin["result"]).to eq(true)
     end
   end
 

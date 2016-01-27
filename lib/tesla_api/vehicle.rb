@@ -133,7 +133,7 @@ module TeslaApi
     end
 
     def open_frunk
-      command("trunk_open", body: {which_trunk: "rear"})
+      command("trunk_open", body: {which_trunk: "front"})
     end
 
     private

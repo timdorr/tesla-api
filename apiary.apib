@@ -17,11 +17,15 @@ You must provide the `Authorization: Bearer {access_token}` header in all other 
 
 The current client ID and secret are [available here](http://pastebin.com/fX6ejAHd)
 
-+ grant_type: `password` (string) - The type of oAuth grant. Always "password"
-+ client_id: `abc` (string) - The oAuth client ID
-+ client_secret: `123` (string) - The oAuth client secret
-+ email: `elon@teslamotors.com` (string) - The email for my.teslamotors.com
-+ password: `edisonsux` (string) - The password for my.teslamotors.com
++ Request (application/json)
+
+        {
+            "grant_type": "password" // - The type of oAuth grant. Always "password"
+            "client_id": "abc" //(string) - The oAuth client ID
+            "client_secret": "123" //(string) - The oAuth client secret
+            "email": "elon@teslamotors.com" //(string) - The email for my.teslamotors.com
+            "password": "edisonsux" //(string) - The password for my.teslamotors.com
+        }
 
 + Response 200 (application/json)
     + Body

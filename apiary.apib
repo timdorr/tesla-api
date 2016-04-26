@@ -736,3 +736,28 @@ Open the trunk or frunk. Currently inoperable.
                 "reason": ""
               }
             }
+
+## Trigger Homelink [POST /api/1/vehicles/{vehicle_id}/command/trigger_homelink]
+Instructs the vehicle to trigger the Homelink feature to toggle the garage door open and closed.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
++ Parameters
+
+    + vehicle_id: `1` (number) - The id of the Vehicle.
+    + lat: `34.1`: (float) - The current latitude location of the vehicle.
+    + lon: `20.2`: (float) - The current longitude location of the vehicle.
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "response": {
+                "result": true,
+                "reason": ""
+              }
+            }

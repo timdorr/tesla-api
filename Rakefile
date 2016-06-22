@@ -7,7 +7,33 @@ end
 
 desc "Open an irb session preloaded with this library"
 task :console do
-  sh "irb -rubygems -I lib -r tesla_api.rb -rdotenv"
+  # Load all gems
+  require 'rubygems'
+  require 'bundler/setup'
+  Bundler.require(:default)
+
+  # Load the envs
+  require 'dotenv'
+  Dotenv.load!
+
+  # Set up a global client
+  def client
+    @client ||= begin
+        client = TeslaApi::Client.new(ENV['TESLA_EMAIL'])
+        client.login!(ENV['TESLA_PASS'])
+        client
+    end
+  end
+
+  # Load IRB
+  require 'irb'
+  require 'irb/completion'
+
+  IRB.conf[:PROMPT_MODE] = :SIMPLE
+  IRB.conf[:AUTO_INDENT] = true
+
+  ARGV.clear
+  IRB.start
 end
 
 task default: :spec

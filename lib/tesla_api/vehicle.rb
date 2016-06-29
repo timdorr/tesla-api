@@ -1,6 +1,7 @@
 module TeslaApi
   class Vehicle
     include Stream
+    include Autopark
     attr_reader :api, :email, :id, :vehicle
 
     def initialize(api, email, id, vehicle)

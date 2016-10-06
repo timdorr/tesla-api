@@ -14,7 +14,11 @@ module TeslaApi
               est_heading: attributes[5].to_f,
               est_lat: attributes[6].to_f,
               est_lng: attributes[7].to_f,
-              power: attributes[8].to_f
+              power: attributes[8].to_f,
+              shift_state: attributes[9].to_s,
+              range: attributes[10].to_f,
+              est_range: attributes[11].to_f,
+              heading: attributes[12].to_f
           })
         end
 
@@ -31,7 +35,7 @@ module TeslaApi
     end
 
     def http
-      @http ||= request.get(
+      request.get(
           head: {
               "authorization" => [email, self["tokens"].first]
           },
@@ -43,7 +47,7 @@ module TeslaApi
     end
 
     def stream_params
-      "speed,odometer,soc,elevation,est_heading,est_lat,est_lng,power"
+      "speed,odometer,soc,elevation,est_heading,est_lat,est_lng,power,shift_state,range,est_range,heading"
     end
   end
 end

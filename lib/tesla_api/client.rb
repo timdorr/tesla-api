@@ -19,17 +19,14 @@ module TeslaApi
 
     def expires_in=(seconds)
       @expires_in = seconds.to_f
-      puts "store expires_in #{@expires_in.to_s}"
     end
 
     def created_at=(timestamp)
       @created_at = Time.at(timestamp.to_f).to_datetime
-      puts "store created_at #{@created_at.to_s}"
     end
 
     def expired_at
       return nil unless defined?(@created_at)
-      puts "store expired_at #{(@created_at.to_time + @expires_in.to_f).to_s}"
       (@created_at.to_time + @expires_in.to_f).to_datetime
     end
 

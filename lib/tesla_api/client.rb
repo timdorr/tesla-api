@@ -17,6 +17,24 @@ module TeslaApi
       self.class.headers "Authorization" => "Bearer #{token}"
     end
 
+    def expires_in=(seconds)
+      @expires_in = seconds.to_f
+    end
+
+    def created_at=(timestamp)
+      @created_at = Time.at(timestamp.to_f).to_datetime
+    end
+
+    def expired_at
+      return nil unless defined?(@created_at)
+      (@created_at.to_time + @expires_in.to_f).to_datetime
+    end
+
+    def expired?
+      return true unless defined?(@created_at)
+      expired_at <= DateTime.now
+    end
+
     def login!(password)
       response = self.class.post(
           "https://owner-api.teslamotors.com/oauth/token",
@@ -28,8 +46,10 @@ module TeslaApi
               "password" => password
           }
       )
-
-      self.token = response["access_token"]
+      
+      self.expires_in = response["expires_in"]
+      self.created_at = response["created_at"]
+      self.token      = response["access_token"]
     end
 
     def vehicles

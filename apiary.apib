@@ -255,6 +255,32 @@ Returns the vehicle's physical state, such as which doors are open.
 # Group Vehicle Commands
 These commands alter the vehicles state, and return result (true/false) to indicate success, and if failure reason contains the cause of failure.
 
+## Autopark Request (aka - summon) car [POST /api/1/vehicles/{vehicle_id}/command/autopark_request]
+Instructs the vehicle to move forward or backward based on the summon feature.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
++ Parameters
+
+    + vehicle_id: `1` (number) - The id of the Vehicle.
+    + lat: `34.1`: (float) - The current latitude location of the vehicle.
+    + lon: `20.2`: (float) - The current longitude location of the vehicle.
+    + action: `start_forward`: (string) - Whether to move forward (start_forward) or backward (start_reverse)
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "response": {
+                "result": true,
+                "reason": ""
+              }
+            }
+
 ## Wake Up Car [POST /api/1/vehicles/{vehicle_id}/wake_up]
 Wakes up the car from the sleep state. Necessary to get some data from the car.
 
@@ -699,6 +725,31 @@ Open the trunk or frunk. Currently inoperable.
 
     + vehicle_id: `1` (number) - The id of the Vehicle.
     + which_trunk: `rear` (string) - The trunk to open. `rear` is the only one known currently.
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "response": {
+                "result": true,
+                "reason": ""
+              }
+            }
+
+## Trigger Homelink [POST /api/1/vehicles/{vehicle_id}/command/trigger_homelink]
+Instructs the vehicle to trigger the Homelink feature to toggle the garage door open and closed.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
++ Parameters
+
+    + vehicle_id: `1` (number) - The id of the Vehicle.
+    + lat: `34.1`: (float) - The current latitude location of the vehicle.
+    + lon: `20.2`: (float) - The current longitude location of the vehicle.
 
 + Response 200 (application/json)
 

@@ -16,7 +16,7 @@ RSpec.describe TeslaApi::Client do
   describe "#token=" do
     it "sets a Bearer token" do
       tesla_api.token = Faker::Lorem.characters(32)
-      expect(tesla_api.class.headers).to include({"Authorization" => /Bearer [a-z0-9]{32}/})
+      expect(tesla_api.headers).to include({"Authorization" => /Bearer [a-z0-9]{32}/})
     end
   end
 
@@ -47,7 +47,7 @@ RSpec.describe TeslaApi::Client do
 
     it "sets a Bearer token header" do
       tesla_api.login!(ENV["TESLA_PASS"])
-      expect(tesla_api.class.headers).to include({"Authorization" => /Bearer [a-z0-9]{32}/})
+      expect(tesla_api.headers).to include({"Authorization" => /Bearer [a-z0-9]{32}/})
     end
 
     it "obtains a Bearer token" do

@@ -6,6 +6,8 @@ This is unofficial documentation of the Tesla JSON API used by the iOS and Andro
 The API provides functionality to monitor and control the Model S (and future Tesla vehicles) remotely.
 The project provides both a documention of the API and a Ruby library to for accessing it.
 
+> If any folks at Tesla are reading this, I'd love to help coordinate a developer program for your APIs. If there's any way I can be helpful, please feel free to get in contact. Also, I'd love to be in the beta firmware program :wink:
+
 ## Ruby Gem [![Gem Version](https://img.shields.io/gem/v/tesla_api.svg)](http://rubygems.org/gems/tesla_api) [![Build Status](https://img.shields.io/travis/timdorr/model-s-api/master.svg)](https://travis-ci.org/timdorr/model-s-api) [![Coverage Status](https://img.shields.io/coveralls/timdorr/model-s-api.svg)](https://coveralls.io/r/timdorr/model-s-api?branch=master)
 
 This gem provides a basic wrapper around the API to easily query and command the car remotely. 

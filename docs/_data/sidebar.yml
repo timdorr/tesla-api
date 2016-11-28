@@ -1,0 +1,11 @@
+- title: Home
+  url: /
+
+- title: Authentication
+  url: authentication
+  pages:
+  - title: Tokens
+    url: tokens
+
+- title: Vehicles
+  url: vehicles

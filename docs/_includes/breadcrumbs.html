@@ -1,0 +1,23 @@
+<ul>
+
+{% assign splitted_url_parts = page.url | split: '/' %}
+{% capture forLoopMaxInt %}{{ splitted_url_parts.size | minus:1 }}{% endcapture %}
+{% for i in (1..forLoopMaxInt) %}
+  {% capture current_breadcrumb_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/{% endcapture %}
+  {% capture next_prepender %}{{next_prepender}}/{{ splitted_url_parts[i] }}{% endcapture %}
+  {% for breadcrumb_page in site.pages %}
+    {% if current_breadcrumb_url == breadcrumb_page.url %}
+      {% assign j = forLoopMaxInt | plus: 0 %}
+      <li {% if i == j %}class="active"{% endif %}>
+        <a href="{{ site.baseurl }}{{breadcrumb_page.url}}">{{breadcrumb_page.title | default: '&nbsp;'}}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+{% assign forLoopMaxInt = forLoopMaxInt | plus: 0 %}
+{% if forLoopMaxInt == -1 %}
+  <li><a href="{{ site.baseurl }}">{{page.title | default: '&nbsp;'}}</a></li>
+{% endif %}
+
+</ul>

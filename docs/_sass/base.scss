@@ -85,11 +85,12 @@ nav {
   }
 }
 
-aside {
-  @include clearfix();
+#content {
+  display: flex;
+}
 
-  float: left;
-  width: $sidebar-width;
+aside {
+  flex: 0 0 $sidebar-width;
 
   a {
     display: inline-block;
@@ -141,7 +142,5 @@ aside {
 
 
 main {
-  @include clearfix();
-
-  float: left;
+  flex: 1 0 auto;
 }

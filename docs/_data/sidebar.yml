@@ -3,9 +3,11 @@
 
 - title: Authentication
   url: authentication
-  pages:
-  - title: Tokens
-    url: tokens
 
 - title: Vehicles
   url: vehicles
+  pages:
+  - title: State
+    url: state
+  - title: Commands
+    url: commands

@@ -24,6 +24,11 @@ a, a:hover {
   text-decoration: none;
 }
 
+hr {
+  border: none;
+  border-bottom: 1px dotted #ccc;
+}
+
 header {
   @include clearfix();
 

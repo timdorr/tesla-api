@@ -27,6 +27,10 @@ module TeslaApi
 
     # State
 
+    def data
+      api.get("/vehicles/#{id}/data")["response"]
+    end
+
     def mobile_enabled
       api.get("/vehicles/#{id}/mobile_enabled")["response"]
     end

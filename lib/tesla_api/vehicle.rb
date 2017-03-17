@@ -147,7 +147,7 @@ module TeslaApi
       api.get("/vehicles/#{id}/data_request/#{name}")
     end
 
-    def command(name, body: nil)
+    def command(name, body = nil)
       api.post("/vehicles/#{id}/command/#{name}", body: body)
     end
   end

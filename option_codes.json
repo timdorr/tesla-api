@@ -1,0 +1,211 @@
+{
+   "AdapterType":{
+      "AD02":"NEMA 14-50",
+      "AD04":"European 3-Phase",
+      "AD05":"European 3-Phase, IT",
+      "AD06":"Schuko (1 phase, 230V 13A)",
+      "AD07":"Red IEC309 (3 phase 400V 16A)",
+      "ADPX2":"Type 2 Public Charging Connector",
+      "ADX8":"Blue IEC309 (1 phase 230V 32A)",
+      "CDM0":"CHAdeMO adapter not ordered with car",
+      "CDM1":"CHAdeMO adapter ordered with car"
+   },
+   "AudioUpgrade":{
+      "AU01":"Present?"
+   },
+   "Battery":{
+      "PBT85":"Performance battery type 85kWh"
+   },
+   "BatteryType":{
+      "BT85":"85kWh",
+      "BT70":"70kWh",
+      "BT60":"60kWh",
+      "BT40":"40kWh (Software Limited) "
+   },
+   "BrakeCalipers":{
+      "BC0B":"Black Brake Calipers",
+      "BC0R":"Red Brake Calipers"
+   },
+   "Charging":{
+      "SC01":"Supercharger hardware present",
+      "CH00":"Second charger not present",
+      "CH01":"Second charger present",
+      "HP00":"High power wall charger not ordered",
+      "HP01":"High power wall charger ordered with car"
+   },
+   "ColdWeatherPackage":{
+      "CW00":"Absent",
+      "CW02":"Present"
+   },
+   "CountryOfOrigin":{
+      "COUS":"United States",
+      "CODE":"Germany"
+   },
+   "DecorType":{
+      "IDCF":"Carbon Fiber",
+      "IDLW":"Lacewood",
+      "IDOM":"Obeche Matte",
+      "IDOG":"Obeche Gloss",
+      "IDPB":"Piano Black "
+   },
+   "DriverAssist":{
+      "DA01":"Present?"
+   },
+   "DriveSide":{
+      "DRLH":"Left Hand",
+      "DRRH":"Right Hand"
+   },
+   "DriveType":{
+      "DV2W":"RWD",
+      "DV4W":"AWD"
+   },
+   "Exterior":{
+      "X019":"Performance exterior",
+      "X020":"No performance exterior"
+   },
+   "ExteriorLighting":{
+      "X007":"Premium exterior lighting",
+      "X008":"Standard exterior lighting"
+   },
+   "FogLamps":{
+      "FG02":"Present?"
+   },
+   "Homelink":{
+      "X011":"Homelink present",
+      "X012":"Homelink absent"
+   },
+   "Liftgate":{
+      "X001":"Power liftgate",
+      "X002":"No power liftgate"
+   },
+   "Model":{
+      "S60":"S60",
+      "S85":"S85",
+      "P85":"P85",
+      "P85Plus":"P85+",
+      "S70D":"S70D",
+      "S85D":"S85D",
+      "P85D":"P85D",
+      "MDLX":"Model X"
+   },
+   "NappaTrim":{
+      "IX00":"Absent",
+      "IX01":"Present"
+   },
+   "Navigation":{
+      "X003":"Navigation present",
+      "X004":"No navigation present"
+   },
+   "Paint":{
+      "PA00":"Paint armor not present",
+      "PA01":"Paint armor present"
+   },
+   "PaintColor":{
+      "PBCW":"Solid White",
+      "PBSB":"Black",
+      "PMAB":"Metallic Brown",
+      "PMBL":"Obsidian Black",
+      "PMMB":"Metallic Blue",
+      "PMNG":"Steel Grey",
+      "PMSG":"Metallic Green",
+      "PMSS":"Silver",
+      "PMTG":"Metallic Dolphin Gray",
+      "PPMR":"Premium Multicoat Red",
+      "PPSB":"Deep Blue Metallic",
+      "PPSR":"Premium Signature Red",
+      "PPSW":"Pearl White",
+      "PPTI":"Titanium"
+   },
+   "ParcelShelf":{
+      "PS01":"Ordered"
+   },
+   "Performance":{
+      "PF01":"Performance model",
+      "PX00":"Not performance+ model"
+   },
+   "Powertrain":{
+      "X024":"Performance powertrain",
+      "X025":"No performance powertrain"
+   },
+   "PremiumLighting":{
+      "LP00":"Absent",
+      "LP01":"Present"
+   },
+   "Radio":{
+      "X013":"Satellite radio",
+      "X014":"Standard radio"
+   },
+   "Region":{
+      "RENA":"United States",
+      "RENC":"Canada",
+      "REEU":"Europe"
+   },
+   "RoofType":{
+      "RFBC":"Body Color",
+      "RFPO":"Panoramic",
+      "RFBK":"Black"
+   },
+   "Seating":{
+      "QRLB":"Next gen (Recaro) seat Black Leather ?",
+      "QYMB":"Black performance leather seats"
+   },
+   "SeatType":{
+      "IBMB":"Base Textile, Black",
+      "IPMB":"Leather, Black",
+      "IPMG":"Leather, Gray",
+      "IPMT":"Leather, Tan",
+      "IZZW":"Perf Leather with Grey Piping, White",
+      "QYMT":"Leather, Tan",
+      "QZMB":"Perf Leather with Piping, Black",
+      "IZMB":"Perf Leather with Piping, Black",
+      "IZMG":"Perf Leather with Piping, Gray",
+      "IZMT":"Perf Leather with Piping, Tan",
+      "ISZW":"Signature Perforated Leather, White",
+      "ISZT":"Signature Perforated Leather, Tan",
+      "ISZB":"Signature Perforated Leather, Black",
+      "TR00":"No third row seating"
+   },
+   "SecurityPackage":{
+      "SP00":"Absent",
+      "SP01":"Present"
+   },
+   "Suspension":{
+      "SU00":"No air suspension",
+      "SU01":"Air suspension"
+   },
+   "TechPackage":{
+      "TP01":"Present",
+      "TP02":"Tech package includes autopilot"
+   },
+   "TrimLevel":{
+      "TM00":"Standard Production Trim",
+      "TM02":"Signature Performance Trim"
+   },
+   "WheelType":{
+      "WT19":"Silver 19\"",
+      "WT1P":"Silver 19\"",
+      "WTX1":"Silver 19\"",
+      "WTAE":"Aero 19\"",
+      "WTAP":"Aero 19\"",
+      "WTTB":"Turbine 19\"",
+      "WTTP":"Turbine 19\"",
+      "WTTG":"Turbine 19\" Charcoal",
+      "WTGP":"Turbine 19\" Charcoal",
+      "WT21":"Silver 21\"",
+      "WT2E":"Silver 21\" Euro",
+      "WTSS":"Super 21\" Silver",
+      "WTSP":"Charcoal 21\"",
+      "WTSE":"Charcoal 21\" Euro",
+      "WTSG":"Super 21\" Gray"
+   },
+   "YachtFloor":{
+      "YF00":"Absent",
+      "YF01":"Present"
+   },
+   "Year":{
+      "MS01":"2012 Model",
+      "MS02":"2013 Model",
+      "MS03":"2014 Model",
+      "MS04":"2015 Model"
+   }
+}

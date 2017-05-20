@@ -1,3 +1,5 @@
+Need a Tesla to develop with? Use [my referral link](http://ts.la/timothy8449) to get a $1000 discount and unlimited Supercharging.
+
 # Tesla JSON API
 
 [View Documentation](http://docs.timdorr.apiary.io/)

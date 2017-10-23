@@ -561,7 +561,7 @@ Lock the car's doors.
               }
             }
 
-## Set Temperature [POST /api/1/vehicles/{vehicle_id}/command/set_temps?driver_temp={driver_degC}&passenger_temp={pass_degC}]
+## Set Temperature [POST /api/1/vehicles/{vehicle_id}/command/set_temps?driver_temp={driver_temp}&passenger_temp={passenger_temp}]
 Set the temperature target for the HVAC system.
 
 + Request
@@ -572,8 +572,8 @@ Set the temperature target for the HVAC system.
 + Parameters
 
     + vehicle_id: `1` (number) - The id of the Vehicle.
-    + driver_degC: `23.7` (number) - The desired temperature on the driver's side in celcius.
-    + pass_degC: `18.1` (number) - The desired temperature on the passenger's side in celcius.
+    + driver_temp: `23.7` (number) - The desired temperature on the driver's side in celcius.
+    + passenger_temp: `18.1` (number) - The desired temperature on the passenger's side in celcius.
 
 + Response 200 (application/json)
 

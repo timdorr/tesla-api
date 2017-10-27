@@ -6,7 +6,7 @@ Need a Tesla to develop with? Use [my referral link](http://ts.la/timothy8449) t
 
 This is unofficial documentation of the Tesla JSON API used by the iOS and Android apps.
 The API provides functionality to monitor and control the Model S (and future Tesla vehicles) remotely.
-The project provides both a documention of the API and a Ruby library to for accessing it.
+The project provides both documention of the API and  Ruby library  for accessing it.
 
 > If any folks at Tesla are reading this, I'd love to help coordinate a developer program for your APIs. If there's any way I can be helpful, please feel free to get in contact. Also, I'd love to be in the beta firmware program :wink:
 

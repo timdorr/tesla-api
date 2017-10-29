@@ -399,18 +399,22 @@ Set the charge mode to max range (100% under the new percentage system introduce
               }
             }
 
-## Set Charge Limit [POST /api/1/vehicles/{vehicle_id}/command/set_charge_limit?percent={limit_value}]
+## Set Charge Limit [POST /api/1/vehicles/{vehicle_id}/command/set_charge_limit]
 Set the charge limit to a custom percentage.
+
++ Attributes
+
+    + percent: 70 (number) - The desired percent value
 
 + Request
     + Headers
 
             Authorization: Bearer {access_token}
+            ContentType: application/json
 
 + Parameters
 
     + vehicle_id: `1` (number) - The id of the Vehicle.
-    + limit_value: `75` (number) - The percentage value
 
 + Response 200 (application/json)
 

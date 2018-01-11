@@ -4,10 +4,16 @@
 - title: Authentication
   url: authentication
 
-- title: Vehicles
-  url: vehicles
+- title: Vehicle
+  url: vehicle
   pages:
   - title: State
     url: state
   - title: Commands
     url: commands
+
+- title: Streaming
+  url: streaming
+
+- title: Autopark
+  url: autopark

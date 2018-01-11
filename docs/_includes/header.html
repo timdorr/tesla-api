@@ -14,5 +14,5 @@
 
 <nav>
   <div class="search">&nbsp;</div>
-  <div class="breadcrumbs">{% include breadcrumbs.html %}</div>
+  <div class="breadcrumbs">{% if page.breadcrumbs %}{{ page.breadcrumbs | escape }}{% else %}{{ page.title | escape }}{% endif %}</div>
 </nav>

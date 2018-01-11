@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 ruby RUBY_VERSION
 
-gem 'minima', '~> 2.0'
+gem 'minima', '~> 2.1'
 
-gem 'github-pages', '105', group: :jekyll_plugins
+gem 'github-pages', '172', group: :jekyll_plugins

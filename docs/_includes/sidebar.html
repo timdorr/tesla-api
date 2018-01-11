@@ -1,17 +1,17 @@
 <ul>
 
-{% assign split_url_parts = page.url | split: '/' %}
+{% assign split_url_parts = page.url | remove: ".html" | split: '/' %}
 {% for section in site.data.sidebar %}
-  {% capture section_url %}{{ site.baseurl }}{% if section.url contains '/' %}/{% else %}/{{ section.url }}/{% endif %}{% endcapture %}
+  {% capture section_url %}{{ site.baseurl }}/{{ section.url }}{% endcapture %}
   {% if split_url_parts[1] != section.url %}
-    <li><a href="{{section_url}}">{{ section.title }}</a></li>
+    <li><a href="{{section_url}}{% if section.pages != empty %}{% else %}.html{% endif %}">{{ section.title }}</a></li>
   {% else %}
     <li class="active">
-      <a href="{{section_url}}">{{ section.title }}</a>
+      <a href="{{section_url}}{% if section.pages != empty %}{% else %}.html{% endif %}">{{ section.title }}</a>
       {% if section.pages != empty %}
       <ul class="pages">
         {% for section_page in section.pages %}
-        <li><a href="{{section_url}}{{section_page.url}}/">{{ section_page.title }}</a></li>
+        <li><a href="{{section_url}}/{{section_page.url}}.html">{{ section_page.title }}</a></li>
         {% endfor %}
       </ul>
       {% endif %}

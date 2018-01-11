@@ -16,8 +16,6 @@
 title: Tesla JSON API
 email: tesla@timdorr.com
 description: 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: timdorr
 github_username:  timdorr
 

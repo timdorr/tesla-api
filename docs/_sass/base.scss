@@ -91,12 +91,11 @@ nav {
 }
 
 #content {
-  display: flex;
+  display: grid;
+  grid-template-columns: $sidebar-width auto;
 }
 
 aside {
-  flex: 0 0 $sidebar-width;
-
   a {
     display: inline-block;
     position: relative;
@@ -143,9 +142,4 @@ aside {
       }
     }
   }
-}
-
-
-main {
-  flex: 1 0 auto;
 }

@@ -1,5 +1,6 @@
 ---
 title: Authentication
+breadcrumbs: Authentication
 ---
 
 ## Tokens [/oauth/token]

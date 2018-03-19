@@ -689,7 +689,7 @@ Start the car for keyless driving. Must start driving within 2 minutes of issuin
             }
 
 ## Open Trunk/Frunk [POST /api/1/vehicles/{vehicle_id}/command/trunk_open]
-Open the trunk or frunk. Currently inoperable.
+Open the trunk or frunk. Call the endpoint again to close (this only works on rear powered trunks)
 
 + Request
     + Headers
@@ -699,7 +699,7 @@ Open the trunk or frunk. Currently inoperable.
 + Parameters
 
     + vehicle_id: `1` (number) - The id of the Vehicle.
-    + which_trunk: `rear` (string) - The trunk to open. `rear` is the only one known currently.
+    + which_trunk: `rear` (string) - The trunk to open. `rear` and `front` are the only options
 
 + Response 200 (application/json)
 

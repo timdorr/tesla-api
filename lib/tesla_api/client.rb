@@ -1,20 +1,21 @@
 module TeslaApi
   class Client
-    include HTTParty
-    base_uri "https://owner-api.teslamotors.com/api/1"
-    format :json
+    # include HTTParty
+    # base_uri "https://owner-api.teslamotors.com/api/1"
+    # format :json
 
-    attr_reader :email, :token, :client_id, :client_secret
+    attr_reader :email, :token, :client_id, :client_secret, :headers
 
     def initialize(email, client_id = ENV["TESLA_CLIENT_ID"], client_secret = ENV["TESLA_CLIENT_SECRET"])
       @email = email
       @client_id = client_id
       @client_secret = client_secret
+      @headers = {}
     end
 
     def token=(token)
       @token = token
-      self.class.headers "Authorization" => "Bearer #{token}"
+      @headers = { "Authorization" => "Bearer #{token}" }
     end
 
     def expires_in=(seconds)
@@ -36,7 +37,7 @@ module TeslaApi
     end
 
     def login!(password)
-      response = self.class.post(
+      response = self.post(
           "https://owner-api.teslamotors.com/oauth/token",
           body: {
               "grant_type" => "password",
@@ -53,7 +54,24 @@ module TeslaApi
     end
 
     def vehicles
-      self.class.get("/vehicles")["response"].map { |v| Vehicle.new(self.class, email, v["id"], v) }
+      self.get("/vehicles")["response"].map { |v| Vehicle.new(self, email, v["id"], v) }
+    end
+
+    def self.base_uri
+      "https://owner-api.teslamotors.com/api/1"
+    end
+
+    def get( url )
+      HTTParty.get( self.class.base_uri + url, {headers: @headers, format: :json} )
+    end
+
+    def post( url, body = {})
+      options = {header: @headers, format: :json}
+      options.merge! body
+      unless url =~ /^http/
+        url  = self.class.base_uri + url
+      end
+      HTTParty.post( url, options )
     end
   end
 end

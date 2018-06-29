@@ -113,7 +113,7 @@ Returns the state of charge in the battery.
 
             {
               "response": {
-                "charging_state": "Complete",  // "Charging", ??
+                "charging_state": "Complete",  // "Charging", "Complete", "Disconnected"
                 "charge_to_max_range": false,  // current std/max-range setting
                 "max_range_charge_counter": 0,
                 "fast_charger_present": false, // connected to Supercharger?
@@ -131,6 +131,11 @@ Returns the state of charge in the battery.
                 "time_to_full_charge": null,   // valid only while charging
                 "charge_rate": -1.0,           // float mi/hr charging or -1 if not charging
                 "charge_port_door_open": true
+                "charge_limit_soc" : 90		   // the current user set charging limit (percent)
+			    "charge_limit_soc_max" : 100   //  related but never seem to change
+			    "charge_limit_soc_min" : 50	   //  related but never seem to change
+			    "charge_limit_soc_std" : 90    //  related but never seem to change
+			    "charge_port_latch" : "Engaged" // "Engaged" when open and plugged in or closed,  "Disengaged" when open and not plugged in
               }
             }
 

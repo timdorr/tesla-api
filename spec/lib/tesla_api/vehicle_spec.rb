@@ -268,4 +268,28 @@ RSpec.describe TeslaApi::Vehicle do
       expect(vehicle.open_frunk["error"]).to eq("invalid_command")
     end
   end
+
+  describe '#activate_speed_limit', vcr: {cassette_name: "vehicle-activate_speed_limit"} do
+    it "activates the speed limit" do
+      expect(vehicle.activate_speed_limit("1234")["result"]).to eq(true)
+    end
+  end
+
+  describe '#deactivate_speed_limit', vcr: {cassette_name: "vehicle-deactivate_speed_limit"} do
+    it "deactivates the speed limit" do
+      expect(vehicle.deactivate_speed_limit("1234")["result"]).to eq(true)
+    end
+  end
+
+  describe '#set_speed_limit', vcr: {cassette_name: "vehicle-set_speed_limit"} do
+    it "sets the speed limit" do
+      expect(vehicle.set_speed_limit(65)["result"]).to eq(true)
+    end
+  end
+
+  describe '#clear_speed_limit_pin', vcr: {cassette_name: "vehicle-clear_speed_limit_pin"} do
+    it "clears the speed limit pin" do
+      expect(vehicle.clear_speed_limit_pin("1234")["result"]).to eq(true)
+    end
+  end
 end

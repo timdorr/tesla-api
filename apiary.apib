@@ -716,3 +716,101 @@ Open the trunk or frunk. Call the endpoint again to close (this only works on re
                 "reason": ""
               }
             }
+
+## Activate Speed Limit [POST /api/1/vehicles/{vehicle_id}/command/speed_limit_activate]
+Activates Speed Limit feature. Calling this endpoint requires the Speed Limit feature to be deactivated.
+Subsequent requests will require the same pin, until the "Clear Speed Limit Pin" endpoint is called.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
++ Parameters
+
+    + vehicle_id: `1` (number) - The id of the Vehicle.
+    + pin: `1234` (string) - The 4-digit pin that will be used to disable the Speed Limit.
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "response": {
+                "result": true,
+                "reason": ""
+              }
+            }
+
+## Deactivate Speed Limit [POST /api/1/vehicles/{vehicle_id}/command/speed_limit_deactivate]
+Deactivates Speed Limit feature. Calling this endpoint requires the Speed Limit feature to be activated.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
++ Parameters
+
+    + vehicle_id: `1` (number) - The id of the Vehicle.
+    + pin: `1234` (string) - The 4-digit pin that was set when activating the Speed Limit feature.
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "response": {
+                "result": true,
+                "reason": ""
+              }
+            }
+
+## Set Speed Limit [POST /api/1/vehicles/{vehicle_id}/command/speed_limit_set_limit]
+Sets the speed limit for the Speed Limit feature. Calling this endpoint requires the Speed Limit feature to be deactivated.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
++ Parameters
+
+    + vehicle_id: `1` (number) - The id of the Vehicle.
+    + limit_mph: `60` (string) - The speed limit to set, in miles per hour. Can only be between 50 and 90, inclusive.
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "response": {
+                "result": true,
+                "reason": ""
+              }
+            }
+
+## Clear Speed Limit PIN [POST /api/1/vehicles/{vehicle_id}/command/speed_limit_clear_pin]
+Clears the PIN for the Speed Limit feature. This lets you call the Activate Speed Limit endpoint with a NEW pin.
+Calling this endpoint requires the Speed Limit feature to be deactivated.
+
++ Request
+    + Headers
+
+            Authorization: Bearer {access_token}
+
++ Parameters
+
+    + vehicle_id: `1` (number) - The id of the Vehicle.
+    + pin: `1234` (string) - The 4-digit pin that was used to activate the Speed Limit feature.
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "response": {
+                "result": true,
+                "reason": ""
+              }
+            }

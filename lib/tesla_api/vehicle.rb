@@ -141,6 +141,22 @@ module TeslaApi
       command("trunk_open", body: {which_trunk: "front"})
     end
 
+    def activate_speed_limit(pin)
+      command("speed_limit_activate", body: {pin: pin})["response"]
+    end
+
+    def deactivate_speed_limit(pin)
+      command("speed_limit_deactivate", body: {pin: pin})["response"]
+    end
+
+    def set_speed_limit(limit_mph)
+      command("speed_limit_set_limit", body: {limit_mph: limit_mph})["response"]
+    end
+
+    def clear_speed_limit_pin(pin)
+      command("speed_limit_clear_pin", body: {pin: pin})["response"]
+    end
+
     private
 
     def data_request(name)

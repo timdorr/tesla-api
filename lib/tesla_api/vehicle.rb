@@ -134,11 +134,11 @@ module TeslaApi
     end
 
     def open_trunk
-      command("actuate_trunk", body: {which_trunk: "rear"})
+      command("actuate_trunk", body: {which_trunk: "rear"})["response"]
     end
 
     def open_frunk
-      command("actuate_trunk", body: {which_trunk: "front"})
+      command("actuate_trunk", body: {which_trunk: "front"})["response"]
     end
 
     def activate_speed_limit(pin)

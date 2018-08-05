@@ -1,51 +1,6 @@
 ---
 http_interactions:
 - request:
-    method: post
-    uri: https://owner-api.teslamotors.com/oauth/token
-    body:
-      encoding: UTF-8
-      string: grant_type=password&client_id=<TESLA_CLIENT_ID>&client_secret=<TESLA_CLIENT_SECRET>&email=<TESLA_EMAIL>&password=<TESLA_PASS>
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Wed, 17 Dec 2014 02:02:39 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Status:
-      - 200 OK
-      Cache-Control:
-      - no-store
-      Pragma:
-      - no-cache
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
-      X-Request-Id:
-      - 463d9f839e6eb7ccc712ec5001dfa135
-      X-Runtime:
-      - '0.358328'
-    body:
-      encoding: UTF-8
-      string: '{"access_token":"614ac96b9d291d2af3d7bfc92e2880474afc1a7aa1c49b6df693fb1b1237c60d","token_type":"bearer","expires_in":7776000}'
-    http_version: 
-  recorded_at: Wed, 17 Dec 2014 02:02:41 GMT
-- request:
     method: get
     uri: https://owner-api.teslamotors.com/api/1/vehicles
     body:
@@ -53,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer 614ac96b9d291d2af3d7bfc92e2880474afc1a7aa1c49b6df693fb1b1237c60d
+      - Bearer <TESLA_API_TOKEN>
   response:
     status:
       code: 200
@@ -62,67 +17,79 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 17 Dec 2014 02:02:39 GMT
+      - Sun, 05 Aug 2018 17:05:00 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '446'
+      - '623'
       Connection:
       - keep-alive
-      Status:
-      - 200 OK
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
+      X-Frame-Options:
+      - SAMEORIGIN
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Txid:
+      - 47beb347d84e5640bf8650afc5a5d290
       Etag:
-      - '"f75b5f2e5ddca5f7c1bf938da14972f4"'
+      - W/"6406a0c92e8caf93d1f9120da1610420"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f339ad32393df7d7048686949238f54c
+      - 00374a64-8682-4b3f-9fd3-a801f43c60b0
       X-Runtime:
-      - '0.064041'
+      - '0.014727'
     body:
       encoding: UTF-8
       string: '{"response":[{"color":null,"display_name":"Nikola","id":1514029006966957156,"option_codes":"MS01,RENA,TM00,DRLH,PF00,BT85,PBCW,RFPO,WT19,IBMB,IDPB,TR00,SU01,SC01,TP01,AU01,CH00,HP00,PA00,PS00,AD02,X020,X025,X001,X003,X007,X011,X013,COUS","vehicle_id":490215852,"vin":"5YJSA1CN5CFP01657","tokens":["13e0ae629c708af6","156102684b1be0dd"],"state":"online","remote_start_enabled":true,"calendar_enabled":true,"notifications_enabled":true}],"count":1}'
     http_version: 
-  recorded_at: Wed, 17 Dec 2014 02:02:41 GMT
+  recorded_at: Sun, 05 Aug 2018 17:05:00 GMT
 - request:
     method: post
     uri: https://owner-api.teslamotors.com/api/1/vehicles/1514029006966957156/command/actuate_trunk
     body:
       encoding: UTF-8
-      string: which_trunk=rear
+      string: which_trunk=front
     headers:
       Authorization:
-      - Bearer 614ac96b9d291d2af3d7bfc92e2880474afc1a7aa1c49b6df693fb1b1237c60d
+      - Bearer <TESLA_API_TOKEN>
   response:
     status:
-      code: 400
-      message: Bad Request
+      code: 200
+      message: OK
     headers:
       Server:
       - nginx
       Date:
-      - Wed, 17 Dec 2014 02:02:40 GMT
+      - Sun, 05 Aug 2018 17:05:00 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '66'
+      - '40'
       Connection:
       - keep-alive
-      Status:
-      - 400 Bad Request
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
+      X-Frame-Options:
+      - SAMEORIGIN
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Txid:
+      - 5e6adf1c1e9a73c310d45820d88451aa
+      Etag:
+      - W/"f67eec105dd6522783a1f1bacc52723a"
       Cache-Control:
-      - no-cache
+      - max-age=0, private, must-revalidate
       X-Request-Id:
-      - bc7fcff8043599002f0d44b1d3550681
+      - 845150c1-1b8d-4ee9-8690-65f60cfeb48f
       X-Runtime:
-      - '0.013840'
+      - '0.131305'
     body:
       encoding: UTF-8
-      string: '{"response":null,"error":"invalid_command","error_description":""}'
+      string: '{"response":{"reason":"","result":true}}'
     http_version: 
-  recorded_at: Wed, 17 Dec 2014 02:02:42 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Sun, 05 Aug 2018 17:05:00 GMT
+recorded_with: VCR 3.0.3

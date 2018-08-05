@@ -88,7 +88,7 @@ http_interactions:
   recorded_at: Wed, 17 Dec 2014 02:02:41 GMT
 - request:
     method: post
-    uri: https://owner-api.teslamotors.com/api/1/vehicles/1514029006966957156/command/trunk_open
+    uri: https://owner-api.teslamotors.com/api/1/vehicles/1514029006966957156/command/actuate_trunk
     body:
       encoding: UTF-8
       string: which_trunk=rear

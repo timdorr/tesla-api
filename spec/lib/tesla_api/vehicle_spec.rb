@@ -259,13 +259,13 @@ RSpec.describe TeslaApi::Vehicle do
 
   describe "#open_trunk", vcr: {cassette_name: "vehicle-open_trunk"} do
     it "opens the trunk" do
-      expect(vehicle.open_trunk["error"]).to eq("invalid_command")
+      expect(vehicle.open_frunk["result"]).to eq(true)
     end
   end
 
   describe "#open_frunk", vcr: {cassette_name: "vehicle-open_frunk"} do
     it "opens the frunk" do
-      expect(vehicle.open_frunk["error"]).to eq("invalid_command")
+      expect(vehicle.open_frunk["result"]).to eq(true)
     end
   end
 

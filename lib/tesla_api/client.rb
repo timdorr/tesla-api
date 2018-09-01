@@ -15,6 +15,7 @@ module TeslaApi
     def token=(token)
       @token = token
       self.class.headers "Authorization" => "Bearer #{token}"
+      self.class.headers "user-agent" => "007"  # Doesn't matter what value
     end
 
     def expires_in=(seconds)

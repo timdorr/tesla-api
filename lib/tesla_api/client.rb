@@ -2,6 +2,7 @@ module TeslaApi
   class Client
     include HTTParty
     base_uri "https://owner-api.teslamotors.com/api/1"
+    headers ({ "User-Agent" => "github.com/timdorr/model-s-api v:#{VERSION}" })
     format :json
 
     attr_reader :email, :token, :client_id, :client_secret
@@ -15,7 +16,6 @@ module TeslaApi
     def token=(token)
       @token = token
       self.class.headers "Authorization" => "Bearer #{token}"
-      self.class.headers "user-agent" => "007"  # Doesn't matter what value
     end
 
     def expires_in=(seconds)

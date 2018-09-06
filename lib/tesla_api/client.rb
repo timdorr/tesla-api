@@ -46,14 +46,14 @@ module TeslaApi
               "password" => password
           }
       )
-      
+
       self.expires_in = response["expires_in"]
       self.created_at = response["created_at"]
       self.token      = response["access_token"]
     end
 
     def vehicles
-      self.class.get("/vehicles")["response"].map { |v| Vehicle.new(self.class, email, v["id"], v) }
+      self.class.get("/vehicles")["response"].map { |v| Vehicle.new(self.class, v["id"], v) }
     end
   end
 end

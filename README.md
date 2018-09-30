@@ -1,4 +1,4 @@
-Need a Tesla to develop with? Use [my referral link](http://ts.la/timothy8449) to get a $1000 discount and unlimited Supercharging.
+Need a Tesla to develop with? Use [my referral link](http://ts.la/timothy8449) to get a $100 Supercharging credit.
 
 # Tesla JSON API
 

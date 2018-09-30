@@ -1,7 +1,3 @@
----
-title: Home
----
-
 # Tesla JSON API
 
 This is unofficial documentation of the Tesla JSON API used by their iOS and Android apps.
@@ -20,9 +16,5 @@ Streams in data about the car's telemetry at up to half second increments.
 The underlying protocol is simply a streaming HTTP API that provides JSON objects at regular intervals.
 
 ### Autopark ("Summon")
-A streaming command mode to control the automatic parking of HW1 (Autopilot v1) and HW2 (Autopilot v2) cars.
+A streaming command mode to control the automatic parking of HW1 (Autopilot v1) and HW2/HW2.5 (Autopilot v2) cars.
 This API uses a standard WebSocket that exchanges JSON objects to convey state information and issue commands during the Autopark session.
-
----
-
-**Next: [Authentication](/authentication)**

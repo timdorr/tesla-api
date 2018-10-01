@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['timdorr@timdorr.com']
   spec.summary       = 'A wrapper for the Tesla JSON API'
   spec.description   = "Check the state of your Tesla Model S and issue basic commands. Stream data from the car's telematics system."
-  spec.homepage      = 'https://github.com/timdorr/model-s-api'
+  spec.homepage      = 'https://github.com/timdorr/tesla-api'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\0")

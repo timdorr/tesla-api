@@ -14,7 +14,7 @@ Authorization: Bearer {access_token}
 
 | Field | Type | Example | Description |
 |---|---|---|---|
-| `grant_type` | String, required | `password` | The type of oAuth grant. Always "password" |
+| `grant_type` | String, required | `password` | The type of OAuth grant. Always "password" |
 | `client_id` | String, required | `abc` | The OAuth client ID |
 | `client_secret` | String, required | `123` | The OAuth client secret |
 | `email` | String, required | `elon@teslamotors.com` | The email for the authenticating Tesla account |

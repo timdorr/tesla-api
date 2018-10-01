@@ -6,7 +6,7 @@ Information on the current internal temperature and climate control system.
 
 ### Response
 
-```json
+```javascript
 {
   "response": {
     "inside_temp": 30.1,
@@ -40,3 +40,4 @@ Information on the current internal temperature and climate control system.
   }
 }
 ```
+

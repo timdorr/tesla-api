@@ -8,7 +8,7 @@ The authentication process is via [an OAuth 2.0 Password Grant](https://oauth.ne
 
 The current client ID and secret are [available here](https://pastebin.com/pS7Z6yyP).
 
-You will get back an `access_token` which is treated as [an OAuth 2.0 Bearer Token](https://oauth.net/2/bearer-tokens/). This token is passed along in an `Authorization` header with all future requests: 
+You will get back an `access_token` which is treated as [an OAuth 2.0 Bearer Token](https://oauth.net/2/bearer-tokens/). This token is passed along in an `Authorization` header with all future requests:
 
 ```http
 Authorization: Bearer {access_token}
@@ -19,7 +19,7 @@ Authorization: Bearer {access_token}
 ### Request parameters
 
 | Field | Type | Example | Description |
-|---|---|---|---|
+| :--- | :--- | :--- | :--- |
 | `grant_type` | String, required | `password` | The type of OAuth grant. Always "password" |
 | `client_id` | String, required | `abc` | The OAuth client ID |
 | `client_secret` | String, required | `123` | The OAuth client secret |
@@ -28,7 +28,7 @@ Authorization: Bearer {access_token}
 
 ### Response
 
-```json
+```javascript
 {
   "access_token":"abc123",
   "token_type":"bearer",
@@ -37,3 +37,4 @@ Authorization: Bearer {access_token}
   "created_at": 1538359034
 }
 ```
+

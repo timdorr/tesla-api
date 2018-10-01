@@ -6,7 +6,7 @@ Returns various information about the GUI settings of the car, such as unit form
 
 ### Response
 
-```json
+```javascript
 {
   "response": {
     "gui_distance_units": "mi/hr",
@@ -18,3 +18,4 @@ Returns various information about the GUI settings of the car, such as unit form
   }
 }
 ```
+

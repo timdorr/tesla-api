@@ -2,7 +2,13 @@
 
 This is unofficial documentation of the Tesla JSON API used by their iOS and Android apps. It features functionality to monitor and control their vehicle (Model S, Model X, and Model 3) and power (Powerwall) products. We currently have documentation for their vehicles, but always accept [pull requests](https://github.com/timdorr/tesla-api/pulls) for improvements and additions.
 
-The base URI for all requests is `https://owner-api.teslamotors.com/`
+## Before You Begin
+
+The base URI for all requests is `https://owner-api.teslamotors.com/` (except for the Streaming and Autopark APIs)
+
+*All requests require a `User-Agent` header with any value provided.* For Tesla's sake, it's recommended you identify your application in some way using this header.
+
+## API Organization
 
 The API for vehicles is organized into 3 primary surfaces:
 

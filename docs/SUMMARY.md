@@ -1,13 +1,15 @@
 # Table of contents
 
+* [Introduction](README.md)
+
 ## API Basics
 
-* [Authentication](authentication.md)
-* [Vehicles](vehicles.md)
+* [Authentication](api-basics/authentication.md)
+* [Vehicles](api-basics/vehicles.md)
 
 ## Vehicle
 
-* [State](vehicle/state.md)
+* [State](vehicle/state/README.md)
   * [Data](vehicle/state/data.md)
   * [Charge State](vehicle/state/chargestate.md)
   * [Climate State](vehicle/state/climatestate.md)
@@ -19,3 +21,4 @@
 * [Streaming](vehicle/streaming.md)
 * [Autopark/Summon](vehicle/autopark.md)
 * [Option Codes](vehicle/optioncodes.md)
+

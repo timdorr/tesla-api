@@ -10,7 +10,7 @@ The project provides both a documention of the API and a Ruby library for access
 
 > If any folks at Tesla are reading this, I'd love to help coordinate a developer program for your APIs. If there's any way I can be helpful, please feel free to get in contact. Also, I'd love to be in the beta firmware program :wink:
 
-## Ruby Gem [![Gem Version](https://img.shields.io/gem/v/tesla_api.svg)](http://rubygems.org/gems/tesla_api) [![Build Status](https://img.shields.io/travis/timdorr/tesla-api/master.svg)](https://travis-ci.org/timdorr/tesla-api) [![Coverage Status](https://img.shields.io/coveralls/timdorr/tesla-api.svg)](https://coveralls.io/r/timdorr/tesla-api?branch=master)
+## Ruby Gem [![Gem Version](https://img.shields.io/gem/v/tesla_api.svg)](http://rubygems.org/gems/tesla_api) [![Build Status](https://img.shields.io/travis/timdorr/tesla-api/master.svg)](https://travis-ci.org/timdorr/tesla-api)
 
 This gem provides a basic wrapper around the API to easily query and command the car remotely. 
 It also provides access to the streaming API and a means to process data coming from it.

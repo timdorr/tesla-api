@@ -37,7 +37,7 @@ Retrieve a list of your owned vehicles (includes vehicles not yet shipped!)
 }
 ```
 
-### GET `/api/1/vehicles/{id}`
+## GET `/api/1/vehicles/{id}`
 
 These resources are read-only and determine the state of the vehicle's various sub-systems.
 

@@ -28,7 +28,7 @@ Authorization: Bearer {access_token}
 
 ### Response
 
-```javascript
+```json
 {
   "access_token":"abc123",
   "token_type":"bearer",

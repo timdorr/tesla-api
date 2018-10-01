@@ -1,10 +1,10 @@
 # Introduction
 
-This is unofficial documentation of the Tesla JSON API used by their iOS and Android apps. It features functionality to monitor and control their vehicle \(Model S, Model X, and Model 3\) and power \(Powerwall\) products. We currently have documentation for their vehicles, but always accept [pull requests](https://github.com/timdorr/tesla-api/pulls) for improvements and additions.
+This is unofficial documentation of the Tesla JSON API used by their iOS and Android apps. It features functionality to monitor and control their vehicle (Model S, Model X, and Model 3) and power (Powerwall) products. We currently have documentation for their vehicles, but always accept [pull requests](https://github.com/timdorr/tesla-api/pulls) for improvements and additions.
 
 ## Before You Begin
 
-The base URI for all requests is `https://owner-api.teslamotors.com/` \(except for the Streaming and Autopark APIs\)
+The base URI for all requests is `https://owner-api.teslamotors.com/` (except for the Streaming and Autopark APIs)
 
 _All requests require a_ `User-Agent` _header with any value provided._ For Tesla's sake, it's recommended you identify your application in some way using this header.
 
@@ -20,7 +20,7 @@ Gives point-in-time data about the state of the vehicle and basic controls over 
 
 Streams in data about the car's telemetry at up to half second increments. The underlying protocol is simply a streaming HTTP API that provides JSON objects at regular intervals.
 
-### Autopark \("Summon"\)
+### Autopark ("Summon")
 
-A streaming command mode to control the automatic parking of HW1 \(Autopilot v1\) and HW2/HW2.5 \(Autopilot v2\) cars. This API uses a standard WebSocket that exchanges JSON objects to convey state information and issue commands during the Autopark session.
+A streaming command mode to control the automatic parking of HW1 (Autopilot v1) and HW2/HW2.5 (Autopilot v2) cars. This API uses a standard WebSocket that exchanges JSON objects to convey state information and issue commands during the Autopark session.
 

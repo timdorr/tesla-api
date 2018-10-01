@@ -6,7 +6,7 @@ Returns the driving and position state of the vehicle.
 
 ### Response
 
-```javascript
+```json
 {
   "response": {
     "shift_state": null,

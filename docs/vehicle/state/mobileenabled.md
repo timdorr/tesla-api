@@ -6,7 +6,7 @@ Lets you know if the Mobile Access setting is enabled in the car.
 
 ### Response
 
-```javascript
+```json
 {
   "response": true
 }

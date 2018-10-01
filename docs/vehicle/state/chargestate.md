@@ -6,7 +6,7 @@ Information on the state of charge in the battery and its various settings.
 
 ### Response
 
-```javascript
+```json
 {
   "response": {
     "charging_state": "Complete",

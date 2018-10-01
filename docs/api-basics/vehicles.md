@@ -4,23 +4,23 @@ description: Endpoints for getting an account's vehicles
 
 # Vehicles
 
-A logged in user can have multiple vehicles under their account \(congrats on being rich!\). This resource is primarily responsible for listing the vehicles and the basic details about them.
+A logged in user can have multiple vehicles under their account (congrats on being rich!). This resource is primarily responsible for listing the vehicles and the basic details about them.
 
 #### `vehicle_id` vs `id`
 
 One potentially confusing part of Tesla's API is the switching use of the `id` and `vehicle_id` of the car. The `id` field is an identifier for the car on the owner-api endpoint. The `vehicle_id` field is for identifying the car across different endpoints, such as the streaming or Autopark APIs.
 
-For the state and command APIs, you should be using the `id` field. If your JSON parser doesn't support large numbers \(&gt;32 bit\), then you can use the `id_s` field for a string version of the ID.
+For the state and command APIs, you should be using the `id` field. If your JSON parser doesn't support large numbers (&gt;32 bit), then you can use the `id_s` field for a string version of the ID.
 
 ## GET `/api/1/vehicles`
 
-Retrieve a list of your owned vehicles \(includes vehicles not yet shipped!\)
+Retrieve a list of your owned vehicles (includes vehicles not yet shipped!)
 
 ### Request parameters
 
 ### Response
 
-```javascript
+```json
 {
   "response": [
     {
@@ -51,11 +51,11 @@ These resources are read-only and determine the state of the vehicle's various s
 
 | Field | Example | Description |
 | :--- | :--- | :--- |
-| `id` | `12345678901234567` | The `id` of the car. \(Not the `vehicle_id`!\) |
+| `id` | `12345678901234567` | The `id` of the car. (Not the `vehicle_id`!) |
 
 ### Response
 
-```javascript
+```json
 {
   "response": [
     {

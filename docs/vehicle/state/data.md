@@ -6,7 +6,7 @@ A cached rollup of all the `data_request` endpoints plus vehicle configuration.
 
 ### Response
 
-```javascript
+```json
 {
   "response": {
     "id": 12345678901234567,

@@ -2,7 +2,7 @@ module TeslaApi
   class Client
     include HTTParty
     base_uri "https://owner-api.teslamotors.com/api/1"
-    headers ({ "User-Agent" => "github.com/timdorr/model-s-api v:#{VERSION}" })
+    headers ({ "User-Agent" => "github.com/timdorr/tesla-api v:#{VERSION}" })
     format :json
 
     attr_reader :email, :token, :client_id, :client_secret

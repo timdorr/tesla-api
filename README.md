@@ -52,5 +52,5 @@ puts "Your Model S is #{charge_state["charging_state"]} " +
 
 ## Copyright
 
-Ruby portions are Copyright (c) 2014 Tim Dorr. Released under the terms of the
+Ruby portions are Copyright (c) 2014-Present Tim Dorr. Released under the terms of the
 MIT license. See LICENSE for details.

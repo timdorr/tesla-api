@@ -4,30 +4,30 @@ description: These endpoints give the state of the various subsystems of the car
 
 # State
 
-{% page-ref page="Data.md" %}
+{% page-ref page="data.md" %}
 
 A cached rollup of all the `data_request` endpoints plus vehicle configuration.
 
-{% page-ref page="ChargeState.md" %}
+{% page-ref page="chargestate.md" %}
 
 Information on the state of charge in the battery and its various settings.
 
-{% page-ref page="ClimateState.md" %}
+{% page-ref page="climatestate.md" %}
 
 Information on the current internal temperature and climate control system.
 
-{% page-ref page="DriveState.md" %}
+{% page-ref page="drivestate.md" %}
 
 Returns the driving and position state of the vehicle.
 
-{% page-ref page="GuiSettings.md" %}
+{% page-ref page="guisettings.md" %}
 
 Returns various information about the GUI settings of the car, such as unit format and range display.
 
-{% page-ref page="VehicleState.md" %}
+{% page-ref page="vehiclestate.md" %}
 
 Returns the vehicle's physical state, such as which doors are open.
 
-{% page-ref page="MobileEnabled.md" %}
+{% page-ref page="mobileenabled.md" %}
 
 Lets you know if the Mobile Access setting is enabled in the car.

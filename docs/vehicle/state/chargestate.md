@@ -1,6 +1,8 @@
-Information on the state of charge in the battery and its various settings.
+# Charge State
 
 ## GET `/api/1/vehicles/{id}/data_request/charge_state`
+
+Information on the state of charge in the battery and its various settings.
 
 ### Response
 

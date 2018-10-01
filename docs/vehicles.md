@@ -1,3 +1,9 @@
+---
+description: Endpoints for getting an account's vehicles
+---
+
+# Vehicles
+
 A logged in user can have multiple vehicles under their account (congrats on being rich!). This resource is primarily responsible for listing the vehicles and the basic details about them.
 
 #### `vehicle_id` vs `id`

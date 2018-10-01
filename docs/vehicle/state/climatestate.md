@@ -1,6 +1,8 @@
-Information on the current internal temperature and climate control system.
+# Climate State
 
 ## GET `/api/1/vehicles/{id}/data_request/climate_state`
+
+Information on the current internal temperature and climate control system.
 
 ### Response
 

@@ -1,6 +1,8 @@
-Returns the vehicle's physical state, such as which doors are open.
+# Vehicle State
 
 ## GET `/api/1/vehicles/{id}/data_request/vehicle_state`
+
+Returns the vehicle's physical state, such as which doors are open.
 
 ### Response
 

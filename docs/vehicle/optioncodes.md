@@ -1,8 +1,8 @@
+# Option Codes
+
 The `option_codes` field of a vehicle is a comma-delimited set of codes that represent various options the car was built with. This can include trim options, battery sizes, color, wheel types, and addon packages.
 
 *This list needs a lot of help! If you know of what any of these mean, please edit this page and submit a [pull request](https://github.com/timdorr/tesla-api/pulls). It is much appreciated!*
-
-## Option Codes
 
 | Code | Title | Description |
 |---|---|---|

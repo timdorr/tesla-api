@@ -6,7 +6,7 @@ Returns the vehicle's physical state, such as which doors are open.
 
 ### Response
 
-```javascript
+```json
 {
   "response": {
     "api_version": 3,

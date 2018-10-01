@@ -1,21 +1,21 @@
-# Table of Contents
+# Table of contents
 
 ## API Basics
 
-* [Authentication](Authentication.md)
-* [Vehicles](Vehicles.md)
+* [Authentication](authentication.md)
+* [Vehicles](vehicles.md)
 
-## Vehicle APIs
+## Vehicle
 
-* [State](vehicle/State.md)
-  * [Data](vehicle/state/Data.md)
-  * [Charge State](vehicle/state/ChargeState.md)
-  * [Climate State](vehicle/state/ClimateState.md)
-  * [Drive State](vehicle/state/DriveState.md)
-  * [GUI Settings](vehicle/state/GuiSettings.md)
-  * [Vehicle State](vehicle/state/VehicleState.md)
-  * [Mobile Enabled](vehicle/state/MobileEnabled.md)
-* [Commands](vehicle/Commands.md)
-* [Streaming](vehicle/Streaming.md)
-* [Autopark/Summon](vehicle/Autopark.md)
-* [Option Codes](vehicle/OptionCodes.md)
+* [State](vehicle/state.md)
+  * [Data](vehicle/state/data.md)
+  * [Charge State](vehicle/state/chargestate.md)
+  * [Climate State](vehicle/state/climatestate.md)
+  * [Drive State](vehicle/state/drivestate.md)
+  * [GUI Settings](vehicle/state/guisettings.md)
+  * [Vehicle State](vehicle/state/vehiclestate.md)
+  * [Mobile Enabled](vehicle/state/mobileenabled.md)
+* [Commands](vehicle/commands.md)
+* [Streaming](vehicle/streaming.md)
+* [Autopark/Summon](vehicle/autopark.md)
+* [Option Codes](vehicle/optioncodes.md)

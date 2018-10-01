@@ -1,6 +1,8 @@
-Returns various information about the GUI settings of the car, such as unit format and range display.
+# GUI Settings
 
 ## GET `/api/1/vehicles/{id}/data_request/gui_settings`
+
+Returns various information about the GUI settings of the car, such as unit format and range display.
 
 ### Response
 

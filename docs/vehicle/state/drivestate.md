@@ -1,6 +1,8 @@
-Returns the driving and position state of the vehicle.
+# Drive State
 
 ## GET `/api/1/vehicles/{id}/data_request/drive_state`
+
+Returns the driving and position state of the vehicle.
 
 ### Response
 

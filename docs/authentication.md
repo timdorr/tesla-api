@@ -1,3 +1,9 @@
+---
+description: The authentication process for the Tesla API
+---
+
+# Authentication
+
 The authentication process is via [an OAuth 2.0 Password Grant](https://oauth.net/2/grant-types/password/) with the same credentials used for tesla.com and the mobile apps.
 
 The current client ID and secret are [available here](https://pastebin.com/pS7Z6yyP).

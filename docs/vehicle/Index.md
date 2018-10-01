@@ -1,7 +1,3 @@
----
-title: Vehicle
----
-
 A logged in user can have multiple vehicles under their account. This resource is primarily responsible for listing the vehicles and the basic details about them.
 
 ## Vehicle Collection [/api/1/vehicles]

@@ -1,35 +1,33 @@
----
-title: Authentication
-breadcrumbs: Authentication
----
+The authentication process is via [an OAuth 2.0 Password Grant](https://oauth.net/2/grant-types/password/) with the same credentials used for tesla.com and the mobile apps.
 
-## Tokens [/oauth/token]
+The current client ID and secret are [available here](https://pastebin.com/pS7Z6yyP).
 
-### Get an Access Token [POST]
-Performs the login. Takes in an plain text email and password, matching the owner's login information for [https://my.teslamotors.com/user/login](https://my.teslamotors.com/user/login).
+You will get back an `access_token` which is treated as [an OAuth 2.0 Bearer Token](https://oauth.net/2/bearer-tokens/). This token is passed along in an `Authorization` header with all future requests: 
 
-Returns a `access_token` which is passed along as a header with all future requests to authenticate the user.
+```http
+Authorization: Bearer {access_token}
+```
 
-You must provide the `Authorization: Bearer {access_token}` header in all other requests.
+## POST `/oauth/token`
 
-The current client ID and secret are [available here](http://pastebin.com/fX6ejAHd)
+### Request parameters
 
-#### Request parameters
+| Field | Type | Example | Description |
+|---|---|---|---|
+| `grant_type` | String, required | `password` | The type of oAuth grant. Always "password" |
+| `client_id` | String, required | `abc` | The OAuth client ID |
+| `client_secret` | String, required | `123` | The OAuth client secret |
+| `email` | String, required | `elon@teslamotors.com` | The email for the authenticating Tesla account |
+| `password` | String, required | `edisonsux` | The password for the authenticating Tesla account |
 
-  - **grant_type**: `password` (string) - The type of oAuth grant. Always "password"
-  - **client_id**: `abc` (string) - The oAuth client ID
-  - **client_secret**: `123` (string) - The oAuth client secret
-  - **email**: `elon@teslamotors.com` (string) - The email for my.teslamotors.com
-  - **password**: `edisonsux` (string) - The password for my.teslamotors.com
-
-#### Response
+### Response
 
 ```json
 {
-  "access_token": "abc123",
-  "token_type": "bearer",
-  "expires_in": 7776000,
-  "created_at": 1457385291,
-  "refresh_token" : "cba321"
+  "access_token":"abc123",
+  "token_type":"bearer",
+  "expires_in": 3888000,
+  "refresh_token":"cba321",
+  "created_at": 1538359034
 }
 ```

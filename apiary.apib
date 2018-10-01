@@ -113,7 +113,7 @@ Returns the state of charge in the battery.
 
             {
               "response": {
-                "charging_state": "Complete",  // "Charging", "Complete", "Disconnected"
+                "charging_state": "Complete",  // "Charging", ??
                 "charge_to_max_range": false,  // current std/max-range setting
                 "max_range_charge_counter": 0,
                 "fast_charger_present": false, // connected to Supercharger?
@@ -131,11 +131,6 @@ Returns the state of charge in the battery.
                 "time_to_full_charge": null,   // valid only while charging
                 "charge_rate": -1.0,           // float mi/hr charging or -1 if not charging
                 "charge_port_door_open": true
-                "charge_limit_soc" : 90		   // the current user set charging limit (percent)
-			    "charge_limit_soc_max" : 100   //  related but never seem to change
-			    "charge_limit_soc_min" : 50	   //  related but never seem to change
-			    "charge_limit_soc_std" : 90    //  related but never seem to change
-			    "charge_port_latch" : "Engaged" // "Engaged" when open and plugged in or closed,  "Disengaged" when open and not plugged in
               }
             }
 
@@ -693,7 +688,7 @@ Start the car for keyless driving. Must start driving within 2 minutes of issuin
               }
             }
 
-## Actuate Trunk/Frunk [POST /api/1/vehicles/{vehicle_id}/command/actuate_trunk]
+## Open Trunk/Frunk [POST /api/1/vehicles/{vehicle_id}/command/trunk_open]
 Open the trunk or frunk. Call the endpoint again to close (this only works on rear powered trunks)
 
 + Request
@@ -705,104 +700,6 @@ Open the trunk or frunk. Call the endpoint again to close (this only works on re
 
     + vehicle_id: `1` (number) - The id of the Vehicle.
     + which_trunk: `rear` (string) - The trunk to open. `rear` and `front` are the only options
-
-+ Response 200 (application/json)
-
-    + Body
-
-            {
-              "response": {
-                "result": true,
-                "reason": ""
-              }
-            }
-
-## Activate Speed Limit [POST /api/1/vehicles/{vehicle_id}/command/speed_limit_activate]
-Activates Speed Limit feature. Calling this endpoint requires the Speed Limit feature to be deactivated.
-Subsequent requests will require the same pin, until the "Clear Speed Limit Pin" endpoint is called.
-
-+ Request
-    + Headers
-
-            Authorization: Bearer {access_token}
-
-+ Parameters
-
-    + vehicle_id: `1` (number) - The id of the Vehicle.
-    + pin: `1234` (string) - The 4-digit pin that will be used to disable the Speed Limit.
-
-+ Response 200 (application/json)
-
-    + Body
-
-            {
-              "response": {
-                "result": true,
-                "reason": ""
-              }
-            }
-
-## Deactivate Speed Limit [POST /api/1/vehicles/{vehicle_id}/command/speed_limit_deactivate]
-Deactivates Speed Limit feature. Calling this endpoint requires the Speed Limit feature to be activated.
-
-+ Request
-    + Headers
-
-            Authorization: Bearer {access_token}
-
-+ Parameters
-
-    + vehicle_id: `1` (number) - The id of the Vehicle.
-    + pin: `1234` (string) - The 4-digit pin that was set when activating the Speed Limit feature.
-
-+ Response 200 (application/json)
-
-    + Body
-
-            {
-              "response": {
-                "result": true,
-                "reason": ""
-              }
-            }
-
-## Set Speed Limit [POST /api/1/vehicles/{vehicle_id}/command/speed_limit_set_limit]
-Sets the speed limit for the Speed Limit feature. Calling this endpoint requires the Speed Limit feature to be deactivated.
-
-+ Request
-    + Headers
-
-            Authorization: Bearer {access_token}
-
-+ Parameters
-
-    + vehicle_id: `1` (number) - The id of the Vehicle.
-    + limit_mph: `60` (string) - The speed limit to set, in miles per hour. Can only be between 50 and 90, inclusive.
-
-+ Response 200 (application/json)
-
-    + Body
-
-            {
-              "response": {
-                "result": true,
-                "reason": ""
-              }
-            }
-
-## Clear Speed Limit PIN [POST /api/1/vehicles/{vehicle_id}/command/speed_limit_clear_pin]
-Clears the PIN for the Speed Limit feature. This lets you call the Activate Speed Limit endpoint with a NEW pin.
-Calling this endpoint requires the Speed Limit feature to be deactivated.
-
-+ Request
-    + Headers
-
-            Authorization: Bearer {access_token}
-
-+ Parameters
-
-    + vehicle_id: `1` (number) - The id of the Vehicle.
-    + pin: `1234` (string) - The 4-digit pin that was used to activate the Speed Limit feature.
 
 + Response 200 (application/json)
 

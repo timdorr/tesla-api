@@ -9,7 +9,7 @@ A logged in user can have multiple products (energy sites?) under their account.
 
 #### `battery_id` vs `site_id`
 
-`battery_id` refers to data of battery pack, while `site_id` refers to the whole site data.
+`battery_id` (in JSON response is id) refers to data of battery pack, while `site_id` (in JSON response is energy_site_id) refers to the whole site data.
 Both ids are available requesting the `/api/1/products` endpoint.
 
 ## GET `/api/1/products`

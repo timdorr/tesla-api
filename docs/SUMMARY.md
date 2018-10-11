@@ -6,6 +6,7 @@
 
 * [Authentication](api-basics/authentication.md)
 * [Vehicles](api-basics/vehicles.md)
+* [Products](api-basics/products.md)
 
 ## Vehicle
 

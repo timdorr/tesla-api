@@ -26,7 +26,7 @@ Retrieve a list of your owned products.
     {
       "energy_site_id": 0000000,
       "resource_type": "battery",
-      "site_name": "Powerwall Fornasier",
+      "site_name": "Site name as string",
       "gateway_id": "0000000-00-X--T00D0000000",
       "energy_left": 11536.842105263157,
       "total_pack_energy": 13480,

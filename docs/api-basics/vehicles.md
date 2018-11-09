@@ -35,6 +35,7 @@ Retrieve a list of your owned vehicles (includes vehicles not yet shipped!)
       "in_service": false,
       "id_s": "12345678901234567",
       "calendar_enabled": true,
+      "api_version": 4,
       "backseat_token": null,
       "backseat_token_updated_at": null
     }
@@ -69,6 +70,7 @@ These resources are read-only and determine the state of the vehicle's various s
     "in_service": false,
     "id_s": "12345678901234567",
     "calendar_enabled": true,
+    "api_version": 4,
     "backseat_token": null,
     "backseat_token_updated_at": null
   }

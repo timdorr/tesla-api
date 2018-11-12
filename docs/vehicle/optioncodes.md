@@ -102,6 +102,7 @@ appreciated!_
 | IDOG | Gloss Obeche Wood Decor | | 
 | IDLW | Lacewood Decor | | 
 | IDPB | Piano Black Decor | | 
+| IN3PB | All Black Premium Interior | | 
 | INBBW | White | | 
 | INBFP | Classic Black | | 
 | INBPP | Black | | 
@@ -130,6 +131,7 @@ appreciated!_
 | MI00 | 2015 Production Refresh | | 
 | MI01 | 2016 Production Refresh | | 
 | MI02 | 2017 Production Refresh | | 
+| MT305 | Mid Range Rear-Wheel Drive | | 
 | PA00 | No Paint Armor | | 
 | PBCW | Catalina White | | 
 | PBSB | Sierra Black | | 
@@ -152,6 +154,7 @@ appreciated!_
 | PPSR | Signature Red | | 
 | PPSW | Shasta Pearl White Multi-Coat | | 
 | PPTI | Titanium Metallic | | 
+| PRM31 | Premium Interior | | 
 | PS00 | No Parcel Shelf | | 
 | PS01 | Parcel Shelf | | 
 | PX00 | No Performance Plus Package | | 
@@ -212,6 +215,7 @@ appreciated!_
 | UTAW | Light Headliner | | 
 | UTPB | Dark Headliner | | 
 | UTSB | Dark Headliner | | 
+| W39B | 19" Sport Wheels | | 
 | WT20 | 20" Silver Slipstream Wheels | | 
 | WTAS | 19" Silver Slipstream Wheels | | 
 | WTDS | 19" Grey Slipstream Wheels | | 

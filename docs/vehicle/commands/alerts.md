@@ -29,7 +29,7 @@ None
     "result": true
   }
 }
-,,,
+```
 
 ## POST `/api/1/vehicles/{id}/command/flash_lights`
 
@@ -58,4 +58,4 @@ None
     "result": true
   }
 }
-,,,
+```

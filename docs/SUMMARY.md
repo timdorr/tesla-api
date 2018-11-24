@@ -32,8 +32,11 @@
   * [Speed Limit](vehicle/commands/speedlimit.md)
   * [Valet Mode](vehicle/commands/valet.md)
   * [Calendar](vehicle/commands/calendar.md)
-
 * [Streaming](vehicle/streaming.md)
 * [Autopark/Summon](vehicle/autopark.md)
 * [Option Codes](vehicle/optioncodes.md)
+
+## Miscellaneous
+
+* [Endpoints File](miscellaneous/endpoints.md)
 

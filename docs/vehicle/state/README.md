@@ -6,7 +6,7 @@ description: These endpoints give the state of the various subsystems of the car
 
 {% page-ref page="data.md" %}
 
-A cached rollup of all the `data_request` endpoints plus vehicle configuration.
+A rollup of all the `data_request` endpoints plus vehicle configuration.
 
 {% page-ref page="chargestate.md" %}
 

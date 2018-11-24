@@ -2,7 +2,7 @@
 
 ## GET `/api/1/vehicles/{id}/data`
 
-A cached rollup of all the `data_request` endpoints plus vehicle configuration.
+A rollup of all the `data_request` endpoints plus vehicle configuration.
 
 ### Response
 

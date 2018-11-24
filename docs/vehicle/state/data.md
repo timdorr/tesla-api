@@ -1,6 +1,6 @@
 # Data
 
-## GET `/api/1/vehicles/{id}/data`
+## GET `/api/1/vehicles/{id}/vehicle_data`
 
 A rollup of all the `data_request` endpoints plus vehicle configuration.
 
@@ -179,3 +179,10 @@ A rollup of all the `data_request` endpoints plus vehicle configuration.
 }
 ```
 
+## GET `/api/1/vehicles/{id}/data`
+
+A "legacy" version of the data endpoint.
+
+### Response
+
+Currently, this has the exact same response structure as the newer vehicle_data endpoint.

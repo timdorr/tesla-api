@@ -6,9 +6,9 @@ Enables keyless driving. There is a two minute window after issuing the command 
 
 ### Parameters
 
-| Parameter | Example | Description |
-| :--- | :--- | :--- |
-| password | edisonsux | The password for the authenticated tesla.com account. |
+| Parameter | Example   | Description                                           |
+| :-------- | :-------- | :---------------------------------------------------- |
+| password  | edisonsux | The password for the authenticated tesla.com account. |
 
 ### Response
 

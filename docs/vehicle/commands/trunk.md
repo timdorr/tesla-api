@@ -6,9 +6,9 @@ Opens either the front or rear trunk. On the Model S and X, it will also close t
 
 ### Parameters
 
-| Parameter | Example | Description |
-| :--- | :--- | :--- |
-| which_trunk | rear | Which trunk to open/close. `rear` and `front` are the only options. |
+| Parameter   | Example | Description                                                         |
+| :---------- | :------ | :------------------------------------------------------------------ |
+| which_trunk | rear    | Which trunk to open/close. `rear` and `front` are the only options. |
 
 ### Response
 
@@ -18,4 +18,3 @@ Opens either the front or rear trunk. On the Model S and X, it will also close t
   "result": true
 }
 ```
-

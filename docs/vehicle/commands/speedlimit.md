@@ -6,9 +6,9 @@ Sets the maximum speed allowed when Speed Limit Mode is active.
 
 ### Parameters
 
-| Parameter | Example | Description |
-| :--- | :--- | :--- |
-| limit_mph | 65 | The speed limit in MPH. Must be between 50-90. |
+| Parameter | Example | Description                                    |
+| :-------- | :------ | :--------------------------------------------- |
+| limit_mph | 65      | The speed limit in MPH. Must be between 50-90. |
 
 ### Response
 
@@ -25,9 +25,9 @@ Activates Speed Limit Mode at the currently set speed.
 
 ### Parameters
 
-| Parameter | Example | Description |
-| :--- | :--- | :--- |
-| pin | 1234 | The existing PIN, if previously set, or a new 4 digit PIN. |
+| Parameter | Example | Description                                                |
+| :-------- | :------ | :--------------------------------------------------------- |
+| pin       | 1234    | The existing PIN, if previously set, or a new 4 digit PIN. |
 
 ### Response
 
@@ -44,9 +44,9 @@ Deactivates Speed Limit Mode if it is currently active.
 
 ### Parameters
 
-| Parameter | Example | Description |
-| :--- | :--- | :--- |
-| pin | 1234 | The 4 digit PIN used to activate Speed Limit Mode. |
+| Parameter | Example | Description                                        |
+| :-------- | :------ | :------------------------------------------------- |
+| pin       | 1234    | The 4 digit PIN used to activate Speed Limit Mode. |
 
 ### Response
 
@@ -63,9 +63,9 @@ Clears the currently set PIN for Speed Limit Mode.
 
 ### Parameters
 
-| Parameter | Example | Description |
-| :--- | :--- | :--- |
-| pin | 1234 | The 4 digit PIN used to activate Speed Limit Mode. |
+| Parameter | Example | Description                                        |
+| :-------- | :------ | :------------------------------------------------- |
+| pin       | 1234    | The 4 digit PIN used to activate Speed Limit Mode. |
 
 ### Response
 

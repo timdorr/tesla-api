@@ -4,17 +4,16 @@ Valet Mode limits the car's top speed to 70MPH and 80kW of acceleration power. I
 Wifi settings, and the ability to disable mobile access to the car. It also hides your favorites, home, and work
 locations in navigation.
 
-
 ## POST `/api/1/vehicles/{id}/command/set_valet_mode`
 
 Activates or deactivates Valet Mode.
 
 ### Parameters
 
-| Parameter | Example | Description |
-| :--- | :--- | :--- |
-| on | true | true to activate, false to deactivate. Must include previous PIN if deactivating. |
-| password | 1234 | A PIN to deactivate Valet Mode. Can be blank if activating with a previous PIN. |
+| Parameter | Example | Description                                                                       |
+| :-------- | :------ | :-------------------------------------------------------------------------------- |
+| on        | true    | true to activate, false to deactivate. Must include previous PIN if deactivating. |
+| password  | 1234    | A PIN to deactivate Valet Mode. Can be blank if activating with a previous PIN.   |
 
 ### Response
 

@@ -9,13 +9,12 @@ Returns various information about the GUI settings of the car, such as unit form
 ```json
 {
   "response": {
-    "gui_distance_units": "mi/hr",
-    "gui_temperature_units": "F",
-    "gui_charge_rate_units": "mi/hr",
     "gui_24_hour_time": false,
+    "gui_charge_rate_units": "mi/hr",
+    "gui_distance_units": "mi/hr",
     "gui_range_display": "Rated",
-    "timestamp": 1538365490671
+    "gui_temperature_units": "F",
+    "timestamp": 1543187561462
   }
 }
 ```
-

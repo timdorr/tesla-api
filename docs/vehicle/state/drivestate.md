@@ -9,19 +9,18 @@ Returns the driving and position state of the vehicle.
 ```json
 {
   "response": {
-    "shift_state": null,
-    "speed": null,
-    "power": 0,
+    "gps_as_of": 1543187664,
+    "heading": 8,
     "latitude": 33.111111,
     "longitude": -88.111111,
-    "heading": 5,
-    "gps_as_of": 1538365363,
-    "native_location_supported": 1,
     "native_latitude": 33.111111,
+    "native_location_supported": 1,
     "native_longitude": -88.111111,
     "native_type": "wgs",
-    "timestamp": 1538365436098
+    "power": 0,
+    "shift_state": null,
+    "speed": null,
+    "timestamp": 1543187666472
   }
 }
 ```
-

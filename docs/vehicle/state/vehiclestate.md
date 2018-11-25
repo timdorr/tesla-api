@@ -9,39 +9,42 @@ Returns the vehicle's physical state, such as which doors are open.
 ```json
 {
   "response": {
-    "api_version": 3,
-    "autopark_state_v2": "standby",
+    "api_version": 4,
+    "autopark_state_v2": "ready",
     "autopark_style": "standard",
     "calendar_supported": true,
-    "car_version": "2018.34.1 3dd3072",
+    "car_version": "2018.42.2 19e7e44",
     "center_display_state": 0,
     "df": 0,
     "dr": 0,
     "ft": 0,
     "homelink_nearby": true,
+    "is_user_present": false,
     "last_autopark_error": "no_error",
     "locked": true,
+    "media_state": { "remote_control_enabled": true },
     "notifications_supported": true,
-    "odometer": 33561.422505,
+    "odometer": 36051.517239,
     "parsed_calendar_supported": true,
     "pf": 0,
     "pr": 0,
     "remote_start": false,
     "remote_start_supported": true,
     "rt": 0,
+    "software_update": { "expected_duration_sec": 2700, "status": "" },
     "speed_limit_mode": {
       "active": false,
-      "current_limit_mph": 75.0,
+      "current_limit_mph": 50.0,
       "max_limit_mph": 90,
       "min_limit_mph": 50,
       "pin_code_set": false
     },
     "sun_roof_percent_open": 0,
     "sun_roof_state": "unknown",
-    "timestamp": 1538365559247,
+    "timestamp": 1543187581934,
     "valet_mode": false,
+    "valet_pin_needed": true,
     "vehicle_name": "Nikola 2.0"
   }
 }
 ```
-

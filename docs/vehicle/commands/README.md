@@ -50,7 +50,7 @@ Adjust the temperature settings of the car.
 
 Control the media playing in the car.
 
-{% page-ref page="nagivation.md" %}
+{% page-ref page="navigation.md" %}
 
 Start the navigation system.
 

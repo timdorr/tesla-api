@@ -29,7 +29,7 @@
   * [Charging](vehicle/commands/charging.md)
   * [Climate](vehicle/commands/climate.md)
   * [Media](vehicle/commands/media.md)
-  * [Navigation](vehicle/commands/nagivation.md)
+  * [Navigation](vehicle/commands/navigation.md)
   * [Software Updates](vehicle/commands/softwareupdate.md)
   * [Calendar](vehicle/commands/calendar.md)
 * [Streaming](vehicle/streaming.md)

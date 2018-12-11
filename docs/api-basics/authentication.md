@@ -4,7 +4,9 @@ description: The authentication process for the Tesla API
 
 # Authentication
 
-The authentication process is via [an OAuth 2.0 Password Grant](https://oauth.net/2/grant-types/password/) with the same credentials used for tesla.com and the mobile apps.
+## POST `/oauth/token?grant_type=password`
+
+The initial authentication process is via [an OAuth 2.0 Password Grant](https://oauth.net/2/grant-types/password/) with the same credentials used for tesla.com and the mobile apps.
 
 The current client ID and secret are [available here](https://pastebin.com/pS7Z6yyP).
 
@@ -15,8 +17,6 @@ Authorization: Bearer {access_token}
 ```
 
 The access token has a 45 day expiration.
-
-## POST `/oauth/token`
 
 ### Request parameters
 
@@ -52,9 +52,9 @@ The access token has a 45 day expiration.
 }
 ```
 
-## POST `/oauth/token`
+## POST `/oauth/token?grant_type=refresh_token`
 
-You can use your access token and refresh token to create a new access token before the old one expires. This invalidates your old token, but doesn't require entering credentials again.
+You can use the `refresh_token` from the Password Grant to do [an OAuth 2.0 Refresh Token Grant](https://oauth.net/2/grant-types/refresh-token/) and obtain a new access token. Note: This will invalidate the previous access token.
 
 ### Request parameters
 

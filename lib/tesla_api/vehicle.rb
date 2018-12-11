@@ -169,6 +169,14 @@ module TeslaApi
       })['response']
     end
 
+    def schedule_software_update(offset_sec = 0)
+      command('schedule_software_update', body: {offset_sec: offset_sec})['response']
+    end
+
+    def cancel_software_update
+      command('cancel_software_update')['response']
+    end
+
     private
 
     def data_request(name)

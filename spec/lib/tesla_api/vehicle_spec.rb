@@ -299,4 +299,16 @@ RSpec.describe TeslaApi::Vehicle do
       expect(vehicle.navigation_request('1180 W Peachtree St, Atlanta, GA 30309')['result']).to eq(true)
     end
   end
+
+  describe '#schedule_software_update', vcr: {cassette_name: 'vehicle-schedule_software_update'} do
+    it 'cancels a pending software update' do
+      expect(vehicle.schedule_software_update(7200)['result']).to eq(true)
+    end
+  end
+
+  describe '#cancel_software_update', vcr: {cassette_name: 'vehicle-cancel_software_update'} do
+    it 'cancels a pending software update' do
+      expect(vehicle.cancel_software_update['result']).to eq(true)
+    end
+  end
 end

@@ -25,6 +25,17 @@ RSpec.describe TeslaApi::Vehicle do
     end
   end
 
+  describe '#data', vcr: {cassette_name: 'vehicle-data'} do
+    context 'data about the vehicle\'s overall state' do
+      subject { vehicle.data }
+
+      it { should include('display_name') }
+      it { should include('drive_state') }
+      it { should include('vehicle_state') }
+      it { should include('charge_state') }
+    end
+  end
+
   describe '#mobile_enabled', vcr: {cassette_name: 'vehicle-mobile_enabled'} do
     it 'indicates if mobile app access is enabled' do
       expect(vehicle.mobile_enabled).to eq(true)
@@ -220,34 +231,12 @@ RSpec.describe TeslaApi::Vehicle do
   end
 
   describe '#sun_roof_control' do
-    it 'opens the sun roof', vcr: {cassette_name: 'vehicle-sun_roof_control-open'} do
-      expect(vehicle.sun_roof_control('open')['result']).to eq(true)
-    end
-
     it 'closes the sun roof', vcr: {cassette_name: 'vehicle-sun_roof_control-close'} do
       expect(vehicle.sun_roof_control('close')['result']).to eq(true)
     end
 
     it 'vents the sun roof', vcr: {cassette_name: 'vehicle-sun_roof_control-vent'} do
       expect(vehicle.sun_roof_control('vent')['result']).to eq(true)
-    end
-
-    it 'sets the sun roof to the comfort (80%) setting', vcr: {cassette_name: 'vehicle-sun_roof_control-comfort'} do
-      expect(vehicle.sun_roof_control('comfort')['result']).to eq(true)
-    end
-  end
-
-  describe '#sun_roof_move' do
-    it 'moves the sun roof to 100% open', vcr: {cassette_name: 'vehicle-sun_roof_move-100'} do
-      expect(vehicle.sun_roof_move(100)['result']).to eq(true)
-    end
-
-    it 'moves the sun roof to closed', vcr: {cassette_name: 'vehicle-sun_roof_move-0'} do
-      expect(vehicle.sun_roof_move(0)['result']).to eq(true)
-    end
-
-    it 'moves the sun roof to 50% open', vcr: {cassette_name: 'vehicle-sun_roof_move-50'} do
-      expect(vehicle.sun_roof_move(50)['result']).to eq(true)
     end
   end
 

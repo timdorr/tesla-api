@@ -1,6 +1,6 @@
 # Endpoints File
 
-This the latest contents of the ownerapi_endpoints.json file from the 3.6.2 version of the app.
+This the latest contents of the ownerapi_endpoints.json file from the 3.7.0 version of the app.
 
 ```json
 {
@@ -37,6 +37,11 @@ This the latest contents of the ownerapi_endpoints.json file from the 3.6.2 vers
   "VEHICLE_DATA": {
     "TYPE": "GET",
     "URI": "api/1/vehicles/{vehicle_id}/vehicle_data",
+    "AUTH": true
+  },
+  "NEARBY_CHARGING_SITES": {
+    "TYPE": "GET",
+    "URI": "api/1/vehicles/{vehicle_id}/nearby_charging_sites",
     "AUTH": true
   },
   "WAKE_UP": {

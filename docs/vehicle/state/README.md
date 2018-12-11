@@ -32,3 +32,7 @@ Returns the vehicle's physical state, such as which doors are open.
 
 Lets you know if the Mobile Access setting is enabled in the car.
 
+{% page-ref page="nearbychargingsites.md" %}
+
+Returns a list of nearby Tesla-operated charging stations.
+

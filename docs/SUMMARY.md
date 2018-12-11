@@ -17,6 +17,7 @@
   * [GUI Settings](vehicle/state/guisettings.md)
   * [Vehicle State](vehicle/state/vehiclestate.md)
   * [Mobile Enabled](vehicle/state/mobileenabled.md)
+  * [Nearby Charging Sites](vehicle/state/nearbychargingsites.md)
 * [Commands](vehicle/commands/README.md)
   * [Wake](vehicle/commands/wake.md)
   * [Alerts](vehicle/commands/alerts.md)

@@ -34,6 +34,10 @@ module TeslaApi
       api.get("/vehicles/#{id}/mobile_enabled")['response']
     end
 
+    def nearby_charging_sites
+      api.get("/vehicles/#{id}/nearby_charging_sites")['response']
+    end
+
     def gui_settings
       data_request('gui_settings')['response']
     end

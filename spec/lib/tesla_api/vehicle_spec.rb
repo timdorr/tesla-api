@@ -42,6 +42,12 @@ RSpec.describe TeslaApi::Vehicle do
     end
   end
 
+  describe '#nearby_charging_sites', vcr: {cassette_name: 'vehicle-nearby_charging_sites'} do
+    pending 'returns a list of nearby charging sites' do
+      expect(vehicle.nearby_charging_sites).to eq([])
+    end
+  end
+
   describe '#gui_settings', vcr: {cassette_name: 'vehicle-gui_settings'} do
     context 'details for a GUI built on the API' do
       subject { vehicle.gui_settings }

@@ -172,6 +172,18 @@ RSpec.describe TeslaApi::Vehicle do
     end
   end
 
+  describe '#charge_port_door_open', vcr: {cassette_name: 'vehicle-charge_port_door_open'} do
+    it 'opens the charge port door' do
+      expect(vehicle.charge_port_door_open['result']).to eq(true)
+    end
+  end
+
+  describe '#charge_port_door_close', vcr: {cassette_name: 'vehicle-charge_port_door_close'} do
+    it 'closes the charge port door' do
+      expect(vehicle.charge_port_door_close['result']).to eq(true)
+    end
+  end
+
   describe '#charge_start', vcr: {cassette_name: 'vehicle-charge_start'} do
     it 'starts charging' do
       expect(vehicle.charge_start['result']).to eq(true)

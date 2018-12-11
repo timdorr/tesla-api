@@ -72,6 +72,10 @@ module TeslaApi
       command('charge_port_door_open')['response']
     end
 
+    def charge_port_door_close
+      command('charge_port_door_close')['response']
+    end
+
     def charge_standard
       command('charge_standard')['response']
     end

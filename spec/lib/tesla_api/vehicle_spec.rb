@@ -293,4 +293,10 @@ RSpec.describe TeslaApi::Vehicle do
       expect(vehicle.clear_speed_limit_pin('1234')['result']).to eq(true)
     end
   end
+
+  describe '#navigation_request', vcr: {cassette_name: 'vehicle-navigation_request'} do
+    it 'makes a request to navigate to a new address' do
+      expect(vehicle.navigation_request('1180 W Peachtree St, Atlanta, GA 30309')['result']).to eq(true)
+    end
+  end
 end

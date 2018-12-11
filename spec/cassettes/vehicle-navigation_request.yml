@@ -1,0 +1,100 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://owner-api.teslamotors.com/api/1/vehicles
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - github.com/timdorr/tesla-api v:1.3.0
+      Authorization:
+      - Bearer <TESLA_API_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Dec 2018 03:52:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '659'
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Txid:
+      - 133482a0eb21b88a3bbb970d365529f5
+      Etag:
+      - W/"0d85a34aa9e150f718d20dc8c7a68fb1"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - cec88ce0-2eee-40c6-9f7b-4ae66fa0770b
+      X-Runtime:
+      - '0.018938'
+    body:
+      encoding: UTF-8
+      string: '{"response":[{"id":19298251174317440,"vehicle_id":1817902171,"vin":"5YJSA1E41GF167745","display_name":"Nikola
+        2.0","option_codes":"MDLS,RENA,AF02,APF1,APH2,APPB,AU01,BC0R,BP00,BR00,BS00,CDM0,CH05,PBCW,CW00,DCF0,DRLH,DSH7,DV4W,FG02,FR04,HP00,IDBA,IX01,LP01,ME02,MI01,PF01,PI01,PK00,PS01,PX00,PX4D,QTVB,RFP2,SC01,SP00,SR01,SU01,TM00,TP03,TR00,UTAB,WTAS,X001,X003,X007,X011,X013,X021,X024,X027,X028,X031,X037,X040,X044,YFFC,COUS","color":null,"tokens":["08f5098517a10231","8d219a2e09242e02"],"state":"online","in_service":false,"id_s":"19298251174317440","calendar_enabled":true,"api_version":4,"backseat_token":null,"backseat_token_updated_at":null}],"count":1}'
+    http_version: 
+  recorded_at: Tue, 11 Dec 2018 03:52:42 GMT
+- request:
+    method: post
+    uri: https://owner-api.teslamotors.com/api/1/vehicles/19298251174317440/command/navigation_request
+    body:
+      encoding: UTF-8
+      string: type=share_ext_content_raw&locale=en-US&timestamp_ms=1544500362&value[android.intent.extra.TEXT]=1180%20W%20Peachtree%20St%2C%20Atlanta%2C%20GA%2030309
+    headers:
+      User-Agent:
+      - github.com/timdorr/tesla-api v:1.3.0
+      Authorization:
+      - Bearer <TESLA_API_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 11 Dec 2018 03:52:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '43'
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Txid:
+      - 0f96fb719f1b87111da5f4809ca3e19a
+      Etag:
+      - W/"6c93a9ca22c89240ebbffee93abe0348"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1b4238b5-00f7-4187-8f85-e45da6124c05
+      X-Runtime:
+      - '0.459076'
+    body:
+      encoding: UTF-8
+      string: '{"response":{"result":true,"queued":false}}'
+    http_version: 
+  recorded_at: Tue, 11 Dec 2018 03:52:43 GMT
+recorded_with: VCR 4.0.0

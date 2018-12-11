@@ -160,6 +160,15 @@ module TeslaApi
       command('speed_limit_clear_pin', body: {pin: pin})['response']
     end
 
+    def navigation_request(address)
+      command('navigation_request', body: {
+          type: 'share_ext_content_raw',
+          locale: 'en-US',
+          timestamp_ms: Time.now.to_i,
+          value: {'android.intent.extra.TEXT' => address}
+      })['response']
+    end
+
     private
 
     def data_request(name)

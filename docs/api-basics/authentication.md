@@ -20,22 +20,22 @@ The access token has a 45 day expiration.
 
 ### Request parameters
 
-| Field | Type | Example | Description |
-| :--- | :--- | :--- | :--- |
-| `grant_type` | String, required | `password` | The type of OAuth grant. Always "password" |
-| `client_id` | String, required | `abc` | The OAuth client ID |
-| `client_secret` | String, required | `123` | The OAuth client secret |
-| `email` | String, required | `elon@teslamotors.com` | The email for the authenticating Tesla account |
-| `password` | String, required | `edisonsux` | The password for the authenticating Tesla account |
+| Field           | Type             | Example                | Description                                       |
+| :-------------- | :--------------- | :--------------------- | :------------------------------------------------ |
+| `grant_type`    | String, required | `password`             | The type of OAuth grant. Always "password"        |
+| `client_id`     | String, required | `abc`                  | The OAuth client ID                               |
+| `client_secret` | String, required | `123`                  | The OAuth client secret                           |
+| `email`         | String, required | `elon@teslamotors.com` | The email for the authenticating Tesla account    |
+| `password`      | String, required | `edisonsux`            | The password for the authenticating Tesla account |
 
 ### Request
 
 ```json
 {
-  "grant_type":"password",
-  "client_id":"abc",
+  "grant_type": "password",
+  "client_id": "abc",
   "client_secret": "123",
-  "email":"elon@teslamotors.com",
+  "email": "elon@teslamotors.com",
   "password": "edisonsux"
 }
 ```
@@ -44,10 +44,10 @@ The access token has a 45 day expiration.
 
 ```json
 {
-  "access_token":"abc123",
-  "token_type":"bearer",
+  "access_token": "abc123",
+  "token_type": "bearer",
   "expires_in": 3888000,
-  "refresh_token":"cba321",
+  "refresh_token": "cba321",
   "created_at": 1538359034
 }
 ```
@@ -58,21 +58,21 @@ You can use your access token and refresh token to create a new access token bef
 
 ### Request parameters
 
-| Field | Type | Example | Description |
-| :--- | :--- | :--- | :--- |
-| `grant_type` | String, required | `refresh_token` | The type of OAuth grant. Always "refresh_token" |
-| `client_id` | String, required | `abc` | The OAuth client ID |
-| `client_secret` | String, required | `123` | The OAuth client secret |
-| `refresh_token` | String, required | `cba321` | The refresh token returned from a previous token request. |
+| Field           | Type             | Example         | Description                                               |
+| :-------------- | :--------------- | :-------------- | :-------------------------------------------------------- |
+| `grant_type`    | String, required | `refresh_token` | The type of OAuth grant. Always "refresh_token"           |
+| `client_id`     | String, required | `abc`           | The OAuth client ID                                       |
+| `client_secret` | String, required | `123`           | The OAuth client secret                                   |
+| `refresh_token` | String, required | `cba321`        | The refresh token returned from a previous token request. |
 
 ### Request
 
 ```json
 {
-  "grant_type":"refresh_token",
-  "client_id":"abc",
+  "grant_type": "refresh_token",
+  "client_id": "abc",
   "client_secret": "123",
-  "refresh_token":"cba321"
+  "refresh_token": "cba321"
 }
 ```
 
@@ -80,10 +80,10 @@ You can use your access token and refresh token to create a new access token bef
 
 ```json
 {
-  "access_token":"abc123",
-  "token_type":"bearer",
+  "access_token": "abc123",
+  "token_type": "bearer",
   "expires_in": 3888000,
-  "refresh_token":"cba321",
+  "refresh_token": "cba321",
   "created_at": 1538359034
 }
 ```

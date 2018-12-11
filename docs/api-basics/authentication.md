@@ -14,6 +14,8 @@ You will get back an `access_token` which is treated as [an OAuth 2.0 Bearer Tok
 Authorization: Bearer {access_token}
 ```
 
+The access token has a 45 day expiration.
+
 ## POST `/oauth/token`
 
 ### Request parameters
@@ -25,6 +27,18 @@ Authorization: Bearer {access_token}
 | `client_secret` | String, required | `123` | The OAuth client secret |
 | `email` | String, required | `elon@teslamotors.com` | The email for the authenticating Tesla account |
 | `password` | String, required | `edisonsux` | The password for the authenticating Tesla account |
+
+### Request
+
+```json
+{
+  "grant_type":"password",
+  "client_id":"abc",
+  "client_secret": "123",
+  "email":"elon@teslamotors.com",
+  "password": "edisonsux"
+}
+```
 
 ### Response
 
@@ -38,3 +52,38 @@ Authorization: Bearer {access_token}
 }
 ```
 
+## POST `/oauth/token`
+
+You can use your access token and refresh token to create a new access token before the old one expires. This invalidates your old token, but doesn't require entering credentials again.
+
+### Request parameters
+
+| Field | Type | Example | Description |
+| :--- | :--- | :--- | :--- |
+| `grant_type` | String, required | `refresh_token` | The type of OAuth grant. Always "refresh_token" |
+| `client_id` | String, required | `abc` | The OAuth client ID |
+| `client_secret` | String, required | `123` | The OAuth client secret |
+| `refresh_token` | String, required | `cba321` | The refresh token returned from a previous token request. |
+
+### Request
+
+```json
+{
+  "grant_type":"refresh_token",
+  "client_id":"abc",
+  "client_secret": "123",
+  "refresh_token":"cba321"
+}
+```
+
+### Response
+
+```json
+{
+  "access_token":"abc123",
+  "token_type":"bearer",
+  "expires_in": 3888000,
+  "refresh_token":"cba321",
+  "created_at": 1538359034
+}
+```

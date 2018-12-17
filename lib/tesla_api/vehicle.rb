@@ -2,10 +2,11 @@ module TeslaApi
   class Vehicle
     include Stream
     include Autopark
-    attr_reader :api, :id, :vehicle
+    attr_reader :api, :email, :id, :vehicle
 
-    def initialize(api, id, vehicle)
+    def initialize(api, email, id, vehicle)
       @api = api
+      @email = email
       @id = id
       @vehicle = vehicle
     end

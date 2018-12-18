@@ -16,6 +16,7 @@
   * [Drive State](vehicle/state/drivestate.md)
   * [GUI Settings](vehicle/state/guisettings.md)
   * [Vehicle State](vehicle/state/vehiclestate.md)
+  * [Vehicle Config](vehicle/state/vehicleconfig.md)
   * [Mobile Enabled](vehicle/state/mobileenabled.md)
   * [Nearby Charging Sites](vehicle/state/nearbychargingsites.md)
 * [Commands](vehicle/commands/README.md)

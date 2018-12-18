@@ -28,6 +28,10 @@ Returns various information about the GUI settings of the car, such as unit form
 
 Returns the vehicle's physical state, such as which doors are open.
 
+{% page-ref page="vehicleconfig.md" %}
+
+Returns the vehicle's configuration information including model, color, badging and wheels.
+
 {% page-ref page="mobileenabled.md" %}
 
 Lets you know if the Mobile Access setting is enabled in the car.

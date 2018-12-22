@@ -1,6 +1,6 @@
 # Endpoints File
 
-This the latest contents of the ownerapi_endpoints.json file from the 3.7.0 version of the app.
+This the latest contents of the ownerapi_endpoints.json file from the 3.8.0 version of the app.
 
 ```json
 {
@@ -256,6 +256,17 @@ This the latest contents of the ownerapi_endpoints.json file from the 3.7.0 vers
     "AUTH": true,
     "CONTENT": "HTML"
   },
+  "SERVICE_SELF_SCHEDULING_ELIGIBILITY": {
+    "TYPE": "GET",
+    "URI": "api/1/users/service_scheduling_data",
+    "AUTH": true
+  },
+  "SERVICE_SELF_SCHEDULING_PAGE": {
+    "TYPE": "GET",
+    "URI": "service_scheduling_page",
+    "AUTH": true,
+    "CONTENT": "HTML"
+  },
   "REFERRAL_DATA": {
     "TYPE": "GET",
     "URI": "api/1/users/referral_data",
@@ -401,6 +412,16 @@ This the latest contents of the ownerapi_endpoints.json file from the 3.7.0 vers
   "NAVIGATION_REQUEST": {
     "TYPE": "POST",
     "URI": "api/1/vehicles/{vehicle_id}/command/navigation_request",
+    "AUTH": true
+  },
+  "REMOTE_SEAT_HEATER_REQUEST": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/remote_seat_heater_request",
+    "AUTH": true
+  },
+  "REMOTE_STEERING_WHEEL_HEATER_REQUEST": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/remote_steering_wheel_heater_request",
     "AUTH": true
   }
 }

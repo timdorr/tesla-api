@@ -134,7 +134,7 @@ appreciated!_
 | MT305 | Mid Range Rear-Wheel Drive | | 
 | PA00 | No Paint Armor | | 
 | PBCW | Catalina White | | 
-| PBSB | Sierra Black | | 
+| PBSB | Sierra Black | Translates to the Solid Black exterior color in design studio. Applicable to all variants of Model S, Model 3 and Model X. | 
 | PBT8 | Performance 85kWh | | 
 | PF00 | No Performance Legacy Package | | 
 | PF01 | Performance Legacy Package | | 
@@ -145,14 +145,14 @@ appreciated!_
 | PMBL | Obsidian Black Multi-Coat | | 
 | PMMB | Monterey Blue Metallic | | 
 | PMMR | Multi-Coat Red | | 
-| PMNG | Midnight Silver Metallic | | 
+| PMNG | Midnight Silver Metallic | Translates to the Midnight Silver Metallic exterior color in design studio. Applicable to all variants of Model S, Model 3 and Model X. | 
 | PMSG | Sequoia Green Metallic | | 
 | PMSS | San Simeon Silver Metallic | | 
 | PMTG | Dolphin Grey Metallic | | 
-| PPMR | Muir Red Multi-Coat | | 
-| PPSB | Deep Blue Metallic | | 
+| PPMR | Muir Red Multi-Coat | Translates to the Red Multi-Coat exterior color in design studio. Applicable to all variants of Model S, Model 3 and Model X. | 
+| PPSB | Deep Blue Metallic | Translates to the Deep Blue Metallic exterior color in design studio. Applicable to all variants of Model S, Model 3 and Model X. | 
 | PPSR | Signature Red | | 
-| PPSW | Shasta Pearl White Multi-Coat | | 
+| PPSW | Shasta Pearl White Multi-Coat | Translates to the Pearl White Multi-Coat exterior color in design studio. Applicable to all variants of Model S, Model 3 and Model X. | 
 | PPTI | Titanium Metallic | | 
 | PRM31 | Premium Interior | | 
 | PS00 | No Parcel Shelf | | 

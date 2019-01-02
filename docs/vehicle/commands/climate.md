@@ -56,8 +56,18 @@ Sets the specified seat's heater level.
 
 | Parameter | Example | Description                             |
 | :-------- | :------ | :-------------------------------------- |
-| heater    | 0       | The desired seat to set the heater for. |
-| level     | 3       | The desired level to set the heater to. |
+| heater    | 0       | The desired seat to heat. (0-4)         |
+| level     | 3       | The desired level for the heater. (0-3) |
+
+The `heater` parameter maps to the following seats:
+
+| Number | Seat        |
+| :----- | :---------- |
+| 0      | Driver      |
+| 1      | Passenger   |
+| 2      | Rear left   |
+| 3      | Rear center |
+| 4      | Rear right  |
 
 ### Response
 

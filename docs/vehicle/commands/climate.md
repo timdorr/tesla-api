@@ -28,7 +28,7 @@ Stop the climate control (HVAC) system.
 
 ## POST `/api/1/vehicles/{id}/command/set_temps`
 
-Sets the target temperature for the climate control (HVAC) system. 
+Sets the target temperature for the climate control (HVAC) system.
 
 Note: The parameters are always in celcius, regardless of the region the car is in or the display settings of the car.
 
@@ -50,14 +50,14 @@ Note: The parameters are always in celcius, regardless of the region the car is 
 
 ## POST `/api/1/vehicles/{id}/command/remote_seat_heater_request`
 
-Sets the specified seat's heater level. 
+Sets the specified seat's heater level.
 
 ### Parameters
 
-| Parameter      | Example | Description                                                 |
-| :------------- | :------ | :---------------------------------------------------------- |
-| heater    | 0    | The desired seat to set the heater for.    |
-| level | 3    | The desired level to set the heater to. |
+| Parameter | Example | Description                             |
+| :-------- | :------ | :-------------------------------------- |
+| heater    | 0       | The desired seat to set the heater for. |
+| level     | 3       | The desired level to set the heater to. |
 
 ### Response
 

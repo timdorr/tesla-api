@@ -80,6 +80,7 @@ appreciated!_
 | DRRH | Right Hand Drive | | 
 | DSH5 | PUR Dash Pad | | 
 | DSH7 | Alcantara Dashboard Accents | | 
+| DSHG | PUR Dash Pad | | 
 | DU00 | Drive Unit - IR | | 
 | DU01 | Drive Unit - Infineon | | 
 | DV2W | Rear-Wheel Drive | | 
@@ -107,6 +108,7 @@ appreciated!_
 | INBFP | Classic Black | | 
 | INBPP | Black | | 
 | INBTB | Multi-Pattern Black | | 
+| INFBP | Black Premium | | 
 | INLPC | Cream | | 
 | INLPP | Black / Light Headliner | | 
 | INWPT | Tan Interior | | 
@@ -164,6 +166,7 @@ appreciated!_
 | QNET | Tan NextGen | | 
 | QPMP | Black seats | | 
 | QTBW | White Premium Seats | | 
+| QTFP | Black Premium Seats | | 
 | QTPC | Cream Premium Seats | | 
 | QTPP | Black Premium Seats | | 
 | QTPT | Tan Premium Seats | | 

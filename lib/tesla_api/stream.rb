@@ -1,11 +1,11 @@
 module TeslaApi
   module Stream
-    def stream(&reciever)
+    def stream(&receiver)
       EventMachine.run do
         http.stream do |chunk|
           attributes = chunk.split(",")
 
-          reciever.call({
+          receiver.call({
               time: DateTime.strptime((attributes[0].to_i/1000).to_s, '%s'),
               speed: attributes[1].to_f,
               odometer: attributes[2].to_f,

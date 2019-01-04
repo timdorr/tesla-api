@@ -30,14 +30,14 @@ Stop the climate control (HVAC) system.
 
 Sets the target temperature for the climate control (HVAC) system.
 
-Note: The parameters are always in celcius, regardless of the region the car is in or the display settings of the car.
+Note: The parameters are always in celsius, regardless of the region the car is in or the display settings of the car.
 
 ### Parameters
 
 | Parameter      | Example | Description                                                 |
 | :------------- | :------ | :---------------------------------------------------------- |
-| driver_temp    | 23.4    | The desired temperature on the driver's side in celcius.    |
-| passenger_temp | 23.4    | The desired temperature on the passenger's side in celcius. |
+| driver_temp    | 23.4    | The desired temperature on the driver's side in celsius.    |
+| passenger_temp | 23.4    | The desired temperature on the passenger's side in celsius. |
 
 ### Response
 

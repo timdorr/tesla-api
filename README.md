@@ -2,7 +2,7 @@ Need a Tesla to develop with? Use [my referral link](http://ts.la/timothy8449) t
 
 # Tesla JSON API
 
-[View Documentation](http://docs.timdorr.apiary.io/)
+[View Documentation](https://tesla-api.timdorr.com/)
 
 This is unofficial documentation of the Tesla JSON API used by the iOS and Android apps.
 The API provides functionality to monitor and control the Model S (and future Tesla vehicles) remotely.

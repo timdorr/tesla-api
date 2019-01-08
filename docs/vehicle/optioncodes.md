@@ -39,6 +39,7 @@ appreciated!_
 | APPB | Enhanced Autopilot | | 
 | AU00 | No Audio Package | | 
 | AU01 | Ultra High Fidelity Sound | | 
+| BC0B | Tesla Black Brake Calipers | | 
 | BC0R | Tesla Red Brake Calipers | | 
 | BCMB | Black Brake Calipers | | 
 | BP00 | No Ludicrous | | 

@@ -223,6 +223,7 @@ appreciated!_
 | WTAS | 19" Silver Slipstream Wheels | | 
 | WTDS | 19" Grey Slipstream Wheels | | 
 | WTSG | 21" Turbine Wheels | | 
+| WTSP | 21" Turbine Wheels | | 
 | WTSS | 21" Turbine Wheels | | 
 | WTTB | 19" Cyclone Wheels | | 
 | WTW4 | 19" Winter Tire Set | | 

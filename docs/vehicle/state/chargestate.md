@@ -22,6 +22,7 @@ Information on the state of charge in the battery and its various settings.
     "charge_limit_soc_std": 90,
     "charge_miles_added_ideal": 50.0,
     "charge_miles_added_rated": 40.0,
+    "charge_port_cold_weather_mode": false,
     "charge_port_door_open": false,
     "charge_port_latch": "Engaged",
     "charge_rate": 0.0,

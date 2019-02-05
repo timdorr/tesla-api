@@ -1,4 +1,4 @@
-Need a Tesla to develop with? Use [my referral link](http://ts.la/timothy8449) to get a $100 Supercharging credit.
+Do you work at Tesla? Get in contact! I'd love to help with making this API official.
 
 # Tesla JSON API
 

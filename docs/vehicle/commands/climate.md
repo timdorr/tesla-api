@@ -77,3 +77,22 @@ The `heater` parameter maps to the following seats:
   "result": true
 }
 ```
+
+## POST `/api/1/vehicles/{id}/command/remote_steering_wheel_heater_request`
+
+Turn steering wheel heater on or off.
+
+### Parameters
+
+| Parameter | Example | Description                         |
+| :-------- | :------ | :---------------------------------- |
+| on        | true    | True to turn on, false to turn off. |
+
+### Response
+
+```json
+{
+  "reason": "",
+  "result": true
+}
+```

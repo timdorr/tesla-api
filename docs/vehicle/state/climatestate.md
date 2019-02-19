@@ -24,6 +24,7 @@ Information on the current internal temperature and climate control system.
     "min_avail_temp": 15.0,
     "outside_temp": null,
     "passenger_temp_setting": 21.6,
+    "remote_heater_control_enabled": true,
     "right_temp_direction": null,
     "seat_heater_left": 3,
     "seat_heater_rear_center": 0,

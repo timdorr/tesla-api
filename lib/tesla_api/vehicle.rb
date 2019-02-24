@@ -182,6 +182,14 @@ module TeslaApi
       command('cancel_software_update')['response']
     end
 
+    def set_seat_heater(heater, level)
+      command('remote_seat_heater_request', body: {heater: heater, level: level})['response']
+    end
+
+    def set_steering_wheel_heater(on)
+      command('remote_steering_wheel_heater_request', body: {on: on})['response']
+    end
+
     private
 
     def data_request(name)

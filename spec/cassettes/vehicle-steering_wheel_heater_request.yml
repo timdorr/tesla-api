@@ -1,0 +1,100 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://owner-api.teslamotors.com/api/1/vehicles
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - github.com/timdorr/tesla-api v:1.4.1
+      Authorization:
+      - Bearer <TESLA_API_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 24 Feb 2019 01:45:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '560'
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Txid:
+      - 6f71bbfe2f7d615dd53dd27a7d561083
+      Etag:
+      - W/"ac52d151f70236be8a2fd76cc3a7e215"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - beacbab2-72a5-7a1b-ecba-c73c1cd249af
+      X-Runtime:
+      - '0.013103'
+    body:
+      encoding: UTF-8
+      string: '{"response":[{"id":19298251174317440,"vehicle_id":1817902171,"vin":"5YJSA1E41GF167745","display_name":"Nikola
+        2.0","option_codes":"MDLS,RENA,AF02,APF1,APH2,APPB,AU01,BC0R,BP00,BR00,BS00,CDM0,CH05,PBCW,CW00,DCF0,DRLH,DSH7,DV4W,FG02,FR04,HP00,IDBA,IX01,LP01,ME02,MI01,PF01,PI01,PK00,PS01,PX00,PX4D,QTVB,RFP2,SC01,SP00,SR01,SU01,TM00,TP03,TR00,UTAB,WTAS,X001,X003,X007,X011,X013,X021,X024,X027,X028,X031,X037,X040,X044,YFFC,COUS","color":null,"tokens":["08f5098517a10231","8d219a2e09242e02"],"state":"online","in_service":false,"id_s":"19298251174317440","calendar_enabled":true,"api_version":4,"backseat_token":null,"backseat_token_updated_at":null}],"count":1}'
+    http_version: 
+  recorded_at: Sun, 24 Feb 2019 01:45:31 GMT
+- request:
+    method: post
+    uri: https://owner-api.teslamotors.com/api/1/vehicles/19298251174317440/command/remote_steering_wheel_heater_request
+    body:
+      encoding: UTF-8
+      string: on=false
+    headers:
+      User-Agent:
+      - github.com/timdorr/tesla-api v:1.4.1
+      Authorization:
+      - Bearer <TESLA_API_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 24 Feb 2019 01:45:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '40'
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Txid:
+      - b0b529831abb830179558ade3f3b4622
+      Etag:
+      - W/"b834d18aa9a08081d6e257c5dc7af1f0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3f6c3479-8549-b5f3-32cc-39745e4b75aa
+      X-Runtime:
+      - '0.320113'
+    body:
+      encoding: UTF-8
+      string: '{"response":{"reason":"","result":true}}'
+    http_version: 
+  recorded_at: Sun, 24 Feb 2019 01:45:32 GMT
+recorded_with: VCR 4.0.0

@@ -317,4 +317,16 @@ RSpec.describe TeslaApi::Vehicle do
       expect(vehicle.cancel_software_update['result']).to eq(true)
     end
   end
+
+  describe '#seat_heater_request', vcr: {cassette_name: 'vehicle-seat_heater_request'} do
+    it 'turns off the driver seat heater' do
+      expect(vehicle.set_seat_heater(1, 0)['result']).to eq(true)
+    end
+  end
+
+  describe '#steering_wheel_heater_request', vcr: {cassette_name: 'vehicle-steering_wheel_heater_request'} do
+    it 'turns off the steering wheel heater' do
+      expect(vehicle.set_steering_wheel_heater(false)['result']).to eq(true)
+    end
+  end
 end

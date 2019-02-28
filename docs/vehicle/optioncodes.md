@@ -12,7 +12,9 @@ appreciated!_
 
 | Code | Title | Description |
 | :--- | :--- | :--- |
-| MDLS or MS03 | Model S | This vehicle is a Model S | 
+| MDLS | Model S | This vehicle is a Model S | 
+| MS03 | Model S | This vehicle is a Model S | 
+| MS04 | Model S | This vehicle is a Model S | 
 | MDLX | Model X | This vehicle is a Model X | 
 | MDL3 | Model 3 | This vehicle is a Model 3 | 
 | RENA | Region: North America | | 

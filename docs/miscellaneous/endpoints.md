@@ -1,6 +1,6 @@
 # Endpoints File
 
-This the latest contents of the ownerapi_endpoints.json file from the 3.8.0 version of the app.
+This the latest contents of the ownerapi_endpoints.json file from the 3.8.2 version of the app.
 
 ```json
 {
@@ -234,6 +234,11 @@ This the latest contents of the ownerapi_endpoints.json file from the 3.8.0 vers
     "URI": "api/1/vehicles/{vehicle_id}/command/cancel_software_update",
     "AUTH": true
   },
+  "SET_SENTRY_MODE": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/set_sentry_mode",
+    "AUTH": true
+  },
   "POWERWALL_ORDER_SESSION_DATA": {
     "TYPE": "GET",
     "URI": "api/1/users/powerwall_order_entry_data",
@@ -275,6 +280,17 @@ This the latest contents of the ownerapi_endpoints.json file from the 3.8.0 vers
   "REFERRAL_PAGE": {
     "TYPE": "GET",
     "URI": "referral_page",
+    "AUTH": true,
+    "CONTENT": "HTML"
+  },
+  "ROADSIDE_ASSISTANCE_DATA": {
+    "TYPE": "GET",
+    "URI": "api/1/users/roadside_assistance_data",
+    "AUTH": true
+  },
+  "ROADSIDE_ASSISTANCE_PAGE": {
+    "TYPE": "GET",
+    "URI": "roadside_assistance_page",
     "AUTH": true,
     "CONTENT": "HTML"
   },

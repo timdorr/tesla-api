@@ -58,6 +58,10 @@ Start the navigation system.
 
 Start an update of the car's software.
 
+{% page-ref page="sentrymode.md" %}
+
+Enable or disable Sentry Mode.
+
 {% page-ref page="calendar.md" %}
 
 Synchronize a calendar with the car. 

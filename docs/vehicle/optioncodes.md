@@ -25,6 +25,7 @@ appreciated!_
 | AD05 | European 3-Phase, IT | | 
 | AD06 | Schuko (1 phase, 230V 13A) | | 
 | AD07 | Red IEC309 (3 phase, 400V 16A) | | 
+| AD15 | ? | | 
 | ADPX2 | Type 2 Public Charging Connector | | 
 | ADX8 | Blue IEC309 (1 phase, 230V 32A) | | 
 | AF00 | No HEPA Filter | | 
@@ -99,6 +100,7 @@ appreciated!_
 | HC01 | Home Charging Installation | | 
 | HP00 | No HPWC Ordered | | 
 | HP01 | HPWC Ordered | | 
+| ID3W | (Model 3) Wood Decor | | 
 | IDBA | Dark Ash Wood Decor | | 
 | IDBO | Figured Ash Wood Decor | | 
 | IDCF | Carbon Fiber Decor | | 

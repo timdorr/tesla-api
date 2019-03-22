@@ -190,6 +190,10 @@ module TeslaApi
       command('remote_steering_wheel_heater_request', body: {on: on})['response']
     end
 
+    def set_sentry_mode(on)
+      command('set_sentry_mode', body: {on: on})['response']
+    end
+
     private
 
     def data_request(name)

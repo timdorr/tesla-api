@@ -56,7 +56,7 @@ Sets the specified seat's heater level.
 
 | Parameter | Example | Description                             |
 | :-------- | :------ | :-------------------------------------- |
-| heater    | 0       | The desired seat to heat. (0-4)         |
+| heater    | 0       | The desired seat to heat. (0-5)         |
 | level     | 3       | The desired level for the heater. (0-3) |
 
 The `heater` parameter maps to the following seats:

@@ -108,6 +108,7 @@ appreciated!_
 | IDOG | Gloss Obeche Wood Decor | | 
 | IDLW | Lacewood Decor | | 
 | IDPB | Piano Black Decor | | 
+| IN3BB | All Black Partial Premium Interior | | 
 | IN3PB | All Black Premium Interior | | 
 | INBBW | White | | 
 | INBFP | Classic Black | | 
@@ -138,6 +139,7 @@ appreciated!_
 | MI00 | 2015 Production Refresh | | 
 | MI01 | 2016 Production Refresh | | 
 | MI02 | 2017 Production Refresh | | 
+| MT301 | Standard Range Plus Rear-Wheel Drive | |
 | MT305 | Mid Range Rear-Wheel Drive | | 
 | PA00 | No Paint Armor | | 
 | PBCW | Catalina White | | 
@@ -161,6 +163,7 @@ appreciated!_
 | PPSR | Signature Red | | 
 | PPSW | Shasta Pearl White Multi-Coat | Translates to the Pearl White Multi-Coat exterior color in design studio. Applicable to all variants of Model S, Model 3 and Model X. | 
 | PPTI | Titanium Metallic | | 
+| PRM30 | Partial Premium Interior | |
 | PRM31 | Premium Interior | | 
 | PS00 | No Parcel Shelf | | 
 | PS01 | Parcel Shelf | | 

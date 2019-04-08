@@ -37,7 +37,8 @@ appreciated!_
 | APF2 | Full Self-Driving Capability | | 
 | APH0 | Autopilot 2.0 Hardware | | 
 | APH2 | Autopilot 2.0 Hardware | | 
-| APH3 | Autopilot 2.5 Hardware | | 
+| APH3 | Autopilot 2.5 Hardware | |
+| APH4 | Autopilot 3.0 Hardware | Full Self-Driving Computer | 
 | APPA | Autopilot 1.0 Hardware | | 
 | APPB | Enhanced Autopilot | | 
 | AU00 | No Audio Package | | 

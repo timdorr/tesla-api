@@ -227,6 +227,7 @@ appreciated!_
 | UTAW | Light Headliner | | 
 | UTPB | Dark Headliner | | 
 | UTSB | Dark Headliner | | 
+| W38B | 18" Aero Wheels | For the Model 3 and Model Y |
 | W39B | 19" Sport Wheels | | 
 | WT20 | 20" Silver Slipstream Wheels | | 
 | WTAS | 19" Silver Slipstream Wheels | | 

@@ -75,6 +75,7 @@ appreciated!_
 | COL2 | Metallic | | 
 | COL3 | Tesla Multi-Coat | | 
 | COUS | Country: United States | | 
+| CONL | Country: Netherlands | | 
 | CW00 | No Cold Weather Package | | 
 | CW02 | Subzero Weather Package | | 
 | DA00 | No Autopilot | | 
@@ -126,6 +127,7 @@ appreciated!_
 | IX00 | No Extended Nappa Leather Trim | | 
 | IX01 | Extended Nappa Leather Trim | | 
 | LLP1 | LLP1 | | 
+| LLP2 | LLP2 | | 
 | LP01 | Premium Interior Lighting | | 
 | LT00 | Vegan interior | | 
 | LT01 | Standard interior | | 
@@ -136,12 +138,15 @@ appreciated!_
 | LT4W | LT4W | | 
 | LT5C | LT5C | | 
 | LT5P | LT5P | | 
+| LT6P | LT6P | | 
 | ME02 | Memory Seats | | 
 | MI00 | 2015 Production Refresh | | 
 | MI01 | 2016 Production Refresh | | 
 | MI02 | 2017 Production Refresh | | 
+| MI03 | 201? Production Refresh (found on Model X ordered 11/2018 delivered 3/2019) | | 
 | MT301 | Standard Range Plus Rear-Wheel Drive | |
 | MT305 | Mid Range Rear-Wheel Drive | | 
+| OSSB | OSSB | | 
 | PA00 | No Paint Armor | | 
 | PBCW | Catalina White | | 
 | PBSB | Sierra Black | Translates to the Solid Black exterior color in design studio. Applicable to all variants of Model S, Model 3 and Model X. | 

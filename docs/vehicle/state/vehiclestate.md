@@ -9,7 +9,7 @@ Returns the vehicle's physical state, such as which doors are open.
 ```json
 {
   "response": {
-    "api_version": 4,
+    "api_version": 6,
     "autopark_state_v2": "ready",
     "autopark_style": "standard",
     "calendar_supported": true,
@@ -29,8 +29,10 @@ Returns the vehicle's physical state, such as which doors are open.
     "pf": 0,
     "pr": 0,
     "remote_start": false,
+    "remote_start_enabled": true,
     "remote_start_supported": true,
     "rt": 0,
+    "sentry_mode": true,
     "software_update": { "expected_duration_sec": 2700, "status": "" },
     "speed_limit_mode": {
       "active": false,

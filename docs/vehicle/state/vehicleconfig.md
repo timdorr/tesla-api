@@ -18,6 +18,7 @@ Returns the vehicle's configuration information including model, color, badging 
     "exterior_color": "White",
     "has_air_suspension": true,
     "has_ludicrous_mode": false,
+    "key_version": 1,
     "motorized_charge_port": true,
     "perf_config": "P2",
     "plg": true,

@@ -329,4 +329,10 @@ RSpec.describe TeslaApi::Vehicle do
       expect(vehicle.set_steering_wheel_heater(false)['result']).to eq(true)
     end
   end
+
+  describe '#set_sentry_mode', vcr: {cassette_name: 'vehicle-set_sentry_mode'} do
+    it 'disables sentry mode' do
+      expect(vehicle.set_sentry_mode(false)['result']).to eq(true)
+    end
+  end
 end

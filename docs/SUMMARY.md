@@ -25,6 +25,7 @@
   * [Remote Start](vehicle/commands/remotestart.md)
   * [Speed Limit](vehicle/commands/speedlimit.md)
   * [Valet Mode](vehicle/commands/valet.md)
+  * [Sentry Mode](vehicle/commands/sentrymode.md)
   * [Doors](vehicle/commands/doors.md)
   * [Frunk/Trunk](vehicle/commands/trunk.md)
   * [Sunroof](vehicle/commands/sunroof.md)

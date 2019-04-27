@@ -1,6 +1,6 @@
 # Endpoints File
 
-This the latest contents of the ownerapi_endpoints.json file from the 3.8.3 version of the app.
+This the latest contents of the ownerapi_endpoints.json file from the 3.8.4 version of the app.
 
 ```json
 {
@@ -169,6 +169,11 @@ This the latest contents of the ownerapi_endpoints.json file from the 3.8.3 vers
     "URI": "api/1/logs",
     "AUTH": true
   },
+  "SEND_REPORT": {
+    "TYPE": "POST",
+    "URI": "api/1/reports",
+    "AUTH": true
+  },
   "RETRIEVE_NOTIFICATION_PREFERENCES": {
     "TYPE": "GET",
     "URI": "api/1/notification_preferences",
@@ -298,6 +303,16 @@ This the latest contents of the ownerapi_endpoints.json file from the 3.8.3 vers
     "URI": "roadside_assistance_page",
     "AUTH": true,
     "CONTENT": "HTML"
+  },
+  "UPGRADE_ELIGIBILITY": {
+    "TYPE": "GET",
+    "URI": "api/1/vehicles/{vehicle_id}/eligible_upgrades",
+    "AUTH": true
+  },
+  "AUTOPILOT_UPGRADE_URL": {
+    "TYPE": "GET",
+    "URI": "api/1/vehicles/{vehicle_id}/purchase_url",
+    "AUTH": true
   },
   "MESSAGE_CENTER_MESSAGE_LIST": {
     "TYPE": "GET",

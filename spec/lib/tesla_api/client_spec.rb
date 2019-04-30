@@ -54,6 +54,11 @@ RSpec.describe TeslaApi::Client do
       tesla_api.login!(ENV['TESLA_PASS'])
       expect(tesla_api.token).to match(/[a-z0-9]{32}/)
     end
+
+    it 'obtains a refresh token' do
+      tesla_api.login!(ENV['TESLA_PASS'])
+      expect(tesla_api.refresh_token).to match(/[a-z0-9]{32}/)
+    end
   end
 
   describe '#vehicles', vcr: {cassette_name: 'client-vehicles'} do

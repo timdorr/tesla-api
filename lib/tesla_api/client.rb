@@ -5,7 +5,7 @@ module TeslaApi
     headers 'User-Agent' => "github.com/timdorr/tesla-api v:#{VERSION}"
     format :json
 
-    attr_reader :email, :token, :client_id, :client_secret
+    attr_reader :email, :token, :refresh_token, :client_id, :client_secret
 
     def initialize(email, client_id = ENV['TESLA_CLIENT_ID'], client_secret = ENV['TESLA_CLIENT_SECRET'])
       @email = email
@@ -48,13 +48,18 @@ module TeslaApi
           }
       )
 
-      self.expires_in = response['expires_in']
-      self.created_at = response['created_at']
-      self.token      = response['access_token']
+      self.expires_in    = response['expires_in']
+      self.created_at    = response['created_at']
+      self.token         = response['access_token']
+      self.refresh_token = response['refresh_token']
     end
 
     def vehicles
       self.class.get('/vehicles')['response'].map { |v| Vehicle.new(self.class, email, v['id'], v) }
     end
+
+    private
+
+    attr_writer :refresh_token
   end
 end

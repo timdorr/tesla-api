@@ -37,6 +37,8 @@ appreciated!_
 | APF2 | Full Self-Driving Capability | | 
 | APH0 | Autopilot 2.0 Hardware | | 
 | APH2 | Autopilot 2.0 Hardware | | 
+| APBS | Autopilot | Model 3 Autopilot |
+| APF2 | Full Self-Driving Capability | |
 | APH3 | Autopilot 2.5 Hardware | |
 | APH4 | Autopilot 3.0 Hardware | Full Self-Driving Computer | 
 | APPA | Autopilot 1.0 Hardware | | 
@@ -83,6 +85,7 @@ appreciated!_
 | DA02 | Autopilot Convenience Features | | 
 | DCF0 | Autopilot Convenience Features (DCF0) | | 
 | DRLH | Left Hand Drive | | 
+| BC3R | Performance Brakes | Model 3 |
 | DRRH | Right Hand Drive | | 
 | DSH5 | PUR Dash Pad | | 
 | DSH7 | Alcantara Dashboard Accents | | 
@@ -169,6 +172,7 @@ appreciated!_
 | PPSR | Signature Red | | 
 | PPSW | Shasta Pearl White Multi-Coat | Translates to the Pearl White Multi-Coat exterior color in design studio. Applicable to all variants of Model S, Model 3 and Model X. | 
 | PPTI | Titanium Metallic | | 
+| PL31 | Performance Pedals | Model 3 |
 | PRM30 | Partial Premium Interior | |
 | PRM31 | Premium Interior | | 
 | PS00 | No Parcel Shelf | | 
@@ -232,6 +236,9 @@ appreciated!_
 | UTAW | Light Headliner | | 
 | UTPB | Dark Headliner | | 
 | UTSB | Dark Headliner | | 
+| SLR1 | Carbon Fibre Spoiler | Model 3 |
+| SPT31 | Performance Upgrade | Model 3 |
+| W32P | 20" Performance Wheels | Model 3 |
 | W38B | 18" Aero Wheels | For the Model 3 and Model Y |
 | W39B | 19" Sport Wheels | | 
 | WT20 | 20" Silver Slipstream Wheels | | 

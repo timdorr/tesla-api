@@ -50,3 +50,12 @@ Returns the vehicle's physical state, such as which doors are open.
   }
 }
 ```
+
+### Center Display States
+| State | Description     |
+|-------|-----------------|
+| 0     | Off             |
+| 2     | Normal On       |
+| 3     | Charging Screen |
+| 7     | Sentry Mode     |
+| 8     | Dog Mode        |

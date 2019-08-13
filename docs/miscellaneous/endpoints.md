@@ -1,6 +1,6 @@
 # Endpoints File
 
-This the latest contents of the ownerapi_endpoints.json file from the 3.8.4 version of the app.
+This the latest contents of the ownerapi_endpoints.json file from the 3.9.0 version of the app.
 
 ```json
 {
@@ -413,6 +413,11 @@ This the latest contents of the ownerapi_endpoints.json file from the 3.8.4 vers
   "HISTORY_DATA": {
     "TYPE": "GET",
     "URI": "api/1/energy_sites/{site_id}/history",
+    "AUTH": true
+  },
+  "CALENDAR_HISTORY_DATA": {
+    "TYPE": "GET",
+    "URI": "api/1/energy_sites/{site_id}/calendar_history",
     "AUTH": true
   },
   "BACKUP_RESERVE": {

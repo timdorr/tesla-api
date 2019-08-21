@@ -25,8 +25,17 @@ appreciated!_
 | AD05 | European 3-Phase, IT | | 
 | AD06 | Schuko (1 phase, 230V 13A) | | 
 | AD07 | Red IEC309 (3 phase, 400V 16A) | | 
+| AD08 | Blue Charging Adapter | | 
+| AD09 | Adapter, Swiss (1 phase, 10A) | | 
+| AD10 | Adapter, Denmark (1 phase, 13A) | | 
+| AD11 | Adapter, Italy (1 phase, 13A) | | 
 | AD15 | ? | | 
 | ADPX2 | Type 2 Public Charging Connector | | 
+| ADX4 | No European 3-Phase | |
+| ADX5 | European 3-Phase, IT | |
+| ADX6 | No - Adapter, Schuko (1 phase, 13A) | |
+| ADX7 | No - 3-ph Red IEC309 (3 phase, 16A) | |
+| ADX9 | No - Adapter, Swiss (1 phase, 10A) | |
 | ADX8 | Blue IEC309 (1 phase, 230V 32A) | | 
 | AF00 | No HEPA Filter | | 
 | AF02 | HEPA Filter | | 
@@ -46,7 +55,8 @@ appreciated!_
 | AU00 | No Audio Package | | 
 | AU01 | Ultra High Fidelity Sound | | 
 | BC0B | Tesla Black Brake Calipers | | 
-| BC0R | Tesla Red Brake Calipers | | 
+| BC0R | Tesla Red Brake Calipers | |
+| BC3B | Black Brake Calipers | Model 3 |
 | BCMB | Black Brake Calipers | | 
 | BP00 | No Ludicrous | | 
 | BP01 | Ludicrous Speed Upgrade | | 
@@ -65,8 +75,13 @@ appreciated!_
 | BTX6 | 100 kWh | | 
 | BTX7 | 75 kWh | | 
 | BTX8 | 85 kWh | | 
+| CC01 | Five Seat Interior | |
+| CC02 | Six Seat Interior | |
 | CC04 | Seven Seat Interior | | 
+| CC12 | Six Seat Interior with Center Console | |
 | CDM0 | No CHAdeMO Charging Adaptor | | 
+| CF00 | High Power Charger | |
+| CF01 | 48amp charger | |
 | CH00 | Standard Charger (40 Amp) | | 
 | CH01 | Dual Chargers (80 Amp) | | 
 | CH04 | 72 Amp Charger (Model S/X) | | 
@@ -77,7 +92,8 @@ appreciated!_
 | COL2 | Metallic | | 
 | COL3 | Tesla Multi-Coat | | 
 | COUS | Country: United States | | 
-| CONL | Country: Netherlands | | 
+| CONL | Country: Netherlands | |
+| CPW1 | 20" Performance Wheels | |
 | CW00 | No Cold Weather Package | | 
 | CW02 | Subzero Weather Package | | 
 | DA00 | No Autopilot | | 
@@ -99,6 +115,7 @@ appreciated!_
 | FG02 | Exterior Lighting Package | | 
 | FMP6 | FMP6 | | 
 | FR01 | Base Front Row | | 
+| FR02 | Ventilated Front Seats | |
 | FR03 | FR03 | | 
 | FR04 | FR04 | | 
 | HC00 | No Home Charging installation | | 
@@ -109,6 +126,7 @@ appreciated!_
 | IDBA | Dark Ash Wood Decor | | 
 | IDBO | Figured Ash Wood Decor | | 
 | IDCF | Carbon Fiber Decor | | 
+| IDOK | Oak Decor | |
 | IDOM | Matte Obeche Wood Decor | | 
 | IDOG | Gloss Obeche Wood Decor | | 
 | IDLW | Lacewood Decor | | 
@@ -141,19 +159,28 @@ appreciated!_
 | LT4W | LT4W | | 
 | LT5C | LT5C | | 
 | LT5P | LT5P | | 
-| LT6P | LT6P | | 
+| LT6P | LT6P | |
+| LTPB | Lower Trim PUR Black | |
+| ME01 | Memory Seats | |
 | ME02 | Memory Seats | | 
 | MI00 | 2015 Production Refresh | | 
 | MI01 | 2016 Production Refresh | | 
 | MI02 | 2017 Production Refresh | | 
 | MI03 | 201? Production Refresh (found on Model X ordered 11/2018 delivered 3/2019) | | 
+| MT300 | Standard Range Rear-Wheel Drive | |
 | MT301 | Standard Range Plus Rear-Wheel Drive | |
+| MT302 Long Range Rear-Wheel Drive | |
+| MT303 Long Range All-Wheel Drive | |
+| MT304 Long Range All-Wheel Drive Performance | |
 | MT305 | Mid Range Rear-Wheel Drive | | 
-| OSSB | OSSB | | 
+| OSSB | Safety CA Black | |
+| OSSW | Safety CA White | |
 | PA00 | No Paint Armor | | 
 | PBCW | Catalina White | | 
 | PBSB | Sierra Black | Translates to the Solid Black exterior color in design studio. Applicable to all variants of Model S, Model 3 and Model X. | 
 | PBT8 | Performance 85kWh | | 
+| PC30 | No Performance Chassis | |
+| PC31 | Performance Chassis | |
 | PF00 | No Performance Legacy Package | | 
 | PF01 | Performance Legacy Package | | 
 | PI00 | No Premium Interior | | 
@@ -175,20 +202,31 @@ appreciated!_
 | PL31 | Performance Pedals | Model 3 |
 | PRM30 | Partial Premium Interior | |
 | PRM31 | Premium Interior | | 
+| PRM3S | Standard Interior | |
 | PS00 | No Parcel Shelf | | 
 | PS01 | Parcel Shelf | | 
 | PX00 | No Performance Plus Package | | 
 | PX01 | Performance Plus | | 
 | PX6D | Zero to 60 in 2.5 sec | | 
 | P85D | P85D | | 
+| QLBS | Black Premium Interior | |
+| QLFC | Cream Premium Interior | |
+| QLFP | Black Premium Interior | |
+| QLFW | White Premium Interior | |
+| QLWS | White Premium Interior | |
 | QNET | Tan NextGen | | 
+| QPBT | Black Textile Interior | |
 | QPMP | Black seats | | 
+| QTBS | Black Premium Interior | |
 | QTBW | White Premium Seats | | 
+| QTFC | Cream Premium Interior | |
 | QTFP | Black Premium Seats | | 
+| QTFW | White Premium Interior | |
 | QTPC | Cream Premium Seats | | 
 | QTPP | Black Premium Seats | | 
 | QTPT | Tan Premium Seats | | 
-| QTTB | Multi-Pattern Black Seats | | 
+| QTTB | Multi-Pattern Black Seats | |
+| QTWS | White Premium Interior | |
 | QVBM | Multi-Pattern Black Seats | | 
 | QVPC | Vegan Cream Seats | | 
 | QVPP | Vegan Cream Seats | | 
@@ -236,23 +274,45 @@ appreciated!_
 | UTAW | Light Headliner | | 
 | UTPB | Dark Headliner | | 
 | UTSB | Dark Headliner | | 
+| UTZW | Light Headliner | |
 | SLR1 | Carbon Fibre Spoiler | Model 3 |
 | SPT31 | Performance Upgrade | Model 3 |
 | W32P | 20" Performance Wheels | Model 3 |
 | W38B | 18" Aero Wheels | For the Model 3 and Model Y |
 | W39B | 19" Sport Wheels | | 
 | WT20 | 20" Silver Slipstream Wheels | | 
+| WT22 | 22" Silver Turbine Wheels | |
+| WTAB | 21" Black Arachnid Wheels | |
 | WTAS | 19" Silver Slipstream Wheels | | 
 | WTDS | 19" Grey Slipstream Wheels | | 
+| WTNN | 20" Nokian Winter Tires (non-studded) | |
+| WTNS | 20" Nokian Winter Tires (studded) | |
+| WTP2 | 20" Pirelli Winter Tires | |
+| WTSC | 20" Sonic Carbon Wheels | |
 | WTSG | 21" Turbine Wheels | | 
 | WTSP | 21" Turbine Wheels | | 
 | WTSS | 21" Turbine Wheels | | 
 | WTTB | 19" Cyclone Wheels | | 
+| WTTC | 21" Sonic Carbon Twin Turbine Wheels | |
+| WTUT | 22" Onyx Black Wheels | |
+| WTW2 | 19" Nokian Winter Wheel Set | |
+| WTW3 | 19" Pirelli Winter Wheel Set | |
 | WTW4 | 19" Winter Tire Set | | 
 | WTW5 | 21" Winter Tire Set | | 
+| WTW6 | 19" Nokian Winter Tires (studded) | |
+| WTW7 | 19" Nokian Winter Tires (non-studded) | |
+| WTW8 | 19" Pirelli Winter Tires | |
 | WTX1 | 19" Michelin Primacy Tire Upgrade | | 
+| WXNN | No 20" Nokian Winter Tires (non-studded) | |
+| WXNS | No 20" Nokian Winter Tires (studded) | |
+| WXP2 | No 20" Pirelli Winter Tires | |
+| WXW2 | No 19" Wheels with Nokian Winter Tyres | |
+| WXW3 | No 19" Wheels with Pirelli Winter Tyres | |
 | WXW4 | No 19" Winter Tire Set | | 
 | WXW5 | No 21" Winter Tire Set | | 
+| WXW6 | No 19" Nokian Winter Tires (studded) | |
+| WXW7 | No 19" Nokian Winter Tires (non-studded) | |
+| WXW8 | No 19" Pirelli Winter Tires | |
 | X001 | Override: Power Liftgate | | 
 | X003 | Maps & Navigation | | 
 | X004 | Override: No Navigation | | 

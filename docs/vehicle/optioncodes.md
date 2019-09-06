@@ -17,6 +17,7 @@ appreciated!_
 | MS04 | Model S | This vehicle is a Model S | 
 | MDLX | Model X | This vehicle is a Model X | 
 | MDL3 | Model 3 | This vehicle is a Model 3 | 
+| MDLY | Model Y | This vehicle is a Model Y | 
 | RENA | Region: North America | | 
 | RENC | Region: Canada | | 
 | REEU | Region: Europe | | 
@@ -56,8 +57,9 @@ appreciated!_
 | AU01 | Ultra High Fidelity Sound | | 
 | BC0B | Tesla Black Brake Calipers | | 
 | BC0R | Tesla Red Brake Calipers | |
-| BC3B | Black Brake Calipers | Model 3 |
+| BC3B | Brace Calipers, Model 3 | |
 | BCMB | Black Brake Calipers | | 
+| BCYR | Performance Brakes | |
 | BP00 | No Ludicrous | | 
 | BP01 | Ludicrous Speed Upgrade | | 
 | BR00 | No Battery Firmware Limit | | 
@@ -141,6 +143,8 @@ appreciated!_
 | INLPC | Cream | | 
 | INLPP | Black / Light Headliner | | 
 | INWPT | Tan Interior | | 
+| INYPB | All Black Premium Interior | |
+| INYPW | Black and White Premium Interior | |
 | IVBPP | All Black Interior | | 
 | IVBSW | Ultra White Interior | | 
 | IVBTB | All Black Interior | | 
@@ -169,10 +173,13 @@ appreciated!_
 | MI03 | 201? Production Refresh (found on Model X ordered 11/2018 delivered 3/2019) | | 
 | MT300 | Standard Range Rear-Wheel Drive | |
 | MT301 | Standard Range Plus Rear-Wheel Drive | |
-| MT302 Long Range Rear-Wheel Drive | |
-| MT303 Long Range All-Wheel Drive | |
-| MT304 Long Range All-Wheel Drive Performance | |
+| MT302 | Long Range Rear-Wheel Drive | |
+| MT303 | Long Range All-Wheel Drive | |
+| MT304 | Long Range All-Wheel Drive Performance | |
 | MT305 | Mid Range Rear-Wheel Drive | | 
+| MTY02 | Long Range Rear-Wheel Drive | |
+| MTY03 | Long Range All-Wheel Drive | |
+| MTY04 | Long Range All-Wheel Drive Performance | |
 | OSSB | Safety CA Black | |
 | OSSW | Safety CA White | |
 | PA00 | No Paint Armor | | 
@@ -203,6 +210,7 @@ appreciated!_
 | PRM30 | Partial Premium Interior | |
 | PRM31 | Premium Interior | | 
 | PRM3S | Standard Interior | |
+| PRMY1 | Premium Interior | |
 | PS00 | No Parcel Shelf | | 
 | PS01 | Parcel Shelf | | 
 | PX00 | No Performance Plus Package | | 
@@ -248,12 +256,14 @@ appreciated!_
 | SC01 | Supercharging Enabled | | 
 | SC04 | Pay Per Use Supercharging | | 
 | SC05 | Free Supercharging | | 
-| SP00 | No Security Package | | 
+| SP00 | No Security Package | |
 | SR01 | Standard 2nd row | | 
 | SR06 | Seven Seat Interior | | 
 | SR07 | Standard 2nd row | | 
 | ST00 | Non-leather Steering Wheel | | 
 | ST01 | Non-heated Leather Steering Wheel | | 
+| STY5S | Five Seat Interior | |
+| STY7S | Seven Seat Interior | |
 | SU00 | Standard Suspension | | 
 | SU01 | Smart Air Suspension | | 
 | TIC4 | All-Season Tires | | 
@@ -277,6 +287,7 @@ appreciated!_
 | UTZW | Light Headliner | |
 | SLR1 | Carbon Fibre Spoiler | Model 3 |
 | SPT31 | Performance Upgrade | Model 3 |
+| SPTY1 | Performance Upgrade | Model Y |
 | W32P | 20" Performance Wheels | Model 3 |
 | W38B | 18" Aero Wheels | For the Model 3 and Model Y |
 | W39B | 19" Sport Wheels | | 
@@ -313,6 +324,9 @@ appreciated!_
 | WXW6 | No 19" Nokian Winter Tires (studded) | |
 | WXW7 | No 19" Nokian Winter Tires (non-studded) | |
 | WXW8 | No 19" Pirelli Winter Tires | |
+| WY18B | 18" Aero Wheels | |
+| WY19B | 19" Sport Wheels | |
+| WY20P | 20" Performance Wheels | |
 | X001 | Override: Power Liftgate | | 
 | X003 | Maps & Navigation | | 
 | X004 | Override: No Navigation | | 

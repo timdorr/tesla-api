@@ -55,9 +55,9 @@ appreciated!_
 | APPB | Enhanced Autopilot | | 
 | AU00 | No Audio Package | | 
 | AU01 | Ultra High Fidelity Sound | | 
-| BC0B | Tesla Black Brake Calipers | | 
-| BC0R | Tesla Red Brake Calipers | |
-| BC3B | Brace Calipers, Model 3 | |
+| BC0B | Black Brake Calipers | | 
+| BC0R | Red Brake Calipers | |
+| BC3B | Black Brake Calipers, Model 3 | |
 | BCMB | Black Brake Calipers | | 
 | BCYR | Performance Brakes | |
 | BP00 | No Ludicrous | | 
@@ -170,7 +170,7 @@ appreciated!_
 | MI00 | 2015 Production Refresh | | 
 | MI01 | 2016 Production Refresh | | 
 | MI02 | 2017 Production Refresh | | 
-| MI03 | 201? Production Refresh (found on Model X ordered 11/2018 delivered 3/2019) | | 
+| MI03 | 201? Production Refresh | Found on Model X ordered 11/2018 delivered 3/2019 | 
 | MT300 | Standard Range Rear-Wheel Drive | |
 | MT301 | Standard Range Plus Rear-Wheel Drive | |
 | MT302 | Long Range Rear-Wheel Drive | |
@@ -183,8 +183,8 @@ appreciated!_
 | OSSB | Safety CA Black | |
 | OSSW | Safety CA White | |
 | PA00 | No Paint Armor | | 
-| PBCW | Catalina White | | 
-| PBSB | Sierra Black | Translates to the Solid Black exterior color in design studio. Applicable to all variants of Model S, Model 3 and Model X. | 
+| PBCW | Solid White Color | | 
+| PBSB | Solid Black Color | | 
 | PBT8 | Performance 85kWh | | 
 | PC30 | No Performance Chassis | |
 | PC31 | Performance Chassis | |
@@ -193,19 +193,19 @@ appreciated!_
 | PI00 | No Premium Interior | | 
 | PI01 | Premium Upgrades Package | | 
 | PK00 | LEGACY No Parking Sensors | | 
-| PMAB | Anza Brown Metallic | | 
-| PMBL | Obsidian Black Multi-Coat | | 
-| PMMB | Monterey Blue Metallic | | 
-| PMMR | Multi-Coat Red | | 
-| PMNG | Midnight Silver Metallic | Translates to the Midnight Silver Metallic exterior color in design studio. Applicable to all variants of Model S, Model 3 and Model X. | 
-| PMSG | Sequoia Green Metallic | | 
-| PMSS | San Simeon Silver Metallic | | 
-| PMTG | Dolphin Grey Metallic | | 
-| PPMR | Muir Red Multi-Coat | Translates to the Red Multi-Coat exterior color in design studio. Applicable to all variants of Model S, Model 3 and Model X. | 
-| PPSB | Deep Blue Metallic | Translates to the Deep Blue Metallic exterior color in design studio. Applicable to all variants of Model S, Model 3 and Model X. | 
-| PPSR | Signature Red | | 
-| PPSW | Shasta Pearl White Multi-Coat | Translates to the Pearl White Multi-Coat exterior color in design studio. Applicable to all variants of Model S, Model 3 and Model X. | 
-| PPTI | Titanium Metallic | | 
+| PMAB | Anza Brown Metallic Color | | 
+| PMBL | Obsidian Black Multi-Coat Color | | 
+| PMMB | Monterey Blue Metallic Color | | 
+| PMMR | Red Multi-Coat Color | | 
+| PMNG | Midnight Silver Metallic Color | | 
+| PMSG | Green Metallic Color| | 
+| PMSS | San Simeon Silver Metallic Color | | 
+| PMTG | Dolphin Grey Metallic Color | | 
+| PPMR | Red Multi-Coat Color | | 
+| PPSB | Deep Blue Metallic Color | | 
+| PPSR | Signature Red Color | | 
+| PPSW | Pearl White Multi-Coat Color | | 
+| PPTI | Titanium Metallic Color | | 
 | PL31 | Performance Pedals | Model 3 |
 | PRM30 | Partial Premium Interior | |
 | PRM31 | Premium Interior | | 

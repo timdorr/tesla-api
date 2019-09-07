@@ -55,6 +55,7 @@ appreciated!_
 | APPB | Enhanced Autopilot | | 
 | AU00 | No Audio Package | | 
 | AU01 | Ultra High Fidelity Sound | | 
+| AU3P | ? | | 
 | BC0B | Black Brake Calipers | | 
 | BC0R | Red Brake Calipers | |
 | BC3B | Black Brake Calipers, Model 3 | |
@@ -112,16 +113,22 @@ appreciated!_
 | DU01 | Drive Unit - Infineon | | 
 | DV2W | Rear-Wheel Drive | | 
 | DV4W | All-Wheel Drive | | 
+| FC3P | ? Lighting? | | 
 | FG00 | No Exterior Lighting Package | | 
 | FG01 | Exterior Lighting Package | | 
 | FG02 | Exterior Lighting Package | | 
+| FG31 | ? Lighting? | | 
+| FM3B | ? | | 
 | FMP6 | FMP6 | | 
 | FR01 | Base Front Row | | 
 | FR02 | Ventilated Front Seats | |
 | FR03 | FR03 | | 
 | FR04 | FR04 | | 
+| GLFR | ? | | 
 | HC00 | No Home Charging installation | | 
 | HC01 | Home Charging Installation | | 
+| HL31 | ? | | 
+| HM31 | ? | | 
 | HP00 | No HPWC Ordered | | 
 | HP01 | HPWC Ordered | | 
 | ID3W | (Model 3) Wood Decor | | 
@@ -133,6 +140,7 @@ appreciated!_
 | IDOG | Gloss Obeche Wood Decor | | 
 | IDLW | Lacewood Decor | | 
 | IDPB | Piano Black Decor | | 
+| IL31 | ? | | 
 | IN3BB | All Black Partial Premium Interior | | 
 | IN3PB | All Black Premium Interior | | 
 | INBBW | White | | 
@@ -171,6 +179,7 @@ appreciated!_
 | MI01 | 2016 Production Refresh | | 
 | MI02 | 2017 Production Refresh | | 
 | MI03 | 201? Production Refresh | Found on Model X ordered 11/2018 delivered 3/2019 | 
+| MR31 | ? | | 
 | MT300 | Standard Range Rear-Wheel Drive | |
 | MT301 | Standard Range Plus Rear-Wheel Drive | |
 | MT302 | Long Range Rear-Wheel Drive | |
@@ -247,11 +256,14 @@ appreciated!_
 | RFP0 | All Glass Panoramic Roof | | 
 | RFP2 | Sunroof | | 
 | RFPX | Model X Roof | | 
+| RS3H | ? | | 
 | S02P | S02P | | 
 | S31B | S31B | | 
 | S32C | S32C | | 
 | S32P | S32P | | 
 | S32W | S32W | | 
+| S3PB | ? | | 
+| SA3P | ? | | 
 | SC00 | No Supercharging | | 
 | SC01 | Supercharging Enabled | | 
 | SC04 | Pay Per Use Supercharging | | 
@@ -262,10 +274,13 @@ appreciated!_
 | SR07 | Standard 2nd row | | 
 | ST00 | Non-leather Steering Wheel | | 
 | ST01 | Non-heated Leather Steering Wheel | | 
+| STCP | ? Seats? | | 
 | STY5S | Five Seat Interior | |
 | STY7S | Seven Seat Interior | |
 | SU00 | Standard Suspension | | 
 | SU01 | Smart Air Suspension | | 
+| SU3C | ? Suspension? | | 
+| T3CA | ? | | 
 | TIC4 | All-Season Tires | | 
 | TM00 | General Production Trim | | 
 | TM02 | General Production Signature Trim | | 
@@ -278,8 +293,10 @@ appreciated!_
 | TR00 | No Third Row Seat | | 
 | TR01 | Third Row Seating | | 
 | TRA1 | Third Row HVAC | | 
+| TW00 | ? Towing? | | 
 | TW01 | Towing Package | | 
 | UM01 | Universal Mobile Charger - US Port (Single) | | 
+| UT3P | ? Headliner? | | 
 | UTAB | Black Alcantara Headliner | | 
 | UTAW | Light Headliner | | 
 | UTPB | Dark Headliner | | 
@@ -291,6 +308,7 @@ appreciated!_
 | W32P | 20" Performance Wheels | Model 3 |
 | W38B | 18" Aero Wheels | For the Model 3 and Model Y |
 | W39B | 19" Sport Wheels | | 
+| WR00 | ? | | 
 | WT20 | 20" Silver Slipstream Wheels | | 
 | WT22 | 22" Silver Turbine Wheels | |
 | WTAB | 21" Black Arachnid Wheels | |
@@ -355,3 +373,4 @@ appreciated!_
 | YF01 | Matching Yacht Floor | | 
 | YFCC | YFCC | | 
 | YFFC | Integrated Center Console | | 
+| ZCST | ? | | 

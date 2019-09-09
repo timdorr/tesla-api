@@ -30,7 +30,7 @@ appreciated!_
 | AD09 | Adapter, Swiss (1 phase, 10A) | | 
 | AD10 | Adapter, Denmark (1 phase, 13A) | | 
 | AD11 | Adapter, Italy (1 phase, 13A) | | 
-| AD15 | ? | | 
+| AD15 | NEMA 5-15? | | 
 | ADPX2 | Type 2 Public Charging Connector | | 
 | ADX4 | No European 3-Phase | |
 | ADX5 | European 3-Phase, IT | |
@@ -47,7 +47,7 @@ appreciated!_
 | APF2 | Full Self-Driving Capability | | 
 | APH0 | Autopilot 2.0 Hardware | | 
 | APH2 | Autopilot 2.0 Hardware | | 
-| APBS | Autopilot | Model 3 Autopilot |
+| APBS | Autopilot | Model 3 Autosteer |
 | APF2 | Full Self-Driving Capability | |
 | APH3 | Autopilot 2.5 Hardware | |
 | APH4 | Autopilot 3.0 Hardware | Full Self-Driving Computer | 
@@ -55,6 +55,7 @@ appreciated!_
 | APPB | Enhanced Autopilot | | 
 | AU00 | No Audio Package | | 
 | AU01 | Ultra High Fidelity Sound | | 
+| AU3P | Premium Audio? | Model 3 |
 | BC0B | Black Brake Calipers | | 
 | BC0R | Red Brake Calipers | |
 | BC3B | Black Brake Calipers, Model 3 | |
@@ -67,7 +68,7 @@ appreciated!_
 | BR05 | Battery Firmware Limit (75kWh) | | 
 | BS00 | General Production Flag | | 
 | BS01 | Special Production Flag | | 
-| BT37 | 75 kWh (Model 3) | | 
+| BT37 | 75 kWh (Model 3) |BT Codes may have to do with the cells, not the capacity. M3 Mid Range also shows BT37 | 
 | BT40 | 40 kWh | | 
 | BT60 | 60 kWh | | 
 | BT70 | 70 kWh | | 
@@ -112,16 +113,22 @@ appreciated!_
 | DU01 | Drive Unit - Infineon | | 
 | DV2W | Rear-Wheel Drive | | 
 | DV4W | All-Wheel Drive | | 
+| FC3P |? | |
 | FG00 | No Exterior Lighting Package | | 
 | FG01 | Exterior Lighting Package | | 
 | FG02 | Exterior Lighting Package | | 
+| FG31 | ? | |
 | FMP6 | FMP6 | | 
+| FM3P | Front Mirror? | |
 | FR01 | Base Front Row | | 
 | FR02 | Ventilated Front Seats | |
 | FR03 | FR03 | | 
 | FR04 | FR04 | | 
+| GLFR | ? | |
 | HC00 | No Home Charging installation | | 
 | HC01 | Home Charging Installation | | 
+| HL31 | ? | |
+| HM31 | ? | |
 | HP00 | No HPWC Ordered | | 
 | HP01 | HPWC Ordered | | 
 | ID3W | (Model 3) Wood Decor | | 
@@ -133,6 +140,7 @@ appreciated!_
 | IDOG | Gloss Obeche Wood Decor | | 
 | IDLW | Lacewood Decor | | 
 | IDPB | Piano Black Decor | | 
+| IL31 | ? | |
 | IN3BB | All Black Partial Premium Interior | | 
 | IN3PB | All Black Premium Interior | | 
 | INBBW | White | | 
@@ -171,6 +179,7 @@ appreciated!_
 | MI01 | 2016 Production Refresh | | 
 | MI02 | 2017 Production Refresh | | 
 | MI03 | 201? Production Refresh | Found on Model X ordered 11/2018 delivered 3/2019 | 
+| MR31 | ? | |
 | MT300 | Standard Range Rear-Wheel Drive | |
 | MT301 | Standard Range Plus Rear-Wheel Drive | |
 | MT302 | Long Range Rear-Wheel Drive | |
@@ -247,25 +256,34 @@ appreciated!_
 | RFP0 | All Glass Panoramic Roof | | 
 | RFP2 | Sunroof | | 
 | RFPX | Model X Roof | | 
+| RS3H | ? | |
 | S02P | S02P | | 
 | S31B | S31B | | 
 | S32C | S32C | | 
 | S32P | S32P | | 
 | S32W | S32W | | 
+| S3PB | ? | |
+| SA3P | ? | |
 | SC00 | No Supercharging | | 
 | SC01 | Supercharging Enabled | | 
 | SC04 | Pay Per Use Supercharging | | 
 | SC05 | Free Supercharging | | 
+| SLR1 | Carbon Fibre Spoiler | Model 3 |
+| SPT31 | Performance Upgrade | Model 3 |
+| SPTY1 | Performance Upgrade | Model Y |
 | SP00 | No Security Package | |
 | SR01 | Standard 2nd row | | 
 | SR06 | Seven Seat Interior | | 
 | SR07 | Standard 2nd row | | 
 | ST00 | Non-leather Steering Wheel | | 
 | ST01 | Non-heated Leather Steering Wheel | | 
+| STCP | ? | |
 | STY5S | Five Seat Interior | |
 | STY7S | Seven Seat Interior | |
 | SU00 | Standard Suspension | | 
 | SU01 | Smart Air Suspension | | 
+| SU3C | ? | Model 3 mid-range |
+| T3CA | ? | |
 | TIC4 | All-Season Tires | | 
 | TM00 | General Production Trim | | 
 | TM02 | General Production Signature Trim | | 
@@ -278,6 +296,7 @@ appreciated!_
 | TR00 | No Third Row Seat | | 
 | TR01 | Third Row Seating | | 
 | TRA1 | Third Row HVAC | | 
+| TW00 | ? | |
 | TW01 | Towing Package | | 
 | UM01 | Universal Mobile Charger - US Port (Single) | | 
 | UTAB | Black Alcantara Headliner | | 
@@ -285,12 +304,11 @@ appreciated!_
 | UTPB | Dark Headliner | | 
 | UTSB | Dark Headliner | | 
 | UTZW | Light Headliner | |
-| SLR1 | Carbon Fibre Spoiler | Model 3 |
-| SPT31 | Performance Upgrade | Model 3 |
-| SPTY1 | Performance Upgrade | Model Y |
+| UT3P | ? | |
 | W32P | 20" Performance Wheels | Model 3 |
 | W38B | 18" Aero Wheels | For the Model 3 and Model Y |
-| W39B | 19" Sport Wheels | | 
+| W39B | 19" Sport Wheels  | | 
+| WR00 | ? | |
 | WT20 | 20" Silver Slipstream Wheels | | 
 | WT22 | 22" Silver Turbine Wheels | |
 | WTAB | 21" Black Arachnid Wheels | |
@@ -355,3 +373,4 @@ appreciated!_
 | YF01 | Matching Yacht Floor | | 
 | YFCC | YFCC | | 
 | YFFC | Integrated Center Console | | 
+| ZCST | ? | |

@@ -36,8 +36,11 @@ Here's a quick example:
 ```ruby
 require 'tesla_api'
 
-tesla_api = TeslaApi::Client.new(email, client_id, client_secret)
-tesla_api.login!(password) # Or tesla_api.token = token if you have an existing token.
+tesla_api = TeslaApi::Client.new(email: email, client_id: client_id, client_secret: client_secret)
+tesla_api.login!(password)
+# Or if you have an access token:
+tesla_api = TeslaApi::Client.new(access_token: access_token) 
+
 model_s = tesla_api.vehicles.first # => <TeslaApi::Vehicle>
 
 model_s.wake_up

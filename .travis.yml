@@ -7,7 +7,8 @@ env:
     - TESLA_PASS=oilLOL
     - TESLA_CLIENT_ID=1
     - TESLA_CLIENT_SECRET=2
-    - TESLA_API_TOKEN=3
+    - TESLA_ACCESS_TOKEN=3
+    - TESLA_REFRESH_TOKEN=4
 before_install:
   - gem update --system
   - gem install bundler

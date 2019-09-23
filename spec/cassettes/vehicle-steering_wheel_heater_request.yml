@@ -10,7 +10,7 @@ http_interactions:
       User-Agent:
       - github.com/timdorr/tesla-api v:1.4.1
       Authorization:
-      - Bearer <TESLA_API_TOKEN>
+      - Bearer <TESLA_ACCESS_TOKEN>
   response:
     status:
       code: 200
@@ -59,7 +59,7 @@ http_interactions:
       User-Agent:
       - github.com/timdorr/tesla-api v:1.4.1
       Authorization:
-      - Bearer <TESLA_API_TOKEN>
+      - Bearer <TESLA_ACCESS_TOKEN>
   response:
     status:
       code: 200

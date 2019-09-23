@@ -1,63 +1,79 @@
 require 'spec_helper'
 
 RSpec.describe TeslaApi::Client do
-  subject(:tesla_api) { TeslaApi::Client.new(ENV['TESLA_EMAIL']) }
+  subject(:tesla_api) { TeslaApi::Client.new(email: ENV['TESLA_EMAIL']) }
 
-  describe '#new client' do
-    it 'has no expiry date' do
-      expect(tesla_api.expired_at).to eq(nil)
+  context 'password grant auth' do
+    describe '#new' do
+      it 'has no expiry date' do
+        expect(tesla_api.access_token_expires_at).to eq(nil)
+      end
+
+      it 'has a expiry status set to true' do
+        expect(tesla_api.expired?).to eq(true)
+      end
     end
 
-    it 'has a expiry status set to true' do
-      expect(tesla_api.expired?).to eq(true)
+    describe '#login!', vcr: { cassette_name: 'client-login' } do
+      it { is_expected.to be_a(TeslaApi::Client) }
+
+      it 'logs into the API' do
+        tesla_api.login!(ENV['TESLA_PASS'])
+        expect(a_request(:post, "https://#{URI.parse(tesla_api.class.base_uri).host}/oauth/token")).to have_been_made.once
+      end
+
+      it 'sets a Bearer token header' do
+        tesla_api.login!(ENV['TESLA_PASS'])
+        expect(tesla_api.class.headers).to include({'Authorization' => /Bearer [a-z0-9]{32}/})
+      end
+
+      it 'obtains a Bearer token' do
+        tesla_api.login!(ENV['TESLA_PASS'])
+        expect(tesla_api.access_token).to match(/[a-z0-9]{32}/)
+      end
+
+      it 'set a expiry date' do
+        tesla_api.login!(ENV['TESLA_PASS'])
+        expect(tesla_api.access_token_expires_at).to eq(Time.at(1475777133 + 7776000).to_datetime)
+      end
+
+      it 'obtains a refresh token' do
+        tesla_api.login!(ENV['TESLA_PASS'])
+        expect(tesla_api.refresh_token).to match(/[a-z0-9]{32}/)
+      end
+
+      it 'expose expiry status' do
+        tesla_api.login!(ENV['TESLA_PASS'])
+        expect(tesla_api.expired?).to eq(true)
+      end
     end
   end
 
-  describe '#token=' do
-    it 'sets a Bearer token' do
-      tesla_api.token = Faker::Lorem.characters(32)
-      expect(tesla_api.class.headers).to include({'Authorization' => /Bearer [a-z0-9]{32}/})
-    end
-  end
+  context 'token grant auth' do
+    subject(:tesla_api) { TeslaApi::Client.new(
+        access_token: access_token,
+        access_token_expires_at: DateTime.now + 1,
+        refresh_token: refresh_token
+    ) }
 
-  describe '#login!', vcr: { cassette_name: 'client-login' } do
-    it { is_expected.to be_a(TeslaApi::Client) }
+    let(:access_token) { ENV['TESLA_ACCESS_TOKEN'] }
+    let(:refresh_token) { ENV['TESLA_REFRESH_TOKEN'] }
 
-    it 'logs into the API' do
-      tesla_api.login!(ENV['TESLA_PASS'])
-      expect(a_request(:post, "https://#{URI.parse(tesla_api.class.base_uri).host}/oauth/token")).to have_been_made.once
-    end
+    describe '#new' do
+      it 'is not expired' do
+        expect(tesla_api.expired?).to eq(false)
+      end
 
-    it 'set a expiry date' do
-      tesla_api.login!(ENV['TESLA_PASS'])
-      expect(tesla_api.expired_at).to eq(Time.at(1475777133 + 7776000).to_datetime)
-    end
-
-    it 'expose expiry status' do
-      tesla_api.login!(ENV['TESLA_PASS'])
-      tesla_api.created_at = (Time.now - 1).to_i
-      expect(tesla_api.expired?).to eq(false)
+      it 'sets a Bearer token header' do
+        expect(tesla_api.class.headers).to include({'Authorization' => "Bearer #{access_token}"})
+      end
     end
 
-    it 'is expired when has a 90+ days old date' do
-      tesla_api.login!(ENV['TESLA_PASS'])
-      tesla_api.created_at = (Time.now - 7776000 - 1).to_i
-      expect(tesla_api.expired?).to eq(true)
-    end
-
-    it 'sets a Bearer token header' do
-      tesla_api.login!(ENV['TESLA_PASS'])
-      expect(tesla_api.class.headers).to include({'Authorization' => /Bearer [a-z0-9]{32}/})
-    end
-
-    it 'obtains a Bearer token' do
-      tesla_api.login!(ENV['TESLA_PASS'])
-      expect(tesla_api.token).to match(/[a-z0-9]{32}/)
-    end
-
-    it 'obtains a refresh token' do
-      tesla_api.login!(ENV['TESLA_PASS'])
-      expect(tesla_api.refresh_token).to match(/[a-z0-9]{32}/)
+    describe '#refresh_access_token', vcr: {cassette_name: 'client-refresh'} do
+      it 'refreshes the access token' do
+        tesla_api.refresh_access_token
+        expect(tesla_api.access_token).not_to eq(access_token)
+      end
     end
   end
 

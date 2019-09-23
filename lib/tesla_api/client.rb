@@ -4,36 +4,57 @@ module TeslaApi
     base_uri 'https://owner-api.teslamotors.com/api/1'
     headers 'User-Agent' => "github.com/timdorr/tesla-api v:#{VERSION}"
     format :json
+    raise_on [401]
 
-    attr_reader :email, :token, :refresh_token, :client_id, :client_secret
+    attr_reader :email, :access_token, :access_token_expires_at, :refresh_token, :client_id, :client_secret
 
-    def initialize(email, client_id = ENV['TESLA_CLIENT_ID'], client_secret = ENV['TESLA_CLIENT_SECRET'])
+    def initialize(
+        email: nil,
+        access_token: nil,
+        access_token_expires_at: nil,
+        refresh_token: nil,
+        client_id: ENV['TESLA_CLIENT_ID'],
+        client_secret: ENV['TESLA_CLIENT_SECRET']
+    )
       @email = email
+
       @client_id = client_id
       @client_secret = client_secret
+
+      self.update_token(
+          access_token: access_token,
+          access_token_expires_at: access_token_expires_at,
+          refresh_token: refresh_token
+      )
     end
 
-    def token=(token)
-      @token = token
-      self.class.headers 'Authorization' => "Bearer #{token}"
+    def update_token(access_token:, access_token_expires_at:, refresh_token:)
+      @access_token = access_token
+      @access_token_expires_at = access_token_expires_at
+      @refresh_token = refresh_token
+      self.class.headers 'Authorization' => "Bearer #{access_token}" if access_token
+
+      access_token
     end
 
-    def expires_in=(seconds)
-      @expires_in = seconds.to_f
-    end
+    def refresh_access_token
+      response = self.class.post(
+          'https://owner-api.teslamotors.com/oauth/token',
+          body: {
+              grant_type: 'refresh_token',
+              client_id: client_id,
+              client_secret: client_secret,
+              refresh_token: refresh_token
+          }
+      )
 
-    def created_at=(timestamp)
-      @created_at = Time.at(timestamp.to_f).to_datetime
-    end
+      self.update_token(
+          access_token: response['access_token'],
+          access_token_expires_at: Time.at(response['created_at'] + response['expires_in']).to_datetime,
+          refresh_token: response['refresh_token']
+      )
 
-    def expired_at
-      return nil unless defined?(@created_at)
-      (@created_at.to_time + @expires_in.to_f).to_datetime
-    end
-
-    def expired?
-      return true unless defined?(@created_at)
-      expired_at <= DateTime.now
+      response
     end
 
     def login!(password)
@@ -48,10 +69,18 @@ module TeslaApi
           }
       )
 
-      self.expires_in    = response['expires_in']
-      self.created_at    = response['created_at']
-      self.token         = response['access_token']
-      self.refresh_token = response['refresh_token']
+      self.update_token(
+          access_token: response['access_token'],
+          access_token_expires_at: Time.at(response['created_at'] + response['expires_in']).to_datetime,
+          refresh_token: response['refresh_token']
+      )
+
+      response
+    end
+
+    def expired?
+      return true if access_token_expires_at.nil?
+      access_token_expires_at <= DateTime.now
     end
 
     def vehicles

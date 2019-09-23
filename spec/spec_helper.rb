@@ -1,5 +1,4 @@
 require 'dotenv'
-require 'faker'
 require 'vcr'
 require 'webmock/rspec'
 
@@ -17,7 +16,8 @@ VCR.configure do |c|
   c.define_cassette_placeholder('<TESLA_PASS>')          { ENV['TESLA_PASS'] }
   c.define_cassette_placeholder('<TESLA_CLIENT_ID>')     { ENV['TESLA_CLIENT_ID'] }
   c.define_cassette_placeholder('<TESLA_CLIENT_SECRET>') { ENV['TESLA_CLIENT_SECRET'] }
-  c.define_cassette_placeholder('<TESLA_API_TOKEN>')     { ENV['TESLA_API_TOKEN'] }
+  c.define_cassette_placeholder('<TESLA_ACCESS_TOKEN>')  { ENV['TESLA_ACCESS_TOKEN'] }
+  c.define_cassette_placeholder('<TESLA_REFRESH_TOKEN>') { ENV['TESLA_REFRESH_TOKEN'] }
 end
 
 RSpec.configure do |config|

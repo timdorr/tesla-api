@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer <TESLA_API_TOKEN>
+      - Bearer <TESLA_ACCESS_TOKEN>
   response:
     status:
       code: 200
@@ -54,7 +54,7 @@ http_interactions:
       string: limit_mph=65
     headers:
       Authorization:
-      - Bearer <TESLA_API_TOKEN>
+      - Bearer <TESLA_ACCESS_TOKEN>
   response:
     status:
       code: 200

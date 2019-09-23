@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer <TESLA_API_TOKEN>
+      - Bearer <TESLA_ACCESS_TOKEN>
   response:
     status:
       code: 200
@@ -49,7 +49,7 @@ http_interactions:
       string: on=true&password=1234
     headers:
       Authorization:
-      - Bearer <TESLA_API_TOKEN>
+      - Bearer <TESLA_ACCESS_TOKEN>
   response:
     status:
       code: 200

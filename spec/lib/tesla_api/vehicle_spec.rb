@@ -1,11 +1,7 @@
 require 'spec_helper'
 
 RSpec.describe TeslaApi::Vehicle do
-  let(:tesla_api) { TeslaApi::Client.new(ENV['TESLA_EMAIL']) }
-
-  before do
-    tesla_api.token = ENV['TESLA_API_TOKEN']
-  end
+  let(:tesla_api) { TeslaApi::Client.new(access_token: ENV['TESLA_ACCESS_TOKEN']) }
 
   subject(:vehicle) { tesla_api.vehicles.first }
 

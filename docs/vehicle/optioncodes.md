@@ -140,7 +140,7 @@ appreciated!_
 | IDOM | Matte Obeche Wood Decor | | 
 | IDOG | Gloss Obeche Wood Decor | | 
 | IDLW | Lacewood Decor | | 
-| IDPB | Piano Black Decor |  
+| IDPB | Piano Black Decor | |
 | IN3BB | All Black Partial Premium Interior | | 
 | IN3PB | All Black Premium Interior | | 
 | INBBW | White | | 

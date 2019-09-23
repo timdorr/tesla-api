@@ -30,7 +30,7 @@ appreciated!_
 | AD09 | Adapter, Swiss (1 phase, 10A) | | 
 | AD10 | Adapter, Denmark (1 phase, 13A) | | 
 | AD11 | Adapter, Italy (1 phase, 13A) | | 
-| AD15 | ? | | 
+| AD15 | Adapter | J1772 | 
 | ADPX2 | Type 2 Public Charging Connector | | 
 | ADX4 | No European 3-Phase | |
 | ADX5 | European 3-Phase, IT | |
@@ -38,7 +38,7 @@ appreciated!_
 | ADX7 | No - 3-ph Red IEC309 (3 phase, 16A) | |
 | ADX9 | No - Adapter, Swiss (1 phase, 10A) | |
 | ADX8 | Blue IEC309 (1 phase, 230V 32A) | | 
-| AF00 | No HEPA Filter | | 
+| AF00 | No HEPA Filter | standard air filter, no air ionizer | 
 | AF02 | HEPA Filter | | 
 | AH00 | No Accessory Hitch | | 
 | APE1 | Enhanced Autopilot | | 
@@ -49,23 +49,25 @@ appreciated!_
 | APH2 | Autopilot 2.0 Hardware | | 
 | APBS | Autopilot | Model 3 Autopilot |
 | APF2 | Full Self-Driving Capability | |
-| APH3 | Autopilot 2.5 Hardware | |
+| APH3 | Autopilot 2.5 Hardware | Autopilot hardware V2 hardware + PASCAL ECU |
 | APH4 | Autopilot 3.0 Hardware | Full Self-Driving Computer | 
 | APPA | Autopilot 1.0 Hardware | | 
 | APPB | Enhanced Autopilot | | 
 | AU00 | No Audio Package | | 
 | AU01 | Ultra High Fidelity Sound | | 
+| AU3P | Sound Studio Package	| Premium audio package |
 | BC0B | Black Brake Calipers | | 
 | BC0R | Red Brake Calipers | |
 | BC3B | Black Brake Calipers, Model 3 | |
 | BCMB | Black Brake Calipers | | 
 | BCYR | Performance Brakes | |
+| BG30 | No Badge | Model 3|
 | BP00 | No Ludicrous | | 
 | BP01 | Ludicrous Speed Upgrade | | 
 | BR00 | No Battery Firmware Limit | | 
 | BR03 | Battery Firmware Limit (60kWh) | | 
 | BR05 | Battery Firmware Limit (75kWh) | | 
-| BS00 | General Production Flag | | 
+| BS00 | Blind Spot Sensor Package | No Blind Spot Sensor Package | 
 | BS01 | Special Production Flag | | 
 | BT37 | 75 kWh (Model 3) | | 
 | BT40 | 40 kWh | | 
@@ -85,7 +87,7 @@ appreciated!_
 | CF00 | High Power Charger | |
 | CF01 | 48amp charger | |
 | CH00 | Standard Charger (40 Amp) | | 
-| CH01 | Dual Chargers (80 Amp) | | 
+| CH01 | Dual Chargers (80 Amp) | Twin 10kW charge config | 
 | CH04 | 72 Amp Charger (Model S/X) | | 
 | CH05 | 48 Amp Charger (Model S/X) | | 
 | CH07 | 48 Amp Charger (Model 3) | | 
@@ -96,32 +98,38 @@ appreciated!_
 | COUS | Country: United States | | 
 | CONL | Country: Netherlands | |
 | CPW1 | 20" Performance Wheels | |
-| CW00 | No Cold Weather Package | | 
-| CW02 | Subzero Weather Package | | 
+| CW00 | Weather Package | No Cold Weather Package | 
+| CW02 | Weather Package | Subzero Weather Package | 
 | DA00 | No Autopilot | | 
-| DA01 | Active Safety (ACC,LDW,SA) | | 
+| DA01 | Active Safety (ACC,LDW,SA) | Drivers Assistance Package | 
 | DA02 | Autopilot Convenience Features | | 
 | DCF0 | Autopilot Convenience Features (DCF0) | | 
 | DRLH | Left Hand Drive | | 
 | BC3R | Performance Brakes | Model 3 |
 | DRRH | Right Hand Drive | | 
-| DSH5 | PUR Dash Pad | | 
+| DSH5 | Dashboard | PUR Dashboard Pad | 
 | DSH7 | Alcantara Dashboard Accents | | 
 | DSHG | PUR Dash Pad | | 
 | DU00 | Drive Unit - IR | | 
 | DU01 | Drive Unit - Infineon | | 
 | DV2W | Rear-Wheel Drive | | 
 | DV4W | All-Wheel Drive | | 
+| FC3P | Front Console	Front console (premium) | Model 3 |
 | FG00 | No Exterior Lighting Package | | 
-| FG01 | Exterior Lighting Package | | 
-| FG02 | Exterior Lighting Package | | 
+| FG01 | Fog Lamps | Exterior Lighting Package | 
+| FG02 | Fog Lamps | Fog Lamps |
+| FG31 | Fog Lamps | Premium Fog lights M3 |
+| FM3B | Performance Package (Model3)	| Base Firmware (Non P) |
 | FMP6 | FMP6 | | 
 | FR01 | Base Front Row | | 
 | FR02 | Ventilated Front Seats | |
 | FR03 | FR03 | | 
 | FR04 | FR04 | | 
+| GLFR | Assembly	| Final Assembly Fremont |
 | HC00 | No Home Charging installation | | 
 | HC01 | Home Charging Installation | | 
+| HM31 | Teck Package - Homelink | Homelink |
+| HL31 | Head Lamp (Model3) |	Uplevel Headlamps | 
 | HP00 | No HPWC Ordered | | 
 | HP01 | HPWC Ordered | | 
 | ID3W | (Model 3) Wood Decor | | 
@@ -132,7 +140,7 @@ appreciated!_
 | IDOM | Matte Obeche Wood Decor | | 
 | IDOG | Gloss Obeche Wood Decor | | 
 | IDLW | Lacewood Decor | | 
-| IDPB | Piano Black Decor | | 
+| IDPB | Interior Decor | Piano Black Decor |  
 | IN3BB | All Black Partial Premium Interior | | 
 | IN3PB | All Black Premium Interior | | 
 | INBBW | White | | 
@@ -145,6 +153,7 @@ appreciated!_
 | INWPT | Tan Interior | | 
 | INYPB | All Black Premium Interior | |
 | INYPW | Black and White Premium Interior | |
+| IL31 | Lighting Package	Interior lighting (Ambient) | Model 3 |
 | IVBPP | All Black Interior | | 
 | IVBSW | Ultra White Interior | | 
 | IVBTB | All Black Interior | | 
@@ -153,10 +162,11 @@ appreciated!_
 | IX01 | Extended Nappa Leather Trim | | 
 | LLP1 | LLP1 | | 
 | LLP2 | LLP2 | | 
-| LP01 | Premium Interior Lighting | | 
+| LP00 | Lighting Package	| No Lighting Package |
+| LP01 | Lighting Package | Premium Interior Lighting | 
 | LT00 | Vegan interior | | 
 | LT01 | Standard interior | | 
-| LT1B | LT1B | | 
+| LT1B | Lower Trim | Lower Trim | 
 | LT3W | LT3W | | 
 | LT4B | LT4B | | 
 | LT4C | LT4C | | 
@@ -166,11 +176,13 @@ appreciated!_
 | LT6P | LT6P | |
 | LTPB | Lower Trim PUR Black | |
 | ME01 | Memory Seats | |
-| ME02 | Memory Seats | | 
+| ME02 | Seat Memory | Seat Memory LHD Driver | 
 | MI00 | 2015 Production Refresh | | 
+| MI00 | Project/Program Code M3 |	Base mfg introduction code |
 | MI01 | 2016 Production Refresh | | 
 | MI02 | 2017 Production Refresh | | 
 | MI03 | 201? Production Refresh | Found on Model X ordered 11/2018 delivered 3/2019 | 
+| MR31 | Tech Package - Mirror -YES	| Uplevel Mirrors |
 | MT300 | Standard Range Rear-Wheel Drive | |
 | MT301 | Standard Range Plus Rear-Wheel Drive | |
 | MT302 | Long Range Rear-Wheel Drive | |
@@ -192,7 +204,7 @@ appreciated!_
 | PF01 | Performance Legacy Package | | 
 | PI00 | No Premium Interior | | 
 | PI01 | Premium Upgrades Package | | 
-| PK00 | LEGACY No Parking Sensors | | 
+| PK00 | Parking Sensors | No Parking Sensors | 
 | PMAB | Anza Brown Metallic Color | | 
 | PMBL | Obsidian Black Multi-Coat Color | | 
 | PMMB | Monterey Blue Metallic Color | | 
@@ -201,18 +213,20 @@ appreciated!_
 | PMSG | Green Metallic Color| | 
 | PMSS | San Simeon Silver Metallic Color | | 
 | PMTG | Dolphin Grey Metallic Color | | 
-| PPMR | Red Multi-Coat Color | | 
+| PPMR | Red Multi-Coat Color | Exterior Color | 
 | PPSB | Deep Blue Metallic Color | | 
 | PPSR | Signature Red Color | | 
 | PPSW | Pearl White Multi-Coat Color | | 
 | PPTI | Titanium Metallic Color | | 
+| PL30 | No Aluminum Pedal | |
 | PL31 | Performance Pedals | Model 3 |
 | PRM30 | Partial Premium Interior | |
 | PRM31 | Premium Interior | | 
 | PRM3S | Standard Interior | |
 | PRMY1 | Premium Interior | |
 | PS00 | No Parcel Shelf | | 
-| PS01 | Parcel Shelf | | 
+| PS01 | Parcel Shelf | Parcel Shelf | 
+| RS3H | Second Row Seat	Rear Seats (Heated) | Model 3 |
 | PX00 | No Performance Plus Package | | 
 | PX01 | Performance Plus | | 
 | PX6D | Zero to 60 in 2.5 sec | | 
@@ -240,34 +254,42 @@ appreciated!_
 | QVPP | Vegan Cream Seats | | 
 | QVSW | White Tesla Seats | | 
 | RCX0 | No Rear Console | | 
-| RF3G | Model 3 Glass Roof | | 
+| RF3G | Model 3 Roof | Fixed glass roof | 
 | RFBK | Black Roof | | 
-| RFBC | Body Color Roof | | 
+| RFBC | Body Color Roof | Roof | 
 | RFFG | Glass Roof | | 
 | RFP0 | All Glass Panoramic Roof | | 
 | RFP2 | Sunroof | | 
 | RFPX | Model X Roof | | 
+| S02B | Seat |	BLK Leather |
 | S02P | S02P | | 
 | S31B | S31B | | 
 | S32C | S32C | | 
 | S32P | S32P | | 
 | S32W | S32W | | 
+| S3PB | Seat	Black PUR Premium Seats | | 
 | SC00 | No Supercharging | | 
 | SC01 | Supercharging Enabled | | 
 | SC04 | Pay Per Use Supercharging | | 
 | SC05 | Free Supercharging | | 
+| SLR0 | Rear Spoiler |	No Spoiler |
 | SP00 | No Security Package | |
-| SR01 | Standard 2nd row | | 
+| SR01 | Standard 2nd row | Second Row Seat | 
 | SR06 | Seven Seat Interior | | 
 | SR07 | Standard 2nd row | | 
 | ST00 | Non-leather Steering Wheel | | 
 | ST01 | Non-heated Leather Steering Wheel | | 
+| ST31 | Steering Wheel	Premium Steering Wheel | |
+| STCP | Steering Wheel	Steering Column (Power) | Exterior Features |
 | STY5S | Five Seat Interior | |
 | STY7S | Seven Seat Interior | |
 | SU00 | Standard Suspension | | 
 | SU01 | Smart Air Suspension | | 
-| TIC4 | All-Season Tires | | 
-| TM00 | General Production Trim | | 
+| SU3C | Suspension |	Coil spring suspension |
+| T3MA | Tires M3 |	18 Michelin All Season, Square |
+| TIC4 | Tires | All-Season Tires | 
+| TIMP | Tires | Michelin Primacy 19" Tire |
+| TM00 | Model Trim	| General Production Series Vehicle | 
 | TM02 | General Production Signature Trim | | 
 | TM0A | ALPHA PRE-PRODUCTION NON-SALEABLE | | 
 | TM0B | BETA PRE-PRODUCTION NON-SALEABLE | | 
@@ -275,22 +297,28 @@ appreciated!_
 | TP01 | Tech Package - No Autopilot | | 
 | TP02 | Tech Package with Autopilot | | 
 | TP03 | Tech Package with Enhanced Autopilot | | 
-| TR00 | No Third Row Seat | | 
+| TR00 | Rear Facing Seats | No Rear Facing Seats | 
 | TR01 | Third Row Seating | | 
 | TRA1 | Third Row HVAC | | 
-| TW01 | Towing Package | | 
+| TW00 | Tow Package | Towing (No) |
+| TW01 | Tow Package | Towing (Yes) | 
 | UM01 | Universal Mobile Charger - US Port (Single) | | 
+| UT3P | Upper Trim	Suede GreyPremium Upper Trim (Ultrasuede Grey) | |
 | UTAB | Black Alcantara Headliner | | 
 | UTAW | Light Headliner | | 
+| UTMF | Upper Trim	| |
 | UTPB | Dark Headliner | | 
 | UTSB | Dark Headliner | | 
 | UTZW | Light Headliner | |
+| USSB | Safety |	Safety US Black |
 | SLR1 | Carbon Fibre Spoiler | Model 3 |
 | SPT31 | Performance Upgrade | Model 3 |
 | SPTY1 | Performance Upgrade | Model Y |
 | W32P | 20" Performance Wheels | Model 3 |
 | W38B | 18" Aero Wheels | For the Model 3 and Model Y |
 | W39B | 19" Sport Wheels | | 
+| WR00 | WRAP |	No Wrap |
+| WT19 | Wheels |	19" Wheels |
 | WT20 | 20" Silver Slipstream Wheels | | 
 | WT22 | 22" Silver Turbine Wheels | |
 | WTAB | 21" Black Arachnid Wheels | |
@@ -327,26 +355,26 @@ appreciated!_
 | WY18B | 18" Aero Wheels | |
 | WY19B | 19" Sport Wheels | |
 | WY20P | 20" Performance Wheels | |
-| X001 | Override: Power Liftgate | | 
-| X003 | Maps & Navigation | | 
+| X001 | Override: Power Liftgate | Teck Package - Liftgate | 
+| X003 | Maps & Navigation | Teck Package - Navigation | 
 | X004 | Override: No Navigation | | 
-| X007 | Daytime running lights | | 
+| X007 | Daytime running lights | Teck Package - Exterior Lights | 
 | X010 | Base Mirrors | | 
-| X011 | Override: Homelink | | 
+| X011 | Override: Homelink | Teck Package - Homelink | 
 | X012 | Override: No Homelink | | 
 | X013 | Override: Satellite Radio | | 
 | X014 | Override: No Satellite Radio | | 
 | X019 | Carbon Fiber Spoiler | | 
 | X020 | No Performance Exterior | | 
-| X021 | No Spoiler | | 
+| X021 | Rear Spoiler	| No Rear Carbon Fiber Spoiler |
 | X024 | Performance Package | | 
-| X025 | No Performance Package | | 
-| X027 | Lighted Door Handles | | 
-| X028 | Battery Badge | | 
+| X025 | Performance Powertrain	| Override Performance Powertrain NO | 
+| X027 | Lighted Door Handles | Light handle | 
+| X028 | Battery Badge | Normal Badging | 
 | X029 | Remove Battery Badge | | 
 | X030 | Override: No Passive Entry Pkg | | 
-| X031 | Keyless Entry | | 
-| X037 | Powerfolding Mirrors | | 
+| X031 | Keyless Entry | Passive Entry Pkg | 
+| X037 | Powerfolding Mirrors | Tech Package - Mirror -YES | 
 | X039 | DAB Radio | | 
 | X040 | No DAB Radio | | 
 | X043 | No Phone Dock Kit | | 

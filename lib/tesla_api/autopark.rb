@@ -1,5 +1,3 @@
-require 'faye/websocket'
-
 module TeslaApi
   module Autopark
     def start_autopark(&handler)

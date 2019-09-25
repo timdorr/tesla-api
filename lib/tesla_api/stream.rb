@@ -2,10 +2,19 @@ module TeslaApi
   module Stream
     def stream(&receiver)
       EventMachine.run do
-        http.stream do |chunk|
-          attributes = chunk.split(",")
+        socket = create_socket
 
-          receiver.call({
+        socket.on(:open) do |event|
+          socket.send(JSON.generate(connect_message))
+        end
+
+        socket.on(:message) do |event|
+          data = JSON.parse(event.data.pack('c*'))
+
+          if data['msg_type'] == 'data:update'
+            attributes = data['value'].split(',')
+
+            receiver.call({
               time: DateTime.strptime((attributes[0].to_i/1000).to_s, '%s'),
               speed: attributes[1].to_f,
               odometer: attributes[2].to_f,
@@ -19,35 +28,33 @@ module TeslaApi
               range: attributes[10].to_f,
               est_range: attributes[11].to_f,
               heading: attributes[12].to_f
-          })
+            })
+          end
         end
 
-        http.callback { EventMachine.stop }
-        http.errback { EventMachine.stop }
+        socket.on(:close) do |event|
+          EventMachine.stop
+        end
       end
     end
 
     private
 
-    def request
-      @request ||= EventMachine::HttpRequest.new(
-          "#{stream_endpoint}/stream/#{self['vehicle_id']}/?values=#{stream_params}")
+    def create_socket
+      Faye::WebSocket::Client.new(streaming_endpoint)
     end
 
-    def http
-      request.get(
-          head: {
-              'authorization' => [email, self['tokens'].first]
-          },
-          inactivity_timeout: 15)
+    def streaming_endpoint
+      'wss://streaming.vn.teslamotors.com/streaming/'
     end
 
-    def stream_endpoint
-      'https://streaming.vn.teslamotors.com'
-    end
-
-    def stream_params
-      'speed,odometer,soc,elevation,est_heading,est_lat,est_lng,power,shift_state,range,est_range,heading'
+    def connect_message
+      {
+        msg_type: 'data:subscribe',
+        token: Base64.strict_encode64("#{email}:#{self['tokens'].first}"),
+        value: 'speed,odometer,soc,elevation,est_heading,est_lat,est_lng,power,shift_state,range,est_range,heading',
+        tag: self['vehicle_id'].to_s,
+      }
     end
   end
 end

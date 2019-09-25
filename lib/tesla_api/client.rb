@@ -44,7 +44,7 @@ module TeslaApi
       ).body
 
       @access_token = response['access_token']
-      @access_token_expires_at = Time.at(response['created_at'] + response['expires_in']).to_datetime
+      @access_token_expires_at = Time.at(response['created_at'].to_f + response['expires_in'].to_f).to_datetime
       @refresh_token = response['refresh_token']
 
       response
@@ -63,7 +63,7 @@ module TeslaApi
       ).body
 
       @access_token = response['access_token']
-      @access_token_expires_at = Time.at(response['created_at'] + response['expires_in']).to_datetime
+      @access_token_expires_at = Time.at(response['created_at'].to_f + response['expires_in'].to_f).to_datetime
       @refresh_token = response['refresh_token']
 
       response

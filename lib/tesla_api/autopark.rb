@@ -2,7 +2,7 @@ module TeslaApi
   module Autopark
     def start_autopark(&handler)
       EventMachine.run do
-        socket.on(:message) do |event|
+        autopark_socket.on(:message) do |event|
           message = if event.data.is_a?(Array)
             JSON.parse(event.data.map(&:chr).join)
           else
@@ -13,8 +13,8 @@ module TeslaApi
           handler.call(message.delete('msg_type'), message)
         end
 
-        socket.on(:close) do |_|
-          @socket = nil
+        autopark_socket.on(:close) do |_|
+          @autopark_socket = nil
           @heartbeat && @heartbeat.cancel
           EventMachine.stop
         end
@@ -32,14 +32,14 @@ module TeslaApi
                 msg_type: 'autopark:heartbeat_app',
                 timestamp: Time.now.to_i
             }
-            socket.send(beat.to_json)
+            autopark_socket.send(beat.to_json)
           end
       end
     end
 
-    def socket
-      @socket ||= Faye::WebSocket::Client.new(
-          socket_endpoint,
+    def autopark_socket
+      @autopark_socket ||= Faye::WebSocket::Client.new(
+          autopark_socket_endpoint,
           nil,
           {
               headers: {
@@ -53,7 +53,7 @@ module TeslaApi
       Base64.strict_encode64("#{email}:#{self['tokens'].first}")
     end
 
-    def socket_endpoint
+    def autopark_socket_endpoint
       "wss://streaming.vn.teslamotors.com/connect/#{self['vehicle_id']}"
     end
   end

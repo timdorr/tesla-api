@@ -2,10 +2,10 @@ module TeslaApi
   module Stream
     def stream(&receiver)
       EventMachine.run do
-        socket = create_socket
+        socket = create_streaming_socket
 
         socket.on(:open) do |event|
-          socket.send(JSON.generate(connect_message))
+          socket.send(JSON.generate(stream_connect_message))
         end
 
         socket.on(:message) do |event|
@@ -40,7 +40,7 @@ module TeslaApi
 
     private
 
-    def create_socket
+    def create_streaming_socket
       Faye::WebSocket::Client.new(streaming_endpoint)
     end
 
@@ -48,7 +48,7 @@ module TeslaApi
       'wss://streaming.vn.teslamotors.com/streaming/'
     end
 
-    def connect_message
+    def stream_connect_message
       {
         msg_type: 'data:subscribe',
         token: Base64.strict_encode64("#{email}:#{self['tokens'].first}"),

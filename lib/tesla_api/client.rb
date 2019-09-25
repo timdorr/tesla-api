@@ -87,7 +87,7 @@ module TeslaApi
     end
 
     def vehicle(id)
-      Vehicle.new(self, email, id, self.class.get("/vehicles/#{id}")['response'])
+      Vehicle.new(self, email, id, self.get("/vehicles/#{id}")['response'])
     end
   end
 end

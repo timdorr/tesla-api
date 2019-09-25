@@ -84,7 +84,11 @@ module TeslaApi
     end
 
     def vehicles
-      self.class.get('/vehicles')['response'].map { |v| Vehicle.new(self.class, email, v['id'], v) }
+      self.class.get('/vehicles')['response'].map { |v| Vehicle.new(self, email, v['id'], v) }
+    end
+
+    def vehicle(id)
+      Vehicle.new(self, email, id, self.class.get("/vehicles/#{id}")['response'])
     end
 
     private

@@ -2,10 +2,11 @@ module TeslaApi
   class Vehicle
     include Stream
     include Autopark
-    attr_reader :api, :email, :id, :vehicle
+    attr_reader :client, :api, :email, :id, :vehicle
 
-    def initialize(api, email, id, vehicle)
-      @api = api
+    def initialize(client, email, id, vehicle)
+      @client = client
+      @api = client.class
       @email = email
       @id = id
       @vehicle = vehicle
@@ -28,15 +29,15 @@ module TeslaApi
     # State
 
     def data
-      api.get("/vehicles/#{id}/data")['response']
+      client.class.get("/vehicles/#{id}/data")['response']
     end
 
     def mobile_enabled
-      api.get("/vehicles/#{id}/mobile_enabled")['response']
+      client.class.get("/vehicles/#{id}/mobile_enabled")['response']
     end
 
     def nearby_charging_sites
-      api.get("/vehicles/#{id}/nearby_charging_sites")['response']
+      client.class.get("/vehicles/#{id}/nearby_charging_sites")['response']
     end
 
     def gui_settings
@@ -62,7 +63,7 @@ module TeslaApi
     # Commands
 
     def wake_up
-      @vehicle = api.post("/vehicles/#{id}/wake_up")['response']
+      @vehicle = client.class.post("/vehicles/#{id}/wake_up")['response']
     end
 
     def set_valet_mode(on, password=nil)
@@ -197,11 +198,11 @@ module TeslaApi
     private
 
     def data_request(name)
-      api.get("/vehicles/#{id}/data_request/#{name}")
+      client.class.get("/vehicles/#{id}/data_request/#{name}")
     end
 
     def command(name, body: nil)
-      api.post("/vehicles/#{id}/command/#{name}", body: body)
+      client.class.post("/vehicles/#{id}/command/#{name}", body: body)
     end
   end
 end

@@ -19,7 +19,7 @@ task :console do
   # Set up a global client
   def client
     @client ||= begin
-        client = TeslaApi::Client.new(ENV['TESLA_EMAIL'])
+        client = TeslaApi::Client.new(email: ENV['TESLA_EMAIL'])
         client.login!(ENV['TESLA_PASS'])
         client
     end

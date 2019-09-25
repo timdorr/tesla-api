@@ -19,12 +19,7 @@ RSpec.describe TeslaApi::Client do
 
       it 'logs into the API' do
         tesla_api.login!(ENV['TESLA_PASS'])
-        expect(a_request(:post, "https://#{URI.parse(tesla_api.class.base_uri).host}/oauth/token")).to have_been_made.once
-      end
-
-      it 'sets a Bearer token header' do
-        tesla_api.login!(ENV['TESLA_PASS'])
-        expect(tesla_api.class.headers).to include({'Authorization' => /Bearer [a-z0-9]{32}/})
+        expect(a_request(:post, "https://#{URI.parse(TeslaApi::Client::BASE_URI).host}/oauth/token")).to have_been_made.once
       end
 
       it 'obtains a Bearer token' do
@@ -62,10 +57,6 @@ RSpec.describe TeslaApi::Client do
     describe '#new' do
       it 'is not expired' do
         expect(tesla_api.expired?).to eq(false)
-      end
-
-      it 'sets a Bearer token header' do
-        expect(tesla_api.class.headers).to include({'Authorization' => "Bearer #{access_token}"})
       end
     end
 

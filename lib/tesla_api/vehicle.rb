@@ -6,7 +6,6 @@ module TeslaApi
 
     def initialize(client, email, id, vehicle)
       @client = client
-      @api = client.class
       @email = email
       @id = id
       @vehicle = vehicle
@@ -29,15 +28,15 @@ module TeslaApi
     # State
 
     def data
-      client.class.get("/vehicles/#{id}/data")['response']
+      client.get("/vehicles/#{id}/data")['response']
     end
 
     def mobile_enabled
-      client.class.get("/vehicles/#{id}/mobile_enabled")['response']
+      client.get("/vehicles/#{id}/mobile_enabled")['response']
     end
 
     def nearby_charging_sites
-      client.class.get("/vehicles/#{id}/nearby_charging_sites")['response']
+      client.get("/vehicles/#{id}/nearby_charging_sites")['response']
     end
 
     def gui_settings
@@ -63,7 +62,7 @@ module TeslaApi
     # Commands
 
     def wake_up
-      @vehicle = client.class.post("/vehicles/#{id}/wake_up")['response']
+      @vehicle = client.post("/vehicles/#{id}/wake_up")['response']
     end
 
     def set_valet_mode(on, password=nil)
@@ -198,11 +197,11 @@ module TeslaApi
     private
 
     def data_request(name)
-      client.class.get("/vehicles/#{id}/data_request/#{name}")
+      client.get("/vehicles/#{id}/data_request/#{name}")
     end
 
     def command(name, body: nil)
-      client.class.post("/vehicles/#{id}/command/#{name}", body: body)
+      client.post("/vehicles/#{id}/command/#{name}", body: body)
     end
   end
 end

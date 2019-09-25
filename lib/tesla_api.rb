@@ -1,4 +1,5 @@
-require 'httparty'
+require 'faraday'
+require 'faraday_middleware'
 require 'em-http-request'
 
 require 'tesla_api/version'

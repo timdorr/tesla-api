@@ -1,9 +1,14 @@
 # Endpoints File
 
-This the latest contents of the ownerapi_endpoints.json file from the 3.9.0 version of the app.
+This the latest contents of the ownerapi_endpoints.json file from the 3.10.0 version of the app.
 
 ```json
 {
+  "STATUS": {
+    "TYPE": "GET",
+    "URI": "status",
+    "AUTH": false
+  },
   "AUTHENTICATE": {
     "TYPE": "POST",
     "URI": "oauth/token",
@@ -84,6 +89,11 @@ This the latest contents of the ownerapi_endpoints.json file from the 3.9.0 vers
     "URI": "api/1/vehicles/{vehicle_id}/command/auto_conditioning_stop",
     "AUTH": true
   },
+  "MAX_DEFROST": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/set_preconditioning_max",
+    "AUTH": true
+  },
   "CHANGE_CLIMATE_TEMPERATURE_SETTING": {
     "TYPE": "POST",
     "URI": "api/1/vehicles/{vehicle_id}/command/set_temps",
@@ -99,6 +109,11 @@ This the latest contents of the ownerapi_endpoints.json file from the 3.9.0 vers
     "URI": "api/1/vehicles/{vehicle_id}/command/sun_roof_control",
     "AUTH": true
   },
+  "WINDOW_CONTROL": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/window_control",
+    "AUTH": true
+  },
   "ACTUATE_TRUNK": {
     "TYPE": "POST",
     "URI": "api/1/vehicles/{vehicle_id}/command/actuate_trunk",
@@ -107,6 +122,11 @@ This the latest contents of the ownerapi_endpoints.json file from the 3.9.0 vers
   "REMOTE_START": {
     "TYPE": "POST",
     "URI": "api/1/vehicles/{vehicle_id}/command/remote_start_drive",
+    "AUTH": true
+  },
+  "TRIGGER_HOMELINK": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/trigger_homelink",
     "AUTH": true
   },
   "CHARGE_PORT_DOOR_OPEN": {
@@ -450,9 +470,9 @@ This the latest contents of the ownerapi_endpoints.json file from the 3.9.0 vers
     "URI": "api/1/notification_confirmations",
     "AUTH": true
   },
-  "NAVIGATION_REQUEST": {
+  "SHARE_TO_VEHICLE": {
     "TYPE": "POST",
-    "URI": "api/1/vehicles/{vehicle_id}/command/navigation_request",
+    "URI": "api/1/vehicles/{vehicle_id}/command/share",
     "AUTH": true
   },
   "REMOTE_SEAT_HEATER_REQUEST": {

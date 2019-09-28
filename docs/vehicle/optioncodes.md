@@ -174,6 +174,7 @@ appreciated!_
 | LT5C | LT5C | | 
 | LT5P | LT5P | | 
 | LT6P | LT6P | |
+| LT6W | White Base Lower Trim | |
 | LTPB | Lower Trim PUR Black | |
 | ME01 | Memory Seats | |
 | ME02 | Seat Memory | Seat Memory LHD Driver | 
@@ -254,15 +255,18 @@ appreciated!_
 | QVPP | Vegan Cream Seats | | 
 | QVSW | White Tesla Seats | | 
 | RCX0 | No Rear Console | | 
+| RCX1 | Rear Console | |
 | RF3G | Model 3 Glass Roof | | 
 | RFBK | Black Roof | | 
 | RFBC | Body Color Roof | Roof | 
 | RFFG | Glass Roof | | 
 | RFP0 | All Glass Panoramic Roof | | 
 | RFP2 | Sunroof | | 
-| RFPX | Model X Roof | | 
+| RFPX | Model X Roof | |
+| S01B | Black Textile Seats | |
 | S02B | Seat | BLK Leather |
 | S02P | S02P | | 
+| S07W | White Seats | |
 | S31B | S31B | | 
 | S32C | S32C | | 
 | S32P | S32P | | 
@@ -288,7 +292,10 @@ appreciated!_
 | SU3C | Suspension | Coil spring suspension |
 | T3MA | Tires M3 | 18 Michelin All Season, Square |
 | TIC4 | Tires | All-Season Tires | 
+| TIG2 | Summer Tires | |
+| TIM7 | Summer Tires | |
 | TIMP | Tires | Michelin Primacy 19" Tire |
+| TIP0 | All-season Tires | |
 | TM00 | Model Trim | General Production Series Vehicle | 
 | TM02 | General Production Signature Trim | | 
 | TM0A | ALPHA PRE-PRODUCTION NON-SALEABLE | | 
@@ -311,6 +318,7 @@ appreciated!_
 | UTSB | Dark Headliner | | 
 | UTZW | Light Headliner | |
 | USSB | Safety | Safety US Black |
+| USSW | US Safety Kit White | |
 | SLR1 | Carbon Fibre Spoiler | Model 3 |
 | SPT31 | Performance Upgrade | Model 3 |
 | SPTY1 | Performance Upgrade | Model Y |
@@ -377,6 +385,8 @@ appreciated!_
 | X037 | Powerfolding Mirrors | | 
 | X039 | DAB Radio | | 
 | X040 | No DAB Radio | | 
+| X041 | No Auto Presenting Door | |
+| X042 | Auto Presenting Door | |
 | X043 | No Phone Dock Kit | | 
 | X044 | Phone Dock Kit | | 
 | YF00 | No Yacht Floor | | 

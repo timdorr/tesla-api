@@ -48,6 +48,25 @@ Note: The parameters are always in celsius, regardless of the region the car is 
 }
 ```
 
+## POST `/api/1/vehicles/{id}/command/set_preconditioning_max`
+
+Toggles the climate controls between Max Defrost and the previous setting.
+
+### Parameters
+
+| Parameter | Example | Description                         |
+| :-------- | :------ | :---------------------------------- |
+| on        | true    | True to turn on, false to turn off. |
+
+### Response
+
+```json
+{
+  "reason": "",
+  "result": true
+}
+```
+
 ## POST `/api/1/vehicles/{id}/command/remote_seat_heater_request`
 
 Sets the specified seat's heater level.

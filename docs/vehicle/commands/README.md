@@ -18,6 +18,10 @@ Controls for honking the horn and flashing the lights.
 
 Start the car remotely.
 
+{% page-ref page="homelink.md" %}
+
+Open or close the primary garage door via Homelink.
+
 {% page-ref page="speedlimit.md" %}
 
 Limit the maximum speed of the car.
@@ -33,6 +37,10 @@ Lock and unlock the car.
 {% page-ref page="trunk.md" %}
 
 Open and close the trunk and frunk.
+
+{% page-ref page="windows.md" %}
+
+Open and vent the windows.
 
 {% page-ref page="sunroof.md" %}
 
@@ -64,4 +72,4 @@ Enable or disable Sentry Mode.
 
 {% page-ref page="calendar.md" %}
 
-Synchronize a calendar with the car. 
+Synchronize a calendar with the car.

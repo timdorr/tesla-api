@@ -58,9 +58,9 @@ Adjust the temperature settings of the car.
 
 Control the media playing in the car.
 
-{% page-ref page="navigation.md" %}
+{% page-ref page="sharing.md" %}
 
-Start the navigation system.
+Share a location to navigate to or video to play in theatre mode.
 
 {% page-ref page="softwareupdate.md" %}
 

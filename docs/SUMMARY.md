@@ -34,7 +34,7 @@
   - [Charging](vehicle/commands/charging.md)
   - [Climate](vehicle/commands/climate.md)
   - [Media](vehicle/commands/media.md)
-  - [Navigation](vehicle/commands/navigation.md)
+  - [Sharing](vehicle/commands/sharing.md)
   - [Software Updates](vehicle/commands/softwareupdate.md)
   - [Calendar](vehicle/commands/calendar.md)
 - [Streaming](vehicle/streaming.md)

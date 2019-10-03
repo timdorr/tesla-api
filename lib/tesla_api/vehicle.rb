@@ -210,6 +210,34 @@ module TeslaApi
       command('trigger_homelink', body: {lat: lat, lon: lon})['response']
     end
 
+    def media_toggle_playback
+      command('media_toggle_playback')['response']
+    end
+
+    def media_next_track
+      command('media_next_track')['response']
+    end
+
+    def media_prev_track
+      command('media_prev_track')['response']
+    end
+
+    def media_next_fav
+      command('media_next_fav')['response']
+    end
+
+    def media_prev_fav
+      command('media_prev_fav')['response']
+    end
+
+    def media_volume_up
+      command('media_volume_up')['response']
+    end
+
+    def media_volume_down
+      command('media_volume_down')['response']
+    end
+
     private
 
     def data_request(name)

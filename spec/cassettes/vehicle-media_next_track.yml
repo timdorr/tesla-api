@@ -1,0 +1,109 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://owner-api.teslamotors.com/api/1/vehicles
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - github.com/timdorr/tesla-api v:3.0.1
+      Authorization:
+      - Bearer <TESLA_ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 03 Oct 2019 12:07:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '569'
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Txid:
+      - 53507e4ddb533acdca04c85e956d5d0b
+      Etag:
+      - W/"fee0c127f31e354aae63ac0325c6cce4"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e0c1920f-ebca-44d5-818e-419632e19b30
+      X-Runtime:
+      - '0.034419'
+    body:
+      encoding: UTF-8
+      string: '{"response":[{"id":1,"vehicle_id":1,"vin":"1","display_name":"tm3","option_codes":"AD15,MDL3,PBSB,RENA,BT37,ID3W,RF3G,S3PB,DRLH,DV2W,W39B,APF0,COUS,BC3B,CH07,PC30,FC3P,FG31,GLFR,HL31,HM31,IL31,LTPB,MR31,FM3B,RS3H,SA3P,STCP,SC04,SU3C,T3CA,TW00,TM00,UT3P,WR00,AU3P,APH3,AF00,ZCST,MI00,CDM0","color":null,"tokens":["1","1"],"state":"online","in_service":false,"id_s":"1","calendar_enabled":true,"api_version":6,"backseat_token":null,"backseat_token_updated_at":null}],"count":1}'
+    http_version:
+  recorded_at: Thu, 03 Oct 2019 12:07:10 GMT
+- request:
+    method: post
+    uri: https://owner-api.teslamotors.com/api/1/vehicles/1/command/media_next_track
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - github.com/timdorr/tesla-api v:3.0.1
+      Authorization:
+      - Bearer <TESLA_ACCESS_TOKEN>
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 03 Oct 2019 12:07:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '40'
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Txid:
+      - 3378733fc84bfc9a0d8ca8829f3e061e
+      Etag:
+      - W/"f67eec105dd6522783a1f1bacc52723a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7d4d8512-ede6-47f7-bec0-0d8827369cce
+      X-Runtime:
+      - '0.233400'
+    body:
+      encoding: UTF-8
+      string: '{"response":{"reason":"","result":true}}'
+    http_version:
+  recorded_at: Thu, 03 Oct 2019 12:07:11 GMT
+recorded_with: VCR 4.0.0

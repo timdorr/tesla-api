@@ -331,4 +331,48 @@ RSpec.describe TeslaApi::Vehicle do
       expect(vehicle.set_sentry_mode(false)['result']).to eq(true)
     end
   end
+
+  context '#media' do
+    describe '#media_toggle_playback', vcr: {cassette_name: 'vehicle-media_toggle_playback'} do
+      it 'toggles media from playing and paused' do
+        expect(vehicle.media_toggle_playback['result']).to eq(true)
+      end
+    end
+
+    describe '#media_next_track', vcr: {cassette_name: 'vehicle-media_next_track'} do
+      it 'plays the next track in playlist' do
+        expect(vehicle.media_next_track['result']).to eq(true)
+      end
+    end
+
+    describe '#media_prev_track', vcr: {cassette_name: 'vehicle-media_prev_track'} do
+      it 'plays the previous track in playlist' do
+        expect(vehicle.media_prev_track['result']).to eq(true)
+      end
+    end
+
+    describe '#media_next_fav', vcr: {cassette_name: 'vehicle-media_next_fav'} do
+      it 'plays the next favourite track' do
+        expect(vehicle.media_next_fav['result']).to eq(true)
+      end
+    end
+
+    describe '#media_prev_fav', vcr: {cassette_name: 'vehicle-media_prev_fav'} do
+      it 'plays the previous favourite track' do
+        expect(vehicle.media_prev_fav['result']).to eq(true)
+      end
+    end
+
+    describe '#media_volume_up', vcr: {cassette_name: 'vehicle-media_volume_up'} do
+      it 'increases volume of media' do
+        expect(vehicle.media_volume_up['result']).to eq(true)
+      end
+    end
+
+    describe '#media_volume_down', vcr: {cassette_name: 'vehicle-media_volume_down'} do
+      it 'decreases volume of media' do
+        expect(vehicle.media_volume_down['result']).to eq(true)
+      end
+    end
+  end
 end

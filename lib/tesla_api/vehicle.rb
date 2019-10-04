@@ -59,6 +59,10 @@ module TeslaApi
       data_request('vehicle_state')['response']
     end
 
+    def vehicle_config
+      data_request('vehicle_config')['response']
+    end
+
     # Commands
 
     def wake_up

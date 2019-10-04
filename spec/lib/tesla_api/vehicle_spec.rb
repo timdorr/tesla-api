@@ -28,6 +28,7 @@ RSpec.describe TeslaApi::Vehicle do
       it { should include('display_name') }
       it { should include('drive_state') }
       it { should include('vehicle_state') }
+      it { should include('vehicle_config') }
       it { should include('charge_state') }
     end
   end
@@ -101,6 +102,18 @@ RSpec.describe TeslaApi::Vehicle do
       it { should include('has_spoiler') }
       it { should include('calendar_supported') }
       it { should include('locked') }
+    end
+  end
+
+  describe '#vehicle_config', vcr: {cassette_name: 'vehicle-vehicle_config'} do
+    context 'data about the vehicle\'s overall state' do
+      subject { vehicle.vehicle_config }
+
+      it { should include('exterior_color') }
+      it { should include('wheel_type') }
+      it { should include('has_air_suspension') }
+      it { should include('car_type') }
+      it { should include('timestamp') }
     end
   end
 

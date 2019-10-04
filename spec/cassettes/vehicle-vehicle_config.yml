@@ -1,0 +1,108 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://owner-api.teslamotors.com/api/1/vehicles
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - github.com/timdorr/tesla-api v:3.0.1
+      Authorization:
+      - Bearer <TESLA_ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 04 Oct 2019 18:43:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '569'
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Txid:
+      - ee7eb2a310951d5233614c26c511bf48
+      Etag:
+      - W/"c1c1ac03906b1b753f519905aa9afe41"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c0d6ac7d-91a5-426e-b1cb-d9403b888e52
+      X-Runtime:
+      - '0.030921'
+    body:
+      encoding: UTF-8
+      string: '{"response":[{"id":26640707449551857,"vehicle_id":1817902171,"vin":"5YJSA1E41GF167745","display_name":"Nikola
+        2.0","option_codes":"AD15,MDL3,PBSB,RENA,BT37,ID3W,RF3G,S3PB,DRLH,DV2W,W39B,APF0,COUS,BC3B,CH07,PC30,FC3P,FG31,GLFR,HL31,HM31,IL31,LTPB,MR31,FM3B,RS3H,SA3P,STCP,SC04,SU3C,T3CA,TW00,TM00,UT3P,WR00,AU3P,APH3,AF00,ZCST,MI00,CDM0","color":null,"tokens":["db33b4d51c05cad8","cb2c4a4304d797fe"],"state":"online","in_service":false,"id_s":"26640707449551857","calendar_enabled":true,"api_version":6,"backseat_token":null,"backseat_token_updated_at":null}],"count":1}'
+    http_version: 
+  recorded_at: Fri, 04 Oct 2019 18:43:37 GMT
+- request:
+    method: get
+    uri: https://owner-api.teslamotors.com/api/1/vehicles/26640707449551857/data_request/vehicle_config
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - github.com/timdorr/tesla-api v:3.0.1
+      Authorization:
+      - Bearer <TESLA_ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 04 Oct 2019 18:43:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '546'
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Txid:
+      - 643a147148ac6a15b224e5bcb3fb932c
+      Etag:
+      - W/"88b28a01a971376d0cf561987d6c8a61"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6ce094c9-81a8-4227-bb4f-8244e8df49ae
+      X-Runtime:
+      - '1.870441'
+    body:
+      encoding: UTF-8
+      string: '{"response":{"can_accept_navigation_requests":true,"can_actuate_trunks":true,"car_special_type":"base","car_type":"models2","charge_port_type":"US","eu_vehicle":false,"exterior_color":"White","has_air_suspension":true,"has_ludicrous_mode":false,"motorized_charge_port":true,"plg":true,"rear_seat_heaters":0,"rear_seat_type":0,"rhd":false,"roof_color":"None","seat_type":2,"spoiler_type":"None","sun_roof_installed":2,"third_row_seats":"None","timestamp":1570214620099,"trim_badging":"p90d","use_range_badging":false,"wheel_type":"AeroTurbine19"}}'
+    http_version: 
+  recorded_at: Fri, 04 Oct 2019 18:43:40 GMT
+recorded_with: VCR 5.0.0

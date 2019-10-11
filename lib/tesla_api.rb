@@ -3,8 +3,6 @@ require 'base64'
 
 require 'faraday'
 require 'faraday_middleware'
-require 'eventmachine'
-require 'faye/websocket'
 
 require 'async'
 require 'async/http/endpoint'

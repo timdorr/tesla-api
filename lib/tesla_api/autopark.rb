@@ -2,7 +2,7 @@ module TeslaApi
   module Autopark
     def start_autopark(&handler)
       Async do |task|
-        Async::WebSocket::Client.connect(endpoint, headers: headers) do |connection|
+        Async::WebSocket::Client.connect(autopark_endpoint, headers: headers) do |connection|
           while message = connection.read
             case message[:msg_type]
             when 'control:hello'
@@ -21,21 +21,21 @@ module TeslaApi
 
     private
 
-    def endpoint
-      Async::HTTP::Endpoint.parse(autopark_socket_endpoint)
+    def autopark_endpoint
+      Async::HTTP::Endpoint.parse(autopark_endpoint_url)
     end
 
-    def autopark_socket_endpoint
+    def autopark_endpoint_url
       "wss://streaming.vn.teslamotors.com/connect/#{self['vehicle_id']}"
     end
 
-    def headers
+    def autopark_headers
       {
           'Authorization' => "Basic #{socket_auth}"
       }
     end
 
-    def socket_auth
+    def autopark_socket_auth
       Base64.strict_encode64("#{email}:#{self['tokens'].first}")
     end
   end

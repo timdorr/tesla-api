@@ -10,7 +10,8 @@ module TeslaApi
         access_token_expires_at: nil,
         refresh_token: nil,
         client_id: ENV['TESLA_CLIENT_ID'],
-        client_secret: ENV['TESLA_CLIENT_SECRET']
+        client_secret: ENV['TESLA_CLIENT_SECRET'],
+        retry_options: nil
     )
       @email = email
 
@@ -28,6 +29,7 @@ module TeslaApi
         conn.request :json
         conn.response :json
         conn.response :raise_error
+        conn.request :retry, retry_options if retry_options # Must be registered after :raise_error
         conn.adapter Faraday.default_adapter
       end
     end

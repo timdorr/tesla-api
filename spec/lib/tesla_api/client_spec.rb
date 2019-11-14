@@ -73,4 +73,34 @@ RSpec.describe TeslaApi::Client do
       expect(tesla_api.vehicles).to include(TeslaApi::Vehicle)
     end
   end
+
+  describe 'retry options', vcr: { cassette_name: 'client-login_timeout' } do
+    subject(:tesla_api) { TeslaApi::Client.new(
+      access_token: ENV['TESLA_ACCESS_TOKEN'],
+      retry_options: retry_options
+    ) }
+
+    let(:retry_options) {{
+      max: 2,
+      methods: [:post],
+      retry_statuses: [408]
+    }}
+
+    context 'with retry' do
+      it 'obtains a Bearer token after retry' do
+        tesla_api.login!(ENV['TESLA_PASS'])
+        expect(tesla_api.access_token).to be
+      end
+    end
+
+    context 'without retry' do
+      let(:retry_options) { nil }
+
+      it 'raises an error' do
+        expect {
+          tesla_api.login!(ENV['TESLA_PASS'])
+        }.to raise_error(Faraday::ClientError)
+      end
+    end
+  end
 end

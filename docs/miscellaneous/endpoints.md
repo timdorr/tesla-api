@@ -1,6 +1,6 @@
 # Endpoints File
 
-This the latest contents of the ownerapi_endpoints.json file from the 3.10.0 version of the app.
+This the latest contents of the ownerapi_endpoints.json file from the 3.10.2 version of the app.
 
 ```json
 {
@@ -329,7 +329,7 @@ This the latest contents of the ownerapi_endpoints.json file from the 3.10.0 ver
     "URI": "api/1/vehicles/{vehicle_id}/eligible_upgrades",
     "AUTH": true
   },
-  "AUTOPILOT_UPGRADE_URL": {
+  "UPGRADE_URL": {
     "TYPE": "GET",
     "URI": "api/1/vehicles/{vehicle_id}/purchase_url",
     "AUTH": true
@@ -443,6 +443,11 @@ This the latest contents of the ownerapi_endpoints.json file from the 3.10.0 ver
   "BACKUP_RESERVE": {
     "TYPE": "POST",
     "URI": "api/1/energy_sites/{site_id}/backup",
+    "AUTH": true
+  },
+  "OFF_GRID_VEHICLE_CHARGING_RESERVE": {
+    "TYPE": "POST",
+    "URI": "api/1/energy_sites/{site_id}/off_grid_vehicle_charging_reserve",
     "AUTH": true
   },
   "SITE_NAME": {

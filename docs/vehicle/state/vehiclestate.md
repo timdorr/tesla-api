@@ -59,3 +59,15 @@ Returns the vehicle's physical state, such as which doors are open.
 | 3     | Charging Screen |
 | 7     | Sentry Mode     |
 | 8     | Dog Mode        |
+
+### Trunk (rt)
+| State | Description |
+|-------|-------------|
+| 0     | Closed      |
+| 32    | Open        |
+
+### Frunk (ft)
+| State | Description |
+|-------|-------------|
+| 0     | Closed      |
+| 16    | Open        |

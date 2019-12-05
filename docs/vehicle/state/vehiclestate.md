@@ -4,6 +4,31 @@
 
 Returns the vehicle's physical state, such as which doors are open.
 
+For the trunk (rt) and frunk (ft) fields, you should interpret a zero (0) value as closed and a non-zero value as open (partially or fully).
+
+Here are the currently known values for the `center_display_state` field:
+
+| State | Description     |
+|-------|-----------------|
+| 0     | Off             |
+| 2     | Normal On       |
+| 3     | Charging Screen |
+| 7     | Sentry Mode     |
+| 8     | Dog Mode        |
+
+Here are the descriptions for the shorthand fields:
+
+| Field | Description     |
+|-------|-----------------|
+| df    | driver front    |
+| dr    | driver rear     |
+| pf    | passenger front |
+| pr    | passenger rear  |
+| ft    | front trunk     |
+| rt    | rear trunk      |
+
+
+
 ### Response
 
 ```json
@@ -50,28 +75,3 @@ Returns the vehicle's physical state, such as which doors are open.
   }
 }
 ```
-
-### Center Display States
-| State | Description     |
-|-------|-----------------|
-| 0     | Off             |
-| 2     | Normal On       |
-| 3     | Charging Screen |
-| 7     | Sentry Mode     |
-| 8     | Dog Mode        |
-
-
-For both Trunk (rt) and the Frunk (ft) argument, you should (as the official Tesla App) 
-interprete a zero (0) as closed, and a non-zero as open:
-
-### Trunk (rt)
-| State | Description |
-|-------|-------------|
-| 0     | Closed      |
-| 32    | Open        |
-
-### Frunk (ft)
-| State | Description |
-|-------|-------------|
-| 0     | Closed      |
-| 16    | Open        |

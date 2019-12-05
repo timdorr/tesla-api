@@ -76,10 +76,12 @@ interprete a zero (0) as closed, and a non-zero as open:
 | 0     | Closed      |
 | 16    | Open        |
 
-### All the door names are as follow:
-df => driver front
-dr => driver rear 
-pf => passenger front
-pr => passenger rear
-ft => front trunk 
-rt => rear trunk
+### All the door names explained
+| Name | Full door name  |
+|------|-----------------|
+| df   | driver front    |
+| dr   | driver rear     |
+| pf   | passenger front |
+| pr   | passenger rear  |
+| ft   | front trunk     |
+| rt   | rear trunk      |

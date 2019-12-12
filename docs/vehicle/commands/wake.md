@@ -21,7 +21,7 @@ Wakes up the car from a sleeping state.
     "in_service": false,
     "id_s": "12345678901234567",
     "calendar_enabled": true,
-    "api_version": 4,
+    "api_version": 7,
     "backseat_token": null,
     "backseat_token_updated_at": null
   }

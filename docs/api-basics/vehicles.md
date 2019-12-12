@@ -35,7 +35,7 @@ Retrieve a list of your owned vehicles (includes vehicles not yet shipped!)
       "in_service": false,
       "id_s": "12345678901234567",
       "calendar_enabled": true,
-      "api_version": 4,
+      "api_version": 7,
       "backseat_token": null,
       "backseat_token_updated_at": null
     }
@@ -50,9 +50,9 @@ These resources are read-only and determine the state of the vehicle's various s
 
 ### URL parameters
 
-| Field | Example | Description |
-| :--- | :--- | :--- |
-| `id` | `12345678901234567` | The `id` of the car. (Not the `vehicle_id`!) |
+| Field | Example             | Description                                  |
+| :---- | :------------------ | :------------------------------------------- |
+| `id`  | `12345678901234567` | The `id` of the car. (Not the `vehicle_id`!) |
 
 ### Response
 
@@ -70,10 +70,9 @@ These resources are read-only and determine the state of the vehicle's various s
     "in_service": false,
     "id_s": "12345678901234567",
     "calendar_enabled": true,
-    "api_version": 4,
+    "api_version": 7,
     "backseat_token": null,
     "backseat_token_updated_at": null
   }
 }
 ```
-

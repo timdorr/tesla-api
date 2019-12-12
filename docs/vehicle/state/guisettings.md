@@ -14,6 +14,7 @@ Returns various information about the GUI settings of the car, such as unit form
     "gui_distance_units": "mi/hr",
     "gui_range_display": "Rated",
     "gui_temperature_units": "F",
+    "show_range_units": true,
     "timestamp": 1543187561462
   }
 }

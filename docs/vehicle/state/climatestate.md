@@ -36,7 +36,6 @@ Information on the current internal temperature and climate control system.
     "seat_heater_rear_right_back": 0,
     "seat_heater_right": 2,
     "side_mirror_heaters": false,
-    "smart_preconditioning": false,
     "steering_wheel_heater": false,
     "timestamp": 1543187641727,
     "wiper_blade_heater": false

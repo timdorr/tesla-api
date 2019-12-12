@@ -4,7 +4,7 @@
 
 A rollup of all the `data_request` endpoints plus vehicle configuration.
 
-*Note:* all `*_range` values are in miles, irrespective of GUI configuration.
+_Note:_ all `*_range` values are in miles, irrespective of GUI configuration.
 
 ### Response
 
@@ -23,7 +23,7 @@ A rollup of all the `data_request` endpoints plus vehicle configuration.
     "in_service": false,
     "id_s": "12345678901234567",
     "calendar_enabled": true,
-    "api_version": 6,
+    "api_version": 7,
     "backseat_token": null,
     "backseat_token_updated_at": null,
     "drive_state": {
@@ -68,7 +68,6 @@ A rollup of all the `data_request` endpoints plus vehicle configuration.
       "seat_heater_rear_right_back": 0,
       "seat_heater_right": 2,
       "side_mirror_heaters": false,
-      "smart_preconditioning": false,
       "steering_wheel_heater": false,
       "timestamp": 1543186971731,
       "wiper_blade_heater": false
@@ -124,14 +123,15 @@ A rollup of all the `data_request` endpoints plus vehicle configuration.
       "gui_distance_units": "mi/hr",
       "gui_range_display": "Rated",
       "gui_temperature_units": "F",
+      "show_range_units": true,
       "timestamp": 1543186971728
     },
     "vehicle_state": {
-      "api_version": 6,
+      "api_version": 7,
       "autopark_state_v2": "standby",
       "autopark_style": "standard",
       "calendar_supported": true,
-      "car_version": "2018.42.2 19e7e44",
+      "car_version": "2019.40.2.1 38f55d9f9205",
       "center_display_state": 0,
       "df": 0,
       "dr": 0,
@@ -143,7 +143,9 @@ A rollup of all the `data_request` endpoints plus vehicle configuration.
       "is_user_present": false,
       "last_autopark_error": "no_error",
       "locked": true,
-      "media_state": { "remote_control_enabled": true },
+      "media_state": {
+        "remote_control_enabled": true
+      },
       "notifications_supported": true,
       "odometer": 33561.422505,
       "parsed_calendar_supported": true,
@@ -164,7 +166,7 @@ A rollup of all the `data_request` endpoints plus vehicle configuration.
         "install_perc": 10,
         "scheduled_time_ms": 1575689678432,
         "status": "scheduled",
-        "version": "2019.36.2.4"
+        "version": "2019.40.2.1"
       },
       "speed_limit_mode": {
         "active": false,
@@ -205,6 +207,7 @@ A rollup of all the `data_request` endpoints plus vehicle configuration.
       "third_row_seats": "None",
       "timestamp": 1538364666096,
       "trim_badging": "p90d",
+      "use_range_badging": false,
       "wheel_type": "AeroTurbine19"
     }
   }

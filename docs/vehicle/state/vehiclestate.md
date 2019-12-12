@@ -9,7 +9,7 @@ For the trunk (rt) and frunk (ft) fields, you should interpret a zero (0) value 
 Here are the currently known values for the `center_display_state` field:
 
 | State | Description     |
-|-------|-----------------|
+| ----- | --------------- |
 | 0     | Off             |
 | 2     | Normal On       |
 | 3     | Charging Screen |
@@ -19,7 +19,7 @@ Here are the currently known values for the `center_display_state` field:
 Here are the descriptions for the shorthand fields:
 
 | Field | Description     |
-|-------|-----------------|
+| ----- | --------------- |
 | df    | driver front    |
 | dr    | driver rear     |
 | pf    | passenger front |
@@ -27,18 +27,16 @@ Here are the descriptions for the shorthand fields:
 | ft    | front trunk     |
 | rt    | rear trunk      |
 
-
-
 ### Response
 
 ```json
 {
   "response": {
-    "api_version": 6,
+    "api_version": 7,
     "autopark_state_v3": "standby",
     "autopark_style": "dead_man",
     "calendar_supported": true,
-    "car_version": "2019.36.2.1 ea322ad",
+    "car_version": "2019.40.2.1 38f55d9f9205",
     "center_display_state": 0,
     "df": 0,
     "dr": 0,
@@ -50,7 +48,9 @@ Here are the descriptions for the shorthand fields:
     "is_user_present": false,
     "last_autopark_error": "no_error",
     "locked": true,
-    "media_state": { "remote_control_enabled": true },
+    "media_state": {
+      "remote_control_enabled": true
+    },
     "notifications_supported": true,
     "odometer": 36051.517239,
     "parsed_calendar_supported": true,
@@ -71,7 +71,7 @@ Here are the descriptions for the shorthand fields:
       "install_perc": 10,
       "scheduled_time_ms": 1575689678432,
       "status": "scheduled",
-      "version": "2019.36.2.4"
+      "version": "2019.40.2.1"
     },
     "speed_limit_mode": {
       "active": false,

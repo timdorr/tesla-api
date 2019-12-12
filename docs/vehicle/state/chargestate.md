@@ -43,6 +43,7 @@ Information on the state of charge in the battery and its various settings.
     "managed_charging_start_time": null,
     "managed_charging_user_canceled": false,
     "max_range_charge_counter": 0,
+    "minutes_to_full_charge": 0,
     "not_enough_power_to_heat": false,
     "scheduled_charging_pending": false,
     "scheduled_charging_start_time": null,

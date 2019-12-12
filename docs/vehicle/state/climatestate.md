@@ -12,6 +12,7 @@ Information on the current internal temperature and climate control system.
     "battery_heater": false,
     "battery_heater_no_power": false,
     "climate_keeper_mode": "dog",
+    "defrost_mode": 0,
     "driver_temp_setting": 21.6,
     "fan_status": 0,
     "inside_temp": null,

@@ -323,6 +323,7 @@ appreciated!_
 | SPT31 | Performance Upgrade | Model 3 |
 | SPTY1 | Performance Upgrade | Model Y |
 | W32P | 20" Performance Wheels | Model 3 |
+| W32D | 20" Gray Performance Wheels | Model 3 |
 | W38B | 18" Aero Wheels | For the Model 3 and Model Y |
 | W39B | 19" Sport Wheels | | 
 | WR00 | No Wrap | |

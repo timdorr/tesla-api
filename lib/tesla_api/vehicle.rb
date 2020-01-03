@@ -63,6 +63,10 @@ module TeslaApi
       data_request('vehicle_config')['response']
     end
 
+    def upgrade_eligible?
+      client.get("/vehicles/#{id}/eligible_upgrades")["upgrade_eligible"]
+    end
+
     # Commands
 
     def wake_up

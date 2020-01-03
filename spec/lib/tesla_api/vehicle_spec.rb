@@ -117,6 +117,16 @@ RSpec.describe TeslaApi::Vehicle do
     end
   end
 
+  describe '#upgrade_eligible?' do
+    it 'returns true, given a software upgrade is available', vcr: {cassette_name: 'vehicle-upgrade_eligible'} do
+      expect(vehicle.upgrade_eligible?).to eq(true)
+    end
+
+    it 'returns false, given no software upgrade is available', vcr: {cassette_name: 'vehicle-no_upgrade_eligible'} do
+      expect(vehicle.upgrade_eligible?).to eq(false)
+    end
+  end
+
   describe '#wake_up', vcr: {cassette_name: 'vehicle-wake_up'} do
     it 'wakes up the car from sleep mode' do
       vehicle.wake_up

@@ -40,3 +40,6 @@ Lets you know if the Mobile Access setting is enabled in the car.
 
 Returns a list of nearby Tesla-operated charging stations.
 
+{% page-ref page="upgradeeligible.md" %}
+
+Lets you know if a software upgrade is available.

@@ -1,0 +1,109 @@
+---
+http_interactions:
+  - request:
+      method: get
+      uri: https://owner-api.teslamotors.com/api/1/vehicles
+      body:
+        encoding: US-ASCII
+        string: ''
+      headers:
+        User-Agent:
+          - github.com/timdorr/tesla-api v:3.0.4
+        Authorization:
+          - Bearer <TESLA_ACCESS_TOKEN>
+        Accept-Encoding:
+          - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+        Accept:
+          - '*/*'
+    response:
+      status:
+        code: 200
+        message: OK
+      headers:
+        Server:
+          - nginx
+        Date:
+          - Fri, 03 Jan 2020 16:04:23 GMT
+        Content-Type:
+          - application/json; charset=utf-8
+        Content-Length:
+          - '569'
+        Connection:
+          - keep-alive
+        X-Frame-Options:
+          - SAMEORIGIN
+          - SAMEORIGIN
+        X-Xss-Protection:
+          - 1; mode=block
+        X-Content-Type-Options:
+          - nosniff
+        X-Txid:
+          - a3986c9f3381e3fa8aaa37426f6e0133
+        Etag:
+          - W/"0a104c18c47b4bff63a0b6dec9143b32"
+        Cache-Control:
+          - max-age=0, private, must-revalidate
+        X-Request-Id:
+          - 2e906f86-2a1c-4e3f-96cc-bb94e63c1941
+        X-Runtime:
+          - '0.037017'
+      body:
+        encoding: UTF-8
+        string:
+          '{"response":[{"id":26640707449551857,"vehicle_id":1817902171,"vin":"5YJSA1E41GF167745","display_name":"Nikola
+          2.0","option_codes":"AD15,MDL3,PBSB,RENA,BT37,ID3W,RF3G,S3PB,DRLH,DV2W,W39B,APF0,COUS,BC3B,CH07,PC30,FC3P,FG31,GLFR,HL31,HM31,IL31,LTPB,MR31,FM3B,RS3H,SA3P,STCP,SC04,SU3C,T3CA,TW00,TM00,UT3P,WR00,AU3P,APH3,AF00,ZCST,MI00,CDM0","color":null,"tokens":["1","2"],"state":"online","in_service":false,"id_s":"26640707449551857","calendar_enabled":true,"api_version":7,"backseat_token":null,"backseat_token_updated_at":null}],"count":1}'
+      http_version:
+    recorded_at: Fri, 03 Jan 2020 16:04:23 GMT
+  - request:
+      method: get
+      uri: https://owner-api.teslamotors.com/api/1/vehicles/26640707449551857/eligible_upgrades
+      body:
+        encoding: US-ASCII
+        string: ''
+      headers:
+        User-Agent:
+          - github.com/timdorr/tesla-api v:3.0.4
+        Authorization:
+          - Bearer <TESLA_ACCESS_TOKEN>
+        Accept-Encoding:
+          - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+        Accept:
+          - '*/*'
+    response:
+      status:
+        code: 200
+        message: OK
+      headers:
+        Server:
+          - nginx
+        Date:
+          - Fri, 03 Jan 2020 16:04:23 GMT
+        Content-Type:
+          - application/json; charset=utf-8
+        Content-Length:
+          - '26'
+        Connection:
+          - keep-alive
+        X-Frame-Options:
+          - SAMEORIGIN
+          - SAMEORIGIN
+        X-Xss-Protection:
+          - 1; mode=block
+        X-Content-Type-Options:
+          - nosniff
+        X-Txid:
+          - 52974d7d37f460f4b734f8435650a0fa
+        Etag:
+          - W/"a6411e92042f232344d048a830311bd4"
+        Cache-Control:
+          - max-age=0, private, must-revalidate
+        X-Request-Id:
+          - 4d0016ae-e403-4d82-8d87-0d120f8e5211
+        X-Runtime:
+          - '0.031318'
+      body:
+        encoding: UTF-8
+        string: '{"upgrade_eligible":true}'
+      http_version:
+    recorded_at: Fri, 03 Jan 2020 16:04:23 GMT
+recorded_with: VCR 5.0.0

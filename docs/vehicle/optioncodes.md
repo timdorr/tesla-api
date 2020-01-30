@@ -10,6 +10,9 @@ edit this page and submit a_
 [_pull request_](https://github.com/timdorr/tesla-api/pulls)_. It is much
 appreciated!_
 
+**As of August 2019, Option Codes cannot be relied on.** Vehicles now
+return a generic set of codes related to a Model 3.
+
 | Code | Title | Description |
 | :--- | :--- | :--- |
 | MDLS | Model S | This vehicle is a Model S | 

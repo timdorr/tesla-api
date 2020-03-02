@@ -2,7 +2,7 @@ module TeslaApi
   class Client
     attr_reader :api, :email, :access_token, :access_token_expires_at, :refresh_token, :client_id, :client_secret
 
-    BASE_URI = 'https://owner-api.teslamotors.com/api/1'
+    BASE_URI = 'https://owner-api.teslamotors.com'
 
     def initialize(
         email: nil,
@@ -23,7 +23,7 @@ module TeslaApi
       @refresh_token = refresh_token
 
       @api = Faraday.new(
-        BASE_URI,
+        BASE_URI + '/api/1',
         headers: { 'User-Agent' => "github.com/timdorr/tesla-api v:#{VERSION}" }
       ) do |conn|
         conn.request :json

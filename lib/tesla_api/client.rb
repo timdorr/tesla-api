@@ -36,7 +36,7 @@ module TeslaApi
 
     def refresh_access_token
       response = api.post(
-        'https://owner-api.teslamotors.com/oauth/token',
+        BASE_URI + '/oauth/token',
         {
           grant_type: 'refresh_token',
           client_id: client_id,
@@ -54,7 +54,7 @@ module TeslaApi
 
     def login!(password)
       response = api.post(
-        'https://owner-api.teslamotors.com/oauth/token',
+        BASE_URI + '/oauth/token',
         {
           grant_type: 'password',
           client_id: client_id,

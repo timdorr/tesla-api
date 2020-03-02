@@ -35,13 +35,13 @@ module TeslaApi
     end
 
     def refresh_access_token
-      response = api.post(
+      response = @api.post(
         BASE_URI + '/oauth/token',
         {
           grant_type: 'refresh_token',
-          client_id: client_id,
-          client_secret: client_secret,
-          refresh_token: refresh_token
+          client_id: @client_id,
+          client_secret: @client_secret,
+          refresh_token: @refresh_token
         }
       ).body
 
@@ -53,13 +53,13 @@ module TeslaApi
     end
 
     def login!(password)
-      response = api.post(
+      response = @api.post(
         BASE_URI + '/oauth/token',
         {
           grant_type: 'password',
-          client_id: client_id,
-          client_secret: client_secret,
-          email: email,
+          client_id: @client_id,
+          client_secret: @client_secret,
+          email: @email,
           password: password
         }
       ).body

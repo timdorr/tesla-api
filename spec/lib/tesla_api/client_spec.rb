@@ -19,7 +19,7 @@ RSpec.describe TeslaApi::Client do
 
       it 'logs into the API' do
         tesla_api.login!(ENV['TESLA_PASS'])
-        expect(a_request(:post, "https://#{URI.parse(TeslaApi::Client::BASE_URI).host}/oauth/token")).to have_been_made.once
+        expect(a_request(:post, "https://owner-api.teslamotors.com/oauth/token")).to have_been_made.once
       end
 
       it 'obtains a Bearer token' do

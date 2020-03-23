@@ -2,8 +2,6 @@ module TeslaApi
   class Client
     attr_reader :api, :email, :access_token, :access_token_expires_at, :refresh_token, :client_id, :client_secret
 
-    BASE_URI = 'https://owner-api.teslamotors.com'
-
     def initialize(
         email: nil,
         access_token: nil,
@@ -23,7 +21,6 @@ module TeslaApi
       @refresh_token = refresh_token
 
       @api = Faraday.new(
-        BASE_URI + '/api/1',
         headers: { 'User-Agent' => "github.com/timdorr/tesla-api v:#{VERSION}" }
       ) do |conn|
         conn.request :json
@@ -36,7 +33,7 @@ module TeslaApi
 
     def refresh_access_token
       response = api.post(
-        BASE_URI + '/oauth/token',
+        base_uri + '/oauth/token',
         {
           grant_type: 'refresh_token',
           client_id: client_id,
@@ -54,7 +51,7 @@ module TeslaApi
 
     def login!(password)
       response = api.post(
-        BASE_URI + '/oauth/token',
+        base_uri + '/oauth/token',
         {
           grant_type: 'password',
           client_id: client_id,
@@ -77,11 +74,11 @@ module TeslaApi
     end
 
     def get(url)
-      api.get(url.sub(/^\//, ''), nil, { 'Authorization' => "Bearer #{access_token}" }).body
+      api.get(base_uri_api + url, nil, { 'Authorization' => "Bearer #{access_token}" }).body
     end
 
     def post(url, body: nil)
-      api.post(url.sub(/^\//, ''), body, { 'Authorization' => "Bearer #{access_token}" }).body
+      api.post(base_uri_api + url, body, { 'Authorization' => "Bearer #{access_token}" }).body
     end
 
     def vehicles
@@ -90,6 +87,14 @@ module TeslaApi
 
     def vehicle(id)
       Vehicle.new(self, email, id, self.get("/vehicles/#{id}")['response'])
+    end
+
+    def base_uri_api
+      base_uri + '/api/1'
+    end
+
+    def base_uri
+      'https://owner-api.teslamotors.com'
     end
   end
 end

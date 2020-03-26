@@ -11,9 +11,11 @@ module TeslaApi
         refresh_token: nil,
         client_id: ENV['TESLA_CLIENT_ID'],
         client_secret: ENV['TESLA_CLIENT_SECRET'],
-        retry_options: nil
+        retry_options: nil,
+        base_uri: nil
     )
       @email = email
+      @base_uri = base_uri || BASE_URI
 
       @client_id = client_id
       @client_secret = client_secret
@@ -23,7 +25,7 @@ module TeslaApi
       @refresh_token = refresh_token
 
       @api = Faraday.new(
-        BASE_URI + '/api/1',
+        @base_uri + '/api/1',
         headers: { 'User-Agent' => "github.com/timdorr/tesla-api v:#{VERSION}" }
       ) do |conn|
         conn.request :json
@@ -36,7 +38,7 @@ module TeslaApi
 
     def refresh_access_token
       response = api.post(
-        BASE_URI + '/oauth/token',
+        @base_uri + '/oauth/token',
         {
           grant_type: 'refresh_token',
           client_id: client_id,
@@ -54,7 +56,7 @@ module TeslaApi
 
     def login!(password)
       response = api.post(
-        BASE_URI + '/oauth/token',
+        @base_uri + '/oauth/token',
         {
           grant_type: 'password',
           client_id: client_id,

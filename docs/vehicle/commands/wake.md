@@ -4,6 +4,9 @@
 
 Wakes up the car from a sleeping state.
 
+The API will return a response immediately, however it could take several seconds before the car is actually online and ready to receive other commands.
+One way to deal with this is to call this endpoint in a loop until the returned state says "online", with a timeout to give up. In some cases, the wake up can be slow, so consider using a timeout of atleast 30 seconds.
+
 ### Response
 
 ```json

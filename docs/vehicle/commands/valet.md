@@ -28,7 +28,7 @@ Activates or deactivates Valet Mode.
 
 ## POST `/api/1/vehicles/{id}/command/reset_valet_pin`
 
-Clears the currently set PIN for Valet Mode when deactivated. A new PIN will be required when activating again. Please see the note above regarding the PIN and resetting the PIN.
+Clears the currently set PIN for Valet Mode when deactivated. A new PIN will be required when activating from the car screen. See the note above about activating via the API without a PIN set.
 
 ### Response
 

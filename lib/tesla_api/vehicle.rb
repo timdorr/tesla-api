@@ -94,7 +94,7 @@ module TeslaApi
     end
 
     def set_charge_limit(percent)
-      command('set_charge_limit', body: {percent: percent})['response']
+      command('set_charge_limit', body: {percent: percent.to_i})['response']
     end
 
     def charge_start

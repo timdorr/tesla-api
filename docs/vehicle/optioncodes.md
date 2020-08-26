@@ -62,7 +62,7 @@ return a generic set of codes related to a Model 3.
 | BC0B | Black Brake Calipers | | 
 | BC0R | Red Brake Calipers | |
 | BC3B | Black Brake Calipers, Model 3 | |
-| BCMB | Black Brake Calipers | | 
+| BCMB | Black Brake Calipers, Mando Brakes | | 
 | BCYR | Performance Brakes | |
 | BG30 | No Badge | Model 3 |
 | BP00 | No Ludicrous | | 
@@ -208,7 +208,7 @@ return a generic set of codes related to a Model 3.
 | PF01 | Performance Legacy Package | | 
 | PI00 | No Premium Interior | | 
 | PI01 | Premium Upgrades Package | | 
-| PK00 | Parking Sensors | | 
+| PK00 | Parking Sensors | No Parking Sensors | 
 | PMAB | Anza Brown Metallic Color | | 
 | PMBL | Obsidian Black Multi-Coat Color | | 
 | PMMB | Monterey Blue Metallic Color | | 
@@ -291,14 +291,15 @@ return a generic set of codes related to a Model 3.
 | STY5S | Five Seat Interior | |
 | STY7S | Seven Seat Interior | |
 | SU00 | Standard Suspension | | 
-| SU01 | Smart Air Suspension | | 
+| SU01 | Smart Air Suspension | |
+| SU03 | Suspension	Suspension Update | Model X 2020 |
 | SU3C | Suspension | Coil spring suspension |
 | T3MA | Tires M3 | 18 Michelin All Season, Square |
 | TIC4 | Tires | All-Season Tires | 
 | TIG2 | Summer Tires | |
 | TIM7 | Summer Tires | |
 | TIMP | Tires | Michelin Primacy 19" Tire |
-| TIP0 | All-season Tires | |
+| TIP0 | All-season Tires | Pirelli Scorpion Zero Asimmetrico 22” Tire |
 | TM00 | Model Trim | General Production Series Vehicle | 
 | TM02 | General Production Signature Trim | | 
 | TM0A | ALPHA PRE-PRODUCTION NON-SALEABLE | | 
@@ -345,7 +346,7 @@ return a generic set of codes related to a Model 3.
 | WTSS | 21" Turbine Wheels | | 
 | WTTB | 19" Cyclone Wheels | | 
 | WTTC | 21" Sonic Carbon Twin Turbine Wheels | |
-| WTUT | 22" Onyx Black Wheels | |
+| WTUT | 22" Onyx Black Wheels | 22" Ultrasonic Turbine wheels |
 | WTW2 | 19" Nokian Winter Wheel Set | |
 | WTW3 | 19" Pirelli Winter Wheel Set | |
 | WTW4 | 19" Winter Tire Set | | 
@@ -370,7 +371,7 @@ return a generic set of codes related to a Model 3.
 | X001 | Override: Power Liftgate | | 
 | X003 | Maps & Navigation | | 
 | X004 | Override: No Navigation | | 
-| X007 | Daytime running lights | | 
+| X007 | Exterior Lights	Override: Premium exterior lighting YES | | 
 | X010 | Base Mirrors | | 
 | X011 | Override: Homelink | | 
 | X012 | Override: No Homelink | | 
@@ -381,6 +382,7 @@ return a generic set of codes related to a Model 3.
 | X021 | No Rear Carbon Fiber Spoiler | |
 | X024 | Performance Package | | 
 | X025 | Performance Powertrain | | 
+| X026 | Door handle | No light handle |
 | X027 | Lighted Door Handles | Light handle | 
 | X028 | Battery Badge | Normal Badging | 
 | X029 | Remove Battery Badge | | 

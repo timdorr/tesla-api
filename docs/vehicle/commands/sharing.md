@@ -4,7 +4,7 @@
 
 Sends a location for the car to start navigation or play a video in theatre mode.
 
-These docs take from the Android app, which sends the data in JSON form. However, a urlencoded POST body will work as well. The basic format to a request looks like this:
+These docs take from the Android app, which sends the data in JSON form. However, a url encoded POST body will work as well. The basic format to a request looks like this:
 
 ```json
 {

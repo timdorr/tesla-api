@@ -12,7 +12,8 @@ module TeslaApi
         client_id: ENV['TESLA_CLIENT_ID'],
         client_secret: ENV['TESLA_CLIENT_SECRET'],
         retry_options: nil,
-        base_uri: nil
+        base_uri: nil,
+        client_options: {}
     )
       @email = email
       @base_uri = base_uri || BASE_URI
@@ -26,7 +27,9 @@ module TeslaApi
 
       @api = Faraday.new(
         @base_uri + '/api/1',
-        headers: { 'User-Agent' => "github.com/timdorr/tesla-api v:#{VERSION}" }
+        {
+          headers: { 'User-Agent' => "github.com/timdorr/tesla-api v:#{VERSION}" }
+        }.merge(client_options)
       ) do |conn|
         conn.request :json
         conn.response :json

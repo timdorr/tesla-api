@@ -47,7 +47,7 @@ module TeslaApi
     TIMEOUT = 30
 
     def streaming_endpoint
-      Async::HTTP::Endpoint.parse(streaming_endpoint_url)
+      Async::HTTP::Endpoint.parse(streaming_endpoint_url, alpn_protocols: Async::HTTP::Protocol::HTTP11.names)
     end
 
     def streaming_endpoint_url

@@ -1,8 +1,8 @@
 module TeslaApi
   module Stream
-    def stream(&receiver)
+    def stream(endpoint: streaming_endpoint, &receiver)
       Async do |task|
-        Async::WebSocket::Client.connect(streaming_endpoint) do |connection|
+        Async::WebSocket::Client.connect(endpoint) do |connection|
           on_timeout = ->(subtask) do
             subtask.sleep TIMEOUT
             task.stop
@@ -42,13 +42,13 @@ module TeslaApi
       end
     end
 
-    private
-
-    TIMEOUT = 30
-
     def streaming_endpoint
       Async::HTTP::Endpoint.parse(streaming_endpoint_url, alpn_protocols: Async::HTTP::Protocol::HTTP11.names)
     end
+
+    private
+
+    TIMEOUT = 30
 
     def streaming_endpoint_url
       'wss://streaming.vn.teslamotors.com/streaming/'

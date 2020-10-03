@@ -345,6 +345,7 @@ return a generic set of codes related to a Model 3.
 | WTSP | 21" Turbine Wheels | | 
 | WTSS | 21" Turbine Wheels | | 
 | WTHX | 20" Turbine Wheels | | 
+| WTTG | 19" Cyclone Wheels | | 
 | WTTB | 19" Cyclone Wheels | | 
 | WTTC | 21" Sonic Carbon Twin Turbine Wheels | |
 | WTUT | 22" Onyx Black Wheels | 22" Ultrasonic Turbine wheels |

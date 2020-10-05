@@ -51,6 +51,7 @@ return a generic set of codes related to a Model 3.
 | APH0 | Autopilot 2.0 Hardware | | 
 | APH2 | Autopilot 2.0 Hardware | | 
 | APBS | Autopilot | Model 3 Autopilot |
+| APFB | Autopilot | Model 3 Autopilot |
 | APF2 | Full Self-Driving Capability | |
 | APH3 | Autopilot 2.5 Hardware | |
 | APH4 | Autopilot 3.0 Hardware | Full Self-Driving Computer | 

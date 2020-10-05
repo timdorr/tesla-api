@@ -46,8 +46,7 @@ return a generic set of codes related to a Model 3.
 | AH00 | No Accessory Hitch | | 
 | APE1 | Enhanced Autopilot | | 
 | APF0 | Autopilot Firmware 2.0 Base | | 
-| APF1 | Autopilot Firmware 2.0 Enhanced | | 
-| APF2 | Full Self-Driving Capability | | 
+| APF1 | Autopilot Firmware 2.0 Enhanced | |  
 | APH0 | Non Autopilot | | 
 | APH1 | Autopilot 1.0 | | 
 | APH2 | Autopilot 2.0 | | 

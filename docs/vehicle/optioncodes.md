@@ -53,8 +53,6 @@ return a generic set of codes related to a Model 3.
 | APH2 | Hardware 2.0 | | 
 | APH3 | Hardware 2.5 | | 
 | APH4 | Hardware 3.0 | | 
-| APPA | Autopilot 1.0 Hardware | | 
-| APPB | Enhanced Autopilot | | 
 | AU00 | No Audio Package | | 
 | AU01 | Ultra High Fidelity Sound | | 
 | AU3P | Sound Studio Package | Premium audio package |

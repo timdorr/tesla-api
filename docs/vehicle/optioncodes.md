@@ -45,7 +45,6 @@ return a generic set of codes related to a Model 3.
 | AF02 | HEPA Filter | | 
 | AH00 | No Accessory Hitch | | 
 | APBS | Autopilot | Model 3 Autopilot |
-| APE1 | Enhanced Autopilot | | 
 | APF0 | Autopilot Firmware 2.0 Base | | 
 | APF1 | Autopilot Firmware 2.0 Enhanced | |  
 | APF2 | Full Self-Driving Capability | |

@@ -329,10 +329,11 @@ This the latest contents of the ownerapi_endpoints.json file from the 3.10.2 ver
     "URI": "api/1/vehicles/{vehicle_id}/eligible_upgrades",
     "AUTH": true
   },
-  "UPGRADE_URL": {
+  "UPGRADES_PAGE": {
     "TYPE": "GET",
-    "URI": "api/1/vehicles/{vehicle_id}/purchase_url",
-    "AUTH": true
+    "URI": "upgrades_page",
+    "AUTH": true,
+    "CONTENT": "HTML"
   },
   "MESSAGE_CENTER_MESSAGE_LIST": {
     "TYPE": "GET",
@@ -430,6 +431,12 @@ This the latest contents of the ownerapi_endpoints.json file from the 3.10.2 ver
     "URI": "api/1/energy_sites/{site_id}/site_info",
     "AUTH": true
   },
+  "ENERGY_SERVICE_SCHEDULING_PAGE": {
+    "TYPE": "GET",
+    "URI": "energy_service_scheduling_page",
+    "AUTH": true,
+    "CONTENT": "HTML"
+  },
   "HISTORY_DATA": {
     "TYPE": "GET",
     "URI": "api/1/energy_sites/{site_id}/history",
@@ -438,6 +445,16 @@ This the latest contents of the ownerapi_endpoints.json file from the 3.10.2 ver
   "CALENDAR_HISTORY_DATA": {
     "TYPE": "GET",
     "URI": "api/1/energy_sites/{site_id}/calendar_history",
+    "AUTH": true
+  },
+  "SAVINGS_FORECAST": {
+    "TYPE": "GET",
+    "URI": "api/1/energy_sites/{site_id}/savings_forecast",
+    "AUTH": true
+  },
+  "TARIFF_RATES": {
+    "TYPE": "GET",
+    "URI": "api/1/energy_sites/{site_id}/tariff_rates",
     "AUTH": true
   },
   "BACKUP_RESERVE": {

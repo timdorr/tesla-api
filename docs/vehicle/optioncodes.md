@@ -44,19 +44,15 @@ return a generic set of codes related to a Model 3.
 | AF00 | No HEPA Filter | Standard air filter, no air ionizer | 
 | AF02 | HEPA Filter | | 
 | AH00 | No Accessory Hitch | | 
-| APE1 | Enhanced Autopilot | | 
-| APF0 | Autopilot Firmware 2.0 Base | | 
-| APF1 | Autopilot Firmware 2.0 Enhanced | | 
-| APF2 | Full Self-Driving Capability | | 
-| APH0 | Autopilot 2.0 Hardware | | 
-| APH2 | Autopilot 2.0 Hardware | | 
 | APBS | Autopilot | Model 3 Autopilot |
+| APF0 | Autopilot Firmware 2.0 Base | | 
+| APF1 | Autopilot Firmware 2.0 Enhanced | |  
 | APFB | Autopilot | Model 3 Autopilot |
 | APF2 | Full Self-Driving Capability | |
-| APH3 | Autopilot 2.5 Hardware | |
-| APH4 | Autopilot 3.0 Hardware | Full Self-Driving Computer | 
-| APPA | Autopilot 1.0 Hardware | | 
-| APPB | Enhanced Autopilot | | 
+| APH1 | Hardware 1.0 | | 
+| APH2 | Hardware 2.0 | | 
+| APH3 | Hardware 2.5 | | 
+| APH4 | Hardware 3.0 | | 
 | AU00 | No Audio Package | | 
 | AU01 | Ultra High Fidelity Sound | | 
 | AU3P | Sound Studio Package | Premium audio package |

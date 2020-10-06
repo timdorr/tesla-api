@@ -1,6 +1,6 @@
 # Endpoints File
 
-This the latest contents of the ownerapi_endpoints.json file from the 3.10.2 version of the app.
+This the latest contents of the ownerapi_endpoints.json file from the 3.10.8 version of the app.
 
 ```json
 {

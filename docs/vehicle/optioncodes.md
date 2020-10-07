@@ -179,7 +179,6 @@ return a generic set of codes related to a Model 3.
 | ME01 | Memory Seats | |
 | ME02 | Seat Memory | Seat Memory LHD Driver | 
 | MI00 | 2015 Production Refresh | | 
-| MI00 | Project/Program Code M3 | Base Manufacturing Intro Code |
 | MI01 | 2016 Production Refresh | | 
 | MI02 | 2017 Production Refresh | | 
 | MI03 | 201? Production Refresh | Found on Model X ordered 11/2018 delivered 3/2019 | 

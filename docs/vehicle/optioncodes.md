@@ -288,7 +288,7 @@ return a generic set of codes related to a Model 3.
 | STY7S | Seven Seat Interior | |
 | SU00 | Standard Suspension | | 
 | SU01 | Smart Air Suspension | |
-| SU03 | Suspension	Suspension Update | Model X 2020 |
+| SU03 | Suspension	Update | Model X 2020 |
 | SU3C | Suspension | Coil spring suspension |
 | T3MA | Tires M3 | 18 Michelin All Season, Square |
 | TIC4 | Tires | All-Season Tires | 

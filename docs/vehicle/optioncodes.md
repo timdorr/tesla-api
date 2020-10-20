@@ -142,7 +142,8 @@ return a generic set of codes related to a Model 3.
 | IDLW | Lacewood Decor | | 
 | IDPB | Piano Black Decor | |
 | IN3BB | All Black Partial Premium Interior | | 
-| IN3PB | All Black Premium Interior | | 
+| IN3PB | All Black Premium Interior | Model 3 Interior | 
+| IN3PW | All White Premium Interior | Model 3 Interior | 
 | INBBW | White | | 
 | INBFP | Classic Black | | 
 | INBPP | Black | | 

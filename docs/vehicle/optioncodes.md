@@ -64,6 +64,7 @@ return a generic set of codes related to a Model 3.
 | BG30 | No Badge | Model 3 |
 | BP00 | No Ludicrous | | 
 | BP01 | Ludicrous Speed Upgrade | | 
+| BP02 | Non-Performance Uncorked Acceleration | | 
 | BR00 | No Battery Firmware Limit | | 
 | BR03 | Battery Firmware Limit (60kWh) | | 
 | BR05 | Battery Firmware Limit (75kWh) | | 

@@ -103,7 +103,7 @@ return a generic set of codes related to a Model 3.
 | DA00 | No Autopilot | | 
 | DA01 | Active Safety (ACC,LDW,SA) | Drivers Assistance Package | 
 | DA02 | Autopilot Convenience Features | | 
-| DCF0 | Autopilot Convenience Features (DCF0) | | 
+| DCF0 | Autopilot Convenience Features | | 
 | DRLH | Left Hand Drive | | 
 | BC3R | Performance Brakes | Model 3 |
 | DRRH | Right Hand Drive | | 

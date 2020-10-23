@@ -44,6 +44,7 @@ return a generic set of codes related to a Model 3.
 | AF00 | No HEPA Filter | Standard air filter, no air ionizer | 
 | AF02 | HEPA Filter | | 
 | AH00 | No Accessory Hitch | | 
+| APB1 | Autopilot with convenience features | Model S |
 | APBS | Autopilot | Model 3 Autopilot |
 | APF0 | Autopilot Firmware 2.0 Base | | 
 | APF1 | Autopilot Firmware 2.0 Enhanced | |  
@@ -52,6 +53,7 @@ return a generic set of codes related to a Model 3.
 | APH1 | Hardware 1.0 | | 
 | APH2 | Hardware 2.0 | | 
 | APH3 | Hardware 2.5 | | 
+| APPF | Full Self-Driving Capability | |
 | APH4 | Hardware 3.0 | | 
 | AU00 | No Audio Package | | 
 | AU01 | Ultra High Fidelity Sound | | 
@@ -62,6 +64,8 @@ return a generic set of codes related to a Model 3.
 | BCMB | Black Brake Calipers, Mando Brakes | | 
 | BCYR | Performance Brakes | |
 | BG30 | No Badge | Model 3 |
+| BG31 | AWD Badge | Model 3 |
+| BG32 | Performance AWD Badge | Model 3 |
 | BP00 | No Ludicrous | | 
 | BP01 | Ludicrous Speed Upgrade | | 
 | BP02 | Non-Performance Uncorked Acceleration | | 
@@ -98,6 +102,8 @@ return a generic set of codes related to a Model 3.
 | COL3 | Tesla Multi-Coat | | 
 | COUS | Country: United States | | 
 | CONL | Country: Netherlands | |
+| CPF0 | Standard Connectivity | |
+| CPF1 | Premium Connectivity | |
 | CPW1 | 20" Performance Wheels | |
 | CW00 | Weather Package | No Cold Weather Package | 
 | CW02 | Weather Package | Subzero Weather Package | 
@@ -178,6 +184,7 @@ return a generic set of codes related to a Model 3.
 | LT6P | LT6P | |
 | LT6W | White Base Lower Trim | |
 | LTPB | Lower Trim PUR Black | |
+| LTPW | Lower Trim PUR White | |
 | ME01 | Memory Seats | |
 | ME02 | Seat Memory | Seat Memory LHD Driver | 
 | MI00 | 2015 Production Refresh | | 
@@ -229,6 +236,7 @@ return a generic set of codes related to a Model 3.
 | PS00 | No Parcel Shelf | | 
 | PS01 | Parcel Shelf | | 
 | RS3H | Second Row Seat Rear Seats (Heated) | Model 3 |
+| RSF1 | Rear Heated Seats | Model 3 |
 | PX00 | No Performance Plus Package | | 
 | PX01 | Performance Plus | | 
 | PX6D | Zero to 60 in 2.5 sec | | 
@@ -273,12 +281,15 @@ return a generic set of codes related to a Model 3.
 | S32P | S32P | | 
 | S32W | S32W | | 
 | S3PB | Seat Black PUR Premium Seats | | 
+| S3PW | Seat White PUR Premium Seats | |
+| SA3P | Seat Adjustment - Power | Model 3 |
 | SC00 | No Supercharging | | 
 | SC01 | Supercharging Enabled | | 
 | SC04 | Pay Per Use Supercharging | | 
 | SC05 | Free Supercharging | | 
 | SLR0 | No Rear Spoiler | |
 | SP00 | No Security Package | |
+| SP01 | Security Package | |
 | SR01 | Standard 2nd row | Second Row Seat | 
 | SR06 | Seven Seat Interior | | 
 | SR07 | Standard 2nd row | | 

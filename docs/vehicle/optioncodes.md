@@ -99,9 +99,13 @@ return a generic set of codes related to a Model 3.
 | COL0 | Signature | | 
 | COL1 | Solid | | 
 | COL2 | Metallic | | 
-| COL3 | Tesla Multi-Coat | | 
+| COL3 | Tesla Multi-Coat | |
+| COBE | Country: Belgium | | 
+| CODE | Country: Germany | | 
+| COES | Country: Spain | | 
+| COFR | Country: France | | 
+| CONL | Country: Netherlands | | 
 | COUS | Country: United States | | 
-| CONL | Country: Netherlands | |
 | CPF0 | Standard Connectivity | |
 | CPF1 | Premium Connectivity | |
 | CPW1 | 20" Performance Wheels | |
@@ -143,6 +147,7 @@ return a generic set of codes related to a Model 3.
 | IDBA | Dark Ash Wood Decor | | 
 | IDBO | Figured Ash Wood Decor | | 
 | IDCF | Carbon Fiber Decor | | 
+| IDHM | Matte Obeche Wood Decor | | 
 | IDOK | Oak Decor | |
 | IDOM | Matte Obeche Wood Decor | | 
 | IDOG | Gloss Obeche Wood Decor | | 
@@ -154,6 +159,7 @@ return a generic set of codes related to a Model 3.
 | INBBW | White | | 
 | INBFP | Classic Black | | 
 | INBPP | Black | | 
+| INBPW | White Seats | |
 | INBTB | Multi-Pattern Black | | 
 | INFBP | Black Premium | | 
 | INLPC | Cream | | 
@@ -245,6 +251,7 @@ return a generic set of codes related to a Model 3.
 | QLFC | Cream Premium Interior | |
 | QLFP | Black Premium Interior | |
 | QLFW | White Premium Interior | |
+| QLPW | White Premium Interior | |
 | QLWS | White Premium Interior | |
 | QNET | Tan NextGen | | 
 | QPBT | Black Textile Interior | |
@@ -254,6 +261,7 @@ return a generic set of codes related to a Model 3.
 | QTFC | Cream Premium Interior | |
 | QTFP | Black Premium Seats | | 
 | QTFW | White Premium Interior | |
+| QTPB | Black Leather Tesla Premium Seats | | 
 | QTPC | Cream Premium Seats | | 
 | QTPP | Black Premium Seats | | 
 | QTPT | Tan Premium Seats | | 
@@ -263,6 +271,7 @@ return a generic set of codes related to a Model 3.
 | QVPC | Vegan Cream Seats | | 
 | QVPP | Vegan Cream Seats | | 
 | QVSW | White Tesla Seats | | 
+| QXMB | Black Leather Seat | |
 | RCX0 | No Rear Console | | 
 | RCX1 | Rear Console | |
 | RF3G | Model 3 Glass Roof | | 
@@ -272,9 +281,12 @@ return a generic set of codes related to a Model 3.
 | RFP0 | All Glass Panoramic Roof | | 
 | RFP2 | Sunroof | | 
 | RFPX | Model X Roof | |
+| RSF1 | Rear Heated Seats | |
+| RU00 | No Range Upgrade | |
 | S01B | Black Textile Seats | |
 | S02B | Seat | BLK Leather |
 | S02P | S02P | | 
+| S02W | White Seats | |
 | S07W | White Seats | |
 | S31B | S31B | | 
 | S32C | S32C | | 
@@ -314,6 +326,7 @@ return a generic set of codes related to a Model 3.
 | TM0A | ALPHA PRE-PRODUCTION NON-SALEABLE | | 
 | TM0B | BETA PRE-PRODUCTION NON-SALEABLE | | 
 | TM0C | PRE-PRODUCTION SALEABLE | | 
+| TP01 | No Technology Package | |
 | TP01 | Tech Package - No Autopilot | | 
 | TP02 | Tech Package with Autopilot | | 
 | TP03 | Tech Package with Enhanced Autopilot | | 
@@ -380,6 +393,7 @@ return a generic set of codes related to a Model 3.
 | WY19B | 19" Sport Wheels | |
 | WY20P | 20" Performance Wheels | |
 | X001 | Override: Power Liftgate | | 
+| X002 | Override: Manual Liftgate | |
 | X003 | Maps & Navigation | | 
 | X004 | Override: No Navigation | | 
 | X007 | Exterior Lights	Override: Premium exterior lighting YES | | 

@@ -277,9 +277,9 @@ return a generic set of codes related to a Model 3.
 | RF3G | Model 3 Glass Roof | | 
 | RFBK | Black Roof | | 
 | RFBC | Body Color Roof | Roof | 
-| RFFG | Glass Roof | | 
-| RFPO | All Glass Panoramic Roof v1 | Before 2016 Refresh | 
-| RFP2 | All Glass Panoramic Roof v2 | After 2016 Refresh | 
+| RFFG | Glass Roof | 2017 Production Refresh | 
+| RFPO | All Glass Panoramic Roof | 2015 Production Refresh | 
+| RFP2 | All Glass Panoramic Roof | 2016 Production Refresh | 
 | RFPX | Model X Roof | |
 | RSF1 | Rear Heated Seats | |
 | RU00 | No Range Upgrade | |

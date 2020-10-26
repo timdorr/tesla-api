@@ -48,8 +48,8 @@ return a generic set of codes related to a Model 3.
 | APBS | Autopilot | Model 3 Autopilot |
 | APF0 | Autopilot Firmware 2.0 Base | | 
 | APF1 | Autopilot Firmware 2.0 Enhanced | |  
-| APFB | Autopilot | Need to be paid for unlock FSD |
-| APF2 | Full Self-Driving Capability | Paid and unlocked |
+| APFB | Full Self-Driving Hardware | Car has FSD hardware, but sofware option is not purchased |
+| APF2 | Full Self-Driving Hardware (Activated) | Car has active FSD software purchase |
 | APH1 | Hardware 1.0 | | 
 | APH2 | Hardware 2.0 | | 
 | APH3 | Hardware 2.5 | | 

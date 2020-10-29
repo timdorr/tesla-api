@@ -223,7 +223,6 @@ return a generic set of codes related to a Model 3.
 | PMAB | Anza Brown Metallic Color | | 
 | PMBL | Obsidian Black Multi-Coat Color | | 
 | PMMB | Monterey Blue Metallic Color | | 
-| PMMR | Red Multi-Coat Color | | 
 | PMNG | Midnight Silver Metallic Color | | 
 | PMSG | Green Metallic Color| | 
 | PMSS | San Simeon Silver Metallic Color | | 

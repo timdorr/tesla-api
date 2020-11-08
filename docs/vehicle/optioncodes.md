@@ -215,7 +215,7 @@ return a generic set of codes related to a Model 3.
 | PA00 | No Paint Armor | | 
 | PBCW | Solid White Color | | 
 | PBSB | Solid Black Color | | 
-| PBT8 | Performance 85kWh | | 
+| PBT85 | Performance 85kWh | | 
 | PC30 | No Performance Chassis | |
 | PC31 | Performance Chassis | |
 | PF00 | No Performance Legacy Package | | 

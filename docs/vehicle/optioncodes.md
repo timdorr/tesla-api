@@ -244,7 +244,6 @@ return a generic set of codes related to a Model 3.
 | PS00 | No Parcel Shelf | | 
 | PS01 | Parcel Shelf | | 
 | RS3H | Second Row Seat Rear Seats (Heated) | Model 3 |
-| RSF1 | Rear Heated Seats | Model 3 |
 | PX00 | No Performance Plus Package | | 
 | PX01 | Performance Plus | | 
 | PX4D | 90 kWh Performance | |

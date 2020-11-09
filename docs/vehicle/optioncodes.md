@@ -247,6 +247,7 @@ return a generic set of codes related to a Model 3.
 | RSF1 | Rear Heated Seats | Model 3 |
 | PX00 | No Performance Plus Package | | 
 | PX01 | Performance Plus | | 
+| PX4D | 90 kWh Performance | |
 | PX6D | Zero to 60 in 2.5 sec | | 
 | P85D | P85D | | 
 | QLBS | Black Premium Interior | |

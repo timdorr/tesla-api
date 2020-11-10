@@ -21,6 +21,18 @@ RSpec.describe TeslaApi::Vehicle do
     end
   end
 
+  describe '#vehicle_data', vcr: {cassette_name: 'vehicle-vehicle_data'} do
+    context 'data about the vehicle\'s overall state' do
+      subject { vehicle.data }
+
+      it { should include('display_name') }
+      it { should include('drive_state') }
+      it { should include('vehicle_state') }
+      it { should include('vehicle_config') }
+      it { should include('charge_state') }
+    end
+  end
+
   describe '#data', vcr: {cassette_name: 'vehicle-data'} do
     context 'data about the vehicle\'s overall state' do
       subject { vehicle.data }

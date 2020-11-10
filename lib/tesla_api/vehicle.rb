@@ -27,6 +27,10 @@ module TeslaApi
 
     # State
 
+    def vehicle_data
+      client.get("/vehicles/#{id}/vehicle_data")['response']
+    end
+
     def data
       client.get("/vehicles/#{id}/data")['response']
     end

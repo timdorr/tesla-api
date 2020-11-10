@@ -1,0 +1,115 @@
+---
+http_interactions:
+  - request:
+      method: get
+      uri: https://owner-api.teslamotors.com/api/1/vehicles
+      body:
+        encoding: US-ASCII
+        string: ''
+      headers:
+        User-Agent:
+          - github.com/timdorr/tesla-api v:3.0.6
+        Authorization:
+          - Bearer <TESLA_ACCESS_TOKEN>
+        Accept-Encoding:
+          - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+        Accept:
+          - '*/*'
+    response:
+      status:
+        code: 200
+        message: OK
+      headers:
+        Date:
+          - Tue, 10 Nov 2020 02:53:32 GMT
+        Content-Type:
+          - application/json; charset=utf-8
+        Transfer-Encoding:
+          - chunked
+        Connection:
+          - keep-alive
+        Vary:
+          - Accept-Encoding
+        X-Frame-Options:
+          - SAMEORIGIN
+        X-Xss-Protection:
+          - 1; mode=block
+        X-Content-Type-Options:
+          - nosniff
+        X-Txid:
+          - 8cab94e3aac7ad773c2e8347050cb4a5
+        Etag:
+          - W/"cfa5885744c037b595646a39aaae3d82"
+        Cache-Control:
+          - max-age=0, private, must-revalidate
+        X-Request-Id:
+          - fb945c7582221ba925e2f4a7628948b5fb945c7582221ba925e2f4a7628948b5
+        X-Runtime:
+          - '0.080884'
+        Strict-Transport-Security:
+          - max-age=15724800; includeSubDomains
+      body:
+        encoding: ASCII-8BIT
+        string:
+          '{"response":[{"id":26640707449551857,"vehicle_id":1817902171,"vin":"5YJSA1E51GF163743","display_name":"Nikola
+          2.0","option_codes":"AD15,MDL3,PBSB,RENA,BT37,ID3W,RF3G,S3PB,DRLH,DV2W,W39B,APF0,COUS,BC3B,CH07,PC30,FC3P,FG31,GLFR,HL31,HM31,IL31,LTPB,MR31,FM3B,RS3H,SA3P,STCP,SC04,SU3C,T3CA,TW00,TM00,UT3P,WR00,AU3P,APH3,AF00,ZCST,MI00,CDM0","color":null,"access_type":"OWNER","tokens":["no","nope"],"state":"online","in_service":false,"id_s":"26640707449551857","calendar_enabled":true,"api_version":10,"backseat_token":null,"backseat_token_updated_at":null,"vehicle_config":null}],"count":1}'
+      http_version:
+    recorded_at: Tue, 10 Nov 2020 02:53:32 GMT
+  - request:
+      method: get
+      uri: https://owner-api.teslamotors.com/api/1/vehicles/26640707449551857/data
+      body:
+        encoding: US-ASCII
+        string: ''
+      headers:
+        User-Agent:
+          - github.com/timdorr/tesla-api v:3.0.6
+        Authorization:
+          - Bearer <TESLA_ACCESS_TOKEN>
+        Accept-Encoding:
+          - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+        Accept:
+          - '*/*'
+    response:
+      status:
+        code: 200
+        message: OK
+      headers:
+        Date:
+          - Tue, 10 Nov 2020 02:53:38 GMT
+        Content-Type:
+          - application/json; charset=utf-8
+        Transfer-Encoding:
+          - chunked
+        Connection:
+          - keep-alive
+        Vary:
+          - Accept-Encoding
+        X-Frame-Options:
+          - SAMEORIGIN
+        X-Xss-Protection:
+          - 1; mode=block
+        X-Content-Type-Options:
+          - nosniff
+        X-Txid:
+          - 95b841542f321728c867e12aaf9bf6f5
+        Etag:
+          - W/"4696b909a01379b329bd3311b52b75c6"
+        Cache-Control:
+          - max-age=0, private, must-revalidate
+        X-Request-Id:
+          - 53f72c31caff4a2d436805fa1b47215453f72c31caff4a2d436805fa1b472154
+        X-Runtime:
+          - '5.578065'
+        Strict-Transport-Security:
+          - max-age=15724800; includeSubDomains
+      body:
+        encoding: ASCII-8BIT
+        string:
+          '{"response":{"id":26640707449551857,"user_id":1023,"vehicle_id":1817902171,"vin":"5YJSA1E41GF167745","display_name":"Nikola
+          2.0","option_codes":"AD15,MDL3,PBSB,RENA,BT37,ID3W,RF3G,S3PB,DRLH,DV2W,W39B,APF0,COUS,BC3B,CH07,PC30,FC3P,FG31,GLFR,HL31,HM31,IL31,LTPB,MR31,FM3B,RS3H,SA3P,STCP,SC04,SU3C,T3CA,TW00,TM00,UT3P,WR00,AU3P,APH3,AF00,ZCST,MI00,CDM0","color":null,"access_type":"OWNER","tokens":["9d33fab579bedf74","9eb517d37cab5bf8"],"state":"online","in_service":false,"id_s":"26640707449551857","calendar_enabled":true,"api_version":10,"backseat_token":null,"backseat_token_updated_at":null,"vehicle_config":{"can_accept_navigation_requests":true,"can_actuate_trunks":true,"car_special_type":"base","car_type":"models2","charge_port_type":"US","ece_restrictions":false,"eu_vehicle":false,"exterior_color":"White","has_air_suspension":true,"has_ludicrous_mode":false,"motorized_charge_port":true,"plg":true,"rear_seat_heaters":0,"rear_seat_type":0,"rhd":false,"roof_color":"None","seat_type":2,"spoiler_type":"None","sun_roof_installed":2,"third_row_seats":"None","timestamp":1604976818402,"trim_badging":"p90d","use_range_badging":false,"wheel_type":"AeroTurbine19"},"gui_settings":{"gui_24_hour_time":false,"gui_charge_rate_units":"mi/hr","gui_distance_units":"mi/hr","gui_range_display":"Rated","gui_temperature_units":"F","show_range_units":true,"timestamp":1604976818399},"drive_state":{"gps_as_of":1604976817,"heading":5,"latitude":3.972,"longitude":-4.9147,"native_latitude":3.982,"native_location_supported":1,"native_longitude":-4.947,"native_type":"wgs","power":0,"shift_state":null,"speed":null,"timestamp":1604976818416},"vehicle_state":{"api_version":10,"autopark_state_v2":"standby","autopark_style":"standard","calendar_supported":true,"car_version":"2020.36.16
+          3e9e4e8dd287","center_display_state":0,"df":0,"dr":0,"ft":0,"homelink_device_count":2,"homelink_nearby":true,"is_user_present":false,"last_autopark_error":"no_error","locked":false,"media_state":{"remote_control_enabled":true},"notifications_supported":true,"odometer":57509.856033,"parsed_calendar_supported":true,"pf":0,"pr":0,"remote_start":false,"remote_start_enabled":true,"remote_start_supported":true,"rt":0,"sentry_mode":false,"sentry_mode_available":true,"smart_summon_available":true,"software_update":{"download_perc":0,"expected_duration_sec":2700,"install_perc":1,"status":"","version":""},"speed_limit_mode":{"active":false,"current_limit_mph":50.0,"max_limit_mph":90,"min_limit_mph":50,"pin_code_set":true},"summon_standby_mode_enabled":false,"sun_roof_percent_open":0,"sun_roof_state":"closed","timestamp":1604976818414,"valet_mode":false,"valet_pin_needed":true,"vehicle_name":"Nikola
+          2.0"},"charge_state":{"battery_heater_on":false,"battery_level":90,"battery_range":224.81,"charge_current_request":40,"charge_current_request_max":40,"charge_enable_request":true,"charge_energy_added":29.41,"charge_limit_soc":90,"charge_limit_soc_max":100,"charge_limit_soc_min":50,"charge_limit_soc_std":90,"charge_miles_added_ideal":118.5,"charge_miles_added_rated":95.0,"charge_port_cold_weather_mode":null,"charge_port_door_open":true,"charge_port_latch":"Engaged","charge_rate":0.0,"charge_to_max_range":false,"charger_actual_current":0,"charger_phases":null,"charger_pilot_current":40,"charger_power":0,"charger_voltage":0,"charging_state":"Complete","conn_charge_cable":"SAE","est_battery_range":171.24,"fast_charger_brand":"<invalid>","fast_charger_present":false,"fast_charger_type":"<invalid>","ideal_battery_range":281.02,"managed_charging_active":false,"managed_charging_start_time":null,"managed_charging_user_canceled":false,"max_range_charge_counter":0,"minutes_to_full_charge":0,"not_enough_power_to_heat":false,"scheduled_charging_pending":false,"scheduled_charging_start_time":null,"time_to_full_charge":0.0,"timestamp":1604976818400,"trip_charging":false,"usable_battery_level":90,"user_charge_enable_request":null},"climate_state":{"battery_heater":false,"battery_heater_no_power":false,"climate_keeper_mode":"off","defrost_mode":0,"driver_temp_setting":22.8,"fan_status":0,"inside_temp":27.0,"is_auto_conditioning_on":false,"is_climate_on":false,"is_front_defroster_on":false,"is_preconditioning":false,"is_rear_defroster_on":false,"left_temp_direction":-223,"max_avail_temp":28.0,"min_avail_temp":15.0,"outside_temp":23.0,"passenger_temp_setting":22.8,"remote_heater_control_enabled":false,"right_temp_direction":-223,"seat_heater_left":0,"seat_heater_right":0,"side_mirror_heaters":false,"timestamp":1604976818413,"wiper_blade_heater":false}}}'
+      http_version:
+    recorded_at: Tue, 10 Nov 2020 02:53:38 GMT
+recorded_with: VCR 4.0.0

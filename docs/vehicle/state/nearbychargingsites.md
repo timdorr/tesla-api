@@ -8,98 +8,73 @@ Returns a list of nearby Tesla-operated charging stations. (Requires car softwar
 
 ```json
 {
-  "response":{
-    "congestion_sync_time_utc_secs":1545091987,
-    "destination_charging":[
+  "response": {
+    "congestion_sync_time_utc_secs": 1604976488,
+    "destination_charging": [
       {
-        "location":{
-          "lat":33.811484,
-          "long":-118.138451
-        },
-        "name":"Long Beach Marriott",
-        "type":"destination",
-        "distance_miles":2.201606
+        "location": { "lat": 34.010854, "long": -84.574979 },
+        "name": "Hilton Garden Inn Atlanta NW/Kennesaw Town Center",
+        "type": "destination",
+        "distance_miles": 6.430447
       },
       {
-        "location":{
-          "lat":33.767198,
-          "long":-118.191987
-        },
-        "name":"Renaissance Long Beach Hotel",
-        "type":"destination",
-        "distance_miles":4.071068
+        "location": { "lat": 34.011213, "long": -84.575745 },
+        "name": "Homewood Suites by Hilton Atlanta NW-Kennesaw",
+        "type": "destination",
+        "distance_miles": 6.48008
       },
       {
-        "location":{
-          "lat":33.757146,
-          "long":-118.19861
-        },
-        "name":"Hotel Maya, a Doubletree by Hilton",
-        "type":"destination",
-        "distance_miles":4.843953
+        "location": { "lat": 33.881785, "long": -84.473461 },
+        "name": "Hyatt Place Atlanta/Cobb Galleria",
+        "type": "destination",
+        "distance_miles": 6.778101
       },
       {
-        "location":{
-          "lat":33.832254,
-          "long":-118.079218
-        },
-        "name":"The Gardens Casino",
-        "type":"destination",
-        "distance_miles":6.449794
+        "location": { "lat": 33.991767, "long": -84.351229 },
+        "name": "European Collision Repair",
+        "type": "destination",
+        "distance_miles": 6.805893
       }
     ],
-    "superchargers":[
+    "superchargers": [
       {
-        "location":{
-          "lat":33.934471,
-          "long":-118.121217
-        },
-        "name":"Downey, CA - Stonewood Street",
-        "type":"supercharger",
-        "distance_miles":2.196721,
-        "available_stalls":5,
-        "total_stalls":12,
-        "site_closed":false
+        "location": { "lat": 33.848756, "long": -84.36434 },
+        "name": "Atlanta, GA - Peachtree Road",
+        "type": "supercharger",
+        "distance_miles": 10.868304,
+        "available_stalls": 4,
+        "total_stalls": 5,
+        "site_closed": false
       },
       {
-        "location":{
-          "lat":33.953385,
-          "long":-118.112905
-        },
-        "name":"Downey, CA - Lakewood Boulevard",
-        "type":"supercharger",
-        "distance_miles":9.587273,
-        "available_stalls":6,
-        "total_stalls":12,
-        "site_closed":false
+        "location": { "lat": 33.846487, "long": -84.360172 },
+        "name": "Atlanta, GA - Lenox Road",
+        "type": "supercharger",
+        "distance_miles": 11.131691,
+        "available_stalls": 16,
+        "total_stalls": 16,
+        "site_closed": false
       },
       {
-        "location":{
-          "lat":33.921063,
-          "long":-118.330074
-        },
-        "name":"Hawthorne, CA",
-        "type":"supercharger",
-        "distance_miles":12.197322,
-        "available_stalls":3,
-        "total_stalls":6,
-        "site_closed":false
+        "location": { "lat": 34.075818, "long": -84.652184 },
+        "name": "Acworth, GA",
+        "type": "supercharger",
+        "distance_miles": 12.403464,
+        "available_stalls": 11,
+        "total_stalls": 11,
+        "site_closed": false
       },
       {
-        "location":{
-          "lat":33.894227,
-          "long":-118.367407
-        },
-        "name":"Redondo Beach, CA",
-        "type":"supercharger",
-        "distance_miles":13.125912,
-        "available_stalls":3,
-        "total_stalls":8,
-        "site_closed":false
+        "location": { "lat": 34.071365, "long": -84.275362 },
+        "name": "Alpharetta, GA",
+        "type": "supercharger",
+        "distance_miles": 12.772961,
+        "available_stalls": 6,
+        "total_stalls": 10,
+        "site_closed": false
       }
     ],
-    "timestamp":1545092157769
+    "timestamp": 1604977312943
   }
 }
 ```
-

@@ -14,13 +14,12 @@ Returns the vehicle's configuration information including model, color, badging 
     "car_special_type": "base",
     "car_type": "models2",
     "charge_port_type": "US",
+    "ece_restrictions": false,
     "eu_vehicle": false,
     "exterior_color": "White",
     "has_air_suspension": true,
     "has_ludicrous_mode": false,
-    "key_version": 1,
     "motorized_charge_port": true,
-    "perf_config": "P2",
     "plg": true,
     "rear_seat_heaters": 0,
     "rear_seat_type": 0,
@@ -30,8 +29,9 @@ Returns the vehicle's configuration information including model, color, badging 
     "spoiler_type": "None",
     "sun_roof_installed": 2,
     "third_row_seats": "None",
-    "timestamp": 1538364666096,
+    "timestamp": 1604977445448,
     "trim_badging": "p90d",
+    "use_range_badging": false,
     "wheel_type": "AeroTurbine19"
   }
 }

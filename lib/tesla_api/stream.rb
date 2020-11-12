@@ -56,8 +56,8 @@ module TeslaApi
 
     def streaming_connect_message
       {
-        msg_type: 'data:subscribe',
-        token: Base64.strict_encode64("#{email}:#{self['tokens'].first}"),
+        msg_type: 'data:subscribe_oauth',
+        token: client.access_token,
         value: 'speed,odometer,soc,elevation,est_heading,est_lat,est_lng,power,shift_state,range,est_range,heading',
         tag: self['vehicle_id'].to_s,
       }

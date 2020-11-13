@@ -205,6 +205,7 @@ return a generic set of codes related to a Model 3.
 | MT303 | Long Range All-Wheel Drive | |
 | MT315 | Long Range All-Wheel Drive | Late 2020 Refresh |
 | MT304 | Long Range All-Wheel Drive Performance | |
+| MT311 | Long Range All-Wheel Drive Performance | |
 | MT317 | Long Range All-Wheel Drive Performance | Late 2020 Refresh |
 | MT305 | Mid Range Rear-Wheel Drive | | 
 | MTY02 | Long Range Rear-Wheel Drive | |

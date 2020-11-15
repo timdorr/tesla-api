@@ -131,7 +131,7 @@ return a generic set of codes related to a Model 3.
 | FG02 | Fog Lamps | Fog Lamps |
 | FG31 | Fog Lamps | Premium Fog Lights (Model 3) |
 | FM3B | Performance Package (Model 3) | |
-| FMP6 | FMP6 | | 
+| FMP6 | Performance Firmware | | 
 | FR01 | Base Front Row | | 
 | FR02 | Ventilated Front Seats | |
 | FR03 | FR03 | | 

@@ -129,8 +129,9 @@ return a generic set of codes related to a Model 3.
 | FG00 | No Exterior Lighting Package | | 
 | FG01 | Fog Lamps | Exterior Lighting Package | 
 | FG02 | Fog Lamps | Fog Lamps |
-| FG31 | Fog Lamps | Premium Fog Lights (Model 3) |
-| FM3B | Performance Package (Model 3) | |
+| FG31 | Fog Lamps | Premium Fog Lights | Model 3
+| FM3B | Performance Package | Model 3 |
+| FM3U | Performance Package | Model 3 Long Range All-Wheel Drive |
 | FMP6 | Performance Firmware | | 
 | FR01 | Base Front Row | | 
 | FR02 | Ventilated Front Seats | |
@@ -140,10 +141,10 @@ return a generic set of codes related to a Model 3.
 | HC00 | No Home Charging installation | | 
 | HC01 | Home Charging Installation | | 
 | HM31 | Teck Package - Homelink | Homelink |
-| HL31 | Head Lamp (Model 3) | Uplevel Headlamps | 
+| HL31 | Head Lamp | Model 3 Uplevel Headlamps | 
 | HP00 | No HPWC Ordered | | 
 | HP01 | HPWC Ordered | | 
-| ID3W | (Model 3) Wood Decor | | 
+| ID3W | Wood Decor | Model 3 | 
 | IDBA | Dark Ash Wood Decor | | 
 | IDBO | Figured Ash Wood Decor | | 
 | IDCF | Carbon Fiber Decor | | 

@@ -24,6 +24,7 @@ return a generic set of codes related to a Model 3.
 | RENA | Region: North America | | 
 | RENC | Region: Canada | | 
 | REEU | Region: Europe | | 
+| ACL1 | Ludicrous Mode | Model X | 
 | AD02 | NEMA 14-50 | | 
 | AD04 | European 3-Phase | | 
 | AD05 | European 3-Phase, IT | | 

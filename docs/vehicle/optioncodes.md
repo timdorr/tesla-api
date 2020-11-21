@@ -212,6 +212,7 @@ return a generic set of codes related to a Model 3.
 | MT317 | Long Range All-Wheel Drive Performance | Model 3 Late 2020 Refresh |
 | MT305 | Mid Range Rear-Wheel Drive | Model 3 | 
 | MTX05 | Long Range Plus | Model X | 
+| MTX06 | Performance | Model X | 
 | MTX07 | Long Range Plus | Model X | 
 | MTX08 | Performance | Model X | 
 | MTY02 | Long Range Rear-Wheel Drive | Model Y |

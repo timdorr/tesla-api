@@ -162,21 +162,21 @@ return a generic set of codes related to a Model 3.
 | INBBW | White Interior | | 
 | INB3C | Premium beige interior with oak wood finishes | Model X |
 | INBC3W | Premium black and white interior with Carbon Fiber decor | Model X |
-| INBFP | Classic Black | | 
-| INBPP | Black | | 
-| INBPW | White Seats | |
-| INBTB | Multi-Pattern Black | | 
-| INFBP | Black Premium | | 
-| INLPC | Cream | | 
-| INLPP | Black / Light Headliner | | 
+| INBFP | Classic Black Interior | | 
+| INBPP | Black Interior | | 
+| INBPW | White Seats Interior | |
+| INBTB | Multi-Pattern Black Interior | | 
+| INFBP | Black Premium Interior | | 
+| INLPC | Cream Interior | | 
+| INLPP | Black / Light Headliner Interior  | | 
 | INWPT | Tan Interior | | 
 | INYPB | All Black Premium Interior | |
 | INYPW | Black and White Premium Interior | |
-| IL31 | Interior Ambient Lighting | |
+| IL31 | Interior Ambient Lighting Interior | |
 | IVBPP | All Black Interior | | 
 | IVBSW | Ultra White Interior | | 
 | IVBTB | All Black Interior | | 
-| IVLPC | Vegan Cream | | 
+| IVLPC | Vegan Cream Interior | | 
 | IX00 | No Extended Nappa Leather Trim | | 
 | IX01 | Extended Nappa Leather Trim | | 
 | LLP1 | LLP1 | | 

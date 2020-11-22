@@ -159,7 +159,7 @@ return a generic set of codes related to a Model 3.
 | IN3BW | Black and White Interior | Model 3 Interior | 
 | IN3PB | All Black Premium Interior | Model 3 Interior | 
 | IN3PW | All White Premium Interior | Model 3 Interior | 
-| INBBW | White | | 
+| INBBW | White Interior | | 
 | INB3C | Premium beige interior with oak wood finishes | Model X |
 | INBC3W | Premium black and white interior with Carbon Fiber decor | Model X |
 | INBFP | Classic Black | | 

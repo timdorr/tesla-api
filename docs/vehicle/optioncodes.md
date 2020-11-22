@@ -329,7 +329,7 @@ return a generic set of codes related to a Model 3.
 | SU00 | Standard Suspension | | 
 | SU01 | Smart Air Suspension | |
 | SU03 | Suspension	Update | Model X 2020 |
-| SU3C | Suspension | Coil spring suspension |
+| SU3C | Coil Spring Suspension |  |
 | T3MA | Tires M3 | 18 Michelin All Season, Square |
 | TIC4 | Tires | All-Season Tires | 
 | TIG2 | Summer Tires | |

@@ -87,6 +87,7 @@ return a generic set of codes related to a Model 3.
 | BTX8 | 85 kWh | | 
 | CC01 | Five Seat Interior | |
 | CC02 | Six Seat Interior | |
+| CC03 | Seven Seat Interior | | 
 | CC04 | Seven Seat Interior | | 
 | CC12 | Six Seat Interior with Center Console | |
 | CDM0 | No CHAdeMO Charging Adaptor | | 

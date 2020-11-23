@@ -379,6 +379,7 @@ return a generic set of codes related to a Model 3.
 | WTNS | 20" Nokian Winter Tires (studded) | |
 | WTP2 | 20" Pirelli Winter Tires | |
 | WTSC | 20" Sonic Carbon Wheels | |
+| WTSD | 20" Two-Tone Slipstream Wheels | |
 | WTSG | 21" Turbine Wheels | | 
 | WTSP | 21" Turbine Wheels | | 
 | WTSS | 21" Turbine Wheels | | 

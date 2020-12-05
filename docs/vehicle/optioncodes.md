@@ -206,13 +206,16 @@ return a generic set of codes related to a Model 3.
 | MR31 | Tech Package - Mirror -YES	| Uplevel Mirrors |
 | MT300 | Standard Range Rear-Wheel Drive | Model 3 |
 | MT301 | Standard Range Plus Rear-Wheel Drive | Model 3 |
-| MT320 | Standard Range Plus Rear-Wheel Drive | Model 3 Late 2020 Refresh |
+| MT308 | Standard Range Plus Rear-Wheel Drive | Model 3 2019 Refresh |
+| MT336 | Standard Range Plus Rear-Wheel Drive | Model 3 2020 Refresh |
+| MT320 | Standard Range Plus Rear-Wheel Drive | Model 3 2021 Refresh |
 | MT302 | Long Range Rear-Wheel Drive | Model 3 |
 | MT303 | Long Range All-Wheel Drive | Model 3 |
-| MT315 | Long Range All-Wheel Drive | Model 3 Late 2020 Refresh |
+| MT315 | Long Range All-Wheel Drive | Model 3 2021 Refresh |
+| MT316 | Long Range All-Wheel Drive | Model 3 2021 Refresh |
 | MT304 | Long Range All-Wheel Drive Performance | Model 3 |
 | MT311 | Long Range All-Wheel Drive Performance | Model 3 |
-| MT317 | Long Range All-Wheel Drive Performance | Model 3 Late 2020 Refresh |
+| MT317 | Long Range All-Wheel Drive Performance | Model 3 2021 Refresh |
 | MT305 | Mid Range Rear-Wheel Drive | Model 3 | 
 | MTS07 | Long Range Plus | Model S |
 | MTS08 | Performance | Model S |

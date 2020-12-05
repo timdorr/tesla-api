@@ -221,6 +221,7 @@ return a generic set of codes related to a Model 3.
 | MTS08 | Performance | Model S Raven Refresh |
 | MTS09 | Plaid | Model S |
 | MTX04 | Performance | Model X Raven Refresh | 
+| MT10A | Long Range | Model X | 
 | MTX05 | Long Range Plus | Model X Raven Refresh | 
 | MTX06 | Performance | Model X | 
 | MTX07 | Long Range Plus | Model X | 

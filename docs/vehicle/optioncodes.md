@@ -217,10 +217,11 @@ return a generic set of codes related to a Model 3.
 | MT311 | Long Range All-Wheel Drive Performance | Model 3 |
 | MT317 | Long Range All-Wheel Drive Performance | Model 3 2021 Refresh |
 | MT305 | Mid Range Rear-Wheel Drive | Model 3 | 
-| MTS07 | Long Range Plus | Model S |
-| MTS08 | Performance | Model S |
+| MTS07 | Long Range Plus | Model S Raven Refresh |
+| MTS08 | Performance | Model S Raven Refresh |
 | MTS09 | Plaid | Model S |
-| MTX05 | Long Range Plus | Model X | 
+| MTX04 | Performance | Model X Raven Refresh | 
+| MTX05 | Long Range Plus | Model X Raven Refresh | 
 | MTX06 | Performance | Model X | 
 | MTX07 | Long Range Plus | Model X | 
 | MTX08 | Performance | Model X | 

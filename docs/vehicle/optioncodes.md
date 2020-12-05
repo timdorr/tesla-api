@@ -111,7 +111,7 @@ return a generic set of codes related to a Model 3.
 | CPF0 | Standard Connectivity | |
 | CPF1 | Premium Connectivity | |
 | CPW1 | 20" Performance Wheels | |
-| CW00 | Weather Package | No Cold Weather Package | 
+| CW00 | No Weather Package | No Cold Weather Package | 
 | CW02 | Weather Package | Subzero Weather Package | 
 | DA00 | No Autopilot | | 
 | DA01 | Active Safety (ACC,LDW,SA) | Drivers Assistance Package | 

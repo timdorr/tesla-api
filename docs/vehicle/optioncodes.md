@@ -220,8 +220,8 @@ return a generic set of codes related to a Model 3.
 | MT315 | Long Range All-Wheel Drive | Model 3 2021 Refresh |
 | MT316 | Long Range All-Wheel Drive | Model 3 2021 Refresh |
 | MT317 | Long Range All-Wheel Drive Performance | Model 3 2021 Refresh |
-| MTS01 |
-| MTS03 |
+| MTS01 | Standard Range | Model S |
+| MTS03 | Long Range | Model S |
 | MTS04 | Performance | Model S |
 | MTS05 | Long Range | Model S |
 | MTS06 | Performance | Model S |

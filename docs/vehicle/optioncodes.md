@@ -213,8 +213,9 @@ return a generic set of codes related to a Model 3.
 | MT307 | Mid Range Rear-Wheel Drive | Model 3 | 
 | MT308 | Standard Range Plus Rear-Wheel Drive | Model 3 2019 Refresh |
 | MT309 | Standard Range Plus Rear-Wheel Drive | Model 3 2019 Refresh |
-| MT336 | Standard Range Plus Rear-Wheel Drive | Model 3 2020 Refresh |
+| MT314 | Standard Range Plus Rear-Wheel Drive | Model 3 2021 Refresh |
 | MT320 | Standard Range Plus Rear-Wheel Drive | Model 3 2021 Refresh |
+| MT336 | Standard Range Plus Rear-Wheel Drive | Model 3 2020 Refresh |
 | MT310 | Long Range All-Wheel Drive | Model 3 |
 | MT311 | Long Range All-Wheel Drive Performance | Model 3 |
 | MT315 | Long Range All-Wheel Drive | Model 3 2021 Refresh |

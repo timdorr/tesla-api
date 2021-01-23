@@ -203,6 +203,7 @@ return a generic set of codes related to a Model 3.
 | MI01 | 2016 Production Refresh | | 
 | MI02 | 2017 Production Refresh | | 
 | MI03 | 201? Production Refresh | Found on Model X ordered 11/2018 delivered 3/2019 | 
+| MI04 | 2021 Production |
 | MR31 | Tech Package - Mirror -YES	| Uplevel Mirrors |
 | MT300 | Standard Range Rear-Wheel Drive | Model 3 |
 | MT301 | Standard Range Plus Rear-Wheel Drive | Model 3 |

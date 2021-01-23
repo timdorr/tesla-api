@@ -439,7 +439,7 @@ return a generic set of codes related to a Model 3.
 | X020 | No Performance Exterior | | 
 | X021 | No Rear Carbon Fiber Spoiler | |
 | X024 | Performance Package | | 
-| X025 | Performance Powertrain | | 
+| X025 | No Performance Powertrain | | 
 | X026 | Door handle | No light handle |
 | X027 | Lighted Door Handles | Light handle | 
 | X028 | Battery Badge | Normal Badging | 

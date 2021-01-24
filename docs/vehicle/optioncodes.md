@@ -199,11 +199,11 @@ return a generic set of codes related to a Model 3.
 | LTPW | Lower Trim PUR White | |
 | ME01 | Memory Seats | |
 | ME02 | Seat Memory | Seat Memory LHD Driver | 
-| MI00 | Zero Generation | Model 3 (2019), Model S (Nosecone), Model X (2016) | 
-| MI01 | First Generation | Model 3 (2020), Model S (2016 Facelit), Model X (2017) | 
-| MI02 | Second Generation | Model 3 (2021), Model X (2017) | 
-| MI03 | Third Generation | Model S (2018), Model X (2018) |
-| MI04 | Four Generation | Model S (2019/2020), Model X (2020/2021) |
+| MI00 | 1st Generation | Model 3 (2019), Model S (Nosecone), Model X (2016) | 
+| MI01 | 2nd Generation | Model 3 (2020), Model S (2016 Facelit), Model X (2017) | 
+| MI02 | 3rd Generation | Model 3 (2021), Model X (2017) | 
+| MI03 | 4th Generation | Model S (2018), Model X (2018) |
+| MI04 | 5th Generation | Model S (2019/2020), Model X (2020/2021) |
 | MR31 | Tech Package - Mirror -YES	| Uplevel Mirrors |
 | MT300 | Standard Range Rear-Wheel Drive | Model 3 |
 | MT301 | Standard Range Plus Rear-Wheel Drive | Model 3 |

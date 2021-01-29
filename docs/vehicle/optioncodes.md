@@ -390,9 +390,9 @@ return a generic set of codes related to a Model 3.
 | W38B | 18" Aero Wheels | For the Model 3 and Model Y |
 | W39B | 19" Sport Wheels | | 
 | WR00 | No Wrap | |
-| WS90 | 19" Tempest Wheels | |
+| WS90 | 19" Tempest Wheels | Model S Refresh 2021 |
 | WT19 | 19" Wheels | |
-| WS10 | 21" Arachnid Wheels | |
+| WS10 | 21" Arachnid Wheels | Model S Refresh 2021 |
 | WT20 | 20" Silver Slipstream Wheels | | 
 | WT22 | 22" Silver Turbine Wheels | |
 | WTAB | 21" Black Arachnid Wheels | |

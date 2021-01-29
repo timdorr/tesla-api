@@ -390,7 +390,9 @@ return a generic set of codes related to a Model 3.
 | W38B | 18" Aero Wheels | For the Model 3 and Model Y |
 | W39B | 19" Sport Wheels | | 
 | WR00 | No Wrap | |
+| WS90 | 19" Tempest Wheels | |
 | WT19 | 19" Wheels | |
+| WS10 | 21" Arachnid Wheels | |
 | WT20 | 20" Silver Slipstream Wheels | | 
 | WT22 | 22" Silver Turbine Wheels | |
 | WTAB | 21" Black Arachnid Wheels | |
@@ -417,6 +419,8 @@ return a generic set of codes related to a Model 3.
 | WTW7 | 19" Nokian Winter Tires (non-studded) | |
 | WTW8 | 19" Pirelli Winter Tires | |
 | WTX1 | 19" Michelin Primacy Tire Upgrade | | 
+| WX00 | 20" Cyberstream Wheels | Model X Refresh 2021 |
+| WX20 | 22" Turbine Wheels | Model X Refresh 2021 |
 | WXNN | No 20" Nokian Winter Tires (non-studded) | |
 | WXNS | No 20" Nokian Winter Tires (studded) | |
 | WXP2 | No 20" Pirelli Winter Tires | |

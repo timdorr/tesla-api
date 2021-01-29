@@ -4,6 +4,9 @@ description: The authentication process for the Tesla API
 
 # Authentication
 
+> ## ⚠ This information is out of date ⚠
+> Tesla has deprecated the `/oauth/token` endpoint in favor of using `auth.tesla.com`. I'm working on updating the documentation as soon as possible. Feel free to discuss this in [issue #215](https://github.com/timdorr/tesla-api/issues/215).
+
 ## POST `/oauth/token?grant_type=password`
 
 The initial authentication process is via [an OAuth 2.0 Password Grant](https://oauth.net/2/grant-types/password/) with the same credentials used for tesla.com and the mobile apps.

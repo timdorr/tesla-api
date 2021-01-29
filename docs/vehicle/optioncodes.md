@@ -229,15 +229,19 @@ return a generic set of codes related to a Model 3.
 | MTS05 | Long Range | Model S |
 | MTS06 | Performance | Model S |
 | MTS07 | Long Range Plus | Model S |
-| MTS08 | Performance | Model S Raven Refresh |
-| MTS09 | Plaid | Model S |
+| MTS08 | Performance | Model S |
+| MTS09 | Plaid+ | Model S Refresh 2021 |
+| MTS10 | Long Range | Model S Refresh 2021 |
+| MTS11 | Plaid | Model S Refresh 2021 |
 | MTX01 | Standard Range | Model X | 
 | MTX03 | Long Range | Model X | 
 | MTX04 | Performance | Model X | 
-| MTX05 | Long Range Plus | Model X 2021 Refresh | 
-| MTX06 | Performance | Model X 2021 Refresh | 
+| MTX05 | Long Range Plus | Model X | 
+| MTX06 | Performance | Model X | 
 | MTX07 | Long Range Plus | Model X | 
-| MTX08 | Performance | Model X 2021 Refresh | 
+| MTX08 | Performance | Model X | 
+| MTX10 | Long Range | Model X Refresh 2021 | 
+| MTX11 | Plaid | Model X Refresh 2021 | 
 | MTY02 | Long Range Rear-Wheel Drive | Model Y |
 | MTY03 | Long Range All-Wheel Drive | Model Y |
 | MTY04 | Long Range All-Wheel Drive Performance | Model Y |

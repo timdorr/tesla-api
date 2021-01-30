@@ -5,7 +5,8 @@ description: The authentication process for the Tesla API
 # Authentication
 
 > ## ⚠ This information is out of date ⚠
-> Tesla has deprecated the `/oauth/token` endpoint in favor of using `auth.tesla.com`. I'm working on updating the documentation as soon as possible. Feel free to discuss this in [issue #215](https://github.com/timdorr/tesla-api/issues/215).
+>
+> Tesla has deprecated the `/oauth/token` endpoint in favor of using `auth.tesla.com`. I'm working on updating the documentation as soon as possible. Feel free to discuss this in [issue #260](https://github.com/timdorr/tesla-api/issues/260).
 
 ## POST `/oauth/token?grant_type=password`
 

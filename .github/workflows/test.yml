@@ -1,0 +1,36 @@
+name: Tests
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  test:
+    name: Test Suite
+    runs-on: ubuntu-latest
+
+    env:
+      TESLA_EMAIL: elon.musk@teslamotors.com
+      TESLA_PASS: oilLOL
+      TESLA_CLIENT_ID: 1
+      TESLA_CLIENT_SECRET: 2
+      TESLA_ACCESS_TOKEN: 3
+      TESLA_REFRESH_TOKEN: 4
+
+    strategy:
+      matrix:
+        ruby-version: ['2.7', '3.0']
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby-version }}
+          bundler-cache: true
+
+      - name: Run test suite
+        run: bundle exec rake

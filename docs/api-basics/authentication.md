@@ -186,7 +186,7 @@ This endpoint uses JSON for the request and response bodies.
 
 | Field           | Type             | Example                       | Description                                                    |
 | :-------------- | :--------------- | :---------------------------- | :------------------------------------------------------------- |
-| `grant_type`    | String, required | `refresh_token`               | TThe type of OAuth grant. Always "refresh_token"               |
+| `grant_type`    | String, required | `refresh_token`               | The type of OAuth grant. Always "refresh_token"               |
 | `client_id`     | String, required | `ownerapi`                    | The OAuth client ID. Always "ownerapi"                         |
 | `client_secret` | String, required | `123`                         | The OAuth client ID.                                           |
 | `refresh_token` | String, required | `123`                         | The refresh token from a prior authentication.                 |

@@ -3,6 +3,8 @@ require 'spec_helper'
 RSpec.describe TeslaApi::Client do
   subject(:tesla_api) { TeslaApi::Client.new(email: ENV['TESLA_EMAIL']) }
 
+  it { is_expected.to be_a(TeslaApi::Client) }
+
   context 'password grant auth' do
     describe '#new' do
       it 'has no expiry date' do
@@ -14,9 +16,13 @@ RSpec.describe TeslaApi::Client do
       end
     end
 
-    describe '#login!', vcr: { cassette_name: 'client-login' } do
-      it { is_expected.to be_a(TeslaApi::Client) }
-
+    describe '#login!', vcr: { 
+      cassette_name: 'client-login', 
+      match_requests_on: [
+        :method, 
+        VCR.request_matchers.uri_without_params(:code_challenge, :state)
+      ] 
+    } do
       it 'logs into the API' do
         tesla_api.login!(ENV['TESLA_PASS'])
         expect(a_request(:post, "https://#{URI.parse(TeslaApi::Client::BASE_URI).host}/oauth/token")).to have_been_made.once
@@ -24,22 +30,22 @@ RSpec.describe TeslaApi::Client do
 
       it 'obtains a Bearer token' do
         tesla_api.login!(ENV['TESLA_PASS'])
-        expect(tesla_api.access_token).to match(/[a-z0-9]{32}/)
+        expect(tesla_api.access_token).to start_with('qts-')
       end
 
       it 'set a expiry date' do
         tesla_api.login!(ENV['TESLA_PASS'])
-        expect(tesla_api.access_token_expires_at).to eq(Time.at(1475777133 + 7776000).to_datetime)
+        expect(tesla_api.access_token_expires_at).to eq(Time.at(1612019326 + 3888000).to_datetime)
       end
 
       it 'obtains a refresh token' do
         tesla_api.login!(ENV['TESLA_PASS'])
-        expect(tesla_api.refresh_token).to match(/[a-z0-9]{32}/)
+        expect(tesla_api.refresh_token).to start_with('eyJ')
       end
 
       it 'expose expiry status' do
         tesla_api.login!(ENV['TESLA_PASS'])
-        expect(tesla_api.expired?).to eq(true)
+        expect(tesla_api.expired?).to eq(false)
       end
     end
   end
@@ -60,7 +66,13 @@ RSpec.describe TeslaApi::Client do
       end
     end
 
-    describe '#refresh_access_token', vcr: {cassette_name: 'client-refresh'} do
+    describe '#refresh_access_token', vcr: {
+      cassette_name: 'client-refresh', 
+      match_requests_on: [
+        :method, 
+        VCR.request_matchers.uri_without_params(:code_challenge, :state)
+      ] 
+    } do
       it 'refreshes the access token' do
         tesla_api.refresh_access_token
         expect(tesla_api.access_token).not_to eq(access_token)
@@ -71,36 +83,6 @@ RSpec.describe TeslaApi::Client do
   describe '#vehicles', vcr: {cassette_name: 'client-vehicles'} do
     it 'lists the vehicles on the account' do
       expect(tesla_api.vehicles).to include(TeslaApi::Vehicle)
-    end
-  end
-
-  describe 'retry options', vcr: { cassette_name: 'client-login_timeout' } do
-    subject(:tesla_api) { TeslaApi::Client.new(
-      access_token: ENV['TESLA_ACCESS_TOKEN'],
-      retry_options: retry_options
-    ) }
-
-    let(:retry_options) {{
-      max: 2,
-      methods: [:post],
-      retry_statuses: [408]
-    }}
-
-    context 'with retry' do
-      it 'obtains a Bearer token after retry' do
-        tesla_api.login!(ENV['TESLA_PASS'])
-        expect(tesla_api.access_token).to be
-      end
-    end
-
-    context 'without retry' do
-      let(:retry_options) { nil }
-
-      it 'raises an error' do
-        expect {
-          tesla_api.login!(ENV['TESLA_PASS'])
-        }.to raise_error(Faraday::ClientError)
-      end
     end
   end
 end

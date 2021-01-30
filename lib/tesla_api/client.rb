@@ -43,7 +43,7 @@ module TeslaApi
     end
 
     def refresh_access_token
-      return response = @api.post(
+      response = @api.post(
         @sso_uri + '/oauth2/v3/token',
         {
           grant_type: 'refresh_token',
@@ -52,7 +52,7 @@ module TeslaApi
           client_secret: client_secret,
           refresh_token: refresh_token
         }
-      )
+      ).body
 
       @refresh_token = response['refresh_token']
 

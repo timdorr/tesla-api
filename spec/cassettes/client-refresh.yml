@@ -1,51 +1,111 @@
 ---
 http_interactions:
-- request:
-    method: post
-    uri: https://owner-api.teslamotors.com/oauth/token
-    body:
-      encoding: UTF-8
-      string: grant_type=refresh_token&client_id=<TESLA_CLIENT_ID>&client_secret=<TESLA_CLIENT_SECRET>&refresh_token=<TESLA_REFRESH_TOKEN>
-    headers:
-      User-Agent:
-      - github.com/timdorr/tesla-api v:1.5.0
-      Authorization:
-      - Bearer <TESLA_ACCESS_TOKEN>
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Mon, 23 Sep 2019 17:25:05 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      X-Frame-Options:
-      - SAMEORIGIN
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Cache-Control:
-      - no-store
-      Pragma:
-      - no-cache
-      Etag:
-      - W/"25e04c26d708b6763d3dca87bcaeb2a7"
-      X-Request-Id:
-      - d153d7b0-ce0b-4c24-a109-e60488df7f48
-      X-Runtime:
-      - '0.020946'
-    body:
-      encoding: UTF-8
-      string: '{"access_token":"bb91d9892b8af05ad389f2d05b9689657a076f61c4d97ff398f23d86112fb5ca","token_type":"bearer","expires_in":3888000,"refresh_token":"21879d76c4e00309b3d69c6ecb128b89e0c7e210838404601d9f433e9a069022","created_at":1569259505}'
-    http_version: 
-  recorded_at: Mon, 23 Sep 2019 17:25:05 GMT
-recorded_with: VCR 4.0.0
+  - request:
+      method: post
+      uri: https://auth.tesla.com/oauth2/v3/token
+      body:
+        encoding: UTF-8
+        string: '{"grant_type":"refresh_token","scope":"openid email offline_access","client_id":"ownerapi","client_secret":"<TESLA_CLIENT_SECRET>","refresh_token":"<TESLA_REFRESH_TOKEN>"}'
+      headers:
+        User-Agent:
+          - github.com/timdorr/tesla-api v:3.0.7
+        Content-Type:
+          - application/json
+        Accept-Encoding:
+          - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+        Accept:
+          - '*/*'
+    response:
+      status:
+        code: 200
+        message: OK
+      headers:
+        Server:
+          - nginx
+        Content-Type:
+          - application/json
+        X-Dns-Prefetch-Control:
+          - 'off'
+        X-Frame-Options:
+          - DENY
+        Strict-Transport-Security:
+          - max-age=15552000; includeSubDomains
+        X-Download-Options:
+          - noopen
+        X-Content-Type-Options:
+          - nosniff
+        X-Xss-Protection:
+          - 1; mode=block
+        X-Request-Id:
+          - c6575e47-91d3-4a07-9985-358de3dbe39e
+        X-Correlation-Id:
+          - c6575e47-91d3-4a07-9985-358de3dbe39e
+        Cache-Control:
+          - no-store
+        Pragma:
+          - no-cache
+        X-Response-Time:
+          - 24.639ms
+        Date:
+          - Sat, 30 Jan 2021 15:18:43 GMT
+        Content-Length:
+          - '2517'
+        Connection:
+          - keep-alive
+      body:
+        encoding: UTF-8
+        string: '{"access_token":"acess","refresh_token":"<TESLA_REFRESH_TOKEN>","id_token":"id","expires_in":300,"token_type":"Bearer"}'
+    recorded_at: Sat, 30 Jan 2021 15:18:43 GMT
+  - request:
+      method: post
+      uri: https://owner-api.teslamotors.com/oauth/token
+      body:
+        encoding: UTF-8
+        string: '{"grant_type":"urn:ietf:params:oauth:grant-type:jwt-bearer","client_id":"<TESLA_CLIENT_ID>","client_secret":"<TESLA_CLIENT_SECRET>"}'
+      headers:
+        User-Agent:
+          - github.com/timdorr/tesla-api v:3.0.7
+        Authorization:
+          - Bearer bear
+        Content-Type:
+          - application/json
+        Accept-Encoding:
+          - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+        Accept:
+          - '*/*'
+    response:
+      status:
+        code: 200
+        message: OK
+      headers:
+        Date:
+          - Sat, 30 Jan 2021 15:18:44 GMT
+        Content-Type:
+          - application/json; charset=utf-8
+        Transfer-Encoding:
+          - chunked
+        Connection:
+          - keep-alive
+        Vary:
+          - Accept-Encoding
+        X-Frame-Options:
+          - SAMEORIGIN
+        X-Xss-Protection:
+          - 1; mode=block
+        X-Content-Type-Options:
+          - nosniff
+        Etag:
+          - W/"85c5baa66d3db433982e5744ccc1e96e"
+        Cache-Control:
+          - max-age=0, private, must-revalidate
+        X-Request-Id:
+          - 2f0ad7f617da468d211594930c0e88d52f0ad7f617da468d211594930c0e88d5
+        X-Runtime:
+          - '0.301686'
+        Strict-Transport-Security:
+          - max-age=15724800; includeSubDomains
+      body:
+        encoding: ASCII-8BIT
+        string: '{"access_token":"qts-deadbeef","token_type":"bearer","expires_in":3888000,"refresh_token":"yes","created_at":1612019924}'
+    recorded_at: Sat, 30 Jan 2021 15:18:44 GMT
+recorded_with: VCR 6.0.0

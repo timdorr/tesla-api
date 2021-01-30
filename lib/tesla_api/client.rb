@@ -47,10 +47,10 @@ module TeslaApi
         @sso_uri + '/oauth2/v3/token',
         {
           grant_type: 'refresh_token',
-          scope: 'openid email offline_access',
           client_id: 'ownerapi',
           client_secret: client_secret,
-          refresh_token: refresh_token
+          refresh_token: refresh_token,
+          scope: 'openid email offline_access'
         }
       ).body
 

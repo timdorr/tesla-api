@@ -14,12 +14,11 @@ Tesla uses a separate SSO service (auth.tesla.com) for authentication across the
 
 ### Step 1: Obtain the login page
 
-Subsequent requests to the SSO service will require a "code challenge" and "code verifier". These are just a random 86-character string and its SHA-256 hash. Both must be encoded in base64 with url-safe encoding (base64url). Here is an example of generating them in Ruby, but you can apply this same process to other languages.
+Subsequent requests to the SSO service will require a "code verifier" and "code challenge". These are just a random 86-character string and its SHA-256 hash encoded in URL-safe base64 (base64url). Here is an example of generating them in Ruby, but you can apply this same process to other languages.
 
 ```ruby
 code_verifier = random_string(86)
 code_challenge = Base64.urlsafe_encode64(Digest::SHA256.hexdigest(code_verifier))
-code_verifier = Base64.urlsafe_encode64(code_verifier)
 ```
 
 You will also need a stable `state` value for requests, which is a random string of any length.

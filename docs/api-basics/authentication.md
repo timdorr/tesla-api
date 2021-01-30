@@ -39,7 +39,7 @@ The request is made with a `redirect_url` of "https://auth.tesla.com/void/callba
 | `code_challenge_method` | String, required | `S256`                                 | The code challenge hash method. Always "S256" (SHA-256)         |
 | `redirect_uri`          | String, required | `https://auth.tesla.com/void/callback` | The redirect URL. Always "https://auth.tesla.com/void/callback" |
 | `response_type`         | String, required | `code`                                 | The type of expected response. Always "code"                    |
-| `scope`                 | String, required | `123`                                  | The OAuth client secret                                         |
+| `scope`                 | String, required | `openid email offline_access`          | The authentication scope. Always "openid email offline_access"  |
 | `state`                 | String, required | `123`                                  | The OAuth state value. Any random string.                       |
 
 ##### Response
@@ -69,7 +69,7 @@ Cookie: {cookie value from set-cookie header}
 | `code_challenge_method` | String, required | `S256`                                 | The code challenge hash method. Always "S256" (SHA-256)         |
 | `redirect_uri`          | String, required | `https://auth.tesla.com/void/callback` | The redirect URL. Always "https://auth.tesla.com/void/callback" |
 | `response_type`         | String, required | `code`                                 | The type of expected response. Always "code"                    |
-| `scope`                 | String, required | `123`                                  | The OAuth client secret                                         |
+| `scope`                 | String, required | `openid email offline_access`          | The authentication scope. Always "openid email offline_access"  |
 | `state`                 | String, required | `123`                                  | The OAuth state value. Any random string.                       |
 
 > Note: This is the contents of the POST body. These should be form encoded (`application/x-www-form-urlencoded`).
@@ -174,3 +174,43 @@ Authorization: Bearer {access_token}
 ```
 
 ## Refreshing an access token
+
+#### POST `https://auth.tesla.com/oauth2/v3/token`
+
+This uses the SSO `refresh_token` from Step 3 above to do an [OAuth 2.0 Refresh Token Grant](https://oauth.net/2/grant-types/refresh-token/). _This does not work with the `refresh_token` provided by the Owner API._ Those have no use currently and should be discarded.
+
+This refreshed access token can be used with the Owner API to obtain a new access token for that service using the exact same request as Step 4 above.
+
+This endpoint uses JSON for the request and response bodies.
+
+##### Request parameters
+
+| Field           | Type             | Example                       | Description                                                    |
+| :-------------- | :--------------- | :---------------------------- | :------------------------------------------------------------- |
+| `grant_type`    | String, required | `refresh_token`               | TThe type of OAuth grant. Always "refresh_token"               |
+| `client_id`     | String, required | `ownerapi`                    | The OAuth client ID. Always "ownerapi"                         |
+| `client_secret` | String, required | `123`                         | The OAuth client ID.                                           |
+| `refresh_token` | String, required | `123`                         | The refresh token from a prior authentication.                 |
+| `scope`         | String, required | `openid email offline_access` | The authentication scope. Always "openid email offline_access" |
+
+```json
+{
+  "grant_type": "authorization_code",
+  "client_id": "ownerapi",
+  "client_secret": "123",
+  "refresh_token": "eyJrefresh",
+  "scope": "openid email offline_access"
+}
+```
+
+##### Response
+
+```json
+{
+  "access_token": "eyJaccess",
+  "refresh_token": "eyJrefresh",
+  "id_token": "id",
+  "expires_in": 300,
+  "token_type": "Bearer"
+}
+```

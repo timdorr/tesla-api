@@ -1,7 +1,7 @@
 module TeslaApi
   module Stream
     def self.streaming_endpoint_url
-      'wss://streaming.vn.teslamotors.com/streaming/'
+      "wss://streaming.vn.teslamotors.com/streaming/"
     end
 
     def self.streaming_endpoint
@@ -19,16 +19,16 @@ module TeslaApi
           connection.write(streaming_connect_message)
           timeout = task.async(&on_timeout)
 
-          while message = connection.read
+          while (message = connection.read)
             timeout.stop
             timeout = task.async(&on_timeout)
 
             case message[:msg_type]
-            when 'data:update'
-              attributes = message[:value].split(',')
+            when "data:update"
+              attributes = message[:value].split(",")
 
               receiver.call({
-                time: DateTime.strptime((attributes[0].to_i/1000).to_s, '%s'),
+                time: DateTime.strptime((attributes[0].to_i / 1000).to_s, "%s"),
                 speed: attributes[1].to_f,
                 odometer: attributes[2].to_f,
                 soc: attributes[3].to_f,
@@ -42,7 +42,7 @@ module TeslaApi
                 est_range: attributes[11].to_f,
                 heading: attributes[12].to_f
               })
-            when 'data:error'
+            when "data:error"
               task.stop
             end
           end
@@ -56,10 +56,10 @@ module TeslaApi
 
     def streaming_connect_message
       {
-        msg_type: 'data:subscribe_oauth',
+        msg_type: "data:subscribe_oauth",
         token: client.access_token,
-        value: 'speed,odometer,soc,elevation,est_heading,est_lat,est_lng,power,shift_state,range,est_range,heading',
-        tag: self['vehicle_id'].to_s,
+        value: "speed,odometer,soc,elevation,est_heading,est_lat,est_lng,power,shift_state,range,est_range,heading",
+        tag: self["vehicle_id"].to_s
       }
     end
   end

@@ -32,5 +32,10 @@ jobs:
           ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: true
 
+      - name: Lint code
+        uses: andrewmcodes/standardrb-action@v0.0.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Run test suite
         run: bundle exec rake

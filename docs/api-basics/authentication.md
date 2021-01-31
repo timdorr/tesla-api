@@ -194,7 +194,7 @@ This endpoint uses JSON for the request and response bodies.
 
 ```json
 {
-  "grant_type": "authorization_code",
+  "grant_type": "refresh_token",
   "client_id": "ownerapi",
   "client_secret": "123",
   "refresh_token": "eyJrefresh",

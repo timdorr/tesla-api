@@ -84,7 +84,7 @@ return a generic set of codes related to a Model 3.
 | BTX5 | 75 kWh | | 
 | BTX6 | 100 kWh | | 
 | BTX7 | 75 kWh | | 
-| BTX8 | 85 kWh | | 
+| BTX8 | 75 kWh | | 
 | CC01 | Five Seat Interior | |
 | CC02 | Six Seat Interior | |
 | CC03 | Seven Seat Interior | | 

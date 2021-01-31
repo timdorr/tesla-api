@@ -14,7 +14,7 @@ Tesla uses a separate SSO service (auth.tesla.com) for authentication across the
 
 ### Step 1: Obtain the login page
 
-Subsequent requests to the SSO service will require a "code verifier" and "code challenge". These are just a random 86-character string and its SHA-256 hash encoded in URL-safe base64 (base64url). Here is an example of generating them in Ruby, but you can apply this same process to other languages.
+Subsequent requests to the SSO service will require a "code verifier" and "code challenge". These are a random 86-character alphanumeric string and its SHA-256 hash encoded in URL-safe base64 (base64url). Here is an example of generating them in Ruby, but you can apply this same process to other languages.
 
 ```ruby
 code_verifier = random_string(86)
@@ -186,7 +186,7 @@ This endpoint uses JSON for the request and response bodies.
 
 | Field           | Type             | Example                       | Description                                                    |
 | :-------------- | :--------------- | :---------------------------- | :------------------------------------------------------------- |
-| `grant_type`    | String, required | `refresh_token`               | The type of OAuth grant. Always "refresh_token"               |
+| `grant_type`    | String, required | `refresh_token`               | The type of OAuth grant. Always "refresh_token"                |
 | `client_id`     | String, required | `ownerapi`                    | The OAuth client ID. Always "ownerapi"                         |
 | `client_secret` | String, required | `123`                         | The OAuth client ID.                                           |
 | `refresh_token` | String, required | `123`                         | The refresh token from a prior authentication.                 |

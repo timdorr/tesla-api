@@ -242,9 +242,11 @@ return a generic set of codes related to a Model 3.
 | MTX08 | Performance | Model X | 
 | MTX10 | Long Range | Model X Refresh 2021 | 
 | MTX11 | Plaid | Model X Refresh 2021 | 
+| MTY01 | Standard Range Rear-Wheel Drive | Model Y |
 | MTY02 | Long Range Rear-Wheel Drive | Model Y |
 | MTY03 | Long Range All-Wheel Drive | Model Y |
 | MTY04 | Long Range All-Wheel Drive Performance | Model Y |
+| MTY05 | Long Range All-Wheel Drive Performance | Model Y |
 | OSSB | Safety CA Black | |
 | OSSW | Safety CA White | |
 | PA00 | No Paint Armor | | 

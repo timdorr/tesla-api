@@ -158,6 +158,7 @@ Authorization: Bearer {access_token}
   "grant_type": "urn:ietf:params:oauth:grant-type:jwt-bearer",
   "client_id": "abc",
   "client_secret": "123"
+}
 ```
 
 ##### Response

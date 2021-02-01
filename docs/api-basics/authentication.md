@@ -8,6 +8,8 @@ description: The authentication process for the Tesla API
 >
 > Tesla has deprecated the `/oauth/token` endpoint in favor of using `auth.tesla.com`. I'm working on updating the documentation as soon as possible. This documentation is still missing handling for MFA users. Feel free to discuss this in [issue #260](https://github.com/timdorr/tesla-api/issues/260).
 
+> Avoid setting your `User-Agent` to one that looks like a browser.  If Tesla detects this the first step can result in the request responding with a page of JS which hits a /TSPD/ endpoint instead of returning the auth form.
+
 Tesla uses a separate SSO service (auth.tesla.com) for authentication across their app and website. This service is designed around a browser-based flow using OAuth 2.0, but also appears to have support for Open ID Connect. This supports both obtaining an access token and refreshing it as it expires.
 
 ## Logging in

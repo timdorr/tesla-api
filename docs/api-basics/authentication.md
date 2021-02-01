@@ -23,6 +23,8 @@ code_challenge = Base64.urlsafe_encode64(Digest::SHA256.hexdigest(code_verifier)
 
 You will also need a stable `state` value for requests, which is a random string of any length.
 
+Avoid setting a `User-Agent` header that looks like a browser (such as Chrome or Safari). The SSO service has protections in place that will require executing JavaScript if a browser-like user agent is detected. 
+
 #### GET `https://auth.tesla.com/oauth2/v3/authorize`
 
 The first request returns HTML intended for display in the browser. You will need to parse this HTML for hidden input fields.

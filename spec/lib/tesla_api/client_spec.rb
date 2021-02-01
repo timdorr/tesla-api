@@ -47,6 +47,23 @@ RSpec.describe TeslaApi::Client do
         tesla_api.login!(ENV["TESLA_PASS"])
         expect(tesla_api.expired?).to eq(false)
       end
+
+      describe "with MFA enabled", vcr: {
+        cassette_name: "client-login-mfa",
+        match_requests_on: [
+          :method,
+          VCR.request_matchers.uri_without_params(:code_challenge, :state)
+        ]
+      } do
+        it "logs into the API" do
+          tesla_api.login!(ENV["TESLA_PASS"], mfa_code: "123456")
+          expect(a_request(:post, "https://#{URI.parse(TeslaApi::Client::BASE_URI).host}/oauth/token")).to have_been_made.once
+        end
+
+        it "requires an MFA code" do
+          expect { tesla_api.login!(ENV["TESLA_PASS"]) }.to raise_error(TeslaApi::MFARequired)
+        end
+      end
     end
   end
 

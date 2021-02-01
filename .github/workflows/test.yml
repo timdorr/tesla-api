@@ -33,9 +33,7 @@ jobs:
           bundler-cache: true
 
       - name: Lint code
-        uses: andrewmcodes/standardrb-action@v0.0.2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bundle exec standardrb
 
       - name: Run test suite
         run: bundle exec rake

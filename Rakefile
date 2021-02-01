@@ -17,10 +17,16 @@ task :console do
   Dotenv.load!
 
   # Set up a global client
+  require "rotp"
+
+  def mfa_code
+    ROTP::TOTP.new(ENV["TESLA_TOTP"]).now
+  end
+
   def client
     @client ||= begin
       client = TeslaApi::Client.new(email: ENV["TESLA_EMAIL"])
-      client.login!(ENV["TESLA_PASS"])
+      client.login!(ENV["TESLA_PASS"], mfa_code: mfa_code)
       client
     end
   end

@@ -64,6 +64,22 @@ RSpec.describe TeslaApi::Client do
           expect { tesla_api.login!(ENV["TESLA_PASS"]) }.to raise_error(TeslaApi::MFARequired)
         end
       end
+
+      describe "with an invalid MFA passcode", vcr: {
+        cassette_name: "client-login-mfa-invalid",
+        match_requests_on: [
+          :method,
+          VCR.request_matchers.uri_without_params(:code_challenge, :state)
+        ]
+      } do
+        it "requires a valid MFA code" do
+          expect { tesla_api.login!(ENV["TESLA_PASS"], mfa_code: "123456") }.to raise_error(TeslaApi::MFAInvalidPasscode)
+        end
+
+        it "requires a correctly formatted MFA code" do
+          expect { tesla_api.login!(ENV["TESLA_PASS"], mfa_code: "lolwut") }.to raise_error(TeslaApi::MFAInvalidPasscode)
+        end
+      end
     end
   end
 

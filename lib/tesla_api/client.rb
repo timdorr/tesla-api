@@ -100,6 +100,7 @@ module TeslaApi
 
       if response.body.match?(/passcode/)
         raise MFARequired if mfa_code.nil?
+        raise MFAInvalidPasscode unless mfa_code.to_s.match?(/^\d{6}$/)
 
         factors = @api.get(
           @sso_uri + "/oauth2/v3/authorize/mfa/factors",
@@ -109,7 +110,7 @@ module TeslaApi
           "Cookie" => cookie
         ).body
 
-        @api.post(
+        response = @api.post(
           @sso_uri + "/oauth2/v3/authorize/mfa/verify",
           {
             factor_id: factors.dig("data", 0, "id"),
@@ -117,7 +118,9 @@ module TeslaApi
             transaction_id: transaction_id
           },
           "Cookie" => cookie
-        )
+        ).body
+
+        raise MFAInvalidPasscode unless response.dig("data", "valid")
 
         response = Faraday.post(
           @sso_uri + "/oauth2/v3/authorize?" + URI.encode_www_form({
@@ -190,6 +193,7 @@ module TeslaApi
     end
   end
 
-  class MFARequired < StandardError
-  end
+  class MFARequired < StandardError; end
+
+  class MFAInvalidPasscode < StandardError; end
 end

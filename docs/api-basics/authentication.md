@@ -83,7 +83,7 @@ Cookie: {cookie value from set-cookie header}
 
 ##### Response
 
-This will respond with a 302 HTTP response code, which will attempt to redirect to the redirect_uri with additional query parameters added. This new URL is located in the `location` header. You should not follow it, as it is non-existent. Instead, you should parse this URL and extract the `code` query parameter, which is your authorization code.
+When your Tesla account is not yet enabled with Multi-Factor Authentication (MFA) this will respond with a 302 HTTP response code, which will attempt to redirect to the redirect_uri with additional query parameters added. This new URL is located in the `location` header. You should not follow it, as it is non-existent. Instead, you should parse this URL and extract the `code` query parameter, which is your authorization code.
 
 ```http
 Location: https://auth.tesla.com/void/callback?code=c7dc7f8196d001632558d6632558d6243632558d6b6d60f82c0632558d67&state=aGZzZGpzZnNk&issuer=https%3A%2F%2Fauth.tesla.com%2Foauth2%2Fv3

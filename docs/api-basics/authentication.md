@@ -195,7 +195,6 @@ This endpoint uses JSON for the request and response bodies.
 | :-------------- | :--------------- | :---------------------------- | :------------------------------------------------------------- |
 | `grant_type`    | String, required | `refresh_token`               | The type of OAuth grant. Always "refresh_token"                |
 | `client_id`     | String, required | `ownerapi`                    | The OAuth client ID. Always "ownerapi"                         |
-| `client_secret` | String, required | `123`                         | The OAuth client ID.                                           |
 | `refresh_token` | String, required | `123`                         | The refresh token from a prior authentication.                 |
 | `scope`         | String, required | `openid email offline_access` | The authentication scope. Always "openid email offline_access" |
 
@@ -203,7 +202,6 @@ This endpoint uses JSON for the request and response bodies.
 {
   "grant_type": "refresh_token",
   "client_id": "ownerapi",
-  "client_secret": "123",
   "refresh_token": "eyJrefresh",
   "scope": "openid email offline_access"
 }

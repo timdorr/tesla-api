@@ -84,11 +84,11 @@ The `heater` parameter maps to the following seats:
 
 | Number | Seat        |
 | :----- | :---------- |
-| 0      | Driver (Passenger in right-side steering vehicles) |
-| 1      | Passenger (Driver in left-side steering vehicles)  |
-| 2      | Rear left                                          |
-| 4      | Rear center                                        |
-| 5      | Rear right                                         |
+| 0      | Front Left  |
+| 1      | Front right |
+| 2      | Rear left   |
+| 4      | Rear center |
+| 5      | Rear right  |
 
 ### Response
 

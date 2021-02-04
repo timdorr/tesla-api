@@ -4,7 +4,7 @@ Valet Mode limits the car's top speed to 70MPH and 80kW of acceleration power. I
 Wifi settings, and the ability to disable mobile access to the car. It also hides your favorites, home, and work
 locations in navigation.
 
-Note: the `password` parameter isn't required to turn on or off Valet Mode, even with a previous PIN set. If you clear the PIN and activate Valet Mode without the parameter, you will only be able to deactivate it from your car's screen by signing into your Tesla account. 
+Note: the `password` parameter isn't required to turn on or off Valet Mode, even with a previous PIN set. If you clear the PIN and activate Valet Mode without the parameter, you will only be able to deactivate it from your car's screen by signing into your Tesla account.
 
 ## POST `/api/1/vehicles/{id}/command/set_valet_mode`
 

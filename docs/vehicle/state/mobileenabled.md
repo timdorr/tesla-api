@@ -11,4 +11,3 @@ Lets you know if the Mobile Access setting is enabled in the car.
   "response": true
 }
 ```
-

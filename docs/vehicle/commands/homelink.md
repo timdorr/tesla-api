@@ -8,7 +8,7 @@ Opens or closes the primary Homelink device. The provided location must be in pr
 
 | Parameter | Example            | Description        |
 | :-------- | :----------------- | :----------------- |
-| lat       | 36.98765432109876  | Current latitude. |
+| lat       | 36.98765432109876  | Current latitude.  |
 | lon       | -77.12345678901234 | Current longitude. |
 
 ### Response

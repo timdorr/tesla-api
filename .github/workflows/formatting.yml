@@ -1,0 +1,26 @@
+name: Formatting
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - docs/**
+  pull_request:
+    branches: [master]
+    paths:
+      - docs/**
+
+jobs:
+  test:
+    name: Check docs formatting
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Check formatting
+        uses: creyD/prettier_action@v3.3
+        with:
+          prettier_options: --write docs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

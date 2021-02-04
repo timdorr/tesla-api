@@ -23,4 +23,3 @@ Streams in data about the car's telemetry at up to half second increments. The u
 ### Autopark ("Summon")
 
 A streaming command mode to control the automatic parking of HW1 (Autopilot v1) and HW2/HW2.5 (Autopilot v2) cars. This API uses a standard WebSocket that exchanges JSON objects to convey state information and issue commands during the Autopark session.
-

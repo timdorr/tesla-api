@@ -50,6 +50,7 @@ return a generic set of codes related to a Model 3.
 | APF1    | Autopilot Firmware 2.0 Enhanced                           |                                                           |
 | APFB    | Full Self-Driving Hardware                                | Car has FSD hardware, but sofware option is not purchased |
 | APF2    | Full Self-Driving Hardware (Activated)                    | Car has active FSD software purchase                      |
+| APPB    | Enhanced Autopilot                                        | Navigate on Autopilot, Auto Lane Change, Autopark, Summon |
 | APH1    | Hardware 1.0                                              |                                                           |
 | APH2    | Hardware 2.0                                              |                                                           |
 | APH3    | Hardware 2.5                                              |                                                           |
@@ -223,7 +224,7 @@ return a generic set of codes related to a Model 3.
 | MT316   | Long Range All-Wheel Drive                                | Model 3 2021 Refresh                                      |
 | MT317   | Long Range All-Wheel Drive Performance                    | Model 3 2021 Refresh                                      |
 | MTS01   | Standard Range                                            | Model S                                                   |
-| MTS03   | Long Range                                                |  Model S                                                  |
+| MTS03   | Long Range                                                | Model S                                                   |
 | MTS04   | Performance                                               | Model S                                                   |
 | MTS05   | Long Range                                                | Model S                                                   |
 | MTS06   | Performance                                               | Model S                                                   |

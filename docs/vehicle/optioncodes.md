@@ -13,7 +13,7 @@ appreciated!_
 return a generic set of codes related to a Model 3.
 
 | Code    | Title                                                     | Description                                               |
-| :------ | :-------------------------------------------------------- | :-------------------------------------------------------- | ------- |
+| :------ | :-------------------------------------------------------- | :-------------------------------------------------------- | 
 | MDLS    | Model S                                                   | This vehicle is a Model S                                 |
 | MS03    | Model S                                                   | This vehicle is a Model S                                 |
 | MS04    | Model S                                                   | This vehicle is a Model S                                 |
@@ -131,7 +131,7 @@ return a generic set of codes related to a Model 3.
 | FG00    | No Exterior Lighting Package                              |                                                           |
 | FG01    | Fog Lamps                                                 | Exterior Lighting Package                                 |
 | FG02    | Fog Lamps                                                 | Fog Lamps                                                 |
-| FG31    | Fog Lamps                                                 | Premium Fog Lights                                        | Model 3 |
+| FG31    | Fog Lamps                                                 | Model Premium Fog Lights                                  |
 | FM3B    | Performance Package                                       | Model 3                                                   |
 | FM3U    | Acceleration Boost                                        | Model 3 Long Range All-Wheel Drive                        |
 | FMP6    | Performance Firmware                                      |                                                           |

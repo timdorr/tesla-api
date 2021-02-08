@@ -13,7 +13,7 @@ appreciated!_
 return a generic set of codes related to a Model 3.
 
 | Code    | Title                                                     | Description                                               |
-| :------ | :-------------------------------------------------------- | :-------------------------------------------------------- | 
+| :------ | :-------------------------------------------------------- | :-------------------------------------------------------- |
 | MDLS    | Model S                                                   | This vehicle is a Model S                                 |
 | MS03    | Model S                                                   | This vehicle is a Model S                                 |
 | MS04    | Model S                                                   | This vehicle is a Model S                                 |

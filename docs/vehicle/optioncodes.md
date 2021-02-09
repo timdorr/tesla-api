@@ -178,7 +178,8 @@ return a generic set of codes related to a Model 3.
 | INYPB  | All Black Premium Interior                               |                                                           |
 | INYPW  | Black and White Premium Interior                         |                                                           |
 | IL31   | Interior Ambient Lighting Interior                       |                                                           |
-| IPB0   | Black Interior                                           | Model 3 Interior                                          |
+| IPB0   | Black Interior                                           | Model 3 Interior (Left Hand Drive)                        |
+| IPB1   | Black Interior                                           | Model 3 Interior (Right Hand Drive)                       |
 | IVBPP  | All Black Interior                                       |                                                           |
 | IVBSW  | Ultra White Interior                                     |                                                           |
 | IVBTB  | All Black Interior                                       |                                                           |

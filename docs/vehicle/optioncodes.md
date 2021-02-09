@@ -146,6 +146,8 @@ return a generic set of codes related to a Model 3.
 | HL31    | Head Lamp                                                 | Model 3 Uplevel Headlamps                                 |
 | HP00    | No HPWC Ordered                                           |                                                           |
 | HP01    | HPWC Ordered                                              |                                                           |
+| IBB0    | All Black Interior                                        | Model 3 Interior (Left Hand Drive)                        |
+| IBB1    | All Black Interior                                        | Model 3 Interior (Right Hand Drive)                       |
 | ID3W    | Wood Decor                                                | Model 3                                                   |
 | IDBA    | Dark Ash Wood Decor                                       |                                                           |
 | IDBO    | Figured Ash Wood Decor                                    |                                                           |
@@ -161,8 +163,8 @@ return a generic set of codes related to a Model 3.
 | IN3PB   | All Black Premium Interior                                | Model 3 Interior                                          |
 | IN3PW   | All White Premium Interior                                | Model 3 Interior                                          |
 | INBBW   | White Interior                                            |                                                           |
-|  INB3C  |  Premium beige interior with oak wood finishes            | Model X                                                   |
-|  INBC3W |  Premium black and white interior with Carbon Fiber decor | Model X                                                   |
+| INB3C   |  Premium beige interior with oak wood finishes            | Model X                                                   |
+| INBC3W  |  Premium black and white interior with Carbon Fiber decor | Model X                                                   |
 | INBFP   | Classic Black Interior                                    |                                                           |
 | INBPP   | Black Interior                                            |                                                           |
 | INBPW   | White Seats Interior                                      |                                                           |

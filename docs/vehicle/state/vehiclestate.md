@@ -8,17 +8,17 @@ For the trunk (rt) and frunk (ft) fields, you should interpret a zero (0) value 
 
 Here are the currently known values for the `center_display_state` field:
 
-| State | Description     |
-| ----- | --------------- |
-| 0     | Off             |
-| 2     | On, standby or Camp Mode       |
-| 3     | On, charging screen |
-| 4     | On |
-| 5     | On, Big charging screen    |
-| 6     | On, Ready to unlock     |
-| 7     | Sentry Mode     |
-| 8     | Dog Mode        |
-| 9     | Media        |
+| State | Description              |
+| ----- | ------------------------ |
+| 0     | Off                      |
+| 2     | On, standby or Camp Mode |
+| 3     | On, charging screen      |
+| 4     | On                       |
+| 5     | On, Big charging screen  |
+| 6     | On, Ready to unlock      |
+| 7     | Sentry Mode              |
+| 8     | Dog Mode                 |
+| 9     | Media                    |
 
 Here are the descriptions for the shorthand fields:
 

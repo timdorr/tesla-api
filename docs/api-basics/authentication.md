@@ -46,12 +46,15 @@ The request is made with a `redirect_url` of "https://auth.tesla.com/void/callba
 | `response_type`         | String, required | `code`                                 | The type of expected response. Always "code"                    |
 | `scope`                 | String, required | `openid email offline_access`          | The authentication scope. Always "openid email offline_access"  |
 | `state`                 | String, required | `123`                                  | The OAuth state value. Any random string.                       |
+| `login_hint`            | String, optional | `elon@tesla.com`                       | The email for the authenticating Tesla account                  |
 
 ##### Response
 
 This returns an HTML response body. There will be a `<form>` with hidden `<input>` elements that contain session-based information to prevent CSRF attacks. At the moment, they appear to be `_csrf`, `_phase`, `_process`, `transaction_id`, and `cancel`, but they may change due to server-side changes by Tesla. These must be provided in the POST body to validate the following request.
 
 The response will also include a `set-cookie` header that includes a session ID cookie. This should be provided to the following request as a `Cookie` header so that the SSO service can match up your request with private data it has in that session.
+
+When the optional `login_hint` parameter is supplied with the `GET` request and the email is registered with a Tesla SSO service in another region this will respond with a 303 HTTP response code (See Other), which will redirect you to the Tesla SSO service in that region (e.g. auth.tesla.cn). Should this redirect happen you should continue using the region specific Tesla SSO host name in all subsequent steps. Easy way to test this is to use `auth.tesla.cn` with `login_hint` using an email registered under `auth.tesla.com`.
 
 ### Step 2: Obtain an authorization code
 
@@ -192,6 +195,8 @@ This uses the SSO `refresh_token` from Step 3 above to do an [OAuth 2.0 Refresh 
 This refreshed access token can be used with the Owner API to obtain a new access token for that service using the exact same request as Step 4 above.
 
 This endpoint uses JSON for the request and response bodies.
+
+Should your Owner API token begin with `cn-` you should POST to `auth.tesla.cn` Tesla SSO service to have it refresh. Owner API tokens starting with `qts-` are to be refreshed using `auth.tesla.com`
 
 ##### Request parameters
 

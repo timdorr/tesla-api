@@ -196,7 +196,7 @@ This refreshed access token can be used with the Owner API to obtain a new acces
 
 This endpoint uses JSON for the request and response bodies.
 
-Should your Owner API token begin with `cn-` you should POST to `auth.tesla.cn` Tesla SSO service to have it refresh. Owner API tokens starting with `qts-` are to be refreshed using `auth.tesla.com`
+Should your Owner API token begin with `cn-`, you should POST to the `auth.tesla.com` Tesla SSO service to have it refresh. Existing owner API tokens starting with `qts-` should be refreshed from `owner-api.teslamotors.com`.
 
 ##### Request parameters
 

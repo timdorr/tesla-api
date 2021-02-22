@@ -9,8 +9,12 @@ edit this page and submit a_
 [_pull request_](https://github.com/timdorr/tesla-api/pulls)_. It is much
 appreciated!_
 
-**As of August 2019, Option Codes cannot be relied on.** Vehicles now
+**As of August 2019, Option Codes API cannot be relied on.** Vehicles now
 return a generic set of codes related to a Model 3.
+
+You can find the option codes by logging into your Tesla account on the Tesla web site, 'manage' your car, right click the image of your car, and select "Copy image address...". The copied link includes a list of option codes.
+
+This list can also be found on the https://www.tesla.com/teslaaccount/ownership-api/vehicle-details?rn=RNxxxxxx API, by parsing the details.image response field.
 
 | Code   | Title                                                    | Description                                               |
 | :----- | :------------------------------------------------------- | :-------------------------------------------------------- |

@@ -5,6 +5,8 @@ module TeslaApi
     BASE_URI = "https://owner-api.teslamotors.com"
     SSO_URI = "https://auth.tesla.com"
 
+    DEFAULT_HEADERS = {"User-Agent" => "github.com/timdorr/tesla-api v:#{VERSION}"}
+
     def initialize(
       email: nil,
       access_token: nil,
@@ -31,7 +33,7 @@ module TeslaApi
       @api = Faraday.new(
         @base_uri + "/api/1",
         {
-          headers: {"User-Agent" => "github.com/timdorr/tesla-api v:#{VERSION}"}
+          headers: DEFAULT_HEADERS
         }.merge(client_options)
       ) { |conn|
         # conn.response :logger, nil, { headers: true, bodies: true }
@@ -74,7 +76,8 @@ module TeslaApi
           response_type: "code",
           scope: "openid email offline_access",
           state: state
-        }
+        },
+        DEFAULT_HEADERS
       )
 
       cookie = response.headers["set-cookie"].split(" ").first
@@ -95,7 +98,7 @@ module TeslaApi
           "identity" => email,
           "credential" => password
         )),
-        "Cookie" => cookie
+        {"Cookie" => cookie}.merge(DEFAULT_HEADERS)
       )
 
       if response.body.match?(/passcode/)
@@ -133,7 +136,7 @@ module TeslaApi
             state: state
           }),
           URI.encode_www_form({"transaction_id" => transaction_id}),
-          "Cookie" => cookie
+          {"Cookie" => cookie}.merge(DEFAULT_HEADERS)
         )
       end
 

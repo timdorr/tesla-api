@@ -343,9 +343,10 @@ return a generic set of codes related to a Model 3.
 | S3PW   | Seat White PUR Premium Seats                             |                                                           |
 | SA3P   | Seat Adjustment - Power                                  | Model 3                                                   |
 | SC00   | No Supercharging                                         |                                                           |
-| SC01   | Supercharging Enabled                                    |                                                           |
+| SC01   | Unlimited Free Supercharging Enabled                     | Transfers to the next owner via private sale              |
 | SC04   | Pay Per Use Supercharging                                |                                                           |
-| SC05   | Free Supercharging                                       |                                                           |
+| SC05   | Unlimited Free Supercharging Currently Enabled           | Not transferable to the next owner                        |
+| SC06   | Time Bound Unlimited Free Supercharging                  |                                                           |
 | SLR0   | No Rear Spoiler                                          |                                                           |
 | SP00   | No Security Package                                      |                                                           |
 | SP01   | Security Package                                         |                                                           |

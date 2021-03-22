@@ -5,7 +5,7 @@ module TeslaApi
     BASE_URI = "https://owner-api.teslamotors.com"
     SSO_URI = "https://auth.tesla.com"
 
-    DEFAULT_HEADERS = {"User-Agent" => "github.com/timdorr/tesla-api v:#{VERSION}"}
+    DEFAULT_HEADERS = {"X-User-Agent" => "github.com/timdorr/tesla-api v:#{VERSION}"}
 
     def initialize(
       email: nil,

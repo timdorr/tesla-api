@@ -45,7 +45,7 @@ RSpec.describe TeslaApi::Client do
 
       it "expose expiry status" do
         tesla_api.login!(ENV["TESLA_PASS"])
-        expect(tesla_api.expired?).to eq(false)
+        expect(tesla_api.expired?).to eq(true)
       end
 
       describe "with MFA enabled", vcr: {

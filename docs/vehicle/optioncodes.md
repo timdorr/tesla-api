@@ -104,15 +104,21 @@ return a generic set of codes related to a Model 3.
 | COL3   | Tesla Multi-Coat                                         |                                                           |
 | COAT   | Country: Austria                                         |                                                           |
 | COBE   | Country: Belgium                                         |                                                           |
+| COCH   | Country: Switzerland                                     |                                                           |
 | CODE   | Country: Germany                                         |                                                           |
+| CODK   | Country: Denmark                                         |                                                           |
 | COES   | Country: Spain                                           |                                                           |
 | COFI   | Country: Finland                                         |                                                           |
 | COFR   | Country: France                                          |                                                           |
+| COGB   | Country: Great Britain                                   |                                                           |
+| COHR   | Country: Croatia                                         |                                                           |
 | COIE   | Country: Ireland                                         |                                                           |
 | COIT   | Country: Italy                                           |                                                           |
 | COLU   | Country: Luxembourg                                      |                                                           |
 | CONL   | Country: Netherlands                                     |                                                           |
+| CONO   | Country: Norway                                          |                                                           |
 | COPT   | Country: Portugal                                        |                                                           |
+| COSE   | Country: Sweden                                          |                                                           |
 | COUS   | Country: United States                                   |                                                           |
 | CPF0   | Standard Connectivity                                    |                                                           |
 | CPF1   | Premium Connectivity                                     |                                                           |

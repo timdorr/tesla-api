@@ -102,11 +102,17 @@ return a generic set of codes related to a Model 3.
 | COL1   | Solid                                                    |                                                           |
 | COL2   | Metallic                                                 |                                                           |
 | COL3   | Tesla Multi-Coat                                         |                                                           |
+| COAT   | Country: Austria                                         |                                                           |
 | COBE   | Country: Belgium                                         |                                                           |
 | CODE   | Country: Germany                                         |                                                           |
 | COES   | Country: Spain                                           |                                                           |
+| COFI   | Country: Finland                                         |                                                           |
 | COFR   | Country: France                                          |                                                           |
+| COIE   | Country: Ireland                                         |                                                           |
+| COIT   | Country: Italy                                           |                                                           |
+| COLU   | Country: Luxembourg                                      |                                                           |
 | CONL   | Country: Netherlands                                     |                                                           |
+| COPT   | Country: Portugal                                        |                                                           |
 | COUS   | Country: United States                                   |                                                           |
 | CPF0   | Standard Connectivity                                    |                                                           |
 | CPF1   | Premium Connectivity                                     |                                                           |

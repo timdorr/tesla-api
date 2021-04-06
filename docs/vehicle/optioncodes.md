@@ -237,6 +237,7 @@ return a generic set of codes related to a Model 3.
 | MT311  | Long Range All-Wheel Drive Performance                   | Model 3                                                   |
 | MT315  | Long Range All-Wheel Drive                               | Model 3 2021 Refresh                                      |
 | MT316  | Long Range All-Wheel Drive                               | Model 3 2021 Refresh                                      |
+| MT321  | Long Range All-Wheel Drive                               | Model 3 2021 Refresh                                      |
 | MT317  | Long Range All-Wheel Drive Performance                   | Model 3 2021 Refresh                                      |
 | MTS01  | Standard Range                                           | Model S                                                   |
 | MTS03  | Long Range                                               | Model S                                                   |

@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rspec", "~> 3.1"
   spec.add_development_dependency "rotp", "~> 6.2"
-  spec.add_development_dependency "standard", "~> 0.12"
+  spec.add_development_dependency "standard", "~> 1.0"
   spec.add_development_dependency "vcr", "~> 6.0"
   spec.add_development_dependency "webmock", "~> 3.0"
   spec.add_development_dependency "dotenv", "~> 2.0"

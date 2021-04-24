@@ -68,18 +68,6 @@ Cookie: {cookie value from set-cookie header}
 
 ##### Request parameters
 
-> Note: These are query parameters, not part of the POST body
-
-| Field                   | Type             | Example                                | Description                                                     |
-| :---------------------- | :--------------- | :------------------------------------- | :-------------------------------------------------------------- |
-| `client_id`             | String, required | `ownerapi`                             | The OAuth client ID. Always "ownerapi"                          |
-| `code_challenge`        | String, required | `123`                                  | The "code challenge"                                            |
-| `code_challenge_method` | String, required | `S256`                                 | The code challenge hash method. Always "S256" (SHA-256)         |
-| `redirect_uri`          | String, required | `https://auth.tesla.com/void/callback` | The redirect URL. Always "https://auth.tesla.com/void/callback" |
-| `response_type`         | String, required | `code`                                 | The type of expected response. Always "code"                    |
-| `scope`                 | String, required | `openid email offline_access`          | The authentication scope. Always "openid email offline_access"  |
-| `state`                 | String, required | `123`                                  | The OAuth state value. Any random string.                       |
-
 > Note: This is the contents of the POST body. These should be form encoded (`application/x-www-form-urlencoded`).
 
 | Field              | Type               | Example             | Description                                       |

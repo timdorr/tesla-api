@@ -153,8 +153,8 @@ return a generic set of codes related to a Model 3.
 | HL31   | Head Lamp                                                | Model 3 Uplevel Headlamps                                 |
 | HP00   | No HPWC Ordered                                          |                                                           |
 | HP01   | HPWC Ordered                                             |                                                           |
-| IBB0   | All Black Interior                                       | Model 3 Interior (Left Hand Drive)                        |
-| IBB1   | All Black Interior                                       | Model 3 Interior (Right Hand Drive)                       |
+| IBB0   | All Black Interior                                       | Model 3 Old Door Trim                                     |
+| IBB1   | All Black Interior                                       | Model 3 New Door Trim (Since Q1 2021)                     |
 | ID3W   | Wood Decor                                               | Model 3                                                   |
 | IDBA   | Dark Ash Wood Decor                                      |                                                           |
 | IDBO   | Figured Ash Wood Decor                                   |                                                           |
@@ -166,8 +166,8 @@ return a generic set of codes related to a Model 3.
 | IDLW   | Lacewood Decor                                           |                                                           |
 | IDPB   | Piano Black Decor                                        |                                                           |
 | IN3BB  | All Black Partial Premium Interior                       |                                                           |
-| IBW0   | Black and White Interior                                 | Model 3 Interior (Left Hand Drive)                        |
-| IBW1   | Black and White Interior                                 | Model 3 Interior (Right Hand Drive)                       |
+| IBW0   | Black and White Interior                                 | Model 3 Old Door Trim                                     |
+| IBW1   | Black and White Interior                                 | Model 3 New Door Trim (Since Q1 2021)                     |
 | IN3BW  | Black and White Interior                                 | Model 3 Interior                                          |
 | IN3PB  | All Black Premium Interior                               | Model 3 Interior                                          |
 | IN3PW  | All White Premium Interior                               | Model 3 Interior                                          |

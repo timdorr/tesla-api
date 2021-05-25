@@ -64,6 +64,7 @@ module TeslaApi
 
       sso_api = Faraday.new(@sso_uri + "/oauth2/v3", ssl: {version: :TLSv1_2}) { |conn|
         # conn.response :logger, nil, {headers: true, bodies: true}
+        conn.adapter Faraday.default_adapter
       }
 
       response = sso_api.get(

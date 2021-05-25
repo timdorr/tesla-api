@@ -81,7 +81,7 @@ module TeslaApi
       )
 
       cookie = response.headers["set-cookie"].split(" ").first
-      parameters = Hash[response.body.scan(/type="hidden" name="(.*?)" value="(.*?)"/)]
+      parameters = response.body.scan(/type="hidden" name="(.*?)" value="(.*?)"/).to_h
       transaction_id = parameters["transaction_id"]
 
       response = sso_api.post(

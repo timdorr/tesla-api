@@ -72,6 +72,7 @@ return a generic set of codes related to a Model 3.
 | BS01   | Special Production Flag                                  |                                                           |
 | BT37   | 75 kWh (Model 3)                                         |                                                           |
 | BT40   | 40 kWh                                                   |                                                           |
+| BT42   | 82 kWh (Model 3)                                         | M3P (and some latest LR) 2021 model year                  |
 | BT60   | 60 kWh                                                   |                                                           |
 | BT70   | 70 kWh                                                   |                                                           |
 | BT85   | 85 kWh                                                   |                                                           |
@@ -151,8 +152,10 @@ return a generic set of codes related to a Model 3.
 | HC01   | Home Charging Installation                               |                                                           |
 | HM31   | Teck Package - Homelink                                  | Homelink                                                  |
 | HL31   | Head Lamp                                                | Model 3 Uplevel Headlamps                                 |
+| HL32   | M3 Matrix Headlights 2021                                | Model 3 2021 Uplevel Headlamps                            |
 | HP00   | No HPWC Ordered                                          |                                                           |
 | HP01   | HPWC Ordered                                             |                                                           |
+| HP31   | Heat Pump Heat pump assembly                             | Model 3                                                   |
 | IBB0   | All Black Interior                                       | Model 3 Old Door Trim                                     |
 | IBB1   | All Black Interior                                       | Model 3 New Door Trim (Since Q1 2021)                     |
 | ID3W   | Wood Decor                                               | Model 3                                                   |
@@ -364,6 +367,7 @@ return a generic set of codes related to a Model 3.
 | ST00   | Non-leather Steering Wheel                               |                                                           |
 | ST01   | Non-heated Leather Steering Wheel                        |                                                           |
 | ST31   | Steering Wheel                                           | Premium Steering Wheel                                    |
+| ST33   | Steering wheel - heated on LR/P (Model 3)                | Premium Steering Wheel                                    |
 | STCP   | Steering Wheel                                           | Steering Column (Power)                                   |
 | STY5S  | Five Seat Interior                                       |                                                           |
 | STY7S  | Seven Seat Interior                                      |                                                           |

@@ -72,7 +72,7 @@ return a generic set of codes related to a Model 3.
 | BS01   | Special Production Flag                                  |                                                           |
 | BT37   | 75 kWh (Model 3)                                         |                                                           |
 | BT40   | 40 kWh                                                   |                                                           |
-| BT42   | 82 kWh (Model 3)                                         |  Model 3 Performance (and some latest LR) update for 2021 model year includes a new 82kwh battery, up from the previous 75kwh .                                                 |
+| BT42   | 82 kWh (Model 3)                                         |  M3P (and some latest LR) 2021 model year                 |
 
 | BT60   | 60 kWh                                                   |                                                           |
 | BT70   | 70 kWh                                                   |                                                           |

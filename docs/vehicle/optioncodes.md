@@ -71,8 +71,9 @@ return a generic set of codes related to a Model 3.
 | BS00   | Blind Spot Sensor Package                                |                                                           |
 | BS01   | Special Production Flag                                  |                                                           |
 | BT37   | 75 kWh (Model 3)                                         |                                                           |
+| BT38   | ?? kWh (Model 3)                                         | M3LR build in China                                       |
 | BT40   | 40 kWh                                                   |                                                           |
-| BT42   | 82 kWh (Model 3)                                         | M3P (and some latest LR) 2021 model year                  |
+| BT42   | 82 kWh (Model 3)                                         | M3P (and latest LR 940xxx+) 2021 model year               |
 | BT60   | 60 kWh                                                   |                                                           |
 | BT70   | 70 kWh                                                   |                                                           |
 | BT85   | 85 kWh                                                   |                                                           |

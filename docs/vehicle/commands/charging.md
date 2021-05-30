@@ -4,7 +4,7 @@ Commands related to the charging of the vehicle.
 
 ## POST `/api/1/vehicles/{id}/command/charge_port_door_open`
 
-Opens the charge port.
+Opens the charge port or unlocks the cable.
 
 ### Response
 

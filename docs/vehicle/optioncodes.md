@@ -159,8 +159,6 @@ return a generic set of codes related to a Model 3.
 | HP31   | Heat Pump Heat pump assembly                             | Model 3                                                   |
 | IBB0   | All Black Interior                                       | Model 3 Old Door Trim                                     |
 | IBB1   | All Black Interior                                       | Model 3 New Door Trim (Since Q1 2021)                     |
-| IBE00  | Wood Décor                                               | Model S Refresh 2021                                      |
-| IBC00  | Carbon Fiber Décor                                       | Model S Refresh 2021                                      |
 | ID3W   | Wood Decor                                               | Model 3                                                   |
 | IDBA   | Dark Ash Wood Decor                                      |                                                           |
 | IDBO   | Figured Ash Wood Decor                                   |                                                           |
@@ -177,6 +175,12 @@ return a generic set of codes related to a Model 3.
 | IN3BW  | Black and White Interior                                 | Model 3 Interior                                          |
 | IN3PB  | All Black Premium Interior                               | Model 3 Interior                                          |
 | IN3PW  | All White Premium Interior                               | Model 3 Interior                                          |
+| IBE00  | Wood Décor & Black Interior                              | Model S Refresh 2021                                      |
+| ICW00  | Wood Décor & Cream Interior                              | Model S Refresh 2021                                      |
+| IWW00  | Wood Décor & Black and White Interior                    | Model S Refresh 2021                                      |
+| IBC00  | Carbon Fiber Décor & Black Interior                      | Model S Refresh 2021                                      |
+| IWC00  | Carbon Fiber Décor & Black and White Interior            | Model S Refresh 2021                                      |
+| ICC00  | Carbon Fiber Décor & Cream Interior                      | Model S Refresh 2021                                      |
 | INBBW  | White Interior                                           |                                                           |
 | INB3C  | Premium beige interior with oak wood finishes            | Model X                                                   |
 | INBC3W | Premium black and white interior with Carbon Fiber decor | Model X                                                   |

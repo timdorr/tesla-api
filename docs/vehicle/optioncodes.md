@@ -159,6 +159,8 @@ return a generic set of codes related to a Model 3.
 | HP31   | Heat Pump Heat pump assembly                             | Model 3                                                   |
 | IBB0   | All Black Interior                                       | Model 3 Old Door Trim                                     |
 | IBB1   | All Black Interior                                       | Model 3 New Door Trim (Since Q1 2021)                     |
+| IBE00  | Wood Décor                                               | Model S Refresh 2021                                      |
+| IBC00  | Carbon Fiber Décor                                       | Model S Refresh 2021                                      |
 | ID3W   | Wood Decor                                               | Model 3                                                   |
 | IDBA   | Dark Ash Wood Decor                                      |                                                           |
 | IDBO   | Figured Ash Wood Decor                                   |                                                           |

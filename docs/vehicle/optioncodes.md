@@ -142,6 +142,7 @@ return a generic set of codes related to a Model 3.
 | FG02   | Fog Lamps                                                | Fog Lamps                                                 |
 | FG31   | Fog Lamps                                                | Model Premium Fog Lights                                  |
 | FM3B   | Performance Package                                      | Model 3                                                   |
+| FM3P   | Performance Package                                      | Model 3 Performance Firmware                              |
 | FM3U   | Acceleration Boost                                       | Model 3 Long Range All-Wheel Drive                        |
 | FMP6   | Performance Firmware                                     |                                                           |
 | FR01   | Base Front Row                                           |                                                           |

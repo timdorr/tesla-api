@@ -157,7 +157,7 @@ return a generic set of codes related to a Model 3.
 | GLFR   | Assembly                                                 | Final Assembly Fremont                                    |
 | HC00   | No Home Charging installation                            |                                                           |
 | HC01   | Home Charging Installation                               |                                                           |
-| HM30   | Teck Package - Homelink  No Homelink                     | No homelink                                               |
+| HM30   | Teck Package - Homelink No Homelink                      | No homelink                                               |
 | HM31   | Teck Package - Homelink                                  | Homelink                                                  |
 | HL31   | Head Lamp                                                | Model 3 Uplevel Headlamps                                 |
 | HL32   | M3 Matrix Headlights 2021                                | Model 3 2021 Uplevel Headlamps                            |
@@ -284,7 +284,7 @@ return a generic set of codes related to a Model 3.
 | MTY05  | Long Range All-Wheel Drive Performance                   | Model Y                                                   |
 | OSSB   | Safety CA Black                                          |                                                           |
 | OSSW   | Safety CA White                                          |                                                           |
-| P3WS   | Pedestrian warning speaker                              |                                                           |
+| P3WS   | Pedestrian warning speaker                               |                                                           |
 | PA00   | No Paint Armor                                           |                                                           |
 | PBCW   | Solid White Color                                        |                                                           |
 | PBSB   | Solid Black Color                                        |                                                           |
@@ -316,7 +316,7 @@ return a generic set of codes related to a Model 3.
 | PRMY1  | Premium Interior                                         |                                                           |
 | PS00   | No Parcel Shelf                                          |                                                           |
 | PS01   | Parcel Shelf                                             |                                                           |
-| PT01   | Trunk  Power trunk                                       | Model 3                                                   |
+| PT01   | Trunk Power trunk                                        | Model 3                                                   |
 | RA01   |                                                          | Model 3                                                   |
 | RD02   |                                                          | Model 3                                                   |
 | RS3H   | Second Row Seat Rear Seats (Heated)                      | Model 3                                                   |

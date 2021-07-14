@@ -82,7 +82,7 @@ return a generic set of codes related to a Model 3.
 | BTX6   | 100 kWh                                                  |                                                           |
 | BTX7   | 75 kWh                                                   |                                                           |
 | BTX8   | 75 kWh                                                   |                                                           |
-| BTXB   | Plaid *E6* vin battery                                   |                                                           |
+| BTXB   | Plaid _E6_ vin battery                                   |                                                           |
 | CC01   | Five Seat Interior                                       |                                                           |
 | CC02   | Six Seat Interior                                        |                                                           |
 | CC03   | Seven Seat Interior                                      |                                                           |
@@ -96,7 +96,7 @@ return a generic set of codes related to a Model 3.
 | CH04   | 72 Amp Charger (Model S/X)                               |                                                           |
 | CH05   | 48 Amp Charger (Model S/X)                               |                                                           |
 | CH07   | 48 Amp Charger (Model 3)                                 |                                                           |
-| CH12   | 48 Amperage Combo 1 Gen 3.5 Charger (Mode S/X 2021)      | Chargers	Single Phase                                    |
+| CH12   | 48 Amperage Combo 1 Gen 3.5 Charger (Mode S/X 2021)      | Chargers Single Phase                                     |
 | COL0   | Signature                                                |                                                           |
 | COL1   | Solid                                                    |                                                           |
 | COL2   | Metallic                                                 |                                                           |
@@ -151,7 +151,7 @@ return a generic set of codes related to a Model 3.
 | FR02   | Ventilated Front Seats                                   |                                                           |
 | FR03   | FR03                                                     |                                                           |
 | FR04   | FR04                                                     |                                                           |
-| FR05   | Front Row Seat	                                          | Ventilated Front Seats (MS/MX 2021)                       |
+| FR05   | Front Row Seat                                           | Ventilated Front Seats (MS/MX 2021)                       |
 | GLFR   | Assembly                                                 | Final Assembly Fremont                                    |
 | HC00   | No Home Charging installation                            |                                                           |
 | HC01   | Home Charging Installation                               |                                                           |

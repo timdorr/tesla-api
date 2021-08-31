@@ -319,6 +319,7 @@ return a generic set of codes related to a Model 3.
 | PT01   | Trunk Power trunk                                        | Model 3                                                   |
 | RA01   |                                                          | Model 3                                                   |
 | RD02   |                                                          | Model 3                                                   |
+| RDU4   | Rear small drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Plus version)                             |
 | RS3H   | Second Row Seat Rear Seats (Heated)                      | Model 3                                                   |
 | PX00   | No Performance Plus Package                              |                                                           |
 | PX01   | Performance Plus                                         |                                                           |

@@ -282,6 +282,7 @@ return a generic set of codes related to a Model 3.
 | MTY03  | Long Range All-Wheel Drive                               | Model Y                                                   |
 | MTY04  | Long Range All-Wheel Drive Performance                   | Model Y                                                   |
 | MTY05  | Long Range All-Wheel Drive Performance                   | Model Y                                                   |
+| MTY07  | Long Range All-Wheel Drive                               | Model Y                                                   |
 | OSSB   | Safety CA Black                                          |                                                           |
 | OSSW   | Safety CA White                                          |                                                           |
 | P3WS   | Pedestrian warning speaker                               |                                                           |

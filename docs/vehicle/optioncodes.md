@@ -392,6 +392,9 @@ return a generic set of codes related to a Model 3.
 | SR07   | Standard 2nd row                                         |                                                           |
 | ST00   | Non-leather Steering Wheel                               |                                                           |
 | ST01   | Non-heated Leather Steering Wheel                        |                                                           |
+| ST02   | Heated Leather Steering Wheel                            |                                                           |
+| ST03   | Regular Steering Wheel                                   | Model X/S Plaid (removed)                                 |
+| ST0Y   | Yoke Steering Wheel.                                     | Model X/S Plaid                                           |
 | ST31   | Steering Wheel                                           | Premium Steering Wheel                                    |
 | ST33   | Steering wheel - heated on LR/P (Model 3)                | Premium Steering Wheel                                    |
 | STCP   | Steering Wheel                                           | Steering Column (Power)                                   |

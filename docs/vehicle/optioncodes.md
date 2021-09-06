@@ -192,10 +192,10 @@ return a generic set of codes related to a Model 3.
 | INBBW  | White Interior                                           |                                                           |
 | INB3C  | Premium beige interior with oak wood finishes            | Model X                                                   |
 | INBC3W | Premium black and white interior with Carbon Fiber decor | Model X                                                   |
-| INPB0  | All Black Interior with Wood in door panel               | Model Y                                                    |
-| INPB1  | All Black Interior                                       | Model Y                                                    |
-| INPW0  | Black and White Interior with Wood in door panel         | Model Y                                                    |
-| INPW1  | Black and White Interior                                 | Model Y                                                    |
+| INPB0  | All Black Interior with Wood in door panel               | Model Y                                                   |
+| INPB1  | All Black Interior                                       | Model Y                                                   |
+| INPW0  | Black and White Interior with Wood in door panel         | Model Y                                                   |
+| INPW1  | Black and White Interior                                 | Model Y                                                   |
 | INBFP  | Classic Black Interior                                   |                                                           |
 | INBPP  | Black Interior                                           |                                                           |
 | INBPW  | White Seats Interior                                     |                                                           |

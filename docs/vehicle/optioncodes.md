@@ -56,6 +56,7 @@ return a generic set of codes related to a Model 3.
 | AU3D   | Sound Studio Package                                     | Reduced Audio Package (M3 standard)                       |
 | AU3P   | Sound Studio Package                                     | Premium audio package                                     |
 | AUF2   |                                                          | (M3 China made)                                           |
+| AUF1   | AUDIO_FIRMWARE_OPTION                                    | Premium Speakers Enabled                                  |
 | BC00   |                                                          |                                                           |
 | BC0B   | Black Brake Calipers                                     |                                                           |
 | BC0R   | Red Brake Calipers                                       |                                                           |
@@ -74,8 +75,9 @@ return a generic set of codes related to a Model 3.
 | BS00   | Blind Spot Sensor Package                                |                                                           |
 | BS01   | Special Production Flag                                  |                                                           |
 | BT37   | 75 kWh (Model 3)                                         |                                                           |
+| BT38   | ?? kWh (Model 3)                                         | M3LR build in China                                       |
 | BT40   | 40 kWh                                                   |                                                           |
-| BT42   | 82 kWh (Model 3)                                         | M3P (and some latest LR) 2021 model year                  |
+| BT42   | 82 kWh (Model 3)                                         | M3P (and latest LR 940xxx+) 2021 model year               |
 | BT60   | 60 kWh                                                   |                                                           |
 | BT70   | 70 kWh                                                   |                                                           |
 | BT85   | 85 kWh                                                   |                                                           |
@@ -100,6 +102,7 @@ return a generic set of codes related to a Model 3.
 | CH05   | 48 Amp Charger (Model S/X)                               |                                                           |
 | CH07   | 48 Amp Charger (Model 3)                                 |                                                           |
 | CH12   | 48 Amperage Combo 1 Gen 3.5 Charger (Mode S/X 2021)      | Chargers Single Phase                                     |
+| CH15   | 48 Amp Charger Hardware (REEU/REAP) with Busbar          | (EU spec?)                                                |
 | COL0   | Signature                                                |                                                           |
 | COL1   | Solid                                                    |                                                           |
 | COL2   | Metallic                                                 |                                                           |
@@ -142,9 +145,12 @@ return a generic set of codes related to a Model 3.
 | DV2W   | Rear-Wheel Drive                                         |                                                           |
 | DV4W   | All-Wheel Drive                                          |                                                           |
 | FC01   | Front Console Inductive Phone Charger                    | Model 3                                                   |
+| FC02   | Front Console Front Console (Premium)                    | Model 3 2021                                              |
 | FC3P   | Front Console Front Console (Premium)                    | Model 3                                                   |
+| FD00   |                                                          | Model 3 2021                                              |
 | FD03   |                                                          | Model S/X 2021                                            |
 | FG3B   | Fog Lamp Cover (No Fog lamps)                            | Model 3 Standard+                                         |
+| FC3P   | Front Console Front Console (Premium)                    | Model 3                                                   |
 | FG00   | No Exterior Lighting Package                             |                                                           |
 | FG01   | Fog Lamps                                                | Exterior Lighting Package                                 |
 | FG02   | Fog Lamps                                                | Fog Lamps                                                 |
@@ -152,6 +158,9 @@ return a generic set of codes related to a Model 3.
 | FGF0   | Fog Lamps Disabled                                       | Model 3 Standard+                                         |
 | FM3B   | Performance Package                                      | Model 3                                                   |
 | FM3S   | Semi de-rated firmware                                   | Model 3 Standard+                                         |
+| FGF1   | FOG_LAMP_FIRMWARE_OPTION                                 | Model 3 Fog Lamps Enabled                                 |
+| FM3B   | Performance Package                                      | Model 3                                                   |
+| FM3P   | Performance Package                                      | Model 3 Performance Firmware                              |
 | FM3U   | Acceleration Boost                                       | Model 3 Long Range All-Wheel Drive                        |
 | FMP6   | Performance Firmware                                     |                                                           |
 | FR01   | Base Front Row                                           |                                                           |
@@ -193,9 +202,19 @@ return a generic set of codes related to a Model 3.
 | IN3BW  | Black and White Interior                                 | Model 3 Interior                                          |
 | IN3PB  | All Black Premium Interior                               | Model 3 Interior                                          |
 | IN3PW  | All White Premium Interior                               | Model 3 Interior                                          |
+| IBE00  | Wood Décor & Black Interior                              | Model S Refresh 2021                                      |
+| ICW00  | Wood Décor & Cream Interior                              | Model S Refresh 2021                                      |
+| IWW00  | Wood Décor & Black and White Interior                    | Model S Refresh 2021                                      |
+| IBC00  | Carbon Fiber Décor & Black Interior                      | Model S Refresh 2021                                      |
+| IWC00  | Carbon Fiber Décor & Black and White Interior            | Model S Refresh 2021                                      |
+| ICC00  | Carbon Fiber Décor & Cream Interior                      | Model S Refresh 2021                                      |
 | INBBW  | White Interior                                           |                                                           |
 | INB3C  | Premium beige interior with oak wood finishes            | Model X                                                   |
 | INBC3W | Premium black and white interior with Carbon Fiber decor | Model X                                                   |
+| INPB0  | All Black Interior with Wood in door panel               | Model Y                                                   |
+| INPB1  | All Black Interior                                       | Model Y                                                   |
+| INPW0  | Black and White Interior with Wood in door panel         | Model Y                                                   |
+| INPW1  | Black and White Interior                                 | Model Y                                                   |
 | INBFP  | Classic Black Interior                                   |                                                           |
 | INBPP  | Black Interior                                           |                                                           |
 | INBPW  | White Seats Interior                                     |                                                           |
@@ -224,6 +243,7 @@ return a generic set of codes related to a Model 3.
 | LP01   | Lighting Package                                         | Premium Interior Lighting                                 |
 | LT00   | Vegan interior                                           |                                                           |
 | LT01   | Standard interior                                        |                                                           |
+| LT03   |                                                          | Latest 2021 Model 3 Interiror?                            |
 | LT1B   | Lower Trim                                               | Lower Trim                                                |
 | LT3W   | LT3W                                                     |                                                           |
 | LT4B   | LT4B                                                     |                                                           |
@@ -289,8 +309,10 @@ return a generic set of codes related to a Model 3.
 | MTY03  | Long Range All-Wheel Drive                               | Model Y                                                   |
 | MTY04  | Long Range All-Wheel Drive Performance                   | Model Y                                                   |
 | MTY05  | Long Range All-Wheel Drive Performance                   | Model Y                                                   |
+| MTY07  | Long Range All-Wheel Drive                               | Model Y                                                   |
 | OSSB   | Safety CA Black                                          |                                                           |
 | OSSW   | Safety CA White                                          |                                                           |
+| P3WS   | Pedestrian warning speaker                               |                                                           |
 | PA00   | No Paint Armor                                           |                                                           |
 | PBCW   | Solid White Color                                        |                                                           |
 | PBSB   | Solid Black Color                                        |                                                           |
@@ -315,13 +337,17 @@ return a generic set of codes related to a Model 3.
 | PPSW   | Pearl White Multi-Coat Color                             |                                                           |
 | PPTI   | Titanium Metallic Color                                  |                                                           |
 | PL30   | No Aluminum Pedal                                        |                                                           |
-| PL31   | Performance Pedals                                       | Model 3                                                   |
+| PL31   | Performance Aluminum Pedals                              | Model 3                                                   |
 | PRM30  | Partial Premium Interior                                 |                                                           |
 | PRM31  | Premium Interior                                         |                                                           |
 | PRM3S  | Standard Interior                                        |                                                           |
 | PRMY1  | Premium Interior                                         |                                                           |
 | PS00   | No Parcel Shelf                                          |                                                           |
 | PS01   | Parcel Shelf                                             |                                                           |
+| PT01   | Trunk Power trunk                                        | Model 3                                                   |
+| RA01   |                                                          | Model 3                                                   |
+| RD02   |                                                          | Model 3                                                   |
+| RDU4   | Rear small drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Plus version)                             |
 | RS3H   | Second Row Seat Rear Seats (Heated)                      | Model 3                                                   |
 | RSF0   | Rear Heated Seats Disabled                               | Model 3 Standard+                                         |
 | PT00   | Standard trunk                                           |                                                           |
@@ -397,6 +423,9 @@ return a generic set of codes related to a Model 3.
 | ST00   | Non-leather Steering Wheel                               |                                                           |
 | ST01   | Non-heated Leather Steering Wheel                        |                                                           |
 | ST30   | Base Steering Wheel                                      | Model 3 Standard+                                         |
+| ST02   | Heated Leather Steering Wheel                            |                                                           |
+| ST03   | Regular Steering Wheel                                   | Model X/S Plaid (removed)                                 |
+| ST0Y   | Yoke Steering Wheel.                                     | Model X/S Plaid                                           |
 | ST31   | Steering Wheel                                           | Premium Steering Wheel                                    |
 | ST33   | Steering wheel - heated on LR/P (Model 3)                | Premium Steering Wheel                                    |
 | STCP   | Steering Wheel                                           | Steering Column (Power)                                   |
@@ -407,6 +436,7 @@ return a generic set of codes related to a Model 3.
 | SU01   | Smart Air Suspension                                     |                                                           |
 | SU03   | Suspension Update                                        | Model S/X 2020-2021                                       |
 | SU3C   | Coil Spring Suspension                                   |                                                           |
+| SWF1   |                                                          | Model 3                                                   |
 | T3MA   | Tires M3                                                 | 18 Michelin All Season, Square                            |
 | T3HS   | Tires M3                                                 | 19” Hankook Summer Square                                 |
 | TIC4   | Tires                                                    | All-Season Tires                                          |
@@ -430,7 +460,7 @@ return a generic set of codes related to a Model 3.
 | TW00   | No Tow Package                                           |                                                           |
 | TW01   | Tow Package                                              |                                                           |
 | UM01   | Universal Mobile Charger - US Port (Single)              |                                                           |
-| UT3P   | Suede Grey Premium Headliner                             |                                                           |
+| UT3P   | Suede Grey Premium Headliner                             | Ultrasuede Grey                                           |
 | UTAB   | Black Alcantara Headliner                                |                                                           |
 | UTAW   | Light Headliner                                          |                                                           |
 | UTMF   | Headliner                                                |                                                           |
@@ -444,6 +474,7 @@ return a generic set of codes related to a Model 3.
 | SPTY1  | Performance Upgrade                                      | Model Y                                                   |
 | W32P   | 20" Performance Wheels                                   | Model 3                                                   |
 | W32D   | 20" Gray Performance Wheels                              | Model 3                                                   |
+| W33D   | 20" Black Performance Wheels 2021                        | Model 3                                                   |
 | W38B   | 18" Aero Wheels                                          | For the Model 3 and Model Y                               |
 | W39B   | 19" Sport Wheels                                         |                                                           |
 | WR00   | No Wrap                                                  |                                                           |

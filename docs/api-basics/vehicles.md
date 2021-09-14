@@ -14,7 +14,7 @@ For the state and command APIs, you should be using the `id` field. If your JSON
 
 ## GET `/api/1/vehicles`
 
-Retrieve a list of your owned vehicles (includes vehicles not yet shipped!)
+Retrieve a list of your owned vehicles.
 
 ### Request parameters
 

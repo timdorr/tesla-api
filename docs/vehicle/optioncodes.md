@@ -192,6 +192,10 @@ return a generic set of codes related to a Model 3.
 | INBBW  | White Interior                                           |                                                           |
 | INB3C  | Premium beige interior with oak wood finishes            | Model X                                                   |
 | INBC3W | Premium black and white interior with Carbon Fiber decor | Model X                                                   |
+| INPB0  | All Black Interior with Wood in door panel               | Model Y                                                   |
+| INPB1  | All Black Interior                                       | Model Y                                                   |
+| INPW0  | Black and White Interior with Wood in door panel         | Model Y                                                   |
+| INPW1  | Black and White Interior                                 | Model Y                                                   |
 | INBFP  | Classic Black Interior                                   |                                                           |
 | INBPP  | Black Interior                                           |                                                           |
 | INBPW  | White Seats Interior                                     |                                                           |
@@ -282,6 +286,7 @@ return a generic set of codes related to a Model 3.
 | MTY03  | Long Range All-Wheel Drive                               | Model Y                                                   |
 | MTY04  | Long Range All-Wheel Drive Performance                   | Model Y                                                   |
 | MTY05  | Long Range All-Wheel Drive Performance                   | Model Y                                                   |
+| MTY07  | Long Range All-Wheel Drive                               | Model Y                                                   |
 | OSSB   | Safety CA Black                                          |                                                           |
 | OSSW   | Safety CA White                                          |                                                           |
 | P3WS   | Pedestrian warning speaker                               |                                                           |
@@ -387,6 +392,9 @@ return a generic set of codes related to a Model 3.
 | SR07   | Standard 2nd row                                         |                                                           |
 | ST00   | Non-leather Steering Wheel                               |                                                           |
 | ST01   | Non-heated Leather Steering Wheel                        |                                                           |
+| ST02   | Heated Leather Steering Wheel                            |                                                           |
+| ST03   | Regular Steering Wheel                                   | Model X/S Plaid (removed)                                 |
+| ST0Y   | Yoke Steering Wheel.                                     | Model X/S Plaid                                           |
 | ST31   | Steering Wheel                                           | Premium Steering Wheel                                    |
 | ST33   | Steering wheel - heated on LR/P (Model 3)                | Premium Steering Wheel                                    |
 | STCP   | Steering Wheel                                           | Steering Column (Power)                                   |

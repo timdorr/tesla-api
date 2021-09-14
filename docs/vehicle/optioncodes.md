@@ -53,7 +53,7 @@ return a generic set of codes related to a Model 3.
 | APH4   | Hardware 3.0                                             |                                                           |
 | AU00   | No Audio Package                                         |                                                           |
 | AU01   | Ultra High Fidelity Sound                                |                                                           |
-| AU3D   | Sound Studio Package	                                    | Reduced Audio Package (M3 standart)                       |
+| AU3D   | Sound Studio Package                                     | Reduced Audio Package (M3 standart)                       |
 | AU3P   | Sound Studio Package                                     | Premium audio package                                     |
 | AUF2   |                                                          | (M3 China made)                                           |
 | BC00   |                                                          |                                                           |

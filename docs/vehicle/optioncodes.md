@@ -55,7 +55,7 @@ return a generic set of codes related to a Model 3.
 | AU01   | Ultra High Fidelity Sound                                |                                                           |
 | AU3D   | Sound Studio Package                                     | Reduced Audio Package (M3 standard)                       |
 | AU3P   | Sound Studio Package                                     | Premium audio package                                     |
-| AUF2   | Premium Speakers Disabled                                | M3/MY Reduced Audio Package (Standart,mid range)          |
+| AUF2   | Premium Speakers Disabled                                | M3/MY Reduced Audio Package (Standard, mid range)         |
 | AUF1   | Premium Speakers Enabled                                 | M3/MY Premium Audio Package (AWD,Perf)                    |
 | BC00   |                                                          |                                                           |
 | BC0B   | Black Brake Calipers                                     |                                                           |
@@ -465,7 +465,6 @@ return a generic set of codes related to a Model 3.
 | TRA1   | Third Row HVAC                                           |                                                           |
 | TS10   |                                                          | Model S/X 2021                                            |
 | TSHP   | Heat Pump Thermal Assembly                               | Model Y 2021 (China)                                      |
-| TY9S   | Tires	19” Summer Square                                 |                                                           |
 | TW00   | No Tow Package                                           |                                                           |
 | TW01   | Tow Package                                              |                                                           |
 | UM01   | Universal Mobile Charger - US Port (Single)              |                                                           |

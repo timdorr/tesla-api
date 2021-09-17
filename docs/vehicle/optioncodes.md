@@ -450,7 +450,7 @@ return a generic set of codes related to a Model 3.
 | SWF1   |                                                          | Model 3/Y                                                 |
 | T3MA   | Tires M3                                                 | 18" Michelin All Season, Square                           |
 | T3HS   | Tires M3                                                 | 19" Hankook Summer Square                                 |
-| TD00   | Tear Down	NON-GLIDER                                    | Model X                                                   |
+| TD00   | Tear Down NON-GLIDER                                     | Model X                                                   |
 | TIC4   | Tires MX                                                 | 20" all-weather tires                                     |
 | TIG2   | Summer Tires                                             |                                                           |
 | TIM7   | Summer Tires                                             |                                                           |

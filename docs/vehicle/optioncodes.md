@@ -566,4 +566,5 @@ return a generic set of codes related to a Model 3.
 | YF00   | No Yacht Floor                                           |                                                           |
 | YF01   | Matching Yacht Floor                                     |                                                           |
 | YFCC   | Yatcht Floor Front Console, Decor Matched                |                                                           |
+| YFCC   | Yatcht Floor Front Console, Décor Matched                |                                                           |
 | YFFC   | Integrated Center Console                                |                                                           |

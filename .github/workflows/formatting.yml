@@ -21,6 +21,6 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - name: Check formatting
-        uses: creyD/prettier_action@v4
+        uses: creyD/prettier_action@v4.0
         with:
           prettier_options: --write docs

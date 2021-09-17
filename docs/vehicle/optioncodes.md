@@ -87,8 +87,9 @@ return a generic set of codes related to a Model 3.
 | BTX6   | 100 kWh                                                  |                                                           |
 | BTX7   | 75 kWh                                                   |                                                           |
 | BTX8   | 75 kWh                                                   |                                                           |
-| BTXB   | Plaid _E6_ vin battery                                   |                                                           |
-| BY01   |                                                          | MY(awd) China                                             |
+| BTXA   | 18650J2 Battery Cell                                     | Model X 2020                                              |
+| BTXB   | Plaid _E6_ vin battery                                   | Model S 2021                                              |
+| BY01   |                                                          | Model Y(awd) China                                        |
 | CC01   | Five Seat Interior                                       |                                                           |
 | CC02   | Six Seat Interior                                        |                                                           |
 | CC03   | Seven Seat Interior                                      |                                                           |
@@ -102,7 +103,7 @@ return a generic set of codes related to a Model 3.
 | CH04   | 72 Amp Charger (Model S/X)                               |                                                           |
 | CH05   | 48 Amp Charger (Model S/X)                               |                                                           |
 | CH07   | 48 Amp Charger (Model 3)                                 |                                                           |
-| CH12   | 48 Amperage Combo 1 Gen 3.5 Charger (Mode S/X 2021)      | Chargers Single Phase                                     |
+| CH12   | 48 Amperage Combo 1 Gen 3.5 Charger (MS/MX 2020-2021)    | Chargers Single Phase                                     |
 | CH15   | 48 Amp Charger Hardware (REEU/REAP) with Busbar          | (EU spec?)                                                |
 | COL0   | Signature                                                |                                                           |
 | COL1   | Solid                                                    |                                                           |
@@ -140,19 +141,20 @@ return a generic set of codes related to a Model 3.
 | DRRH   | Right Hand Drive                                         |                                                           |
 | DSH5   | Dashboard                                                | PUR Dashboard Pad                                         |
 | DSH7   | Alcantara Dashboard Accents                              |                                                           |
-| DSHG   | PUR Dash Pad                                             |                                                           |
+| DSHG   | Dash with Graphite trim                                  |                                                           |
 | DU00   | Drive Unit - IR                                          |                                                           |
 | DU01   | Drive Unit - Infineon                                    |                                                           |
 | DV2W   | Rear-Wheel Drive                                         |                                                           |
 | DV4W   | All-Wheel Drive                                          |                                                           |
+| FBBB   | Front Brake Brembo Black                                 |                                                           |
 | FC01   | Front Console Inductive Phone Charger                    | Model 3                                                   |
 | FC02   | Front Console Front Console (Premium)                    | Model 3/Y 2021                                            |
 | FC3P   | Front Console Front Console (Premium)                    | Model 3                                                   |
 | FD00   |                                                          | Model 3 2021                                              |
 | FD01   |                                                          | Model Y 2021 (China?)                                     |
 | FD03   |                                                          | Model S/X 2021                                            |
+| FDU2	 | Raven Front Drive Unit                                   | Model S/X 2020-2021                                       |
 | FG3B   | Fog Lamp Cover (No Fog lamps)                            | Model 3 Standard+                                         |
-| FC3P   | Front Console Front Console (Premium)                    | Model 3                                                   |
 | FG00   | No Exterior Lighting Package                             |                                                           |
 | FG01   | Fog Lamps                                                | Exterior Lighting Package                                 |
 | FG02   | Fog Lamps                                                | Fog Lamps                                                 |
@@ -238,7 +240,7 @@ return a generic set of codes related to a Model 3.
 | IVLPC  | Vegan Cream Interior                                     |                                                           |
 | IX00   | No Extended Nappa Leather Trim                           |                                                           |
 | IX01   | Extended Nappa Leather Trim                              |                                                           |
-| LLP1   | LLP1                                                     |                                                           |
+| LLP1   | License Plate Liftgate Type	NA Liftgate                 |                                                           |
 | LLP2   | LLP2                                                     |                                                           |
 | LP00   | Lighting Package                                         | No Lighting Package                                       |
 | LP01   | Lighting Package                                         | Premium Interior Lighting                                 |
@@ -246,7 +248,7 @@ return a generic set of codes related to a Model 3.
 | LT01   | Standard interior                                        |                                                           |
 | LT03   |                                                          | Latest 2021 Model 3/Y Interiror?                          |
 | LT1B   | Lower Trim                                               | Lower Trim                                                |
-| LT3W   | LT3W                                                     |                                                           |
+| LT3W   | Lower Trim                                               |                                                           |
 | LT4B   | LT4B                                                     |                                                           |
 | LT4C   | LT4C                                                     |                                                           |
 | LT4W   | LT4W                                                     |                                                           |
@@ -379,6 +381,7 @@ return a generic set of codes related to a Model 3.
 | QVSW   | White Tesla Seats                                        |                                                           |
 | QXMB   | Black Leather Seat                                       |                                                           |
 | RA01   |                                                          | Model 3                                                   |
+| RBMB   | Rear Brake Mando Black                                   | Model X                                                   |
 | RCX0   | No Rear Console                                          |                                                           |
 | RCX1   | Rear Console                                             |                                                           |
 | RD02   |                                                          | Model 3                                                   |
@@ -411,6 +414,7 @@ return a generic set of codes related to a Model 3.
 | S32W   | S32W                                                     |                                                           |
 | S3PB   | Seat Black PUR Premium Seats                             |                                                           |
 | S3PW   | Seat White PUR Premium Seats                             |                                                           |
+| S42W   | Seat White Plenum Seats                                  |                                                           |
 | SA3P   | Seat Adjustment - Power                                  | Model 3/Y                                                 |
 | SC00   | No Supercharging                                         |                                                           |
 | SC01   | Unlimited Free Supercharging Enabled                     | Transfers to the next owner via private sale              |
@@ -444,9 +448,10 @@ return a generic set of codes related to a Model 3.
 | SU03   | Suspension Update                                        | Model S/X 2020-2021                                       |
 | SU3C   | Coil Spring Suspension                                   |                                                           |
 | SWF1   |                                                          | Model 3/Y                                                 |
-| T3MA   | Tires M3                                                 | 18 Michelin All Season, Square                            |
-| T3HS   | Tires M3                                                 | 19” Hankook Summer Square                                 |
-| TIC4   | Tires                                                    | All-Season Tires                                          |
+| T3MA   | Tires M3                                                 | 18" Michelin All Season, Square                           |
+| T3HS   | Tires M3                                                 | 19" Hankook Summer Square                                 |
+| TD00   | Tear Down	NON-GLIDER                                    |                                                           |
+| TIC4   | Tires MX                                                 | 20" all-weather tires                                     |
 | TIG2   | Summer Tires                                             |                                                           |
 | TIM7   | Summer Tires                                             |                                                           |
 | TIMP   | Tires                                                    | Michelin Primacy 19" Tire                                 |
@@ -473,7 +478,7 @@ return a generic set of codes related to a Model 3.
 | UTAW   | Light Headliner                                          |                                                           |
 | UTMF   | Headliner                                                |                                                           |
 | UTPB   | Dark Headliner                                           |                                                           |
-| UTSB   | Dark Headliner                                           |                                                           |
+| UTSB   | Black Ultra-suede Headliner                              |                                                           |
 | UTZW   | Light Headliner                                          |                                                           |
 | USSB   | Safety                                                   | Safety US Black                                           |
 | USSW   | US Safety Kit White                                      |                                                           |
@@ -484,6 +489,7 @@ return a generic set of codes related to a Model 3.
 | W38B   | 18" Aero Wheels                                          | For the Model 3 and Model Y                               |
 | W39B   | 19" Sport Wheels                                         |                                                           |
 | WR00   | No Wrap                                                  |                                                           |
+| WR01   | Wrap                                                     |                                                           |
 | WS90   | 19" Tempest Wheels                                       | Model S Refresh 2021                                      |
 | WT19   | 19" Wheels                                               |                                                           |
 | WS10   | 21" Arachnid Wheels                                      | Model S Refresh 2021                                      |
@@ -559,5 +565,5 @@ return a generic set of codes related to a Model 3.
 | X044   | Phone Dock Kit                                           |                                                           |
 | YF00   | No Yacht Floor                                           |                                                           |
 | YF01   | Matching Yacht Floor                                     |                                                           |
-| YFCC   | YFCC                                                     |                                                           |
+| YFCC   | Yatcht Floor	Front Console, Décor Matched                |                                                           |
 | YFFC   | Integrated Center Console                                |                                                           |

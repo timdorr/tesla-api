@@ -153,7 +153,7 @@ return a generic set of codes related to a Model 3.
 | FD00   |                                                          | Model 3 2021                                              |
 | FD01   |                                                          | Model Y 2021 (China?)                                     |
 | FD03   |                                                          | Model S/X 2021                                            |
-| FDU2	 | Raven Front Drive Unit                                   | Model S/X 2020-2021                                       |
+| FDU2   | Raven Front Drive Unit                                   | Model S/X 2020-2021                                       |
 | FG3B   | Fog Lamp Cover (No Fog lamps)                            | Model 3 Standard+                                         |
 | FG00   | No Exterior Lighting Package                             |                                                           |
 | FG01   | Fog Lamps                                                | Exterior Lighting Package                                 |
@@ -240,7 +240,7 @@ return a generic set of codes related to a Model 3.
 | IVLPC  | Vegan Cream Interior                                     |                                                           |
 | IX00   | No Extended Nappa Leather Trim                           |                                                           |
 | IX01   | Extended Nappa Leather Trim                              |                                                           |
-| LLP1   | License Plate Liftgate Type	NA Liftgate                 |                                                           |
+| LLP1   | License Plate Liftgate Type NA Liftgate                  |                                                           |
 | LLP2   | LLP2                                                     |                                                           |
 | LP00   | Lighting Package                                         | No Lighting Package                                       |
 | LP01   | Lighting Package                                         | Premium Interior Lighting                                 |

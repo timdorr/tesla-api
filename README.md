@@ -1,5 +1,3 @@
-Referrals are back! Need a Tesla to test with? [Get one with 1,000 miles of free supercharging](http://ts.la/timothy8449)
-
 Do you work at Tesla? Get in contact! I'd love to help with making this API official.
 
 # Tesla JSON API

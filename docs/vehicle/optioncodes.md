@@ -342,7 +342,7 @@ return a generic set of codes related to a Model 3.
 | PMSS   | San Simeon Silver Metallic Color                         |                                                           |
 | PMTG   | Dolphin Grey Metallic Color                              |                                                           |
 | PPMR   | Red Multi-Coat Color                                     |                                                           |
-| PP01   | Pedestrian Protection	Ped Pro R127 Compliant            | Model S 2020+ Eu                                          |
+| PP01   | Pedestrian Protection Ped Pro R127 Compliant             | Model S 2020+ Eu                                          |
 | PPSB   | Deep Blue Metallic Color                                 |                                                           |
 | PPSR   | Signature Red Color                                      |                                                           |
 | PPSW   | Pearl White Multi-Coat Color                             |                                                           |

@@ -87,6 +87,7 @@ return a generic set of codes related to a Model 3.
 | BTX6   | 100 kWh                                                  |                                                           |
 | BTX7   | 75 kWh                                                   |                                                           |
 | BTX8   | 75 kWh                                                   |                                                           |
+| BTX9   | 100 kWh Battery Pack with Weight Reduction               | Model S 2020/08                                           |
 | BTXA   | 18650J2 Battery Cell                                     | Model X 2020                                              |
 | BTXB   | Plaid _E6_ vin battery                                   | Model S 2021                                              |
 | BY01   |                                                          | Model Y(awd) China                                        |
@@ -103,6 +104,7 @@ return a generic set of codes related to a Model 3.
 | CH04   | 72 Amp Charger (Model S/X)                               |                                                           |
 | CH05   | 48 Amp Charger (Model S/X)                               |                                                           |
 | CH07   | 48 Amp Charger (Model 3)                                 |                                                           |
+| CH09   | Tesla Standard Charging System (Model S 2020 EU)         |                                                           |
 | CH12   | 48 Amperage Combo 1 Gen 3.5 Charger (MS/MX 2020-2021)    | Chargers Single Phase                                     |
 | CH15   | 48 Amp Charger Hardware (REEU/REAP) with Busbar          | (EU spec?)                                                |
 | COL0   | Signature                                                |                                                           |
@@ -136,6 +138,7 @@ return a generic set of codes related to a Model 3.
 | DA01   | Active Safety (ACC,LDW,SA)                               | Drivers Assistance Package                                |
 | DA02   | Autopilot Convenience Features                           |                                                           |
 | DCF0   | Autopilot Convenience Features                           |                                                           |
+| DCF2   | Front Console	Inductive Phone Charger                   |                                                           |
 | DRLH   | Left Hand Drive                                          |                                                           |
 | BC3R   | Performance Brakes                                       | Model 3                                                   |
 | DRRH   | Right Hand Drive                                         |                                                           |
@@ -146,7 +149,9 @@ return a generic set of codes related to a Model 3.
 | DU01   | Drive Unit - Infineon                                    |                                                           |
 | DV2W   | Rear-Wheel Drive                                         |                                                           |
 | DV4W   | All-Wheel Drive                                          |                                                           |
+| EUSB   | Safety EU Black                                          |                                                           |
 | FBBB   | Front Brake Brembo Black                                 |                                                           |
+| FBBR   | Front Brake Brembo Red                                   | Brakes (MS/MX 2021)                                       |
 | FC01   | Front Console Inductive Phone Charger                    | Model 3                                                   |
 | FC02   | Front Console Front Console (Premium)                    | Model 3/Y 2021                                            |
 | FC3P   | Front Console Front Console (Premium)                    | Model 3                                                   |
@@ -173,6 +178,7 @@ return a generic set of codes related to a Model 3.
 | FR05   | Front Row Seat                                           | Ventilated Front Seats (MS/MX 2021)                       |
 | GLCN   | Assembly                                                 | Final Assembly China Giga3 Model 3                        |
 | GLFR   | Assembly                                                 | Final Assembly Fremont                                    |
+| GLTL   | Assembly                                                 | Final Assembly Tilburg                                    |
 | HC00   | No Home Charging installation                            |                                                           |
 | HC01   | Home Charging Installation                               |                                                           |
 | HM30   | Teck Package - No Homelink                               | No Homelink Option                                        |
@@ -241,7 +247,7 @@ return a generic set of codes related to a Model 3.
 | IX00   | No Extended Nappa Leather Trim                           |                                                           |
 | IX01   | Extended Nappa Leather Trim                              |                                                           |
 | LLP1   | License Plate Liftgate Type NA Liftgate                  |                                                           |
-| LLP2   | LLP2                                                     |                                                           |
+| LLP2   | License Plate Liftgate Type EU Liftgate                  |                                                           |
 | LP00   | Lighting Package                                         | No Lighting Package                                       |
 | LP01   | Lighting Package                                         | Premium Interior Lighting                                 |
 | LT00   | Vegan interior                                           |                                                           |
@@ -336,6 +342,7 @@ return a generic set of codes related to a Model 3.
 | PMSS   | San Simeon Silver Metallic Color                         |                                                           |
 | PMTG   | Dolphin Grey Metallic Color                              |                                                           |
 | PPMR   | Red Multi-Coat Color                                     |                                                           |
+| PP01   | Pedestrian Protection	Ped Pro R127 Compliant            | Model S 2020+ Eu                                          |
 | PPSB   | Deep Blue Metallic Color                                 |                                                           |
 | PPSR   | Signature Red Color                                      |                                                           |
 | PPSW   | Pearl White Multi-Coat Color                             |                                                           |
@@ -382,16 +389,19 @@ return a generic set of codes related to a Model 3.
 | QXMB   | Black Leather Seat                                       |                                                           |
 | RA01   |                                                          | Model 3                                                   |
 | RBMB   | Rear Brake Mando Black                                   | Model X                                                   |
+| RBMR   | Rear Brake Mando Red                                     | Model S                                                   |
 | RCX0   | No Rear Console                                          |                                                           |
 | RCX1   | Rear Console                                             |                                                           |
 | RD02   |                                                          | Model 3                                                   |
 | RD04   |                                                          | Model S/X 2021 (Rear display?)                            |
 | RD05   | Drive Unit?                                              | Model Y (AWD China?)                                      |
+| RDU2   | Rear large drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Perf version)                             |
 | RDU4   | Rear small drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Plus version)                             |
 | RF3G   | Glass Roof                                               | Model 3/Y                                                 |
 | RFBK   | Black Roof                                               | Model S                                                   |
 | RFBC   | Body Color Roof                                          | Model S                                                   |
 | RFFG   | Glass Roof                                               | Model S 2017 Production Refresh                           |
+| RFFR   | Fixed Glass Roof (roof rack compatible)                  | Model S 2020                                              |
 | RFPO   | All Glass Panoramic Roof                                 | Model S 2015 Production Refresh                           |
 | RFP2   | Sunroof                                                  | Model S 2016 Production Refresh                           |
 | RFPX   | Glass Roof                                               | Model X                                                   |
@@ -430,7 +440,7 @@ return a generic set of codes related to a Model 3.
 | SR01   | Standard 2nd row                                         | Second Row Seat                                           |
 | SR05   | X Front seat set                                         | Second Row Seat (Model Y China)                           |
 | SR06   | Seven Seat Interior                                      |                                                           |
-| SR07   | Standard 2nd row                                         |                                                           |
+| SR07   | Second Row Seats with Comfort Improvements               |                                                           |
 | ST00   | Non-leather Steering Wheel                               |                                                           |
 | ST01   | Non-heated Leather Steering Wheel                        |                                                           |
 | ST30   | Base Steering Wheel                                      | Model 3 Standard+                                         |
@@ -454,6 +464,7 @@ return a generic set of codes related to a Model 3.
 | TIC4   | Tires MX                                                 | 20" all-weather tires                                     |
 | TIG2   | Summer Tires                                             |                                                           |
 | TIM7   | Summer Tires                                             |                                                           |
+| TIM8   | Michelin PS4S                                            |                                                           |
 | TIMP   | Tires                                                    | Michelin Primacy 19" Tire                                 |
 | TIP0   | All-season Tires                                         | Pirelli Scorpion Zero Asimmetrico 22” Tire                |
 | TM00   | Model Trim                                               | General Production Series Vehicle                         |
@@ -490,6 +501,7 @@ return a generic set of codes related to a Model 3.
 | W39B   | 19" Sport Wheels                                         |                                                           |
 | WR00   | No Wrap                                                  |                                                           |
 | WR01   | Wrap                                                     |                                                           |
+| WR02   | Wrap 2 (Tilburg bound)                                   |                                                           |
 | WS90   | 19" Tempest Wheels                                       | Model S Refresh 2021                                      |
 | WT19   | 19" Wheels                                               |                                                           |
 | WS10   | 21" Arachnid Wheels                                      | Model S Refresh 2021                                      |
@@ -509,7 +521,7 @@ return a generic set of codes related to a Model 3.
 | WTHX   | 20" Turbine Wheels                                       |                                                           |
 | WTTG   | 19" Cyclone Wheels                                       |                                                           |
 | WTTB   | 19" Cyclone Wheels                                       |                                                           |
-| WTTC   | 21" Sonic Carbon Twin Turbine Wheels                     |                                                           |
+| WTTC   | 21" Sonic Carbon Twin Turbine Wheels                     | 21" Charcol Twin Turbine Wheels (model S)                 |
 | WTUT   | 22" Onyx Black Wheels                                    | 22" Ultrasonic Turbine wheels                             |
 | WTW2   | 19" Nokian Winter Wheel Set                              |                                                           |
 | WTW3   | 19" Pirelli Winter Wheel Set                             |                                                           |

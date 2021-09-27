@@ -138,7 +138,7 @@ return a generic set of codes related to a Model 3.
 | DA01   | Active Safety (ACC,LDW,SA)                               | Drivers Assistance Package                                |
 | DA02   | Autopilot Convenience Features                           |                                                           |
 | DCF0   | Autopilot Convenience Features                           |                                                           |
-| DCF2   | Front Console	Inductive Phone Charger                   |                                                           |
+| DCF2   | Front Console Inductive Phone Charger                    |                                                           |
 | DRLH   | Left Hand Drive                                          |                                                           |
 | BC3R   | Performance Brakes                                       | Model 3                                                   |
 | DRRH   | Right Hand Drive                                         |                                                           |

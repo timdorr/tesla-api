@@ -94,6 +94,26 @@ This the latest contents of the ownerapi_endpoints.json file from the 4.0.2 vers
     "URI": "api/1/vehicles/{vehicle_id}/command/set_temps",
     "AUTH": true
   },
+  "HVAC_BIOWEAPON_MODE": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/set_bioweapon_mode",
+    "AUTH": true
+  },
+  "SCHEDULED_DEPARTURE": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/set_scheduled_departure",
+    "AUTH": true
+  },
+  "SCHEDULED_CHARGING": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/set_scheduled_charging",
+    "AUTH": true
+  },
+  "CHARGING_AMPS": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/set_charging_amps",
+    "AUTH": true
+  },
   "CHANGE_CHARGE_LIMIT": {
     "TYPE": "POST",
     "URI": "api/1/vehicles/{vehicle_id}/command/set_charge_limit",
@@ -740,9 +760,9 @@ This the latest contents of the ownerapi_endpoints.json file from the 4.0.2 vers
     "URI": "bff/v2/mobile-app/macgyver/categories",
     "AUTH": true
   },
-  "SERVICE_MACGYVER_QUESTIONS": {
+  "SERVICE_ACTIVITY_INFO": {
     "TYPE": "GET",
-    "URI": "bff/v2/mobile-app/macgyver/questions/{serviceVisitID}",
+    "URI": "bff/v2/mobile-app/macgyver/activity-info/{serviceVisitID}",
     "AUTH": true
   },
   "SERVICE_MACGYVER_POST_CUSTOMER_ANSWERS": {
@@ -820,9 +840,19 @@ This the latest contents of the ownerapi_endpoints.json file from the 4.0.2 vers
     "URI": "bff/v2/mobile-app/energy-documents/documents/{documentId}",
     "AUTH": true
   },
+  "ENERGY_GET_TROUBLESHOOTING_GUIDE": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/energy-service/troubleshooting/{troubleshootingFlow}",
+    "AUTH": true
+  },
   "LOOTBOX_USER_INFO": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/referrals",
+    "AUTH": true
+  },
+  "LOOTBOX_GET_ONBOARDING_COPY": {
+    "TYPE": "GET",
+    "URI": "mobile-app/referrals/getOnboardingCopy",
     "AUTH": true
   },
   "LOOTBOX_PAST_REFERRAL_DATA": {
@@ -940,6 +970,16 @@ This the latest contents of the ownerapi_endpoints.json file from the 4.0.2 vers
     "URI": "bff/v2/mobile-app/subscriptions/offline-order",
     "AUTH": true
   },
+  "SUBSCRIPTIONS_POST_CREATE_OFFLINE_ORDER": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/subscriptions/offline-order",
+    "AUTH": true
+  },
+  "GET_WALLET_FEATURE_FLAG": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/feature-flag/enable-subscriptions-wallet-channel",
+    "AUTH": true
+  },
   "SUBSCRIPTIONS_PURCHASE": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/subscriptions",
@@ -992,6 +1032,11 @@ This the latest contents of the ownerapi_endpoints.json file from the 4.0.2 vers
   },
   "PAYMENTS_GET_SIGNED_USER_TOKEN": {
     "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/payments/signed-user-token",
+    "AUTH": true
+  },
+  "PAYMENTS_POST_SIGNED_USER_TOKEN": {
+    "TYPE": "POST",
     "URI": "bff/v2/mobile-app/payments/signed-user-token",
     "AUTH": true
   },
@@ -1160,19 +1205,24 @@ This the latest contents of the ownerapi_endpoints.json file from the 4.0.2 vers
     "URI": "Just a placeholder",
     "AUTH": true
   },
-  "INSURANCE_GET_ELIGIBLE_FOR_TELEMATICS": {
+  "SAFETY_RATING_GET_ELIGIBLE_FOR_TELEMATICS": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/insurance/eligible-for-telematics",
     "AUTH": true
   },
-  "INSURANCE_GET_DAILY_BREAKDOWN": {
+  "SAFETY_RATING_GET_DAILY_BREAKDOWN": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/insurance/daily-breakdown",
     "AUTH": true
   },
-  "INSURANCE_GET_TRIPS": {
+  "SAFETY_RATING_GET_TRIPS": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/insurance/trips",
+    "AUTH": true
+  },
+  "SAFETY_RATING_GET_ESTIMATED_SAFETY_SCORE": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/insurance/calculate-safety-rating",
     "AUTH": true
   },
   "COMMERCE_POST_INVOICE": {
@@ -1210,6 +1260,11 @@ This the latest contents of the ownerapi_endpoints.json file from the 4.0.2 vers
     "URI": "bff/v2/mobile-app/charging/signed-token",
     "AUTH": true
   },
+  "CHARGING_BALANCE_GET_IS_BLOCKED": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/charging-cn/supercharger-status",
+    "AUTH": true
+  },
   "CHARGING_HISTORY": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/charging/history",
@@ -1243,6 +1298,11 @@ This the latest contents of the ownerapi_endpoints.json file from the 4.0.2 vers
   "CHARGING_SET_BILLING_ADDRESS": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/charging/billing-address",
+    "AUTH": true
+  },
+  "FEATURE_CONFIG": {
+    "TYPE": "GET",
+    "URI": "api/1/users/feature_config",
     "AUTH": true
   }
 }

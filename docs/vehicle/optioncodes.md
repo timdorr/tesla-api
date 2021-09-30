@@ -15,9 +15,10 @@ return a generic set of codes related to a Model 3.
 | MDLX   | Model X                                                  | This vehicle is a Model X                                 |
 | MDL3   | Model 3                                                  | This vehicle is a Model 3                                 |
 | MDLY   | Model Y                                                  | This vehicle is a Model Y                                 |
+| REAP   | Region: Asia Pacific                                     |                                                           |
+| REEU   | Region: Europe                                           |                                                           |
 | RENA   | Region: North America                                    |                                                           |
 | RENC   | Region: Canada                                           |                                                           |
-| REEU   | Region: Europe                                           |                                                           |
 | ACL1   | Ludicrous Mode                                           | Model X                                                   |
 | AD02   | NEMA 14-50                                               |                                                           |
 | AD04   | European 3-Phase                                         |                                                           |
@@ -123,6 +124,7 @@ return a generic set of codes related to a Model 3.
 | COHR   | Country: Croatia                                         |                                                           |
 | COIE   | Country: Ireland                                         |                                                           |
 | COIT   | Country: Italy                                           |                                                           |
+| COKR   | Country: South Korea                                     |                                                           |
 | COLU   | Country: Luxembourg                                      |                                                           |
 | CONL   | Country: Netherlands                                     |                                                           |
 | CONO   | Country: Norway                                          |                                                           |

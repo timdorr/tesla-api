@@ -1,6 +1,6 @@
 # Endpoints File
 
-This the latest contents of the ownerapi_endpoints.json file from the 4.0.2 version of the app.
+This the latest contents of the ownerapi_endpoints.json file from the 4.2.0 version of the app.
 
 ```json
 {
@@ -500,6 +500,11 @@ This the latest contents of the ownerapi_endpoints.json file from the 4.0.2 vers
     "URI": "api/1/vehicles/{vehicle_id}/command/share",
     "AUTH": true
   },
+  "SEND_SC_TO_VEHICLE": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/navigation_sc_request",
+    "AUTH": true
+  },
   "REMOTE_SEAT_HEATER_REQUEST": {
     "TYPE": "POST",
     "URI": "api/1/vehicles/{vehicle_id}/command/remote_seat_heater_request",
@@ -663,6 +668,21 @@ This the latest contents of the ownerapi_endpoints.json file from the 4.0.2 vers
   "SERVICE_HISTORY": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/service/history",
+    "AUTH": true
+  },
+  "SERVICE_SURVEY_ELIGIBILITY": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/service/surveys",
+    "AUTH": true
+  },
+  "SERVICE_SURVEY_QUESTIONS": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/service/surveys",
+    "AUTH": true
+  },
+  "SERVICE_SURVEY_ANSWER_QUESTIONS": {
+    "TYPE": "PUT",
+    "URI": "bff/v2/mobile-app/service/surveys",
     "AUTH": true
   },
   "SERVICE_LOCATIONS": {
@@ -1015,6 +1035,16 @@ This the latest contents of the ownerapi_endpoints.json file from the 4.0.2 vers
     "URI": "bff/v2/mobile-app/bill-me-later/token",
     "AUTH": true
   },
+  "MANAGE_GET_BILL_ME_LATER_TOGGLE": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/bill-me-later/security-toggle",
+    "AUTH": true
+  },
+  "MANAGE_POST_BILL_ME_LATER_TOGGLE": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/bill-me-later/security-toggle",
+    "AUTH": true
+  },
   "UPGRADES_SUBSCRIPTIONS_SHARED_BILLING_ADDRESS_FEATURE_FLAG": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/billing-address/feature-flag/TAO-8065-in-app-BillingBlock-Enable",
@@ -1303,6 +1333,11 @@ This the latest contents of the ownerapi_endpoints.json file from the 4.0.2 vers
   "FEATURE_CONFIG": {
     "TYPE": "GET",
     "URI": "api/1/users/feature_config",
+    "AUTH": true
+  },
+  "DASHCAM_SAVE_CLIP": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/dashcam_save_clip",
     "AUTH": true
   }
 }

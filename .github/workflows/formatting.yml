@@ -17,10 +17,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-        with:
-          ref: ${{ github.head_ref }}
 
       - name: Check formatting
-        uses: creyD/prettier_action@v4.0
+        uses: actionsx/prettier@v2
         with:
-          prettier_options: --write docs
+            args: --check docs

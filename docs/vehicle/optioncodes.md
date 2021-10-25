@@ -44,20 +44,20 @@ return a generic set of codes related to a Model 3.
 | APBS   | Autopilot                                                | Model 3 Autopilot                                         |
 | APF0   | Autopilot Firmware 2.0 Base                              |                                                           |
 | APF1   | Autopilot Firmware 2.0 Enhanced                          |                                                           |
-| APFB   | Full Self-Driving Hardware                               | Car has FSD hardware, but sofware option is not purchased |
 | APF2   | Full Self-Driving Hardware (Activated)                   | Car has active FSD software purchase                      |
-| APPB   | Enhanced Autopilot                                       | Navigate on Autopilot, Auto Lane Change, Autopark, Summon |
+| APFB   | Full Self-Driving Hardware                               | Car has FSD hardware, but sofware option is not purchased |
 | APH1   | Hardware 1.0                                             |                                                           |
 | APH2   | Hardware 2.0                                             |                                                           |
 | APH3   | Hardware 2.5                                             |                                                           |
-| APPF   | Full Self-Driving Capability                             |                                                           |
 | APH4   | Hardware 3.0                                             |                                                           |
+| APPB   | Enhanced Autopilot                                       | Navigate on Autopilot, Auto Lane Change, Autopark, Summon |
+| APPF   | Full Self-Driving Capability                             |                                                           |
 | AU00   | No Audio Package                                         |                                                           |
 | AU01   | Ultra High Fidelity Sound                                |                                                           |
 | AU3D   | Sound Studio Package                                     | Reduced Audio Package (M3 standard)                       |
 | AU3P   | Sound Studio Package                                     | Premium audio package                                     |
-| AUF2   | Premium Speakers Disabled                                | M3/MY Reduced Audio Package (Standard, mid range)         |
 | AUF1   | Premium Speakers Enabled                                 | M3/MY Premium Audio Package (AWD,Perf)                    |
+| AUF2   | Premium Speakers Disabled                                | M3/MY Reduced Audio Package (Standard, mid range)         |
 | BC00   |                                                          |                                                           |
 | BC0B   | Black Brake Calipers                                     |                                                           |
 | BC0R   | Red Brake Calipers                                       |                                                           |

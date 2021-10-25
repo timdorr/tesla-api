@@ -83,6 +83,7 @@ return a generic set of codes related to a Model 3.
 | BT70   | 70 kWh                                                   |                                                           |
 | BT85   | 85 kWh                                                   |                                                           |
 | BTF0   | 55 kWh (Model 3)                                         | M3 Standard+ China made LFP (CATL)                        |
+| BTF1   | 60 kWh (Model 3)                                         | M3 Standard+ China made LFP (CATL)                        |
 | BTX4   | 90 kWh                                                   |                                                           |
 | BTX5   | 75 kWh                                                   |                                                           |
 | BTX6   | 100 kWh                                                  |                                                           |
@@ -398,6 +399,7 @@ return a generic set of codes related to a Model 3.
 | RD02   |                                                          | Model 3                                                   |
 | RD04   |                                                          | Model S/X 2021 (Rear display?)                            |
 | RD05   | Drive Unit?                                              | Model Y (AWD China?)                                      |
+| RD06   |                                                          | Model 3 2022 refresh?                                     |
 | RDU2   | Rear large drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Perf version)                             |
 | RDU4   | Rear small drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Plus version)                             |
 | RF3G   | Glass Roof                                               | Model 3/Y                                                 |

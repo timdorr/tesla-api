@@ -2,6 +2,8 @@
 
 This is unofficial documentation of the Tesla JSON API used by their iOS and Android apps. It features functionality to monitor and control their vehicle (Models S, 3, X, Y) and power (Powerwall) products. We currently have documentation for their vehicles, but always accept [pull requests](https://github.com/timdorr/tesla-api/pulls) for improvements and additions.
 
+If you want to use Tesla's Bluetooth Low Energy (BLE) protocol to communicate with the car instead, [there is a separate documentation project for it](https://teslabtapi.lexnastin.com).
+
 ## Before You Begin
 
 The base URI for all requests is `https://owner-api.teslamotors.com/` (except for the Streaming and Autopark APIs)

@@ -78,7 +78,7 @@ return a generic set of codes related to a Model 3.
 | BT37   | 75 kWh (Model 3)                                         |                                                           |
 | BT38   | 74 kWh (Model 3/Y) LG cells                              | M3/MY LR/Dual build in China                              |
 | BT40   | 40 kWh                                                   |                                                           |
-| BT42   | 82 kWh (Model 3)                                         | M3P (and latest LR 940xxx+) 2021 model year               |
+| BT42   | 82 kWh (Model 3/Y)                                       | M3P (and latest LR 940xxx+) 2021 model year               |
 | BT60   | 60 kWh                                                   |                                                           |
 | BT70   | 70 kWh                                                   |                                                           |
 | BT85   | 85 kWh                                                   |                                                           |
@@ -392,7 +392,7 @@ return a generic set of codes related to a Model 3.
 | QVPP   | Vegan Cream Seats                                        |                                                           |
 | QVSW   | White Tesla Seats                                        |                                                           |
 | QXMB   | Black Leather Seat                                       |                                                           |
-| RA01   |                                                          | Model 3                                                   |
+| RA01   |                                                          | Model 3/Y                                                 |
 | RBMB   | Rear Brake Mando Black                                   | Model X                                                   |
 | RBMR   | Rear Brake Mando Red                                     | Model S                                                   |
 | RCX0   | No Rear Console                                          |                                                           |

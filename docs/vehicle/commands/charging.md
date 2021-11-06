@@ -98,3 +98,22 @@ Sets the charge limit to a custom value.
   "result": true
 }
 ```
+
+## POST `/api/1/vehicles/{id}/command/set_charging_amps`
+
+Sets the charge amps limit to a custom value.
+
+### Parameters
+
+| Parameter     | Example | Description                          |
+| :------------ | :------ | :----------------------------------- |
+| charging_amps | 32      | The max amps to use during charging. |
+
+### Response
+
+```json
+{
+  "reason": "",
+  "result": true
+}
+```

@@ -124,10 +124,10 @@ Set the scheduled departure.
 
 ### Parameters
 
-| Parameter                       | Example | Description                                                   |
-| :------ | :------ | :------------------------------------------------------------ |
-| enable  | true    | true for on, false for off.                                   |
-| time    | 1410    | time in minutes since midnight local time, multiple of 15min. |
+| Parameter | Example | Description                                                   |
+| :-------- | :------ | :------------------------------------------------------------ |
+| enable    | true    | true for on, false for off.                                   |
+| time      | 1410    | time in minutes since midnight local time, multiple of 15min. |
 
 ### Response
 

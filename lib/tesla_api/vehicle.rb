@@ -115,13 +115,14 @@ module TeslaApi
 
     def set_scheduled_departure(enable, departure_time, preconditioning_enabled, preconditioning_weekdays_only, off_peak_charging_enabled, off_peak_charging_weekdays_only, end_off_peak_time)
       command("set_scheduled_departure", body: {
-        enable:enable,
+	      enable:enable,
 	      departure_time:departure_time,
 	      preconditioning_enabled:preconditioning_enabled,
 	      preconditioning_weekdays_only:preconditioning_weekdays_only,
 	      off_peak_charging_enabled:off_peak_charging_enabled,
 	      off_peak_charging_weekdays_only:off_peak_charging_weekdays_only,
-	      end_off_peak_time:end_off_peak_time})["response"]
+	      end_off_peak_time:end_off_peak_time
+      })["response"]
     end
 
     def charge_start

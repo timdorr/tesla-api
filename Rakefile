@@ -25,11 +25,7 @@ task :console do
   end
 
   def client
-    @client ||= begin
-      client = TeslaApi::Client.new(email: ENV["TESLA_EMAIL"])
-      client.login!(ENV["TESLA_PASS"], mfa_code: mfa_code)
-      client
-    end
+    @client ||= TeslaApi::Client.new(access_token: ENV["TESLA_ACCESS_TOKEN"])
   end
 
   # Load IRB

@@ -141,7 +141,10 @@ module TeslaApi
       end
 
       code = CGI.parse(URI(response.headers["location"]).query)["code"].first
+      exchange_oauth_code(code, code_verifier)
+    end
 
+    def exchange_oauth_code(code, code_verifier)
       response = api.post(
         @sso_uri + "/oauth2/v3/token",
         {

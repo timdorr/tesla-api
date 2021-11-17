@@ -115,6 +115,7 @@ return a generic set of codes related to a Model 3.
 | COL3   | Tesla Multi-Coat                                         |                                                           |
 | COAT   | Country: Austria                                         |                                                           |
 | COBE   | Country: Belgium                                         |                                                           |
+| COCA   | Country: Canada                                          |                                                           |
 | COCH   | Country: Switzerland                                     |                                                           |
 | CODE   | Country: Germany                                         |                                                           |
 | CODK   | Country: Denmark                                         |                                                           |

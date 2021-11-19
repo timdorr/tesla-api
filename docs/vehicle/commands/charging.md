@@ -124,10 +124,10 @@ Set the scheduled departure.
 
 ### Parameters
 
-| Parameter | Example | Description                                                   |
-| :-------- | :------ | :------------------------------------------------------------ |
-| enable    | true    | true for on, false for off.                                   |
-| time      | 1410    | time in minutes since midnight local time, multiple of 15min. |
+| Parameter | Example | Description                                |
+| :-------- | :------ | :----------------------------------------- |
+| enable    | true    | true for on, false for off.                |
+| time      | 1410    | time in minutes since midnight local time. |
 
 ### Response
 
@@ -144,15 +144,15 @@ Set the scheduled departure.
 
 ### Parameters
 
-| Parameter                       | Example | Description                                                   |
-| :------------------------------ | :------ | :------------------------------------------------------------ |
-| enable                          | true    | true for on, false for off.                                   |
-| departure_time                  | 540     | time in minutes since midnight local time, multiple of 15min. |
-| preconditioning_enabled         | true    | true for on, false for off.                                   |
-| preconditioning_weekdays_only   | true    | true for on, false for off.                                   |
-| off_peak_charging_enabled       | true    | true for on, false for off.                                   |
-| off_peak_charging_weekdays_only | true    | true for on, false for off.                                   |
-| end_off_peak_time               | 450     | time in minutes since midnight local time, multiple of 15min. |
+| Parameter                       | Example | Description                                |
+| :------------------------------ | :------ | :----------------------------------------- |
+| enable                          | true    | true for on, false for off.                |
+| departure_time                  | 540     | time in minutes since midnight local time. |
+| preconditioning_enabled         | true    | true for on, false for off.                |
+| preconditioning_weekdays_only   | true    | true for on, false for off.                |
+| off_peak_charging_enabled       | true    | true for on, false for off.                |
+| off_peak_charging_weekdays_only | true    | true for on, false for off.                |
+| end_off_peak_time               | 450     | time in minutes since midnight local time. |
 
 ### Response
 

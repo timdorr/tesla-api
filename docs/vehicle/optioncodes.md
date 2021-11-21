@@ -179,7 +179,7 @@ return a generic set of codes related to a Model 3.
 | FR02   | Ventilated Front Seats                                   |                                                           |
 | FR03   | FR03                                                     |                                                           |
 | FR04   | FR04                                                     |                                                           |
-| FR05   | Front Row Seat                                           | Ventilated Front Seats (MS/MX 2021)                       |
+| FR05   | Front Row Seat                                           | Ventilated Front Seats (MS/MX 10.2020+)                   |
 | GLCN   | Assembly                                                 | Final Assembly China Giga3 Model 3                        |
 | GLFR   | Assembly                                                 | Final Assembly Fremont                                    |
 | GLTL   | Assembly                                                 | Final Assembly Tilburg                                    |
@@ -264,6 +264,7 @@ return a generic set of codes related to a Model 3.
 | LT4W   | LT4W                                                     |                                                           |
 | LT5C   | LT5C                                                     |                                                           |
 | LT5P   | LT5P                                                     |                                                           |
+| LT5W   | Lower Trim Black PUR with White interior                 | 2020 Model S                                              |
 | LT6P   | LT6P                                                     |                                                           |
 | LT6W   | White Base Lower Trim                                    |                                                           |
 | LTPB   | Lower Trim PUR Black                                     |                                                           |
@@ -329,6 +330,7 @@ return a generic set of codes related to a Model 3.
 | OSSB   | Safety CA Black                                          |                                                           |
 | OSSW   | Safety CA White                                          |                                                           |
 | P3WS   | Pedestrian warning speaker                               |                                                           |
+| P85D   | P85D                                                     |                                                           |
 | PA00   | No Paint Armor                                           |                                                           |
 | PBCW   | Solid White Color                                        |                                                           |
 | PBSB   | Solid Black Color                                        |                                                           |
@@ -367,7 +369,7 @@ return a generic set of codes related to a Model 3.
 | PX01   | Performance Plus                                         |                                                           |
 | PX4D   | 90 kWh Performance                                       |                                                           |
 | PX6D   | Zero to 60 in 2.5 sec                                    |                                                           |
-| P85D   | P85D                                                     |                                                           |
+| PWS0   |                                                          | Model S 10.2020                                           |
 | QLBS   | Black Premium Interior                                   |                                                           |
 | QLFC   | Cream Premium Interior                                   |                                                           |
 | QLFP   | Black Premium Interior                                   |                                                           |
@@ -467,11 +469,12 @@ return a generic set of codes related to a Model 3.
 | SWF1   |                                                          | Model 3/Y                                                 |
 | T3MA   | Tires M3                                                 | 18" Michelin All Season, Square                           |
 | T3HS   | Tires M3                                                 | 19" Hankook Summer Square                                 |
-| TD00   | Tear Down NON-GLIDER                                     | Model X                                                   |
+| TD00   | Tear Down NON-GLIDER                                     | Model S/X                                                 |
 | TIC4   | Tires MX                                                 | 20" all-weather tires                                     |
 | TIG2   | Summer Tires                                             |                                                           |
 | TIM7   | Summer Tires                                             |                                                           |
 | TIM8   | Michelin PS4S                                            |                                                           |
+| TIM9   | Michelin Pilot Sport 4                                   |                                                           |
 | TIMP   | Tires                                                    | Michelin Primacy 19" Tire                                 |
 | TIP0   | All-season Tires                                         | Pirelli Scorpion Zero Asimmetrico 22” Tire                |
 | TM00   | Model Trim                                               | General Production Series Vehicle                         |

@@ -179,7 +179,7 @@ return a generic set of codes related to a Model 3.
 | FR02   | Ventilated Front Seats                                   |                                                           |
 | FR03   | FR03                                                     |                                                           |
 | FR04   | FR04                                                     |                                                           |
-| FR05   | Front Row Seat                                           | Ventilated Front Seats (MS/MX 10.2020+)                       |
+| FR05   | Front Row Seat                                           | Ventilated Front Seats (MS/MX 10.2020+)                   |
 | GLCN   | Assembly                                                 | Final Assembly China Giga3 Model 3                        |
 | GLFR   | Assembly                                                 | Final Assembly Fremont                                    |
 | GLTL   | Assembly                                                 | Final Assembly Tilburg                                    |
@@ -369,7 +369,7 @@ return a generic set of codes related to a Model 3.
 | PX01   | Performance Plus                                         |                                                           |
 | PX4D   | 90 kWh Performance                                       |                                                           |
 | PX6D   | Zero to 60 in 2.5 sec                                    |                                                           |
-| PWS0   |                                                          | Model S 10.2020                                                          |
+| PWS0   |                                                          | Model S 10.2020                                           |
 | QLBS   | Black Premium Interior                                   |                                                           |
 | QLFC   | Cream Premium Interior                                   |                                                           |
 | QLFP   | Black Premium Interior                                   |                                                           |
@@ -469,7 +469,7 @@ return a generic set of codes related to a Model 3.
 | SWF1   |                                                          | Model 3/Y                                                 |
 | T3MA   | Tires M3                                                 | 18" Michelin All Season, Square                           |
 | T3HS   | Tires M3                                                 | 19" Hankook Summer Square                                 |
-| TD00   | Tear Down NON-GLIDER                                     | Model S/X                                                   |
+| TD00   | Tear Down NON-GLIDER                                     | Model S/X                                                 |
 | TIC4   | Tires MX                                                 | 20" all-weather tires                                     |
 | TIG2   | Summer Tires                                             |                                                           |
 | TIM7   | Summer Tires                                             |                                                           |

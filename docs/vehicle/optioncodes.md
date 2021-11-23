@@ -61,7 +61,8 @@ return a generic set of codes related to a Model 3.
 | BC00   |                                                          |                                                           |
 | BC0B   | Black Brake Calipers                                     |                                                           |
 | BC0R   | Red Brake Calipers                                       |                                                           |
-| BC3B   | Black Brake Calipers, Model 3/Y                          |                                                           |
+| BC3B   | Black Brake Calipers                                     | Model 3/Y                                                 |
+| BC3R   | Black Brake Calipers, Red brake calipers                 | Model 3/Y Performance                                     |
 | BCMB   | Black Brake Calipers, Mando Brakes                       |                                                           |
 | BCYR   | Performance Brakes                                       |                                                           |
 | BG30   | No Badge                                                 | Model 3                                                   |
@@ -199,7 +200,7 @@ return a generic set of codes related to a Model 3.
 | IBB1   | All Black Interior                                       | Model 3 New Door Trim (Since Q1 2021)                     |
 | IC00   |                                                          | Model S/X (Since Q2 2021)                                 |
 | ID00   |                                                          | Model S/X (Since Q2 2021)                                 |
-| ID3W   | Wood Decor                                               | Model 3/Y                                                 |
+| ID3W   | Interior Wood Decor                                      | Model 3/Y                                                 |
 | IDBA   | Dark Ash Wood Decor                                      |                                                           |
 | IDBO   | Figured Ash Wood Decor                                   |                                                           |
 | IDCF   | Carbon Fiber Decor                                       |                                                           |
@@ -240,6 +241,7 @@ return a generic set of codes related to a Model 3.
 | INYPW  | Black and White Premium Interior                         |                                                           |
 | IL31   | Interior Ambient Lighting Interior                       | Model 3/Y with Premium Interior                           |
 | ILF0   | Ambient Lighting Disabled                                | Model 3 Standard+                                         |
+| ILF1   | Ambient Lighting Enabled                                 | Model 3 with Premium Interior                             |
 | IPB0   | Black Interior                                           | Model 3 Interior (Left Hand Drive)                        |
 | IPB1   | Black Interior                                           | Model 3 Interior (Right Hand Drive)                       |
 | IPW0   | White Interior                                           | Model 3 Interior (Left Hand Drive)                        |
@@ -254,6 +256,7 @@ return a generic set of codes related to a Model 3.
 | LLP2   | License Plate Liftgate Type EU Liftgate                  |                                                           |
 | LP00   | Lighting Package                                         | No Lighting Package                                       |
 | LP01   | Lighting Package                                         | Premium Interior Lighting                                 |
+| LS01   |                                                          | Latest 2021 Model 3/Y                                     |
 | LT00   | Vegan interior                                           |                                                           |
 | LT01   | Standard interior                                        |                                                           |
 | LT03   |                                                          | Latest 2021 Model 3/Y Interiror?                          |
@@ -351,6 +354,7 @@ return a generic set of codes related to a Model 3.
 | PMTG   | Dolphin Grey Metallic Color                              |                                                           |
 | PPMR   | Red Multi-Coat Color                                     |                                                           |
 | PP01   | Pedestrian Protection Ped Pro R127 Compliant             | Model S 2020+ Eu                                          |
+| PP02   | Pedestrian Protection Ped Pro R127 Compliant             | Model 3 2021 Eu                                           |
 | PPSB   | Deep Blue Metallic Color                                 |                                                           |
 | PPSR   | Signature Red Color                                      |                                                           |
 | PPSW   | Pearl White Multi-Coat Color                             |                                                           |
@@ -469,6 +473,7 @@ return a generic set of codes related to a Model 3.
 | SWF1   |                                                          | Model 3/Y                                                 |
 | T3MA   | Tires M3                                                 | 18" Michelin All Season, Square                           |
 | T3HS   | Tires M3                                                 | 19" Hankook Summer Square                                 |
+| T3P3   | Tires M3                                                 | 20" Michelin PS4                                          |
 | TD00   | Tear Down NON-GLIDER                                     | Model S/X                                                 |
 | TIC4   | Tires MX                                                 | 20" all-weather tires                                     |
 | TIG2   | Summer Tires                                             |                                                           |

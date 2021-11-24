@@ -120,7 +120,7 @@ Sets the charge amps limit to a custom value.
 
 ## POST `/api/1/vehicles/{id}/command/set_scheduled_charging`
 
-Set the scheduled departure.
+Set the scheduled charge.
 
 ### Parameters
 
@@ -144,15 +144,15 @@ Set the scheduled departure.
 
 ### Parameters
 
-| Parameter                       | Example | Description                                                   |
-| :------------------------------ | :------ | :------------------------------------------------------------ |
-| enable                          | true    | true for on, false for off.                                   |
-| departure_time                  | 540     | time in minutes since midnight local time, multiple of 15min. |
-| preconditioning_enabled         | true    | true for on, false for off.                                   |
-| preconditioning_weekdays_only   | true    | true for on, false for off.                                   |
-| off_peak_charging_enabled       | true    | true for on, false for off.                                   |
-| off_peak_charging_weekdays_only | true    | true for on, false for off.                                   |
-| end_off_peak_time               | 450     | time in minutes since midnight local time, multiple of 15min. |
+| Parameter                       | Example | Description                                                                                                                |
+| :------------------------------ | :------ | :------------------------------------------------------------------------------------------------------------------------- |
+| enable                          | true    | true for on, false for off.                                                                                                |
+| departure_time                  | 540     | true if (preconditioning_enabled or off_peak_charging_enabled), false otherwise (this condition may change in the future). |
+| preconditioning_enabled         | true    | true for on, false for off.                                                                                                |
+| preconditioning_weekdays_only   | true    | true for on, false for off.                                                                                                |
+| off_peak_charging_enabled       | true    | true for on, false for off.                                                                                                |
+| off_peak_charging_weekdays_only | true    | true for on, false for off.                                                                                                |
+| end_off_peak_time               | 450     | time in minutes since midnight local time.                                                                                 |
 
 ### Response
 

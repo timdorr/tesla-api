@@ -105,7 +105,7 @@ module TeslaApi
       command("set_charge_limit", body: {percent: percent.to_i})["response"]
     end
 
-    def set_charging_amps(amps)
+    def set_charging_amps(charging_amps)
       command("set_charging_amps", body: {charging_amps: charging_amps})["response"]
     end
 

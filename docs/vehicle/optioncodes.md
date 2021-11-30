@@ -76,15 +76,19 @@ return a generic set of codes related to a Model 3.
 | BR05   | Battery Firmware Limit (75kWh)                           |                                                           |
 | BS00   | Blind Spot Sensor Package                                |                                                           |
 | BS01   | Special Production Flag                                  |                                                           |
-| BT37   | 75 kWh (Model 3)                                         |                                                           |
+| BT35   | 50 kWh (Model 3/Y) Pre 2021 Panasonic cells              | Model 3 Standart Range                                    |
+| BT36   | 62.5 kWh (Model 3/Y) Pre 2021 Panasonic cells            | Model 3 Mid Range                                         |
+| BT37   | 75 kWh (Model 3/Y) Pre 2021 Panasonic cells              | 2017-03.2021 LR+P Model 3/Y (Mostly Fremont build)        |
 | BT38   | 74 kWh (Model 3/Y) LG cells                              | M3/MY LR/Dual build in China                              |
 | BT40   | 40 kWh                                                   |                                                           |
-| BT42   | 82 kWh (Model 3/Y)                                       | M3P (and latest LR 940xxx+) 2021 model year               |
+| BT41   | 55? kWh 2021 Panasonic?                                  | M3 Standard+ 2021 model year                              |
+| BT42   | 82 kWh (Model 3/Y) 2021 Panasonic                        | M3P (and latest LR) 2021 model year                       |
+| BT43   | 79 kWh (Model 3/Y) 2021 LG NCA                           | M3/Y LR Q4.2021                                           |
 | BT60   | 60 kWh                                                   |                                                           |
 | BT70   | 70 kWh                                                   |                                                           |
 | BT85   | 85 kWh                                                   |                                                           |
-| BTF0   | 55 kWh (Model 3)                                         | M3 Standard+ China made LFP (CATL)                        |
-| BTF1   | 60 kWh (Model 3)                                         | M3 Standard+ China made LFP (CATL)                        |
+| BTF0   | 55 kWh (Model 3) 2020 CATL Prismatic                     | M3 Standard+ China made LFP and Q4.2021 M3 Stdr+ USA      |
+| BTF1   | 60 kWh (Model 3) 2021 CATL Prismatic                     | M3 Standard+ China made LFP                               |
 | BTX4   | 90 kWh                                                   |                                                           |
 | BTX5   | 75 kWh                                                   |                                                           |
 | BTX6   | 100 kWh                                                  |                                                           |
@@ -93,7 +97,8 @@ return a generic set of codes related to a Model 3.
 | BTX9   | 100 kWh Battery Pack with Weight Reduction               | Model S 2020/08                                           |
 | BTXA   | 18650J2 Battery Cell                                     | Model X 2020                                              |
 | BTXB   | Plaid _E6_ vin battery                                   | Model S 2021                                              |
-| BY01   |                                                          | Model Y(awd) China                                        |
+| BY00   |                                                          | Model Y                                                   |
+| BY01   |                                                          | Model Y                                                   |
 | CC01   | Five Seat Interior                                       |                                                           |
 | CC02   | Six Seat Interior                                        |                                                           |
 | CC03   | Seven Seat Interior                                      |                                                           |

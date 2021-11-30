@@ -77,7 +77,7 @@ return a generic set of codes related to a Model 3.
 | BS00   | Blind Spot Sensor Package                                |                                                           |
 | BS01   | Special Production Flag                                  |                                                           |
 | BT35   | 50 kWh (Model 3/Y) Pre 2021 Panasonic cells              | Model 3 Standart Range                                    |
-| BT36   | 60 kWh (Model 3/Y) Pre 2021 Panasonic cells              | Model 3 Mid Range                                         |
+| BT36   | 62.5 kWh (Model 3/Y) Pre 2021 Panasonic cells            | Model 3 Mid Range                                         |
 | BT37   | 75 kWh (Model 3/Y) Pre 2021 Panasonic cells              | 2017-03.2021 LR+P Model 3/Y (Mostly Fremont build)        |
 | BT38   | 74 kWh (Model 3/Y) LG cells                              | M3/MY LR/Dual build in China                              |
 | BT40   | 40 kWh                                                   |                                                           |

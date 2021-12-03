@@ -177,8 +177,8 @@ module TeslaApi
       command("window_control", body: {command: command, lat: 0, lon: 0})["response"]
     end
 
-    def remote_start_drive(password)
-      command("remote_start_drive", body: {password: password})["response"]
+    def remote_start_drive
+      command("remote_start_drive")["response"]
     end
 
     def open_trunk

@@ -91,7 +91,7 @@ http_interactions:
     uri: https://owner-api.teslamotors.com/api/1/vehicles/1514029006966957156/command/remote_start_drive
     body:
       encoding: UTF-8
-      string: password=<TESLA_PASS>
+      string: ''
     headers:
       Authorization:
       - Bearer f6f692b74fc8ffb4b31df7ae126fbc169e31860aafcb57f9393857f1f72e0b87

@@ -177,7 +177,7 @@ module TeslaApi
       command("window_control", body: {command: command, lat: 0, lon: 0})["response"]
     end
 
-    def remote_start_drive()
+    def remote_start_drive
       command("remote_start_drive")["response"]
     end
 

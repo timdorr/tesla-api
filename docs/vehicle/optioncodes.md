@@ -61,7 +61,8 @@ return a generic set of codes related to a Model 3.
 | BC00   |                                                          |                                                           |
 | BC0B   | Black Brake Calipers                                     |                                                           |
 | BC0R   | Red Brake Calipers                                       |                                                           |
-| BC3B   | Black Brake Calipers, Model 3/Y                          |                                                           |
+| BC3B   | Black Brake Calipers                                     | Model 3/Y                                                 |
+| BC3R   | Black Brake Calipers, Red brake calipers                 | Model 3/Y Performance                                     |
 | BCMB   | Black Brake Calipers, Mando Brakes                       |                                                           |
 | BCYR   | Performance Brakes                                       |                                                           |
 | BG30   | No Badge                                                 | Model 3                                                   |
@@ -75,15 +76,19 @@ return a generic set of codes related to a Model 3.
 | BR05   | Battery Firmware Limit (75kWh)                           |                                                           |
 | BS00   | Blind Spot Sensor Package                                |                                                           |
 | BS01   | Special Production Flag                                  |                                                           |
-| BT37   | 75 kWh (Model 3)                                         |                                                           |
+| BT35   | 50 kWh (Model 3/Y) Pre 2021 Panasonic cells              | Model 3 Standart Range                                    |
+| BT36   | 62.5 kWh (Model 3/Y) Pre 2021 Panasonic cells            | Model 3 Mid Range                                         |
+| BT37   | 75 kWh (Model 3/Y) Pre 2021 Panasonic cells              | 2017-03.2021 LR+P Model 3/Y (Mostly Fremont build)        |
 | BT38   | 74 kWh (Model 3/Y) LG cells                              | M3/MY LR/Dual build in China                              |
 | BT40   | 40 kWh                                                   |                                                           |
-| BT42   | 82 kWh (Model 3/Y)                                       | M3P (and latest LR 940xxx+) 2021 model year               |
+| BT41   | 55? kWh 2021 Panasonic?                                  | M3 Standard+ 2021 model year                              |
+| BT42   | 82 kWh (Model 3/Y) 2021 Panasonic                        | M3P (and latest LR) 2021 model year                       |
+| BT43   | 79 kWh (Model 3/Y) 2021 LG NCA                           | M3/Y LR Q4.2021                                           |
 | BT60   | 60 kWh                                                   |                                                           |
 | BT70   | 70 kWh                                                   |                                                           |
 | BT85   | 85 kWh                                                   |                                                           |
-| BTF0   | 55 kWh (Model 3)                                         | M3 Standard+ China made LFP (CATL)                        |
-| BTF1   | 60 kWh (Model 3)                                         | M3 Standard+ China made LFP (CATL)                        |
+| BTF0   | 55 kWh (Model 3) 2020 CATL Prismatic                     | M3 Standard+ China made LFP and Q4.2021 M3 Stdr+ USA      |
+| BTF1   | 60 kWh (Model 3) 2021 CATL Prismatic                     | M3 Standard+ China made LFP                               |
 | BTX4   | 90 kWh                                                   |                                                           |
 | BTX5   | 75 kWh                                                   |                                                           |
 | BTX6   | 100 kWh                                                  |                                                           |
@@ -92,7 +97,8 @@ return a generic set of codes related to a Model 3.
 | BTX9   | 100 kWh Battery Pack with Weight Reduction               | Model S 2020/08                                           |
 | BTXA   | 18650J2 Battery Cell                                     | Model X 2020                                              |
 | BTXB   | Plaid _E6_ vin battery                                   | Model S 2021                                              |
-| BY01   |                                                          | Model Y(awd) China                                        |
+| BY00   |                                                          | Model Y                                                   |
+| BY01   |                                                          | Model Y                                                   |
 | CC01   | Five Seat Interior                                       |                                                           |
 | CC02   | Six Seat Interior                                        |                                                           |
 | CC03   | Seven Seat Interior                                      |                                                           |
@@ -179,7 +185,7 @@ return a generic set of codes related to a Model 3.
 | FR02   | Ventilated Front Seats                                   |                                                           |
 | FR03   | FR03                                                     |                                                           |
 | FR04   | FR04                                                     |                                                           |
-| FR05   | Front Row Seat                                           | Ventilated Front Seats (MS/MX 2021)                       |
+| FR05   | Front Row Seat                                           | Ventilated Front Seats (MS/MX 10.2020+)                   |
 | GLCN   | Assembly                                                 | Final Assembly China Giga3 Model 3                        |
 | GLFR   | Assembly                                                 | Final Assembly Fremont                                    |
 | GLTL   | Assembly                                                 | Final Assembly Tilburg                                    |
@@ -199,7 +205,7 @@ return a generic set of codes related to a Model 3.
 | IBB1   | All Black Interior                                       | Model 3 New Door Trim (Since Q1 2021)                     |
 | IC00   |                                                          | Model S/X (Since Q2 2021)                                 |
 | ID00   |                                                          | Model S/X (Since Q2 2021)                                 |
-| ID3W   | Wood Decor                                               | Model 3/Y                                                 |
+| ID3W   | Interior Wood Decor                                      | Model 3/Y                                                 |
 | IDBA   | Dark Ash Wood Decor                                      |                                                           |
 | IDBO   | Figured Ash Wood Decor                                   |                                                           |
 | IDCF   | Carbon Fiber Decor                                       |                                                           |
@@ -240,6 +246,7 @@ return a generic set of codes related to a Model 3.
 | INYPW  | Black and White Premium Interior                         |                                                           |
 | IL31   | Interior Ambient Lighting Interior                       | Model 3/Y with Premium Interior                           |
 | ILF0   | Ambient Lighting Disabled                                | Model 3 Standard+                                         |
+| ILF1   | Ambient Lighting Enabled                                 | Model 3 with Premium Interior                             |
 | IPB0   | Black Interior                                           | Model 3 Interior (Left Hand Drive)                        |
 | IPB1   | Black Interior                                           | Model 3 Interior (Right Hand Drive)                       |
 | IPW0   | White Interior                                           | Model 3 Interior (Left Hand Drive)                        |
@@ -254,6 +261,7 @@ return a generic set of codes related to a Model 3.
 | LLP2   | License Plate Liftgate Type EU Liftgate                  |                                                           |
 | LP00   | Lighting Package                                         | No Lighting Package                                       |
 | LP01   | Lighting Package                                         | Premium Interior Lighting                                 |
+| LS01   |                                                          | Latest 2021 Model 3/Y                                     |
 | LT00   | Vegan interior                                           |                                                           |
 | LT01   | Standard interior                                        |                                                           |
 | LT03   |                                                          | Latest 2021 Model 3/Y Interiror?                          |
@@ -264,6 +272,7 @@ return a generic set of codes related to a Model 3.
 | LT4W   | LT4W                                                     |                                                           |
 | LT5C   | LT5C                                                     |                                                           |
 | LT5P   | LT5P                                                     |                                                           |
+| LT5W   | Lower Trim Black PUR with White interior                 | 2020 Model S                                              |
 | LT6P   | LT6P                                                     |                                                           |
 | LT6W   | White Base Lower Trim                                    |                                                           |
 | LTPB   | Lower Trim PUR Black                                     |                                                           |
@@ -329,6 +338,7 @@ return a generic set of codes related to a Model 3.
 | OSSB   | Safety CA Black                                          |                                                           |
 | OSSW   | Safety CA White                                          |                                                           |
 | P3WS   | Pedestrian warning speaker                               |                                                           |
+| P85D   | P85D                                                     |                                                           |
 | PA00   | No Paint Armor                                           |                                                           |
 | PBCW   | Solid White Color                                        |                                                           |
 | PBSB   | Solid Black Color                                        |                                                           |
@@ -349,6 +359,7 @@ return a generic set of codes related to a Model 3.
 | PMTG   | Dolphin Grey Metallic Color                              |                                                           |
 | PPMR   | Red Multi-Coat Color                                     |                                                           |
 | PP01   | Pedestrian Protection Ped Pro R127 Compliant             | Model S 2020+ Eu                                          |
+| PP02   | Pedestrian Protection Ped Pro R127 Compliant             | Model 3 2021 Eu                                           |
 | PPSB   | Deep Blue Metallic Color                                 |                                                           |
 | PPSR   | Signature Red Color                                      |                                                           |
 | PPSW   | Pearl White Multi-Coat Color                             |                                                           |
@@ -367,7 +378,7 @@ return a generic set of codes related to a Model 3.
 | PX01   | Performance Plus                                         |                                                           |
 | PX4D   | 90 kWh Performance                                       |                                                           |
 | PX6D   | Zero to 60 in 2.5 sec                                    |                                                           |
-| P85D   | P85D                                                     |                                                           |
+| PWS0   |                                                          | Model S 10.2020                                           |
 | QLBS   | Black Premium Interior                                   |                                                           |
 | QLFC   | Cream Premium Interior                                   |                                                           |
 | QLFP   | Black Premium Interior                                   |                                                           |
@@ -467,11 +478,13 @@ return a generic set of codes related to a Model 3.
 | SWF1   |                                                          | Model 3/Y                                                 |
 | T3MA   | Tires M3                                                 | 18" Michelin All Season, Square                           |
 | T3HS   | Tires M3                                                 | 19" Hankook Summer Square                                 |
-| TD00   | Tear Down NON-GLIDER                                     | Model X                                                   |
+| T3P3   | Tires M3                                                 | 20" Michelin PS4                                          |
+| TD00   | Tear Down NON-GLIDER                                     | Model S/X                                                 |
 | TIC4   | Tires MX                                                 | 20" all-weather tires                                     |
 | TIG2   | Summer Tires                                             |                                                           |
 | TIM7   | Summer Tires                                             |                                                           |
 | TIM8   | Michelin PS4S                                            |                                                           |
+| TIM9   | Michelin Pilot Sport 4                                   |                                                           |
 | TIMP   | Tires                                                    | Michelin Primacy 19" Tire                                 |
 | TIP0   | All-season Tires                                         | Pirelli Scorpion Zero Asimmetrico 22” Tire                |
 | TM00   | Model Trim                                               | General Production Series Vehicle                         |

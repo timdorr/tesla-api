@@ -1,6 +1,6 @@
 # Endpoints File
 
-This the latest contents of the env_ownerapi_endpoints.json file from the 4.2.2 version of the app.
+This the latest contents of the env_ownerapi_endpoints.json file from the 4.3.0 version of the app.
 
 ```json
 {
@@ -112,6 +112,11 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.2.2 
   "CHARGING_AMPS": {
     "TYPE": "POST",
     "URI": "api/1/vehicles/{vehicle_id}/command/set_charging_amps",
+    "AUTH": true
+  },
+  "SET_CABIN_OVERHEAT_PROTECTION": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/set_cabin_overheat_protection",
     "AUTH": true
   },
   "CHANGE_CHARGE_LIMIT": {
@@ -490,6 +495,16 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.2.2 
     "URI": "api/1/energy_sites/{site_id}/preference",
     "AUTH": true
   },
+  "CHECK_ENERGY_PRODUCT_REGISTRATION": {
+    "TYPE": "GET",
+    "URI": "api/1/energy_sites/registered",
+    "AUTH": true
+  },
+  "ENERGY_EVENT": {
+    "TYPE": "POST",
+    "URI": "api/1/energy_sites/energy_event",
+    "AUTH": true
+  },
   "SEND_NOTIFICATION_CONFIRMATION": {
     "TYPE": "POST",
     "URI": "api/1/notification_confirmations",
@@ -600,9 +615,44 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.2.2 
     "URI": "bff/v2/mobile-app/roadside/countries",
     "AUTH": true
   },
+  "SERVICE_GET_SERVICE_VISITS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/service/appointments",
+    "AUTH": true
+  },
+  "SERVICE_UPDATE_APPOINTMENT": {
+    "TYPE": "PUT",
+    "URI": "bff/v2/mobile-app/service/appointments/{serviceVisitId}",
+    "AUTH": true
+  },
+  "SERVICE_CANCEL_APPOINTMENT": {
+    "TYPE": "PATCH",
+    "URI": "mobile-app/service/appointments/{serviceVisitId}",
+    "AUTH": true
+  },
+  "SERVICE_CREATE_ACTIVITIES": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/service/activities/{serviceVisitId}",
+    "AUTH": true
+  },
+  "SERVICE_UPDATE_ACTIVITIES": {
+    "TYPE": "PUT",
+    "URI": "bff/v2/mobile-app/service/activities/{serviceVisitId}",
+    "AUTH": true
+  },
+  "SERVICE_DELETE_ACTIVITIES": {
+    "TYPE": "PATCH",
+    "URI": "bff/v2/mobile-app/service/activities/{serviceVisitId}",
+    "AUTH": true
+  },
   "SERVICE_GET_SERVICE_APPOINTMENTS": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/service/service-appointments",
+    "AUTH": true
+  },
+  "SERVICE_CREATE_SERVICE_VISIT": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/service/appointments",
     "AUTH": true
   },
   "SERVICE_TRACKER_DETAILS": {
@@ -610,14 +660,24 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.2.2 
     "URI": "bff/v2/mobile-app/service/tracker/{serviceVisitID}",
     "AUTH": true
   },
-  "SERVICE_MOBILE_OPEN_APPOINTMENTS": {
+  "SERVICE_MOBILE_NEAREST_LOCATIONS": {
     "TYPE": "GET",
-    "URI": "bff/v2/mobile-app/service/mobile/slots",
+    "URI": "mobile-app/service/locations/mobile/nearest",
     "AUTH": true
   },
-  "SERVICE_CENTER_OPEN_APPOINTMENTS": {
+  "SERVICE_MOBILE_OPEN_SLOTS": {
     "TYPE": "GET",
-    "URI": "bff/v2/mobile-app/service/center/slots",
+    "URI": "bff/v2/mobile-app/service/locations/mobile/slots",
+    "AUTH": true
+  },
+  "SERVICE_CENTER_OPEN_SLOTS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/service/locations/center/slots",
+    "AUTH": true
+  },
+  "SERVICE_CENTER_IS_BODY_SHOP": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/service/locations/body-shop",
     "AUTH": true
   },
   "SERVICE_SAVE_CENTER_APPOINTMENT": {
@@ -628,16 +688,6 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.2.2 
   "SERVICE_CREATE_MOBILE_APPOINTMENT": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/service/mobile",
-    "AUTH": true
-  },
-  "SERVICE_CANCEL_CENTER_APPOINTMENT": {
-    "TYPE": "PUT",
-    "URI": "bff/v2/mobile-app/service/center/{appointmentId}",
-    "AUTH": true
-  },
-  "SERVICE_CANCEL_MOBILE_APPOINTMENT": {
-    "TYPE": "PUT",
-    "URI": "bff/v2/mobile-app/service/mobile/{appointmentId}",
     "AUTH": true
   },
   "SERVICE_UPDATE_MOBILE_APPOINTMENT": {
@@ -862,7 +912,7 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.2.2 
   },
   "ENERGY_GET_TROUBLESHOOTING_GUIDE": {
     "TYPE": "GET",
-    "URI": "bff/v2/mobile-app/energy-service/troubleshooting/{troubleshootingFlow}",
+    "URI": "bff/v2/mobile-app/energy-service/troubleshooting/{troubleshootingFlow}?version=2",
     "AUTH": true
   },
   "LOOTBOX_USER_INFO": {
@@ -1065,6 +1115,11 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.2.2 
     "URI": "bff/v2/mobile-app/payments/signed-user-token",
     "AUTH": true
   },
+  "PAYMENTS_GET_SIGNED_USER_TOKEN_V4": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/payments/v4/signed-user-token",
+    "AUTH": true
+  },
   "PAYMENTS_POST_SIGNED_USER_TOKEN": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/payments/signed-user-token",
@@ -1230,6 +1285,16 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.2.2 
     "URI": "commerce-api/returns/v1{locale}",
     "AUTH": true
   },
+  "COMMERCE_GET_INSTALLERS": {
+    "TYPE": "GET",
+    "URI": "commerce-api/installers/v1{locale}",
+    "AUTH": true
+  },
+  "COMMERCE_POST_INSTALLER_VENDOR": {
+    "TYPE": "POST",
+    "URI": "commerce-api/checkout/auditrecords/v1/{locale}",
+    "AUTH": true
+  },
   "MATTERMOST": {
     "TYPE": "POST",
     "URI": "Just a placeholder",
@@ -1315,9 +1380,24 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.2.2 
     "URI": "bff/v2/mobile-app/charging/invoice/{uuid}",
     "AUTH": true
   },
+  "DOWNLOAD_CHARGING_SUBSCRIPTION_INVOICE": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/charging/subscription/invoice/{invoiceId}",
+    "AUTH": true
+  },
   "CHARGING_DOWNLOAD_CSV": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/charging/export",
+    "AUTH": true
+  },
+  "CHARGING_GET_SITES_BOUNDING_BOX": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/charging/sites",
+    "AUTH": true
+  },
+  "CHARGING_GET_SITE": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/charging/site/{id}",
     "AUTH": true
   },
   "CHARGING_GET_BILLING_ADDRESS": {
@@ -1330,14 +1410,99 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.2.2 
     "URI": "bff/v2/mobile-app/charging/billing-address",
     "AUTH": true
   },
-  "FEATURE_CONFIG": {
+  "CHARGING_STOP_SESSION": {
     "TYPE": "GET",
-    "URI": "api/1/users/feature_config",
+    "URI": "bff/v2/mobile-app/charging/session/stop/{id}",
+    "AUTH": true
+  },
+  "FINANCING_IS_ENABLED": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/is-captive",
+    "AUTH": true
+  },
+  "FINANCING_FETCH_DETAILS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/details",
+    "AUTH": true
+  },
+  "FINANCING_FETCH_DOCUMENT_LIST": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/document-list",
+    "AUTH": true
+  },
+  "FINANCING_DOWNLOAD_DOCUMENT": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/document",
+    "AUTH": true
+  },
+  "FINANCING_GET_SIGNED_TOKEN": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/signed-token",
+    "AUTH": true
+  },
+  "FINANCING_GET_BILLING_ADDRESS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/billing-address",
+    "AUTH": true
+  },
+  "FINANCING_UPDATE_BILLING_ADDRESS": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/financing/billing-address",
+    "AUTH": true
+  },
+  "FINANCING_ONE_TIME_PAYMENT_SIGNED_TOKEN": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/financing/one-time-payment-signed-token",
+    "AUTH": true
+  },
+  "FINANCING_UPDATE_ONE_TIME_PAYMENT_STATUS": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/financing/update-one-time-payment-status",
+    "AUTH": true
+  },
+  "FINANCING_UPDATE_ENROLLMENT_SETTINGS": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/financing/update-enrollment-settings",
+    "AUTH": true
+  },
+  "FINANCING_LOOKUP_WALLET": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/lookup-wallet",
+    "AUTH": true
+  },
+  "FINANCING_GET_FEATURE_FLAGS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/feature-flags",
     "AUTH": true
   },
   "DASHCAM_SAVE_CLIP": {
     "TYPE": "POST",
     "URI": "api/1/vehicles/{vehicle_id}/command/dashcam_save_clip",
+    "AUTH": true
+  },
+  "NON_OWNER_SUPPORTED_PRODUCTS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/user/supported-products",
+    "AUTH": true
+  },
+  "FEATURE_CONFIG": {
+    "TYPE": "GET",
+    "URI": "api/1/users/feature_config",
+    "AUTH": true
+  },
+  "SITE_LOCK_GET_SITES": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/charging-cn/get-locks",
+    "AUTH": true
+  },
+  "SITE_LOCK_SEND_UNLOCK_REQUEST": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/charging-cn/open-lock",
+    "AUTH": true
+  },
+  "SITE_LOCK_GET_STATUS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/charging-cn/get-lock-status",
     "AUTH": true
   }
 }

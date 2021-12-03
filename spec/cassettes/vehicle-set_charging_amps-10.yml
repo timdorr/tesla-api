@@ -1,0 +1,109 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://owner-api.teslamotors.com/api/1/vehicles
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Authorization:
+      - Bearer <TESLA_ACCESS_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Txid:
+      - b9fab48906f303228008fddf9d1ea38c
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"c40db12fce1e2b2c9c2aac35867f12bd"
+      X-Request-Id:
+      - 72d8204a-ee5c-462f-81ef-908cae2b38bf
+      Content-Length:
+      - '581'
+      X-Envoy-Upstream-Service-Time:
+      - '65'
+      X-Envoy-Upstream-Cluster:
+      - owner-api
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Cache-Control:
+      - no-cache, no-store, private, s-max-age=0
+      Date:
+      - Fri, 26 Nov 2021 09:02:14 GMT
+      Server:
+      - envoy
+    body:
+      encoding: UTF-8
+      string: '{"response":[{"id":19298251174317440,"vehicle_id":1817902171,"vin":"5YJSA1E41GF167745","display_name":"Nikola","option_codes":"MDLS,RENA,AF02,APF1,APH2,APPB,AU01,BC0R,BP00,BR00,BS00,CDM0,CH05,PBCW,CW00,DCF0,DRLH,DSH7,DV4W,FG02,FR04,HP00,IDBA,IX01,LP01,ME02,MI01,PF01,PI01,PK00,PS01,PX00,PX4D,QTVB,RFP2,SC01,SP00,SR01,SU01,TM00,TP03,TR00,UTAB,WTAS,X001,X003,X007,X011,X013,X021,X024,X027,X028,X031,X037,X040,X044,YFFC,COUS","color":null,"tokens":["8d219a2e09242e02","b12ead7cd34f97da"],"state":"online","in_service":false,"id_s":"19298251174317440","calendar_enabled":true,"api_version":4,"backseat_token":null,"backseat_token_updated_at":null}],"count":1}'
+  recorded_at: Fri, 26 Nov 2021 09:02:14 GMT
+- request:
+    method: post
+    uri: https://owner-api.teslamotors.com/api/1/vehicles/19298251174317440/command/set_charging_amps
+    body:
+      encoding: UTF-8
+      string: '{"charging_amps":10}'
+    headers:
+      User-Agent:
+      - Faraday v1.8.0
+      Authorization:
+      - Bearer <TESLA_ACCESS_TOKEN>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Txid:
+      - 3a36142faf14b855316771206b4451ed
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"47b5151a189abf369d67f15cd80c7adb"
+      X-Request-Id:
+      - 56d5455d-9727-4187-88cf-2720f5acc508
+      Content-Length:
+      - '40'
+      X-Envoy-Upstream-Service-Time:
+      - '219'
+      X-Envoy-Upstream-Cluster:
+      - owner-api
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Cache-Control:
+      - no-cache, no-store, private, s-max-age=0
+      Date:
+      - Fri, 26 Nov 2021 09:02:14 GMT
+      Server:
+      - envoy
+    body:
+      encoding: UTF-8
+      string: '{"response":{"result":true,"reason":""}}'
+  recorded_at: Fri, 26 Nov 2021 09:02:14 GMT
+recorded_with: VCR 6.0.0

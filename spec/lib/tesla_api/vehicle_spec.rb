@@ -199,6 +199,12 @@ RSpec.describe TeslaApi::Vehicle do
     end
   end
 
+  describe "#set_charging_amps" do
+    it "sets charging_amp to 10 amps", vcr: {cassette_name: "vehicle-set_charging_amps-10"} do
+      expect(vehicle.set_charging_amps(10)["result"]).to eq(true)
+    end
+  end
+
   describe "#charge_port_door_open", vcr: {cassette_name: "vehicle-charge_port_door_open"} do
     it "opens the charge port door" do
       expect(vehicle.charge_port_door_open["result"]).to eq(true)

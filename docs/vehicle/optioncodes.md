@@ -76,7 +76,7 @@ return a generic set of codes related to a Model 3.
 | BR05   | Battery Firmware Limit (75kWh)                           |                                                           |
 | BS00   | Blind Spot Sensor Package                                |                                                           |
 | BS01   | Special Production Flag                                  |                                                           |
-| BT35   | 50 kWh (Model 3/Y) Pre 2021 Panasonic cells              | Model 3 Standart Range                                    |
+| BT35   | 50 kWh (Model 3/Y) Pre 2021 Panasonic cells              | Model 3 Standard Range                                    |
 | BT36   | 62.5 kWh (Model 3/Y) Pre 2021 Panasonic cells            | Model 3 Mid Range                                         |
 | BT37   | 75 kWh (Model 3/Y) Pre 2021 Panasonic cells              | 2017-03.2021 LR+P Model 3/Y (Mostly Fremont build)        |
 | BT38   | 74 kWh (Model 3/Y) LG cells                              | M3/MY LR/Dual build in China                              |
@@ -475,9 +475,11 @@ return a generic set of codes related to a Model 3.
 | SU01   | Smart Air Suspension                                     |                                                           |
 | SU03   | Suspension Update                                        | Model S/X 2020-2021                                       |
 | SU3C   | Coil Spring Suspension                                   |                                                           |
+| SWF0   |                                                          | Model 3/Y                                                 |
 | SWF1   |                                                          | Model 3/Y                                                 |
-| T3MA   | Tires M3                                                 | 18" Michelin All Season, Square                           |
 | T3HS   | Tires M3                                                 | 19" Hankook Summer Square                                 |
+| T3MA   | Tires M3                                                 | 18" Michelin All Season, Square                           |
+| T3MC   | Tires M3                                                 | 18" China made                                            |
 | T3P3   | Tires M3                                                 | 20" Michelin PS4                                          |
 | TD00   | Tear Down NON-GLIDER                                     | Model S/X                                                 |
 | TIC4   | Tires MX                                                 | 20" all-weather tires                                     |
@@ -519,6 +521,7 @@ return a generic set of codes related to a Model 3.
 | W33D   | 20" Black Performance Wheels 2021                        | Model 3                                                   |
 | W38B   | 18" Aero Wheels                                          | For the Model 3 and Model Y                               |
 | W39B   | 19" Sport Wheels                                         |                                                           |
+| W40B   | 18" Wheels                                               | Model 3 China                                             |
 | WR00   | No Wrap                                                  |                                                           |
 | WR01   | Wrap                                                     |                                                           |
 | WR02   | Wrap 2 (Tilburg bound)                                   |                                                           |

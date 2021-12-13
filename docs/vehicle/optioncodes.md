@@ -113,6 +113,7 @@ return a generic set of codes related to a Model 3.
 | CH05   | 48 Amp Charger (Model S/X)                               |                                                           |
 | CH07   | 48 Amp Charger (Model 3)                                 |                                                           |
 | CH09   | Tesla Standard Charging System (Model S 2020 EU)         |                                                           |
+| CH11   | Single phase 48 Amperage Combo 1                         | Chargers Single Phase                                     |
 | CH12   | 48 Amperage Combo 1 Gen 3.5 Charger (MS/MX 2020-2021)    | Chargers Single Phase                                     |
 | CH15   | 48 Amp Charger Hardware (REEU/REAP) with Busbar          | (EU spec?)                                                |
 | COL0   | Signature                                                |                                                           |
@@ -147,7 +148,7 @@ return a generic set of codes related to a Model 3.
 | DA00   | No Autopilot                                             |                                                           |
 | DA01   | Active Safety (ACC,LDW,SA)                               | Drivers Assistance Package                                |
 | DA02   | Autopilot Convenience Features                           |                                                           |
-| DCF0   | Autopilot Convenience Features                           |                                                           |
+| DCF0   | Front Console	NO Drop-In Front Console                  |                                                           |
 | DCF2   | Front Console Inductive Phone Charger                    |                                                           |
 | DRLH   | Left Hand Drive                                          |                                                           |
 | BC3R   | Performance Brakes                                       | Model 3                                                   |
@@ -207,7 +208,7 @@ return a generic set of codes related to a Model 3.
 | ID00   |                                                          | Model S/X (Since Q2 2021)                                 |
 | ID3W   | Interior Wood Decor                                      | Model 3/Y                                                 |
 | IDBA   | Dark Ash Wood Decor                                      |                                                           |
-| IDBO   | Figured Ash Wood Decor                                   |                                                           |
+| IDBO   | Figured Ash Wood Decor Burl Open Pore décor              |                                                           |
 | IDCF   | Carbon Fiber Decor                                       |                                                           |
 | IDHM   | Matte Obeche Wood Decor                                  |                                                           |
 | IDOK   | Oak Decor                                                |                                                           |
@@ -442,6 +443,7 @@ return a generic set of codes related to a Model 3.
 | S32W   | S32W                                                     |                                                           |
 | S3PB   | Seat Black PUR Premium Seats                             |                                                           |
 | S3PW   | Seat White PUR Premium Seats                             |                                                           |
+| S42P   | Seat	Black Plenum Seats                                  |                                                           |
 | S42W   | Seat White Plenum Seats                                  |                                                           |
 | SA3P   | Seat Adjustment - Power                                  | Model 3/Y                                                 |
 | SC00   | No Supercharging                                         |                                                           |
@@ -484,6 +486,7 @@ return a generic set of codes related to a Model 3.
 | TD00   | Tear Down NON-GLIDER                                     | Model S/X                                                 |
 | TIC4   | Tires MX                                                 | 20" all-weather tires                                     |
 | TIG2   | Summer Tires                                             |                                                           |
+| TIG5   | Goodyear Eagle Touring                                   |                                                           |
 | TIM7   | Summer Tires                                             |                                                           |
 | TIM8   | Michelin PS4S                                            |                                                           |
 | TIM9   | Michelin Pilot Sport 4                                   |                                                           |
@@ -532,6 +535,7 @@ return a generic set of codes related to a Model 3.
 | WT22   | 22" Silver Turbine Wheels                                |                                                           |
 | WTAB   | 21" Black Arachnid Wheels                                |                                                           |
 | WTAS   | 19" Silver Slipstream Wheels                             |                                                           |
+| WTD2   | 19" Sonic Carbon Slipstream Wheels (8.5 in)              |                                                           |
 | WTDS   | 19" Grey Slipstream Wheels                               |                                                           |
 | WTNN   | 20" Nokian Winter Tires (non-studded)                    |                                                           |
 | WTNS   | 20" Nokian Winter Tires (studded)                        |                                                           |

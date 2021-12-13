@@ -148,7 +148,7 @@ return a generic set of codes related to a Model 3.
 | DA00   | No Autopilot                                             |                                                           |
 | DA01   | Active Safety (ACC,LDW,SA)                               | Drivers Assistance Package                                |
 | DA02   | Autopilot Convenience Features                           |                                                           |
-| DCF0   | Front Console	NO Drop-In Front Console                  |                                                           |
+| DCF0   | Front Console NO Drop-In Front Console                   |                                                           |
 | DCF2   | Front Console Inductive Phone Charger                    |                                                           |
 | DRLH   | Left Hand Drive                                          |                                                           |
 | BC3R   | Performance Brakes                                       | Model 3                                                   |
@@ -443,7 +443,7 @@ return a generic set of codes related to a Model 3.
 | S32W   | S32W                                                     |                                                           |
 | S3PB   | Seat Black PUR Premium Seats                             |                                                           |
 | S3PW   | Seat White PUR Premium Seats                             |                                                           |
-| S42P   | Seat	Black Plenum Seats                                  |                                                           |
+| S42P   | Seat Black Plenum Seats                                  |                                                           |
 | S42W   | Seat White Plenum Seats                                  |                                                           |
 | SA3P   | Seat Adjustment - Power                                  | Model 3/Y                                                 |
 | SC00   | No Supercharging                                         |                                                           |

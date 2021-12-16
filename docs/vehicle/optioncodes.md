@@ -262,7 +262,8 @@ return a generic set of codes related to a Model 3.
 | LLP2   | License Plate Liftgate Type EU Liftgate                  |                                                           |
 | LP00   | Lighting Package                                         | No Lighting Package                                       |
 | LP01   | Lighting Package                                         | Premium Interior Lighting                                 |
-| LS01   |                                                          | Latest 2021 Model 3/Y                                     |
+| LS01   |                                                          | Latest 2021 Model 3/Y Perf                                |
+| LS02   |                                                          | Latest 2021 Model 3/Y DM                                  |
 | LT00   | Vegan interior                                           |                                                           |
 | LT01   | Standard interior                                        |                                                           |
 | LT03   |                                                          | Latest 2021 Model 3/Y Interiror?                          |
@@ -410,9 +411,9 @@ return a generic set of codes related to a Model 3.
 | RBMR   | Rear Brake Mando Red                                     | Model S                                                   |
 | RCX0   | No Rear Console                                          |                                                           |
 | RCX1   | Rear Console                                             |                                                           |
-| RD02   |                                                          | Model 3                                                   |
+| RD02   |                                                          | Model 3 Perf                                              |
 | RD04   |                                                          | Model S/X 2021 (Rear display?)                            |
-| RD05   | Drive Unit?                                              | Model Y (AWD China?)                                      |
+| RD05   | Drive Unit?                                              | Model 3/Y (AWD China?)                                    |
 | RD06   |                                                          | Model 3 2022 refresh?                                     |
 | RDU2   | Rear large drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Perf version)                             |
 | RDU4   | Rear small drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Plus version)                             |
@@ -426,7 +427,7 @@ return a generic set of codes related to a Model 3.
 | RFPX   | Glass Roof                                               | Model X                                                   |
 | RNG0   | Standard Battery Range                                   | Model 3 Standard+                                         |
 | RL00   |                                                          | Model S/X 2021                                            |
-| RL31   |                                                          | Model 3                                                   |
+| RL31   |                                                          | Model 3 Perf                                              |
 | RL32   |                                                          | Model 3/Y (AWD)                                           |
 | RS3H   | Second Row Seat Rear Seats (Heated)                      | Model 3/Y with Premium Interior                           |
 | RSF0   | Rear Heated Seats Disabled                               | Model 3/Y without Premium Interior                        |
@@ -482,7 +483,7 @@ return a generic set of codes related to a Model 3.
 | T3HS   | Tires M3                                                 | 19" Hankook Summer Square                                 |
 | T3MA   | Tires M3                                                 | 18" Michelin All Season, Square                           |
 | T3MC   | Tires M3                                                 | 18" China made                                            |
-| T3P3   | Tires M3                                                 | 20" Michelin PS4                                          |
+| T3P3   | Tires M3                                                 | 20" Michelin PS4 Summer                                   |
 | TD00   | Tear Down NON-GLIDER                                     | Model S/X                                                 |
 | TIC4   | Tires MX                                                 | 20" all-weather tires                                     |
 | TIG2   | Summer Tires                                             |                                                           |

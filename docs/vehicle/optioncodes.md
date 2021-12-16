@@ -96,7 +96,7 @@ return a generic set of codes related to a Model 3.
 | BTX8   | 75 kWh                                                   |                                                           |
 | BTX9   | 100 kWh Battery Pack with Weight Reduction               | Model S 2020/08                                           |
 | BTXA   | 18650J2 Battery Cell                                     | Model X 2020                                              |
-| BTXB   | Plaid _E6_ vin battery                                   | Model S 2021                                              |
+| BTXB   | Plaid _E5 or E6_ vin battery                             | Model S 2021                                              |
 | BY00   |                                                          | Model Y                                                   |
 | BY01   |                                                          | Model Y                                                   |
 | CC01   | Five Seat Interior                                       |                                                           |
@@ -114,7 +114,7 @@ return a generic set of codes related to a Model 3.
 | CH07   | 48 Amp Charger (Model 3)                                 |                                                           |
 | CH09   | Tesla Standard Charging System (Model S 2020 EU)         |                                                           |
 | CH11   | Single phase 48 Amperage Combo 1                         | Chargers Single Phase                                     |
-| CH12   | 48 Amperage Combo 1 Gen 3.5 Charger (MS/MX 2020-2021)    | Chargers Single Phase                                     |
+| CH12   | 48 Amperage Combo 1 Gen 3.5 Charger                      | Chargers Single Phase (MS/MX 2020-2021)                   |
 | CH15   | 48 Amp Charger Hardware (REEU/REAP) with Busbar          | EU spec                                                   |
 | CH16   | 48 Amp Charger Hardware (RENA) with Busbar               | NA spec                                                   |
 | COL0   | Signature                                                |                                                           |
@@ -169,7 +169,8 @@ return a generic set of codes related to a Model 3.
 | FC3P   | Front Console Front Console (Premium)                    | Model 3                                                   |
 | FD00   |                                                          | Model 3 2021 (USA)                                        |
 | FD01   |                                                          | Model 3/Y 2021 (China)                                    |
-| FD03   |                                                          | Model S/X 2021                                            |
+| FD02   |                                                          | Model S/X 2021 LR                                         |
+| FD03   |                                                          | Model S/X 2021 P                                          |
 | FDU2   | Raven Front Drive Unit                                   | Model S/X 2020-2021                                       |
 | FG3B   | Fog Lamp Cover (No Fog lamps)                            | Model 3 Standard+                                         |
 | FG00   | No Exterior Lighting Package                             |                                                           |
@@ -207,7 +208,9 @@ return a generic set of codes related to a Model 3.
 | IBB0   | All Black Interior                                       | Model 3 Old Door Trim                                     |
 | IBB1   | All Black Interior                                       | Model 3 New Door Trim (Since Q1 2021)                     |
 | IC00   |                                                          | Model S/X (Since Q2 2021)                                 |
+| IC02   |                                                          | Model S/X (Since Q2 2021)                                 |
 | ID00   |                                                          | Model S/X (Since Q2 2021)                                 |
+| ID03   |                                                          | Model S/X (Since Q2 2021)                                 |
 | ID3A   | Interior White Aluminum                                  | Model 3/Y                                                 |
 | ID3W   | Interior Wood Decor                                      | Model 3/Y                                                 |
 | IDBA   | Dark Ash Wood Decor                                      |                                                           |
@@ -416,7 +419,8 @@ return a generic set of codes related to a Model 3.
 | RCX1   | Rear Console                                             |                                                           |
 | RD01   | Rear drive unit (600A)                                   | Model 3 LR/DM (Fremont)                                   |
 | RD02   | Rear drive unit (800A)                                   | Model 3 Std+, Perf                                        |
-| RD04   |                                                          | Model S/X 2021 (Rear drive unit?)                         |
+| RD03   |                                                          | Model S/X 2021 LR (Rear drive unit)                       |
+| RD04   |                                                          | Model S/X 2021 P (Rear drive unit)                        |
 | RD05   | Drive Unit                                               | Model 3/Y LR/DM (China)                                   |
 | RD06   |                                                          | Model 3 2022 refresh?                                     |
 | RDU2   | Rear large drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Perf version)                             |
@@ -471,7 +475,7 @@ return a generic set of codes related to a Model 3.
 | ST30   | Base Steering Wheel                                      | Model 3 Standard+                                         |
 | ST02   | Heated Leather Steering Wheel                            |                                                           |
 | ST03   | Regular Steering Wheel                                   | Model X/S Plaid (removed)                                 |
-| ST0Y   | Yoke Steering Wheel.                                     | Model X/S Plaid                                           |
+| ST0Y   | Yoke Steering Wheel                                      | Model X/S Plaid                                           |
 | ST31   | Steering Wheel                                           | Premium Steering Wheel                                    |
 | ST33   | Steering wheel - heated on LR/P (Model 3)                | Premium Steering Wheel                                    |
 | STCP   | Steering Wheel                                           | Steering Column (Power)                                   |

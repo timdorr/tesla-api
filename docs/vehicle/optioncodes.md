@@ -82,7 +82,7 @@ return a generic set of codes related to a Model 3.
 | BT38   | 74 kWh (Model 3/Y) LG cells                              | M3/MY LR/Dual build in China                              |
 | BT40   | 40 kWh                                                   |                                                           |
 | BT41   | 55? kWh 2021 Panasonic?                                  | M3 Standard+ 2021 model year                              |
-| BT42   | 82 kWh (Model 3/Y) 2021 Panasonic                        | M3P (and latest LR) 2021 model year                       |
+| BT42   | 82 kWh (Model 3/Y) 2021 Panasonic                        | M3P (and latest LR Fremont) 2021 model year               |
 | BT43   | 79 kWh (Model 3/Y) 2021 LG NCA                           | M3/Y LR Q4.2021                                           |
 | BT60   | 60 kWh                                                   |                                                           |
 | BT70   | 70 kWh                                                   |                                                           |
@@ -115,7 +115,8 @@ return a generic set of codes related to a Model 3.
 | CH09   | Tesla Standard Charging System (Model S 2020 EU)         |                                                           |
 | CH11   | Single phase 48 Amperage Combo 1                         | Chargers Single Phase                                     |
 | CH12   | 48 Amperage Combo 1 Gen 3.5 Charger (MS/MX 2020-2021)    | Chargers Single Phase                                     |
-| CH15   | 48 Amp Charger Hardware (REEU/REAP) with Busbar          | (EU spec?)                                                |
+| CH15   | 48 Amp Charger Hardware (REEU/REAP) with Busbar          | EU spec                                                   |
+| CH16   | 48 Amp Charger Hardware (RENA) with Busbar               | NA spec                                                   |
 | COL0   | Signature                                                |                                                           |
 | COL1   | Solid                                                    |                                                           |
 | COL2   | Metallic                                                 |                                                           |
@@ -140,8 +141,8 @@ return a generic set of codes related to a Model 3.
 | COPT   | Country: Portugal                                        |                                                           |
 | COSE   | Country: Sweden                                          |                                                           |
 | COUS   | Country: United States                                   |                                                           |
-| CPF0   | Standard Connectivity                                    |                                                           |
-| CPF1   | Premium Connectivity                                     |                                                           |
+| CPF0   | Standard Connectivity                                    | 1 month                                                   |
+| CPF1   | Premium Connectivity                                     | 1 year                                                    |
 | CPW1   | 20" Performance Wheels                                   |                                                           |
 | CW00   | No Weather Package                                       | No Cold Weather Package                                   |
 | CW02   | Weather Package                                          | Subzero Weather Package                                   |
@@ -166,8 +167,8 @@ return a generic set of codes related to a Model 3.
 | FC01   | Front Console Inductive Phone Charger                    | Model 3                                                   |
 | FC02   | Front Console Front Console (Premium)                    | Model 3/Y 2021                                            |
 | FC3P   | Front Console Front Console (Premium)                    | Model 3                                                   |
-| FD00   |                                                          | Model 3 2021                                              |
-| FD01   |                                                          | Model Y 2021 (China?)                                     |
+| FD00   |                                                          | Model 3 2021 (USA)                                        |
+| FD01   |                                                          | Model 3/Y 2021 (China)                                    |
 | FD03   |                                                          | Model S/X 2021                                            |
 | FDU2   | Raven Front Drive Unit                                   | Model S/X 2020-2021                                       |
 | FG3B   | Fog Lamp Cover (No Fog lamps)                            | Model 3 Standard+                                         |
@@ -201,11 +202,12 @@ return a generic set of codes related to a Model 3.
 | HP01   | HPWC Ordered                                             |                                                           |
 | HP30   | No heat pump assembly                                    | Model 3 Standard+ China made                              |
 | HP31   | Heat pump assembly                                       | Model 3                                                   |
-| I38M   | Rear Drive Unit Inverter 800A Mosfet                     | Model 3                                                   |
+| I38M   | Rear Drive Unit Inverter 800A Mosfet                     | Model 3 Performance                                       |
 | IBB0   | All Black Interior                                       | Model 3 Old Door Trim                                     |
 | IBB1   | All Black Interior                                       | Model 3 New Door Trim (Since Q1 2021)                     |
 | IC00   |                                                          | Model S/X (Since Q2 2021)                                 |
 | ID00   |                                                          | Model S/X (Since Q2 2021)                                 |
+| ID3A   | Interior White Aluminum                                  | Model 3/Y                                                 |
 | ID3W   | Interior Wood Decor                                      | Model 3/Y                                                 |
 | IDBA   | Dark Ash Wood Decor                                      |                                                           |
 | IDBO   | Figured Ash Wood Decor Burl Open Pore décor              |                                                           |
@@ -411,9 +413,9 @@ return a generic set of codes related to a Model 3.
 | RBMR   | Rear Brake Mando Red                                     | Model S                                                   |
 | RCX0   | No Rear Console                                          |                                                           |
 | RCX1   | Rear Console                                             |                                                           |
-| RD02   |                                                          | Model 3 Perf                                              |
-| RD04   |                                                          | Model S/X 2021 (Rear display?)                            |
-| RD05   | Drive Unit?                                              | Model 3/Y (AWD China?)                                    |
+| RD02   | Rear drive unit (800A)                                   | Model 3 Std+, Perf                                        |
+| RD04   |                                                          | Model S/X 2021 (Rear drive unit?)                         |
+| RD05   | Drive Unit                                               | Model 3/Y (AWD)                                           |
 | RD06   |                                                          | Model 3 2022 refresh?                                     |
 | RDU2   | Rear large drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Perf version)                             |
 | RDU4   | Rear small drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Plus version)                             |

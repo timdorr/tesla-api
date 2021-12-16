@@ -202,7 +202,8 @@ return a generic set of codes related to a Model 3.
 | HP01   | HPWC Ordered                                             |                                                           |
 | HP30   | No heat pump assembly                                    | Model 3 Standard+ China made                              |
 | HP31   | Heat pump assembly                                       | Model 3                                                   |
-| I38M   | Rear Drive Unit Inverter 800A Mosfet                     | Model 3 Performance                                       |
+| I36M   | Rear Drive Unit Inverter 600A Mosfet                     | Model 3 DM/LR                                             |
+| I38M   | Rear Drive Unit Inverter 800A Mosfet                     | Model 3 Std+, Performance                                 |
 | IBB0   | All Black Interior                                       | Model 3 Old Door Trim                                     |
 | IBB1   | All Black Interior                                       | Model 3 New Door Trim (Since Q1 2021)                     |
 | IC00   |                                                          | Model S/X (Since Q2 2021)                                 |
@@ -413,9 +414,10 @@ return a generic set of codes related to a Model 3.
 | RBMR   | Rear Brake Mando Red                                     | Model S                                                   |
 | RCX0   | No Rear Console                                          |                                                           |
 | RCX1   | Rear Console                                             |                                                           |
+| RD01   | Rear drive unit (600A)                                   | Model 3 LR/DM (Fremont)                                   |
 | RD02   | Rear drive unit (800A)                                   | Model 3 Std+, Perf                                        |
 | RD04   |                                                          | Model S/X 2021 (Rear drive unit?)                         |
-| RD05   | Drive Unit                                               | Model 3/Y (AWD)                                           |
+| RD05   | Drive Unit                                               | Model 3/Y LR/DM (China)                                   |
 | RD06   |                                                          | Model 3 2022 refresh?                                     |
 | RDU2   | Rear large drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Perf version)                             |
 | RDU4   | Rear small drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Plus version)                             |
@@ -527,7 +529,7 @@ return a generic set of codes related to a Model 3.
 | W33D   | 20" Black Performance Wheels 2021                        | Model 3                                                   |
 | W38B   | 18" Aero Wheels                                          | For the Model 3 and Model Y                               |
 | W39B   | 19" Sport Wheels                                         |                                                           |
-| W40B   | 18" Wheels                                               | Model 3 China                                             |
+| W40B   | 18" Wheels                                               | Model 3 2021                                              |
 | WR00   | No Wrap                                                  |                                                           |
 | WR01   | Wrap                                                     |                                                           |
 | WR02   | Wrap 2 (Tilburg bound)                                   |                                                           |

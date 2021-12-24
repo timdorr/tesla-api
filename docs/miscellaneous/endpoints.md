@@ -1,6 +1,6 @@
 # Endpoints File
 
-This the latest contents of the env_ownerapi_endpoints.json file from the 4.3.0 version of the app.
+This the latest contents of the env_ownerapi_endpoints.json file from the 4.4.0 version of the app.
 
 ```json
 {
@@ -27,11 +27,6 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.3.0 
   "VEHICLE_SUMMARY": {
     "TYPE": "GET",
     "URI": "api/1/vehicles/{vehicle_id}",
-    "AUTH": true
-  },
-  "VEHICLE_DATA_LEGACY": {
-    "TYPE": "GET",
-    "URI": "api/1/vehicles/{vehicle_id}/data",
     "AUTH": true
   },
   "VEHICLE_DATA": {
@@ -353,17 +348,6 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.3.0 
     "AUTH": true,
     "CONTENT": "HTML"
   },
-  "UPGRADE_ELIGIBILITY": {
-    "TYPE": "GET",
-    "URI": "api/1/vehicles/{vehicle_id}/eligible_upgrades",
-    "AUTH": true
-  },
-  "UPGRADES_PAGE": {
-    "TYPE": "GET",
-    "URI": "upgrades_page",
-    "AUTH": true,
-    "CONTENT": "HTML"
-  },
   "MESSAGE_CENTER_MESSAGE_COUNT": {
     "TYPE": "GET",
     "URI": "api/1/messages/count",
@@ -379,30 +363,14 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.3.0 
     "URI": "api/1/messages/{message_id}",
     "AUTH": true
   },
-  "MESSAGE_CENTER_COUNTS": {
-    "TYPE": "GET",
-    "URI": "api/1/messages/count",
-    "AUTH": true
-  },
   "MESSAGE_CENTER_MESSAGE_ACTION_UPDATE": {
     "TYPE": "POST",
     "URI": "api/1/messages/{message_id}/actions",
     "AUTH": true
   },
-  "MESSAGE_CENTER_CTA_PAGE": {
-    "TYPE": "GET",
-    "URI": "messages_cta_page",
-    "AUTH": true,
-    "CONTENT": "HTML"
-  },
   "SEND_DEVICE_KEY": {
     "TYPE": "POST",
     "URI": "api/1/users/keys",
-    "AUTH": true
-  },
-  "SITE_SUMMARY": {
-    "TYPE": "GET",
-    "URI": "api/1/energy_sites/{site_id}/status",
     "AUTH": true
   },
   "SITE_DATA": {
@@ -503,6 +471,11 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.3.0 
   "ENERGY_EVENT": {
     "TYPE": "POST",
     "URI": "api/1/energy_sites/energy_event",
+    "AUTH": true
+  },
+  "VEHICLE_CHARGE_HISTORY": {
+    "TYPE": "GET",
+    "URI": "api/1/vehicles/{vehicle_id}/charge_history",
     "AUTH": true
   },
   "SEND_NOTIFICATION_CONFIRMATION": {
@@ -770,6 +743,11 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.3.0 
     "URI": "bff/v2/mobile-app/feature-flag/tao-4109-use-macgyver-mobile-app",
     "AUTH": true
   },
+  "SERVICE_FEATURE_FLAG_SCHEDULING_FALLBACK": {
+    "TYPE": "GET",
+    "URI": "mobile-app/feature-flag/TAO-13782-no-estimate-schedule-fallback",
+    "AUTH": true
+  },
   "SERVICE_UPLOAD_FILE": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/files",
@@ -990,11 +968,6 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.3.0 
     "URI": "bff/v2/mobile-app/upgrades/refunds",
     "AUTH": true
   },
-  "UPGRADES_POST_PAYMENT": {
-    "TYPE": "POST",
-    "URI": "bff/v2/mobile-app/upgrades/payment",
-    "AUTH": true
-  },
   "USER_ACCOUNT_GET_DETAILS": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/account/details",
@@ -1095,11 +1068,6 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.3.0 
     "URI": "bff/v2/mobile-app/bill-me-later/security-toggle",
     "AUTH": true
   },
-  "UPGRADES_SUBSCRIPTIONS_SHARED_BILLING_ADDRESS_FEATURE_FLAG": {
-    "TYPE": "GET",
-    "URI": "bff/v2/mobile-app/billing-address/feature-flag/TAO-8065-in-app-BillingBlock-Enable",
-    "AUTH": true
-  },
   "BILLING_ADDRESS_FORM_FEATURE_FLAG": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/billing-address/feature-flag/tao-8202-ownership-mobile-app-billing-address",
@@ -1138,6 +1106,11 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.3.0 
   "PAYMENTS_UPDATE_BILLING_ADDRESS": {
     "TYPE": "PUT",
     "URI": "bff/v2/mobile-app/billing-address",
+    "AUTH": true
+  },
+  "PAYMENTS_FETCH_CN_ENTITY": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/payments/entity",
     "AUTH": true
   },
   "DOCUMENTS_DOWNLOAD_INVOICE": {
@@ -1400,16 +1373,6 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.3.0 
     "URI": "bff/v2/mobile-app/charging/site/{id}",
     "AUTH": true
   },
-  "CHARGING_GET_BILLING_ADDRESS": {
-    "TYPE": "GET",
-    "URI": "bff/v2/mobile-app/charging/billing-address",
-    "AUTH": true
-  },
-  "CHARGING_SET_BILLING_ADDRESS": {
-    "TYPE": "POST",
-    "URI": "bff/v2/mobile-app/charging/billing-address",
-    "AUTH": true
-  },
   "CHARGING_STOP_SESSION": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/charging/session/stop/{id}",
@@ -1503,6 +1466,46 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.3.0 
   "SITE_LOCK_GET_STATUS": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/charging-cn/get-lock-status",
+    "AUTH": true
+  },
+  "FETCH_VEHICLE_SHARED_DRIVERS": {
+    "TYPE": "GET",
+    "URI": "api/1/vehicles/{vehicle_id}/drivers",
+    "AUTH": true
+  },
+  "CREATE_VEHICLE_SHARE_INVITE": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/invitations",
+    "AUTH": true
+  },
+  "FETCH_VEHICLE_SHARE_INVITES": {
+    "TYPE": "GET",
+    "URI": "api/1/vehicles/{vehicle_id}/invitations",
+    "AUTH": true
+  },
+  "REVOKE_VEHICLE_SHARE_INVITE": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/invitations/{invite_id}/revoke",
+    "AUTH": true
+  },
+  "REMOVE_VEHICLE_SHARE_DRIVER": {
+    "TYPE": "DELETE",
+    "URI": "api/1/vehicles/{vehicle_id}/drivers/{share_user_id}",
+    "AUTH": true
+  },
+  "REDEEM_VEHICLE_SHARE_INVITE": {
+    "TYPE": "POST",
+    "URI": "api/1/invitations/redeem",
+    "AUTH": true
+  },
+  "AUTH_GENERATE_INSTANT_LOGIN": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/auth/generate-instant-login",
+    "AUTH": true
+  },
+  "GET_MANAGE_DRIVER_FLAG": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/feature-flag/TAO-14025-add-driver-flow",
     "AUTH": true
   }
 }

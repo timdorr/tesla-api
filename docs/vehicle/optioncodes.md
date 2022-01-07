@@ -166,6 +166,7 @@ return a generic set of codes related to a Model 3.
 | FBBR   | Front Brake Brembo Red                                   | Brakes (MS/MX 2021)                                       |
 | FC01   | Front Console Inductive Phone Charger                    | Model 3                                                   |
 | FC02   | Front Console Front Console (Premium)                    | Model 3/Y 2021                                            |
+| FCH2   |                                                          | Model 3/Y late 2021                                       |
 | FC3P   | Front Console Front Console (Premium)                    | Model 3                                                   |
 | FD00   |                                                          | Model 3 2021 (USA)                                        |
 | FD01   |                                                          | Model 3/Y 2021 (China)                                    |
@@ -343,6 +344,7 @@ return a generic set of codes related to a Model 3.
 | MTY04  | Long Range All-Wheel Drive Performance                   | Model Y                                                   |
 | MTY05  | Long Range All-Wheel Drive Performance                   | Model Y                                                   |
 | MTY07  | Long Range All-Wheel Drive                               | Model Y                                                   |
+| MY02   |                                                          | Model Y                                                   |
 | OSSB   | Safety CA Black                                          |                                                           |
 | OSSW   | Safety CA White                                          |                                                           |
 | P3WS   | Pedestrian warning speaker                               |                                                           |
@@ -412,6 +414,7 @@ return a generic set of codes related to a Model 3.
 | QVPP   | Vegan Cream Seats                                        |                                                           |
 | QVSW   | White Tesla Seats                                        |                                                           |
 | QXMB   | Black Leather Seat                                       |                                                           |
+| RA00   |                                                          | Model 3/Y                                                 |
 | RA01   |                                                          | Model 3/Y                                                 |
 | RBMB   | Rear Brake Mando Black                                   | Model X                                                   |
 | RBMR   | Rear Brake Mando Red                                     | Model S                                                   |
@@ -492,6 +495,7 @@ return a generic set of codes related to a Model 3.
 | T3MA   | Tires M3                                                 | 18" Michelin All Season, Square                           |
 | T3MC   | Tires M3                                                 | 18" China made                                            |
 | T3P3   | Tires M3                                                 | 20" Michelin PS4 Summer                                   |
+| TY9A   | Tires MY                                                 | Tires 19" All Season Square                               |
 | TD00   | Tear Down NON-GLIDER                                     | Model S/X                                                 |
 | TIC4   | Tires MX                                                 | 20" all-weather tires                                     |
 | TIG2   | Summer Tires                                             |                                                           |
@@ -580,7 +584,7 @@ return a generic set of codes related to a Model 3.
 | WXW7   | No 19" Nokian Winter Tires (non-studded)                 |                                                           |
 | WXW8   | No 19" Pirelli Winter Tires                              |                                                           |
 | WY18B  | 18" Aero Wheels                                          |                                                           |
-| WY9S   | 19" Apollo                                               | Model Y China                                             |
+| WY9S   | 19" Apollo                                               | Model Y                                                   |
 | WY19B  | 19" Sport Wheels                                         |                                                           |
 | WY20P  | 20" Performance Wheels                                   |                                                           |
 | X001   | Override: Power Liftgate                                 |                                                           |

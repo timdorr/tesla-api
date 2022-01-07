@@ -495,7 +495,7 @@ return a generic set of codes related to a Model 3.
 | T3MA   | Tires M3                                                 | 18" Michelin All Season, Square                           |
 | T3MC   | Tires M3                                                 | 18" China made                                            |
 | T3P3   | Tires M3                                                 | 20" Michelin PS4 Summer                                   |
-| TY9A   | Tires MY                                                 | Tires	19” All Season Square                               |
+| TY9A   | Tires MY                                                 | Tires 19" All Season Square                               |
 | TD00   | Tear Down NON-GLIDER                                     | Model S/X                                                 |
 | TIC4   | Tires MX                                                 | 20" all-weather tires                                     |
 | TIG2   | Summer Tires                                             |                                                           |

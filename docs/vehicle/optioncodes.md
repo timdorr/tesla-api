@@ -117,7 +117,7 @@ return a generic set of codes related to a Model 3.
 | CH12   | 48 Amperage Combo 1 Gen 3.5 Charger                      | Chargers Single Phase (MS/MX 2020-2021)                   |
 | CH15   | 48 Amp Charger Hardware (REEU/REAP) with Busbar          | EU spec                                                   |
 | CH16   | 48 Amp Charger Hardware (RENA) with Busbar               | NA spec                                                   |
-| CH17   |                                                          | NA spec Model X late 2021                                 |
+| CH17   |                                                          | NA spec Model S/X Palladium                               |
 | COL0   | Signature                                                |                                                           |
 | COL1   | Solid                                                    |                                                           |
 | COL2   | Metallic                                                 |                                                           |

@@ -96,7 +96,7 @@ return a generic set of codes related to a Model 3.
 | BTX8   | 75 kWh                                                   |                                                           |
 | BTX9   | 100 kWh Battery Pack with Weight Reduction               | Model S 2020/08                                           |
 | BTXA   | 18650J2 Battery Cell                                     | Model X 2020                                              |
-| BTXB   | 99kWh 18650 Plaid _E5 or E6_ vin battery                 | Model S 2021 LR/Plaid                                     |
+| BTXB   | 99kWh 18650 Plaid _E5 or E6_ vin battery                 | Model S/X 2021 LR/Plaid                                   |
 | BY00   |                                                          | Model Y                                                   |
 | BY01   |                                                          | Model Y                                                   |
 | CC01   | Five Seat Interior                                       |                                                           |
@@ -117,6 +117,7 @@ return a generic set of codes related to a Model 3.
 | CH12   | 48 Amperage Combo 1 Gen 3.5 Charger                      | Chargers Single Phase (MS/MX 2020-2021)                   |
 | CH15   | 48 Amp Charger Hardware (REEU/REAP) with Busbar          | EU spec                                                   |
 | CH16   | 48 Amp Charger Hardware (RENA) with Busbar               | NA spec                                                   |
+| CH17   |                                                          | NA spec Model X late 2021                                 |
 | COL0   | Signature                                                |                                                           |
 | COL1   | Solid                                                    |                                                           |
 | COL2   | Metallic                                                 |                                                           |
@@ -141,6 +142,7 @@ return a generic set of codes related to a Model 3.
 | COPT   | Country: Portugal                                        |                                                           |
 | COSE   | Country: Sweden                                          |                                                           |
 | COUS   | Country: United States                                   |                                                           |
+| CP00   |                                                          | MX 2021                                                   |
 | CPF0   | Standard Connectivity                                    | 1 month                                                   |
 | CPF1   | Premium Connectivity                                     | 1 year                                                    |
 | CPW1   | 20" Performance Wheels                                   |                                                           |
@@ -209,6 +211,7 @@ return a generic set of codes related to a Model 3.
 | IBB0   | All Black Interior                                       | Model 3 Old Door Trim                                     |
 | IBB1   | All Black Interior                                       | Model 3 New Door Trim (Since Q1 2021)                     |
 | IC00   |                                                          | Model S/X (Since Q2 2021)                                 |
+| IC01   |                                                          | Model X (Since Q4 2021)                                   |
 | IC02   |                                                          | Model S/X (Since Q2 2021)                                 |
 | ID00   |                                                          | Model S/X (Since Q2 2021)                                 |
 | ID03   |                                                          | Model S/X (Since Q2 2021)                                 |
@@ -345,6 +348,7 @@ return a generic set of codes related to a Model 3.
 | MTY05  | Long Range All-Wheel Drive Performance                   | Model Y                                                   |
 | MTY07  | Long Range All-Wheel Drive                               | Model Y                                                   |
 | MY02   |                                                          | Model Y                                                   |
+| MX06   |                                                          | Model X 2021+                                             |
 | OSSB   | Safety CA Black                                          |                                                           |
 | OSSW   | Safety CA White                                          |                                                           |
 | P3WS   | Pedestrian warning speaker                               |                                                           |
@@ -422,9 +426,9 @@ return a generic set of codes related to a Model 3.
 | RCX1   | Rear Console                                             |                                                           |
 | RD01   | Rear drive unit (600A)                                   | Model 3 LR/DM (Fremont)                                   |
 | RD02   | Rear drive unit (800A)                                   | Model 3 Std+, Perf                                        |
-| RD03   |                                                          | Model S/X 2021 LR (Rear drive unit)                       |
-| RD04   |                                                          | Model S/X 2021 P (Rear drive unit)                        |
-| RD05   | Drive Unit                                               | Model 3/Y LR/DM (China)                                   |
+| RD03   | Rear Drive Unit LR                                       | Model S/X 2021 (Rear drive unit)                          |
+| RD04   | Rear Drive Unit Plaid                                    | Model S/X 2021 (Rear drive unit)                          |
+| RD05   | Rear Drive Unit                                          | Model 3/Y LR/DM (China)                                   |
 | RD06   |                                                          | Model 3 2022 refresh?                                     |
 | RDU2   | Rear large drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Perf version)                             |
 | RDU4   | Rear small drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Plus version)                             |
@@ -470,6 +474,7 @@ return a generic set of codes related to a Model 3.
 | SPT31  | Performance Upgrade                                      | Model 3                                                   |
 | SPTY1  | Performance Upgrade                                      | Model Y                                                   |
 | SR01   | Standard 2nd row                                         | Second Row Seat                                           |
+| SR04   | Second Row Seat                                          | Six Seat Interior                                         |
 | SR05   | X Front seat set                                         | Second Row Seat (Model Y China)                           |
 | SR06   | Seven Seat Interior                                      |                                                           |
 | SR07   | Second Row Seats with Comfort Improvements               |                                                           |
@@ -521,6 +526,7 @@ return a generic set of codes related to a Model 3.
 | TSHP   | Heat Pump Thermal Assembly                               | Model Y 2021 (China)                                      |
 | TW00   | No Tow Package                                           |                                                           |
 | TW01   | Tow Package                                              |                                                           |
+| TX20   |                                                          | Model X 2021                                              |
 | UM01   | Universal Mobile Charger - US Port (Single)              |                                                           |
 | UT3P   | Suede Grey Premium Headliner                             | Ultrasuede Grey                                           |
 | UTAB   | Black Alcantara Headliner                                |                                                           |

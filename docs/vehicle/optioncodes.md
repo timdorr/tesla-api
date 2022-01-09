@@ -109,7 +109,6 @@ return a generic set of codes related to a Model 3.
 | CF01   | 48amp charger                                            |                                                           |
 | CH00   | Standard Charger (40 Amp)                                |                                                           |
 | CH01   | Dual Chargers (80 Amp)                                   | Twin 10kW charge config                                   |
-| CH04   | 72 Amp Charger (Model S/X)                               |                                                           |
 | CH05   | 48 Amp Charger (Model S/X)                               |                                                           |
 | CH07   | 48 Amp Charger (Model 3)                                 |                                                           |
 | CH09   | Tesla Standard Charging System (Model S 2020 EU)         |                                                           |
@@ -431,6 +430,7 @@ return a generic set of codes related to a Model 3.
 | RD05   | Rear Drive Unit                                          | Model 3/Y LR/DM (China)                                   |
 | RD06   |                                                          | Model 3 2022 refresh?                                     |
 | RDU2   | Rear large drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Perf version)                             |
+| RDU3   | Rear small drive unit                                    | Model S/X 2017+- (LR version)                             |
 | RDU4   | Rear small drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Plus version)                             |
 | RF3G   | Glass Roof                                               | Model 3/Y                                                 |
 | RFBK   | Black Roof                                               | Model S                                                   |

@@ -109,8 +109,9 @@ return a generic set of codes related to a Model 3.
 | CF01   | 48amp charger                                            |                                                           |
 | CH00   | Standard Charger (40 Amp)                                |                                                           |
 | CH01   | Dual Chargers (80 Amp)                                   | Twin 10kW charge config                                   |
-| CH05   | 48 Amp Charger (Model S/X)                               |                                                           |
-| CH07   | 48 Amp Charger (Model 3)                                 |                                                           |
+| CH04   | 72 Amp Charger Gen3                                      | Model S/X                                                 |
+| CH05   | 48 Amp Charger                                           | Model S/X                                                 |
+| CH07   | 48 Amp Charger                                           | Model 3                                                   |
 | CH09   | Tesla Standard Charging System (Model S 2020 EU)         |                                                           |
 | CH11   | Single phase 48 Amperage Combo 1                         | Chargers Single Phase                                     |
 | CH12   | 48 Amperage Combo 1 Gen 3.5 Charger                      | Chargers Single Phase (MS/MX 2020-2021)                   |

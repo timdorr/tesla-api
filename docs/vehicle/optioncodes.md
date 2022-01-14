@@ -220,6 +220,7 @@ return a generic set of codes related to a Model 3.
 | IDBA   | Dark Ash Wood Decor                                      |                                                           |
 | IDBO   | Figured Ash Wood Decor Burl Open Pore décor              |                                                           |
 | IDCF   | Carbon Fiber Decor                                       |                                                           |
+| IDHG   | IP Décor Horizontal Gloss                                |                                                           |
 | IDHM   | Matte Obeche Wood Decor                                  |                                                           |
 | IDOK   | Oak Decor                                                |                                                           |
 | IDOM   | Matte Obeche Wood Decor                                  |                                                           |
@@ -431,7 +432,7 @@ return a generic set of codes related to a Model 3.
 | RD05   | Rear Drive Unit                                          | Model 3/Y LR/DM (China)                                   |
 | RD06   |                                                          | Model 3 2022 refresh?                                     |
 | RDU2   | Rear large drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Perf version)                             |
-| RDU3   | Rear small drive unit                                    | Model S/X 2017+- (LR version)                             |
+| RDU3   | Rear small drive unit                                    | Model S/X 2015-2017+- (DM version)                        |
 | RDU4   | Rear small drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Plus version)                             |
 | RF3G   | Glass Roof                                               | Model 3/Y                                                 |
 | RFBK   | Black Roof                                               | Model S                                                   |
@@ -452,6 +453,7 @@ return a generic set of codes related to a Model 3.
 | S01B   | Black Textile Seats                                      |                                                           |
 | S02B   | Seat                                                     | BLK Leather                                               |
 | S02P   | S02P                                                     |                                                           |
+| S02T   | Seat                                                     | Tan Leather                                               |
 | S02W   | White Seats                                              |                                                           |
 | S07W   | White Seats                                              |                                                           |
 | S31B   | S31B                                                     |                                                           |

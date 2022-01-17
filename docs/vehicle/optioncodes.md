@@ -115,6 +115,7 @@ return a generic set of codes related to a Model 3.
 | CH09   | Tesla Standard Charging System (Model S 2020 EU)         |                                                           |
 | CH11   | Single phase 48 Amperage Combo 1                         | Chargers Single Phase                                     |
 | CH12   | 48 Amperage Combo 1 Gen 3.5 Charger                      | Chargers Single Phase (MS/MX 2020-2021)                   |
+| CH14   | 32 Amp Charger Hardware (RENA) with Busbar               | NA spec M3 2022 SR+                                       |
 | CH15   | 48 Amp Charger Hardware (REEU/REAP) with Busbar          | EU spec                                                   |
 | CH16   | 48 Amp Charger Hardware (RENA) with Busbar               | NA spec                                                   |
 | CH17   | 48 Amp 1PH&3PH,P2                                        | NA spec Model S/X Palladium                               |
@@ -500,6 +501,7 @@ return a generic set of codes related to a Model 3.
 | SU3C   | Coil Spring Suspension                                   |                                                           |
 | SWF0   |                                                          | Model 3/Y                                                 |
 | SWF1   |                                                          | Model 3/Y                                                 |
+| T3CA   | Tires M3                                                 | 19" Continental All Season, Square                        |
 | T3HS   | Tires M3                                                 | 19" Hankook Summer Square                                 |
 | T3MA   | Tires M3                                                 | 18" Michelin All Season, Square                           |
 | T3MC   | Tires M3                                                 | 18" China made                                            |
@@ -548,6 +550,7 @@ return a generic set of codes related to a Model 3.
 | W38B   | 18" Aero Wheels                                          | For the Model 3 and Model Y                               |
 | W39B   | 19" Sport Wheels                                         |                                                           |
 | W40B   | 18" Wheels                                               | Model 3 2021                                              |
+| W41B   | 19" Wheels                                               | Model 3 2022                                              |
 | WR00   | No Wrap                                                  |                                                           |
 | WR01   | Wrap                                                     |                                                           |
 | WR02   | Wrap 2 (Tilburg bound)                                   |                                                           |

@@ -293,6 +293,7 @@ return a generic set of codes related to a Model 3.
 | LTSB   | Lower Trim Standard Black                                | Model 3 Standard+                                         |
 | LVB0   |                                                          | Model 3/Y Standard+                                       |
 | LVB1   |                                                          | Model 3/Y with Premium Interior                           |
+| M301   | Generation 1 of 2022                                     | AMD Ryzen?                                                |
 | ME01   | Memory Seats                                             |                                                           |
 | ME02   | Seat Memory                                              | Seat Memory LHD Driver                                    |
 | MI00   | 1st Generation Production                                | Model 3 (2019), Model S (Nosecone), MX(2016), MY(2021)    |

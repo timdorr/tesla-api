@@ -142,6 +142,7 @@ return a generic set of codes related to a Model 3.
 | CONO   | Country: Norway                                          |                                                           |
 | COPT   | Country: Portugal                                        |                                                           |
 | COSE   | Country: Sweden                                          |                                                           |
+| COSG   | Country: Singapore                                       |                                                           |
 | COUS   | Country: United States                                   |                                                           |
 | CP00   |                                                          | MX 2021                                                   |
 | CPF0   | Standard Connectivity                                    | 1 month                                                   |
@@ -155,7 +156,6 @@ return a generic set of codes related to a Model 3.
 | DCF0   | Front Console NO Drop-In Front Console                   |                                                           |
 | DCF2   | Front Console Inductive Phone Charger                    |                                                           |
 | DRLH   | Left Hand Drive                                          |                                                           |
-| BC3R   | Performance Brakes                                       | Model 3                                                   |
 | DRRH   | Right Hand Drive                                         |                                                           |
 | DSH5   | Dashboard                                                | PUR Dashboard Pad                                         |
 | DSH7   | Alcantara Dashboard Accents                              |                                                           |
@@ -544,7 +544,7 @@ return a generic set of codes related to a Model 3.
 | UTZW   | Light Headliner                                          |                                                           |
 | USSB   | Safety                                                   | Safety US Black                                           |
 | USSW   | US Safety Kit White                                      |                                                           |
-| VC00   |                                                          | Model Y (China?)                                          |
+| VC00   |                                                          | Model 3/Y (China)                                         |
 | W32P   | 20" Performance Wheels                                   | Model 3                                                   |
 | W32D   | 20" Gray Performance Wheels                              | Model 3                                                   |
 | W33D   | 20" Black Performance Wheels 2021                        | Model 3                                                   |
@@ -633,4 +633,4 @@ return a generic set of codes related to a Model 3.
 | YF01   | Matching Yacht Floor                                     |                                                           |
 | YFCC   | Yatcht Floor Front Console, Décor Matched                |                                                           |
 | YFFC   | Integrated Center Console                                |                                                           |
-| ZINV   |                                                          | MS Plaid Q42022                                           |
+| ZINV   | Inventory vehicle?                                       | MS Plaid Q42022/M3P Singapore                             |

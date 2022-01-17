@@ -215,7 +215,7 @@ return a generic set of codes related to a Model 3.
 | IC01   |                                                          | Model X (Since Q4 2021)                                   |
 | IC02   |                                                          | Model S/X (Since Q2 2021)                                 |
 | ID00   |                                                          | Model S/X (Since Q2 2021)                                 |
-| ID02   |                                                          | Model S/X (Since Q4 2021)                                 |
+| ID02   | All Black Premium Interior with Carbon Fiber Décor?      | Model S/X (Since Q4 2021)                                 |
 | ID03   |                                                          | Model S/X (Since Q2 2021)                                 |
 | ID3A   | Interior White Aluminum                                  | Model 3/Y                                                 |
 | ID3W   | Interior Wood Decor                                      | Model 3/Y                                                 |

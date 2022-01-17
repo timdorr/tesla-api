@@ -534,6 +534,7 @@ return a generic set of codes related to a Model 3.
 | TW00   | No Tow Package                                           |                                                           |
 | TW01   | Tow Package                                              |                                                           |
 | TX20   |                                                          | Model X 2021                                              |
+| TY0A   | 20" All Season Square                                    | Model Y 2022                                              |
 | UM01   | Universal Mobile Charger - US Port (Single)              |                                                           |
 | UT3P   | Suede Grey Premium Headliner                             | Ultrasuede Grey                                           |
 | UTAB   | Black Alcantara Headliner                                |                                                           |
@@ -545,6 +546,7 @@ return a generic set of codes related to a Model 3.
 | USSB   | Safety                                                   | Safety US Black                                           |
 | USSW   | US Safety Kit White                                      |                                                           |
 | VC00   |                                                          | Model 3/Y (China)                                         |
+| VC01   | AMD Ryzen?                                               | Model 3/Y first found on MYJan2022                        |
 | W32P   | 20" Performance Wheels                                   | Model 3                                                   |
 | W32D   | 20" Gray Performance Wheels                              | Model 3                                                   |
 | W33D   | 20" Black Performance Wheels 2021                        | Model 3                                                   |
@@ -597,6 +599,7 @@ return a generic set of codes related to a Model 3.
 | WXW6   | No 19" Nokian Winter Tires (studded)                     |                                                           |
 | WXW7   | No 19" Nokian Winter Tires (non-studded)                 |                                                           |
 | WXW8   | No 19" Pirelli Winter Tires                              |                                                           |
+| WY0S   | 20" Induction                                            | Model Y 2022                                              |
 | WY18B  | 18" Aero Wheels                                          |                                                           |
 | WY9S   | 19" Apollo                                               | Model Y                                                   |
 | WY19B  | 19" Sport Wheels                                         |                                                           |

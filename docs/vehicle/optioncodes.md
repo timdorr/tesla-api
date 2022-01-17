@@ -58,7 +58,7 @@ return a generic set of codes related to a Model 3.
 | AU3P   | Sound Studio Package                                     | Premium audio package                                     |
 | AUF1   | Premium Speakers Enabled                                 | M3/MY Premium Audio Package (AWD,Perf)                    |
 | AUF2   | Premium Speakers Disabled                                | M3/MY Reduced Audio Package (Standard, mid range)         |
-| BC00   |                                                          |                                                           |
+| BC00   |                                                          | MS Q4 Plaid                                               |
 | BC0B   | Black Brake Calipers                                     |                                                           |
 | BC0R   | Red Brake Calipers                                       |                                                           |
 | BC3B   | Black Brake Calipers                                     | Model 3/Y                                                 |
@@ -215,6 +215,7 @@ return a generic set of codes related to a Model 3.
 | IC01   |                                                          | Model X (Since Q4 2021)                                   |
 | IC02   |                                                          | Model S/X (Since Q2 2021)                                 |
 | ID00   |                                                          | Model S/X (Since Q2 2021)                                 |
+| ID02   |                                                          | Model S/X (Since Q4 2021)                                 |
 | ID03   |                                                          | Model S/X (Since Q2 2021)                                 |
 | ID3A   | Interior White Aluminum                                  | Model 3/Y                                                 |
 | ID3W   | Interior Wood Decor                                      | Model 3/Y                                                 |
@@ -485,14 +486,13 @@ return a generic set of codes related to a Model 3.
 | SR07   | Second Row Seats with Comfort Improvements               |                                                           |
 | ST00   | Non-leather Steering Wheel                               |                                                           |
 | ST01   | Non-heated Leather Steering Wheel                        |                                                           |
-| ST30   | Base Steering Wheel                                      | Model 3 Standard+                                         |
 | ST02   | Heated Leather Steering Wheel                            |                                                           |
 | ST03   | Regular Steering Wheel                                   | Model X/S Plaid (removed)                                 |
 | ST0Y   | Yoke Steering Wheel                                      | Model X/S Plaid                                           |
+| ST30   | Base Steering Wheel                                      | Model 3 Standard+                                         |
 | ST31   | Steering Wheel                                           | Premium Steering Wheel                                    |
 | ST33   | Steering wheel - heated on LR/P (Model 3)                | Premium Steering Wheel                                    |
 | STCP   | Steering Wheel                                           | Steering Column (Power)                                   |
-| ST0Y   | Yoke Steering Wheel                                      |                                                           |
 | STY5S  | Five Seat Interior                                       |                                                           |
 | STY7S  | Seven Seat Interior                                      |                                                           |
 | SU00   | Standard Suspension                                      |                                                           |
@@ -529,6 +529,7 @@ return a generic set of codes related to a Model 3.
 | TR01   | Third Row Seating                                        |                                                           |
 | TRA1   | Third Row HVAC                                           |                                                           |
 | TS10   |                                                          | Model S/X 2021                                            |
+| TS91   |                                                          | Model S/X 2021                                            |
 | TSHP   | Heat Pump Thermal Assembly                               | Model Y 2021 (China)                                      |
 | TW00   | No Tow Package                                           |                                                           |
 | TW01   | Tow Package                                              |                                                           |
@@ -632,3 +633,4 @@ return a generic set of codes related to a Model 3.
 | YF01   | Matching Yacht Floor                                     |                                                           |
 | YFCC   | Yatcht Floor Front Console, Décor Matched                |                                                           |
 | YFFC   | Integrated Center Console                                |                                                           |
+| ZINV   |                                                          | MS Plaid Q42022                                           |

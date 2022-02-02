@@ -105,14 +105,14 @@ return a generic set of codes related to a Model 3.
 | CC04   | Seven Seat Interior                                      |                                                           |
 | CC12   | Six Seat Interior with Center Console                    |                                                           |
 | CDM0   | No CHAdeMO Charging Adaptor                              |                                                           |
-| CF00   | High Power Charger                                       |                                                           |
+| CF00   | 72amp High Power Charger                                 |                                                           |
 | CF01   | 48amp charger                                            |                                                           |
 | CH00   | Standard Charger (40 Amp)                                |                                                           |
 | CH01   | Dual Chargers (80 Amp)                                   | Twin 10kW charge config                                   |
 | CH04   | 72 Amp Charger Gen3                                      | Model S/X                                                 |
 | CH05   | 48 Amp Charger                                           | Model S/X                                                 |
 | CH07   | 48 Amp Charger                                           | Model 3                                                   |
-| CH09   | Tesla Standard Charging System (Model S 2020 EU)         |                                                           |
+| CH09   | Tesla Standard Charging System 72a (Model S mid2019 EU)  |                                                           |
 | CH11   | Single phase 48 Amperage Combo 1                         | Chargers Single Phase                                     |
 | CH12   | 48 Amperage Combo 1 Gen 3.5 Charger                      | Chargers Single Phase (MS/MX 2020-2021)                   |
 | CH14   | 32 Amp Charger Hardware (RENA) with Busbar               | NA spec M3 2022 SR+                                       |
@@ -162,6 +162,7 @@ return a generic set of codes related to a Model 3.
 | DSHG   | Dash with Graphite trim                                  |                                                           |
 | DU00   | Drive Unit - IR                                          |                                                           |
 | DU01   | Drive Unit - Infineon                                    |                                                           |
+| DU02   | Drive Unit - Non-performance front drive unit (raven)    | MS 2019-2020                                              |
 | DV2W   | Rear-Wheel Drive                                         |                                                           |
 | DV4W   | All-Wheel Drive                                          |                                                           |
 | EUSB   | Safety EU Black                                          |                                                           |
@@ -191,7 +192,7 @@ return a generic set of codes related to a Model 3.
 | FR01   | Base Front Row                                           |                                                           |
 | FR02   | Ventilated Front Seats                                   |                                                           |
 | FR03   | FR03                                                     |                                                           |
-| FR04   | FR04                                                     |                                                           |
+| FR04   | Front Row Seat                                           | MS 2019-2020                                              |
 | FR05   | Front Row Seat                                           | Ventilated Front Seats (MS/MX 10.2020+)                   |
 | GLCN   | Assembly                                                 | Final Assembly China Giga3 Model 3                        |
 | GLFR   | Assembly                                                 | Final Assembly Fremont                                    |
@@ -461,7 +462,7 @@ return a generic set of codes related to a Model 3.
 | S07W   | White Seats                                              |                                                           |
 | S31B   | S31B                                                     |                                                           |
 | S32C   | S32C                                                     |                                                           |
-| S32P   | S32P                                                     |                                                           |
+| S32P   | Black PUR Seats                                          | Model S 2019                                              |
 | S32W   | S32W                                                     |                                                           |
 | S3PB   | Seat Black PUR Premium Seats                             |                                                           |
 | S3PW   | Seat White PUR Premium Seats                             |                                                           |
@@ -497,7 +498,7 @@ return a generic set of codes related to a Model 3.
 | STY7S  | Seven Seat Interior                                      |                                                           |
 | SU00   | Standard Suspension                                      |                                                           |
 | SU01   | Smart Air Suspension                                     |                                                           |
-| SU03   | Suspension Update                                        | Model S/X 2020-2021                                       |
+| SU03   | Suspension Update                                        | Model S/X 2019-2021                                       |
 | SU3C   | Coil Spring Suspension                                   |                                                           |
 | SWF0   |                                                          | Model 3/Y                                                 |
 | SWF1   |                                                          | Model 3/Y                                                 |
@@ -509,6 +510,7 @@ return a generic set of codes related to a Model 3.
 | TY9A   | Tires MY                                                 | Tires 19" All Season Square                               |
 | TD00   | Tear Down NON-GLIDER                                     | Model S/X                                                 |
 | TIC4   | Tires MX                                                 | 20" all-weather tires                                     |
+| TIC6   | Tires MS                                                 | 21" Continental CSC5P Staggered                           |
 | TIG2   | Summer Tires                                             |                                                           |
 | TIG5   | Goodyear Eagle Touring                                   |                                                           |
 | TIM7   | Summer Tires                                             |                                                           |

@@ -47,14 +47,18 @@ module TeslaApi
         {
           grant_type: "refresh_token",
           client_id: "ownerapi",
-          client_secret: client_secret,
           refresh_token: refresh_token,
           scope: "openid email offline_access"
         }
-      ).body
+      ) do |req|
+        req.headers["Accept"] = "application/json"
+      end.body
 
+      @access_token = response["access_token"]
       @refresh_token = response["refresh_token"]
-      exchange_sso_access_token(response["access_token"])
+      @access_token_expires_at = Time.at(Time.now.to_f + response["expires_in"].to_f).to_datetime
+
+      response
     end
 
     def login!(password, mfa_code: nil)

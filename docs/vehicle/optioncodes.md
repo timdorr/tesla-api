@@ -324,8 +324,8 @@ return a generic set of codes related to a Model 3.
 | MT320  | Standard Range Plus Rear-Wheel Drive                     | Model 3 2021 Refresh                                      |
 | MT322  | Standard Range Plus Rear-Wheel Drive                     | Model 3 2021 Refresh                                      |
 | MT321  | Long Range All-Wheel Drive                               | Model 3 2021 Refresh                                      |
-| MT323  | Long Range All-Wheel Drive                               | Model 3 2022 Refresh                                      |
-| MT328  | Long Range All-Wheel Drive                               | Model 3 2021 Refresh                                      |
+| MT323  | Long Range All-Wheel Drive                               | Model 3 2021 Refresh                                      |
+| MT328  | Long Range All-Wheel Drive                               | Model 3 2022 Refresh                                      |
 | MT336  | Standard Range Plus Rear-Wheel Drive                     | Model 3 2020 Refresh                                      |
 | MT337  | Standard Range Plus Rear-Wheel Drive                     | Model 3 2021 Refresh                                      |
 | MTS01  | Standard Range                                           | Model S                                                   |

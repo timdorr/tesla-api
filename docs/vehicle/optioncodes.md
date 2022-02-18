@@ -96,7 +96,7 @@ return a generic set of codes related to a Model 3.
 | BTX7   | 75 kWh                                                   |                                                           |
 | BTX8   | 75 kWh                                                   |                                                           |
 | BTX9   | 100 kWh Battery Pack with Weight Reduction               | Model S 2020/08                                           |
-| BTXA   | 18650J2 Battery Cell                                     | Model X 2020                                              |
+| BTXA   | 18650J2 Battery Cell                                     | Model S/X 2020                                            |
 | BTXB   | 99kWh 18650 Plaid _E5 or E6_ vin battery                 | Model S/X 2021 LR/Plaid                                   |
 | BY00   |                                                          | Model Y                                                   |
 | BY01   |                                                          | Model Y                                                   |
@@ -113,7 +113,7 @@ return a generic set of codes related to a Model 3.
 | CH04   | 72 Amp Charger Gen3                                      | Model S/X                                                 |
 | CH05   | 48 Amp Charger                                           | Model S/X                                                 |
 | CH07   | 48 Amp Charger                                           | Model 3                                                   |
-| CH09   | Tesla Standard Charging System 72a (Model S mid2019 EU)  |                                                           |
+| CH09   | Tesla Standard Charging System 72a (Gen3)                | Model S/X mid2019-2020 EU                                 |
 | CH11   | Single phase 48 Amperage Combo 1                         | Chargers Single Phase                                     |
 | CH12   | 48 Amperage Combo 1 Gen 3.5 Charger                      | Chargers Single Phase (MS/MX 2020-2021)                   |
 | CH14   | 32 Amp Charger Hardware (RENA) with Busbar               | NA spec M3 2022 SR+                                       |
@@ -292,6 +292,7 @@ return a generic set of codes related to a Model 3.
 | LT5W   | Lower Trim Black PUR with White interior                 | 2020 Model S                                              |
 | LT6P   | LT6P                                                     |                                                           |
 | LT6W   | White Base Lower Trim                                    |                                                           |
+| LTBC   | Lower Trim PUR Cream with Black Carpets                  |                                                           |
 | LTPB   | Lower Trim PUR Black                                     |                                                           |
 | LTPW   | Lower Trim PUR White                                     |                                                           |
 | LTSB   | Lower Trim Standard Black                                | Model 3 Standard+                                         |
@@ -468,6 +469,7 @@ return a generic set of codes related to a Model 3.
 | S32W   | S32W                                                     |                                                           |
 | S3PB   | Seat Black PUR Premium Seats                             |                                                           |
 | S3PW   | Seat White PUR Premium Seats                             |                                                           |
+| S42C   | Seat Cream Plenum Seats                                  |                                                           |
 | S42P   | Seat Black Plenum Seats                                  |                                                           |
 | S42W   | Seat White Plenum Seats                                  |                                                           |
 | SA3P   | Seat Adjustment - Power                                  | Model 3/Y                                                 |

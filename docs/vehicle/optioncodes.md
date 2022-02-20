@@ -112,6 +112,7 @@ return a generic set of codes related to a Model 3.
 | CH01   | Dual Chargers (80 Amp)                                   | Twin 10kW charge config                                   |
 | CH04   | 72 Amp Charger Gen3                                      | Model S/X                                                 |
 | CH05   | 48 Amp Charger                                           | Model S/X                                                 |
+| CH06   | 48 Amp Charger                                           | Model 3 CN                                                |
 | CH07   | 48 Amp Charger                                           | Model 3                                                   |
 | CH09   | Tesla Standard Charging System 72a (Gen3)                | Model S/X mid2019-2020 EU                                 |
 | CH11   | Single phase 48 Amperage Combo 1                         | Chargers Single Phase                                     |
@@ -128,6 +129,7 @@ return a generic set of codes related to a Model 3.
 | COBE   | Country: Belgium                                         |                                                           |
 | COCA   | Country: Canada                                          |                                                           |
 | COCH   | Country: Switzerland                                     |                                                           |
+| COCN   | Country: China                                           |                                                           |
 | CODE   | Country: Germany                                         |                                                           |
 | CODK   | Country: Denmark                                         |                                                           |
 | COES   | Country: Spain                                           |                                                           |

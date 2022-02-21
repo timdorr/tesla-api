@@ -553,8 +553,8 @@ return a generic set of codes related to a Model 3.
 | UTZW   | Light Headliner                                          |                                                           |
 | USSB   | Safety                                                   | Safety US Black                                           |
 | USSW   | US Safety Kit White                                      |                                                           |
-| VC00   | Vehicle computer Intel?                                  | Model 3/Y (China)                                         |
-| VC01   | AMD Ryzen?                                               | Model 3/Y first found on MYJan2022                        |
+| VC00   |                                                          | Model 3/Y (China)                                         |
+| VC01   |                                                          | Model 3/Y first found on MYJan2022                        |
 | W32P   | 20" Performance Wheels                                   | Model 3                                                   |
 | W32D   | 20" Gray Performance Wheels                              | Model 3                                                   |
 | W33D   | 20" Black Performance Wheels 2021                        | Model 3                                                   |

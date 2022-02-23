@@ -139,6 +139,7 @@ return a generic set of codes related to a Model 3.
 | COHR   | Country: Croatia                                         |                                                           |
 | COIE   | Country: Ireland                                         |                                                           |
 | COIT   | Country: Italy                                           |                                                           |
+| COJP   | Country: Japan                                           |                                                           |
 | COKR   | Country: South Korea                                     |                                                           |
 | COLU   | Country: Luxembourg                                      |                                                           |
 | CONL   | Country: Netherlands                                     |                                                           |

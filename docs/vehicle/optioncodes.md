@@ -612,7 +612,7 @@ return a generic set of codes related to a Model 3.
 | WXW8   | No 19" Pirelli Winter Tires                              |                                                           |
 | WY0S   | 20" Induction                                            | Model Y 2022                                              |
 | WY18B  | 18" Aero Wheels                                          |                                                           |
-| WY1S   | 21” Uberturbine                                          | Model Y 2022 GigaBerlin                                   |	
+| WY1S   | 21” Uberturbine                                          | Model Y 2022 GigaBerlin                                   |
 | WY9S   | 19" Apollo                                               | Model Y                                                   |
 | WY19B  | 19" Sport Wheels                                         |                                                           |
 | WY20P  | 20" Performance Wheels                                   |                                                           |

@@ -301,6 +301,7 @@ return a generic set of codes related to a Model 3.
 | LTSB   | Lower Trim Standard Black                                | Model 3 Standard+                                         |
 | LVB0   |                                                          | Model 3/Y Standard+                                       |
 | LVB1   |                                                          | Model 3/Y with Premium Interior                           |
+| LVB2   |                                                          | Model 3/Y (GigaBerlin?)                                   |
 | M301   | Generation 1 of 2022                                     | AMD Ryzen?                                                |
 | ME01   | Memory Seats                                             |                                                           |
 | ME02   | Seat Memory                                              | Seat Memory LHD Driver                                    |
@@ -544,6 +545,7 @@ return a generic set of codes related to a Model 3.
 | TW01   | Tow Package                                              |                                                           |
 | TX20   |                                                          | Model X 2021                                              |
 | TY0A   | 20" All Season Square                                    | Model Y 2022                                              |
+| TY1D   | 21" P Zero                                               | Model Y 2022                                              |
 | UM01   | Universal Mobile Charger - US Port (Single)              |                                                           |
 | UT3P   | Suede Grey Premium Headliner                             | Ultrasuede Grey                                           |
 | UTAB   | Black Alcantara Headliner                                |                                                           |
@@ -610,6 +612,7 @@ return a generic set of codes related to a Model 3.
 | WXW8   | No 19" Pirelli Winter Tires                              |                                                           |
 | WY0S   | 20" Induction                                            | Model Y 2022                                              |
 | WY18B  | 18" Aero Wheels                                          |                                                           |
+| WY1S   | 21” Uberturbine                                          | Model Y 2022 GigaBerlin                                   |	
 | WY9S   | 19" Apollo                                               | Model Y                                                   |
 | WY19B  | 19" Sport Wheels                                         |                                                           |
 | WY20P  | 20" Performance Wheels                                   |                                                           |

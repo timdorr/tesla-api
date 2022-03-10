@@ -97,7 +97,7 @@ return a generic set of codes related to a Model 3.
 | BTX8   | 75 kWh                                                   |                                                           |
 | BTX9   | 100 kWh Battery Pack with Weight Reduction               | Model S 2020/08                                           |
 | BTXA   | 18650J2 Battery Cell                                     | Model S/X 2020                                            |
-| BTXB   | 99kWh 18650 Plaid _E5 or E6_ vin battery                 | Model S/X 2021 LR/Plaid                                   |
+| BTXB   | 99kWh 18650 Plaid E5/E6 VIN battery                      | Model S/X 2021 LR/Plaid                                   |
 | BY00   |                                                          | Model Y                                                   |
 | BY01   |                                                          | Model Y                                                   |
 | CC01   | Five Seat Interior                                       |                                                           |

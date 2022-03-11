@@ -360,6 +360,7 @@ return a generic set of codes related to a Model 3.
 | MTY04  | Long Range All-Wheel Drive Performance                   | Model Y                                                   |
 | MTY05  | Long Range All-Wheel Drive Performance                   | Model Y                                                   |
 | MTY07  | Long Range All-Wheel Drive                               | Model Y                                                   |
+| MTY09  | Long Range All-Wheel Drive                               | Model Y                                                   |
 | MY02   |                                                          | Model Y                                                   |
 | MX06   |                                                          | Model X 2021+                                             |
 | OSSB   | Safety CA Black                                          |                                                           |

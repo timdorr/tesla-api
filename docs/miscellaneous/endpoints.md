@@ -1,6 +1,6 @@
 # Endpoints File
 
-This the latest contents of the env_ownerapi_endpoints.json file from the 4.4.0 version of the app.
+This the latest contents of the env_ownerapi_endpoints.json file from the 4.7.0 version of the app.
 
 ```json
 {
@@ -89,6 +89,11 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.4.0 
     "URI": "api/1/vehicles/{vehicle_id}/command/set_temps",
     "AUTH": true
   },
+  "SET_CLIMATE_KEEPER_MODE": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/set_climate_keeper_mode",
+    "AUTH": true
+  },
   "HVAC_BIOWEAPON_MODE": {
     "TYPE": "POST",
     "URI": "api/1/vehicles/{vehicle_id}/command/set_bioweapon_mode",
@@ -117,6 +122,11 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.4.0 
   "CHANGE_CHARGE_LIMIT": {
     "TYPE": "POST",
     "URI": "api/1/vehicles/{vehicle_id}/command/set_charge_limit",
+    "AUTH": true
+  },
+  "SET_VEHICLE_NAME": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/set_vehicle_name",
     "AUTH": true
   },
   "CHANGE_SUNROOF_STATE": {
@@ -294,6 +304,11 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.4.0 
     "URI": "api/1/vehicles/{vehicle_id}/command/set_sentry_mode",
     "AUTH": true
   },
+  "TAKE_DRIVENOTE": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/take_drivenote",
+    "AUTH": true
+  },
   "POWERWALL_ORDER_SESSION_DATA": {
     "TYPE": "GET",
     "URI": "api/1/users/powerwall_order_entry_data",
@@ -383,9 +398,19 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.4.0 
     "URI": "api/1/energy_sites/{site_id}/site_info",
     "AUTH": true
   },
+  "RATE_TARIFFS": {
+    "TYPE": "GET",
+    "URI": "api/1/energy_sites/rate_tariffs",
+    "AUTH": true
+  },
   "SITE_TARIFFS": {
     "TYPE": "GET",
     "URI": "api/1/energy_sites/{site_id}/tariff_rates",
+    "AUTH": true
+  },
+  "SITE_TARIFF": {
+    "TYPE": "GET",
+    "URI": "api/1/energy_sites/{site_id}/tariff_rate",
     "AUTH": true
   },
   "CALENDAR_HISTORY_DATA": {
@@ -433,6 +458,11 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.4.0 
     "URI": "api/1/energy_sites/{site_id}/operation",
     "AUTH": true
   },
+  "ENERGY_SITE_IMPORT_EXPORT_CONFIG": {
+    "TYPE": "POST",
+    "URI": "api/1/energy_sites/{site_id}/grid_import_export",
+    "AUTH": true
+  },
   "TIME_OF_USE_SETTINGS": {
     "TYPE": "POST",
     "URI": "api/1/energy_sites/{site_id}/time_of_use_settings",
@@ -474,7 +504,7 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.4.0 
     "AUTH": true
   },
   "VEHICLE_CHARGE_HISTORY": {
-    "TYPE": "GET",
+    "TYPE": "POST",
     "URI": "api/1/vehicles/{vehicle_id}/charge_history",
     "AUTH": true
   },
@@ -493,9 +523,24 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.4.0 
     "URI": "api/1/vehicles/{vehicle_id}/command/navigation_sc_request",
     "AUTH": true
   },
+  "SEND_GPS_TO_VEHICLE": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/navigation_gps_request",
+    "AUTH": true
+  },
   "REMOTE_SEAT_HEATER_REQUEST": {
     "TYPE": "POST",
     "URI": "api/1/vehicles/{vehicle_id}/command/remote_seat_heater_request",
+    "AUTH": true
+  },
+  "REMOTE_AUTO_SEAT_CLIMATE_REQUEST": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/remote_auto_seat_climate_request",
+    "AUTH": true
+  },
+  "REMOTE_SEAT_COOLING_REQUEST": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/remote_seat_cooler_request",
     "AUTH": true
   },
   "REMOTE_STEERING_WHEEL_HEATER_REQUEST": {
@@ -644,7 +689,7 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.4.0 
     "AUTH": true
   },
   "SERVICE_CENTER_OPEN_SLOTS": {
-    "TYPE": "GET",
+    "TYPE": "POST",
     "URI": "bff/v2/mobile-app/service/locations/center/slots",
     "AUTH": true
   },
@@ -828,6 +873,11 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.4.0 
     "URI": "bff/v2/mobile-app/macgyver/service-type",
     "AUTH": true
   },
+  "SERVICE_MACGYVER_DIAGNOSTIC_RESULT": {
+    "TYPE": "GET",
+    "URI": "mobile-app/macgyver/urgent-autodiag-result",
+    "AUTH": true
+  },
   "SERVICE_ACCEPT_LOANER_AGREEMENT": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/service/loaner/{serviceVisitId}",
@@ -891,6 +941,11 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.4.0 
   "ENERGY_GET_TROUBLESHOOTING_GUIDE": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/energy-service/troubleshooting/{troubleshootingFlow}?version=2",
+    "AUTH": true
+  },
+  "ENERGY_SERVICE_GET_POWERWALL_WARRANTY_DETAILS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/energy-service/warranty-details",
     "AUTH": true
   },
   "LOOTBOX_USER_INFO": {
@@ -963,9 +1018,14 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.4.0 
     "URI": "bff/v2/mobile-app/upgrades/purchased",
     "AUTH": true
   },
+  "UPGRADES_GET_PURCHASED_UPGRADES_V2": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/upgrades/purchased/v2",
+    "AUTH": true
+  },
   "UPGRADES_SUBMIT_REFUND": {
     "TYPE": "POST",
-    "URI": "bff/v2/mobile-app/upgrades/refunds",
+    "URI": "bff/v2/mobile-app/upgrades/refunds/v2",
     "AUTH": true
   },
   "USER_ACCOUNT_GET_DETAILS": {
@@ -995,7 +1055,7 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.4.0 
   },
   "UPGRADES_COMPLETE_OFFLINE_ORDER": {
     "TYPE": "POST",
-    "URI": "bff/v2/mobile-app/upgrades/payment/offline-purchase-complete",
+    "URI": "bff/v2/mobile-app/upgrades/payment/offline-purchase-complete/v2",
     "AUTH": true
   },
   "SUBSCRIPTIONS_GET_ELIGIBLE": {
@@ -1035,7 +1095,7 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.4.0 
   },
   "MANAGE_PATCH_AUTO_RENEW_SUBSCRIPTIONS": {
     "TYPE": "PATCH",
-    "URI": "bff/v2/mobile-app/subscriptions",
+    "URI": "bff/v2/mobile-app/subscriptions/v2",
     "AUTH": true
   },
   "MANAGE_GET_BILL_ME_LATER_LIST": {
@@ -1268,6 +1328,11 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.4.0 
     "URI": "commerce-api/checkout/auditrecords/v1/{locale}",
     "AUTH": true
   },
+  "COMMERCE_CONTENT": {
+    "TYPE": "GET",
+    "URI": "commerce-api/content/v2?file={fileName}",
+    "AUTH": true
+  },
   "MATTERMOST": {
     "TYPE": "POST",
     "URI": "Just a placeholder",
@@ -1438,6 +1503,41 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.4.0 
     "URI": "bff/v2/mobile-app/financing/feature-flags",
     "AUTH": true
   },
+  "FINANCING_GET_E_SIGN_DOCUMENTS_STATUS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/documents-status",
+    "AUTH": true
+  },
+  "FINANCING_SUBMIT_FINANCING_ACTION": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/financing/manage-financing-action",
+    "AUTH": true
+  },
+  "FINANCING_GET_EXTENSION_QUOTE": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/extension-quote",
+    "AUTH": true
+  },
+  "FINANCING_GET_CAR_DETAILS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/car-details",
+    "AUTH": true
+  },
+  "FINANCING_GET_E_SIGN_SUMMARY": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/esign-summary",
+    "AUTH": true
+  },
+  "FINANCING_GET_E_SIGN_DOCUMENT": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/esign-document",
+    "AUTH": true
+  },
+  "FINANCING_VALIDATE_E_SIGN_DETAILS": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/financing/esign-validate-details",
+    "AUTH": true
+  },
   "DASHCAM_SAVE_CLIP": {
     "TYPE": "POST",
     "URI": "api/1/vehicles/{vehicle_id}/command/dashcam_save_clip",
@@ -1506,6 +1606,61 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.4.0 
   "GET_MANAGE_DRIVER_FLAG": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/feature-flag/TAO-14025-add-driver-flow",
+    "AUTH": true
+  },
+  "CONTACT_US_CLASSIFICATION": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/contact-us/classify-narrative",
+    "AUTH": true
+  },
+  "CONTACT_US_CONTENT_CATALOG": {
+    "TYPE": "GET",
+    "URI": "mobile-app/contact-us/content-catalog",
+    "AUTH": true
+  },
+  "VEHICLE_PSEUDONYM_DIRECTIVES": {
+    "TYPE": "POST",
+    "URI": "api/1/directives/products",
+    "AUTH": true
+  },
+  "VEHICLE_UPLOAD_PSEUDONYM_DIRECTIVE": {
+    "TYPE": "POST",
+    "URI": "api/1/directives/discover",
+    "AUTH": true
+  },
+  "VEHICLE_COMPLETE_PSEUDONYM_DIRECTIVE": {
+    "TYPE": "POST",
+    "URI": "api/1/directives/products/complete",
+    "AUTH": true
+  },
+  "OWNERSHIP_VEHICLE_SPECS_REQUEST": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/ownership/vehicle-details",
+    "AUTH": true
+  },
+  "OWNERSHIP_WARRANTY_DETAILS_REQUEST": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/ownership/warranty-details",
+    "AUTH": true
+  },
+  "COMMERCE_FEATURE_FLAG": {
+    "TYPE": "GET",
+    "URI": "mobile-app/commerce/feature-flags",
+    "AUTH": true
+  },
+  "COMMERCE_SEARCH_PRODUCTS": {
+    "TYPE": "POST",
+    "URI": "commerce-api/searches/v1{locale}",
+    "AUTH": true
+  },
+  "VEHICLE_DOWNLOAD_VAULT": {
+    "TYPE": "GET",
+    "URI": "api/1/users/vault_profile",
+    "AUTH": true
+  },
+  "VEHICLE_UPLOAD_VAULT": {
+    "TYPE": "POST",
+    "URI": "api/1/users/vault_profile",
     "AUTH": true
   }
 }

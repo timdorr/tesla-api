@@ -114,7 +114,7 @@ return a generic set of codes related to a Model 3.
 | CH05   | 32/48 Amp Charger                                        | Model S/X - 48A, M3 - 32A                                 |
 | CH06   | 48 Amp Charger                                           | Model 3 CN                                                |
 | CH07   | 48 Amp Charger                                           | Model 3                                                   |
-| CH09   | Tesla Standard Charging System 72a (Gen3)                | Model S/X mid2019-2020 EU                                 |
+| CH09   | Tesla Standard Charging System 72a (Gen3)                | Model S/X 2019-2020 EU                                    |
 | CH11   | Single phase 48 Amperage Combo 1                         | Chargers Single Phase                                     |
 | CH12   | 48 Amperage Combo 1 Gen 3.5 Charger                      | Chargers Single Phase (MS/MX 2020-2021)                   |
 | CH14   | 32 Amp Charger Hardware (RENA) with Busbar               | NA spec M3 2022 SR+                                       |
@@ -166,7 +166,7 @@ return a generic set of codes related to a Model 3.
 | DSHG   | Dash with Graphite trim                                  |                                                           |
 | DU00   | Drive Unit - IR                                          |                                                           |
 | DU01   | Drive Unit - Infineon                                    |                                                           |
-| DU02   | Drive Unit - Non-performance front drive unit (raven)    | MS 2019-2020                                              |
+| DU02   | Drive Unit - Non-performance front drive unit (raven)    | MS 19apr2019-2020                                         |
 | DV2W   | Rear-Wheel Drive                                         |                                                           |
 | DV4W   | All-Wheel Drive                                          |                                                           |
 | EUSB   | Safety EU Black                                          |                                                           |
@@ -507,8 +507,8 @@ return a generic set of codes related to a Model 3.
 | STY5S  | Five Seat Interior                                       |                                                           |
 | STY7S  | Seven Seat Interior                                      |                                                           |
 | SU00   | Standard Suspension                                      |                                                           |
-| SU01   | Smart Air Suspension                                     |                                                           |
-| SU03   | Suspension Update                                        | Model S/X 2019-2021                                       |
+| SU01   | Smart Air Suspension                                     | Model S/X ?-15apr2019                                     |
+| SU03   | Suspension Update                                        | Model S/X 19apr2019-2021                                  |
 | SU3C   | Coil Spring Suspension                                   |                                                           |
 | SWF0   |                                                          | Model 3/Y                                                 |
 | SWF1   |                                                          | Model 3/Y                                                 |

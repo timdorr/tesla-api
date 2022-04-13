@@ -76,7 +76,7 @@ return a generic set of codes related to a Model 3.
 | BR05   | Battery Firmware Limit (75kWh)                           |                                                           |
 | BS00   | Blind Spot Sensor Package                                |                                                           |
 | BS01   | Special Production Flag                                  |                                                           |
-| BT00   |                                                          | Model Y Standard Range DM Austin                          |
+| BT00   | 68 kWh (Model Y) 4680 cells                              | Model Y Standard Range DM Austin                          |
 | BT35   | 50 kWh (Model 3/Y) Pre 2021 Panasonic cells              | Model 3 Standard Range                                    |
 | BT36   | 62.5 kWh (Model 3/Y) Pre 2021 Panasonic cells            | Model 3 Mid Range                                         |
 | BT37   | 75 kWh (Model 3/Y) Pre 2021 Panasonic cells              | 2017-03.2021 LR+P Model 3/Y (Mostly Fremont build)        |

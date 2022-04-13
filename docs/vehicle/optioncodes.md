@@ -83,7 +83,7 @@ return a generic set of codes related to a Model 3.
 | BT38   | 74 kWh (Model 3/Y) LG cells                              | M3/MY LR/Dual build in China                              |
 | BT3D   | 50 kWh (Model 3)                                         | 2019 Model 3 Standard Range                               |
 | BT40   | 40 kWh                                                   |                                                           |
-| BT41   | 55? kWh 2021 Panasonic?                                  | M3 Standard+ 2021 model year                              |
+| BT41   | 55? kWh 2021 Panasonic?                                  | M3/Y Standard+ 2021 model year                            |
 | BT42   | 82 kWh (Model 3/Y) 2021 Panasonic                        | M3P (and latest LR Fremont) 2021 model year               |
 | BT43   | 79 kWh (Model 3/Y) 2021 LG NCA                           | M3/Y LR Q4.2021                                           |
 | BT60   | 60 kWh                                                   |                                                           |

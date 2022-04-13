@@ -76,6 +76,7 @@ return a generic set of codes related to a Model 3.
 | BR05   | Battery Firmware Limit (75kWh)                           |                                                           |
 | BS00   | Blind Spot Sensor Package                                |                                                           |
 | BS01   | Special Production Flag                                  |                                                           |
+| BT00   |                                                          | Model Y Standard Range DM Austin                          |
 | BT35   | 50 kWh (Model 3/Y) Pre 2021 Panasonic cells              | Model 3 Standard Range                                    |
 | BT36   | 62.5 kWh (Model 3/Y) Pre 2021 Panasonic cells            | Model 3 Mid Range                                         |
 | BT37   | 75 kWh (Model 3/Y) Pre 2021 Panasonic cells              | 2017-03.2021 LR+P Model 3/Y (Mostly Fremont build)        |
@@ -100,6 +101,7 @@ return a generic set of codes related to a Model 3.
 | BTXB   | 99kWh 18650 Plaid E5/E6 VIN battery                      | Model S/X 2021 LR/Plaid                                   |
 | BY00   |                                                          | Model Y                                                   |
 | BY01   |                                                          | Model Y                                                   |
+| BY02   |                                                          | Model Y First found on Austin car                         |
 | CC01   | Five Seat Interior                                       |                                                           |
 | CC02   | Six Seat Interior                                        |                                                           |
 | CC03   | Seven Seat Interior                                      |                                                           |
@@ -361,7 +363,8 @@ return a generic set of codes related to a Model 3.
 | MTY05  | Long Range All-Wheel Drive Performance                   | Model Y                                                   |
 | MTY07  | Long Range All-Wheel Drive                               | Model Y                                                   |
 | MTY09  | Long Range All-Wheel Drive                               | Model Y                                                   |
-| MY02   |                                                          | Model Y                                                   |
+| MY01   |                                                          | Model Y Austin?                                           |
+| MY02   |                                                          | Model Y Berlin?                                           |
 | MX06   |                                                          | Model X 2021+                                             |
 | OSSB   | Safety CA Black                                          |                                                           |
 | OSSW   | Safety CA White                                          |                                                           |

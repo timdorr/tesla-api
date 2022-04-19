@@ -10,10 +10,8 @@ return a generic set of codes related to a Model 3.
 | Code   | Title                                                    | Description                                               |
 | :----- | :------------------------------------------------------- | :-------------------------------------------------------- |
 | MDLS   | Model S                                                  | This vehicle is a Model S                                 |
-| MS03   | Model S                                                  | This vehicle is a Model S                                 |
-| MS04   | Model S                                                  | This vehicle is a Model S                                 |
-| MDLX   | Model X                                                  | This vehicle is a Model X                                 |
 | MDL3   | Model 3                                                  | This vehicle is a Model 3                                 |
+| MDLX   | Model X                                                  | This vehicle is a Model X                                 |
 | MDLY   | Model Y                                                  | This vehicle is a Model Y                                 |
 | REAP   | Region: Asia Pacific                                     |                                                           |
 | REEU   | Region: Europe                                           |                                                           |
@@ -314,6 +312,10 @@ return a generic set of codes related to a Model 3.
 | MI04   | 5th Generation Production                                | Model S (2019/2020), Model X (2020)                       |
 | MI07   | 8th Generation Production                                | Model S (2021), Model X (2021)                            |
 | MR31   | Tech Package - Mirror -YES                               | Uplevel Mirrors                                           |
+| MS03   | Model S                                                  | This vehicle is a Model S                                 |
+| MS04   | Model S                                                  | This vehicle is a Model S                                 |
+| MS05   | Model S                                                  | This vehicle is a Model S                                 |
+| MS06   | Model S                                                  | Plaid 2021                                                |
 | MT300  | Standard Range Rear-Wheel Drive                          | Model 3                                                   |
 | MT301  | Standard Range Plus Rear-Wheel Drive                     | Model 3                                                   |
 | MT302  | Long Range Rear-Wheel Drive                              | Model 3                                                   |
@@ -459,7 +461,8 @@ return a generic set of codes related to a Model 3.
 | RFP2   | Sunroof                                                  | Model S 2016 Production Refresh                           |
 | RFPX   | Glass Roof                                               | Model X                                                   |
 | RNG0   | Standard Battery Range                                   | Model 3 Standard+                                         |
-| RL00   |                                                          | Model S/X 2021                                            |
+| RL00   | Rear tail lights                                         | Model S/X 2021                                            |
+| RL01   | Rear tail lights (Larger for CCS)                        | Model S/X 2022.March 473k+-                               |
 | RL31   |                                                          | Model 3 Perf                                              |
 | RL32   |                                                          | Model 3/Y (AWD)                                           |
 | RS3H   | Second Row Seat Rear Seats (Heated)                      | Model 3/Y with Premium Interior                           |

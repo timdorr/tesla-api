@@ -148,7 +148,8 @@ return a generic set of codes related to a Model 3.
 | COSE   | Country: Sweden                                          |                                                           |
 | COSG   | Country: Singapore                                       |                                                           |
 | COUS   | Country: United States                                   |                                                           |
-| CP00   |                                                          | MX 2021                                                   |
+| CP00   |                                                          | MX/MS 2021                                                |
+| CP01   | Charge port Gen? CCS size                                | MS 2022                                                   |
 | CPF0   | Standard Connectivity                                    | 1 month                                                   |
 | CPF1   | Premium Connectivity                                     | 1 year                                                    |
 | CPW1   | 20" Performance Wheels                                   |                                                           |
@@ -206,6 +207,7 @@ return a generic set of codes related to a Model 3.
 | HM30   | Teck Package - No Homelink                               | No Homelink Option                                        |
 | HM31   | Teck Package - Homelink                                  | Homelink                                                  |
 | HL00   | Head Lamp                                                | Model S/X 2021                                            |
+| HL01   | Matrix Head Lamp                                         | Model S/X 2022.03                                         |
 | HL31   | Head Lamp                                                | Model 3 Uplevel Headlamps                                 |
 | HL32   | M3 Matrix Headlights 2021                                | Model 3/Y 2021 Uplevel Headlamps                          |
 | HP00   | No HPWC Ordered                                          |                                                           |

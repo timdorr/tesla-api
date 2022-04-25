@@ -66,6 +66,7 @@ return a generic set of codes related to a Model 3.
 | BG30   | No Badge                                                 | Model 3                                                   |
 | BG31   | AWD Badge                                                | Model 3/Y                                                 |
 | BG32   | Performance AWD Badge                                    | Model 3                                                   |
+| BG33   | China Badge                                              | Model 3 for China market                                  |
 | BP00   | No Ludicrous                                             |                                                           |
 | BP01   | Ludicrous Speed Upgrade                                  |                                                           |
 | BP02   | Uncorked Acceleration                                    | Non-Performance                                           |
@@ -313,6 +314,7 @@ return a generic set of codes related to a Model 3.
 | MI03   | 4th Generation Production                                | Model S (2018), Model X (2018)                            |
 | MI04   | 5th Generation Production                                | Model S (2019/2020), Model X (2020)                       |
 | MI07   | 8th Generation Production                                | Model S (2021), Model X (2021)                            |
+| MR30   | Tech Package - Mirror -YES                               | Base Mirrors (MIC Model 3 CN)                             |
 | MR31   | Tech Package - Mirror -YES                               | Uplevel Mirrors                                           |
 | MS03   | Model S                                                  | This vehicle is a Model S                                 |
 | MS04   | Model S                                                  | This vehicle is a Model S                                 |
@@ -492,6 +494,7 @@ return a generic set of codes related to a Model 3.
 | SC04   | Pay Per Use Supercharging                                |                                                           |
 | SC05   | Unlimited Free Supercharging Currently Enabled           | Not transferable to the next owner                        |
 | SC06   | Time Bound Unlimited Free Supercharging                  |                                                           |
+| SG01   |                                                          | Model 3 CN MIC                                            |
 | SLR0   | No Rear Spoiler                                          |                                                           |
 | SLR1   | Carbon Fibre Spoiler                                     | Model 3                                                   |
 | SP00   | No Security Package                                      |                                                           |
@@ -525,6 +528,7 @@ return a generic set of codes related to a Model 3.
 | T3MA   | Tires M3                                                 | 18" Michelin All Season, Square                           |
 | T3MC   | Tires M3                                                 | 18" China made                                            |
 | T3P3   | Tires M3                                                 | 20" Michelin PS4 Summer                                   |
+| T3PS   | Tires M3                                                 | 19" PIRELLI PZ4?                                          |
 | TY9A   | Tires MY                                                 | Tires 19" All Season Square                               |
 | TD00   | Tear Down NON-GLIDER                                     | Model S/X                                                 |
 | TIC4   | Tires MX                                                 | 20" all-weather tires                                     |

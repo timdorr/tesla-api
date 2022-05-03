@@ -53,9 +53,9 @@ module TeslaApi
         }
       ).body
 
-      @refresh_token = response['refresh_token']
-      @access_token = response['access_token']
-      @access_token_expires_at = (Time.now + response['expires_in']).to_datetime
+      @refresh_token = response["refresh_token"]
+      @access_token = response["access_token"]
+      @access_token_expires_at = (Time.now + response["expires_in"]).to_datetime
     end
 
     def login!(password, mfa_code: nil)

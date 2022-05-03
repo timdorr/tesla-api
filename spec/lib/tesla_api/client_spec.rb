@@ -87,7 +87,7 @@ RSpec.describe TeslaApi::Client do
     subject(:tesla_api) {
       TeslaApi::Client.new(
         access_token: access_token,
-        access_token_expires_at: DateTime.now + 1,
+        access_token_expires_at: (Time.now + 3600).to_datetime,
         refresh_token: refresh_token
       )
     }
@@ -109,8 +109,11 @@ RSpec.describe TeslaApi::Client do
       ]
     } do
       it "refreshes the access token" do
+        access_token_expires_at = tesla_api.access_token_expires_at
+
         tesla_api.refresh_access_token
         expect(tesla_api.access_token).not_to eq(access_token)
+        expect(tesla_api.access_token_expires_at).to be > access_token_expires_at
       end
     end
   end

@@ -54,58 +54,6 @@ http_interactions:
           - keep-alive
       body:
         encoding: UTF-8
-        string: '{"access_token":"acess","refresh_token":"<TESLA_REFRESH_TOKEN>","id_token":"id","expires_in":300,"token_type":"Bearer"}'
+        string: '{"access_token":"acess","refresh_token":"<TESLA_REFRESH_TOKEN>","id_token":"id","expires_in":28800,"token_type":"Bearer"}'
     recorded_at: Sat, 30 Jan 2021 15:18:43 GMT
-  - request:
-      method: post
-      uri: https://owner-api.teslamotors.com/oauth/token
-      body:
-        encoding: UTF-8
-        string: '{"grant_type":"urn:ietf:params:oauth:grant-type:jwt-bearer","client_id":"<TESLA_CLIENT_ID>","client_secret":"<TESLA_CLIENT_SECRET>"}'
-      headers:
-        User-Agent:
-          - github.com/timdorr/tesla-api v:3.0.7
-        Authorization:
-          - Bearer bear
-        Content-Type:
-          - application/json
-        Accept-Encoding:
-          - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-        Accept:
-          - '*/*'
-    response:
-      status:
-        code: 200
-        message: OK
-      headers:
-        Date:
-          - Sat, 30 Jan 2021 15:18:44 GMT
-        Content-Type:
-          - application/json; charset=utf-8
-        Transfer-Encoding:
-          - chunked
-        Connection:
-          - keep-alive
-        Vary:
-          - Accept-Encoding
-        X-Frame-Options:
-          - SAMEORIGIN
-        X-Xss-Protection:
-          - 1; mode=block
-        X-Content-Type-Options:
-          - nosniff
-        Etag:
-          - W/"85c5baa66d3db433982e5744ccc1e96e"
-        Cache-Control:
-          - max-age=0, private, must-revalidate
-        X-Request-Id:
-          - 2f0ad7f617da468d211594930c0e88d52f0ad7f617da468d211594930c0e88d5
-        X-Runtime:
-          - '0.301686'
-        Strict-Transport-Security:
-          - max-age=15724800; includeSubDomains
-      body:
-        encoding: ASCII-8BIT
-        string: '{"access_token":"qts-deadbeef","token_type":"bearer","expires_in":3888000,"refresh_token":"yes","created_at":1612019924}'
-    recorded_at: Sat, 30 Jan 2021 15:18:44 GMT
 recorded_with: VCR 6.0.0

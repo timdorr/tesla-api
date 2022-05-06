@@ -353,6 +353,7 @@ return a generic set of codes related to a Model 3.
 | MTS08  | Performance                                              | Model S                                                   |
 | MTS09  | Plaid+                                                   | Model S Refresh 2021                                      |
 | MTS10  | Long Range                                               | Model S Refresh 2021                                      |
+| MTS13  | Long Range                                               | Model S Refresh 2022                                      |
 | MTS11  | Plaid                                                    | Model S Refresh 2021                                      |
 | MTS14  | Plaid                                                    | Model S Refresh 2022                                      |
 | MTX01  | Standard Range                                           | Model X                                                   |

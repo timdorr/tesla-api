@@ -353,8 +353,8 @@ return a generic set of codes related to a Model 3.
 | MTS08  | Performance                                              | Model S                                                   |
 | MTS09  | Plaid+                                                   | Model S Refresh 2021                                      |
 | MTS10  | Long Range                                               | Model S Refresh 2021                                      |
+| MTS11  | Model S Plaid                                            | Model S Refresh 2021                                      |
 | MTS13  | Model S Dual Motor All-Wheel Drive                       | Model S Refresh 2022                                      |
-| MTS11  | Plaid                                                    | Model S Refresh 2021                                      |
 | MTS14  | Model S Plaid Tri Motor All-Wheel Drive                  | Model S Refresh 2022                                      |
 | MTX01  | Standard Range                                           | Model X                                                   |
 | MTX03  | Long Range                                               | Model X                                                   |
@@ -364,7 +364,9 @@ return a generic set of codes related to a Model 3.
 | MTX07  | Long Range Plus                                          | Model X                                                   |
 | MTX08  | Performance                                              | Model X                                                   |
 | MTX10  | Long Range                                               | Model X Refresh 2021                                      |
-| MTX11  | Plaid                                                    | Model X Refresh 2021                                      |
+| MTX11  | Model X Plaid                                            | Model X Refresh 2021                                      |
+| MTX13  | Model X Plaid Dual Motor All-Wheel Drive                 | Model S Refresh 2022                                      |
+| MTX14  | Model X Plaid Tri Motor All-Wheel Drive                  | Model S Refresh 2022                                      |
 | MTY01  | Standard Range Rear-Wheel Drive                          | Model Y                                                   |
 | MTY02  | Long Range Rear-Wheel Drive                              | Model Y                                                   |
 | MTY03  | Long Range All-Wheel Drive                               | Model Y                                                   |

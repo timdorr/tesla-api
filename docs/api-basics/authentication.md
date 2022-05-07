@@ -134,56 +134,12 @@ This is a standard [OAuth 2.0 Authorization Code exchange](https://oauth.net/2/g
 }
 ```
 
-### Step 4: Exchange bearer token for access token
+## Making requests
 
-#### POST `https://owner-api.teslamotors.com/oauth/token`
-
-This endpoint follows [RFC 7523](https://tools.ietf.org/html/rfc7523) to exchange a JWT access token from the SSO service for an access token usable by the Owner API.
-
-The current client ID and secret are [available here](https://pastebin.com/pS7Z6yyP).
-
-You will get back an `access_token` which is treated as [an OAuth 2.0 Bearer Token](https://oauth.net/2/bearer-tokens/). This token is passed along in an `Authorization` header with all future requests:
+Requests are made using the ``access_token`` provided with the response. It is treated as an [OAuth 2.0 Bearer Token](https://oauth.net/2/bearer-tokens/) and expires every eight hours. This token is passed along in an Authorization header with all future requests:
 
 ```http
 Authorization: Bearer {access_token}
-```
-
-The access token has a 45 day expiration.
-
-##### Request parameters
-
-> Important: Ensure you are using the `access_token` from the SSO service here. The returned access_token is for all other requests to the Owner API.
-
-```http
-Authorization: Bearer {access_token}
-```
-
-| Field           | Type             | Example                                       | Description                                                                   |
-| :-------------- | :--------------- | :-------------------------------------------- | :---------------------------------------------------------------------------- |
-| `grant_type`    | String, required | `urn:ietf:params:oauth:grant-type:jwt-bearer` | The type of OAuth grant. Always "urn:ietf:params:oauth:grant-type:jwt-bearer" |
-| `client_id`     | String, required | `abc`                                         | The OAuth client ID                                                           |
-| `client_secret` | String, required | `123`                                         | The OAuth client secret                                                       |
-
-##### Request
-
-```json
-{
-  "grant_type": "urn:ietf:params:oauth:grant-type:jwt-bearer",
-  "client_id": "abc",
-  "client_secret": "123"
-}
-```
-
-##### Response
-
-```json
-{
-  "access_token": "abc123",
-  "token_type": "bearer",
-  "expires_in": 3888000,
-  "refresh_token": "cba321",
-  "created_at": 1538359034
-}
 ```
 
 ## Refreshing an access token

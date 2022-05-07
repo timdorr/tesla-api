@@ -320,60 +320,61 @@ return a generic set of codes related to a Model 3.
 | MS04   | Model S                                                  | This vehicle is a Model S                                 |
 | MS05   | Model S                                                  | This vehicle is a Model S                                 |
 | MS06   | Model S                                                  | Plaid 2021                                                |
-| MT300  | Standard Range Rear-Wheel Drive                          | Model 3                                                   |
-| MT301  | Standard Range Plus Rear-Wheel Drive                     | Model 3                                                   |
-| MT302  | Long Range Rear-Wheel Drive                              | Model 3                                                   |
-| MT303  | Long Range All-Wheel Drive                               | Model 3                                                   |
-| MT304  | Long Range All-Wheel Drive Performance                   | Model 3                                                   |
-| MT305  | Mid Range Rear-Wheel Drive                               | Model 3                                                   |
-| MT307  | Mid Range Rear-Wheel Drive                               | Model 3                                                   |
-| MT308  | Standard Range Plus Rear-Wheel Drive                     | Model 3 2019 Refresh                                      |
-| MT309  | Standard Range Plus Rear-Wheel Drive                     | Model 3 2019 Refresh                                      |
-| MT310  | Long Range All-Wheel Drive                               | Model 3                                                   |
-| MT311  | Long Range All-Wheel Drive Performance                   | Model 3                                                   |
-| MT314  | Standard Range Plus Rear-Wheel Drive                     | Model 3 2021 Refresh                                      |
-| MT315  | Long Range All-Wheel Drive                               | Model 3 2021 Refresh                                      |
-| MT316  | Long Range All-Wheel Drive                               | Model 3 2021 Refresh                                      |
-| MT317  | Long Range All-Wheel Drive Performance                   | Model 3 2021 Refresh                                      |
-| MT320  | Standard Range Plus Rear-Wheel Drive                     | Model 3 2021 Refresh                                      |
-| MT322  | Standard Range Plus Rear-Wheel Drive                     | Model 3 2021 Refresh                                      |
-| MT321  | Long Range All-Wheel Drive                               | Model 3 2021 Refresh                                      |
-| MT323  | Long Range All-Wheel Drive                               | Model 3 2021 Refresh                                      |
-| MT324  | Long Range All-Wheel Drive                               | Model 3 2021 Refresh                                      |
-| MT328  | Long Range All-Wheel Drive                               | Model 3 2022 Refresh                                      |
-| MT336  | Standard Range Plus Rear-Wheel Drive                     | Model 3 2020 Refresh                                      |
-| MT337  | Standard Range Plus Rear-Wheel Drive                     | Model 3 2021 Refresh                                      |
-| MT340  | Long Range All-Wheel Drive Performance                   | Model 3 2022 Refresh                                      |
-| MTS01  | Standard Range                                           | Model S                                                   |
-| MTS03  | Long Range                                               | Model S                                                   |
-| MTS04  | Performance                                              | Model S                                                   |
-| MTS05  | Long Range                                               | Model S                                                   |
-| MTS06  | Performance                                              | Model S                                                   |
-| MTS07  | Long Range Plus                                          | Model S                                                   |
-| MTS08  | Performance                                              | Model S                                                   |
-| MTS09  | Plaid+                                                   | Model S Refresh 2021                                      |
-| MTS10  | Long Range                                               | Model S Refresh 2021                                      |
-| MTS11  | Model S Plaid                                            | Model S Refresh 2021                                      |
-| MTS13  | Model S Dual Motor All-Wheel Drive                       | Model S Refresh 2022                                      |
-| MTS14  | Model S Plaid Tri Motor All-Wheel Drive                  | Model S Refresh 2022                                      |
-| MTX01  | Standard Range                                           | Model X                                                   |
-| MTX03  | Long Range                                               | Model X                                                   |
-| MTX04  | Performance                                              | Model X                                                   |
-| MTX05  | Long Range Plus                                          | Model X                                                   |
-| MTX06  | Performance                                              | Model X                                                   |
-| MTX07  | Long Range Plus                                          | Model X                                                   |
-| MTX08  | Performance                                              | Model X                                                   |
-| MTX10  | Long Range                                               | Model X Refresh 2021                                      |
-| MTX11  | Model X Plaid                                            | Model X Refresh 2021                                      |
-| MTX13  | Model X Plaid Dual Motor All-Wheel Drive                 | Model S Refresh 2022                                      |
-| MTX14  | Model X Plaid Tri Motor All-Wheel Drive                  | Model S Refresh 2022                                      |
-| MTY01  | Standard Range Rear-Wheel Drive                          | Model Y                                                   |
-| MTY02  | Long Range Rear-Wheel Drive                              | Model Y                                                   |
-| MTY03  | Long Range All-Wheel Drive                               | Model Y                                                   |
-| MTY04  | Long Range All-Wheel Drive Performance                   | Model Y                                                   |
-| MTY05  | Long Range All-Wheel Drive Performance                   | Model Y                                                   |
-| MTY07  | Long Range All-Wheel Drive                               | Model Y                                                   |
-| MTY09  | Long Range All-Wheel Drive                               | Model Y                                                   |
+| MT300  | Model 3 Standard Range Rear-Wheel Drive                  |                                                           |
+| MT301  | Model 3 Standard Range Plus Rear-Wheel Drive             |                                                           |
+| MT302  | Model 3 Long Range Rear-Wheel Drive                      |                                                           |
+| MT303  | Model 3 Long Range All-Wheel Drive                       |                                                           |
+| MT304  | Model 3 Long Range All-Wheel Drive Performance           |                                                           |
+| MT305  | Model 3 Mid Range Rear-Wheel Drive                       |                                                           |
+| MT307  | Model 3 Mid Range Rear-Wheel Drive                       |                                                           |
+| MT308  | Model 3 Standard Range Plus Rear-Wheel Drive             | 2019 Refresh                                              |
+| MT309  | Model 3 Standard Range Plus Rear-Wheel Drive             | 2019 Refresh                                              |
+| MT310  | Model 3 Long Range All-Wheel Drive                       |                                                           |
+| MT311  | Model 3 Long Range All-Wheel Drive Performance           |                                                           |
+| MT314  | Model 3 Standard Range Plus Rear-Wheel Drive             | 2021 Refresh                                              |
+| MT315  | Model 3 Long Range All-Wheel Drive                       | 2021 Refresh                                              |
+| MT316  | Model 3 Long Range All-Wheel Drive                       | 2021 Refresh                                              |
+| MT317  | Model 3 Long Range All-Wheel Drive Performance           | 2021 Refresh                                              |
+| MT320  | Model 3 Standard Range Plus Rear-Wheel Drive             | 2021 Refresh                                              |
+| MT322  | Model 3 Standard Range Plus Rear-Wheel Drive             | 2021 Refresh                                              |
+| MT321  | Model 3 Long Range All-Wheel Drive                       | 2021 Refresh                                              |
+| MT323  | Model 3 Long Range All-Wheel Drive                       | 2021 Refresh                                              |
+| MT324  | Model 3 Long Range All-Wheel Drive                       | 2021 Refresh                                              |
+| MT328  | Model 3 Long Range All-Wheel Drive                       | 2022 Refresh                                              |
+| MT336  | Model 3 Standard Range Plus Rear-Wheel Drive             | 2020 Refresh                                              |
+| MT337  | Model 3 Standard Range Plus Rear-Wheel Drive             | 2021 Refresh                                              |
+| MT340  | Model 3 Long Range All-Wheel Drive Performance           | 2022 Refresh                                              |
+| MTS01  | Model S Standard Range                                   |                                                           |
+| MTS03  | Model S Long Range                                       |                                                           |
+| MTS04  | Model S Performance                                      |                                                           |
+| MTS05  | Model S Long Range                                       |                                                           |
+| MTS06  | Model S Performance                                      |                                                           |
+| MTS07  | Model S Long Range Plus                                  |                                                           |
+| MTS08  | Model S Performance                                      |                                                           |
+| MTS09  | Model S Plaid+                                           | 2021 Refresh                                              |
+| MTS10  | Model S Long Range                                       | 2021 Refresh                                              |
+| MTS11  | Model S Plaid                                            | 2021 Refresh                                              |
+| MTS13  | Model S Dual Motor All-Wheel Drive                       | 2022 Refresh                                              |
+| MTS14  | Model S Plaid Tri Motor All-Wheel Drive                  | 2022 Refresh                                              |
+| MTX01  | Model X Standard Range                                   |                                                           |
+| MTX03  | Model X Long Range                                       |                                                           |
+| MTX04  | Model X Performance                                      |                                                           |
+| MTX05  | Model X Long Range Plus                                  |                                                           |
+| MTX06  | Model X Performance                                      |                                                           |
+| MTX07  | Model X Long Range Plus                                  |                                                           |
+| MTX08  | Model X Performance                                      |                                                           |
+| MTX09  | Model X Plaid+                                           | 2021 Refresh                                              |
+| MTX10  | Model X Long Range                                       | 2021 Refresh                                              |
+| MTX11  | Model X Plaid                                            | 2021 Refresh                                              |
+| MTX13  | Model X Plaid Dual Motor All-Wheel Drive                 | 2022 Refresh                                              |
+| MTX14  | Model X Plaid Tri Motor All-Wheel Drive                  | 2022 Refresh                                              |
+| MTY01  | Model Y Standard Range Rear-Wheel Drive                  |                                                           |
+| MTY02  | Model Y Long Range Rear-Wheel Drive                      |                                                           |
+| MTY03  | Model Y Long Range All-Wheel Drive                       |                                                           |
+| MTY04  | Model Y Long Range All-Wheel Drive Performance           |                                                           |
+| MTY05  | Model Y Long Range All-Wheel Drive Performance           |                                                           |
+| MTY07  | Model Y Long Range All-Wheel Drive                       |                                                           |
+| MTY09  | Model Y Long Range All-Wheel Drive                       |                                                           |
 | MY01   |                                                          | Model Y Austin?                                           |
 | MY02   |                                                          | Model Y Berlin?                                           |
 | MX06   |                                                          | Model X 2021+                                             |

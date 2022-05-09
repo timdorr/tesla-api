@@ -161,7 +161,7 @@ This endpoint requires json in the post body, with the singular parameter ``clim
 
 ```json
 {
-  "climate_keeper_mode" : 0
+  "climate_keeper_mode": 0
 }
 ```
 

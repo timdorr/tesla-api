@@ -131,6 +131,7 @@ This endpoint will respond with the `result` as `true` even with no parameters o
 {
   "on": "true"
 }
+```
 
 ### Response
 

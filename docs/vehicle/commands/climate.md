@@ -117,3 +117,59 @@ Turn steering wheel heater on or off.
   "result": true
 }
 ```
+
+## POST `/api/1/vehicles/{id}/command/set_bioweapon_mode`
+
+Enable or disable Bioweapon Defense Mode.
+
+### Request
+
+This endpoint requires json in the post body, with the singular parameter ``on`` which is either ``true`` or ``false``.
+This endpoint will respond with the ``result`` as ``true`` even with no parameters or body specified.
+
+```json
+{
+  "on" : "true"
+}
+```
+
+### Response
+
+```json
+{
+  "reason": "",
+  "result": true
+}
+```
+
+## POST `/api/1/vehicles/{id}/command/set_climate_keeper_mode`
+
+Set the Climate Keeper mode.
+
+### Request
+
+This endpoint requires json in the post body, with the singular parameter ``climate_keeper_mode`` and a number as the value. Those map to the values below.
+
+| Number | Mode         |
+| :----- | :----------- |
+| 0      | Off          |
+| 1      | On - Default |
+| 2      | Dog Mode     |
+| 3      | Camp Mode    |
+
+### Example
+
+```json
+{
+  "climate_keeper_mode" : 0
+}
+```
+
+### Response
+
+```json
+{
+  "reason": "",
+  "result": true
+}
+```

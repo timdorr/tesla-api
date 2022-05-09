@@ -147,7 +147,7 @@ Set the Climate Keeper mode.
 
 ### Request
 
-This endpoint requires json in the post body, with the singular parameter ``climate_keeper_mode`` and a number as the value. Those map to the values below.
+This endpoint requires json in the post body, with the singular parameter `climate_keeper_mode` and a number as the value. Those map to the values below.
 
 | Number | Mode         |
 | :----- | :----------- |

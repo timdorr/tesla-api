@@ -7,6 +7,7 @@ If you want to use Tesla's Bluetooth Low Energy (BLE) protocol to communicate wi
 ## Before You Begin
 
 The base URI for all requests is `https://owner-api.teslamotors.com/` (except for the Streaming and Autopark APIs)
+If you are in China, the URI for requests is going to be `owner-api.vn.cloud.tesla.cn`
 
 _All requests require a_ `User-Agent` _header with any value provided._ For Tesla's sake, it's recommended you identify your application in some way using this header.
 

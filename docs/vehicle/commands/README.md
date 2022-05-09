@@ -73,3 +73,7 @@ Enable or disable Sentry Mode.
 {% page-ref page="calendar.md" %}
 
 Synchronize a calendar with the car.
+
+{% page-ref page="misc.md" %}
+
+Miscellaneous features. (Changing vehicle name etc.)

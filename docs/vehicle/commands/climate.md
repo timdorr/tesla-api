@@ -124,14 +124,13 @@ Enable or disable Bioweapon Defense Mode.
 
 ### Request
 
-This endpoint requires json in the post body, with the singular parameter ``on`` which is either ``true`` or ``false``.
-This endpoint will respond with the ``result`` as ``true`` even with no parameters or body specified.
+This endpoint requires json in the post body, with the singular parameter `on` which is either `true` or `false`.
+This endpoint will respond with the `result` as `true` even with no parameters or body specified.
 
 ```json
 {
-  "on" : "true"
+  "on": "true"
 }
-```
 
 ### Response
 

@@ -46,6 +46,7 @@ This endpoint requires a singular parameter `vehicle_name`, inside of the POST b
 {
     "vehicle_name" : "Nikola"
 }
+```
 
 ### Response
 

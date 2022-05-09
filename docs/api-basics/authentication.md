@@ -136,7 +136,7 @@ This is a standard [OAuth 2.0 Authorization Code exchange](https://oauth.net/2/g
 
 ## Making requests
 
-Requests are made using the ``access_token`` provided with the response. It is treated as an [OAuth 2.0 Bearer Token](https://oauth.net/2/bearer-tokens/) and expires every eight hours. This token is passed along in an Authorization header with all future requests:
+Requests are made using the `access_token` provided with the response. It is treated as an [OAuth 2.0 Bearer Token](https://oauth.net/2/bearer-tokens/) and expires every eight hours. This token is passed along in an Authorization header with all future requests:
 
 ```http
 Authorization: Bearer {access_token}

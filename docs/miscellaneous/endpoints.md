@@ -1810,12 +1810,12 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.8.1 
     "AUTH": true
   },
   "OWNERSHIP_TRANSFER_TOOL_ADD_PROCESS": {
-    "TYPE":"POST",
+    "TYPE": "POST",
     "URI": "bff/mobile-app/transfer/add-process",
     "AUTH": true
   },
   "OWNERSHIP_TRANSFER_TOOL_USER_SIGNED_TOKEN": {
-   "TYPE": "GET",
+    "TYPE": "GET",
     "URI": "bff/mobile-app/transfer/user-signed-token",
     "AUTH": true
   },
@@ -1825,5 +1825,4 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.8.1 
     "AUTH": true
   }
 }
-
 ```

@@ -1,6 +1,6 @@
 ## Info: These endpoints currently return `not_supported` as a response, due to not being implemented / enabled yet.
 
---------
+---
 
 # Take Drive Note
 
@@ -12,14 +12,13 @@ Take a drive note. (This feature might be related to the FSD beta bug reporting 
 
 This endpoint requires a singular parameter `note`, inside the POST body with the value being anything you want to note.
 
-### Example 
+### Example
 
 ```json
 {
-    "note" : "42"
+  "note": "42"
 }
 ```
-
 
 ### Response
 
@@ -44,7 +43,7 @@ This endpoint requires a singular parameter `vehicle_name`, inside of the POST b
 
 ```json
 {
-    "vehicle_name" : "Nikola"
+  "vehicle_name": "Nikola"
 }
 ```
 

@@ -4,11 +4,17 @@
 
 Turns sentry mode on or off.
 
-### Parameters
+### Request
 
-| Parameter | Example | Description                         |
-| :-------- | :------ | :---------------------------------- |
-| on        | true    | True to turn on, false to turn off. |
+This endpoint requires a singular parameter `on`, inside the POST body with the value set to `true` for enabling and `false` for disabling sentry mode.
+
+### Example
+
+```json
+{
+  "on": "true"
+}
+```
 
 ### Response
 

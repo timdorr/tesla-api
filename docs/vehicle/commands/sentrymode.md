@@ -8,13 +8,13 @@ Turns sentry mode on or off.
 
 This endpoint requires a singular parameter `on`, inside the POST body with the value set to `true` for enabling and `false` for disabling sentry mode.
 
-### Example 
+### Example
+
 ```json
 {
-    "on" : "true"
+  "on": "true"
 }
 ```
-
 
 ### Response
 

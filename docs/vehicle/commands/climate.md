@@ -99,6 +99,47 @@ The `heater` parameter maps to the following seats:
 }
 ```
 
+# POST `/api/1/vehicles/{id}/command/remote_seat_cooler_request`
+
+Sets the specified seat's cooler level. (Refresh Model S & X)
+
+### Parameters
+
+These parameters need to be passed via the post body as `JSON`.
+
+| Body Parameter    | Example | Description                             |
+| :---------------- | :------ | :-------------------------------------- |
+| seat_position     | 0       | The desired seat to cool. (0-5)         |
+| seat_cooler_level | 3       | The desired level for the cooler. (0-3) |
+
+The `seat_position` parameter maps to the following seats:
+
+| Number | Seat        |
+| :----- | :---------- |
+| 0      | Front Left  |
+| 1      | Front right |
+| 2      | Rear left   |
+| 4      | Rear center |
+| 5      | Rear right  |
+
+### Example
+
+```json
+{
+  "seat_position": 0,
+  "seat_cooler_level": 3
+}
+```
+
+### Response
+
+```json
+{
+  "reason": "",
+  "result": true
+}
+```
+
 ## POST `/api/1/vehicles/{id}/command/remote_steering_wheel_heater_request`
 
 Turn steering wheel heater on or off.
@@ -162,6 +203,47 @@ This endpoint requires json in the post body, with the singular parameter `clima
 ```json
 {
   "climate_keeper_mode": 0
+}
+```
+
+### Response
+
+```json
+{
+  "reason": "",
+  "result": true
+}
+```
+
+## POST `/api/1/vehicles/{vehicle_id}/command/remote_auto_seat_climate_request`
+
+Enables/disables Automatic Seat Climate on the specified seat.
+
+### Parameters
+
+These parameters need to be passed via the post body as `JSON`.
+
+| Body Parameter     | Example | Description                              |
+| :----------------- | :------ | :--------------------------------------- |
+| auto_seat_position | 0       | The desired seat for auto climate. (0-5) |
+| auto_climate_on    | 3       | `true` to enable and `false` to disable. |
+
+The `auto_seat_position` parameter maps to the following seats:
+
+| Number | Seat        |
+| :----- | :---------- |
+| 0      | Front Left  |
+| 1      | Front right |
+| 2      | Rear left   |
+| 4      | Rear center |
+| 5      | Rear right  |
+
+### Example
+
+```json
+{
+  "auto_seat_position": 0,
+  "auto_climate_on": "true"
 }
 ```
 

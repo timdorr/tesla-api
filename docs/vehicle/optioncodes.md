@@ -101,6 +101,7 @@ return a generic set of codes related to a Model 3.
 | BY00   |                                                          | Model Y                                                   |
 | BY01   |                                                          | Model Y                                                   |
 | BY02   |                                                          | Model Y First found on Austin car                         |
+| BY03   |                                                          | Model Y First found on Berlin car                         |
 | CC01   | Five Seat Interior                                       |                                                           |
 | CC02   | Six Seat Interior                                        |                                                           |
 | CC03   | Seven Seat Interior                                      |                                                           |
@@ -210,7 +211,7 @@ return a generic set of codes related to a Model 3.
 | HL00   | Head Lamp                                                | Model S/X 2021                                            |
 | HL01   | Matrix Head Lamp                                         | Model S/X 2022.03                                         |
 | HL31   | Head Lamp                                                | Model 3 Uplevel Headlamps                                 |
-| HL32   | M3 Matrix Headlights 2021                                | Model 3/Y 2021 Uplevel Headlamps                          |
+| HL32   | Matrix Headlights 2021                                   | Model 3/Y 2021 Uplevel Headlamps                          |
 | HP00   | No HPWC Ordered                                          |                                                           |
 | HP01   | HPWC Ordered                                             |                                                           |
 | HP30   | No heat pump assembly                                    | Model 3 Standard+ China made                              |
@@ -287,7 +288,7 @@ return a generic set of codes related to a Model 3.
 | LS02   |                                                          | Latest 2021 Model 3/Y DM                                  |
 | LT00   | Vegan interior                                           |                                                           |
 | LT01   | Standard interior                                        |                                                           |
-| LT03   |                                                          | Latest 2021 Model 3/Y Interiror?                          |
+| LT03   | interior                                                 | Latest 2021 Model 3/Y Interiror?                          |
 | LT1B   | Lower Trim                                               | Lower Trim                                                |
 | LT3W   | Lower Trim                                               |                                                           |
 | LT4B   | LT4B                                                     |                                                           |
@@ -304,7 +305,7 @@ return a generic set of codes related to a Model 3.
 | LTSB   | Lower Trim Standard Black                                | Model 3 Standard+                                         |
 | LVB0   |                                                          | Model 3/Y Standard+                                       |
 | LVB1   |                                                          | Model 3/Y with Premium Interior                           |
-| LVB2   |                                                          | Model 3/Y (GigaBerlin?)                                   |
+| LVB2   | Low Voltage Battery?                                     | Model 3/Y (GigaBerlin?)                                   |
 | M301   | Generation 1 of 2022                                     | AMD Ryzen?                                                |
 | ME01   | Memory Seats                                             |                                                           |
 | ME02   | Seat Memory                                              | Seat Memory LHD Driver                                    |
@@ -376,6 +377,7 @@ return a generic set of codes related to a Model 3.
 | MTY07  | Model Y Long Range All-Wheel Drive                       |                                                           |
 | MTY09  | Model Y Long Range All-Wheel Drive                       |                                                           |
 | MTY11  | Model Y Long Range All-Wheel Drive                       |                                                           |
+| MY00   |                                                          | Model Y Berlin                                            |
 | MY01   |                                                          | Model Y Austin?                                           |
 | MY02   |                                                          | Model Y Berlin?                                           |
 | MX06   |                                                          | Model X 2021+                                             |
@@ -459,7 +461,7 @@ return a generic set of codes related to a Model 3.
 | RD03   | Rear Drive Unit LR                                       | Model S/X 2021 (Rear drive unit)                          |
 | RD04   | Rear Drive Unit Plaid                                    | Model S/X 2021 (Rear drive unit)                          |
 | RD05   | Rear Drive Unit                                          | Model 3/Y LR/DM (China)                                   |
-| RD06   |                                                          | Model 3 2022 refresh?                                     |
+| RD06   | Rear Drive Unit                                          | Model 3/Y 2022 refresh?                                   |
 | RDU2   | Rear large drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Perf version)                             |
 | RDU3   | Rear small drive unit                                    | Model S/X 2015-2017+- (DM version)                        |
 | RDU4   | Rear small drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Plus version)                             |

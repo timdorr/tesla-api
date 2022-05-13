@@ -297,7 +297,7 @@ return a generic set of codes related to a Model 3.
 | LT5C   | LT5C                                                     |                                                           |
 | LT5P   | LT5P                                                     |                                                           |
 | LT5W   | Lower Trim Black PUR with White interior                 | 2020 Model S                                              |
-| LT6P   | LT6P                                                     |                                                           |
+| LT6P   | Black PUR Lower Trim with Performance Stitching          |                                                           |
 | LT6W   | White Base Lower Trim                                    |                                                           |
 | LTBC   | Lower Trim PUR Cream with Black Carpets                  |                                                           |
 | LTPB   | Lower Trim PUR Black                                     |                                                           |
@@ -544,7 +544,7 @@ return a generic set of codes related to a Model 3.
 | TIC6   | Tires MS                                                 | 21" Continental CSC5P Staggered                           |
 | TIG2   | Summer Tires                                             |                                                           |
 | TIG5   | Goodyear Eagle Touring                                   |                                                           |
-| TIM7   | Summer Tires                                             |                                                           |
+| TIM7   | Summer Tires                                             | 20" MX                                                    |
 | TIM8   | Michelin PS4S                                            |                                                           |
 | TIM9   | Michelin Pilot Sport 4                                   |                                                           |
 | TIMP   | Tires                                                    | Michelin Primacy 19" Tire                                 |

@@ -48,12 +48,14 @@ The solar state APIs are not yet documented.
 
 The solar command APIs are not yet documented.
 
-  
-## Site IDs
+# Authentication
 
-Each solar installation is identified by a numeric `site_id`, such as `2252154638651575`. The `site_id` is included in the URI for every site-specific solar API. The `site_id` is permanently assigned; you only need to obtain it once.  To find your `site_id` 
+Solar APIs use the same `access_token` as the vehicle APIs.  All solar APIs require a header field named `authorization` with the `access_token` as the value.
+See the `authentication.md` document in the `api-basics` folder for details.
 
+# Site IDs
 
+Each solar installation is identified by a numeric `site_id`, such as `2252154638651575`. The `site_id` is included in the URI for every site-specific solar API. The `site_id` is permanently assigned to your installation; you only need to obtain it once.  To find your `site_id`, get your list of Tesla products with the following request:
 
 ## GET `/api/1/vehicles`
 

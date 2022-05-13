@@ -50,8 +50,7 @@ The solar command APIs are not yet documented.
 
 # Authentication
 
-Solar APIs use the same `access_token` as the vehicle APIs.  All solar APIs require a header field named `authorization` with the `access_token` as the value.
-See the `authentication.md` document in the `api-basics` folder for details.
+Solar APIs use the same authentication method and the same `access_token` as the vehicle APIs.  All solar GET and POST requests require a header field named `authorization` with the value `Bearer <access_token>`. See the `authentication.md` document in the `api-basics` folder for details.
 
 # Site IDs
 

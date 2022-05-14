@@ -1,6 +1,6 @@
 # Endpoints File
 
-This the latest contents of the env_ownerapi_endpoints.json file from the 4.7.0 version of the app.
+This the latest contents of the env_ownerapi_endpoints.json file from the 4.8.1 version of the app.
 
 ```json
 {
@@ -32,6 +32,12 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.7.0 
   "VEHICLE_DATA": {
     "TYPE": "GET",
     "URI": "api/1/vehicles/{vehicle_id}/vehicle_data",
+    "AUTH": true
+  },
+  "CACHED_PROTO_VEHICLE_DATA": {
+    "NOTE": "This is cached data, pushed by the vehicle on sleep, wake and around OTAs.",
+    "TYPE": "GET",
+    "URI": "api/1/vehicles/{vehicle_id}/latest_vehicle_data",
     "AUTH": true
   },
   "VEHICLE_SERVICE_DATA": {
@@ -684,18 +690,13 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.7.0 
     "AUTH": true
   },
   "SERVICE_MOBILE_OPEN_SLOTS": {
-    "TYPE": "GET",
+    "TYPE": "POST",
     "URI": "bff/v2/mobile-app/service/locations/mobile/slots",
     "AUTH": true
   },
   "SERVICE_CENTER_OPEN_SLOTS": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/service/locations/center/slots",
-    "AUTH": true
-  },
-  "SERVICE_CENTER_IS_BODY_SHOP": {
-    "TYPE": "GET",
-    "URI": "bff/v2/mobile-app/service/locations/body-shop",
     "AUTH": true
   },
   "SERVICE_SAVE_CENTER_APPOINTMENT": {
@@ -878,6 +879,11 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.7.0 
     "URI": "mobile-app/macgyver/urgent-autodiag-result",
     "AUTH": true
   },
+  "SERVICE_MACGYVER_CLASSIFY_COLLISION_IMAGES": {
+    "TYPE": "POST",
+    "URI": "mobile-app/macgyver/classify-collision-images",
+    "AUTH": true
+  },
   "SERVICE_ACCEPT_LOANER_AGREEMENT": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/service/loaner/{serviceVisitId}",
@@ -891,6 +897,11 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.7.0 
   "SERVICE_COMPLETE_OFFLINE_ORDER": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/service/payment/complete-offline-order",
+    "AUTH": true
+  },
+  "SERVICE_EXTERNAL_COLLISION_CENTER_LIST": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/service/locations/external-collision-center-list",
     "AUTH": true
   },
   "ENERGY_OWNERSHIP_GET_TOGGLES": {
@@ -940,7 +951,7 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.7.0 
   },
   "ENERGY_GET_TROUBLESHOOTING_GUIDE": {
     "TYPE": "GET",
-    "URI": "bff/v2/mobile-app/energy-service/troubleshooting/{troubleshootingFlow}?version=2",
+    "URI": "bff/v2/mobile-app/energy-service/troubleshooting/{troubleshootingFlow}?version=3",
     "AUTH": true
   },
   "ENERGY_SERVICE_GET_POWERWALL_WARRANTY_DETAILS": {
@@ -1333,6 +1344,11 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.7.0 
     "URI": "commerce-api/content/v2?file={fileName}",
     "AUTH": true
   },
+  "COMMERCE_CREATE_ENERGY_ORDER": {
+    "TYPE": "POST",
+    "URI": "commerce-api/energy/orders/v1/{locale}",
+    "AUTH": true
+  },
   "MATTERMOST": {
     "TYPE": "POST",
     "URI": "Just a placeholder",
@@ -1468,6 +1484,11 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.7.0 
     "URI": "bff/v2/mobile-app/financing/signed-token",
     "AUTH": true
   },
+  "FINANCING_GET_COMMERCIAL_SIGNED_TOKEN": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/commercial-signed-token",
+    "AUTH": true
+  },
   "FINANCING_GET_BILLING_ADDRESS": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/financing/billing-address",
@@ -1533,9 +1554,89 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.7.0 
     "URI": "bff/v2/mobile-app/financing/esign-document",
     "AUTH": true
   },
+  "FINANCING_GET_ACQUISITION_FILE_LIST": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/acquisition/files",
+    "AUTH": true
+  },
+  "FINANCING_GET_ACQUISITION_FILE": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/acquisition/file",
+    "AUTH": true
+  },
+  "FINANCING_UPLOAD_ACQUISITION_FILE": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/financing/acquisition/file",
+    "AUTH": true
+  },
   "FINANCING_VALIDATE_E_SIGN_DETAILS": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/financing/esign-validate-details",
+    "AUTH": true
+  },
+  "FINANCING_GET_ACQUISITION_DETAILS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/acquisition/details",
+    "AUTH": true
+  },
+  "FINANCING_GET_APPOINTMENT_DETAILS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/appointment/details",
+    "AUTH": true
+  },
+  "FINANCING_GET_APPOINTMENT_LOCATION": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/appointment/location",
+    "AUTH": true
+  },
+  "FINANCING_GET_SETTLEMENT_QUOTE": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/settlement-quote",
+    "AUTH": true
+  },
+  "FINANCING_GET_ODOMETER_INFO": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/odometer-info",
+    "AUTH": true
+  },
+  "FINANCING_REMOVE_ACQUISITION_FILE": {
+    "TYPE": "PUT",
+    "URI": "bff/v2/mobile-app/financing/acquisition/file",
+    "AUTH": true
+  },
+  "FINANCING_SUBMIT_ACQUISITION": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/financing/acquisition/submit",
+    "AUTH": true
+  },
+  "FINANCING_SUBMIT_APPOINTMENT": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/financing/appointment/save",
+    "AUTH": true
+  },
+  "FINANCING_CANCEL_APPOINTMENT": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/financing/appointment/cancel",
+    "AUTH": true
+  },
+  "FINANCING_GET_NEAREST_LOCATIONS": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/financing/appointment/nearest-locations",
+    "AUTH": true
+  },
+  "FINANCING_GET_OPEN_SLOTS": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/financing/appointment/open-slots",
+    "AUTH": true
+  },
+  "FINANCING_GET_OPTION_CODES": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/option-codes",
+    "AUTH": true
+  },
+  "FINANCING_REQUEST_INSPECTION_APPOINTMENT": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/financing/appointment/inspection-request",
     "AUTH": true
   },
   "DASHCAM_SAVE_CLIP": {
@@ -1638,6 +1739,11 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.7.0 
     "URI": "bff/v2/mobile-app/ownership/vehicle-details",
     "AUTH": true
   },
+  "OWNERSHIP_RESERVATION_DETAILS_REQUEST": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/ownership/reservation-details/{rn}",
+    "AUTH": true
+  },
   "OWNERSHIP_WARRANTY_DETAILS_REQUEST": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/ownership/warranty-details",
@@ -1661,6 +1767,61 @@ This the latest contents of the env_ownerapi_endpoints.json file from the 4.7.0 
   "VEHICLE_UPLOAD_VAULT": {
     "TYPE": "POST",
     "URI": "api/1/users/vault_profile",
+    "AUTH": true
+  },
+  "USER_INFO": {
+    "TYPE": "GET",
+    "URI": "api/1/users/me",
+    "AUTH": true
+  },
+  "OWNERSHIP_TRANSFER_TOOL_ASSETS_REQUEST": {
+    "TYPE": "GET",
+    "URI": "bff/mobile-app/transfer/assets",
+    "AUTH": true
+  },
+  "OWNERSHIP_TRANSFER_TOOL_REMOVAL_ELIGIBILITY": {
+    "TYPE": "GET",
+    "URI": "bff/mobile-app/transfer/remove-car-eligibility",
+    "AUTH": true
+  },
+  "OWNERSHIP_TRANSFER_TOOL_ADD_INITIATE": {
+    "TYPE": "POST",
+    "URI": "bff/mobile-app/transfer/add-initiate",
+    "AUTH": true
+  },
+  "OWNERSHIP_TRANSFER_TOOL_VALIDATE_CAR_NAME": {
+    "TYPE": "POST",
+    "URI": "bff/mobile-app/transfer/validate-car-name",
+    "AUTH": true
+  },
+  "OWNERSHIP_TRANSFER_TOOL_REMOVE_INITIATE": {
+    "TYPE": "POST",
+    "URI": "bff/mobile-app/transfer/remove-car",
+    "AUTH": true
+  },
+  "OWNERSHIP_TRANSFER_TOOL_SECURITY_CODE": {
+    "TYPE": "POST",
+    "URI": "bff/mobile-app/transfer/security-code",
+    "AUTH": true
+  },
+  "OWNERSHIP_TRANSFER_TOOL_UPLOAD_DOCUMENT": {
+    "TYPE": "POST",
+    "URI": "bff/mobile-app/transfer/upload-document",
+    "AUTH": true
+  },
+  "OWNERSHIP_TRANSFER_TOOL_ADD_PROCESS": {
+    "TYPE": "POST",
+    "URI": "bff/mobile-app/transfer/add-process",
+    "AUTH": true
+  },
+  "OWNERSHIP_TRANSFER_TOOL_USER_SIGNED_TOKEN": {
+    "TYPE": "GET",
+    "URI": "bff/mobile-app/transfer/user-signed-token",
+    "AUTH": true
+  },
+  "OWNERSHIP_TRANSFER_TOOL_SIGNED_TOKEN": {
+    "TYPE": "POST",
+    "URI": "bff/mobile-app/transfer/signed-token",
     "AUTH": true
   }
 }

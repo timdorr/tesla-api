@@ -50,17 +50,19 @@ The solar command APIs are not yet documented.
 
 # Authentication
 
-Solar APIs use the same authentication method and the same `access_token` as the vehicle APIs.  All solar GET and POST requests require a header field named `authorization` with the value `Bearer <access_token>`. See the `authentication.md` document in the `api-basics` folder for details.
+Solar APIs use the same authentication method and the same `access_token` as the vehicle APIs.  All solar GET and POST requests require a header field named `authorization` with the value `Bearer {access_token}`. See the `authentication.md` document in the `api-basics` folder for details.
 
-# Site IDs
+# Site ID
 
 Each solar installation is identified by a numeric `site_id`, such as `2252154638651575`. The `site_id` is included in the URI for every site-specific solar API. The `site_id` is permanently assigned to your installation; you only need to obtain it once.  To find your `site_id`, get your list of Tesla products with the following request:
 
-## GET `/api/1/vehicles`
+## GET `https://owner-api.teslamotors.com/api/1/products`
 
-Retrieve a list of your owned vehicles.
+Retrieve a list of your Tesla products.
 
 ### Request parameters
+
+None.
 
 ### Response
 
@@ -68,55 +70,27 @@ Retrieve a list of your owned vehicles.
 {
   "response": [
     {
-      "id": 12345678901234567,
-      "vehicle_id": 1234567890,
-      "vin": "5YJSA11111111111",
-      "display_name": "Nikola 2.0",
-      "option_codes": "MDLS,RENA,AF02,APF1,APH2,APPB,AU01,BC0R,BP00,BR00,BS00,CDM0,CH05,PBCW,CW00,DCF0,DRLH,DSH7,DV4W,FG02,FR04,HP00,IDBA,IX01,LP01,ME02,MI01,PF01,PI01,PK00,PS01,PX00,PX4D,QTVB,RFP2,SC01,SP00,SR01,SU01,TM00,TP03,TR00,UTAB,WTAS,X001,X003,X007,X011,X013,X021,X024,X027,X028,X031,X037,X040,X044,YFFC,COUS",
-      "color": null,
-      "tokens": ["abcdef1234567890", "1234567890abcdef"],
-      "state": "online",
-      "in_service": false,
-      "id_s": "12345678901234567",
-      "calendar_enabled": true,
-      "api_version": 7,
-      "backseat_token": null,
-      "backseat_token_updated_at": null
-    }
-  ],
+      "energy_site_id": 2252111638651575,
+      "resource_type": "solar",
+      "id": "313dbc37-555c-45b1-83aa-62a4ef9ff7ac",
+      "asset_site_id": "47d04752-9cf1-4e76-88fb-08839a1c41c4",
+      "solar_power": 2320,
+      "solar_type": "pv_panel",
+      "sync_grid_alert_enabled": false,
+      "breaker_alert_enabled": false,
+      "components":
+        {
+          "battery": false,
+          "solar": true,
+          "solar_type": "pv_panel",
+          "grid": true,
+          "load_meter": false,
+          "market_type": "residential"
+        }
+      }
+    ],
   "count": 1
 }
 ```
 
-## GET `/api/1/vehicles/{id}`
-
-These resources are read-only and determine the state of the vehicle's various sub-systems.
-
-### URL parameters
-
-| Field | Example             | Description                                  |
-| :---- | :------------------ | :------------------------------------------- |
-| `id`  | `12345678901234567` | The `id` of the car. (Not the `vehicle_id`!) |
-
-### Response
-
-```json
-{
-  "response": {
-    "id": 12345678901234567,
-    "vehicle_id": 1234567890,
-    "vin": "5YJSA11111111111",
-    "display_name": "Nikola 2.0",
-    "option_codes": "MDLS,RENA,AF02,APF1,APH2,APPB,AU01,BC0R,BP00,BR00,BS00,CDM0,CH05,PBCW,CW00,DCF0,DRLH,DSH7,DV4W,FG02,FR04,HP00,IDBA,IX01,LP01,ME02,MI01,PF01,PI01,PK00,PS01,PX00,PX4D,QTVB,RFP2,SC01,SP00,SR01,SU01,TM00,TP03,TR00,UTAB,WTAS,X001,X003,X007,X011,X013,X021,X024,X027,X028,X031,X037,X040,X044,YFFC,COUS",
-    "color": null,
-    "tokens": ["abcdef1234567890", "1234567890abcdef"],
-    "state": "online",
-    "in_service": false,
-    "id_s": "12345678901234567",
-    "calendar_enabled": true,
-    "api_version": 7,
-    "backseat_token": null,
-    "backseat_token_updated_at": null
-  }
-}
-```
+In the response list, look for an entry containing the field `energy_site_id` and record the corresponding numeric value.  Include the value in the base URI for site-specific solar requests.

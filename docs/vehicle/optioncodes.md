@@ -56,7 +56,7 @@ return a generic set of codes related to a Model 3.
 | AU3P   | Sound Studio Package                                     | Premium audio package                                     |
 | AUF1   | Premium Speakers Enabled                                 | M3/MY Premium Audio Package (AWD,Perf)                    |
 | AUF2   | Premium Speakers Disabled                                | M3/MY Reduced Audio Package (Standard, mid range)         |
-| BC00   |                                                          | MS Q4 Plaid                                               |
+| BC00   | Brake Calipers M4.42/44                                  | MS Plaid E5                                               |
 | BC0B   | Black Brake Calipers                                     |                                                           |
 | BC0R   | Red Brake Calipers                                       |                                                           |
 | BC3B   | Black Brake Calipers                                     | Model 3/Y                                                 |

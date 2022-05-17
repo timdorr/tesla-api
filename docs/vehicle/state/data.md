@@ -6,7 +6,12 @@ A rollup of all the `data_request` endpoints plus vehicle configuration.
 
 _Note:_ all `*_range` values are in miles, irrespective of GUI configuration.
 
+<details>
+    <summary>
+      
 ### Response
+      
+</summary>
 
 ```json
 {
@@ -206,6 +211,8 @@ _Note:_ all `*_range` values are in miles, irrespective of GUI configuration.
 }
 ```
 
+</details>
+
 ## GET `/api/1/vehicles/{id}/data`
 
 A "legacy" version of the data endpoint.
@@ -213,3 +220,251 @@ A "legacy" version of the data endpoint.
 ### Response
 
 Currently, this has the exact same response structure as the newer vehicle_data endpoint.
+
+## GET `/api/1/vehicles/{id}/latest_vehicle_data`
+
+This is cached data, pushed by the vehicle on sleep, wake and around OTAs.
+
+<details>
+    <summary>
+      
+### Response
+      
+</summary>
+
+```json
+{
+  "response": {
+    "access_type": "OWNER",
+    "api_version": 40,
+    "backseat_token": null,
+    "backseat_token_updated_at": null,
+    "calendar_enabled": true,
+    "charge_state": {
+      "battery_heater_on": false,
+      "battery_level": 39,
+      "battery_range": 127.34,
+      "charge_amps": 24,
+      "charge_current_request": 24,
+      "charge_current_request_max": 24,
+      "charge_enable_request": true,
+      "charge_energy_added": 49.85,
+      "charge_limit_soc": 100,
+      "charge_limit_soc_max": 100,
+      "charge_limit_soc_std": 90,
+      "charge_miles_added_ideal": 143.5,
+      "charge_miles_added_rated": 179.0,
+      "charge_port_cold_weather_mode": null,
+      "charge_port_color": "Off",
+      "charge_port_door_open": false,
+      "charge_port_latch": "Blocking",
+      "charge_rate": 0.0,
+      "charge_to_max_range": true,
+      "charger_actual_current": 0,
+      "charger_phases": null,
+      "charger_pilot_current": 24,
+      "charger_power": 0,
+      "charger_voltage": 0,
+      "charging_state": "Disconnected",
+      "conn_charge_cable": "<invalid>",
+      "est_battery_range": 66.31,
+      "fast_charger_brand": "<invalid>",
+      "fast_charger_present": false,
+      "fast_charger_type": "<invalid>",
+      "ideal_battery_range": 101.99,
+      "managed_charging_active": false,
+      "managed_charging_start_time": null,
+      "managed_charging_user_canceled": false,
+      "max_range_charge_counter": 1,
+      "minutes_to_full_charge": 0,
+      "not_enough_power_to_heat": false,
+      "off_peak_charging_enabled": false,
+      "off_peak_charging_times": "all_week",
+      "off_peak_hours_end_time": 360,
+      "preconditioning_enabled": false,
+      "preconditioning_times": "all_week",
+      "scheduled_charging_mode": "Off",
+      "scheduled_charging_pending": false,
+      "scheduled_charging_start_time": null,
+      "scheduled_departure_time": 1640930400,
+      "scheduled_departure_time_minutes": 420,
+      "supercharger_session_trip_planner": false,
+      "time_to_full_charge": 0.0,
+      "timestamp": 1652793898985,
+      "trip_charging": false,
+      "usable_battery_level": 39,
+      "user_charge_enable_request": null
+    },
+    "climate_state": {
+      "allow_cabin_overheat_protection": false,
+      "battery_heater": false,
+      "battery_heater_no_power": false,
+      "bioweapon_mode": false,
+      "cabin_overheat_protection": "Off",
+      "climate_keeper_mode": "off",
+      "defrost_mode": 0,
+      "driver_temp_setting": 28.0,
+      "fan_status": 0,
+      "hvac_auto_request": "Override",
+      "inside_temp": 33.0,
+      "is_auto_conditioning_on": false,
+      "is_climate_on": false,
+      "is_front_defroster_on": false,
+      "is_preconditioning": false,
+      "is_rear_defroster_on": false,
+      "left_temp_direction": -224,
+      "max_avail_temp": 28.0,
+      "min_avail_temp": 15.0,
+      "outside_temp": 22.5,
+      "passenger_temp_setting": 28.0,
+      "remote_heater_control_enabled": false,
+      "right_temp_direction": -224,
+      "seat_heater_left": 0,
+      "seat_heater_rear_left": 0,
+      "seat_heater_rear_right": 0,
+      "seat_heater_right": 0,
+      "seat_heater_third_row_left": 0,
+      "seat_heater_third_row_right": 0,
+      "side_mirror_heaters": false,
+      "steering_wheel_heater": false,
+      "supports_fan_only_cabin_overheat_protection": false,
+      "timestamp": 1652793898985,
+      "wiper_blade_heater": false
+    },
+    "color": null,
+    "display_name": "Nikola",
+    "drive_state": {
+      "gps_as_of": 1652793898,
+      "heading": 38,
+      "latitude": 42.0,
+      "longitude": 6.969694,
+      "native_latitude": 42.0,
+      "native_location_supported": 1,
+      "native_longitude": 6.969694,
+      "native_type": "wgs",
+      "power": 0,
+      "shift_state": "P",
+      "speed": null,
+      "timestamp": 1652793898985
+    },
+    "gui_settings": {
+      "gui_24_hour_time": true,
+      "gui_charge_rate_units": "km/hr",
+      "gui_distance_units": "km/hr",
+      "gui_range_display": "Rated",
+      "gui_temperature_units": "C",
+      "show_range_units": true,
+      "timestamp": 1652793898985
+    },
+    "id": 1234567891011120,
+    "id_s": "1234567891011120",
+    "in_service": false,
+    "option_codes": "AD15,MDL3,PBSB,RENA,BT37,ID3W,RF3G,S3PB,DRLH,DV2W,W39B,APF0,COUS,BC3B,CH07,PC30,FC3P,FG31,GLFR,HL31,HM31,IL31,LTPB,MR31,FM3B,RS3H,SA3P,STCP,SC04,SU3C,T3CA,TW00,TM00,UT3P,WR00,AU3P,APH3,AF00,ZCST,MI00,CDM0",
+    "state": "online",
+    "tokens": ["ab1234cd56ef7gh8", "ab1234cd56ef7gh8"],
+    "user_id": 123456,
+    "vehicle_config": {
+      "can_accept_navigation_requests": true,
+      "can_actuate_trunks": true,
+      "car_special_type": "base",
+      "car_type": "modelx",
+      "charge_port_type": "US",
+      "dashcam_clip_save_supported": true,
+      "default_charge_to_max": false,
+      "driver_assist": "ParkerPascal2_5",
+      "ece_restrictions": true,
+      "efficiency_package": "Default",
+      "eu_vehicle": false,
+      "exterior_color": "MetallicBlack",
+      "front_drive_unit": "Small",
+      "has_air_suspension": true,
+      "has_ludicrous_mode": true,
+      "has_seat_cooling": true,
+      "headlamp_type": "Led",
+      "interior_trim_type": "AllBlack",
+      "motorized_charge_port": true,
+      "plg": true,
+      "pws": false,
+      "rear_drive_unit": "Big",
+      "rear_seat_heaters": 3,
+      "rear_seat_type": 3,
+      "rhd": false,
+      "roof_color": "None",
+      "seat_type": 0,
+      "spoiler_type": "Passive",
+      "sun_roof_installed": 0,
+      "third_row_seats": "FuturisFoldFlat",
+      "timestamp": 1652793898986,
+      "trim_badging": "plaid",
+      "use_range_badging": false,
+      "utc_offset": 7200,
+      "wheel_type": "Turbine22"
+    },
+    "vehicle_id": 1413092341,
+    "vehicle_state": {
+      "api_version": 40,
+      "autopark_state_v2": "ready",
+      "autopark_style": "dead_man",
+      "calendar_supported": true,
+      "car_version": "2022.12.3.2 2d5530dd8ff7",
+      "center_display_state": 0,
+      "dashcam_clip_save_available": true,
+      "dashcam_state": "Recording",
+      "df": 0,
+      "dr": 0,
+      "fd_window": 0,
+      "feature_bitmask": "ff,0",
+      "fp_window": 0,
+      "ft": 0,
+      "homelink_device_count": 1,
+      "homelink_nearby": false,
+      "is_user_present": false,
+      "last_autopark_error": "no_error",
+      "locked": true,
+      "media_state": {
+        "remote_control_enabled": true
+      },
+      "notifications_supported": true,
+      "odometer": 1323.436653,
+      "parsed_calendar_supported": true,
+      "pf": 0,
+      "pr": 0,
+      "rd_window": 0,
+      "remote_start": false,
+      "remote_start_enabled": true,
+      "remote_start_supported": true,
+      "rp_window": 0,
+      "rt": 0,
+      "santa_mode": 0,
+      "sentry_mode": false,
+      "sentry_mode_available": true,
+      "service_mode": false,
+      "service_mode_plus": false,
+      "smart_summon_available": true,
+      "software_update": {
+        "download_perc": 0,
+        "expected_duration_sec": 2700,
+        "install_perc": 1,
+        "status": "",
+        "version": " "
+      },
+      "speed_limit_mode": {
+        "active": false,
+        "current_limit_mph": 90.0,
+        "max_limit_mph": 90,
+        "min_limit_mph": 50.0,
+        "pin_code_set": true
+      },
+      "summon_standby_mode_enabled": true,
+      "timestamp": 1652793898985,
+      "tpms_pressure_fl": 0.0,
+      "tpms_pressure_fr": 0.0,
+      "tpms_pressure_rl": 0.0,
+      "tpms_pressure_rr": 0.0,
+      "valet_mode": false,
+      "vehicle_name": "Nikola"
+    },
+    "vin": "YourVIN"
+  }
+}
+```

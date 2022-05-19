@@ -7,7 +7,7 @@ A rollup of all the `data_request` endpoints plus vehicle configuration.
 _Note:_ all `*_range` values are in miles, irrespective of GUI configuration.
 
 ### Response
-     
+
 ```json
 {
   "response": {
@@ -217,7 +217,7 @@ Currently, this has the exact same response structure as the newer vehicle_data 
 ## GET `/api/1/vehicles/{id}/latest_vehicle_data`
 
 This is cached data, pushed by the vehicle on sleep, wake and around OTAs.
-      
+
 ### Response
 
 ```json

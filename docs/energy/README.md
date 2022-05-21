@@ -2,50 +2,20 @@
 description: Solar API Overview
 ---
 
-# Solar API Endpoints
+# Overview
 
-The base URI for all site-specific solar APIs is `https://owner-api.teslamotors.com/api/1/energy_sites/{site_id}/` followed by the endpoint name and parameters. `site_id` identifies the solar installation.  See the [products.md](products.md) file for obtaining the `site_id` value.
+The base URI for all site-specific energy product APIs is `https://owner-api.teslamotors.com/api/1/energy_sites/{site_id}/`. The `site_id` identifies the energy site installation and can be obtained from the [Energy Products API](../api-basics/products.md).
 
-The solar endpoints fall into three groups:
+## Endpoints
 
-### Solar energy generation data endpoints
+{% page-ref page="history.md" %}
 
-| Cmd | Endpoint            | Description                                    |
-| :-- | :------------------ | :--------------------------------------------- |
-| GET | `history`           | Current and immediately prior generation data. |
-| GET | `calendar_history`  | Generation data from a past period.            |
-| GET | `telemetry_history` | No information available.                      |
+Get historical data about your energy products.
 
-The solar generation APIs are described in more detail in the `history.md` document.
+{% page-ref page="state.md" %}
 
-### Solar state endpoints
+Retrieve the current state of your energy products.
 
-| Cmd | Endpoint                | 
-| :-- | :---------------------- | 
-| GET | `live_status`           | 
-| GET | `site_info`             | 
-| GET | `tariff_rate`           |
-| GET | `tariff_rates`          |
-| GET | `savings_forecast`      |
-| GET | `backup_time_remaining` |
-| GET | `programs`              |
+{% page-ref page="commands.md" %}
 
-The solar state APIs are not yet documented.
-
-### Solar command endpoints
-
-| Cmd  | Endpoint                            | 
-| :--- | :---------------------------------- | 
-| POST | `backup`                            | 
-| POST | `off_grid_vehicle_charging_reserve` | 
-| POST | `site_name`                         |
-| POST | `operation`                         |
-| POST | `grid_import_export`                |
-| POST | `time_of_use_settings`              |
-| POST | `storm_mode`                        |
-| POST | `command`                           |
-| POST | `program`                           |
-| POST | `event`                             |
-| POST | `preference`                        |
-
-The solar command APIs are not yet documented.
+Commands to control your energy products.

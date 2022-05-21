@@ -46,6 +46,8 @@
 
 - [Overview](energy/README.md)
   - [History](energy/history.md)
+  - [State](energy/state.md)
+  - [Commands](energy/commands.md)
 
 ## Miscellaneous
 

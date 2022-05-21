@@ -1,10 +1,10 @@
 ---
-description: Solar API Overview
+description: Energy Products API Overview
 ---
 
 # Overview
 
-The base URI for all site-specific energy product APIs is `https://owner-api.teslamotors.com/api/1/energy_sites/{site_id}/`. The `site_id` identifies the energy site installation and can be obtained from the [Energy Products API](../api-basics/products.md).
+The base URI for all site-specific energy product endpoints is `https://owner-api.teslamotors.com/api/1/energy_sites/{site_id}/`. The `site_id` identifies the energy site installation and can be obtained from the [Energy Products API](../api-basics/products.md).
 
 ## Endpoints
 

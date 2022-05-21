@@ -6,6 +6,7 @@
 
 - [Authentication](api-basics/authentication.md)
 - [Vehicles](api-basics/vehicles.md)
+- [Energy Products](api-basics/products.md)
 
 ## Vehicle
 
@@ -40,6 +41,11 @@
 - [Streaming](vehicle/streaming.md)
 - [Autopark/Summon](vehicle/autopark.md)
 - [Option Codes](vehicle/optioncodes.md)
+
+## Energy Products
+
+- [Overview](energy/README.md)
+  - [History](energy/history.md)
 
 ## Miscellaneous
 

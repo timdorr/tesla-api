@@ -4,11 +4,11 @@ description: Endpoints for getting an account's energy products
 
 # Products
 
-A logged in user may have multiple energy products (Powerwalls, Solar installations, etc.) under their account.
+A logged in user may have multiple Tesla Energy products (Powerwalls, Solar installations, etc.) under their account (congrats on being rich!).
 
 ## GET `/api/1/products`
 
-Retrieve a list of your Tesla energy products.
+Retrieve a list of your Tesla Energy products.
 
 The value of `energy_site_id` is used as `site_id` in the various energy product endpoints.
 

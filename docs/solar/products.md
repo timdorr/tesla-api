@@ -44,4 +44,4 @@ None.
 }
 ```
 
-The value of `energy_site_id` is permanently assigned to a solar installation; you only need to obtain it once.  The value is inserted in the URI for site-specific solar APIs.
+The value of `energy_site_id` is permanently assigned to a solar installation; you only need to obtain it once.  Insert the value in the URI for site-specific solar APIs.

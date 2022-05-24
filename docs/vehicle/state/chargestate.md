@@ -40,7 +40,6 @@ Information on the state of charge in the battery and its various settings.
     "fast_charger_brand": "<invalid>",
     "fast_charger_present": false,
     "fast_charger_type": "<invalid>",
-    "ideal_battery_range": 282.96,
     "ideal_battery_range": 280.59,
     "managed_charging_active": false,
     "managed_charging_start_time": null,

@@ -355,6 +355,7 @@ return a generic set of codes related to a Model 3.
 | MTS09  | Model S Plaid+                                           | 2021 Refresh                                              |
 | MTS10  | Model S Long Range                                       | 2021 Refresh                                              |
 | MTS11  | Model S Plaid                                            | 2021 Refresh                                              |
+| MTS12  | Model S Plaid                                            | 2022 Refresh                                              |
 | MTS13  | Model S Dual Motor All-Wheel Drive                       | 2022 Refresh                                              |
 | MTS14  | Model S Plaid Tri Motor All-Wheel Drive                  | 2022 Refresh                                              |
 | MTX01  | Model X Standard Range                                   |                                                           |

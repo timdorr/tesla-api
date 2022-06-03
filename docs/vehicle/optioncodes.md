@@ -374,6 +374,7 @@ return a generic set of codes related to a Model 3.
 | MTY03  | Model Y Long Range All-Wheel Drive                       |                                                           |
 | MTY04  | Model Y Long Range All-Wheel Drive Performance           |                                                           |
 | MTY05  | Model Y Long Range All-Wheel Drive Performance           |                                                           |
+| MTY12  | Model Y Long Range All-Wheel Drive Performance           |                                                           |
 | MTY06  | Model Y Long Range All-Wheel Drive                       |                                                           |
 | MTY07  | Model Y Long Range All-Wheel Drive                       |                                                           |
 | MTY09  | Model Y Long Range All-Wheel Drive                       |                                                           |

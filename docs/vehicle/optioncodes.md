@@ -341,6 +341,7 @@ return a generic set of codes related to a Model 3.
 | MT321  | Model 3 Long Range All-Wheel Drive                       | 2021 Refresh                                              |
 | MT323  | Model 3 Long Range All-Wheel Drive                       | 2021 Refresh                                              |
 | MT324  | Model 3 Long Range All-Wheel Drive                       | 2021 Refresh                                              |
+| MT325  | Model 3 Long Range All-Wheel Drive Performance           | 2022 Refresh                                              |
 | MT328  | Model 3 Long Range All-Wheel Drive                       | 2022 Refresh                                              |
 | MT336  | Model 3 Standard Range Plus Rear-Wheel Drive             | 2020 Refresh                                              |
 | MT337  | Model 3 Standard Range Plus Rear-Wheel Drive             | 2021 Refresh                                              |

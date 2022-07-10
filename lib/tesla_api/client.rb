@@ -35,6 +35,7 @@ module TeslaApi
         # conn.response :logger, nil, {headers: true, bodies: true}
         conn.request :json
         conn.response :json
+        conn.headers['Accept'] = 'application/json'
         conn.response :raise_error
         conn.request :retry, retry_options if retry_options # Must be registered after :raise_error
         conn.adapter Faraday.default_adapter

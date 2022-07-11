@@ -15,7 +15,7 @@ module TeslaApi
       retry_options: nil,
       base_uri: nil,
       sso_uri: nil,
-      client_options: {}
+      client_options: {headers: {"Accept" => "application/json"}}
     )
       @email = email
       @base_uri = base_uri || BASE_URI

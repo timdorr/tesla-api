@@ -146,13 +146,9 @@ Authorization: Bearer {access_token}
 
 #### POST `https://auth.tesla.com/oauth2/v3/token`
 
-This uses the SSO `refresh_token` from Step 3 above to do an [OAuth 2.0 Refresh Token Grant](https://oauth.net/2/grant-types/refresh-token/). _This does not work with the `refresh_token` provided by the Owner API._ Those have no use currently and should be discarded.
-
-This refreshed access token can be used with the Owner API to obtain a new access token for that service using the exact same request as Step 4 above.
+This uses the SSO `refresh_token` from Step 3 above to do an [OAuth 2.0 Refresh Token Grant](https://oauth.net/2/grant-types/refresh-token/). The refreshed access token is to be used directly with the Owner API as a bearer token as per the above _Making requests_ section.
 
 This endpoint uses JSON for the request and response bodies.
-
-Should your Owner API token begin with `cn-` you should POST to `auth.tesla.cn` Tesla SSO service to have it refresh. Owner API tokens starting with `qts-` are to be refreshed using `auth.tesla.com`
 
 ##### Request parameters
 

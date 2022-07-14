@@ -136,7 +136,7 @@ This is a standard [OAuth 2.0 Authorization Code exchange](https://oauth.net/2/g
 
 ## Making requests
 
-Requests are made using the `access_token` provided with the above response. It is treated as an [OAuth 2.0 Bearer Token](https://oauth.net/2/bearer-tokens/) and expires every eight hours. Owner API `/auth/token` should not longer be used for SSO to Owner API access token exchange and can be used directly with Owner API end points. The `access_token` is to be passed in an Authorization header with all requests to Owner API:
+Requests are made using the `access_token` provided with the response. It is treated as an [OAuth 2.0 Bearer Token](https://oauth.net/2/bearer-tokens/) and expires every eight hours. This token is passed along in an Authorization header with all future requests:
 
 ```http
 Authorization: Bearer {access_token}

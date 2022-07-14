@@ -146,7 +146,7 @@ Authorization: Bearer {access_token}
 
 #### POST `https://auth.tesla.com/oauth2/v3/token`
 
-This uses the SSO `refresh_token` from Step 3 above to do an [OAuth 2.0 Refresh Token Grant](https://oauth.net/2/grant-types/refresh-token/). The refreshed access token is to be used directly with the Owner API as a bearer token as per the above _Making requests_ section. 
+This uses the SSO `refresh_token` from Step 3 above to do an [OAuth 2.0 Refresh Token Grant](https://oauth.net/2/grant-types/refresh-token/). The refreshed access token is to be used directly with the Owner API as a bearer token as per the above _Making requests_ section.
 
 This endpoint uses JSON for the request and response bodies.
 

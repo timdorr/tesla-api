@@ -199,7 +199,7 @@ return a generic set of codes related to a Model 3.
 | FR01   | Base Front Row                                           |                                                           |
 | FR02   | Ventilated Front Seats                                   |                                                           |
 | FR03   | FR03                                                     |                                                           |
-| FR04   | Front Row Seat                                           | MS 2019-2020                                              |
+| FR04   | Front Row Seat                                           | MS 2018-2020                                              |
 | FR05   | Front Row Seat                                           | Ventilated Front Seats (MS/MX 10.2020+)                   |
 | GLCN   | Assembly                                                 | Final Assembly China Giga3 Model 3                        |
 | GLFR   | Assembly                                                 | Final Assembly Fremont                                    |
@@ -675,4 +675,4 @@ return a generic set of codes related to a Model 3.
 | YF01   | Matching Yacht Floor                                     |                                                           |
 | YFCC   | Yatcht Floor Front Console, Décor Matched                |                                                           |
 | YFFC   | Integrated Center Console                                |                                                           |
-| ZINV   | Inventory vehicle?                                       | MS Plaid Q42022/M3P Singapore                             |
+| ZINV   | Inventory vehicle?                                       | Car sold from Tesla Inventory                             |

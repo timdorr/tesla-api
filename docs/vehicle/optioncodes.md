@@ -369,7 +369,8 @@ return a generic set of codes related to a Model 3.
 | MTX09  | Model X Plaid+                                           | 2021 Refresh                                              |
 | MTX10  | Model X Long Range                                       | 2021 Refresh                                              |
 | MTX11  | Model X Plaid                                            | 2021 Refresh                                              |
-| MTX13  | Model X Plaid Dual Motor All-Wheel Drive                 | 2022 Refresh                                              |
+| MTX12  | Model X Plaid                                            | 2021 Refresh                                              |
+| MTX13  | Model X Plaid                                            | 2021 Refresh                                              |
 | MTX14  | Model X Plaid Tri Motor All-Wheel Drive                  | 2022 Refresh                                              |
 | MTY01  | Model Y Standard Range Rear-Wheel Drive                  |                                                           |
 | MTY02  | Model Y Long Range Rear-Wheel Drive                      |                                                           |

@@ -2,7 +2,7 @@ require "date"
 require "base64"
 
 require "faraday"
-require "faraday_middleware"
+require "faraday/retry"
 
 require "async"
 require "async/http/endpoint"

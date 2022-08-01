@@ -303,8 +303,8 @@ return a generic set of codes related to a Model 3.
 | LTPB   | Lower Trim PUR Black                                     |                                                           |
 | LTPW   | Lower Trim PUR White                                     |                                                           |
 | LTSB   | Lower Trim Standard Black                                | Model 3 Standard+                                         |
-| LVB0   |                                                          | Model 3/Y Standard+                                       |
-| LVB1   |                                                          | Model 3/Y with Premium Interior                           |
+| LVB0   | 12V Acid Low voltage battery                             |                                                           |
+| LVB1   | 15V Li-Ion Low voltage battery                           |                                                           |
 | LVB2   | Low Voltage Battery?                                     | Model 3/Y (GigaBerlin?)                                   |
 | M301   | Generation 1 of 2022                                     | AMD Ryzen?                                                |
 | ME01   | Memory Seats                                             |                                                           |
@@ -481,8 +481,8 @@ return a generic set of codes related to a Model 3.
 | RNG0   | Standard Battery Range                                   | Model 3 Standard+                                         |
 | RL00   | Rear tail lights                                         | Model S/X 2021                                            |
 | RL01   | Rear tail lights (Larger for CCS)                        | Model S/X 2022.March 473k+-                               |
-| RL31   |                                                          | Model 3 Perf                                              |
-| RL32   |                                                          | Model 3/Y (AWD)                                           |
+| RL31   | Rear lights (EU)                                         | Model 3 EU                                                |
+| RL32   | Rear lights                                              | Model 3/Y (AWD)                                           |
 | RS3H   | Second Row Seat Rear Seats (Heated)                      | Model 3/Y with Premium Interior                           |
 | RSF0   | Rear Heated Seats Disabled                               | Model 3/Y without Premium Interior                        |
 | RSF1   | Rear Heated Seats                                        | Model 3/Y with Premium Interior                           |
@@ -584,8 +584,8 @@ return a generic set of codes related to a Model 3.
 | UTZW   | Light Headliner                                          |                                                           |
 | USSB   | Safety                                                   | Safety US Black                                           |
 | USSW   | US Safety Kit White                                      |                                                           |
-| VC00   |                                                          | Model 3/Y (China)                                         |
-| VC01   |                                                          | Model 3/Y first found on MYJan2022                        |
+| VC00   | MCU Intel Atom                                           | Model 3/Y (China)                                         |
+| VC01   | MCU Razen                                                | Model 3/Y first found on MYJan2022                        |
 | W32P   | 20" Performance Wheels                                   | Model 3                                                   |
 | W32D   | 20" Gray Performance Wheels                              | Model 3                                                   |
 | W33D   | 20" Black Performance Wheels 2021                        | Model 3                                                   |

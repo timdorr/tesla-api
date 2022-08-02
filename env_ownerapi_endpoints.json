@@ -404,11 +404,6 @@
     "URI": "api/1/energy_sites/rate_tariffs",
     "AUTH": true
   },
-  "SITE_TARIFFS": {
-    "TYPE": "GET",
-    "URI": "api/1/energy_sites/{site_id}/tariff_rates",
-    "AUTH": true
-  },
   "SITE_TARIFF": {
     "TYPE": "GET",
     "URI": "api/1/energy_sites/{site_id}/tariff_rate",
@@ -422,6 +417,11 @@
   "SOLAR_SAVINGS_FORECAST": {
     "TYPE": "GET",
     "URI": "api/1/energy_sites/{site_id}/savings_forecast",
+    "AUTH": true
+  },
+  "ENERGY_REGISTER_PRODUCT": {
+    "TYPE": "POST",
+    "URI": "api/1/users/register_product",
     "AUTH": true
   },
   "ENERGY_SITE_BACKUP_TIME_REMAINING": {
@@ -507,6 +507,16 @@
   "VEHICLE_CHARGE_HISTORY": {
     "TYPE": "POST",
     "URI": "api/1/vehicles/{vehicle_id}/charge_history",
+    "AUTH": true
+  },
+  "ENERGY_SITE_PROGRAM_DETAILS": {
+    "TYPE": "GET",
+    "URI": "api/1/energy_sites/{site_id}/program",
+    "AUTH": true
+  },
+  "ENERGY_WALL_CONNECTOR_FIRMWARE_DOWNLOAD_URL": {
+    "TYPE": "GET",
+    "URI": "api/1/wall_connectors/firmware",
     "AUTH": true
   },
   "SEND_NOTIFICATION_CONFIRMATION": {
@@ -692,6 +702,16 @@
   "SERVICE_CENTER_OPEN_SLOTS": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/service/locations/center/slots",
+    "AUTH": true
+  },
+  "SERVICE_CENTER_FETCH_PREFERRED_CENTER": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/service/locations/preferred-service-center",
+    "AUTH": true
+  },
+  "SERVICE_CENTER_UPDATE_PREFERRED_CENTER": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/service/locations/preferred-service-center",
     "AUTH": true
   },
   "SERVICE_SAVE_CENTER_APPOINTMENT": {
@@ -899,6 +919,36 @@
     "URI": "bff/v2/mobile-app/service/locations/external-collision-center-list",
     "AUTH": true
   },
+  "SERVICE_FETCH_RECALLS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/campaign/recall-detail",
+    "AUTH": true
+  },
+  "SERVICE_FETCH_ENTITY_CODE": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/service/appointments/get-trt/{trtId}",
+    "AUTH": true
+  },
+  "SERVICE_CREATE_INVOICE": {
+    "TYPE": "POST",
+    "URI": "mobile-app/service/estimate/{serviceVisitId}",
+    "AUTH": true
+  },
+  "SERVICE_ESTIMATE_DETAILS": {
+    "TYPE": "GET",
+    "URI": "mobile-app/service/estimate/{serviceVisitID}",
+    "AUTH": true
+  },
+  "SERVICE_RESCHEDULE_DISCLAIMER": {
+    "TYPE": "GET",
+    "URI": "mobile-app/service/reschedule-disclaimer",
+    "AUTH": true
+  },
+  "SERVICE_LOG": {
+    "TYPE": "POST",
+    "URI": "mobile-app/service/log/{issue-name}",
+    "AUTH": true
+  },
   "ENERGY_OWNERSHIP_GET_TOGGLES": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/energy/feature-flags",
@@ -952,6 +1002,11 @@
   "ENERGY_SERVICE_GET_POWERWALL_WARRANTY_DETAILS": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/energy-service/warranty-details",
+    "AUTH": true
+  },
+  "ENERGY_SERVICE_GET_CHAT_AVAILABILITY": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/energy-service/chat-availability",
     "AUTH": true
   },
   "LOOTBOX_USER_INFO": {
@@ -1016,12 +1071,7 @@
   },
   "UPGRADES_GET_ELIGIBLE_UPGRADES": {
     "TYPE": "GET",
-    "URI": "bff/v2/mobile-app/upgrades/eligible",
-    "AUTH": true
-  },
-  "UPGRADES_GET_PURCHASED_UPGRADES": {
-    "TYPE": "GET",
-    "URI": "bff/v2/mobile-app/upgrades/purchased",
+    "URI": "bff/v2/mobile-app/upgrades/eligible/v2",
     "AUTH": true
   },
   "UPGRADES_GET_PURCHASED_UPGRADES_V2": {
@@ -1046,7 +1096,7 @@
   },
   "USER_ACCOUNT_UPLOAD_PROFILE_PICTURE": {
     "TYPE": "POST",
-    "URI": "bff/v2/mobile-app/account/profile-pic",
+    "URI": "images/upload",
     "AUTH": true
   },
   "USER_ACCOUNT_DOWNLOAD_PROFILE_PICTURE": {
@@ -1071,7 +1121,7 @@
   },
   "SUBSCRIPTIONS_GET_PURCHASED_SUBSCRIPTIONS": {
     "TYPE": "GET",
-    "URI": "bff/v2/mobile-app/subscriptions/purchased",
+    "URI": "bff/v2/mobile-app/subscriptions/purchased/v2",
     "AUTH": true
   },
   "SUBSCRIPTIONS_CREATE_OFFLINE_ORDER": {
@@ -1082,11 +1132,6 @@
   "SUBSCRIPTIONS_POST_CREATE_OFFLINE_ORDER": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/subscriptions/offline-order",
-    "AUTH": true
-  },
-  "GET_WALLET_FEATURE_FLAG": {
-    "TYPE": "GET",
-    "URI": "bff/v2/mobile-app/feature-flag/enable-subscriptions-wallet-channel",
     "AUTH": true
   },
   "SUBSCRIPTIONS_PURCHASE": {
@@ -1197,6 +1242,11 @@
   "SERVICE_MESSAGES_MARK_READ": {
     "TYPE": "PATCH",
     "URI": "bff/v2/mobile-app/service/messages/{serviceVisitID}",
+    "AUTH": true
+  },
+  "SERVICE_MESSAGES_USER_LIST": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/service/messages/users",
     "AUTH": true
   },
   "COMMERCE_CATEGORIES": {
@@ -1331,7 +1381,7 @@
   },
   "COMMERCE_POST_INSTALLER_VENDOR": {
     "TYPE": "POST",
-    "URI": "commerce-api/checkout/auditrecords/v1/{locale}",
+    "URI": "commerce-api/checkout/auditrecords/v1{locale}",
     "AUTH": true
   },
   "COMMERCE_CONTENT": {
@@ -1341,7 +1391,12 @@
   },
   "COMMERCE_CREATE_ENERGY_ORDER": {
     "TYPE": "POST",
-    "URI": "commerce-api/energy/orders/v1/{locale}",
+    "URI": "commerce-api/energy/orders/v1{locale}",
+    "AUTH": true
+  },
+  "COMMERCE_STOCK_NOTIFICATION": {
+    "TYPE": "POST",
+    "URI": "commerce-api/stocknotifications/v1{locale}",
     "AUTH": true
   },
   "MATTERMOST": {
@@ -1489,6 +1544,11 @@
     "URI": "bff/v2/mobile-app/financing/billing-address",
     "AUTH": true
   },
+  "FINANCING_GET_WIRE_TRANSFER_INFO": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/wire-transfer-info",
+    "AUTH": true
+  },
   "FINANCING_UPDATE_BILLING_ADDRESS": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/financing/billing-address",
@@ -1589,6 +1649,16 @@
     "URI": "bff/v2/mobile-app/financing/settlement-quote",
     "AUTH": true
   },
+  "FINANCING_GENERATE_QUOTE": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/quote",
+    "AUTH": true
+  },
+  "FINANCING_GENERATE_BUYOUT_QUOTE": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/buyout-quote",
+    "AUTH": true
+  },
   "FINANCING_GET_ODOMETER_INFO": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/financing/odometer-info",
@@ -1602,6 +1672,11 @@
   "FINANCING_SUBMIT_ACQUISITION": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/financing/acquisition/submit",
+    "AUTH": true
+  },
+  "FINANCING_STATUS_UPDATE_ACQUISITION": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/financing/acquisition/status-update",
     "AUTH": true
   },
   "FINANCING_SUBMIT_APPOINTMENT": {
@@ -1629,9 +1704,19 @@
     "URI": "bff/v2/mobile-app/financing/option-codes",
     "AUTH": true
   },
+  "FINANCING_GET_TRANSLATIONS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/translations",
+    "AUTH": true
+  },
   "FINANCING_REQUEST_INSPECTION_APPOINTMENT": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/financing/appointment/inspection-request",
+    "AUTH": true
+  },
+  "FINANCING_GET_REGISTRATION_ADDRESS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/registration-address",
     "AUTH": true
   },
   "DASHCAM_SAVE_CLIP": {
@@ -1805,18 +1890,53 @@
     "AUTH": true
   },
   "OWNERSHIP_TRANSFER_TOOL_ADD_PROCESS": {
-    "TYPE": "POST",
+    "TYPE":"POST",
     "URI": "bff/mobile-app/transfer/add-process",
     "AUTH": true
   },
   "OWNERSHIP_TRANSFER_TOOL_USER_SIGNED_TOKEN": {
-    "TYPE": "GET",
+   "TYPE": "GET",
     "URI": "bff/mobile-app/transfer/user-signed-token",
     "AUTH": true
   },
   "OWNERSHIP_TRANSFER_TOOL_SIGNED_TOKEN": {
     "TYPE": "POST",
     "URI": "bff/mobile-app/transfer/signed-token",
+    "AUTH": true
+  },
+  "SECURITY_AND_PRIVACY_ASSETS_REQUEST": {
+    "TYPE": "GET",
+    "URI": "bff/mobile-app/security-privacy/assets",
+    "AUTH": true
+  },
+  "CONTACT_INFO_ASSETS_REQUEST": {
+    "TYPE": "GET",
+    "URI": "bff/mobile-app/account/contact-info-assets",
+    "AUTH": true
+  },
+  "VEHICLE_DETAILS_ASSETS_REQUEST": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/ownership/vehicle-details-assets",
+    "AUTH": true
+  },
+  "ESA_FETCH_ELIGIBLE": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/esa/eligible",
+    "AUTH": true
+  },
+  "ESA_CREATE_OFFLINE_ORDER": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/esa/payment/offline-order",
+    "AUTH": true
+  },
+  "ESA_OFFLINE_ORDER_COMPLETE": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/esa/payment/offline-purchase-complete",
+    "AUTH": true
+  },
+  "ESA_FETCH_PURCHASED": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/esa/purchased",
     "AUTH": true
   }
 }

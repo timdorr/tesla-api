@@ -99,7 +99,7 @@ The `heater` parameter maps to the following seats:
 }
 ```
 
-# POST `/api/1/vehicles/{id}/command/remote_seat_cooler_request`
+## POST `/api/1/vehicles/{id}/command/remote_seat_cooler_request`
 
 Sets the specified seat's cooler level. (Refresh Model S & X)
 

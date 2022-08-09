@@ -73,7 +73,7 @@ return a generic set of codes related to a Model 3.
 | BR00   | No Battery Firmware Limit                                |                                                           |
 | BR03   | Battery Firmware Limit (60kWh)                           |                                                           |
 | BR05   | Battery Firmware Limit (75kWh)                           |                                                           |
-| BS00   | Blind Spot Sensor Package                                |                                                           |
+| BS00   | Blind Spot Sensor Package                                | No blind spot detectors                                   |
 | BS01   | Special Production Flag                                  |                                                           |
 | BT00   | 68 kWh (Model Y) 4680 cells                              | Model Y Standard Range DM Austin                          |
 | BT35   | 50 kWh (Model 3/Y) Pre 2021 Panasonic cells              | Model 3 Standard Range                                    |
@@ -91,7 +91,7 @@ return a generic set of codes related to a Model 3.
 | BTF0   | 55 kWh (Model 3) 2020 CATL Prismatic                     | M3 Standard+ China made LFP and Q4.2021 M3 Stdr+ USA      |
 | BTF1   | 60 kWh (Model 3) 2021 CATL Prismatic                     | M3 Standard+ China made LFP                               |
 | BTX4   | 90 kWh                                                   |                                                           |
-| BTX5   | 75 kWh                                                   |                                                           |
+| BTX5   | 75 kWh                                                   | EPA range 237 miles (MX), 259 miles (MS)                  |
 | BTX6   | 100 kWh                                                  |                                                           |
 | BTX7   | 75 kWh                                                   |                                                           |
 | BTX8   | 75 kWh                                                   |                                                           |
@@ -295,7 +295,7 @@ return a generic set of codes related to a Model 3.
 | LT4C   | LT4C                                                     |                                                           |
 | LT4W   | LT4W                                                     |                                                           |
 | LT5C   | LT5C                                                     |                                                           |
-| LT5P   | LT5P                                                     |                                                           |
+| LT5P   | Black PUR Premium Lower Trim w/ Black IP                 |                                                           |
 | LT5W   | Lower Trim Black PUR with White interior                 | 2020 Model S                                              |
 | LT6P   | Black PUR Lower Trim with Performance Stitching          |                                                           |
 | LT6W   | White Base Lower Trim                                    |                                                           |
@@ -580,7 +580,7 @@ return a generic set of codes related to a Model 3.
 | UTAW   | Light Headliner                                          |                                                           |
 | UTMF   | Headliner                                                |                                                           |
 | UTPB   | Dark Headliner                                           |                                                           |
-| UTSB   | Black Ultra-suede Headliner                              |                                                           |
+| UTSB   | Black Ultra-Suede Upper Trim Headliner                   |                                                           |
 | UTZW   | Light Headliner                                          |                                                           |
 | USSB   | Safety                                                   | Safety US Black                                           |
 | USSW   | US Safety Kit White                                      |                                                           |

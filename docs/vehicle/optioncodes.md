@@ -285,10 +285,10 @@ return a generic set of codes related to a Model 3.
 | LP00   | Lighting Package                                         | No Lighting Package                                       |
 | LP01   | Lighting Package                                         | Premium Interior Lighting                                 |
 | LS01   |                                                          | Latest 2021 Model 3/Y Perf                                |
-| LS02   |                                                          | Latest 2021 Model 3/Y DM                                  |
+| LS02   | Mfg Line Shanghai - Phase 2.2                            | Latest 2021 Model 3/Y DM                                  |
 | LT00   | Vegan interior                                           |                                                           |
 | LT01   | Standard interior                                        |                                                           |
-| LT03   | interior                                                 | Latest 2021 Model 3/Y Interiror?                          |
+| LT03   | interior                                                 | Common Lower Trim                                         |
 | LT1B   | Lower Trim                                               | Lower Trim                                                |
 | LT3W   | Lower Trim                                               |                                                           |
 | LT4B   | LT4B                                                     |                                                           |
@@ -305,7 +305,7 @@ return a generic set of codes related to a Model 3.
 | LTSB   | Lower Trim Standard Black                                | Model 3 Standard+                                         |
 | LVB0   | 12V Acid Low voltage battery                             |                                                           |
 | LVB1   | 15V Li-Ion Low voltage battery                           |                                                           |
-| LVB2   | Low Voltage Battery?                                     | Model 3/Y (GigaBerlin?)                                   |
+| LVB2   | CATL 16V Battery                                         | Model 3/Y (GigaBerlin/China)                              |
 | M301   | Generation 1 of 2022                                     | AMD Ryzen?                                                |
 | ME01   | Memory Seats                                             |                                                           |
 | ME02   | Seat Memory                                              | Seat Memory LHD Driver                                    |
@@ -456,7 +456,7 @@ return a generic set of codes related to a Model 3.
 | QVSW   | White Tesla Seats                                        |                                                           |
 | QXMB   | Black Leather Seat                                       |                                                           |
 | RA00   |                                                          | Model 3/Y                                                 |
-| RA01   |                                                          | Model 3/Y                                                 |
+| RA01   | Radar Module Sensor, 7 Pin Perpendicular                 | Model 3/Y                                                 |
 | RBMB   | Rear Brake Mando Black                                   | Model X                                                   |
 | RBMR   | Rear Brake Mando Red                                     | Model S                                                   |
 | RCX0   | No Rear Console                                          |                                                           |
@@ -465,7 +465,7 @@ return a generic set of codes related to a Model 3.
 | RD02   | Rear drive unit (800A)                                   | Model 3 Std+, Perf                                        |
 | RD03   | Rear Drive Unit LR                                       | Model S/X 2021 (Rear drive unit)                          |
 | RD04   | Rear Drive Unit Plaid                                    | Model S/X 2021 (Rear drive unit)                          |
-| RD05   | Rear Drive Unit                                          | Model 3/Y LR/DM (China)                                   |
+| RD05   | Low Current MOSFET PM228 Rear Drive Unit                 | Model 3/Y LR/DM (China)                                   |
 | RD06   | Rear Drive Unit                                          | Model 3/Y 2022 refresh?                                   |
 | RDU2   | Rear large drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Perf version)                             |
 | RDU3   | Rear small drive unit                                    | Model S/X 2015-2017+- (DM version)                        |
@@ -482,7 +482,7 @@ return a generic set of codes related to a Model 3.
 | RL00   | Rear tail lights                                         | Model S/X 2021                                            |
 | RL01   | Rear tail lights (Larger for CCS)                        | Model S/X 2022.March 473k+-                               |
 | RL31   | Rear lights (EU)                                         | Model 3 EU                                                |
-| RL32   | Rear lights                                              | Model 3/Y (AWD)                                           |
+| RL32   | Rear lights (Global)                                     | Model 3/Y (AWD)                                           |
 | RS3H   | Second Row Seat Rear Seats (Heated)                      | Model 3/Y with Premium Interior                           |
 | RSF0   | Rear Heated Seats Disabled                               | Model 3/Y without Premium Interior                        |
 | RSF1   | Rear Heated Seats                                        | Model 3/Y with Premium Interior                           |
@@ -508,7 +508,7 @@ return a generic set of codes related to a Model 3.
 | SC04   | Pay Per Use Supercharging                                |                                                           |
 | SC05   | Unlimited Free Supercharging Currently Enabled           | Not transferable to the next owner                        |
 | SC06   | Time Bound Unlimited Free Supercharging                  |                                                           |
-| SG01   |                                                          | Model 3 CN MIC                                            |
+| SG01   | Steering Gear Single Chip                                | Model 3 CN MIC                                            |
 | SLR0   | No Rear Spoiler                                          |                                                           |
 | SLR1   | Carbon Fibre Spoiler                                     | Model 3                                                   |
 | SP00   | No Security Package                                      |                                                           |
@@ -585,7 +585,7 @@ return a generic set of codes related to a Model 3.
 | USSB   | Safety                                                   | Safety US Black                                           |
 | USSW   | US Safety Kit White                                      |                                                           |
 | VC00   | MCU Intel Atom                                           | Model 3/Y (China)                                         |
-| VC01   | MCU Razen                                                | Model 3/Y first found on MYJan2022                        |
+| VC01   | MCU AMD Razen                                            | Model 3/Y first found on MYJan2022                        |
 | W32P   | 20" Performance Wheels                                   | Model 3                                                   |
 | W32D   | 20" Gray Performance Wheels                              | Model 3                                                   |
 | W33D   | 20" Black Performance Wheels 2021                        | Model 3                                                   |
@@ -676,4 +676,4 @@ return a generic set of codes related to a Model 3.
 | YF01   | Matching Yacht Floor                                     |                                                           |
 | YFCC   | Yatcht Floor Front Console, Décor Matched                |                                                           |
 | YFFC   | Integrated Center Console                                |                                                           |
-| ZINV   | Inventory vehicle?                                       | Car sold from Tesla Inventory                             |
+| ZINV   | Inventory vehicle                                        | Car sold from Tesla Inventory                             |

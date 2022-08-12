@@ -88,8 +88,8 @@ return a generic set of codes related to a Model 3.
 | BT60   | 60 kWh                                                   |                                                           |
 | BT70   | 70 kWh                                                   |                                                           |
 | BT85   | 85 kWh                                                   |                                                           |
-| BTF0   | 55 kWh (Model 3) 2020 CATL Prismatic                     | M3 Standard+ China made LFP and Q4.2021 M3 Stdr+ USA      |
-| BTF1   | E1 LFP60 CATL Battery Pack                               | M3 Standard+ LFP                                          |
+| BTF0   | 55 kWh 2020 CATL Prismatic                               | M3 Standard+ China made LFP and Q4.2021 M3 Stdr+ USA      |
+| BTF1   | 60 kWh E1 LFP60 CATL Battery Pack                        | M3 Standard+ LFP                                          |
 | BTX4   | 90 kWh                                                   |                                                           |
 | BTX5   | 75 kWh                                                   | EPA range 237 miles (MX), 259 miles (MS)                  |
 | BTX6   | 100 kWh                                                  |                                                           |

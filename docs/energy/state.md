@@ -114,6 +114,9 @@ Retrieves general system information.
 ```
 
 ## GET `/api/1/energy_sites/{site_id}/tariff_rates`
+
+Same as `rate_tarrifs` below.
+
 ## GET `/api/1/energy_sites/rate_tariffs`
 
 Retrieves tarriff IDs for utility companies. Both `tarrif_rates` and `rate_tarrifs` return the same response.

@@ -585,7 +585,7 @@ return a generic set of codes related to a Model 3.
 | USSB   | Safety                                                   | Safety US Black                                           |
 | USSW   | US Safety Kit White                                      |                                                           |
 | VC00   | MCU Intel Atom                                           | Model 3/Y (China)                                         |
-| VC01   | MCU AMD Razen                                            | Model 3/Y first found on MYJan2022                        |
+| VC01   | MCU AMD Ryzen                                            | Model 3/Y first found on MYJan2022                        |
 | W32P   | 20" Performance Wheels                                   | Model 3                                                   |
 | W32D   | 20" Gray Performance Wheels                              | Model 3                                                   |
 | W33D   | 20" Black Performance Wheels 2021                        | Model 3                                                   |

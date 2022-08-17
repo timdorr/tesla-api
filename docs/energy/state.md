@@ -4,11 +4,8 @@ These endpoints are not yet documented.
 
 | Cmd | Endpoint                |
 | :-- | :---------------------- |
-| GET | `tariff_rate`           |
-| GET | `tariff_rates`          |
 | GET | `savings_forecast`      |
 | GET | `backup_time_remaining` |
-| GET | `programs`              |
 
 ## GET `/api/1/energy_sites/{site_id}/live_status`
 
@@ -51,6 +48,8 @@ Retrieves general system information.
     "asset_site_id": "47d04752-9cf1-4e76-88fb-08839a1c41c4",
     "solar_power": 7700,
     "solar_type": "pv_panel",
+    "storm_mode_enabled": null,
+    "powerwall_onboarding_settings_set": null,
     "sync_grid_alert_enabled": false,
     "breaker_alert_enabled": false
   }
@@ -67,6 +66,7 @@ Retrieves general system information.
 {
   "response": {
     "id": "313dbc37-555c-45b1-83aa-62a4ef9ff7ac",
+    "site_name": "My House",
     "site_number": "2252147638651575",
     "installation_date": "2022-04-04T15:56:35-07:00",
     "user_settings": {
@@ -101,7 +101,74 @@ Retrieves general system information.
     "geolocation": {
       "latitude": 32.53452700000001,
       "longitude": -112.3463137
+    },
+    "address": {
+      "address_line1": "1234 Tesla Solar Ave",
+      "city": "Austin",
+      "state": "TX",
+      "zip": "123456",
+      "country": "US"
     }
+  }
+}
+```
+
+## GET `/api/1/energy_sites/{site_id}/tariff_rates`
+
+Same as `rate_tarrifs` below.
+
+## GET `/api/1/energy_sites/rate_tariffs`
+
+Retrieves tarriff IDs for utility companies. Only 4 of the 233 entries are shown below.
+
+### Response for solar panel system without powerwalls
+
+```json
+{
+  "response": [
+    {
+      "tariffID": "AE-R-CS",
+      "description": "Residential - Community Solar",
+      "utility": "Austin Energy",
+      "country": "US",
+      "state": "TX"
+    },
+    {
+      "tariffID": "AE-R-VOS",
+      "description": "Residential - Value of Solar",
+      "utility": "Austin Energy",
+      "country": "US",
+      "state": "TX"
+    },
+    {
+      "tariffID": "APS-ET-1",
+      "description": "Residential - Time of Use, Time Advantage, 9pm - 9 am",
+      "utility": "Arizona Public Service Co",
+      "country": "US",
+      "state": "AZ"
+    },
+    {
+      "tariffID": "XCEL-RE-TOU",
+      "description": "Residential - Energy, Time of Use",
+      "utility": "Xcel Energy - Colorado",
+      "country": "US",
+      "state": "CO"
+    }
+  ],
+  "count": 233
+}
+```
+
+## GET `/api/1/energy_sites/{site_id}/programs`
+
+Retrieves energy site program information.
+
+### Response for solar panel system without powerwalls
+
+```json
+{
+  "response": {
+    "programs": []
   }
 }
 ```

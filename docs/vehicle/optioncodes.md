@@ -382,6 +382,7 @@ return a generic set of codes related to a Model 3.
 | MTY07  | Model Y Long Range All-Wheel Drive                       |                                                           |
 | MTY09  | Model Y Long Range All-Wheel Drive                       |                                                           |
 | MTY11  | Model Y Long Range All-Wheel Drive                       |                                                           |
+| MTY14  | Model Y Long Range All-Wheel Drive                       |                                                           |
 | MY00   |                                                          | Model Y Berlin                                            |
 | MY01   |                                                          | Model Y Austin?                                           |
 | MY02   |                                                          | Model Y Berlin?                                           |

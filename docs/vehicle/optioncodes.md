@@ -179,7 +179,7 @@ return a generic set of codes related to a Model 3.
 | FC02   | Front Console Front Console (Premium)                    | Model 3/Y 2021                                            |
 | FCH2   |                                                          | Model 3/Y late 2021                                       |
 | FC3P   | Front Console Front Console (Premium)                    | Model 3                                                   |
-| FD00   |                                                          | Model 3 2021 (USA)                                        |
+| FD00   | Low Current IGBT IM130 Drive Unit                        | Front drive unit M3/MY                                    |
 | FD01   |                                                          | Model 3/Y 2021 (China)                                    |
 | FD02   |                                                          | Model S/X 2021 LR                                         |
 | FD03   |                                                          | Model S/X 2021 P                                          |

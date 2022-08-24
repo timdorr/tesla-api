@@ -64,7 +64,7 @@ return a generic set of codes related to a Model 3.
 | BCMB   | Black Brake Calipers, Mando Brakes                       |                                                           |
 | BCYR   | Performance Brakes                                       |                                                           |
 | BG30   | No Badge                                                 | Model 3                                                   |
-| BG31   | AWD Badge                                                | Model 3/Y                                                 |
+| BG31   | AWD Badge without underline                              | Model 3/Y                                                 |
 | BG32   | Performance AWD Badge                                    | Model 3                                                   |
 | BG33   | China Badge                                              | Model 3 for China market                                  |
 | BP00   | No Ludicrous                                             |                                                           |
@@ -75,7 +75,7 @@ return a generic set of codes related to a Model 3.
 | BR05   | Battery Firmware Limit (75kWh)                           |                                                           |
 | BS00   | Blind Spot Sensor Package                                | No blind spot detectors                                   |
 | BS01   | Special Production Flag                                  |                                                           |
-| BT00   | 68 kWh (Model Y) 4680 cells                              | Model Y Standard Range DM Austin                          |
+| BT00   | 68 kWh (Model Y) 4680 cells                              | Model Y SR (Structural Pack with BFF 0.0 cells)           |
 | BT35   | 50 kWh (Model 3/Y) Pre 2021 Panasonic cells              | Model 3 Standard Range                                    |
 | BT36   | 62.5 kWh (Model 3/Y) Pre 2021 Panasonic cells            | Model 3 Mid Range                                         |
 | BT37   | 75 kWh (Model 3/Y) Pre 2021 Panasonic cells              | 2017-03.2021 LR+P Model 3/Y (Mostly Fremont build)        |
@@ -99,9 +99,9 @@ return a generic set of codes related to a Model 3.
 | BTXA   | 18650J2 Battery Cell                                     | Model S/X 2020                                            |
 | BTXB   | 99kWh 18650 Plaid E5/E6 VIN battery                      | Model S/X 2021 LR/Plaid                                   |
 | BY00   |                                                          | Model Y                                                   |
-| BY01   |                                                          | Model Y                                                   |
-| BY02   |                                                          | Model Y First found on Austin car                         |
-| BY03   |                                                          | Model Y First found on Berlin car                         |
+| BY01   | 1 piece cast rear under body legacy                      | Model Y                                                   |
+| BY02   | 1 piece cast front under body and rear under body        | Model Y First found on Austin car                         |
+| BY03   | Safety Net Body                                          | Model Y First found on Berlin car                         |
 | CC01   | Five Seat Interior                                       |                                                           |
 | CC02   | Six Seat Interior                                        |                                                           |
 | CC03   | Seven Seat Interior                                      |                                                           |
@@ -180,7 +180,7 @@ return a generic set of codes related to a Model 3.
 | FCH2   | Front controller hard v2 that supports both non-FSD +FSD | Model 3/Y late 2021                                       |
 | FC3P   | Front Console Front Console (Premium)                    | Model 3                                                   |
 | FD00   | Low Current IGBT IM130 Drive Unit                        | Front drive unit M3/MY                                    |
-| FD01   |                                                          | Model 3/Y 2021 (China)                                    |
+| FD01   | Low Current IGBT IM130 Drive Unit, CN                    | Model 3/Y 2021 (China)                                    |
 | FD02   |                                                          | Model S/X 2021 LR                                         |
 | FD03   |                                                          | Model S/X 2021 P                                          |
 | FDU2   | Raven Front Drive Unit                                   | Model S/X 2020-2021                                       |

@@ -462,8 +462,8 @@ return a generic set of codes related to a Model 3.
 | RBMR   | Rear Brake Mando Red                                     | Model S                                                   |
 | RCX0   | No Rear Console                                          |                                                           |
 | RCX1   | Rear Console                                             |                                                           |
-| RD01   | Rear drive unit (600A)                                   | Model 3 LR/DM (Fremont)                                   |
-| RD02   | Rear drive unit (800A)                                   | Model 3 Std+, Perf                                        |
+| RD01   | Low Current MOSFET PM216 Rear Drive Unit                 | Model 3 LR/DM (Fremont)                                   |
+| RD02   | High Current MOSFET PM216 Rear Drive Unit                | Model 3 Std+, Perf                                        |
 | RD03   | Rear Drive Unit LR                                       | Model S/X 2021 (Rear drive unit)                          |
 | RD04   | Rear Drive Unit Plaid                                    | Model S/X 2021 (Rear drive unit)                          |
 | RD05   | Low Current MOSFET PM228 Rear Drive Unit                 | Model 3/Y LR/DM (China)                                   |

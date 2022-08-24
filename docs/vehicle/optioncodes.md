@@ -177,7 +177,7 @@ return a generic set of codes related to a Model 3.
 | FBBR   | Front Brake Brembo Red                                   | Brakes (MS/MX 2021)                                       |
 | FC01   | Front Console Inductive Phone Charger                    | Model 3                                                   |
 | FC02   | Front Console Front Console (Premium)                    | Model 3/Y 2021                                            |
-| FCH2   |                                                          | Model 3/Y late 2021                                       |
+| FCH2   | Front controller hard v2 that supports both non-FSD +FSD | Model 3/Y late 2021                                       |
 | FC3P   | Front Console Front Console (Premium)                    | Model 3                                                   |
 | FD00   | Low Current IGBT IM130 Drive Unit                        | Front drive unit M3/MY                                    |
 | FD01   |                                                          | Model 3/Y 2021 (China)                                    |
@@ -456,7 +456,7 @@ return a generic set of codes related to a Model 3.
 | QVPP   | Vegan Cream Seats                                        |                                                           |
 | QVSW   | White Tesla Seats                                        |                                                           |
 | QXMB   | Black Leather Seat                                       |                                                           |
-| RA00   |                                                          | Model 3/Y                                                 |
+| RA00   | No Radar Module Sensor, 7 Pin Perpendicular              | Model 3/Y                                                 |
 | RA01   | Radar Module Sensor, 7 Pin Perpendicular                 | Model 3/Y                                                 |
 | RBMB   | Rear Brake Mando Black                                   | Model X                                                   |
 | RBMR   | Rear Brake Mando Red                                     | Model S                                                   |
@@ -518,7 +518,7 @@ return a generic set of codes related to a Model 3.
 | SPTY1  | Performance Upgrade                                      | Model Y                                                   |
 | SR01   | Standard 2nd row                                         | Second Row Seat                                           |
 | SR04   | Second Row Seat                                          | Six Seat Interior                                         |
-| SR05   | X Front seat set                                         | Second Row Seat (Model Y China)                           |
+| SR05   | 60/40 Bench Second Row Seat                              | Second Row Seat (Model Y China)                           |
 | SR06   | Seven Seat Interior                                      |                                                           |
 | SR07   | Second Row Seats with Comfort Improvements               |                                                           |
 | ST00   | Non-leather Steering Wheel                               |                                                           |
@@ -528,7 +528,7 @@ return a generic set of codes related to a Model 3.
 | ST0Y   | Yoke Steering Wheel                                      | Model X/S Plaid                                           |
 | ST30   | Base Steering Wheel                                      | Model 3 Standard+                                         |
 | ST31   | Steering Wheel                                           | Premium Steering Wheel                                    |
-| ST33   | Steering wheel - heated on LR/P (Model 3)                | Premium Steering Wheel                                    |
+| ST33   | Steering Wheel - Round, PUR Heated                       | Premium Steering Wheel                                    |
 | STCP   | Steering Wheel                                           | Steering Column (Power)                                   |
 | STY5S  | Five Seat Interior                                       |                                                           |
 | STY7S  | Seven Seat Interior                                      |                                                           |
@@ -537,7 +537,7 @@ return a generic set of codes related to a Model 3.
 | SU03   | Suspension Update                                        | Model S/X 19apr2019-2021                                  |
 | SU3C   | Coil Spring Suspension                                   |                                                           |
 | SWF0   |                                                          | Model 3/Y                                                 |
-| SWF1   |                                                          | Model 3/Y                                                 |
+| SWF1   | Steering Wheel FW Enabled                                | Model 3/Y                                                 |
 | T3CA   | Tires M3                                                 | 19" Continental All Season, Square                        |
 | T3HS   | Tires M3                                                 | 19" Hankook Summer Square                                 |
 | T3MA   | Tires M3                                                 | 18" Michelin All Season, Square                           |

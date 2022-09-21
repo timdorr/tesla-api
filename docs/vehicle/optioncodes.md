@@ -284,7 +284,7 @@ return a generic set of codes related to a Model 3.
 | LLP2   | License Plate Liftgate Type EU Liftgate                  |                                                           |
 | LP00   | Lighting Package                                         | No Lighting Package                                       |
 | LP01   | Lighting Package                                         | Premium Interior Lighting                                 |
-| LS01   |                                                          | Latest 2021 Model 3/Y Perf                                |
+| LS01   | Mfg Line Shanghai - Phase 1                              | Latest 2021 Model 3/Y Perf                                |
 | LS02   | Mfg Line Shanghai - Phase 2.2                            | Latest 2021 Model 3/Y DM                                  |
 | LT00   | Vegan interior                                           |                                                           |
 | LT01   | Standard interior                                        |                                                           |

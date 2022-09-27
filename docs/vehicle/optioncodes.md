@@ -102,6 +102,7 @@ return a generic set of codes related to a Model 3.
 | BY01   | 1 piece cast rear under body legacy                      | Model Y                                                   |
 | BY02   | 1 piece cast front under body and rear under body        | Model Y First found on Austin car                         |
 | BY03   | Safety Net Body                                          | Model Y First found on Berlin car                         |
+| BY04   | 1 piece cast rear under Safety Net Body                  | Model Y Berlin car                                        |
 | CC01   | Five Seat Interior                                       |                                                           |
 | CC02   | Six Seat Interior                                        |                                                           |
 | CC03   | Seven Seat Interior                                      |                                                           |
@@ -180,7 +181,7 @@ return a generic set of codes related to a Model 3.
 | FCH2   | Front controller hard v2 that supports both non-FSD +FSD | Model 3/Y late 2021                                       |
 | FC3P   | Front Console Front Console (Premium)                    | Model 3                                                   |
 | FD00   | Low Current IGBT IM130 Drive Unit                        | Front drive unit M3/MY                                    |
-| FD01   | Low Current IGBT IM130 Drive Unit, CN                    | Model 3/Y 2021 (China)                                    |
+| FD01   | Low Current IGBT IM130 Drive Unit, CN/DE                 | Model 3/Y 2021 (China/Germany)                            |
 | FD02   |                                                          | Model S/X 2021 LR                                         |
 | FD03   |                                                          | Model S/X 2021 P                                          |
 | FDU2   | Raven Front Drive Unit                                   | Model S/X 2020-2021                                       |
@@ -466,8 +467,8 @@ return a generic set of codes related to a Model 3.
 | RD02   | High Current MOSFET PM216 Rear Drive Unit (800A)         | Model 3 Std+, Perf                                        |
 | RD03   | Rear Drive Unit LR                                       | Model S/X 2021 (Rear drive unit)                          |
 | RD04   | Rear Drive Unit Plaid                                    | Model S/X 2021 (Rear drive unit)                          |
-| RD05   | Low Current MOSFET PM228 Rear Drive Unit                 | Model 3/Y LR/DM (China)                                   |
-| RD06   | High Current MOSFET PM228 Rear Drive Unit                | Model 3/Y 2022 refresh?                                   |
+| RD05   | Low Current MOSFET PM228 Rear Drive Unit                 | Model 3/Y LR/DM                                           |
+| RD06   | High Current MOSFET PM228 Rear Drive Unit                | Model 3/Y 2022                                            |
 | RDU2   | Rear large drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Perf version)                             |
 | RDU3   | Rear small drive unit                                    | Model S/X 2015-2017+- (DM version)                        |
 | RDU4   | Rear small drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Plus version)                             |

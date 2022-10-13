@@ -30,7 +30,7 @@ Stop the climate control (HVAC) system.
 
 Sets the target temperature for the climate control (HVAC) system.
 
-Note: Despite accepting two parameters, only the `driver_temp` will be used to set the target temperature.
+Note: Despite accepting two parameters, only the `driver_temp` will be used to set the target temperature, unless the "split" option is activated within the climate controls menu.
 
 Note: The parameters are always in celsius, regardless of the region the car is in or the display settings of the car.
 

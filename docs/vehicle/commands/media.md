@@ -92,3 +92,38 @@ Turns down the volume of the media system.
   "result": true
 }
 ```
+
+## POST `/api/1/vehicles/{id}/command/adjust_volume`
+
+Adjusts the volume of the media system to the desired volume.
+
+### Parameters
+
+This endpoint needs a single `volume` parameter passed inside of the POST body, and will tell you if it's missing.
+
+> Note: the endpoint accepts both a string and a numerical value for the volume parameter. It is also currently not present as a feature inside of the Tesla App despite working.
+
+| Parameter | Example | Description                         |
+| :-------- | :------ | :---------------------------------- |
+| volume    | 1       | Numerical value or string from 0-11 |
+
+```json
+{
+  "volume": "1"
+}
+```
+
+```json
+{
+  "volume": 1
+}
+```
+
+### Response
+
+```json
+{
+  "reason": "",
+  "result": true
+}
+```

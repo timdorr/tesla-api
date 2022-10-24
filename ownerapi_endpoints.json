@@ -998,19 +998,34 @@
     "URI": "bff/v2/mobile-app/energy/feature-flags",
     "AUTH": true
   },
+  "ENERGY_OWNERSHIP_CREATE_OR_EDIT_BILLING_ADDRESS": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/energy-site-program/billing-address",
+    "AUTH": true
+  },
+  "ENERGY_OWNERSHIP_GET_BILLING_ADDRESS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/energy-site-program/billing-address",
+    "AUTH": true
+  },
   "ENERGY_SERVICE_GET_SITE_INFORMATION": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/energy-service/site-information",
     "AUTH": true
   },
-  "ENERGY_SERVICE_GET_SERVICE_CASES": {
+  "ENERGY_SERVICE_GET_SUPPORT_CASES": {
     "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/energy-support/support-cases",
+    "AUTH": true
+  },
+  "ENERGY_SERVICE_POST_GRID_SERVICE_CASE": {
+    "TYPE": "POST",
     "URI": "bff/v2/mobile-app/energy-service/appointments",
     "AUTH": true
   },
-  "ENERGY_SERVICE_POST_SERVICE_CASE": {
+  "ENERGY_SERVICE_POST_SUPPORT_CASE": {
     "TYPE": "POST",
-    "URI": "bff/v2/mobile-app/energy-service/appointments",
+    "URI": "bff/v2/mobile-app/energy-support/support-cases",
     "AUTH": true
   },
   "ENERGY_SERVICE_GET_APPOINTMENT_SUGGESTIONS": {
@@ -1018,9 +1033,14 @@
     "URI": "bff/v2/mobile-app/energy-service/appointment-suggestions",
     "AUTH": true
   },
-  "ENERGY_SERVICE_CANCEL_SERVICE_CASE": {
+  "ENERGY_SERVICE_CANCEL_GRID_SERVICE_CASE": {
     "TYPE": "PUT",
     "URI": "bff/v2/mobile-app/energy-service/service-case",
+    "AUTH": true
+  },
+  "ENERGY_SERVICE_CANCEL_SUPPORT_CASE": {
+    "TYPE": "PUT",
+    "URI": "bff/v2/mobile-app/energy-support/support-cases",
     "AUTH": true
   },
   "ENERGY_SERVICE_CANCEL_APPOINTMENT": {
@@ -1483,6 +1503,11 @@
     "URI": "commerce-api/promotion/v1{locale}",
     "AUTH": true
   },
+  "COMMERCE_VIN_ELIGIBILITY": {
+    "TYPE": "POST",
+    "URI": "commerce-api/eligibility/v1{locale}",
+    "AUTH": true
+  },
   "MATTERMOST": {
     "TYPE": "POST",
     "URI": "Just a placeholder",
@@ -1621,6 +1646,11 @@
   "FINANCING_GET_AMORTIZATION": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/financing/amortization-info",
+    "AUTH": true
+  },
+  "FINANCING_GET_PAYMENT_PROFILE": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/payment-profile",
     "AUTH": true
   },
   "FINANCING_GET_COMMERCIAL_SIGNED_TOKEN": {
@@ -1811,6 +1841,11 @@
   "FINANCING_GET_REGISTRATION_ADDRESS": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/financing/registration-address",
+    "AUTH": true
+  },
+  "FINANCING_GET_LOAN_PRINCIPAL_BALANCE": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/loan-principal-balance",
     "AUTH": true
   },
   "DASHCAM_SAVE_CLIP": {

@@ -546,6 +546,7 @@ return a generic set of codes related to a Model 3.
 | T3P3   | Tires M3                                                 | 20" Michelin PS4 Summer                                   |
 | T3PS   | Tires M3                                                 | 19" PIRELLI PZ4?                                          |
 | TY9A   | Tires MY                                                 | Tires 19" All Season Square                               |
+| TY9B   | Tires MY                                                 | 19” Summer Square - Dual Sourcing Hankook                 |
 | TD00   | Tear Down NON-GLIDER                                     | Model S/X                                                 |
 | TIC4   | Tires MX                                                 | 20" all-weather tires                                     |
 | TIC6   | Tires MS                                                 | 21" Continental CSC5P Staggered                           |
@@ -584,6 +585,7 @@ return a generic set of codes related to a Model 3.
 | UTPB   | Dark Headliner                                           |                                                           |
 | UTSB   | Black Ultra-Suede Upper Trim Headliner                   |                                                           |
 | UTZW   | Light Headliner                                          |                                                           |
+| US00   | ULTRASONIC SENSOR                                        | Test Ultrasonic Sensor                                    |
 | USSB   | Safety                                                   | Safety US Black                                           |
 | USSW   | US Safety Kit White                                      |                                                           |
 | VC00   | MCU Intel Atom                                           | Model 3/Y (China)                                         |

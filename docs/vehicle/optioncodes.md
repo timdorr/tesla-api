@@ -57,8 +57,8 @@ return a generic set of codes related to a Model 3.
 | AUF1   | Premium Speakers Enabled                                 | M3/MY Premium Audio Package (AWD,Perf)                    |
 | AUF2   | Premium Speakers Disabled                                | M3/MY Reduced Audio Package (Standard, mid range)         |
 | BC00   | Brake Calipers M4.42/44                                  | MS Plaid E5                                               |
-| BC0B   | Black Brake Calipers                                     |                                                           |
-| BC0R   | Red Brake Calipers                                       |                                                           |
+| BC0B   | Black Brake Calipers                                     | Model S                                                   |
+| BC0R   | Red Brake Calipers                                       | Model S                                                   |
 | BC3B   | Black Brake Calipers                                     | Model 3/Y                                                 |
 | BC3R   | Black Brake Calipers, Red brake calipers                 | Model 3/Y Performance                                     |
 | BCMB   | Black Brake Calipers, Mando Brakes                       |                                                           |
@@ -495,6 +495,7 @@ return a generic set of codes related to a Model 3.
 | S02T   | Seat                                                     | Tan Leather                                               |
 | S02W   | White Seats                                              |                                                           |
 | S07W   | White Seats                                              |                                                           |
+| S25B   |                                                          | Model S 2015                                              |
 | S31B   | S31B                                                     |                                                           |
 | S32C   | S32C                                                     |                                                           |
 | S32P   | Black PUR Seats                                          | Model S 2019                                              |
@@ -548,6 +549,7 @@ return a generic set of codes related to a Model 3.
 | TY9A   | Tires MY                                                 | Tires 19" All Season Square                               |
 | TY9B   | Tires MY                                                 | 19” Summer Square - Dual Sourcing Hankook                 |
 | TD00   | Tear Down NON-GLIDER                                     | Model S/X                                                 |
+| TIC3   | Tires MS                                                 | 21                                                        |
 | TIC4   | Tires MX                                                 | 20" all-weather tires                                     |
 | TIC6   | Tires MS                                                 | 21" Continental CSC5P Staggered                           |
 | TIG2   | Summer Tires                                             |                                                           |
@@ -562,8 +564,8 @@ return a generic set of codes related to a Model 3.
 | TM0A   | ALPHA PRE-PRODUCTION NON-SALEABLE                        |                                                           |
 | TM0B   | BETA PRE-PRODUCTION NON-SALEABLE                         |                                                           |
 | TM0C   | PRE-PRODUCTION SALEABLE                                  |                                                           |
+| TP00   | No AP?                                                   |                                                           |
 | TP01   | No Technology Package                                    |                                                           |
-| TP01   | Tech Package - No Autopilot                              |                                                           |
 | TP02   | Tech Package with Autopilot                              |                                                           |
 | TP03   | Tech Package with Enhanced Autopilot                     |                                                           |
 | TR00   | No Rear Facing Seats                                     |                                                           |
@@ -681,3 +683,5 @@ return a generic set of codes related to a Model 3.
 | YFCC   | Yatcht Floor Front Console, Décor Matched                |                                                           |
 | YFFC   | Integrated Center Console                                |                                                           |
 | ZINV   | Inventory vehicle                                        | Car sold from Tesla Inventory                             |
+| ZCST   | Customer Car                                             |                                                           |
+

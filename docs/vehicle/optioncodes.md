@@ -684,4 +684,3 @@ return a generic set of codes related to a Model 3.
 | YFFC   | Integrated Center Console                                |                                                           |
 | ZINV   | Inventory vehicle                                        | Car sold from Tesla Inventory                             |
 | ZCST   | Customer Car                                             |                                                           |
-

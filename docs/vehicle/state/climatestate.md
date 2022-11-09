@@ -9,15 +9,15 @@ Information on the current internal temperature and climate control system.
 ```json
 {
   "response": {
-    "allow_cabin_overheat_protection":true,
-    "auto_seat_climate_left":true,
-    "auto_seat_climate_right":false,    
+    "allow_cabin_overheat_protection": true,
+    "auto_seat_climate_left": true,
+    "auto_seat_climate_right": false,
     "battery_heater": false,
     "battery_heater_no_power": false,
-    "cabin_overheat_protection":"FanOnly",
-    "cabin_overheat_protection_actively_cooling":false,
+    "cabin_overheat_protection": "FanOnly",
+    "cabin_overheat_protection_actively_cooling": false,
     "climate_keeper_mode": "off",
-    "cop_activation_temperature":"High",
+    "cop_activation_temperature": "High",
     "defrost_mode": 0,
     "driver_temp_setting": 22.8,
     "fan_status": 0,

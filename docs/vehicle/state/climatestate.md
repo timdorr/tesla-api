@@ -9,12 +9,19 @@ Information on the current internal temperature and climate control system.
 ```json
 {
   "response": {
+    "allow_cabin_overheat_protection": true,
+    "auto_seat_climate_left": true,
+    "auto_seat_climate_right": false,
     "battery_heater": false,
     "battery_heater_no_power": false,
+    "cabin_overheat_protection": "FanOnly",
+    "cabin_overheat_protection_actively_cooling": false,
     "climate_keeper_mode": "off",
+    "cop_activation_temperature": "High",
     "defrost_mode": 0,
     "driver_temp_setting": 22.8,
     "fan_status": 0,
+    "hvac_auto_request": "On",
     "inside_temp": 27.0,
     "is_auto_conditioning_on": false,
     "is_climate_on": false,
@@ -31,6 +38,7 @@ Information on the current internal temperature and climate control system.
     "seat_heater_left": 0,
     "seat_heater_right": 0,
     "side_mirror_heaters": false,
+    "supports_fan_only_cabin_overheat_protection": true,
     "timestamp": 1604977244530,
     "wiper_blade_heater": false
   }

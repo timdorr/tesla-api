@@ -2,10 +2,9 @@
 
 These endpoints are not yet documented.
 
-| Cmd | Endpoint                |
-| :-- | :---------------------- |
-| GET | `savings_forecast`      |
-
+| Cmd | Endpoint           |
+| :-- | :----------------- |
+| GET | `savings_forecast` |
 
 ## GET `api/1/energy_sites/{site_id}/backup_time_remaining`
 
@@ -13,9 +12,9 @@ Retrieves backup time remaining if battery were to go off grid.
 
 ```json
 {
-    "response": {
-        "time_remaining_hours": 2.0933370487093645
-    }
+  "response": {
+    "time_remaining_hours": 2.0933370487093645
+  }
 }
 ```
 

@@ -124,10 +124,6 @@ Retrieves general system information.
 }
 ```
 
-## GET `/api/1/energy_sites/{site_id}/tariff_rates`
-
-Same as `rate_tarrifs` below.
-
 ## GET `/api/1/energy_sites/rate_tariffs`
 
 Retrieves tarriff IDs for utility companies. Only 4 of the 233 entries are shown below.
@@ -180,6 +176,230 @@ Retrieves energy site program information.
 {
   "response": {
     "programs": []
+  }
+}
+```
+
+## GET `api/1/energy_sites/{site_id}/tariff_rate`
+
+Retrieves the user defined Utility Rate Plan used for Time-Based Control mode.
+It looks like this endpoint is updated every 30 minutes.
+
+```json
+{
+  "response": {
+    "name": "Amber",
+    "utility": "Amber",
+    "daily_charges": [
+      {
+        "amount": 0,
+        "name": "Charge"
+      }
+    ],
+    "demand_charges": {
+      "ALL": {
+        "ALL": 0
+      },
+      "Summer": {},
+      "Winter": {}
+    },
+    "energy_charges": {
+      "ALL": {
+        "ALL": 0
+      },
+      "Summer": {
+        "ON_PEAK": 0.43,
+        "PARTIAL_PEAK": 0.43,
+        "OFF_PEAK": 0.01
+      },
+      "Winter": {}
+    },
+    "seasons": {
+      "Summer": {
+        "fromDay": 1,
+        "toDay": 31,
+        "fromMonth": 1,
+        "toMonth": 12,
+        "tou_periods": {
+          "ON_PEAK": [
+            {
+              "fromDayOfWeek": 0,
+              "toDayOfWeek": 6,
+              "fromHour": 5,
+              "fromMinute": 30,
+              "toHour": 7,
+              "toMinute": 0
+            },
+            {
+              "fromDayOfWeek": 0,
+              "toDayOfWeek": 6,
+              "fromHour": 17,
+              "fromMinute": 0,
+              "toHour": 20,
+              "toMinute": 0
+            }
+          ],
+          "PARTIAL_PEAK": [
+            {
+              "fromDayOfWeek": 0,
+              "toDayOfWeek": 6,
+              "fromHour": 7,
+              "fromMinute": 0,
+              "toHour": 10,
+              "toMinute": 0
+            },
+            {
+              "fromDayOfWeek": 0,
+              "toDayOfWeek": 6,
+              "fromHour": 15,
+              "fromMinute": 0,
+              "toHour": 17,
+              "toMinute": 0
+            }
+          ],
+          "OFF_PEAK": [
+            {
+              "fromDayOfWeek": 0,
+              "toDayOfWeek": 6,
+              "fromHour": 10,
+              "fromMinute": 0,
+              "toHour": 10,
+              "toMinute": 30
+            },
+            {
+              "fromDayOfWeek": 0,
+              "toDayOfWeek": 6,
+              "fromHour": 10,
+              "fromMinute": 30,
+              "toHour": 15,
+              "toMinute": 0
+            },
+            {
+              "fromDayOfWeek": 0,
+              "toDayOfWeek": 6,
+              "fromHour": 20,
+              "fromMinute": 0,
+              "toHour": 5,
+              "toMinute": 30
+            }
+          ]
+        }
+      },
+      "Winter": {
+        "fromDay": 0,
+        "toDay": 0,
+        "fromMonth": 0,
+        "toMonth": 0,
+        "tou_periods": {}
+      }
+    },
+    "sell_tariff": {
+      "name": "Amber",
+      "utility": "Amber",
+      "daily_charges": [
+        {
+          "amount": 0,
+          "name": "Charge"
+        }
+      ],
+      "demand_charges": {
+        "ALL": {
+          "ALL": 0
+        },
+        "Summer": {},
+        "Winter": {}
+      },
+      "energy_charges": {
+        "ALL": {
+          "ALL": 0
+        },
+        "Summer": {
+          "ON_PEAK": 0.3,
+          "PARTIAL_PEAK": 0.1,
+          "OFF_PEAK": 0.01
+        },
+        "Winter": {}
+      },
+      "seasons": {
+        "Summer": {
+          "fromDay": 1,
+          "toDay": 31,
+          "fromMonth": 1,
+          "toMonth": 12,
+          "tou_periods": {
+            "ON_PEAK": [
+              {
+                "fromDayOfWeek": 0,
+                "toDayOfWeek": 6,
+                "fromHour": 5,
+                "fromMinute": 30,
+                "toHour": 7,
+                "toMinute": 0
+              },
+              {
+                "fromDayOfWeek": 0,
+                "toDayOfWeek": 6,
+                "fromHour": 17,
+                "fromMinute": 0,
+                "toHour": 20,
+                "toMinute": 0
+              }
+            ],
+            "PARTIAL_PEAK": [
+              {
+                "fromDayOfWeek": 0,
+                "toDayOfWeek": 6,
+                "fromHour": 7,
+                "fromMinute": 0,
+                "toHour": 10,
+                "toMinute": 0
+              },
+              {
+                "fromDayOfWeek": 0,
+                "toDayOfWeek": 6,
+                "fromHour": 15,
+                "fromMinute": 0,
+                "toHour": 17,
+                "toMinute": 0
+              }
+            ],
+            "OFF_PEAK": [
+              {
+                "fromDayOfWeek": 0,
+                "toDayOfWeek": 6,
+                "fromHour": 10,
+                "fromMinute": 0,
+                "toHour": 10,
+                "toMinute": 30
+              },
+              {
+                "fromDayOfWeek": 0,
+                "toDayOfWeek": 6,
+                "fromHour": 10,
+                "fromMinute": 30,
+                "toHour": 15,
+                "toMinute": 0
+              },
+              {
+                "fromDayOfWeek": 0,
+                "toDayOfWeek": 6,
+                "fromHour": 20,
+                "fromMinute": 0,
+                "toHour": 5,
+                "toMinute": 30
+              }
+            ]
+          }
+        },
+        "Winter": {
+          "fromDay": 0,
+          "toDay": 0,
+          "fromMonth": 0,
+          "toMonth": 0,
+          "tou_periods": {}
+        }
+      }
+    }
   }
 }
 ```

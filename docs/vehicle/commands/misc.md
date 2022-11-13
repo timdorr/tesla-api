@@ -58,24 +58,6 @@ This endpoint requires a singular parameter `vehicle_name`, inside of the POST b
 
 <br/>
 
-# User Information
-
-## GET `/api/1/users/me`
-
-Get your user information
-
-### Response
-
-```json
-{
-  "email": "elon@tesla.com",
-  "full_name": "Elon Musk",
-  "profile_image_url": "https://vehicle-files.prd.euw1.vn.cloud.tesla.com/profile_images/{IMG}.jpg"
-}
-```
-
-<br/>
-
 # Screenshot
 
 ## GET `/api/1/vehicles/{id}/screenshot`

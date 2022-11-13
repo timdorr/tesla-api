@@ -2,7 +2,7 @@
 
 ## POST `/api/1/vehicles/{id}/command/door_unlock`
 
-Unlocks the doors to the car. Extends the handles on the S and X.
+Unlocks the doors to the car. Extends the handles on the S.
 
 ### Response
 
@@ -15,7 +15,7 @@ Unlocks the doors to the car. Extends the handles on the S and X.
 
 ## POST `/api/1/vehicles/{id}/command/door_lock`
 
-Locks the doors to the car. Retracts the handles on the S and X, if they are extended.
+Locks the doors to the car. Retracts the handles on the S, if they are extended.
 
 ### Response
 

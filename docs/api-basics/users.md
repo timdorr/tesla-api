@@ -4,7 +4,7 @@ description: Endpoints for getting information about the current user
 
 # Users
 
-These endpoints are provide data on the current user. 
+These endpoints provide data on the current user.
 
 ## GET `/api/1/users/me`
 

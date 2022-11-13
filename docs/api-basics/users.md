@@ -1,8 +1,14 @@
-# User Information
+---
+description: Endpoints for getting information about the current user
+---
+
+# Users
+
+These endpoints are provide data on the current user. 
 
 ## GET `/api/1/users/me`
 
-Get your user information
+Get the current user's information.
 
 ### Response
 
@@ -14,15 +20,9 @@ Get your user information
 }
 ```
 
-<br/>
-
-# Download Vault Profile
-
-> Info: This endpoint is a mystery, it returns what appears to be base64 encoded strings. When decoded it has a bunch of jibberish and then two certificates and some readable strings, and what appears to be a hash of something.
-
 ## GET `/api/1/users/vault_profile`
 
-Download Vault Profile
+> Info: This endpoint is a mystery, it returns what appears to be base64 encoded strings. When decoded it has a bunch of jibberish and then two certificates and some readable strings, and what appears to be a hash of something.
 
 ### Response
 
@@ -32,13 +32,9 @@ Download Vault Profile
 }
 ```
 
-<br/>
-
-# Feature Config
-
 ## GET `/api/1/users/feature_config`
 
-Get the feature config.
+Get the feature configuration for the mobile app.
 
 ### Response
 

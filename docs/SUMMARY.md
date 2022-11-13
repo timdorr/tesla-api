@@ -5,6 +5,7 @@
 ## API Basics
 
 - [Authentication](api-basics/authentication.md)
+- [Users](api-basics/users.md)
 - [Vehicles](api-basics/vehicles.md)
 - [Energy Products](api-basics/products.md)
 

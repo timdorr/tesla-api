@@ -92,3 +92,21 @@ This is can be triggered inside of the vehicle as well, by holding the lower lef
   "response": "teleforce-ab1c234d-1a23-12a3-12a3-ab123c456d7e"
 }
 ```
+
+<br/>
+
+# Download Vault Profile
+
+> Info: This endpoint is a mystery, it returns what appears to be base64 encoded strings. When decoded it has a bunch of jibberish and then two certificates and some readable strings, and what appears to be a hash of something.
+
+## GET `/api/1/users/vault_profile`
+
+Download Vault Profile
+
+### Response
+
+```json
+{
+  "vault": "base64_jibberish"
+}
+```

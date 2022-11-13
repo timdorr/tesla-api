@@ -110,3 +110,22 @@ Download Vault Profile
   "vault": "base64_jibberish"
 }
 ```
+
+<br/>
+
+# Feature Config
+
+## GET `/api/1/users/feature_config`
+
+Get the feature config.
+
+### Response
+
+```json
+{
+  "signaling": {
+    "enabled": true,
+    "subscribe_connectivity": false
+  }
+}
+```

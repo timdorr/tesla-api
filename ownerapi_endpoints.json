@@ -1,4 +1,9 @@
 {
+  "ADD_KEY": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/add_key",
+    "AUTH": true
+  },
   "STATUS": {
     "TYPE": "GET",
     "URI": "status",

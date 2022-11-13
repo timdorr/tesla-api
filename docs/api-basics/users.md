@@ -22,7 +22,9 @@ Get the current user's information.
 
 ## GET `/api/1/users/vault_profile`
 
-> Info: This endpoint is a mystery, it returns what appears to be base64 encoded strings. When decoded it has a bunch of jibberish and then two certificates and some readable strings, and what appears to be a hash of something.
+{% hint style='info' %}
+This endpoint is a mystery, it returns what appears to be base64 encoded strings. When decoded it has a bunch of jibberish and then two certificates and some readable strings, and what appears to be a hash of something.
+{% endhint %}
 
 ### Response
 

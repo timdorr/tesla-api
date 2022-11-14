@@ -91,6 +91,7 @@ Retrieves either the power generation/storage (watts) at 15-minute intervals for
 | `kind`     | String, required    | `power` or `energy`                           | `power` selects power statistics, in watts, at 15-minute intervals. `energy` selects energy statistics, in kWh, for a specified period. |
 | `end_date` | Date/time, required | `2022-04-29T14:15:00-07:00`                   | Specifies the last day for which statistics are retrieved.                                                                              |
 | `period`   | String              | `day`, `week`, `month`, `year`, or `lifetime` | The time span for energy statistics to cover.                                                                                           |
+| `interval` | String              | `15m`                                         | For 15 minute energy intervals when `period` is `day` (raises an error when tested on a number of other period/interval values)         |
 
 The format for the `end_date` parameter value is "yyyy-mm-ddThh:mm:ss-hh:mm". Specify your local time zone offset for best clarity. Universal time is accepted in the format "yyyy-mm-ddThh:mm:ssZ", but the time is converted to your local time zone, which could also change the date.
 
@@ -104,7 +105,22 @@ When `kind=power`, the `period` parameter is not required, and is ignored if pre
 | `year`     | Total kWh for each calendar month from the previous January to, and including, `end_date`. |
 | `lifetime` | Total kWh for each calendar year from installation to, and including, `end_date`.          |
 
-The handling of partial periods is a bit inconsistent at this time. If `end_date` specifies a time in the middle of the day, then statistics for a partial day are reported when `period=day`, but statistics for the entire day are reported when `period=week` or `period=month`. For `period=year` or `period=lifetime`, an `end_date` in mid-month or mid-year returns statistics for a partial month or partial year.
+`interval` is optional, and can only be used with `day`. So far the only confirmed valid value is `15m`. This returns the daily data in 15 minute increments, and is referred to as the `day/15m` period below.
+
+The output of the `energy` requests is a little erratic, with the following behaviours observed in data taken from a single powerwall with a 3 month lifetime:
+
+* Calls for the full `day` based periods (`day`, `week`, and `month`, but not the `day/15m` period) typically yield identical results for a given date-time range, with the exception that `month` data can omit a day (and possibly more than one). This occurred only once in the data set, corresponding to misconfigured CT, where the house was reporting energy production rather than draw. The API dropped the odd value from the monthly data, and provided an adjusted value for the weekly and daily data. Adding the adjusted missing day into the monthly cumulative values resulted in identical data for `day`, `week`, and `month` calls. 
+* Output for `year` and `lifetime` periods is similar to, but not equal to, the output from the `day` based periods. Differences between the cumulative energy flows over a 3 month period can be as high as 20-30kWh. The worst case is lifetime home load, which is 34 kWh lower than cumulative daily home load over the lifetime (828 vs 863 kWh).
+* **However**, output for full and partial days is *mostly* consistent across all period types except the `day/15m`. That is, the same full or partial day output will be reported for all periods for most days in a given date-time range. Based on the cumulative tests discussed above, this conclusion can be extended across fairly long multi-day periods. Inconsistent output corresponds to the differences already highlighted above. Unfortunately, I have not been able to identify the cause/pattern for the inconsistent daily data, nor the calculations that yield the inconsistent values.
+* Based on a small random sample of days (so these observations and conclusions should be treated with caution):
+  -  Up to a variable time in the day, the cumulative `day/15m` output for the component energy types matches the output for the partial `day` up to the same time.
+  - After this time the `day/15m` and `day` component energy types deviate. However, the total imports/exports to/from the system still appear to match. So it appears Tesla may apply slightly different allocations calculations for these two period types.
+* If `end_date` has a time value of midnight (`00:00:00:000`), then:
+  - For all period types except `day/15m`, the output for day of `end_date` will be zero for all energy component types.
+  - For the `day/15m` period type, output will be reported for all energy component types, but this data appears to be garbage.
+* There is no clear alignment between the Tesla cloud API data and the data available from the local Powerwall API.
+
+For anyone is interested in investigating further (and hopefully resolving some of the differences identified above), this [gist](https://gist.github.com/BuongiornoTexas/3ea2d1df1a569e1a0a4bc79878a8a753) provides a first draft python class for extracting energy data for multiple periods.
 
 ### Response when `kind=power`
 

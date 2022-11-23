@@ -1090,7 +1090,12 @@
   },
   "LOOTBOX_GET_ONBOARDING_COPY": {
     "TYPE": "GET",
-    "URI": "mobile-app/referrals/getOnboardingCopy",
+    "URI": "mobile-app/referrals/getOnboardingConfigurations",
+    "AUTH": true
+  },
+  "LOOTBOX_GET_TERMS": {
+    "TYPE": "GET",
+    "URI": "mobile-app/referrals/terms",
     "AUTH": true
   },
   "LOOTBOX_PAST_REFERRAL_DATA": {

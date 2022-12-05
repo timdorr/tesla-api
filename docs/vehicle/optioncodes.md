@@ -506,7 +506,7 @@ return a generic set of codes related to a Model 3.
 | S42P   | Seat Black Plenum Seats                                  |                                                           |
 | S42W   | Seat White Plenum Seats                                  |                                                           |
 | SA3P   | Seat Adjustment - Power                                  | Model 3/Y                                                 |
-| SC00   | No Supercharging                                         |                                                           |
+| SC00   | No access to Supercharger Network                        |                                                           |
 | SC01   | Unlimited Free Supercharging Enabled                     | Transfers to the next owner via private sale              |
 | SC04   | Pay Per Use Supercharging                                |                                                           |
 | SC05   | Unlimited Free Supercharging Currently Enabled           | Not transferable to the next owner                        |

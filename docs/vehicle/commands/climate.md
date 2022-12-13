@@ -1,5 +1,7 @@
 # Climate
 
+Commands related to the climate control (HVAC) system.
+
 ## POST `/api/1/vehicles/{id}/command/auto_conditioning_start`
 
 Start the climate control (HVAC) system. Will cool or heat automatically, depending on set temperature.
@@ -244,6 +246,39 @@ The `auto_seat_position` parameter maps to the following seats:
 {
   "auto_seat_position": 0,
   "auto_climate_on": "true"
+}
+```
+
+### Response
+
+```json
+{
+  "reason": "",
+  "result": true
+}
+```
+
+## POST `/api/1/vehicles/{vehicle_id}/command/set_cop_temp`
+
+Sets the Cabin Overheat Protection (COP) temperature.
+
+{% hint style='info' %}
+This endpoint appears to be in progress and is not yet fully functional/disabled as of now (12-13-2022, MDY).
+{% endhint %}
+
+### Parameters
+
+These parameters need to be passed via the post body as `JSON`.
+
+| Body Parameter | Example | Description                                                |
+| :------------- | :------ | :--------------------------------------------------------- |
+| temp           | 40      | The COP temperature in Celcius (name is subject to change) |
+
+### Example
+
+```json
+{
+  "temp": "40"
 }
 ```
 

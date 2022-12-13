@@ -69,6 +69,11 @@
     "URI": "api/1/vehicles/{vehicle_id}/command/flash_lights",
     "AUTH": true
   },
+  "REMOTE_BOOMBOX": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/remote_boombox",
+    "AUTH": true
+  },
   "CLIMATE_ON": {
     "TYPE": "POST",
     "URI": "api/1/vehicles/{vehicle_id}/command/auto_conditioning_start",
@@ -172,6 +177,11 @@
   "STOP_CHARGE": {
     "TYPE": "POST",
     "URI": "api/1/vehicles/{vehicle_id}/command/charge_stop",
+    "AUTH": true
+  },
+  "SET_COP_TEMP": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/set_cop_temp",
     "AUTH": true
   },
   "MEDIA_TOGGLE_PLAYBACK": {
@@ -593,6 +603,11 @@
     "URI": "api/1/vehicles/{id}/jwt/hermes",
     "AUTH": true
   },
+  "RELEASE_NOTES": {
+    "TYPE": "GET",
+    "URI": "api/1/vehicles/{vehicle_id}/release_notes",
+    "AUTH": true
+  },
   "STATIC_SUPERCHARGER_FILE": {
     "TYPE": "GET",
     "URI": "static/superchargers/{file_path}",
@@ -883,6 +898,11 @@
     "URI": "bff/v2/mobile-app/service/tracker/{serviceVisitID}/estimate-status",
     "AUTH": true
   },
+  "SERVICE_APPROVE_DOC": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/service/tracker/{serviceVisitID}/doc-status",
+    "AUTH": true
+  },
   "SERVICE_GET_FINAL_INVOICE_AMOUNT_DUE": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/service/tracker/{serviceVisitID}/amount-due",
@@ -916,6 +936,11 @@
   "SERVICE_MACGYVER_SERVICE_TYPE": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/macgyver/service-type",
+    "AUTH": true
+  },
+  "SERVICE_MACGYVER_DIAGNOSTIC": {
+    "TYPE": "POST",
+    "URI": "mobile-app/macgyver/diagnostic",
     "AUTH": true
   },
   "SERVICE_MACGYVER_DIAGNOSTIC_RESULT": {
@@ -978,6 +1003,11 @@
     "URI": "mobile-app/service/reschedule-disclaimer",
     "AUTH": true
   },
+  "SERVICE_GET_RANGE_ANALYSIS_STATIC_CONTENT": {
+    "TYPE": "GET",
+    "URI": "mobile-app/macgyver/range-static-content",
+    "AUTH": true
+  },
   "SERVICE_LOG": {
     "TYPE": "POST",
     "URI": "mobile-app/service/log/{issue-name}",
@@ -998,19 +1028,69 @@
     "URI": "bff/mobile-app/service/activities/{serviceVisitID}/final-summary",
     "AUTH": true
   },
+  "SERVICE_BILLING_ADDRESS": {
+    "TYPE": "GET",
+    "URI": "bff/mobile-app/service/billing-address",
+    "AUTH": true
+  },
+  "SERVICE_VISIT_BILLING_ADDRESS": {
+    "TYPE": "GET",
+    "URI": "bff/mobile-app/service/billing-address/service-visit/{serviceVisitID}",
+    "AUTH": true
+  },
+  "SERVICE_UPDATE_BILLING_ADDRESS": {
+    "TYPE": "POST",
+    "URI": "mobile-app/service/billing-address",
+    "AUTH": true
+  },
+  "SERVICE_VISIT_UPDATE_BILLING_ADDRESS": {
+    "TYPE": "POST",
+    "URI": "bff/mobile-app/service/billing-address/service-visit/{serviceVisitID}",
+    "AUTH": true
+  },
   "ENERGY_OWNERSHIP_GET_TOGGLES": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/energy/feature-flags",
     "AUTH": true
   },
-  "ENERGY_OWNERSHIP_CREATE_OR_EDIT_BILLING_ADDRESS": {
+  "ENERGY_SITE_PROGRAM_CREATE_OR_EDIT_BILLING_ADDRESS": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/energy-site-program/billing-address",
     "AUTH": true
   },
-  "ENERGY_OWNERSHIP_GET_BILLING_ADDRESS": {
+  "ENERGY_SITE_PROGRAM_GET_BILLING_ADDRESS": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/energy-site-program/billing-address",
+    "AUTH": true
+  },
+  "ENERGY_SITE_PROGRAM_GET_BALANCE_DETAILS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/energy-site-program/balance",
+    "AUTH": true
+  },
+  "ENERGY_SITE_PROGRAM_GET_STATEMENTS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/energy-site-program/statements",
+    "AUTH": true
+  },
+  "ENERGY_SITE_PROGRAM_GET_STATEMENT": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/energy-site-program/statements/{statementId}",
+    "AUTH": true
+  },
+  "ENERGY_SITE_PROGRAM_GET_PAYMENT_HISTORY": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/energy-site-program/payments",
+    "AUTH": true
+  },
+  "ENERGY_SITE_PROGRAM_INITIATE_PAYMENT": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/energy-site-program/payments/initiate",
+    "AUTH": true
+  },
+  "ENERGY_SITE_PROGRAM_COMPLETE_PAYMENT": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/energy-site-program/payments/complete",
     "AUTH": true
   },
   "ENERGY_SERVICE_GET_SITE_INFORMATION": {
@@ -1558,11 +1638,6 @@
     "URI": "bff/v2/mobile-app/charging/balance",
     "AUTH": true
   },
-  "CHARGING_BALANCE_CHARGE_TYPE_FLAG": {
-    "TYPE": "GET",
-    "URI": "bff/v2/mobile-app/feature-flag/tao-9296-filter-by-charge-type",
-    "AUTH": true
-  },
   "CHARGING_BALANCE_CREATE_OFFLINE_ORDER": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/charging/payment",
@@ -1688,14 +1763,14 @@
     "URI": "bff/v2/mobile-app/financing/billing-address",
     "AUTH": true
   },
-  "FINANCING_ONE_TIME_PAYMENT_SIGNED_TOKEN": {
+  "FINANCING_PAYMENT_SIGNED_TOKEN": {
     "TYPE": "POST",
-    "URI": "bff/v2/mobile-app/financing/one-time-payment-signed-token",
+    "URI": "bff/v2/mobile-app/financing/payment-signed-token",
     "AUTH": true
   },
-  "FINANCING_UPDATE_ONE_TIME_PAYMENT_STATUS": {
+  "FINANCING_UPDATE_PAYMENT_STATUS": {
     "TYPE": "POST",
-    "URI": "bff/v2/mobile-app/financing/update-one-time-payment-status",
+    "URI": "bff/v2/mobile-app/financing/update-payment-status",
     "AUTH": true
   },
   "FINANCING_UPDATE_ENROLLMENT_SETTINGS": {
@@ -2010,7 +2085,7 @@
   },
   "OWNERSHIP_TRANSFER_TOOL_VALIDATE_CAR_NAME": {
     "TYPE": "POST",
-    "URI": "bff/mobile-app/transfer/validate-car-name",
+    "URI": "bff/mobile-app/transfer/check-name",
     "AUTH": true
   },
   "OWNERSHIP_TRANSFER_TOOL_REMOVE_INITIATE": {
@@ -2092,5 +2167,10 @@
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/notifications/news-and-events",
     "AUTH": true
+  },
+  "SPLASH_FEATURE_FLAG": {
+    "TYPE": "GET",
+    "URI": "bff/mobile-app/splash-feature-flag",
+    "AUTH": false
   }
 }

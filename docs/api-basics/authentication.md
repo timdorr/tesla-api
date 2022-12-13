@@ -4,10 +4,6 @@ description: The authentication process for the Tesla API
 
 # Authentication
 
-> ## ⚠ This is a work in progress ⚠
->
-> Tesla has deprecated the `/oauth/token` endpoint in favor of using `auth.tesla.com`. I'm working on updating the documentation as soon as possible. This documentation is still missing handling for MFA users. Feel free to discuss this in [issue #260](https://github.com/timdorr/tesla-api/issues/260).
-
 Tesla uses a separate SSO service (auth.tesla.com) for authentication across their app and website. This service is designed around a browser-based flow using OAuth 2.0, but also appears to have support for Open ID Connect. This supports both obtaining an access token and refreshing it as it expires.
 
 {% hint style="warning" %}
@@ -106,7 +102,7 @@ This is a standard [OAuth 2.0 Authorization Code exchange](https://oauth.net/2/g
 
 | Field           | Type             | Example                                | Description                                                     |
 | :-------------- | :--------------- | :------------------------------------- | :-------------------------------------------------------------- |
-| `grant_type`    | String, required | `authorization_code`                   | TThe type of OAuth grant. Always "authorization_code"           |
+| `grant_type`    | String, required | `authorization_code`                   | The type of OAuth grant. Always "authorization_code"            |
 | `client_id`     | String, required | `ownerapi`                             | The OAuth client ID. Always "ownerapi"                          |
 | `code`          | String, required | `123`                                  | The authorization code from the last request.                   |
 | `code_verifier` | String, required | `123`                                  | The code verifier string generated previously.                  |
@@ -124,6 +120,8 @@ This is a standard [OAuth 2.0 Authorization Code exchange](https://oauth.net/2/g
 
 ##### Response
 
+The response varies. If the user has no MFA enabled, the response will be:
+
 ```json
 {
   "access_token": "eyJaccess",
@@ -133,6 +131,38 @@ This is a standard [OAuth 2.0 Authorization Code exchange](https://oauth.net/2/g
   "token_type": "Bearer"
 }
 ```
+
+However, if the user has MFA enabled the response will be an HTML document with a `passcode` field inside it. This is for the TOTP (Time-based-One-time Password).
+
+To authenticate, you first need to get the list of known factors on the account, by requesting the `/authorize/mfa/factors` endpoint via GET. You also need to supply the `transaction_id` from the `/authorize` endpoint with this request.
+
+| Field            |       Type       | Description                                        |
+| :--------------- | :--------------: | -------------------------------------------------- |
+| `transaction_id` | String, required | The transaction id from the `/authorize` endpoint. |
+
+```json
+{
+  "transaction_id": "transaction_id"
+}
+```
+
+After doing this you need to send a POST request to the `/authorize/mfa/verify` endpoint with the `transaction_id`, `factor_id` and the current TOTP `passcode`.
+
+| Field            |       Type       | Description                                                        |
+| :--------------- | :--------------: | ------------------------------------------------------------------ |
+| `transaction_id` | String, required | The previously used transaction id from the `/authorize` endpoint. |
+| `factor_id`      | String, required | The factor id from the `/authorize/mfa/factors` endpoint.          |
+| `passcode`       | String, required | The current TOTP passcode.                                         |
+
+```json
+{
+  "transaction_id": "transaction_id",
+  "factor_id": "factor_id",
+  "passcode": "passcode"
+}
+```
+
+This will validate the current `transaction_id` and allow for the previous request to POST successfully with the `transaction_id` as a form body parameter.
 
 ## Making requests
 

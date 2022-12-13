@@ -21,6 +21,7 @@
   - [Vehicle Config](vehicle/state/vehicleconfig.md)
   - [Mobile Enabled](vehicle/state/mobileenabled.md)
   - [Nearby Charging Sites](vehicle/state/nearbychargingsites.md)
+  - [Miscellaneous](vehicle/state/misc.md)
 - [Commands](vehicle/commands/README.md)
   - [Wake](vehicle/commands/wake.md)
   - [Alerts](vehicle/commands/alerts.md)

@@ -84,5 +84,5 @@ This is can be triggered inside of the vehicle as well, by holding the lower lef
 ## POST `/api/1/vehicles/{id}/command/remote_boombox`
 
 {% hint style='info' %}
-Note: this does not seem to be enabled/implemented yet. What it does is also a mistery. My best guess is that it triggers the selected sound to play on the vehicle's PWS speaker.
+Note: this does not seem to be enabled/implemented yet. What it does is also a mystery. My best guess is that it triggers the selected sound to play on the vehicle's PWS speaker.
 {% endhint %}

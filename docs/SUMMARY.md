@@ -40,6 +40,7 @@
   - [Sharing](vehicle/commands/sharing.md)
   - [Software Updates](vehicle/commands/softwareupdate.md)
   - [Calendar](vehicle/commands/calendar.md)
+  - [Miscellaneous](vehicle/commands/misc.md)
 - [Streaming](vehicle/streaming.md)
 - [Autopark/Summon](vehicle/autopark.md)
 - [Option Codes](vehicle/optioncodes.md)

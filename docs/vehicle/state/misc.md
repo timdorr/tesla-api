@@ -1,4 +1,4 @@
-# Miscellaneous vehicle/vehicle related data
+# Miscellaneous Vehicle Data
 
 ## GET `/api/1/vehicles/{vehicle_id}/release_notes`
 

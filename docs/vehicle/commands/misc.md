@@ -85,6 +85,8 @@ This is can be triggered inside of the vehicle as well, by holding the lower lef
 
 Let the car fart remotely on version 2022.44.25.1 and above.
 
+### Response
+
 ```json
 {
   "result": true,

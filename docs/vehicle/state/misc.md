@@ -6,9 +6,9 @@ Get the current software version or upcoming software update's release notes.
 
 ### Parameters
 
-| Parameter    | Example | Description                                                                                                     |
-| :----------- | :------ | :-------------------------------------------------------------------------------------------------------------- |
-| staged       | true    | If there is currently a pending software update, this will return the upcoming software update's release notes. |
+| Parameter | Example | Description                                                                                                     |
+| :-------- | :------ | :-------------------------------------------------------------------------------------------------------------- |
+| staged    | true    | If there is currently a pending software update, this will return the upcoming software update's release notes. |
 
 ### Response
 

@@ -2,11 +2,13 @@
 
 ## GET `/api/1/vehicles/{vehicle_id}/release_notes`
 
-Get the release notes for the current update.
+Get the current software version or upcoming software update's release notes.
 
-{% hint style='info' %}
-The App can get the next/pending update's release notes as well, but this endpoint seems to return only the current update's release notes.
-{% endhint %}
+### Parameters
+
+| Parameter | Example | Description                                                                                                     |
+| :-------- | :------ | :-------------------------------------------------------------------------------------------------------------- |
+| staged    | true    | If there is currently a pending software update, this will return the upcoming software update's release notes. |
 
 ### Response
 

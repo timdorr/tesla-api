@@ -83,6 +83,13 @@ This is can be triggered inside of the vehicle as well, by holding the lower lef
 
 ## POST `/api/1/vehicles/{id}/command/remote_boombox`
 
-{% hint style='info' %}
-Note: this does not seem to be enabled/implemented yet. What it does is also a mystery. My best guess is that it triggers the selected sound to play on the vehicle's PWS speaker.
-{% endhint %}
+Let the car fart remotely on version 2022.44.25.1 and above.
+
+### Response
+
+```json
+{
+  "result": true,
+  "reason": ""
+}
+```

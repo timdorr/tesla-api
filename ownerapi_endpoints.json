@@ -668,6 +668,11 @@
     "URI": "bff/v2/mobile-app/roadside/warranty",
     "AUTH": true
   },
+  "ROADSIDE_WARRANTY_QUALIFICATION": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/roadside/warranty/qualify",
+    "AUTH": true
+  },
   "ROADSIDE_LOCATIONS": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/roadside/locations",
@@ -1095,7 +1100,7 @@
   },
   "ENERGY_SERVICE_GET_SITE_INFORMATION": {
     "TYPE": "GET",
-    "URI": "bff/v2/mobile-app/energy-service/site-information",
+    "URI": "bff/v2/mobile-app/energy-support/site-information",
     "AUTH": true
   },
   "ENERGY_SERVICE_GET_SUPPORT_CASES": {
@@ -1105,7 +1110,7 @@
   },
   "ENERGY_SERVICE_POST_GRID_SERVICE_CASE": {
     "TYPE": "POST",
-    "URI": "bff/v2/mobile-app/energy-service/appointments",
+    "URI": "bff/v2/mobile-app/energy-support/appointments",
     "AUTH": true
   },
   "ENERGY_SERVICE_POST_SUPPORT_CASE": {
@@ -1115,12 +1120,12 @@
   },
   "ENERGY_SERVICE_GET_APPOINTMENT_SUGGESTIONS": {
     "TYPE": "GET",
-    "URI": "bff/v2/mobile-app/energy-service/appointment-suggestions",
+    "URI": "bff/v2/mobile-app/energy-support/appointment-suggestions",
     "AUTH": true
   },
   "ENERGY_SERVICE_CANCEL_GRID_SERVICE_CASE": {
     "TYPE": "PUT",
-    "URI": "bff/v2/mobile-app/energy-service/service-case",
+    "URI": "bff/v2/mobile-app/energy-support/service-case",
     "AUTH": true
   },
   "ENERGY_SERVICE_CANCEL_SUPPORT_CASE": {
@@ -1130,12 +1135,12 @@
   },
   "ENERGY_SERVICE_CANCEL_APPOINTMENT": {
     "TYPE": "PUT",
-    "URI": "bff/v2/mobile-app/energy-service/appointments",
+    "URI": "bff/v2/mobile-app/energy-support/appointments",
     "AUTH": true
   },
   "ENERGY_SERVICE_CONFIRM_APPOINTMENT": {
     "TYPE": "PUT",
-    "URI": "bff/v2/mobile-app/energy-service/confirm-appointment",
+    "URI": "bff/v2/mobile-app/energy-support/confirm-appointment",
     "AUTH": true
   },
   "ENERGY_DOCUMENTS_GET_DOCUMENTS": {
@@ -1150,17 +1155,17 @@
   },
   "ENERGY_GET_TROUBLESHOOTING_GUIDE": {
     "TYPE": "GET",
-    "URI": "bff/v2/mobile-app/energy-service/troubleshooting/{troubleshootingFlow}?version=3",
+    "URI": "bff/v2/mobile-app/energy-support/troubleshooting/{troubleshootingFlow}?version=3",
     "AUTH": true
   },
   "ENERGY_SERVICE_GET_POWERWALL_WARRANTY_DETAILS": {
     "TYPE": "GET",
-    "URI": "bff/v2/mobile-app/energy-service/warranty-details",
+    "URI": "bff/v2/mobile-app/energy-support/warranty-details",
     "AUTH": true
   },
   "ENERGY_SERVICE_GET_CHAT_AVAILABILITY": {
     "TYPE": "GET",
-    "URI": "bff/v2/mobile-app/energy-service/chat-availability",
+    "URI": "bff/v2/mobile-app/energy-support/chat-availability",
     "AUTH": true
   },
   "LOOTBOX_USER_INFO": {
@@ -1403,6 +1408,16 @@
     "URI": "bff/v2/mobile-app/documents/invoices/{invoiceId}",
     "AUTH": true
   },
+  "DOCUMENTS_DOWNLOAD_INSPECTION": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/service/documents/inspection/{serviceVisitID}",
+    "AUTH": true
+  },
+  "DOCUMENTS_DOWNLOAD_FAPIAO": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/documents/fapiao/{fapiaoId}",
+    "AUTH": true
+  },
   "SERVICE_MESSAGES": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/service/messages/{serviceVisitID}",
@@ -1623,6 +1638,11 @@
     "URI": "bff/v2/mobile-app/insurance/calculate-safety-rating",
     "AUTH": true
   },
+  "SEND_DOCUMENTS_EMAIL": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/insurance-cn/send-mail",
+    "AUTH": true
+  },
   "COMMERCE_POST_INVOICE": {
     "TYPE": "POST",
     "URI": "commerce-api/purchases/invoices/v1{locale}",
@@ -1731,6 +1751,31 @@
   "FINANCING_GET_AMORTIZATION": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/financing/amortization-info",
+    "AUTH": true
+  },
+  "FINANCING_BUYOUT_ELIGIBLE": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/buyout-eligible",
+    "AUTH": true
+  },
+  "FINANCING_BUYOUT_QUOTE": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/buyout-quote",
+    "AUTH": true
+  },
+  "FINANCING_BUYOUT_NEW_QUOTE": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/financing/new-buyout-quote",
+    "AUTH": true
+  },
+  "FINANCING_BUYOUT_ESIGN_STATUS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/buyout-esign-status",
+    "AUTH": true
+  },
+  "FINANCING_BUYOUT_APPLY_ESIGN": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/financing/buyout-apply-esign",
     "AUTH": true
   },
   "FINANCING_GET_PAYMENT_PROFILE": {
@@ -2118,6 +2163,26 @@
     "URI": "bff/mobile-app/transfer/signed-token",
     "AUTH": true
   },
+  "OWNERSHIP_TRANSFER_VIEW_REQUEST": {
+    "TYPE": "GET",
+    "URI": "bff/mobile-app/transfer/view-transfer-request",
+    "AUTH": true
+  },
+  "OWNERSHIP_TRANSFER_REQUEST_INITIATE": {
+    "TYPE": "POST",
+    "URI": "bff/mobile-app/transfer/transfer-request-initiate",
+    "AUTH": true
+  },
+  "OWNERSHIP_TRANSFER_REQUEST_APPROVE": {
+    "TYPE": "POST",
+    "URI": "bff/mobile-app/transfer/transfer-request-approve",
+    "AUTH": true
+  },
+  "OWNERSHIP_TRANSFER_REQUEST_REJECT": {
+    "TYPE": "POST",
+    "URI": "bff/mobile-app/transfer/transfer-request-reject",
+    "AUTH": true
+  },
   "SECURITY_AND_PRIVACY_ASSETS_REQUEST": {
     "TYPE": "GET",
     "URI": "bff/mobile-app/security-privacy/assets",
@@ -2172,5 +2237,35 @@
     "TYPE": "GET",
     "URI": "bff/mobile-app/splash-feature-flag",
     "AUTH": false
+  },
+  "FAPIAO_FETCH_MENUS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/fapiao/menus",
+    "AUTH": true
+  },
+  "FAPIAO_FETCH_ORDERS": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/fapiao/orders",
+    "AUTH": true
+  },
+  "FAPIAO_POST_ORDERS": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/fapiao",
+    "AUTH": true
+  },
+  "FAPIAO_FETCH_HISTORIES": {
+    "TYPE": "GET",
+    "URI": "mobile-app/fapiao/history",
+    "AUTH": true
+  },
+  "FAPIAO_FETCH_DETAILS": {
+    "TYPE": "GET",
+    "URI": "mobile-app/fapiao/{id}/details",
+    "AUTH": true
+  },
+  "OWNERSHIP_VERIFY_ID": {
+    "TYPE": "GET",
+    "URI": "mobile-app/financing/validate-identity-card",
+    "AUTH": true
   }
 }

@@ -123,7 +123,7 @@ return a generic set of codes related to a Model 3.
 | CH14   | 32 Amp Charger Hardware (RENA) with Busbar               | NA spec M3 2022 SR+                                       |
 | CH15   | 48 Amp Charger Hardware (REEU/REAP) with Busbar          | EU spec                                                   |
 | CH16   | 48 Amp Charger Hardware (RENA) with Busbar               | NA spec                                                   |
-| CH17   | 48 Amp 1PH&3PH,P2                                        | NA spec Model S/X Palladium                               |
+| CH17   | 48 Amp 1PH&3PH,P2                                        | NA/EU spec Model S/X Palladium                            |
 | COL0   | Signature                                                |                                                           |
 | COL1   | Solid                                                    |                                                           |
 | COL2   | Metallic                                                 |                                                           |
@@ -152,7 +152,8 @@ return a generic set of codes related to a Model 3.
 | COSG   | Country: Singapore                                       |                                                           |
 | COUS   | Country: United States                                   |                                                           |
 | CP00   |                                                          | MX/MS 2021                                                |
-| CP01   | Charge port Gen? CCS size                                | MS 2022                                                   |
+| CP01   | Charge port Gen? CCS size                                | MS/MX 2022                                                |
+| CP03   | CCS2 Integrated Chargeport                               | MS/MX 2022                                                |
 | CPF0   | Standard Connectivity                                    | 1 month                                                   |
 | CPF1   | Premium Connectivity                                     | 1 year                                                    |
 | CPW1   | 20" Performance Wheels                                   |                                                           |
@@ -183,7 +184,7 @@ return a generic set of codes related to a Model 3.
 | FD00   | Low Current IGBT IM130 Drive Unit                        | Front drive unit M3/MY                                    |
 | FD01   | Low Current IGBT IM130 Drive Unit, CN/DE                 | Model 3/Y 2021 (China/Germany)                            |
 | FD02   |                                                          | Model S/X 2021 LR                                         |
-| FD03   |                                                          | Model S/X 2021 P                                          |
+| FD03   | P2 Sleeved Front Drive Unit                              | Model S/X 2021 P                                          |
 | FDU2   | Raven Front Drive Unit                                   | Model S/X 2020-2021                                       |
 | FG3B   | Fog Lamp Cover (No Fog lamps)                            | Model 3 Standard+                                         |
 | FG00   | No Exterior Lighting Package                             |                                                           |
@@ -222,7 +223,7 @@ return a generic set of codes related to a Model 3.
 | IBB0   | All Black Interior                                       | Model 3 Old Door Trim                                     |
 | IBB1   | All Black Interior                                       | Model 3 New Door Trim (Since Q1 2021)                     |
 | IC00   |                                                          | Model S/X (Since Q2 2021)                                 |
-| IC01   |                                                          | Model X (Since Q4 2021)                                   |
+| IC01   | White Colorway Interior                                  | Model S/X (Since Q4 2021)                                 |
 | IC02   |                                                          | Model S/X (Since Q2 2021)                                 |
 | ID00   |                                                          | Model S/X (Since Q2 2021)                                 |
 | ID02   | All Black Premium Interior with Carbon Fiber Décor?      | Model S/X (Since Q4 2021)                                 |
@@ -571,7 +572,7 @@ return a generic set of codes related to a Model 3.
 | TR00   | No Rear Facing Seats                                     |                                                           |
 | TR01   | Third Row Seating                                        |                                                           |
 | TRA1   | Third Row HVAC                                           |                                                           |
-| TS10   |                                                          | Model S/X 2021                                            |
+| TS10   | 21" Michelin PS4S                                        | Model S/X 2021                                            |
 | TS91   |                                                          | Model S/X 2021                                            |
 | TSHP   | Heat Pump Thermal Assembly                               | Model Y 2021 (China)                                      |
 | TW00   | No Tow Package                                           |                                                           |

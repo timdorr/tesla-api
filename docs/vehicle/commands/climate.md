@@ -228,7 +228,7 @@ These parameters need to be passed via the post body as `JSON`.
 | Body Parameter     | Example | Description                              |
 | :----------------- | :------ | :--------------------------------------- |
 | auto_seat_position | 0       | The desired seat for auto climate. (0-5) |
-| auto_climate_on    | 3       | `true` to enable and `false` to disable. |
+| auto_climate_on    | true    | `true` to enable and `false` to disable. |
 
 The `auto_seat_position` parameter maps to the following seats:
 

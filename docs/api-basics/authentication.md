@@ -7,7 +7,7 @@ description: The authentication process for the Tesla API
 Tesla uses a separate SSO service (auth.tesla.com) for authentication across their app and website. This service is designed around a browser-based flow using OAuth 2.0, but also appears to have support for Open ID Connect. This supports both obtaining an access token and refreshing it as it expires.
 
 {% hint style="warning" %}
-Tesla's SSO service has a WAF (web application firewall) that may temporarily block you if you make repeated, execessive requests. This is to prevent bots from attacking the service, either as a brute force or denial-of-service attack. This normally presents as a "challenge" page, which requires running some non-trivial JavaScript code to validate that you have a full browser engine available. While you can potentially fully evaluate this page to remove the block, the best practice for now is to reduce your calls to the SSO service to a minimum and avoid things like automatic request retries.
+Tesla's SSO service has a WAF (web application firewall) that may temporarily block you if you make repeated, execessive requests. This is to prevent bots from attacking the service, either as a brute force or denial-of-service attack. This normally presents as a "challenge" page, which requires running some non-trivial JavaScript code to validate that you have a full browser engine available. While you can potentially fully evaluate this page to remove the block, the best practice for now is to reduce your calls to the SSO service to a minimum and avoid things like automatic request retries. The service also expects TLS 1.2 or lower connections, so avoid connecting with TLS 1.3.
 {% endhint %}
 
 ## Logging in

@@ -132,6 +132,9 @@ The response varies. If the user has no MFA enabled, the response will be:
 }
 ```
 
+###### 403 Response 
+When recieving a 403 response in this step, try to force TLS 1.2 e.g. in curl using the `--tls-max 1.2` flag.
+
 However, if the user has MFA enabled the response will be an HTML document with a `passcode` field inside it. This is for the TOTP (Time-based-One-time Password).
 
 To authenticate, you first need to get the list of known factors on the account, by requesting the `/authorize/mfa/factors` endpoint via GET. You also need to supply the `transaction_id` from the `/authorize` endpoint with this request.

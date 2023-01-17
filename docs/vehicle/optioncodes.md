@@ -151,7 +151,7 @@ return a generic set of codes related to a Model 3.
 | COSE   | Country: Sweden                                          |                                                           |
 | COSG   | Country: Singapore                                       |                                                           |
 | COUS   | Country: United States                                   |                                                           |
-| CP00   |                                                          | MX/MS 2021                                                |
+| CP00   | NA Chargeport (TPC)                                      | MX/MS 2021                                                |
 | CP01   | Charge port Gen? CCS size                                | MS/MX 2022                                                |
 | CP03   | CCS2 Integrated Chargeport                               | MS/MX 2022                                                |
 | CPF0   | Standard Connectivity                                    | 1 month                                                   |
@@ -458,7 +458,7 @@ return a generic set of codes related to a Model 3.
 | QVPP   | Vegan Cream Seats                                        |                                                           |
 | QVSW   | White Tesla Seats                                        |                                                           |
 | QXMB   | Black Leather Seat                                       |                                                           |
-| RA00   | No Radar Module Sensor, 7 Pin Perpendicular              | Model 3/Y                                                 |
+| RA00   | No Radar Module Sensor, 7 Pin Perpendicular              | Model 3/Y/S/X                                             |
 | RA01   | Radar Module Sensor, 7 Pin Perpendicular                 | Model 3/Y                                                 |
 | RBMB   | Rear Brake Mando Black                                   | Model X                                                   |
 | RBMR   | Rear Brake Mando Red                                     | Model S                                                   |
@@ -573,6 +573,7 @@ return a generic set of codes related to a Model 3.
 | TR01   | Third Row Seating                                        |                                                           |
 | TRA1   | Third Row HVAC                                           |                                                           |
 | TS10   | 21" Michelin PS4S                                        | Model S/X 2021                                            |
+| TS90   | 19" Continental ProContact RX                            | Model S/X 2022                                            |
 | TS91   |                                                          | Model S/X 2021                                            |
 | TSHP   | Heat Pump Thermal Assembly                               | Model Y 2021 (China)                                      |
 | TW00   | No Tow Package                                           |                                                           |
@@ -664,8 +665,8 @@ return a generic set of codes related to a Model 3.
 | X019   | Carbon Fiber Spoiler                                     |                                                           |
 | X020   | No Performance Exterior                                  |                                                           |
 | X021   | No Rear Carbon Fiber Spoiler                             |                                                           |
-| X024   | Performance Package                                      |                                                           |
-| X025   | No Performance Powertrain                                |                                                           |
+| X024   | Performance Package                                      | Performance Motor                                         |
+| X025   | No Performance Powertrain                                | Base Motor                                                |
 | X026   | Door handle                                              | No light handle                                           |
 | X027   | Lighted Door Handles                                     | Light handle                                              |
 | X028   | Battery Badge                                            | Normal Badging                                            |

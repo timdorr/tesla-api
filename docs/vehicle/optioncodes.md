@@ -379,11 +379,12 @@ return a generic set of codes related to a Model 3.
 | MTY03  | Model Y Long Range All-Wheel Drive                       |                                                           |
 | MTY04  | Model Y Long Range All-Wheel Drive Performance           |                                                           |
 | MTY05  | Model Y Long Range All-Wheel Drive Performance           |                                                           |
-| MTY12  | Model Y Long Range All-Wheel Drive Performance           |                                                           |
 | MTY06  | Model Y Long Range All-Wheel Drive                       |                                                           |
 | MTY07  | Model Y Long Range All-Wheel Drive                       |                                                           |
 | MTY09  | Model Y Long Range All-Wheel Drive                       |                                                           |
 | MTY11  | Model Y Long Range All-Wheel Drive                       |                                                           |
+| MTY12  | Model Y Long Range All-Wheel Drive Performance           |                                                           |
+| MTY13  | Model Y Long Range Standard Range Rear-Wheel Drive       | 2023 No USS?                                              |
 | MTY14  | Model Y Long Range All-Wheel Drive                       |                                                           |
 | MY00   |                                                          | Model Y Berlin                                            |
 | MY01   |                                                          | Model Y Austin?                                           |

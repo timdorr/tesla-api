@@ -513,7 +513,8 @@ return a generic set of codes related to a Model 3.
 | SC04   | Pay Per Use Supercharging                                |                                                           |
 | SC05   | Unlimited Free Supercharging Currently Enabled           | Not transferable to the next owner                        |
 | SC06   | Time Bound Unlimited Free Supercharging                  |                                                           |
-| SG01   | Steering Gear Single Chip                                | Model 3 CN MIC                                            |
+| SG01   | Steering Gear Single Chip                                | Model 3/Y CN MIC                                          |
+| SG02   | Steering Gear Dual Chip                                  | Model 3/Y CN MIC (2023)                                   |
 | SLR0   | No Rear Spoiler                                          |                                                           |
 | SLR1   | Carbon Fibre Spoiler                                     | Model 3                                                   |
 | SP00   | No Security Package                                      |                                                           |

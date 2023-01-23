@@ -582,6 +582,7 @@ return a generic set of codes related to a Model 3.
 | TX20   |                                                          | Model X 2021                                              |
 | TY0A   | 20" All Season Square                                    | Model Y 2022                                              |
 | TY1D   | 21" P Zero                                               | Model Y 2022                                              |
+| TY9B   | 19” Summer Square - Dual Sourcing Hankook                | Model Y 2023                                              |
 | UM01   | Universal Mobile Charger - US Port (Single)              |                                                           |
 | UT3P   | Suede Grey Premium Headliner                             | Ultrasuede Grey                                           |
 | UTAB   | Black Alcantara Headliner                                |                                                           |
@@ -590,7 +591,7 @@ return a generic set of codes related to a Model 3.
 | UTPB   | Dark Headliner                                           |                                                           |
 | UTSB   | Black Ultra-Suede Upper Trim Headliner                   |                                                           |
 | UTZW   | Light Headliner                                          |                                                           |
-| US00   | ULTRASONIC SENSOR                                        | Test Ultrasonic Sensor                                    |
+| US00   | No Ultrasonic Sensor                                     | Test Ultrasonic Sensor (m3/my 2023)                       |
 | USSB   | Safety                                                   | Safety US Black                                           |
 | USSW   | US Safety Kit White                                      |                                                           |
 | VC00   | MCU Intel Atom                                           | Model 3/Y (China)                                         |

@@ -1613,6 +1613,11 @@
     "URI": "commerce-api/eligibility/v1{locale}",
     "AUTH": true
   },
+  "INSURANCE_CN_SUBMIT_CLAIMS": {
+    "TYPE": "POST",
+    "URI": "mobile-app/insurance-cn/report-claim",
+    "AUTH": true
+  },
   "MATTERMOST": {
     "TYPE": "POST",
     "URI": "Just a placeholder",
@@ -1750,7 +1755,12 @@
   },
   "FINANCING_GET_AMORTIZATION": {
     "TYPE": "GET",
-    "URI": "bff/v2/mobile-app/financing/amortization-info",
+    "URI": "bff/v2/mobile-app/financing/amortization-info-v2",
+    "AUTH": true
+  },
+  "FINANCING_GET_AGREEMENT_DOCS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/agreement-docs",
     "AUTH": true
   },
   "FINANCING_BUYOUT_ELIGIBLE": {
@@ -2266,6 +2276,36 @@
   "OWNERSHIP_VERIFY_ID": {
     "TYPE": "GET",
     "URI": "mobile-app/financing/validate-identity-card",
+    "AUTH": true
+  },
+  "INSURANCE_CN_GET_SELF_INSURANCE_INFO": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/insurance-cn/self-insurance/get-insurance",
+    "AUTH": true
+  },
+  "INSURANCE_CN_GET_INSURANCE_STATUS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/insurance-cn/status",
+    "AUTH": true
+  },
+  "INSURANCE_CN_DISMISS_EXPIRE_MESSAGE": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/insurance-cn/expiry-status-dismiss",
+    "AUTH": true
+  },
+  "INSURANCE_CN_GET_INSURER_LIST": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/insurance-cn/insurers",
+    "AUTH": true
+  },
+  "INSURANCE_CN_SAVE_SELF_INSURANCE_INFO": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/insurance-cn/self-insurance/save",
+    "AUTH": true
+  },
+  "INSURANCE_CN_DELETE_SELF_INSURANCE_INFO": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/insurance-cn/self-insurance/delete",
     "AUTH": true
   }
 }

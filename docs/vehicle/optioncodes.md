@@ -594,7 +594,7 @@ return a generic set of codes related to a Model 3.
 | UTSB   | Black Ultra-Suede Upper Trim Headliner                   |                                                           |
 | UTZW   | Light Headliner                                          |                                                           |
 | US00   | No Ultrasonic Sensor                                     | No Ultrasonic Sensor (m3/my 2023)                         |
-| US02   | ULTRASONIC SENSOR	TTE Sensor                            | Test Ultrasonic Sensor (m3/my 2023 Berlin)                |
+| US02   | Ultrasonic Sensor                                        | Test Ultrasonic Sensor (m3/my 2023 Berlin)                |
 | USSB   | Safety                                                   | Safety US Black                                           |
 | USSW   | US Safety Kit White                                      |                                                           |
 | VC00   | MCU Intel Atom                                           | Model 3/Y (China)                                         |

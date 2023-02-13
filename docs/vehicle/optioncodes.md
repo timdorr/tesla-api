@@ -33,8 +33,8 @@ return a generic set of codes related to a Model 3.
 | ADX5   | European 3-Phase, IT                                     |                                                           |
 | ADX6   | No - Adapter, Schuko (1 phase, 13A)                      |                                                           |
 | ADX7   | No - 3-ph Red IEC309 (3 phase, 16A)                      |                                                           |
-| ADX9   | No - Adapter, Swiss (1 phase, 10A)                       |                                                           |
 | ADX8   | Blue IEC309 (1 phase, 230V 32A)                          |                                                           |
+| ADX9   | No - Adapter, Swiss (1 phase, 10A)                       |                                                           |
 | AF00   | No HEPA Filter                                           | Standard air filter, no air ionizer                       |
 | AF02   | HEPA Filter                                              |                                                           |
 | AH00   | No Accessory Hitch                                       |                                                           |
@@ -550,8 +550,7 @@ return a generic set of codes related to a Model 3.
 | T3MC   | Tires M3                                                 | 18" China made                                            |
 | T3P3   | Tires M3                                                 | 20" Michelin PS4 Summer                                   |
 | T3PS   | Tires M3                                                 | 19" PIRELLI PZ4?                                          |
-| TY9A   | Tires MY                                                 | Tires 19" All Season Square                               |
-| TY9B   | Tires MY                                                 | 19” Summer Square - Dual Sourcing Hankook                 |
+
 | TD00   | Tear Down NON-GLIDER                                     | Model S/X                                                 |
 | TIC3   | Tires MS                                                 | 21                                                        |
 | TIC4   | Tires MX                                                 | 20" all-weather tires                                     |
@@ -584,6 +583,7 @@ return a generic set of codes related to a Model 3.
 | TX20   |                                                          | Model X 2021                                              |
 | TY0A   | 20" All Season Square                                    | Model Y 2022                                              |
 | TY1D   | 21" P Zero                                               | Model Y 2022                                              |
+| TY9A   | Tires MY                                                 | Tires 19" All Season Square                               |
 | TY9B   | 19” Summer Square - Dual Sourcing Hankook                | Model Y 2023                                              |
 | UM01   | Universal Mobile Charger - US Port (Single)              |                                                           |
 | UT3P   | Suede Grey Premium Headliner                             | Ultrasuede Grey                                           |
@@ -689,5 +689,5 @@ return a generic set of codes related to a Model 3.
 | YF01   | Matching Yacht Floor                                     |                                                           |
 | YFCC   | Yatcht Floor Front Console, Décor Matched                |                                                           |
 | YFFC   | Integrated Center Console                                |                                                           |
-| ZINV   | Inventory vehicle                                        | Car sold from Tesla Inventory                             |
 | ZCST   | Customer Car                                             |                                                           |
+| ZINV   | Inventory vehicle                                        | Car sold from Tesla Inventory                             |

@@ -413,6 +413,7 @@ return a generic set of codes related to a Model 3.
 | PMSG   | Green Metallic Color                                     |                                                           |
 | PMSS   | San Simeon Silver Metallic Color                         |                                                           |
 | PMTG   | Dolphin Grey Metallic Color                              |                                                           |
+| PN00   | Quicksilver Color                                        |                                                           |
 | PPMR   | Red Multi-Coat Color                                     |                                                           |
 | PP01   | Pedestrian Protection Ped Pro R127 Compliant             | Model S 2020+ Eu                                          |
 | PP02   | Pedestrian Protection Ped Pro R127 Compliant             | Model 3 2021 Eu                                           |

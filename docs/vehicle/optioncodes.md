@@ -552,7 +552,6 @@ return a generic set of codes related to a Model 3.
 | T3MC   | Tires M3                                                 | 18" China made                                            |
 | T3P3   | Tires M3                                                 | 20" Michelin PS4 Summer                                   |
 | T3PS   | Tires M3                                                 | 19" PIRELLI PZ4?                                          |
-
 | TD00   | Tear Down NON-GLIDER                                     | Model S/X                                                 |
 | TIC3   | Tires MS                                                 | 21                                                        |
 | TIC4   | Tires MX                                                 | 20" all-weather tires                                     |

@@ -119,6 +119,11 @@
     "URI": "api/1/vehicles/{vehicle_id}/command/set_charging_amps",
     "AUTH": true
   },
+  "NAVIGATION_ROUTE": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/get_active_route",
+    "AUTH": true
+  },
   "SET_CABIN_OVERHEAT_PROTECTION": {
     "TYPE": "POST",
     "URI": "api/1/vehicles/{vehicle_id}/command/set_cabin_overheat_protection",
@@ -588,6 +593,16 @@
     "URI": "api/1/vehicles/{vehicle_id}/command/remote_steering_wheel_heater_request",
     "AUTH": true
   },
+  "REMOTE_AUTO_STEERING_WHEEL_HEAT_CLIMATE_REQUEST": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/remote_auto_steering_wheel_heat_climate_request",
+    "AUTH": true
+  },
+  "REMOTE_STEERING_WHEEL_HEAT_LEVEL_REQUEST": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/remote_steering_wheel_heat_level_request",
+    "AUTH": true
+  },
   "TRIGGER_VEHICLE_SCREENSHOT": {
     "TYPE": "GET",
     "URI": "api/1/vehicles/{vehicle_id}/screenshot",
@@ -676,6 +691,21 @@
   "ROADSIDE_LOCATIONS": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/roadside/locations",
+    "AUTH": true
+  },
+  "ROADSIDE_MOBILE_TIRE_SLOTS": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/roadside/tire/slots",
+    "AUTH": true
+  },
+  "ROADSIDE_CREATE_MOBILE_TIRE_VISIT": {
+    "TYPE": "POST",
+    "URI": "mobile-app/roadside/visit",
+    "AUTH": true
+  },
+  "ROADSIDE_UPDATE_MOBILE_TIRE_VISIT": {
+    "TYPE": "PATCH",
+    "URI": "mobile-app/roadside/visit/{serviceVisitID}",
     "AUTH": true
   },
   "ROADSIDE_COUNTRIES": {
@@ -2248,6 +2278,16 @@
     "URI": "bff/mobile-app/splash-feature-flag",
     "AUTH": false
   },
+  "INBOX_UPLOAD_FILE": {
+    "TYPE": "POST",
+    "URI": "bff/mobile-app/files/product-files",
+    "AUTH": true
+  },
+  "INBOX_GET_FILE": {
+    "TYPE": "GET",
+    "URI": "bff/mobile-app/files/product-files/{uuid}",
+    "AUTH": true
+  },
   "FAPIAO_FETCH_MENUS": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/fapiao/menus",
@@ -2298,6 +2338,11 @@
     "URI": "bff/v2/mobile-app/insurance-cn/insurers",
     "AUTH": true
   },
+  "INSURANCE_CN_GET_CLAIMS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/insurance-cn/claims",
+    "AUTH": true
+  },
   "INSURANCE_CN_SAVE_SELF_INSURANCE_INFO": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/insurance-cn/self-insurance/save",
@@ -2306,6 +2351,26 @@
   "INSURANCE_CN_DELETE_SELF_INSURANCE_INFO": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/insurance-cn/self-insurance/delete",
+    "AUTH": true
+  },
+  "INSURANCE_CN_GET_CLAIM_PHOTOS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/insurance-cn/claim-photos",
+    "AUTH": true
+  },
+  "INSURANCE_CN_SAVE_CLAIM_PHOTOS": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/insurance-cn/claim-photos",
+    "AUTH": true
+  },
+  "INSURANCE_CN_SAVE_CLAIM_GET_PHOTO": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/insurance-cn/claim-photo/{uuid}",
+    "AUTH": true
+  },
+  "INSURANCE_CN_SAVE_CLAIM_UPLOAD_PHOTO": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/insurance-cn/upload-claim-photo",
     "AUTH": true
   }
 }

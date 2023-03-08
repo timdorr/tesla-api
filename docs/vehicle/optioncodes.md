@@ -38,6 +38,7 @@ return a generic set of codes related to a Model 3.
 | AF00   | No HEPA Filter                                           | Standard air filter, no air ionizer                       |
 | AF02   | HEPA Filter                                              |                                                           |
 | AH00   | No Accessory Hitch                                       |                                                           |
+| AP04   | Autopilot 4.0                                            | Model S 02.2023                                           |
 | APB1   | Autopilot with convenience features                      | Model S                                                   |
 | APBS   | Autopilot                                                | Model 3 Autopilot                                         |
 | APF0   | Autopilot Firmware 2.0 Base                              |                                                           |
@@ -61,6 +62,7 @@ return a generic set of codes related to a Model 3.
 | BC0R   | Red Brake Calipers                                       | Model S                                                   |
 | BC3B   | Black Brake Calipers                                     | Model 3/Y                                                 |
 | BC3R   | Black Brake Calipers, Red brake calipers                 | Model 3/Y Performance                                     |
+| BC50   | Brakes Performance P2                                    | Model S/X Plaid                                           |
 | BCMB   | Black Brake Calipers, Mando Brakes                       |                                                           |
 | BCYR   | Performance Brakes                                       |                                                           |
 | BG30   | No Badge                                                 | Model 3                                                   |
@@ -225,7 +227,7 @@ return a generic set of codes related to a Model 3.
 | IBB1   | All Black Interior                                       | Model 3 New Door Trim (Since Q1 2021)                     |
 | IC00   |                                                          | Model S/X (Since Q2 2021)                                 |
 | IC01   | White Colorway Interior                                  | Model S/X (Since Q4 2021)                                 |
-| IC02   |                                                          | Model S/X (Since Q2 2021)                                 |
+| IC02   | Cream Colorway Interior                                  | Model S/X (Since Q2 2021)                                 |
 | ID00   |                                                          | Model S/X (Since Q2 2021)                                 |
 | ID02   | All Black Premium Interior with Carbon Fiber Décor?      | Model S/X (Since Q4 2021)                                 |
 | ID03   |                                                          | Model S/X (Since Q2 2021)                                 |
@@ -464,6 +466,7 @@ return a generic set of codes related to a Model 3.
 | QXMB   | Black Leather Seat                                       |                                                           |
 | RA00   | No Radar Module Sensor, 7 Pin Perpendicular              | Model 3/Y/S/X                                             |
 | RA01   | Radar Module Sensor, 7 Pin Perpendicular                 | Model 3/Y                                                 |
+| RA02   | HD Radar Module Sensor, Phoenix                          | Model S/X 02.2023                                         |
 | RBMB   | Rear Brake Mando Black                                   | Model X                                                   |
 | RBMR   | Rear Brake Mando Red                                     | Model S                                                   |
 | RCX0   | No Rear Console                                          |                                                           |

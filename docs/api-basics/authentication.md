@@ -146,19 +146,21 @@ To authenticate, you first need to get the list of known factors on the account,
 }
 ```
 
-After doing this you need to send a POST request to the `/authorize/mfa/verify` endpoint with the `transaction_id`, `factor_id` and the current TOTP `passcode`.
+After doing this you need to send a POST request to the `/authorize/mfa/verify` endpoint with the `transaction_id`, `factor_id` and the current TOTP `passcode`. Similar to step 1, you also need to pass an additional `_csrf` field to the `/authorize/mfa/verify` endpoint. However, this is a different one from the first request, and has to fetched and parsed from the response of the `/authorize` endpoint that you hit earlier (the same response that had a `passcode` field inside of it).
 
 | Field            |       Type       | Description                                                        |
 | :--------------- | :--------------: | ------------------------------------------------------------------ |
 | `transaction_id` | String, required | The previously used transaction id from the `/authorize` endpoint. |
 | `factor_id`      | String, required | The factor id from the `/authorize/mfa/factors` endpoint.          |
 | `passcode`       | String, required | The current TOTP passcode.                                         |
+| `_csrf`          | String, required | The csrf parsed from response of `/authorize`                      |
 
 ```json
 {
   "transaction_id": "transaction_id",
   "factor_id": "factor_id",
-  "passcode": "passcode"
+  "passcode": "passcode",
+  "_csrf": "csrf"
 }
 ```
 

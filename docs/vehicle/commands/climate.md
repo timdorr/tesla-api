@@ -290,3 +290,34 @@ These parameters need to be passed via the post body as `JSON`.
   "result": true
 }
 ```
+
+## POST `/api/1/vehicles/{vehicle_id}/command/set_cabin_overheat_protection`
+
+Turns on the Cabin Overheat Protection (COP) and sets its mode.
+
+### Parameters
+
+These parameters need to be passed via the post body as `JSON`.
+
+| Body Parameter | Example | Description                                    |
+| :------------- | :------ | :--------------------------------------------- |
+| on             | true    | Turns COP on/off.                              |
+| fan_only       | true    | Use only the fans, do not use/turn on HVAC/AC. |
+
+### Example
+
+```json
+{
+  "on": true,
+  "fan_only": true
+}
+```
+
+### Response
+
+```json
+{
+  "reason": "",
+  "result": true
+}
+```

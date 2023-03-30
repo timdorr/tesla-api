@@ -134,11 +134,6 @@
     "URI": "api/1/vehicles/{vehicle_id}/command/set_charge_limit",
     "AUTH": true
   },
-  "SET_VEHICLE_NAME": {
-    "TYPE": "POST",
-    "URI": "api/1/vehicles/{vehicle_id}/command/set_vehicle_name",
-    "AUTH": true
-  },
   "CHANGE_SUNROOF_STATE": {
     "TYPE": "POST",
     "URI": "api/1/vehicles/{vehicle_id}/command/sun_roof_control",
@@ -227,6 +222,31 @@
   "ADJUST_VOLUME": {
     "TYPE": "POST",
     "URI": "api/1/vehicles/{vehicle_id}/command/adjust_volume",
+    "AUTH": true
+  },
+  "GET_MANAGED_CHARGING_SITES": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/get_managed_charging_sites",
+    "AUTH": true
+  },
+  "ADD_MANAGED_CHARGING_SITE": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/add_managed_charging_site",
+    "AUTH": true
+  },
+  "REMOVE_MANAGED_CHARGING_SITE": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/remove_managed_charging_site",
+    "AUTH": true
+  },
+  "UPDATE_CHARGE_ON_SOLAR_FEATURE": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/update_charge_on_solar_feature",
+    "AUTH": true
+  },
+  "GET_CHARGE_ON_SOLAR_FEATURE": {
+    "TYPE": "POST",
+    "URI": "api/1/vehicles/{vehicle_id}/command/get_charge_on_solar_feature",
     "AUTH": true
   },
   "SPLUNK_TELEMETRY": {
@@ -1713,6 +1733,11 @@
     "URI": "bff/v2/mobile-app/charging-cn/supercharger-status",
     "AUTH": true
   },
+  "CHARGING_BALANCE_GET_CTA": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/charging-cn/supercharger-balance-cta",
+    "AUTH": true
+  },
   "CHARGING_HISTORY": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/charging/history",
@@ -1973,6 +1998,11 @@
     "URI": "bff/v2/mobile-app/financing/acquisition/status-update",
     "AUTH": true
   },
+  "FINANCING_SAVE_INSPECTION": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/financing/acquisition/save-inspection",
+    "AUTH": true
+  },
   "FINANCING_SUBMIT_APPOINTMENT": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/financing/appointment/save",
@@ -2074,6 +2104,36 @@
     "AUTH": true
   },
   "REDEEM_VEHICLE_SHARE_INVITE": {
+    "TYPE": "POST",
+    "URI": "api/1/invitations/redeem",
+    "AUTH": true
+  },
+  "FETCH_ENERGY_SITE_SHARED_USERS": {
+    "TYPE": "GET",
+    "URI": "api/1/energy_sites/{site_id}/users",
+    "AUTH": true
+  },
+  "CREATE_ENERGY_SITE_SHARE_INVITE": {
+    "TYPE": "POST",
+    "URI": "api/1/energy_sites/{site_id}/invitations",
+    "AUTH": true
+  },
+  "FETCH_ENERGY_SITE_SHARE_INVITES": {
+    "TYPE": "GET",
+    "URI": "api/1/energy_sites/{site_id}/invitations",
+    "AUTH": true
+  },
+  "REVOKE_ENERGY_SITE_SHARE_INVITE": {
+    "TYPE": "POST",
+    "URI": "api/1/energy_sites/{site_id}/invitations/{invite_id}/revoke",
+    "AUTH": true
+  },
+  "REMOVE_ENERGY_SITE_SHARE_USER": {
+    "TYPE": "DELETE",
+    "URI": "api/1/energy_sites/{site_id}/users/{user_id}",
+    "AUTH": true
+  },
+  "REDEEM_ENERGY_SITE_SHARE_INVITE": {
     "TYPE": "POST",
     "URI": "api/1/invitations/redeem",
     "AUTH": true
@@ -2258,6 +2318,31 @@
     "URI": "bff/v2/mobile-app/esa/purchased",
     "AUTH": true
   },
+  "ESA_DOWNLOAD_AGREEMENT": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/esa-documents/agreement",
+    "AUTH": true
+  },
+  "ESA_V2_FETCH_ELIGIBLE": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/esa/v2/eligible",
+    "AUTH": true
+  },
+  "ESA_V2_CREATE_OFFLINE_ORDER": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/esa/v2/payment/offline-order",
+    "AUTH": true
+  },
+  "ESA_V2_OFFLINE_ORDER_COMPLETE": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/esa/v2/payment/offline-purchase-complete",
+    "AUTH": true
+  },
+  "ESA_V2_FETCH_PURCHASED": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/esa/v2/purchased",
+    "AUTH": true
+  },
   "VEHICLE_DETAILS_ASSETS_REQUEST_V2": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/ownership/vehicle-details-assets/v2",
@@ -2361,6 +2446,11 @@
   "INSURANCE_CN_SAVE_CLAIM_PHOTOS": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/insurance-cn/claim-photos",
+    "AUTH": true
+  },
+  "INSURANCE_CN_GET_CLAIM_SERVICE_INFO": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/insurance-cn/claim-service-info",
     "AUTH": true
   },
   "INSURANCE_CN_SAVE_CLAIM_GET_PHOTO": {

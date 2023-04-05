@@ -48,3 +48,26 @@ Get the feature configuration for the mobile app.
   }
 }
 ```
+
+## POST `/api/1/users/keys`
+
+Update the name of a (bluetooth) key in all vehicles linked to the account. Refreshed inside the vehicle everytime the "Locks" menu is opened.
+
+`kind` and `public_key` must be set, everything else only needs to be set if you want to change it.
+
+### Parameters
+
+| Parameter  | Example       | Description                                                                                                     |
+| :--------- | :------------ | :-------------------------------------------------------------------------------------------------------------- |
+| kind       | mobile_device | Must be "mobile_device"                                                                                         |
+| public_key | 04ed05567b... | The ANSI X9.62/X9.63 representation of the public key that you wish to change (65 bytes long) - as a hex string |
+| name       | Sam's Phone   | The name of the key (main text)                                                                                 |
+| model      | iPhone 14 Pro | The model of the key (sub text)                                                                                 |
+
+### Response
+
+```json
+{
+  "response": true
+}
+```

@@ -68,6 +68,6 @@ Update the name of a (bluetooth) key in all vehicles linked to the account. Refr
 
 ```json
 {
-	"response": true
+  "response": true
 }
 ```

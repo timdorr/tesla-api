@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://owner-api.teslamotors.com/api/<TESLA_CLIENT_ID>/vehicles
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v<TESLA_CLIENT_ID>.<TESLA_CLIENT_ID>0.3
+      Authorization:
+      - Bearer eyJhbGciOiJSUzI<TESLA_CLIENT_ID>NiIsInR5cCI6IkpXVCIsImtpZCI6Im5ZdVZJWTJTN3gxVHRYM0<TESLA_CLIENT_ID>KMC<TESLA_CLIENT_ID>QMDJad3pXQSJ9.eyJpc3MiOiJodHRwczovL<TESLA_CLIENT_SECRET>F<TESLA_CLIENT_ID>dGgudGVzbGEuY<TESLA_CLIENT_SECRET>9tL<TESLA_CLIENT_SECRET>9hdXRoMi9<TESLA_CLIENT_SECRET>MyIsImF<TESLA_CLIENT_ID>ZCI6WyJodHRwczovL<TESLA_CLIENT_SECRET>93bmVyLWFwaS50ZXNsYW<TESLA_CLIENT_ID>vdG9ycy5jb<TESLA_CLIENT_SECRET>0vIiwiaHR0cHM6Ly9hdXRoLnRlc<TESLA_CLIENT_SECRET>xhLmNvbS9vYXV0aDIvdjMvdXNlcmluZm8iXSwiYXpwIjoib3duZXJhcGkiLCJzdWIiOiI<TESLA_CLIENT_SECRET>YzgxODE4ZC0yNWVlLTRkMjktODliOC04NDBlMDM4OWIxYWQiLCJzY3AiOlsib3BlbmlkIiwiZW<TESLA_CLIENT_ID>haWwiLCJvZmZsaW5lX<TESLA_CLIENT_SECRET>FjY<TESLA_CLIENT_SECRET>VzcyJdLCJhbXIiOlsicHdkIl0sImV4cCI6MTY4MTQ<TESLA_CLIENT_SECRET>NTA0MSwiaWF0IjoxNjgxNDM<TESLA_CLIENT_SECRET>MjQxLCJhdXRoX3RpbWUiOjE<TESLA_CLIENT_SECRET>ODE0MzYyNDF9.H9839OVpIyR0Se55xpMb_D-cW6AAvcVH8AuI5BnJEm5OXVZURLoeFcr9g_C<TESLA_CLIENT_SECRET>GQLfP8qN9eQFB5WiZUoYTzXtpHLYgsHbI4zwA53M_RMp-pa<TESLA_CLIENT_ID>i5<TESLA_CLIENT_ID>HRLyt-CS6stVQcijmX<TESLA_CLIENT_ID>4gESHSwJUq6HEgUOZ6ZbyOV7_TgWfN8UGKlpWoDTo7skOcfGETkaA<TESLA_CLIENT_SECRET>0kiLKG6nhv<TESLA_CLIENT_ID>SSnzbzwsY<TESLA_CLIENT_SECRET>TxRLWA34zKmQ5KXfMhaUFyiR0LkKyBdhkQbEnBEXlNfveQyUijyZcI6vGzdt8pRCCxwMW7gBHDiRIAD<TESLA_CLIENT_ID>muIokMltTOUZMjbj<TESLA_CLIENT_SECRET>5Kmvu9FD3e4bmCWTcPZUmgLa7fFVUEmiq<TESLA_CLIENT_ID>Pp-pPw
+      Accept-Encoding:
+      - gzip;q=<TESLA_CLIENT_ID>.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - 3<TESLA_CLIENT_SECRET>
+      X-Envoy-Upstream-Service-Time:
+      - 363<TESLA_CLIENT_SECRET>
+      X-Envoy-Upstream-Cluster:
+      - owner-api
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=3<TESLA_CLIENT_ID>536000; includeSubDomains
+      Cache-Control:
+      - no-cache, no-store, private, s-max-age=0
+      Date:
+      - Fri, <TESLA_CLIENT_ID>4 Apr <TESLA_CLIENT_SECRET>0<TESLA_CLIENT_SECRET>3 <TESLA_CLIENT_SECRET>3:53:<TESLA_CLIENT_SECRET>3
+        GMT
+      Server:
+      - envoy
+    body:
+      encoding: UTF-8
+      string: '{"error":"invalid bearer token"}'
+  recorded_at: Fri, 14 Apr 2023 23:53:24 GMT
+recorded_with: VCR 6.1.0

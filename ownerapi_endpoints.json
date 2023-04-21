@@ -1238,6 +1238,11 @@
     "URI": "bff/v2/mobile-app/referrals/past-referrals",
     "AUTH": true
   },
+  "GET_FILE_LIST_BY_METADATA": {
+    "TYPE": "GET",
+    "URI": "bff/mobile-app/files/product-files/files-by-metadata",
+    "AUTH": true
+  },
   "REFERRAL_GET_USER_INFO": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/referrals/user-info",
@@ -2220,7 +2225,7 @@
   },
   "OWNERSHIP_TRANSFER_TOOL_REMOVAL_ELIGIBILITY": {
     "TYPE": "GET",
-    "URI": "bff/mobile-app/transfer/remove-car-eligibility",
+    "URI": "bff/mobile-app/transfer/remove-car-eligibility-v2",
     "AUTH": true
   },
   "OWNERSHIP_TRANSFER_TOOL_ADD_INITIATE": {

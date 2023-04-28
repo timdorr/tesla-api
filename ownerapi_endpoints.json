@@ -653,7 +653,7 @@
     "URI": "static/chargers/{file_path}",
     "AUTH": true
   },
-  "PLAN_TRIP": {
+  "PLAN_TRIP_CN": {
     "TYPE": "POST",
     "URI": "api/1/vehicles/plan_trip",
     "AUTH": true
@@ -666,6 +666,11 @@
   "DRIVING_PLAN": {
     "TYPE": "POST",
     "URI": "api/1/vehicles/driving_plan",
+    "AUTH": true
+  },
+  "PLAN_TRIP": {
+    "TYPE": "POST",
+    "URI": "trip-planner/api/v1/tripplan",
     "AUTH": true
   },
   "REVERSE_GEOCODING": {
@@ -728,6 +733,11 @@
     "URI": "mobile-app/roadside/visit/{serviceVisitID}",
     "AUTH": true
   },
+  "ROADSIDE_STATIC_CONTENT": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/roadside/static-content",
+    "AUTH": true
+  },
   "ROADSIDE_COUNTRIES": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/roadside/countries",
@@ -736,6 +746,11 @@
   "SERVICE_GET_SERVICE_VISITS": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/service/appointments",
+    "AUTH": true
+  },
+  "SERVICE_GET_SERVICE_VISIT_AMOUNT_DUE": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/service/payment/amount-due/{serviceVisitID}",
     "AUTH": true
   },
   "SERVICE_UPDATE_APPOINTMENT": {
@@ -1101,6 +1116,16 @@
   "SERVICE_VISIT_UPDATE_BILLING_ADDRESS": {
     "TYPE": "POST",
     "URI": "bff/mobile-app/service/billing-address/service-visit/{serviceVisitID}",
+    "AUTH": true
+  },
+  "SERVICE_STEPS": {
+    "TYPE": "GET",
+    "URI": "bff/mobile-app/service/steps/{serviceVisitID}",
+    "AUTH": true
+  },
+  "SERVICE_SAVE_LOCATION": {
+    "TYPE": "POST",
+    "URI": "mobile-app/service/appointments/{serviceVisitID}/save-address",
     "AUTH": true
   },
   "ENERGY_OWNERSHIP_GET_TOGGLES": {
@@ -1501,6 +1526,11 @@
   "COMMERCE_RECOMMENDATIONS_CATEGORIES": {
     "TYPE": "POST",
     "URI": "commerce-api/recommendations/categories/v1{locale}",
+    "AUTH": true
+  },
+  "COMMERCE_CROSS_SELL_ASSOCIATIONS": {
+    "TYPE": "POST",
+    "URI": "commerce-api/recommendations/associations/v1",
     "AUTH": true
   },
   "COMMERCE_GET_ADDRESS": {
@@ -2008,6 +2038,21 @@
     "URI": "bff/v2/mobile-app/financing/acquisition/save-inspection",
     "AUTH": true
   },
+  "FINANCING_GET_ELIGIBLE_DELIVERY_LINKS": {
+    "TYPE": "GET",
+    "URI": "mobile-app/financing/eligible-delivery-links",
+    "AUTH": true
+  },
+  "FINANCING_GET_DELIVERY_LINK": {
+    "TYPE": "GET",
+    "URI": "mobile-app/financing/delivery-link",
+    "AUTH": true
+  },
+  "FINANCING_SAVE_DELIVERY_LINK_INTENT": {
+    "TYPE": "POST",
+    "URI": "mobile-app/financing/delivery-link-intent",
+    "AUTH": true
+  },
   "FINANCING_SUBMIT_APPOINTMENT": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/financing/appointment/save",
@@ -2298,11 +2343,6 @@
     "URI": "bff/mobile-app/account/contact-info-assets",
     "AUTH": true
   },
-  "VEHICLE_DETAILS_ASSETS_REQUEST": {
-    "TYPE": "GET",
-    "URI": "bff/v2/mobile-app/ownership/vehicle-details-assets",
-    "AUTH": true
-  },
   "ESA_FETCH_ELIGIBLE": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/esa/eligible",
@@ -2466,6 +2506,11 @@
   "INSURANCE_CN_SAVE_CLAIM_UPLOAD_PHOTO": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/insurance-cn/upload-claim-photo",
+    "AUTH": true
+  },
+  "SERVICE_GET_TESLA_INSURANCE_OPEN_CLAIMS": {
+    "TYPE": "GET",
+    "URI": "mobile-app/service/insurance/claims",
     "AUTH": true
   }
 }

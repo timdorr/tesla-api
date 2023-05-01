@@ -7,6 +7,8 @@ description: Endpoint for Trip Plan based on origin, destination, vehicle model 
 Trip planner allows the user to plan a trip based on the vehicle specs and state.
 Trips that requires charging will set stop points based on Tesla Super Charge stops on the way.
 
+- [Share trip to car](vehicle/commands/sharing.md)
+
 ## POST `trip-planner/api/v1/tripplan`
 
 Request a trip plan based on the car model, origin, destination and state of energy (charge).

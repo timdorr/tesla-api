@@ -8,6 +8,7 @@
 - [Users](api-basics/users.md)
 - [Vehicles](api-basics/vehicles.md)
 - [Energy Products](api-basics/products.md)
+- [Trip Planner](api-basics/tripplan.md)
 
 ## Vehicle
 

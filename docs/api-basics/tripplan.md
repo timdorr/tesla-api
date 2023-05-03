@@ -17,7 +17,7 @@ Request a trip plan based on the car model, origin, destination and remaining ch
 
 | Field         | Example                 | Description                                                               |
 | :------------ | :---------------------- | :------------------------------------------------------------------------ |
-| `car_trim`    | `74D`                   | Car model Varient                                                         |
+| `car_trim`    | `74D`                   | Car Model Variant                                                         |
 | `car_type`    | `ModelY`                | Car model                                                                 |
 | `destination` | `37.485767,-122.240207` | Destination Latitude and Longitude, separated by comma                    |
 | `origin`      | `37.79307,-125.108`     | Origin Latitude and Longitude, separated by comma                         |

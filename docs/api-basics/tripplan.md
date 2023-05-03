@@ -11,7 +11,7 @@ Trips that requires charging will set stop points based on Tesla Super Charge st
 
 ## POST `trip-planner/api/v1/tripplan`
 
-Request a trip plan based on the car model, origin, destination and state of energy (charge).
+Request a trip plan based on the car model, origin, destination and remaining charge.
 
 ### Request body parameters
 

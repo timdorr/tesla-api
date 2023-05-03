@@ -1,5 +1,5 @@
 ---
-description: Endpoint for Trip Plan based on origin, destination, vehicle model and state of charge of the vehicle.
+description: Endpoints for Trip Planner
 ---
 
 # Trip Planner

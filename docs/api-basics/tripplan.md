@@ -4,7 +4,7 @@ description: Endpoints for Trip Planner
 
 # Trip Planner
 
-Plans a route based on the vehicle specifications and charge state. Trips that require charging will set waypoints based on Tesla Supercharger locations along the route. 
+Plans a route based on the vehicle specifications and charge state. Trips that require charging will set waypoints based on Tesla Supercharger locations along the route.
 
 - [Share trip to car](vehicle/commands/sharing.md)
 

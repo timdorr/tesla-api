@@ -439,6 +439,7 @@ return a generic set of codes related to a Model 3.
 | PX01   | Performance Plus                                         |                                                           |
 | PX4D   | 90 kWh Performance                                       |                                                           |
 | PX6D   | Zero to 60 in 2.5 sec                                    |                                                           |
+| PW01   | Pedestrian warning speaker                               | Superhorn                                                 |
 | PWS0   |                                                          | Model S 10.2020                                           |
 | QLBS   | Black Premium Interior                                   |                                                           |
 | QLFC   | Cream Premium Interior                                   |                                                           |
@@ -524,7 +525,7 @@ return a generic set of codes related to a Model 3.
 | SG01   | Steering Gear Single Chip                                | Model 3/Y CN MIC                                          |
 | SG02   | Steering Gear Dual Chip                                  | Model 3/Y CN MIC (2023)                                   |
 | SLR0   | No Rear Spoiler                                          |                                                           |
-| SLR1   | Carbon Fibre Spoiler                                     | Model 3                                                   |
+| SLR1   | Carbon Fibre Spoiler                                     |                                                           |
 | SP00   | No Security Package                                      |                                                           |
 | SP01   | Security Package                                         |                                                           |
 | SPT31  | Performance Upgrade                                      | Model 3                                                   |

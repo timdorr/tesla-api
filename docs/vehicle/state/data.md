@@ -215,6 +215,8 @@ Currently, this has the exact same response structure as the newer vehicle_data 
 
 ## GET `/api/1/vehicles/{id}/latest_vehicle_data`
 
+{% hint style='warning' %} This endpoint was depracted in favour of the `vehicle_data` endpoint and returns 404. {% endhint %}
+
 This is cached data, pushed by the vehicle on sleep, wake and around OTAs.
 
 ### Response

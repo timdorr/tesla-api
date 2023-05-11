@@ -6,7 +6,7 @@ description: These endpoints give the state of the various subsystems of the car
 
 {% page-ref page="data.md" %}
 
-{% hint style='warning' %} All `data_request` endpoints have been depracted in favour of the `vehicle_data` endpoint. All of them are found in the response of `vehicle_data` within sub-categories and the documentation of these/what the different fields mean, still applies. {% endhint %}
+{% hint style='warning' %} All `data_request` endpoints have been depracted in favour of the `vehicle_data` endpoint. All of the data they return is found in the response of `vehicle_data` within sub-categories and the documentation of these/what the different fields mean, still applies. {% endhint %}
 
 A rollup of all the `data_request` endpoints plus vehicle configuration.
 

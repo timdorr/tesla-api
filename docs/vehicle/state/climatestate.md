@@ -1,5 +1,7 @@
 # Climate State
 
+{% hint style='warning' %} This endpoint was depracted and returns 404. {% endhint %}
+
 ## GET `/api/1/vehicles/{id}/data_request/climate_state`
 
 Information on the current internal temperature and climate control system.

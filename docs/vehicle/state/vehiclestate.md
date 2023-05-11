@@ -1,5 +1,7 @@
 # Vehicle State
 
+{% hint style='warning' %} This endpoint was depracted and returns 404. {% endhint %}
+
 ## GET `/api/1/vehicles/{id}/data_request/vehicle_state`
 
 Returns the vehicle's physical state, such as which doors are open.

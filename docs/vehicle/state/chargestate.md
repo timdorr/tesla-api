@@ -1,5 +1,9 @@
 # Charge State
 
+{% hint style='warning' %}
+This endpoint was deprecated and returns 404.
+{% endhint %}
+
 ## GET `/api/1/vehicles/{id}/data_request/charge_state`
 
 Information on the state of charge in the battery and its various settings.

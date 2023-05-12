@@ -34,8 +34,9 @@ This endpoint requires a singular parameter `note`, inside the POST body with th
 # Set Vehicle Name
 
 {% hint style='info' %}
-This endpoint currently returns `not_supported` as a response, due to not being implemented / enabled yet.
-As of app version 4.19.0-1639, this endpoint can no longer be found inside the `ownerapi_endpoints.json` file.
+Previously the endpoint returned `not_supported` as a response, due to not being implemented / enabled yet.
+Later in app version 4.19.0-1639, the endpoint was removed from the `ownerapi_endpoints.json` file.
+As of App version 4.20.5 you can change your vehicle name on software versions 2023.12+
 {% endhint %}
 
 ## POST `/api/1/vehicles/{id}/command/set_vehicle_name`

@@ -1,5 +1,9 @@
 # Vehicle Config
 
+{% hint style='warning' %}
+This endpoint was deprecated and returns 404.
+{% endhint %}
+
 ## GET `/api/1/vehicles/{id}/data_request/vehicle_config`
 
 Returns the vehicle's configuration information including model, color, badging and wheels.

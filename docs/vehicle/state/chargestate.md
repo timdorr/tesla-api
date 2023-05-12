@@ -1,6 +1,8 @@
 # Charge State
 
-{% hint style='warning' %} This endpoint was depracted and returns 404. {% endhint %}
+{% hint style='warning' %}
+This endpoint was deprecated and returns 404.
+{% endhint %}
 
 ## GET `/api/1/vehicles/{id}/data_request/charge_state`
 

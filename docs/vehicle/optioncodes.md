@@ -479,7 +479,7 @@ return a generic set of codes related to a Model 3.
 | RD04   | Rear Drive Unit Plaid                                    | Model S/X 2021 (Rear drive unit)                          |
 | RD05   | Low Current MOSFET PM228 Rear Drive Unit                 | Model 3/Y LR/DM                                           |
 | RD06   | High Current MOSFET PM228 Rear Drive Unit                | Model 3/Y 2022 (Perf version)                             |
-| RD07   | 4DU Rear Drive Unit                                      | Model 3/Y 2023 (Perf version)                             |
+| RD07   | 4DU Rear Drive Unit                                      | Model 3/Y 2023                                            |
 | RDU2   | Rear large drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Perf version)                             |
 | RDU3   | Rear small drive unit                                    | Model S/X 2015-2017+- (DM version)                        |
 | RDU4   | Rear small drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Plus version)                             |

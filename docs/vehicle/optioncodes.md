@@ -38,7 +38,7 @@ return a generic set of codes related to a Model 3.
 | AF00   | No HEPA Filter                                           | Standard air filter, no air ionizer                       |
 | AF02   | HEPA Filter                                              |                                                           |
 | AH00   | No Accessory Hitch                                       |                                                           |
-| AP04   | Autopilot 4.0                                            | Model S 02.2023                                           |
+| AP04   | Autopilot 4.0                                            | Model S 02.2023\Model Y from 10May2023                    |
 | APB1   | Autopilot with convenience features                      | Model S                                                   |
 | APBS   | Autopilot                                                | Model 3 Autopilot                                         |
 | APF0   | Autopilot Firmware 2.0 Base                              |                                                           |

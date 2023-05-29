@@ -153,6 +153,7 @@ return a generic set of codes related to a Model 3.
 | COPT   | Country: Portugal                                        |                                                           |
 | COSE   | Country: Sweden                                          |                                                           |
 | COSG   | Country: Singapore                                       |                                                           |
+| COTR   | Country: Turkey                                          |                                                           |
 | COUS   | Country: United States                                   |                                                           |
 | CP00   | NA Chargeport (TPC)                                      | MX/MS 2021                                                |
 | CP01   | Charge port Gen? CCS size                                | MS/MX 2022                                                |

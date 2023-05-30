@@ -1133,6 +1133,11 @@
     "URI": "bff/v2/mobile-app/energy/feature-flags",
     "AUTH": true
   },
+  "ENERGY_OWNERSHIP_GET_BILLING_DETAILS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/energy/billing-information",
+    "AUTH": true
+  },
   "ENERGY_SITE_PROGRAM_CREATE_OR_EDIT_BILLING_ADDRESS": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/energy-site-program/billing-address",
@@ -1176,6 +1181,11 @@
   "ENERGY_SERVICE_GET_SITE_INFORMATION": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/energy-support/site-information",
+    "AUTH": true
+  },
+  "ENERGY_SERVICE_GET_INSTALLER_INFORMATION": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/energy-support/installer-information",
     "AUTH": true
   },
   "ENERGY_SERVICE_GET_SUPPORT_CASES": {
@@ -1261,6 +1271,16 @@
   "LOOTBOX_PAST_REFERRAL_DATA": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/referrals/past-referrals",
+    "AUTH": true
+  },
+  "LOOTBOX_GET_VOTE_HISTORY": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/referrals/vote/history",
+    "AUTH": true
+  },
+  "LOOTBOX_SUBMIT_VOTES": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/referrals/vote/record",
     "AUTH": true
   },
   "GET_FILE_LIST_BY_METADATA": {
@@ -1841,6 +1861,11 @@
   "FINANCING_GET_SIGNED_TOKEN": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/financing/signed-token",
+    "AUTH": true
+  },
+  "FINANCING_GET_STATIC_ASSETS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/static-assets",
     "AUTH": true
   },
   "FINANCING_GET_AMORTIZATION": {

@@ -14,8 +14,12 @@ Schedules a software update to be installed, if one is available.
 
 ```json
 {
+  "expected_duration_sec": 3000,
   "reason": "",
-  "result": true
+  "result": true,
+  "scheduled_time_ms": 1685735308001,
+  "status": "scheduled",
+  "warning_time_remaining_ms": 120000
 }
 ```
 

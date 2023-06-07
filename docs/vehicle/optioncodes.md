@@ -595,6 +595,7 @@ return a generic set of codes related to a Model 3.
 | TY1D   | 21" P Zero                                               | Model Y 2022                                              |
 | TY9A   | Tires MY                                                 | Tires 19" All Season Square                               |
 | TY9B   | 19” Summer Square - Dual Sourcing Hankook                | Model Y 2023                                              |
+| TY9K   | 19” Kumho Majesty 9 Solus TA91                           | Model Y 2023 Chine                                         |
 | UM01   | Universal Mobile Charger - US Port (Single)              |                                                           |
 | UT3P   | Suede Grey Premium Headliner                             | Ultrasuede Grey                                           |
 | UTAB   | Black Alcantara Headliner                                |                                                           |

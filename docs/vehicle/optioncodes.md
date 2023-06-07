@@ -162,6 +162,7 @@ return a generic set of codes related to a Model 3.
 | CPF1   | Premium Connectivity                                     | 1 year                                                    |
 | CPW1   | 20" Performance Wheels                                   |                                                           |
 | CR01   | Sanden Import Compressor                                 | MY 2023 China                                             |
+| CR02   | Denso Import Compressor                                  | MY 2023 China                                             |
 | CW00   | No Weather Package                                       | No Cold Weather Package                                   |
 | CW02   | Weather Package                                          | Subzero Weather Package                                   |
 | DA00   | No Autopilot                                             |                                                           |

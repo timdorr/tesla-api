@@ -1283,6 +1283,21 @@
     "URI": "bff/v2/mobile-app/referrals/vote/record",
     "AUTH": true
   },
+  "LOOTBOX_GET_FILE_LIST_BY_METADATA": {
+    "TYPE": "GET",
+    "URI": "mobile-app/files/lootbox/files-by-metadata",
+    "AUTH": true
+  },
+  "LOOTBOX_UPLOAD_FILE": {
+    "TYPE": "POST",
+    "URI": "mobile-app/files/lootbox",
+    "AUTH": true
+  },
+  "LOOTBOX_GET_FILE": {
+    "TYPE": "GET",
+    "URI": "mobile-app/files/lootbox/{uuid}",
+    "AUTH": true
+  },
   "GET_FILE_LIST_BY_METADATA": {
     "TYPE": "GET",
     "URI": "bff/mobile-app/files/product-files/files-by-metadata",
@@ -1296,6 +1311,11 @@
   "REFERRAL_GET_PRODUCT_INFO": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/referrals/product-info",
+    "AUTH": true
+  },
+  "REFERRAL_GET_PRODUCT_DATA": {
+    "TYPE": "GET",
+    "URI": "mobile-app/referrals/product-data",
     "AUTH": true
   },
   "REFERRAL_GET_CONTACT_LIST": {
@@ -1536,6 +1556,16 @@
   "SERVICE_MESSAGES_USER_LIST": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/service/messages/users",
+    "AUTH": true
+  },
+  "COMMERCE_EVENTS_CONTENTS": {
+    "TYPE": "GET",
+    "URI": "commerce-api/events/contents/v1",
+    "AUTH": true
+  },
+  "COMMERCE_EVENTS_CONTENTS_POST": {
+    "TYPE": "POST",
+    "URI": "commerce-api/events/contents/v1",
     "AUTH": true
   },
   "COMMERCE_CATEGORIES": {
@@ -2063,19 +2093,29 @@
     "URI": "bff/v2/mobile-app/financing/acquisition/save-inspection",
     "AUTH": true
   },
+  "FINANCING_SAVE_INSPECTION_ELIGIBILITY": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/financing/acquisition/inspection-eligibility",
+    "AUTH": true
+  },
   "FINANCING_GET_ELIGIBLE_DELIVERY_LINKS": {
     "TYPE": "GET",
-    "URI": "mobile-app/financing/eligible-delivery-links",
+    "URI": "bff/v2/mobile-app/financing/eligible-delivery-links",
+    "AUTH": true
+  },
+  "FINANCING_GET_ELIGIBLE_LEASE_LINKS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/eligible-lease-links",
     "AUTH": true
   },
   "FINANCING_GET_DELIVERY_LINK": {
     "TYPE": "GET",
-    "URI": "mobile-app/financing/delivery-link",
+    "URI": "bff/v2/mobile-app/financing/delivery-link",
     "AUTH": true
   },
   "FINANCING_SAVE_DELIVERY_LINK_INTENT": {
     "TYPE": "POST",
-    "URI": "mobile-app/financing/delivery-link-intent",
+    "URI": "bff/v2/mobile-app/financing/delivery-link-intent",
     "AUTH": true
   },
   "FINANCING_SUBMIT_APPOINTMENT": {

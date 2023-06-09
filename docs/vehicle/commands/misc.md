@@ -85,7 +85,23 @@ This is can be triggered inside of the vehicle as well, by holding the lower lef
 
 ## POST `/api/1/vehicles/{id}/command/remote_boombox`
 
-Let the car fart remotely on version 2022.44.25.1 and above.
+Let the car fart remotely on version 2022.44.25.1 and above or use boombox v2 on supported vehicles.
+
+### Parameters
+
+This endpoint does not require a POST body to fart remotely but needs one to use boombox v2.
+
+| Parameter | Example | Description |
+| :-------- | :------ | :---------- |
+| action    | 0       | Fart        |
+
+### Example
+
+```json
+{
+  "action": 0
+}
+```
 
 ### Response
 

@@ -91,9 +91,15 @@ Let the car fart remotely on version 2022.44.25.1 and above or use boombox v2 on
 
 This endpoint does not require a POST body to fart remotely but needs one to use boombox v2.
 
-| Parameter | Example | Description |
-| :-------- | :------ | :---------- |
-| action    | 0       | Fart        |
+| Parameter | Example | Description                             |
+| :-------- | :------ | :-------------------------------------- |
+| action    | 0       | Numerical value representing the action |
+
+The available actions are:
+
+| Action | Corresponding numerical value |
+| :----- | :---------------------------- |
+| Fart   | 0                             |
 
 ### Example
 

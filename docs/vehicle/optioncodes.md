@@ -132,6 +132,7 @@ return a generic set of codes related to a Model 3.
 | COL2   | Metallic                                                 |                                                           |
 | COL3   | Tesla Multi-Coat                                         |                                                           |
 | COAT   | Country: Austria                                         |                                                           |
+| COAU   | Country: Australia                                       |                                                           |
 | COBE   | Country: Belgium                                         |                                                           |
 | COCA   | Country: Canada                                          |                                                           |
 | COCH   | Country: Switzerland                                     |                                                           |
@@ -145,7 +146,7 @@ return a generic set of codes related to a Model 3.
 | COHR   | Country: Croatia                                         |                                                           |
 | COIE   | Country: Ireland                                         |                                                           |
 | COIT   | Country: Italy                                           |                                                           |
-| COIL   | Country: Israel                                           |                                                           |
+| COIL   | Country: Israel                                          |                                                           |
 | COJP   | Country: Japan                                           |                                                           |
 | COKR   | Country: South Korea                                     |                                                           |
 | COLU   | Country: Luxembourg                                      |                                                           |

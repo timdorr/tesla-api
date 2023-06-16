@@ -594,6 +594,7 @@ return a generic set of codes related to a Model 3.
 | TW01   | Tow Package                                              |                                                           |
 | TX20   |                                                          | Model X 2021                                              |
 | TY0A   | 20" All Season Square                                    | Model Y 2022                                              |
+| TY0C   | 20” Michelin, Pilot Sport EV                             | Model Y 2023                                              |
 | TY1A   | 21"                                                      | Model Y 2022                                              |
 | TY1D   | 21" P Zero                                               | Model Y 2022                                              |
 | TY9A   | Tires MY                                                 | Tires 19" All Season Square                               |

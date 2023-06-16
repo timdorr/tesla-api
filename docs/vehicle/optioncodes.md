@@ -152,6 +152,7 @@ return a generic set of codes related to a Model 3.
 | COLU   | Country: Luxembourg                                      |                                                           |
 | CONL   | Country: Netherlands                                     |                                                           |
 | CONO   | Country: Norway                                          |                                                           |
+| CONZ   | Country: New Zealand                                     |                                                           |
 | COPT   | Country: Portugal                                        |                                                           |
 | COSE   | Country: Sweden                                          |                                                           |
 | COSG   | Country: Singapore                                       |                                                           |

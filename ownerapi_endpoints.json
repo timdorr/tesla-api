@@ -1008,6 +1008,21 @@
     "URI": "bff/v2/mobile-app/macgyver/service-type",
     "AUTH": true
   },
+  "TESLA_ELECTRIC_VEHICLES": {
+    "TYPE": "GET",
+    "URI": "mobile-app/tesla-electric/vehicles",
+    "AUTH": true
+  },
+  "TESLA_ELECTRIC_SCHEDULE": {
+    "TYPE": "GET",
+    "URI": "mobile-app/tesla-electric/unlimited-charging-schedule",
+    "AUTH": true
+  },
+  "TESLA_ELECTRIC_PRICING_DETAILS": {
+    "TYPE": "GET",
+    "URI": "mobile-app/tesla-electric/pricing-details",
+    "AUTH": true
+  },
   "SERVICE_MACGYVER_DIAGNOSTIC": {
     "TYPE": "POST",
     "URI": "mobile-app/macgyver/diagnostic",
@@ -1136,6 +1151,11 @@
   "ENERGY_OWNERSHIP_GET_BILLING_DETAILS": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/energy/billing-information",
+    "AUTH": true
+  },
+  "ENERGY_SERVICE_UPLOAD_FILE": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/energy/files",
     "AUTH": true
   },
   "ENERGY_SITE_PROGRAM_CREATE_OR_EDIT_BILLING_ADDRESS": {
@@ -1368,6 +1388,31 @@
     "URI": "bff/v2/mobile-app/upgrades/refunds/v2",
     "AUTH": true
   },
+  "UPGRADES_V3_CONFIG": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/upgrades/v3/config",
+    "AUTH": true
+  },
+  "UPGRADES_V3_ELIGIBLE": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/upgrades/v3/eligible",
+    "AUTH": true
+  },
+  "UPGRADES_V3_CART": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/upgrades/v3/cart",
+    "AUTH": true
+  },
+    "UPGRADES_V3_PAYMENT_CREATE": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/upgrades/v3/payment/create",
+    "AUTH": true
+  },
+  "UPGRADES_V3_PAYMENT_COMPLETE": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/upgrades/v3/payment/complete",
+    "AUTH": true
+  },
   "USER_ACCOUNT_GET_DETAILS": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/account/details",
@@ -1476,6 +1521,26 @@
   "MANAGE_POST_BILL_ME_LATER_TOGGLE": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/bill-me-later/security-toggle",
+    "AUTH": true
+  },
+  "MANAGE_UPGRADES_GET_ITEMS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/manage-upgrades/v1/purchased/items",
+    "AUTH": true
+  },
+  "MANAGE_UPGRADES_GET_UPGRADE": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/manage-upgrades/v1/purchased/upgrade",
+    "AUTH": true
+  },
+  "MANAGE_UPGRADES_GET_ESA": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/manage-upgrades/v1/purchased/esa",
+    "AUTH": true
+  },
+  "MANAGE_UPGRADES_POST_REFUND": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/manage-upgrades/v1/refund/upgrade",
     "AUTH": true
   },
   "BILLING_ADDRESS_FORM_FEATURE_FLAG": {
@@ -2113,6 +2178,11 @@
     "URI": "bff/v2/mobile-app/financing/delivery-link",
     "AUTH": true
   },
+  "FINANCING_GET_NEW_MODEL_RATES": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/financing/new-model-rates",
+    "AUTH": true
+  },
   "FINANCING_SAVE_DELIVERY_LINK_INTENT": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/financing/delivery-link-intent",
@@ -2263,6 +2333,11 @@
     "URI": "bff/v2/mobile-app/feature-flag/TAO-14025-add-driver-flow",
     "AUTH": true
   },
+  "CHARGING_FEATURE_FLAG_PDF_HISTORY_EXPORT": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/feature-flag/tao-22345-enable-charging-history-pdf-export",
+    "AUTH": true
+  },
   "CONTACT_US_CLASSIFICATION": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/contact-us/classify-narrative",
@@ -2320,6 +2395,11 @@
   },
   "VEHICLE_UPLOAD_VAULT": {
     "TYPE": "POST",
+    "URI": "api/1/users/vault_profile",
+    "AUTH": true
+  },
+  "USER_RESET_VAULT": {
+    "TYPE": "DELETE",
     "URI": "api/1/users/vault_profile",
     "AUTH": true
   },
@@ -2453,6 +2533,31 @@
     "URI": "bff/v2/mobile-app/esa/v2/purchased",
     "AUTH": true
   },
+  "ESA_V3_CONFIG": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/esa/v3/config",
+    "AUTH": true
+  },
+    "ESA_V3_ELIGIBLE": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/esa/v3/eligible",
+    "AUTH": true
+  },
+  "ESA_V3_CART": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/esa/v3/cart",
+    "AUTH": true
+  },
+  "ESA_V3_PAYMENT_CREATE": {
+    "TYPE": "POST",
+    "URI": "mobile-app/esa/v3/payment/create",
+    "AUTH": true
+  },
+  "ESA_V3_PAYMENT_COMPLETE": {
+    "TYPE": "POST",
+    "URI": "mobile-app/esa/v3/payment/complete",
+    "AUTH": true
+  },
   "VEHICLE_DETAILS_ASSETS_REQUEST_V2": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/ownership/vehicle-details-assets/v2",
@@ -2473,12 +2578,17 @@
     "URI": "bff/mobile-app/splash-feature-flag",
     "AUTH": false
   },
+  "SPLASH_VIDEO": {
+    "TYPE": "GET",
+    "URI": "bff/mobile-app/splash-assets",
+    "AUTH": false
+  },
   "INBOX_UPLOAD_FILE": {
     "TYPE": "POST",
     "URI": "bff/mobile-app/files/product-files",
     "AUTH": true
   },
-  "INBOX_GET_FILE": {
+  "GET_PRODUCT_FILE": {
     "TYPE": "GET",
     "URI": "bff/mobile-app/files/product-files/{uuid}",
     "AUTH": true
@@ -2577,5 +2687,10 @@
     "TYPE": "GET",
     "URI": "mobile-app/service/insurance/claims",
     "AUTH": true
+  },
+  "GUEST_MODE_CARDS": {
+    "TYPE": "GET",
+    "URI": "mobile-app/guest/cards",
+    "AUTH": false
   }
 }

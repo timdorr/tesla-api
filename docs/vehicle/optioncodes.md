@@ -432,6 +432,7 @@ return a generic set of codes related to a Model 3.
 | PL30   | No Aluminum Pedal                                        | Model 3/Y                                                 |
 | PL31   | Performance Aluminum Pedals                              | Model 3/Y                                                 |
 | PR00   | Midnight Cherry Red Color                                |                                                           |
+| PR01   | Ultra Red Color                                          |                                                           |
 | PRM30  | Partial Premium Interior                                 |                                                           |
 | PRM31  | Premium Interior                                         |                                                           |
 | PRM3S  | Standard Interior                                        |                                                           |

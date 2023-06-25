@@ -1,0 +1,108 @@
+syntax = "proto3";
+
+/* unused */
+enum ActiveVaultReason {
+  ACTIVE_VAULT_REASON_UNKNOWN = 0;
+  ACTIVE_VAULT_REASON_OWNER = 1;
+  ACTIVE_VAULT_REASON_NETWORK = 2;
+  ACTIVE_VAULT_REASON_WALKUP = 3;
+  ACTIVE_VAULT_REASON_OPEN = 4;
+}
+
+message EncryptedData {
+  bytes data = 1;
+  bytes iv = 2;
+  bytes tag = 3;
+}
+
+message Item {
+  int64 modifiedAt = 1;
+  bytes label = 2;
+  EncryptedData data = 3;
+  RemoteData remoteData = 4;
+  bytes referenceId = 5;
+  bool labelIsPlaintext = 6;
+}
+message OpenVault {
+  string uuid = 1;
+}
+
+message OptIn {
+  VaultInfo vaultInfo = 1;
+  string pin = 4;
+  bytes pubkey = 5;
+}
+
+/* unused */
+message OptIns {
+  repeated OptIn optIns = 1;
+}
+
+message RemoteClientKey {
+  repeated VaultKey pubkeys = 1;
+}
+
+/* used in carserver... perhaps that's how we manipulate things? */
+message RemoteCommand {
+  oneof sub_message {
+    OptIn optIn = 1;
+    OpenVault openVault = 2;
+  }
+}
+
+message RemoteData {
+  string url = 1;
+  bytes etag = 2;
+  bytes sha = 3;
+}
+
+message UnencryptedItem {
+  int64 modifiedAt = 1;
+  bytes data = 2;
+}
+
+/* probably what we receive on /vault_profile */
+message Vault {
+  string uuid = 1;
+  repeated VaultClass classes = 2;
+  VaultInfo vaultInfo = 3;
+  RemoteClientKey remoteClientKey = 4;
+  bytes pubkeysReferenceId = 5;
+}
+
+message VaultClass {
+  string name = 1;
+  EncryptedData labelKey = 2;
+  EncryptedData dataKey = 3;
+  repeated Item items = 4;
+  repeated WrappedClassKey wrappedClassKeys = 5;
+}
+
+message VaultInfo {
+  string uuid = 1;
+  string publicUsername = 2;
+  UnencryptedItem publicProfilePicture = 3;
+  string publicGamername = 4;
+}
+
+/* unused */
+message VaultInfos {
+  repeated VaultInfo vaultInfos = 1;
+}
+
+message VaultKey {
+  vaultKeyType vaultKeyType = 1;
+  string pubkey = 2;
+}
+
+message WrappedClassKey {
+  string name = 1;
+  bytes key = 2;
+  string pubkeyId = 3;
+}
+
+enum vaultKeyType {
+  VEHICLE_CERT = 0;
+  MOBILE_ID = 1;
+  MOBILE_BACKUP_PUBKEY = 2;
+}

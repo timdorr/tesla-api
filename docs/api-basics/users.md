@@ -23,14 +23,14 @@ Get the current user's information.
 ## GET `/api/1/users/vault_profile`
 
 {% hint style='info' %}
-This endpoint is a mystery, it returns what appears to be base64 encoded strings. When decoded it has a bunch of jibberish and then two certificates and some readable strings, and what appears to be a hash of something.
+This endpoint is a mystery and it's current purpose is unknown, but we know how to decode it. First of all take the `base64_data` and decode it. Finally, deserialize the message using the `Vault` message from protobuf located at https://github.com/timdorr/tesla-api/blob/master/vault.proto
 {% endhint %}
 
 ### Response
 
 ```json
 {
-  "vault": "base64_jibberish"
+  "vault": "base64_data"
 }
 ```
 

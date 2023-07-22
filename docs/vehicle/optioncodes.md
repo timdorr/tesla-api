@@ -558,6 +558,7 @@ return a generic set of codes related to a Model 3.
 | SU3C   | Coil Spring Suspension                                   |                                                           |
 | SWF0   |                                                          | Model 3/Y                                                 |
 | SWF1   | Steering Wheel FW Enabled                                | Model 3/Y                                                 |
+| T38Q   | Tires M3                                                 | 18" Hankook Ventus S1 A/S                                 |
 | T3CA   | Tires M3                                                 | 19" Continental All Season, Square                        |
 | T3HS   | Tires M3                                                 | 19" Hankook Summer Square                                 |
 | T3MA   | Tires M3                                                 | 18" Michelin All Season, Square                           |

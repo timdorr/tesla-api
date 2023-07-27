@@ -34,7 +34,6 @@ module TeslaApi
         @base_uri + "/api/1",
         client_options
       ) { |conn|
-        # conn.response :logger, nil, {headers: true, bodies: true}
         conn.request :json
         conn.response :json
         conn.response :raise_error

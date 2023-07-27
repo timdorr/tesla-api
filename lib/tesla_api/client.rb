@@ -15,6 +15,8 @@ module TeslaApi
       retry_options: nil,
       base_uri: nil,
       sso_uri: nil,
+      logger_bodies: false,
+      logger_headers: false,
       client_options: {headers: {"Accept" => "application/json"}}
     )
       @email = email
@@ -32,11 +34,11 @@ module TeslaApi
         @base_uri + "/api/1",
         client_options
       ) { |conn|
-        # conn.response :logger, nil, {headers: true, bodies: true}
         conn.request :json
         conn.response :json
         conn.response :raise_error
         conn.request :retry, retry_options if retry_options # Must be registered after :raise_error
+        conn.response :logger, ::Logger.new($stdout), bodies: logger_bodies, headers: logger_headers if logger_bodies || logger_headers
         conn.adapter Faraday.default_adapter
       }
     end

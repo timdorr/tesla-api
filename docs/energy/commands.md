@@ -15,3 +15,45 @@ These endpoints are not yet documented.
 | POST | `program`                           |
 | POST | `event`                             |
 | POST | `preference`                        |
+
+## POST `api/1/energy_sites/{site_id}/backup`
+
+Set the battery backup reserve energy percentage for grid outages.
+
+### Parameters
+
+| Parameter              | Example | Description                        |
+| :--------------------- | :------ | :--------------------------------- |
+| backup_reserve_percent | 75      | The percentage for backup reserve. |
+
+### Response
+
+```json
+{
+  "response": {
+    "code": 201,
+    "message": "Updated"
+  }
+}
+```
+
+## POST `api/1/energy_sites/{site_id}/site_name`
+
+Set your energy site name.
+
+### Parameters
+
+| Parameter | Example      | Description           |
+| :-------- | :----------- | :-------------------- |
+| site_name | Wardenclyffe | New energy site name. |
+
+### Response
+
+```json
+{
+  "response": {
+    "code": 201,
+    "message": "Updated"
+  }
+}
+```

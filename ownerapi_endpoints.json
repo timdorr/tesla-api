@@ -558,6 +558,11 @@
     "URI": "api/1/vehicles/{vehicle_id}/charge_history",
     "AUTH": true
   },
+  "VEHICLE_ENERGY_SITES": {
+    "TYPE": "GET",
+    "URI": "api/1/vehicles/{vehicle_id}/energy_sites",
+    "AUTH": true
+  },
   "ENERGY_SITE_PROGRAM_DETAILS": {
     "TYPE": "GET",
     "URI": "api/1/energy_sites/{site_id}/program",
@@ -651,11 +656,6 @@
   "STATIC_CHARGER_FILE": {
     "TYPE": "GET",
     "URI": "static/chargers/{file_path}",
-    "AUTH": true
-  },
-  "PLAN_TRIP_CN": {
-    "TYPE": "POST",
-    "URI": "api/1/vehicles/plan_trip",
     "AUTH": true
   },
   "PLACE_SUGGESTIONS": {
@@ -811,6 +811,16 @@
   "SERVICE_CENTER_OPEN_SLOTS": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/service/locations/center/slots",
+    "AUTH": true
+  },
+  "SERVICE_NEAREST_LOCATIONS": {
+    "TYPE": "POST",
+    "URI": "bff/mobile-app/service/locations/nearest",
+    "AUTH": true
+  },
+  "SERVICE_SLOTS_BY_TRTID": {
+    "TYPE": "POST",
+    "URI": "bff/mobile-app/service/locations/slots-by-trtid",
     "AUTH": true
   },
   "SERVICE_CENTER_FETCH_PREFERRED_CENTER": {
@@ -1273,6 +1283,16 @@
     "URI": "bff/v2/mobile-app/energy-support/chat-availability",
     "AUTH": true
   },
+  "ENERGY_SERVICE_GET_POWERWALL_REBATE_DETAILS": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/energy-support/powerwall-rebate",
+    "AUTH": true
+  },
+  "ENERGY_SERVICE_POST_POWERWALL_REBATE_DETAILS": {
+    "TYPE": "POST",
+    "URI": "bff/v2/mobile-app/energy-support/powerwall-rebate",
+    "AUTH": true
+  },
   "LOOTBOX_USER_INFO": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/referrals",
@@ -1326,6 +1346,11 @@
   "REFERRAL_GET_USER_INFO": {
     "TYPE": "GET",
     "URI": "bff/v2/mobile-app/referrals/user-info",
+    "AUTH": true
+  },
+  "REFERRAL_GET_REFERRAL_SUMMARY": {
+    "TYPE": "GET",
+    "URI": "bff/v2/mobile-app/referrals/referral-summary",
     "AUTH": true
   },
   "REFERRAL_GET_PRODUCT_INFO": {
@@ -1403,7 +1428,7 @@
     "URI": "bff/v2/mobile-app/upgrades/v3/cart",
     "AUTH": true
   },
-    "UPGRADES_V3_PAYMENT_CREATE": {
+  "UPGRADES_V3_PAYMENT_CREATE": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/upgrades/v3/payment/create",
     "AUTH": true
@@ -2538,7 +2563,7 @@
     "URI": "bff/v2/mobile-app/esa/v3/config",
     "AUTH": true
   },
-    "ESA_V3_ELIGIBLE": {
+  "ESA_V3_ELIGIBLE": {
     "TYPE": "POST",
     "URI": "bff/v2/mobile-app/esa/v3/eligible",
     "AUTH": true
@@ -2692,5 +2717,45 @@
     "TYPE": "GET",
     "URI": "mobile-app/guest/cards",
     "AUTH": false
+  },
+  "TEST_DRIVE_LIST": {
+    "TYPE": "GET",
+    "URI": "mobile-app/drive/appointments",
+    "AUTH": true
+  },
+  "TEST_DRIVE_AGREEMENT": {
+    "TYPE": "GET",
+    "URI": "mobile-app/drive/waiver",
+    "AUTH": true
+  },
+  "TEST_DRIVE_SUBMIT_FILES": {
+    "TYPE": "POST",
+    "URI": "mobile-app/drive/approve-agreement/{guid}",
+    "AUTH": true
+  },
+  "TEST_DRIVE_UPLOAD_FILES": {
+    "TYPE": "POST",
+    "URI": "mobile-app/drive/files",
+    "AUTH": true
+  },
+  "TEST_DRIVE_GET_SLOTS": {
+    "TYPE": "POST",
+    "URI": "mobile-app/drive/slots",
+    "AUTH": true
+  },
+  "TEST_DRIVE_CANCEL_APPOINTMENT": {
+    "TYPE": "PUT",
+    "URI": "mobile-app/drive/appointments/{guid}",
+    "AUTH": true
+  },
+  "TEST_DRIVE_UPDATE_APPOINTMENT": {
+    "TYPE": "PATCH",
+    "URI": "mobile-app/drive/appointments/{guid}",
+    "AUTH": true
+  },
+  "TEST_DRIVE_GET_SUPPORT_MODELS": {
+    "TYPE": "GET",
+    "URI": "mobile-app/drive/models",
+    "AUTH": true
   }
 }

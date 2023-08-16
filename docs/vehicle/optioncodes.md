@@ -358,6 +358,7 @@ return a generic set of codes related to a Model 3.
 | MT337  | Model 3 Standard Range Plus Rear-Wheel Drive             | 2021 Refresh                                              |
 | MT340  | Model 3 Long Range All-Wheel Drive Performance           | 2022 Refresh                                              |
 | MTS01  | Model S Standard Range                                   |                                                           |
+| MTS17  | Model S Standard Range                                   | 2023 Refresh                                              |
 | MTS03  | Model S Long Range                                       |                                                           |
 | MTS04  | Model S Performance                                      |                                                           |
 | MTS05  | Model S Long Range                                       |                                                           |
@@ -371,6 +372,7 @@ return a generic set of codes related to a Model 3.
 | MTS13  | Model S Dual Motor All-Wheel Drive                       | 2022 Refresh                                              |
 | MTS14  | Model S Plaid Tri Motor All-Wheel Drive                  | 2022 Refresh                                              |
 | MTX01  | Model X Standard Range                                   |                                                           |
+| MTX17  | Model X Standard Range                                   | 2023 Refresh                                              |
 | MTX03  | Model X Long Range                                       |                                                           |
 | MTX04  | Model X Performance                                      |                                                           |
 | MTX05  | Model X Long Range Plus                                  |                                                           |

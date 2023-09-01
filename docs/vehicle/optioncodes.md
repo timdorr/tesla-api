@@ -623,6 +623,7 @@ return a generic set of codes related to a Model 3.
 | W32P   | 20" Performance Wheels                                   | Model 3                                                   |
 | W32D   | 20" Gray Performance Wheels                              | Model 3                                                   |
 | W33D   | 20" Black Performance Wheels 2021                        | Model 3                                                   |
+| W38A   | 18" Photon Wheels                                        | Model 3 Highland                                          |
 | W38B   | 18" Aero Wheels                                          | For the Model 3 and Model Y                               |
 | W39B   | 19" Sport Wheels                                         |                                                           |
 | W40B   | 18" Wheels                                               | Model 3 2021                                              |

@@ -626,6 +626,7 @@ return a generic set of codes related to a Model 3.
 | W38A   | 18" Photon Wheels                                        | Model 3 Highland                                          |
 | W38B   | 18" Aero Wheels                                          | For the Model 3 and Model Y                               |
 | W39B   | 19" Sport Wheels                                         |                                                           |
+| W39S   | 19W Nova Wheels                                          | Model 3 Highland                                          |
 | W40B   | 18" Wheels                                               | Model 3 2021                                              |
 | W41B   | 19" Wheels                                               | Model 3 2022                                              |
 | WR00   | No Wrap                                                  |                                                           |

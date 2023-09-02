@@ -46,12 +46,13 @@ tesla_api = TeslaApi::Client.new(access_token: access_token)
 model_s = tesla_api.vehicles.first # => <TeslaApi::Vehicle>
 
 model_s.wake_up
-model_s.auto_conditioning_start unless model_s.climate_state["is_auto_conditioning_on"]
+vehicle_data = model_s.vehicle_data
+model_s.auto_conditioning_start unless vehicle_data["climate_state"]["is_auto_conditioning_on"]
 
 model_s.set_charge_limit(90)
 model_s.charge_start
 
-charge_state = model_s.charge_state
+charge_state = vehicle_data["charge_state"]
 puts "Your Model S is #{charge_state["charging_state"]} " +
      "with a SOC of #{charge_state["battery_level"]}% " +
      "and an estimate range of #{charge_state["est_battery_range"]} miles"

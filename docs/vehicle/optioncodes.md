@@ -192,7 +192,7 @@ return a generic set of codes related to a Model 3.
 | FC3P   | Front Console Front Console (Premium)                    | Model 3                                                   |
 | FD00   | Low Current IGBT IM130 Drive Unit                        | Front drive unit M3/MY                                    |
 | FD01   | Low Current IGBT IM130 Drive Unit, CN/DE                 | Model 3/Y 2021 (China/Germany)                            |
-| FD02   |                                                          | Model S/X 2021 LR                                         |
+| FD02   | P2 Front Drive Unit                                      | Model S/X 2021 LR                                         |
 | FD03   | P2 Sleeved Front Drive Unit                              | Model S/X 2021 P                                          |
 | FDU2   | Raven Front Drive Unit                                   | Model S/X 2020-2021                                       |
 | FG3B   | Fog Lamp Cover (No Fog lamps)                            | Model 3 Standard+                                         |
@@ -231,10 +231,10 @@ return a generic set of codes related to a Model 3.
 | I38M   | Rear Drive Unit Inverter 800A Mosfet                     | Model 3 Std+, Performance                                 |
 | IBB0   | All Black Interior                                       | Model 3 Old Door Trim                                     |
 | IBB1   | All Black Interior                                       | Model 3 New Door Trim (Since Q1 2021)                     |
-| IC00   |                                                          | Model S/X (Since Q2 2021)                                 |
+| IC00   | Black Colorway                                           | Model S/X (Since Q2 2021)                                 |
 | IC01   | White Colorway Interior                                  | Model S/X (Since Q4 2021)                                 |
 | IC02   | Cream Colorway Interior                                  | Model S/X (Since Q2 2021)                                 |
-| ID00   |                                                          | Model S/X (Since Q2 2021)                                 |
+| ID00   | Ebony Wood Decor                                         | Model S/X (Since Q2 2021)                                 |
 | ID02   | All Black Premium Interior with Carbon Fiber Décor?      | Model S/X (Since Q4 2021)                                 |
 | ID03   |                                                          | Model S/X (Since Q2 2021)                                 |
 | ID3A   | Interior White Aluminum                                  | Model 3/Y                                                 |
@@ -601,6 +601,7 @@ return a generic set of codes related to a Model 3.
 | TSHP   | Heat Pump Thermal Assembly                               | Model Y 2021 (China)                                      |
 | TW00   | No Tow Package                                           |                                                           |
 | TW01   | Tow Package                                              |                                                           |
+| TX02   | 20" Michelin Pilot Sport EV                              | Model X 2022                                              |
 | TX20   |                                                          | Model X 2021                                              |
 | TY0A   | 20" All Season Square                                    | Model Y 2022                                              |
 | TY0C   | 20” Michelin, Pilot Sport EV                             | Model Y 2023                                              |

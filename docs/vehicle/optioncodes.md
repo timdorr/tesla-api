@@ -358,6 +358,10 @@ return a generic set of codes related to a Model 3.
 | MT324  | Model 3 Long Range All-Wheel Drive                       | 2021 Refresh                                              |
 | MT325  | Model 3 Long Range All-Wheel Drive Performance           | 2022 Refresh                                              |
 | MT328  | Model 3 Long Range All-Wheel Drive                       | 2022 Refresh                                              |
+| MT331  | Model 3 Standard Range Plus                              | 2020 Refresh (BT35 Battery)                               |
+| MT332  | Model 3 Standard Range Plus                              | 2020 Refresh (BT35 Battery)                               |
+| MT333  | Model 3 Standard Range Plus                              | 2020 Refresh (BT34 Battery)                               |
+| MT334  | Model 3 Long Range Rear-Wheel Drive                      | 2020 Refresh (BT38 Battery)                               |
 | MT336  | Model 3 Standard Range Plus Rear-Wheel Drive             | 2020 Refresh                                              |
 | MT337  | Model 3 Standard Range Plus Rear-Wheel Drive             | 2021 Refresh                                              |
 | MT340  | Model 3 Long Range All-Wheel Drive Performance           | 2022 Refresh                                              |

@@ -12,11 +12,18 @@ One potentially confusing part of Tesla's API is the switching use of the `id` a
 
 For the state and command APIs, you should be using the `id` field. If your JSON parser doesn't support large numbers (&gt;32 bit), then you can use the `id_s` field for a string version of the ID.
 
-## GET `/api/1/vehicles`
+## GET `/api/1/vehicles?page={page}`
 
 Retrieve a list of your owned vehicles.
 
+The list is limited to a maximum of 100 entries. Use the `page` GET parameter to iterate over the response page and use
+the response `count` variable to determine if another request should be made.
+
 ### Request parameters
+
+| Field  | Example | Description     | Required | Default |
+| :----- | :------ | :-------------- | :------- | :------ |
+| `page` | `1`     | The page number | no       | 1       |
 
 ### Response
 

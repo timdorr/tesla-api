@@ -6,6 +6,20 @@ Commands related to the climate control (HVAC) system.
 
 Start the climate control (HVAC) system. Will cool or heat automatically, depending on set temperature.
 
+### Parameters
+
+| Body Parameter  | Example  | Description                                              |
+| :-------------- | :------- | :------------------------------------------------------- |
+| manual_override | socdoors | Optional, to override the low_soc failure reason (<20%). |
+
+### Example
+
+```json
+{
+  "manual_override": "socdoors"
+}
+```
+
 ### Response
 
 ```json

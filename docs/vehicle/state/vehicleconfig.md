@@ -1,10 +1,6 @@
 # Vehicle Config
 
-{% hint style='warning' %}
-This endpoint was deprecated and returns 404.
-{% endhint %}
-
-## GET `/api/1/vehicles/{id}/data_request/vehicle_config`
+## GET `/api/1/vehicles/{id}/vehicle_data?endpoints=vehicle_config`
 
 Returns the vehicle's configuration information including model, color, badging and wheels.
 
@@ -13,30 +9,49 @@ Returns the vehicle's configuration information including model, color, badging 
 ```json
 {
   "response": {
-    "can_accept_navigation_requests": true,
-    "can_actuate_trunks": true,
-    "car_special_type": "base",
-    "car_type": "models2",
-    "charge_port_type": "US",
-    "ece_restrictions": false,
-    "eu_vehicle": false,
-    "exterior_color": "White",
-    "has_air_suspension": true,
-    "has_ludicrous_mode": false,
-    "motorized_charge_port": true,
-    "plg": true,
-    "rear_seat_heaters": 0,
-    "rear_seat_type": 0,
-    "rhd": false,
-    "roof_color": "None",
-    "seat_type": 2,
-    "spoiler_type": "None",
-    "sun_roof_installed": 2,
-    "third_row_seats": "None",
-    "timestamp": 1604977445448,
-    "trim_badging": "p90d",
-    "use_range_badging": false,
-    "wheel_type": "AeroTurbine19"
+    "id": 1234567890123,
+    "user_id": 1234,
+    "vehicle_id": 1234567890123,
+    "vin": "7SA...",
+    "display_name": "Nikola",
+    "option_codes": null,
+    "color": null,
+    "access_type": "OWNER",
+    "tokens": ["abc123", "abc123"],
+    "state": "online",
+    "in_service": false,
+    "id_s": "1234567890123",
+    "calendar_enabled": true,
+    "api_version": 57,
+    "backseat_token": null,
+    "backseat_token_updated_at": null,
+    "ble_autopair_enrolled": false,
+    "vehicle_config": {
+      "can_accept_navigation_requests": true,
+      "can_actuate_trunks": true,
+      "car_special_type": "base",
+      "car_type": "models2",
+      "charge_port_type": "US",
+      "ece_restrictions": false,
+      "eu_vehicle": false,
+      "exterior_color": "White",
+      "has_air_suspension": true,
+      "has_ludicrous_mode": false,
+      "motorized_charge_port": true,
+      "plg": true,
+      "rear_seat_heaters": 0,
+      "rear_seat_type": 0,
+      "rhd": false,
+      "roof_color": "None",
+      "seat_type": 2,
+      "spoiler_type": "None",
+      "sun_roof_installed": 2,
+      "third_row_seats": "None",
+      "timestamp": 1604977445448,
+      "trim_badging": "p90d",
+      "use_range_badging": false,
+      "wheel_type": "AeroTurbine19"
+    }
   }
 }
 ```

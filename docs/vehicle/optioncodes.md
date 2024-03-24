@@ -38,6 +38,7 @@ return a generic set of codes related to a Model 3.
 | AF00   | No HEPA Filter                                           | Standard air filter, no air ionizer                       |
 | AF02   | HEPA Filter                                              |                                                           |
 | AH00   | No Accessory Hitch                                       |                                                           |
+| AL03   | Interior Accent RGB Lighting                             | INTERIOR ACCENT LIGHT	                                    |
 | AP04   | Autopilot 4.0                                            | Model S 02.2023\Model Y from 10May2023                    |
 | APB1   | Autopilot with convenience features                      | Model S                                                   |
 | APBS   | Autopilot                                                | Model 3 Autopilot                                         |
@@ -188,6 +189,7 @@ return a generic set of codes related to a Model 3.
 | FBBR   | Front Brake Brembo Red                                   | Brakes (MS/MX 2021)                                       |
 | FC01   | Front Console Inductive Phone Charger                    | Model 3                                                   |
 | FC02   | Front Console Front Console (Premium)                    | Model 3/Y 2021                                            |
+| FC03   | Front Console Front Console 3.0                          | Model 3/Y 2024                                            |
 | FCH2   | Front controller hard v2 that supports both non-FSD +FSD | Model 3/Y late 2021                                       |
 | FC3P   | Front Console Front Console (Premium)                    | Model 3                                                   |
 | FD00   | Low Current IGBT IM130 Drive Unit                        | Front drive unit M3/MY                                    |
@@ -223,6 +225,7 @@ return a generic set of codes related to a Model 3.
 | HL01   | Matrix Head Lamp                                         | Model S/X 2022.03                                         |
 | HL31   | Head Lamp                                                | Model 3 Uplevel Headlamps                                 |
 | HL32   | Matrix Headlights 2021                                   | Model 3/Y 2021 Uplevel Headlamps                          |
+| HL33   | Lamp 1 Headlights 2024                                   | Model 3 2024 Headlamps                                    |
 | HP00   | No HPWC Ordered                                          |                                                           |
 | HP01   | HPWC Ordered                                             |                                                           |
 | HP30   | No heat pump assembly                                    | Model 3 Standard+ China made                              |
@@ -322,6 +325,7 @@ return a generic set of codes related to a Model 3.
 | LVB1   | 15V Li-Ion Low voltage battery                           |                                                           |
 | LVB2   | CATL 16V Battery                                         | Model 3/Y (GigaBerlin/China)                              |
 | M301   | Generation 1 of 2022                                     | AMD Ryzen?                                                |
+| M302   | Generation 2 of 2024                                     | Model 3 Restyle                                           |
 | ME01   | Memory Seats                                             |                                                           |
 | ME02   | Seat Memory                                              | Seat Memory LHD Driver                                    |
 | MI00   | 1st Generation Production                                | Model 3 (2019), Model S (Nosecone), MX(2016), MY(2021)    |
@@ -497,6 +501,7 @@ return a generic set of codes related to a Model 3.
 | RD05   | Low Current MOSFET PM228 Rear Drive Unit                 | Model 3/Y LR/DM                                           |
 | RD06   | High Current MOSFET PM228 Rear Drive Unit                | Model 3/Y 2022 (Perf version)                             |
 | RD07   | 4DU Rear Drive Unit                                      | Model 3/Y 2023                                            |
+| RD11   | 4DU Rear Drive Unit uncorked, 950A, US/DE                | Model 3 2024 (Perf version)                               |
 | RDU2   | Rear large drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Perf version)                             |
 | RDU3   | Rear small drive unit                                    | Model S/X 2015-2017+- (DM version)                        |
 | RDU4   | Rear small drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Plus version)                             |
@@ -513,6 +518,7 @@ return a generic set of codes related to a Model 3.
 | RL01   | Rear tail lights (Larger for CCS)                        | Model S/X 2022.March 473k+-                               |
 | RL31   | Rear lights (EU)                                         | Model 3 EU                                                |
 | RL32   | Rear lights (Global)                                     | Model 3/Y (AWD)                                           |
+| RL33   | Rear lights Lamp 2                                       | Model 3 2024 Restyle                                      |
 | RS3H   | Second Row Seat Rear Seats (Heated)                      | Model 3/Y with Premium Interior                           |
 | RSF0   | Rear Heated Seats Disabled                               | Model 3/Y without Premium Interior                        |
 | RSF1   | Rear Heated Seats                                        | Model 3/Y with Premium Interior                           |
@@ -566,9 +572,11 @@ return a generic set of codes related to a Model 3.
 | SU00   | Standard Suspension                                      |                                                           |
 | SU01   | Smart Air Suspension                                     | Model S/X ?-15apr2019                                     |
 | SU03   | Suspension Update                                        | Model S/X 19apr2019-2021                                  |
+| SU04   | Active Suspension                                        | Model 3 2024 (Perf)                                       |
 | SU3C   | Coil Spring Suspension                                   |                                                           |
 | SWF0   |                                                          | Model 3/Y                                                 |
 | SWF1   | Steering Wheel FW Enabled                                | Model 3/Y                                                 |
+| T30A   | Tires Model 3 Perf 2024                                  | 20" Split Fit Tire                                        |
 | T38Q   | Tires M3                                                 | 18" Hankook Ventus S1 A/S                                 |
 | T3CA   | Tires M3                                                 | 19" Continental All Season, Square                        |
 | T3HS   | Tires M3                                                 | 19" Hankook Summer Square                                 |
@@ -629,6 +637,8 @@ return a generic set of codes related to a Model 3.
 | USSW   | US Safety Kit White                                      |                                                           |
 | VC00   | MCU Intel Atom                                           | Model 3/Y (China)                                         |
 | VC01   | MCU AMD Ryzen                                            | Model 3/Y first found on MYJan2022                        |
+| VS01   | Vent Enabled                                             | Model 3 2024 (Perf)                                       |
+| W30P   | 20" Performance Wheels                                   | Model 3 2024 (Perf)                                       |
 | W32P   | 20" Performance Wheels                                   | Model 3                                                   |
 | W32D   | 20" Gray Performance Wheels                              | Model 3                                                   |
 | W33D   | 20" Black Performance Wheels 2021                        | Model 3                                                   |
@@ -723,3 +733,4 @@ return a generic set of codes related to a Model 3.
 | YFFC   | Integrated Center Console                                |                                                           |
 | ZCST   | Customer Car                                             |                                                           |
 | ZINV   | Inventory vehicle                                        | Car sold from Tesla Inventory                             |
+| ZENG   | Engineering Car                                          | Test samples from Tesla                                   |

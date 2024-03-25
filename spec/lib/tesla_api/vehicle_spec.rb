@@ -406,4 +406,12 @@ RSpec.describe TeslaApi::Vehicle do
       end
     end
   end
+
+  context "#miscellaneous" do
+    describe "#remote_boombox", vcr: {cassette_name: "vehicle-remote_boombox"} do
+      it "plays a fart in car" do
+        expect(vehicle.remote_boombox["result"]).to eq(true)
+      end
+    end
+  end
 end

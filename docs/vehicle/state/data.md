@@ -43,6 +43,7 @@ _Note:_ all `*_range` values are in miles, irrespective of GUI configuration.
     "climate_state": {
       "battery_heater": false,
       "battery_heater_no_power": false,
+      "bioweapon_mode": false,
       "climate_keeper_mode": "off",
       "defrost_mode": 0,
       "driver_temp_setting": 21.1,

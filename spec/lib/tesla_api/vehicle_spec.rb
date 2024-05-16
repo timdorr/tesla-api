@@ -406,4 +406,12 @@ RSpec.describe TeslaApi::Vehicle do
       end
     end
   end
+
+  context "sharing" do
+    describe "#share_location", vcr: {cassette_name: "vehicle-share_location"} do
+      it "shares a location with car GPS" do
+        expect(vehicle.share_location("Tesla HQ, Deer Creek Road, Palo Alto, CA, USA")["result"]).to eq(true)
+      end
+    end
+  end
 end

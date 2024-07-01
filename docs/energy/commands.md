@@ -10,7 +10,6 @@ These endpoints are not yet documented.
 | POST | `operation`                         |
 | POST | `grid_import_export`                |
 | POST | `time_of_use_settings`              |
-| POST | `storm_mode`                        |
 | POST | `command`                           |
 | POST | `program`                           |
 | POST | `event`                             |
@@ -46,6 +45,27 @@ Set your energy site name.
 | Parameter | Example      | Description           |
 | :-------- | :----------- | :-------------------- |
 | site_name | Wardenclyffe | New energy site name. |
+
+### Response
+
+```json
+{
+  "response": {
+    "code": 201,
+    "message": "Updated"
+  }
+}
+```
+
+## POST `api/1/energy_sites/{site_id}/storm_mode`
+
+Enable or disable Storm Watch.
+
+### Parameters
+
+| Parameter              | Example | Description                        |
+| :--------------------- | :------ | :--------------------------------- |
+| enabled                | true    | If Storm Watch should be enabled   |
 
 ### Response
 

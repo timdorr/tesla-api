@@ -501,6 +501,7 @@ return a generic set of codes related to a Model 3.
 | RD05   | Low Current MOSFET PM228 Rear Drive Unit                 | Model 3/Y LR/DM                                           |
 | RD06   | High Current MOSFET PM228 Rear Drive Unit                | Model 3/Y 2022 (Perf version)                             |
 | RD07   | 4DU Rear Drive Unit                                      | Model 3/Y 2023                                            |
+| RD10   | 4DU Rear Drive Unit uncorked, 950A, CN                   | Model 3 2024 (Perf version from China)                    |
 | RD11   | 4DU Rear Drive Unit uncorked, 950A, US/DE                | Model 3 2024 (Perf version)                               |
 | RDU2   | Rear large drive unit with elec. oil pump(stator <5kg)   | Model S/X 2020 (Perf version)                             |
 | RDU3   | Rear small drive unit                                    | Model S/X 2015-2017+- (DM version)                        |
@@ -577,6 +578,7 @@ return a generic set of codes related to a Model 3.
 | SWF0   |                                                          | Model 3/Y                                                 |
 | SWF1   | Steering Wheel FW Enabled                                | Model 3/Y                                                 |
 | T30A   | Tires Model 3 Perf 2024                                  | 20" Split Fit Tire                                        |
+| T30S   | Tires Model 3 Perf 2024                                  | 20" Summer Pirelli R20 235/35/92Y China                   |
 | T38Q   | Tires M3                                                 | 18" Hankook Ventus S1 A/S                                 |
 | T3CA   | Tires M3                                                 | 19" Continental All Season, Square                        |
 | T3HS   | Tires M3                                                 | 19" Hankook Summer Square                                 |

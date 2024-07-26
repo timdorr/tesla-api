@@ -1,0 +1,7 @@
+echo "# PETER-THE-BRAND-" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ravirajsinghrrs09/PETER-THE-BRAND-.git
+git push -u origin main

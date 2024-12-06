@@ -89,6 +89,7 @@ return a generic set of codes related to a Model 3.
 | BT41   | 55 kWh 2021 E1 2170L Panasonic Battery Pack              | M3/Y Standard+ 2021 model year                            |
 | BT42   | 82 kWh (Model 3/Y) 2021 Panasonic                        | M3P (and latest LR Fremont) 2021 model year               |
 | BT43   | 79 kWh (Model 3/Y) 2021 LG NCA                           | M3/Y LR Q4.2021                                           |
+| BT47   | E3 2170L RWD Battery Pack                                | MY RWD Q2.2024                                            |
 | BT60   | 60 kWh                                                   |                                                           |
 | BT70   | 70 kWh                                                   |                                                           |
 | BT85   | 85 kWh                                                   |                                                           |

@@ -270,6 +270,17 @@ module TeslaApi
       command("media_volume_down")["response"]
     end
 
+    # Sends a location for the car to start navigation
+    def share_location(address, locale: "us-US")
+      params = {
+        type: "share_ext_content_raw",
+        locale: locale,
+        timestamp_ms: Time.now.to_i,
+        value: {"android.intent.extra.TEXT" => address}
+      }
+      command("share", body: params)["response"]
+    end
+
     private
 
     def data_request(name)

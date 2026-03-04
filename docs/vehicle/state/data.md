@@ -2,7 +2,7 @@
 
 ## GET `/api/1/vehicles/{id}/vehicle_data`
 
-A rollup of all the `data_request` endpoints plus vehicle configuration.
+The base endpoint which returns all vehicle data.
 
 _Note:_ all `*_range` values are in miles, irrespective of GUI configuration.
 

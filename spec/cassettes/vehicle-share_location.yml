@@ -1,0 +1,117 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://owner-api.teslamotors.com/api/<TESLA_CLIENT_ID>/vehicles
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v<TESLA_CLIENT_ID>.<TESLA_CLIENT_ID>0.3
+      Authorization:
+      - Bearer eyJhbGciOiJSUzI<TESLA_CLIENT_ID>NiIsInR5cCI6IkpXVCIsImtpZCI6Im5ZdVZJWTJTN3gxVHRYM0<TESLA_CLIENT_ID>KMC<TESLA_CLIENT_ID>QMDJad3pXQSJ9.eyJpc3MiOiJodHRwczovL<TESLA_CLIENT_SECRET>F<TESLA_CLIENT_ID>dGgudGVzbGEuY<TESLA_CLIENT_SECRET>9tL<TESLA_CLIENT_SECRET>9hdXRoMi9<TESLA_CLIENT_SECRET>MyIsImF<TESLA_CLIENT_ID>ZCI6WyJodHRwczovL<TESLA_CLIENT_SECRET>93bmVyLWFwaS50ZXNsYW<TESLA_CLIENT_ID>vdG9ycy5jb<TESLA_CLIENT_SECRET>0vIiwiaHR0cHM6Ly9hdXRoLnRlc<TESLA_CLIENT_SECRET>xhLmNvbS9vYXV0aDIvdjMvdXNlcmluZm8iXSwiYXpwIjoib3duZXJhcGkiLCJzdWIiOiI<TESLA_CLIENT_SECRET>YzgxODE4ZC0yNWVlLTRkMjktODliOC04NDBlMDM4OWIxYWQiLCJzY3AiOlsib3BlbmlkIiwiZW<TESLA_CLIENT_ID>haWwiLCJvZmZsaW5lX<TESLA_CLIENT_SECRET>FjY<TESLA_CLIENT_SECRET>VzcyJdLCJhbXIiOltdLCJleHAiOjE<TESLA_CLIENT_SECRET>ODE<TESLA_CLIENT_ID>NDU<TESLA_CLIENT_ID>MDIsImlhdCI6MTY4MTUxNjcwMn0.uQ5OPxcT0CdyObAEoRqaokHdIYOGj<TESLA_CLIENT_SECRET>exZsQ0cdm57eHIsONyjCrJ3kCP-koM<TESLA_CLIENT_ID>c8YslPPdJnm0EmVm9B6hWdJOq<TESLA_CLIENT_ID>5H-8dy9rqBFlE5N_mwBDOAa<TESLA_CLIENT_SECRET>b7u8O5z<TESLA_CLIENT_ID>d<TESLA_CLIENT_ID>QABhbgSbCRYtpVhWV_-VGV<TESLA_CLIENT_SECRET>AV<TESLA_CLIENT_ID>wghzrvvVoapbkRnCe_9eoI7MLd7urN9jq_huJZngarhwGKmHXFLwrjx0dJwxGlWHuh6QBxaNzufMRyHQ<TESLA_CLIENT_ID>h6lvZOG7qC3xCGVrmmM<TESLA_CLIENT_SECRET>hkNI8U<TESLA_CLIENT_ID>qK63_oRJ_3BG<TESLA_CLIENT_SECRET>qz<TESLA_CLIENT_SECRET>Jltl7rksgZje4utGEVD<TESLA_CLIENT_ID>g9iPQM<TESLA_CLIENT_ID>ztLnqBNxaYcpsfCe_eRie3<TESLA_CLIENT_ID>ORi4oy7DjNS-zLddu-bkQ
+      Accept-Encoding:
+      - gzip;q=<TESLA_CLIENT_ID>.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Xss-Protection:
+      - "<TESLA_CLIENT_ID>; mode=block"
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      X-Txid:
+      - 7d3<TESLA_CLIENT_SECRET>6a<TESLA_CLIENT_SECRET>b90<TESLA_CLIENT_ID>860853389a<TESLA_CLIENT_SECRET>54b38<TESLA_CLIENT_SECRET>cbac
+      Etag:
+      - W/"<TESLA_CLIENT_ID>ec674669a09bb64afd57<TESLA_CLIENT_SECRET>bd83c7fdc3"
+      X-Request-Id:
+      - b4<TESLA_CLIENT_ID>9f<TESLA_CLIENT_ID><TESLA_CLIENT_ID>5-a7b<TESLA_CLIENT_ID>-4a05-9df6-06<TESLA_CLIENT_ID><TESLA_CLIENT_SECRET>e7aa7<TESLA_CLIENT_ID>de
+      Content-Length:
+      - 8<TESLA_CLIENT_ID>3
+      X-Envoy-Upstream-Service-Time:
+      - '66'
+      X-Envoy-Upstream-Cluster:
+      - owner-api
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=3<TESLA_CLIENT_ID>536000; includeSubDomains
+      Cache-Control:
+      - no-cache, no-store, private, s-max-age=0
+      Date:
+      - Sat, <TESLA_CLIENT_ID>5 Apr <TESLA_CLIENT_SECRET>0<TESLA_CLIENT_SECRET>3 00:<TESLA_CLIENT_ID><TESLA_CLIENT_SECRET>:09
+        GMT
+      Server:
+      - envoy
+    body:
+      encoding: UTF-8
+      string: '{"response":[{"id":<TESLA_CLIENT_ID>49<TESLA_CLIENT_SECRET>9308<TESLA_CLIENT_ID>0983<TESLA_CLIENT_ID>68,"vehicle_id":<TESLA_CLIENT_ID>849<TESLA_CLIENT_SECRET>7<TESLA_CLIENT_SECRET>3<TESLA_CLIENT_SECRET><TESLA_CLIENT_ID>,"vin":"5YJSB7E<TESLA_CLIENT_ID><TESLA_CLIENT_SECRET>GF<TESLA_CLIENT_ID><TESLA_CLIENT_SECRET>0553","display_name":"Bessie
+        bob","option_codes":null,"color":null,"access_type":"OWNER","tokens":["49be34939634f68a","c59<TESLA_CLIENT_ID>57e466ccfc73"],"state":"online","in_service":false,"id_s":"<TESLA_CLIENT_ID>49<TESLA_CLIENT_SECRET>9308<TESLA_CLIENT_ID>0983<TESLA_CLIENT_ID>68","calendar_enabled":true,"api_version":54,"backseat_token":null,"backseat_token_updated_at":null,"ble_autopair_enrolled":false},{"id":374438953056<TESLA_CLIENT_ID><TESLA_CLIENT_ID>49,"vehicle_id":<TESLA_CLIENT_SECRET><TESLA_CLIENT_SECRET>5<TESLA_CLIENT_SECRET><TESLA_CLIENT_ID>476<TESLA_CLIENT_SECRET>7307388,"vin":"LRWYHCFS8NC5338<TESLA_CLIENT_ID>9","display_name":"Rosie","option_codes":null,"color":null,"access_type":"OWNER","tokens":["a44ab8ea5ec57c58","ab8<TESLA_CLIENT_ID>f0874656953e"],"state":"online","in_service":false,"id_s":"374438953056<TESLA_CLIENT_ID><TESLA_CLIENT_ID>49","calendar_enabled":true,"api_version":54,"backseat_token":null,"backseat_token_updated_at":null,"ble_autopair_enrolled":false}],"count":<TESLA_CLIENT_SECRET>}'
+  recorded_at: Sat, 15 Apr 2023 00:12:10 GMT
+- request:
+    method: post
+    uri: https://owner-api.teslamotors.com/api/<TESLA_CLIENT_ID>/vehicles/<TESLA_CLIENT_ID>49<TESLA_CLIENT_SECRET>9308<TESLA_CLIENT_ID>0983<TESLA_CLIENT_ID>68/command/share
+    body:
+      encoding: UTF-8
+      string: '{"type":"share_ext_content_raw","locale":"us-US","timestamp_ms":<TESLA_CLIENT_ID>68<TESLA_CLIENT_ID>5<TESLA_CLIENT_ID>7530,"value":{"android.intent.extra.TEXT":"Tesla
+        HQ, Deer Creek Road, Palo Alto, CA, USA"}}'
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Faraday v<TESLA_CLIENT_ID>.<TESLA_CLIENT_ID>0.3
+      Authorization:
+      - Bearer eyJhbGciOiJSUzI<TESLA_CLIENT_ID>NiIsInR5cCI6IkpXVCIsImtpZCI6Im5ZdVZJWTJTN3gxVHRYM0<TESLA_CLIENT_ID>KMC<TESLA_CLIENT_ID>QMDJad3pXQSJ9.eyJpc3MiOiJodHRwczovL<TESLA_CLIENT_SECRET>F<TESLA_CLIENT_ID>dGgudGVzbGEuY<TESLA_CLIENT_SECRET>9tL<TESLA_CLIENT_SECRET>9hdXRoMi9<TESLA_CLIENT_SECRET>MyIsImF<TESLA_CLIENT_ID>ZCI6WyJodHRwczovL<TESLA_CLIENT_SECRET>93bmVyLWFwaS50ZXNsYW<TESLA_CLIENT_ID>vdG9ycy5jb<TESLA_CLIENT_SECRET>0vIiwiaHR0cHM6Ly9hdXRoLnRlc<TESLA_CLIENT_SECRET>xhLmNvbS9vYXV0aDIvdjMvdXNlcmluZm8iXSwiYXpwIjoib3duZXJhcGkiLCJzdWIiOiI<TESLA_CLIENT_SECRET>YzgxODE4ZC0yNWVlLTRkMjktODliOC04NDBlMDM4OWIxYWQiLCJzY3AiOlsib3BlbmlkIiwiZW<TESLA_CLIENT_ID>haWwiLCJvZmZsaW5lX<TESLA_CLIENT_SECRET>FjY<TESLA_CLIENT_SECRET>VzcyJdLCJhbXIiOltdLCJleHAiOjE<TESLA_CLIENT_SECRET>ODE<TESLA_CLIENT_ID>NDU<TESLA_CLIENT_ID>MDIsImlhdCI6MTY4MTUxNjcwMn0.uQ5OPxcT0CdyObAEoRqaokHdIYOGj<TESLA_CLIENT_SECRET>exZsQ0cdm57eHIsONyjCrJ3kCP-koM<TESLA_CLIENT_ID>c8YslPPdJnm0EmVm9B6hWdJOq<TESLA_CLIENT_ID>5H-8dy9rqBFlE5N_mwBDOAa<TESLA_CLIENT_SECRET>b7u8O5z<TESLA_CLIENT_ID>d<TESLA_CLIENT_ID>QABhbgSbCRYtpVhWV_-VGV<TESLA_CLIENT_SECRET>AV<TESLA_CLIENT_ID>wghzrvvVoapbkRnCe_9eoI7MLd7urN9jq_huJZngarhwGKmHXFLwrjx0dJwxGlWHuh6QBxaNzufMRyHQ<TESLA_CLIENT_ID>h6lvZOG7qC3xCGVrmmM<TESLA_CLIENT_SECRET>hkNI8U<TESLA_CLIENT_ID>qK63_oRJ_3BG<TESLA_CLIENT_SECRET>qz<TESLA_CLIENT_SECRET>Jltl7rksgZje4utGEVD<TESLA_CLIENT_ID>g9iPQM<TESLA_CLIENT_ID>ztLnqBNxaYcpsfCe_eRie3<TESLA_CLIENT_ID>ORi4oy7DjNS-zLddu-bkQ
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=<TESLA_CLIENT_ID>.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Xss-Protection:
+      - "<TESLA_CLIENT_ID>; mode=block"
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      X-Txid:
+      - d77afda6d330<TESLA_CLIENT_ID>d5<TESLA_CLIENT_ID><TESLA_CLIENT_ID>8e9f8a7fb06eafd
+      Etag:
+      - W/"8<TESLA_CLIENT_SECRET>e<TESLA_CLIENT_ID>30935494c9<TESLA_CLIENT_SECRET>c5646<TESLA_CLIENT_ID>f<TESLA_CLIENT_SECRET>407b7d4b6"
+      X-Request-Id:
+      - 9<TESLA_CLIENT_SECRET>dfaecb-e44e-4778-ab3<TESLA_CLIENT_ID>-0769dad<TESLA_CLIENT_ID>0b8e
+      Content-Length:
+      - '43'
+      X-Envoy-Upstream-Service-Time:
+      - '449'
+      X-Envoy-Upstream-Cluster:
+      - owner-api
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=3<TESLA_CLIENT_ID>536000; includeSubDomains
+      Cache-Control:
+      - no-cache, no-store, private, s-max-age=0
+      Date:
+      - Sat, <TESLA_CLIENT_ID>5 Apr <TESLA_CLIENT_SECRET>0<TESLA_CLIENT_SECRET>3 00:<TESLA_CLIENT_ID><TESLA_CLIENT_SECRET>:<TESLA_CLIENT_ID><TESLA_CLIENT_ID>
+        GMT
+      Server:
+      - envoy
+    body:
+      encoding: UTF-8
+      string: '{"response":{"result":true,"queued":false}}'
+  recorded_at: Sat, 15 Apr 2023 00:12:12 GMT
+recorded_with: VCR 6.1.0

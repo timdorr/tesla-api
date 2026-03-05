@@ -270,6 +270,11 @@ module TeslaApi
       command("media_volume_down")["response"]
     end
 
+    # Let the car fart remotely on version 2022.44.25.1 and above.
+    def remote_boombox
+      command("remote_boombox")["response"]
+    end
+
     private
 
     def data_request(name)
